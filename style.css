@@ -1,0 +1,29 @@
+body {
+ text-align: center;
+ font-family: lexend;
+ background-color: #222831;
+ color: #eeeeee;
+}
+
+h2 {
+ font-size: 50px;
+}
+
+h1 {
+ font-weight: bold;
+ font-size: 130px;
+}
+
+input {
+ background-color: #393e46;
+ color: #eeeeee;
+}
+
+::selection{
+ background: rgba(255, 255, 255, 0.25);
+}
+
+@font-face {
+  font-family:lexend;
+  src: url('LexendDeca-Regular.ttf');
+}
