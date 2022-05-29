@@ -4,6 +4,15 @@ body {
   margin: 0px;
 }
 
+::selection {
+  background: #83abc488;
+}
+
+::-moz-selection {
+  /* Firefox */
+  background: #83abc488;
+}
+
 #topHalf {
   margin-top: 270px;
   display: inline-block;
@@ -207,10 +216,16 @@ h3 {
 }
 
 .project {
-  border-radius: 3px;
-  padding: 20px;
-  margin-bottom: 40px;
+  border: 4px solid;
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 35px;
   margin-right: 10px;
+}
+
+.project:hover {
+  box-shadow: 5px 5px #d8d8d8;
+  transition: box-shadow 0.1s linear;
 }
 
 a#link1:hover {
@@ -219,27 +234,17 @@ a#link1:hover {
 }
 
 a#link1:link {
-  color: #ed9121;
+  color: #ff9646;
   text-decoration: none;
 }
 
 a#link1:visited {
-  color: #ed9121;
-}
-
-.fa-carrot {
-  color: #ed9121;
+  color: #ff9646;
 }
 
 #proj1 {
-  padding: 20px;
-  border: 4px solid #d4a468;
-  background-color: #ffdeb6;
-}
-
-#proj1:hover {
-  box-shadow: 5px 5px #dfdedd;
-  transition: box-shadow 0.1s linear;
+  border-color: #e09c68;
+  background-color: #ffddc1;
 }
 
 a#link2:hover {
@@ -256,18 +261,9 @@ a#link2:visited {
   color: #dfbc0e;
 }
 
-.fa-face-flushed {
-  color: #dfbc0e;
-}
-
 #proj2 {
-  border: 4px solid #c2bb5f;
-  background-color: #fffab4;
-}
-
-#proj2:hover {
-  box-shadow: 5px 5px #dfdfdd;
-  transition: box-shadow 0.1s linear;
+  border-color: #d1bc47;
+  background-color: #fffab8;
 }
 
 a#link3:hover {
@@ -284,18 +280,9 @@ a#link3:visited {
   color: #c5342f;
 }
 
-.fa-play {
-  color: #c5342f;
-}
-
 #proj3 {
-  border: 4px solid #c47d7d;
+  border-color: #c47d7d;
   background-color: #ffd1d1;
-}
-
-#proj3:hover {
-  box-shadow: 5px 5px #dfdddd;
-  transition: box-shadow 0.1s linear;
 }
 
 a#link4:hover {
@@ -305,25 +292,16 @@ a#link4:hover {
 
 a#link4:link {
   text-decoration: none;
-  color: #5a8034;
+  color: #209151;
 }
 
 a#link4:visited {
-  color: #5a8034;
-}
-
-.fa-tree {
-  color: #5a8034;
+  color: #209151;
 }
 
 #proj4 {
-  border: 4px solid #83c47d;
-  background-color: #d0ffce;
-}
-
-#proj4:hover {
-  box-shadow: 5px 5px #dddfdd;
-  transition: box-shadow 0.1s linear;
+  border-color: #49b96b;
+  background-color: #bcf5cd;
 }
 
 a#link5:hover {
@@ -340,18 +318,9 @@ a#link5:visited {
   color: #4d71a8;
 }
 
-.fa-pen-nib {
-  color: #4d71a8;
-}
-
 #proj5 {
-  border: 4px solid #7595c4;
+  border-color: #7595c4;
   background-color: #c0dafc;
-}
-
-#proj5:hover {
-  box-shadow: 5px 5px #dddedf;
-  transition: box-shadow 0.1s linear;
 }
 
 a#link6:hover {
@@ -361,25 +330,20 @@ a#link6:hover {
 
 a#link6:link {
   text-decoration: none;
-  color: #1885c9;
+  color: #1da1f2;
 }
 
 a#link6:visited {
-  color: #1885c9;
+  color: #1da1f2;
 }
 
-.twtProj {
-  color: #1885c9; /* different class name because different color is used for twitter social button */
-}
+/* .twtProj { */
+/* color: #1da1f2; different class name because different color is used for twitter social button */
+/*} */
 
 #proj6 {
-  border: 4px solid #64a0c5;
-  background-color: #b9e5ff;
-}
-
-#proj6:hover {
-  box-shadow: 5px 5px #dddedf;
-  transition: box-shadow 0.1s linear;
+  border-color: #6ba8ce;
+  background-color: #bce5ff;
 }
 
 a#link7:hover {
@@ -389,22 +353,17 @@ a#link7:hover {
 
 a#link7:link {
   text-decoration: none;
-  color: #d14848;
+  color: #da4f4f;
 }
 
 a#link7:visited {
-  color: #d14848;
+  color: #da4f4f;
 }
 
 #proj7 {
-  border: 4px solid #e76161;
-  background-color: #ffc3c3;
+  border-color: #d67171;
+  background-color: #ffc4c4;
   margin-bottom: 15px;
-}
-
-#proj7:hover {
-  box-shadow: 5px 5px #dfdddd;
-  transition: box-shadow 0.1s linear;
 }
 
 .box {
@@ -421,7 +380,7 @@ a#link7:visited {
 .subtext {
   font-size: 15px;
   margin: 0px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 #lineMiddle {
@@ -507,12 +466,4 @@ a#link7:visited {
   ::-webkit-scrollbar {
     width: 8px;
   }
-}
-
-/* 800px and down */
-@media only screen and (max-width: 800px) {
-}
-
-/* 600px and down */
-@media only screen and (max-width: 600px) {
 }
