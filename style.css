@@ -16,10 +16,11 @@
 
 body {
   text-align: center;
-  font-family: lexend;
-  padding: 100px;
+  padding: 400px;
   padding-top: 150px;
+  padding-bottom: 150px;
   margin: 0;
+  font-family: lexend;
 }
 
 ::selection {
@@ -30,6 +31,12 @@ body {
   /* Firefox */
   background: #83abc47e;
 }
+
+/* img {
+  width: 65%;
+  height: auto;
+  margin-top: 25px;
+} */
 
 .t {
   color: var(--blueGray);
@@ -66,10 +73,6 @@ body {
   margin: 0;
   padding: 0;
   transition: box-shadow 0.1s linear;
-}
-
-#navBar:hover {
-  box-shadow: 0 3px 5px 1px var(--normalShadow);
 }
 
 .navItem {
@@ -120,6 +123,8 @@ body {
 
 .socialDiv {
   display: inline-block;
+  background-color: transparent;
+  border: none;
   margin-right: 15px;
   transition: text-shadow 0.1s linear;
 }
@@ -185,10 +190,9 @@ body {
 }
 
 #projectsDiv {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
-  display: inline-block;
   vertical-align: middle;
   margin: 0;
   margin-top: 50px;
@@ -218,7 +222,7 @@ body {
   border: 3.5px solid;
   border-radius: 6px;
   padding: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   transition: box-shadow 0.1s linear;
 }
 
@@ -354,3 +358,4 @@ body {
     margin: 30px;
   }
 }
+
