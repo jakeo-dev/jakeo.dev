@@ -18,7 +18,7 @@
 body {
   background-color: var(--background);
   text-align: center;
-  padding: 70px;
+  padding: 10%;
   padding-top: 200px;
   padding-bottom: 100px;
   margin: 0;
@@ -45,15 +45,10 @@ body {
   color: var(--blueGray);
   text-decoration: none;
   cursor: default;
-  transition: text-shadow 0.1s linear;
 }
 
 .t:visited {
   color: var(--blueGray);
-}
-
-.t:hover {
-  text-shadow: 0 5px 10px var(--shadow);
 }
 
 .fullProjTitle {
@@ -64,9 +59,9 @@ body {
 }
 
 .projTitle {
-  font-size: 45px;
+  font-size: 41px;
+  font-weight: bold;
   margin: 0;
-  margin-left: 14px;
 }
 
 .projIcon {
@@ -88,7 +83,6 @@ body {
   left: 0;
   margin: 0;
   padding: 0;
-  transition: box-shadow 0.1s linear;
 }
 
 .subtext {
@@ -122,6 +116,11 @@ h4 {
 
 #bunnyLogo {
   margin-right: 20px;
+  transition: transform 0.1s linear;
+}
+
+#bunnyLogo:hover {
+  transform: scale(1.1);
 }
 
 #titleItem {
@@ -136,7 +135,7 @@ h4 {
 
 #title {
   display: block;
-  font-size: 58px;
+  font-size: 49px;
   color: var(--blueGray);
   text-decoration: none;
   float: left;
@@ -149,8 +148,8 @@ h4 {
   color: var(--blueGray);
   text-align: left;
   text-decoration: none;
-  margin-top: 80px;
-  margin-left: -273px;
+  margin-top: 70px;
+  margin-left: -230px;
   cursor: default;
 }
 
@@ -164,13 +163,13 @@ h4 {
   display: inline-block;
   background-color: transparent;
   border: none;
-  margin-right: 18px;
+  margin-right: 20px;
   cursor: pointer;
-  transition: text-shadow 0.1s linear;
+  transition: transform 0.1s linear;
 }
 
 .socialDiv:hover {
-  text-shadow: 0 5px 10px var(--shadow);
+  transform: scale(1.1);
 }
 
 #social1:link {
@@ -273,15 +272,15 @@ h4 {
 
 .project {
   border: 3.5px solid;
-  border-radius: 6px;
+  border-radius: 10px;
   text-align: left;
   padding: 30px;
   margin-bottom: 80px;
-  transition: box-shadow 0.1s linear;
+  transition: transform 0.1s linear;
 }
 
 .project:hover {
-  box-shadow: 0 5px 10px 3px var(--shadow);
+  transform: scale(1.025);
 }
 
 #bunLink:link {
@@ -433,17 +432,9 @@ h4 {
 }
 
 /* 1170px and up */ /* computer screens */
-@media only screen and (min-width: 850px) {
-  body {
-    padding: 180px;
-    padding-bottom: 100px;
-  }
-}
-
-/* 1170px and up */ /* computer screens */
 @media only screen and (min-width: 1170px) {
   body {
-    padding: 100px;
+    padding: 10%;
     padding-top: 150px;
     padding-bottom: 50px;
   }
@@ -467,7 +458,8 @@ h4 {
 /* 1170px and up */ /* computer screens */
 @media only screen and (min-width: 1300px) {
   body {
-    padding: 150px;
+    padding: 10%;
+    padding-top: 150px;
     padding-bottom: 50px;
   }
 }
