@@ -13,6 +13,7 @@
   --treeGreen: #209151;
   --cereRed: #d63e3e;
   --fltrGray: #878787;
+  --artPurple: #6c36eb;
 }
 
 body {
@@ -366,6 +367,20 @@ h4 {
 #fltProj {
   border-color: #a0a0a0;
   background-color: #ebebeb;
+}
+
+#artLink:link {
+  text-decoration: none;
+  color: var(--artPurple);
+}
+
+#artLink:visited {
+  color: var(--artPurple);
+}
+
+#artProj {
+  border-color: #7d5cc9;
+  background-color: #d6c4ff;
 }
 
 #modal {
