@@ -27,7 +27,8 @@
 	<ul id='navBar'>
 
 		<div id='titleItem' class='navItem'>
-			<img src='solid-blue-gray-bunny.png' width='90' height='90' alt='Solid blue gray bunny' id='bunnyLogo'>
+			<img src='solid-blue-gray-bunny.png' onmouseover='hoverBunny();' onmouseout='offBunny();' width='90'
+				height='90' alt='Solid blue gray bunny' id='bunnyLogo'>
 
 			<h1 id='title'><a class='t'>J</a><a class='t'>o</a><a class='t'>r</a><a class='t'>c</a><a class='t'>h</a><a
 					class='t' href='https://www.youtube.com/watch?v=-ZiXiW5-aGs' class='t'>.</a><a class='t'>x</a><a
@@ -177,6 +178,17 @@
 
 <script>
 
+	let bunnyArray = [
+		'red-bunny-2022.png',
+		'orange-bunny-2022.png',
+		'yellow-bunny-2022.png',
+		'green-bunny-2022.png',
+		'blue-bunny-2022.png',
+		'purple-bunny-2022.png',
+		'pink-bunny-2022.png',
+		'potpourri-bunny.png'
+	]
+
 	document.getElementById('social3').onclick = function () {
 		document.getElementById('modal').style.display = 'block';
 	}
@@ -185,6 +197,14 @@
 		if (event.target == document.getElementById('modal')) {
 			document.getElementById('modal').style.display = 'none';
 		}
+	}
+
+	function hoverBunny() {
+		document.getElementById('bunnyLogo').src = bunnyArray[Math.floor(Math.random() * bunnyArray.length)];
+	}
+
+	function offBunny() {
+		document.getElementById('bunnyLogo').src = 'solid-blue-gray-bunny.png';
 	}
 
 </script>
