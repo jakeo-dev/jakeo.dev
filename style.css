@@ -60,7 +60,7 @@ body {
 }
 
 .projTitle {
-  font-size: 41px;
+  font-size: 38px;
   font-weight: bold;
   margin: 0;
 }
@@ -87,7 +87,8 @@ body {
 }
 
 .subtext {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: normal;
   margin: 0;
   margin-top: 10px;
 }
@@ -258,7 +259,7 @@ h4 {
 
 /* background of scrollbar */
 ::-webkit-scrollbar-track {
-  background: #8fb3c7;
+  background: #9fbece;
 }
 
 /* actual scrollbar */
@@ -281,7 +282,7 @@ h4 {
 }
 
 .project:hover {
-  transform: scale(1.025);
+  transform: scale(1.04);
 }
 
 #bunLink:link {
