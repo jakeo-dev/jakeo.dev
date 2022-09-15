@@ -2,171 +2,176 @@
 <html>
 
 <head>
-	<meta charset='utf-8'>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jorch.xyz</title>
 
-	<script src="https://kit.fontawesome.com/57c0dd6a0a.js" crossorigin="anonymous"></script>
-	<link href='solid-blue-gray-bunny.ico' rel='shortcut icon' type='image/ico'>
+	<script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
+	<link href='images/solid-blue-gray-bunny.ico' rel='shortcut icon' type='image/ico'>
 	<link href='style.css' rel='stylesheet'>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js" crossorigin="anonymous"
-		referrerpolicy="no-referrer"></script> -->
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js' crossorigin='anonymous'
+		referrerpolicy='no-referrer'></script> -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
 
 	<meta property='og:title' content='Jorch.xyz'>
-	<meta property='og:description' content='Jakeybakers' website'>
+	<meta property='og:description' content="Jakeybakers' website">
 	<meta name='theme-color' content='#83b5d3'>
 </head>
 
-<body>
+<!-- npx tailwindcss -i ./input.css -o ./style.css --watch -->
 
-	<div id='modal'>
-		<div id='modalContent'>
-			<p id='modalText'>Discord tag: jakeybakers#0808</p>
+<body class='text-center pb-10 m-0 font-LexendDeca'>
+
+	<!-- modal -->
+
+	<div id='modal' class='hidden bg-black/40 fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
+		<div class='text-3xl bg-slate-100 rounded-lg w-fit px-10 py-9 m-auto mt-48'>
+			<h1 class='m-0'>Discord tag: <a class='text-dsBlurple'>jakeybakers#0808</a></h1>
 		</div>
 	</div>
 
-	<ul id='navBar'>
+	<!-- banner -->
 
-		<div id='titleItem' class='navItem'>
-			<img src='solid-blue-gray-bunny.png' onmouseover='hoverBunny();' onmouseout='offBunny();' width='90'
-				height='90' alt='Solid blue gray bunny' id='bunnyLogo'>
+	<!-- <div
+		class='absolute top-0 left-0 bg-darkBlueGray float-left z-20 align-top drop-shadow-xl w-full no-underline p-6 m-0'>
+		<h1 class='block text-lightBlueGray text-4xl font-bold no-underline float-left m-0 cursor-default'>
+			banner text </h1>
+	</div> -->
 
-			<h1 id='title'><a class='t'>J</a><a class='t'>o</a><a class='t'>r</a><a class='t'>c</a><a class='t'>h</a><a
-					class='t' href='https://www.youtube.com/watch?v=-ZiXiW5-aGs' class='t'>.</a><a class='t'>x</a><a
-					class='t'>y</a><a class='t'>z</a></h1>
-			<h1 id='titleSubtext'>i make funny websites sometimes</h1>
+	<!-- nav bar -->
+
+	<ul
+		class='flex bg-lightBlueGray border-b-4 border-b-blueGray drop-shadow-sm z-10 list-none overflow-hidden w-full sticky top-0 left-0 p-0 m-0'>
+
+		<div class='flex flex-1 relative float-left align-top leading-none pt-6 pb-4 pl-5 p-7 no-underline m-0'>
+			<img src='images/solid-blue-gray-bunny.png' onmouseover='hoverBunny();' onmouseout='offBunny();' width='90'
+				height='90' alt='Solid blue gray bunny' class='object-contain mr-4 transition-all hover:scale-110'
+				id='bunnyLogo'>
+
+			<h1 class='block text-5xl font-bold text-darkBlueGray no-underline float-left m-0 cursor-default'>
+				Jorch<a href='https://www.youtube.com/watch?v=-ZiXiW5-aGs'
+					class='text-darkBlueGray no-underline cursor-default visited:text-darkBlueGray'>.</a>xyz
+			</h1>
+			<h1 class='text-xl font-bold text-darkBlueGray text-left no-underline mt-16 mb-1 -ml-56 cursor-default'>i
+				make funny websites sometimes</h1>
 		</div>
 
-		<div id='socialsItem' class='navItem'>
-			<div class='socialDiv' id='social1Div'>
-				<a class='socialA' id='social1' href='https://youtube.com/jakeybakers' target='_blank'><i
-						class='fa-brands fa-youtube fa-3x' aria-label='YouTube'></i></a>
+		<div class='flex flex-1 float-left justify-end items-center no-underline p-7 m-0'>
+
+			<div class='inline-block bg-transparent border-none ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a href='https://youtube.com/jakeybakers' target='_blank'><i
+						class='fa-brands fa-youtube fa-3x text-ytRed' aria-label='YouTube'></i></a>
 			</div>
 
-			<div class='socialDiv' id='social2Div'>
-				<a class='socialA' id='social2' href='https://twitter.com/jakeybakers0808' target='_blank'><i
-						class='fa-brands fa-twitter fa-3x' aria-label='Twitter'></i></a>
+			<div class='inline-block bg-transparent border-none ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a href='https://twitter.com/jakeybakers0808' target='_blank'><i
+						class='fa-brands fa-twitter fa-3x text-twBlue' aria-label='Twitter'></i></a>
 			</div>
 
-			<div class='socialDiv' id='social3Div'>
-				<a class='socialA' id='social3'><i class='fa-brands fa-discord fa-3x' aria-label='Discord'></i></a>
+			<div class='inline-block bg-transparent border-none ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a id='social3'><i class='fa-brands fa-discord fa-3x text-dsBlurple' aria-label='Discord'></i></a>
 			</div>
 
-			<div class='socialDiv' id='social4Div'>
-				<a class='socialA' id='social4' href='https://steamcommunity.com/id/jakeybakers' target='_blank'><i
-						class='fa-brands fa-steam fa-3x' aria-label='Steam'></i></a>
+			<div class='inline-block bg-transparent border-none ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a href='https://steamcommunity.com/id/jakeybakers' target='_blank'><i
+						class='fa-brands fa-steam fa-3x text-stGray' aria-label='Steam'></i></a>
 			</div>
 
-			<div class='socialDiv' id='social5Div'>
-				<a class='socialA' id='social5' href='https://github.com/jakeorch' target='_blank'><i
-						class='fa-brands fa-github fa-3x' aria-label='Github'></i></a>
+			<div class='inline-block bg-transparent border-none ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a href='https://github.com/jakeorch' target='_blank'><i class='fa-brands fa-github fa-3x text-gtBlack'
+						aria-label='Github'></i></a>
 			</div>
+
 		</div>
 
 	</ul>
 
-	<!-- <div id='lineMiddle'>
+	<!-- projects -->
 
-		<div id='line'></div> vertical line
+	<div class='inline-block justify-center items-center align-middle w-full lg:w-auto px-8 py-4 lg:px-14 lg:py-16 m-0'>
 
-	</div> -->
+		<div class='lg:flex lg:justify-center lg:items-center m-0'>
 
-	<div id='projectsDiv'>
-
-		<div class='row'>
-
-			<a class='link' id='artLink' href='https://art.jorch.xyz' target='_blank'>
-				<div class='project' id='artProj'>
-					<div class='fullProjTitle'>
-						<h2 class='projTitle'>Abstract Art Generator</h2>
-					</div>
-					<h3 class='subtext'>Generate never before seen pieces of abstract art</h3>
-					<h4 class='subtext'><i class="fa-solid fa-calendar-day"></i> August 2022</h4>
-					<h4 class='subtext'><i class="fa-solid fa-clock-rotate-left"></i> August 2022</h4>
-					<img src='art-ss.png' alt='Screenshot of the Abstract Art Generator website' class='ss'>
+			<a class='m-8' href='https://filter.jorch.xyz' target='_blank'>
+				<div
+					class='bg-flGrayBg border-4 rounded-xl border-flGray text-left p-7 transition-all hover:scale-105 lg:float-left'>
+					<h2 class='title text-flGray'>Word Filter</h2>
+					<h3 class='subtext text-flGray'>Find and remove words from text</h3>
+					<h4 class='subtext text-flGray'><i class='fa-solid fa-calendar-day'></i> August 2022</h4>
+					<h4 class='subtext text-flGray'><i class='fa-solid fa-clock-rotate-left'></i> August 2022</h4>
+					<img src='images/filter-ss.png' alt='Screenshot of the Word Filter website'
+						class='w-full h-60 mt-6 object-contain'>
 				</div>
 			</a>
 
-			<a class='link' id='fltLink' href='https://filter.jorch.xyz' target='_blank'>
-				<div class='project' id='fltProj'>
-					<div class='fullProjTitle'>
-						<h2 class='projTitle'>Word Filter</h2>
-					</div>
-					<h3 class='subtext'>Find and remove words from text</h3>
-					<h4 class='subtext'><i class="fa-solid fa-calendar-day"></i> August 2022</h4>
-					<h4 class='subtext'><i class="fa-solid fa-clock-rotate-left"></i> August 2022</h4>
-					<img src='filter-ss.png' alt='Screenshot of the Word Filter website' class='ss'>
+			<a class='m-8' href='https://cerebric.jorch.xyz' target='_blank'>
+				<div
+					class='bg-crRedBg border-4 rounded-xl border-crRed text-left p-7 transition-all hover:scale-105 lg:float-left'>
+					<h2 class='title text-crRed'>Cerebric</h2>
+					<h3 class='subtext text-crRed'>Compete against yourself to memorize text</h3>
+					<h4 class='subtext text-crRed'><i class='fa-solid fa-calendar-day'></i> May 2022</h4>
+					<h4 class='subtext text-crRed'><i class='fa-solid fa-clock-rotate-left'></i> August 2022</h4>
+					<img src='images/cerebric-ss.png' alt='Screenshot of the Cerebric website'
+						class='w-full h-60 mt-6 object-contain'>
 				</div>
 			</a>
 
 		</div>
 
-		<div class='row'>
+		<div class='lg:flex lg:justify-center lg:items-center m-0'>
 
-			<a class='link' id='cerLink' href='https://cerebric.jorch.xyz' target='_blank'>
-				<div class='project' id='cerProj'>
-					<div class='fullProjTitle'>
-						<h2 class='projTitle'>Cerebric</h2>
-					</div>
-					<h3 class='subtext'>Compete against yourself to memorize text</h3>
-					<h4 class='subtext'><i class="fa-solid fa-calendar-day"></i> May 2022</h4>
-					<h4 class='subtext'><i class="fa-solid fa-clock-rotate-left"></i> August 2022</h4>
-					<img src='cerebric-ss.png' alt='Screenshot of the Cerebric website' class='ss'>
+			<a class='m-8' href='https://tweet.jorch.xyz' target='_blank'>
+				<div
+					class='bg-twBlueBg border-4 rounded-xl border-twBlue text-left p-7 transition-all hover:scale-105 lg:float-left'>
+					<h2 class='title text-twBlue'>Tweet Intent Generator</h2>
+					<h3 class='subtext text-twBlue'>Generate a link to configure a tweet that is ready to post</h3>
+					<h4 class='subtext text-twBlue'><i class='fa-solid fa-calendar-day'></i> May 2022</h4>
+					<h4 class='subtext text-twBlue'><i class='fa-solid fa-clock-rotate-left'></i> May 2022</h4>
+					<img src='images/tweet-ss.png' alt='Screenshot of the Tweet Intent Generator website'
+						class='w-full h-60 mt-6 object-contain'>
 				</div>
 			</a>
 
-			<a class='link' id='tweLink' href='https://tweet.jorch.xyz' target='_blank'>
-				<div class='project' id='tweProj'>
-					<div class='fullProjTitle'>
-						<h2 class='projTitle'>Tweet Intent Generator</h2>
-					</div>
-					<h3 class='subtext'>Generate a link to configure a tweet that is ready to post</h3>
-					<h4 class='subtext'><i class="fa-solid fa-calendar-day"></i> May 2022</h4>
-					<h4 class='subtext'><i class="fa-solid fa-clock-rotate-left"></i> May 2022</h4>
-					<img src='tweet-ss.png' alt='Screenshot of the Tweet Intent Generator website' class='ss'>
-				</div>
-			</a>
-
-		</div>
-
-		<div class='row'>
-
-			<a class='link' id='decLink' href='https://decorate-a-tree.jorch.xyz' target='_blank'>
-				<div class='project' id='decProj'>
-					<div class='fullProjTitle'>
-						<h2 class='projTitle'>Decorate a Tree</h2>
-					</div>
-					<h3 class='subtext'>Decorate your own digital Christmas tree</h3>
-					<h4 class='subtext'><i class="fa-solid fa-calendar-day"></i> December 2021</h4>
-					<h4 class='subtext'><i class="fa-solid fa-clock-rotate-left"></i> January 2022</h4>
-					<img src='tree-ss.png' alt='Screenshot of the Decorate a Tree website' class='ss'>
-				</div>
-			</a>
-
-			<a class='link' id='emoLink' href='https://emoticons.jorch.xyz' target='_blank'>
-				<div class='project' id='emoProj'>
-					<div class='fullProjTitle'>
-						<h2 class='projTitle'>Emoticon Generator</h2>
-					</div>
-					<h3 class='subtext'>Randomly generate unique emoticon faces</h3>
-					<h4 class='subtext'><i class="fa-solid fa-calendar-day"></i> November 2021</h4>
-					<h4 class='subtext'><i class="fa-solid fa-clock-rotate-left"></i> May 2022</h4>
-					<img src='emoticon-ss.png' alt='Screenshot of the Emoticon Generator website' class='ss'>
+			<a class='m-8' href='https://decorate-a-tree.jorch.xyz' target='_blank'>
+				<div
+					class='bg-trGreenBg border-4 rounded-xl border-trGreen text-left p-7 transition-all hover:scale-105 lg:float-left'>
+					<h2 class='title text-trGreen'>Decorate a Tree</h2>
+					<h3 class='subtext text-trGreen'>Decorate your own digital Christmas tree</h3>
+					<h4 class='subtext text-trGreen'><i class='fa-solid fa-calendar-day'></i> December 2021</h4>
+					<h4 class='subtext text-trGreen'><i class='fa-solid fa-clock-rotate-left'></i> January 2022</h4>
+					<img src='images/tree-ss.png' alt='Screenshot of the Decorate a Tree website'
+						class='w-full h-60 mt-6 object-contain'>
 				</div>
 			</a>
 
 		</div>
 
-		<div class='row'>
+		<div class='lg:flex lg:justify-center lg:items-center m-0'>
 
-			<a class='link' id='bunLink' href='https://bunnies.jorch.xyz' target='_blank'>
-				<div class='project' id='bunProj'>
-					<div class='fullProjTitle'>
-						<h2 class='projTitle'>Colorful Bunnies</h2>
-					</div>
-					<h3 class='subtext'>Browse and download some colorful bunnies</h3>
-					<h4 class='subtext'><i class="fa-solid fa-calendar-day"></i> March 2021</h4>
-					<h4 class='subtext'><i class="fa-solid fa-clock-rotate-left"></i> June 2022</h4>
-					<img src='bunnies-ss.png' alt='Screenshot of the Colorful Bunnies website' class='ss' id='bunSS'>
+			<a class='m-8' href='https://emoticons.jorch.xyz' target='_blank'>
+				<div
+					class='bg-emYellowBg border-4 rounded-xl border-emYellow text-left p-7 transition-all hover:scale-105 lg:float-left'>
+					<h2 class='title text-emYellow'>Emoticon Generator</h2>
+					<h3 class='subtext text-emYellow'>Randomly generate unique emoticon faces</h3>
+					<h4 class='subtext text-emYellow'><i class='fa-solid fa-calendar-day'></i> November 2021</h4>
+					<h4 class='subtext text-emYellow'><i class='fa-solid fa-clock-rotate-left'></i> May 2022</h4>
+					<img src='images/emoticons-ss.png' alt='Screenshot of the Emoticon Generator website'
+						class='w-full h-60 mt-6 object-contain'>
+				</div>
+			</a>
+
+			<a class='m-8' href='https://bunnies.jorch.xyz' target='_blank'>
+				<div
+					class='bg-bnOrangeBg border-4 rounded-xl border-bnOrange text-left p-7 transition-all hover:scale-105 lg:float-left'>
+					<h2 class='title text-bnOrange'>Colorful Bunnies</h2>
+					<h3 class='subtext text-bnOrange'>Browse and download some colorful bunnies</h3>
+					<h4 class='subtext text-bnOrange'><i class='fa-solid fa-calendar-day'></i> March 2021</h4>
+					<h4 class='subtext text-bnOrange'><i class='fa-solid fa-clock-rotate-left'></i> June 2022</h4>
+					<img src='images/bunnies-ss.png' alt='Screenshot of the Colorful Bunnies website'
+						class='w-full h-60 mt-6 object-contain'>
 				</div>
 			</a>
 
@@ -176,37 +181,6 @@
 
 </body>
 
-<script>
-
-	let bunnyArray = [
-		'red-bunny-2022.png',
-		'orange-bunny-2022.png',
-		'yellow-bunny-2022.png',
-		'green-bunny-2022.png',
-		'blue-bunny-2022.png',
-		'purple-bunny-2022.png',
-		'pink-bunny-2022.png',
-		'potpourri-bunny.png'
-	]
-
-	document.getElementById('social3').onclick = function () {
-		document.getElementById('modal').style.display = 'block';
-	}
-
-	window.onclick = function (event) {
-		if (event.target == document.getElementById('modal')) {
-			document.getElementById('modal').style.display = 'none';
-		}
-	}
-
-	function hoverBunny() {
-		document.getElementById('bunnyLogo').src = bunnyArray[Math.floor(Math.random() * bunnyArray.length)];
-	}
-
-	function offBunny() {
-		document.getElementById('bunnyLogo').src = 'solid-blue-gray-bunny.png';
-	}
-
-</script>
-
 </html>
+
+<script src='script.js'></script>

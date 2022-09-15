@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply text-3xl font-bold text-left m-0;
+  }
+
+  .subtext {
+    @apply text-xl font-normal text-left m-0 mt-2;
+  }
+}
