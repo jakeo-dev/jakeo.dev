@@ -662,10 +662,6 @@ video {
   margin-left: 0.75rem;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -803,7 +799,7 @@ video {
 
 .bg-lightBlueGray {
   --tw-bg-opacity: 1;
-  background-color: rgb(214 240 255 / var(--tw-bg-opacity));
+  background-color: rgb(222 243 255 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -956,7 +952,7 @@ video {
 
 .text-lightBlueGray {
   --tw-text-opacity: 1;
-  color: rgb(214 240 255 / var(--tw-text-opacity));
+  color: rgb(222 243 255 / var(--tw-text-opacity));
 }
 
 .text-darkBlueGray {
@@ -1032,6 +1028,15 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.hero {
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url("images/bunnies-banner-v4-blurred.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .visited\:text-darkBlueGray:visited {

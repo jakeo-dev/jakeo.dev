@@ -4,10 +4,23 @@
 
 @layer components {
   .title {
-    @apply text-3xl font-bold text-left m-0;
+    @apply text-3xl font-bold text-left;
   }
 
   .subtext {
-    @apply text-xl font-normal text-left m-0 mt-2;
+    @apply text-xl font-normal text-left mt-2;
   }
+
+  .pImg {
+    @apply w-full h-auto lg:h-60 mt-6 object-contain;
+  }
+}
+
+.hero {
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url("images/bunnies-banner-v4-blurred.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
