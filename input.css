@@ -18,7 +18,10 @@
 
 .hero {
   width: 100%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
     url("images/bunnies-banner-v4-blurred.png");
   background-position: center;
   background-repeat: repeat;

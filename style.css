@@ -629,8 +629,8 @@ video {
   margin: auto;
 }
 
-.m-7 {
-  margin: 1.75rem;
+.m-8 {
+  margin: 2rem;
 }
 
 .mx-0 {
@@ -642,8 +642,8 @@ video {
   margin-top: 12rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .mt-16 {
@@ -708,10 +708,6 @@ video {
   cursor: pointer;
 }
 
-.list-none {
-  list-style-type: none;
-}
-
 .items-center {
   align-items: center;
 }
@@ -724,10 +720,6 @@ video {
   overflow: auto;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -736,12 +728,8 @@ video {
   border-radius: 0.75rem;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
-.border-b-4 {
-  border-bottom-width: 4px;
+.border-\[3px\] {
+  border-width: 3px;
 }
 
 .border-none {
@@ -778,11 +766,6 @@ video {
   border-color: rgb(241 140 63 / var(--tw-border-opacity));
 }
 
-.border-b-blueGray {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(131 181 211 / var(--tw-border-opacity));
-}
-
 .bg-black\/40 {
   background-color: rgb(0 0 0 / 0.4);
 }
@@ -799,7 +782,7 @@ video {
 
 .bg-lightBlueGray {
   --tw-bg-opacity: 1;
-  background-color: rgb(222 243 255 / var(--tw-bg-opacity));
+  background-color: rgb(214 239 255 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -849,6 +832,10 @@ video {
   padding: 0px;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-7 {
   padding: 1.75rem;
 }
@@ -863,6 +850,11 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -875,22 +867,6 @@ video {
 
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
 }
 
 .text-left {
@@ -952,7 +928,7 @@ video {
 
 .text-lightBlueGray {
   --tw-text-opacity: 1;
-  color: rgb(222 243 255 / var(--tw-text-opacity));
+  color: rgb(214 239 255 / var(--tw-text-opacity));
 }
 
 .text-darkBlueGray {
@@ -1032,7 +1008,10 @@ video {
 
 .hero {
   width: 100%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
     url("images/bunnies-banner-v4-blurred.png");
   background-position: center;
   background-repeat: repeat;
@@ -1060,9 +1039,9 @@ video {
     float: left;
   }
 
-  .md\:mx-7 {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .md\:ml-5 {
@@ -1101,9 +1080,5 @@ video {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .md\:pt-7 {
-    padding-top: 1.75rem;
   }
 }
