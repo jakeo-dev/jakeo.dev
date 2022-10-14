@@ -865,6 +865,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1076,5 +1080,9 @@ video {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 }
