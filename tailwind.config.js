@@ -14,11 +14,12 @@ module.exports = {
         'dsBlurple': '#5865f2',
         'stGray': '#2a475e',
         'gtBlack': '#333333',
-        'bnOrange': '#f18c3f',
-        'emYellow': '#d4b30c',
-        'trGreen': '#209151',
-        'crRed': '#d63e3e',
-        'flGray': '#878787',
+
+        'defaultGray': '#4f4f4f',
+        'bnOrange': '#b05919',
+        'trGreen': '#17693a',
+        'twBlueProj': '#0e69a1',
+        'crRed': '#bd3737',
 
         'bnOrangeBg': '#ffddc1',
         'emYellowBg': '#fffab8',

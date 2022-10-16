@@ -11,8 +11,12 @@
     @apply text-xl font-normal text-left mt-2;
   }
 
+  .button {
+    @apply block border-[3px] rounded-3xl text-xl text-center p-2 mt-8 transition-all hover:scale-105;
+  }
+
   .pImg {
-    @apply w-full h-auto lg:h-60 mt-6 object-contain;
+    @apply w-full h-auto lg:h-64 object-contain mt-6;
   }
 }
 
