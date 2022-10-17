@@ -15,5 +15,6 @@ function hoverBunny() {
 }
 
 function offBunny() {
-    document.getElementById('bunnyLogo').src = 'images/solid-blue-gray-bunny.png';
+    document.getElementById('bunnyLogo').src = 'images/pumpkin-head-bunny.png';
+   /* normal: solid-blue-gray-bunny.png, halloween: pumpkin-head-bunny.png */
 }

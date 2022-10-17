@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'lightBlueGray': '#d6efff',
-        'blueGray': '#83b5d3',
-        'darkBlueGray': '#3f5461',
+        'lightBlueGray': '#ffe6cf', /* normal: #d6efff, halloween: #ffe6cf */
+        'blueGray': '#d3b083', /* normal: #83b5d3, halloween: #d3b083 */
+        'darkBlueGray': '#4d2c0c', /* normal: #3f5461, halloween: #4d2c0c */
         'ytRed': '#ff0000',
         'twBlue': '#1b9beb',
         'dsBlurple': '#5865f2',
@@ -26,7 +26,7 @@ module.exports = {
         'trGreenBg': '#afedc1',
         'twBlueBg': '#bfe6ff',
         'crRedBg': '#ffc4c4',
-        'flGrayBg': '#ebebeb'
+        'flGrayBg': '#ebebeb',
       },
 
       fontFamily: {
