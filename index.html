@@ -1,31 +1,199 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <title>Rick Roll Roulette</title>
-    <link href='style.css' rel='stylesheet'>
-    <link href='rick.ico' rel='shortcut icon' type='image/ico'>
-    <script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Six+Caps&display=swap" rel="stylesheet">
-    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js' crossorigin='anonymous'
-        referrerpolicy='no-referrer'></script> -->
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jorch.xyz</title>
 
-    <meta property='og:title' content='Rick Roll Roulette'>
-    <meta name='theme-color' content='#a62424'>
+	<script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
+	<link href='images/solid-blue-gray-bunny.ico' rel='shortcut icon' type='image/ico'>
+	<link href='style.css' rel='stylesheet'>
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js' crossorigin='anonymous'
+		referrerpolicy='no-referrer'></script> -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+	<meta property='og:title' content='Jorch.xyz'>
+	<meta property='og:description' content="Jakeybakers' website">
+	<meta name='theme-color' content='#83b5d3'>
 </head>
 
-<body>
+<!-- npm run start -->
 
-    <h1 id='title'>RICK ROLL ROULETTE</h1>
+<body class='hero text-center p-0 m-0 font-LexendDeca'>
 
-    <div id='buttonsDiv'>
-        <button onclick='youGot();' class='button' id='spinButton'>CLICK TO BEGIN...</button>
-        <button onclick='mute();' class='button' id='muteButton' aria-label='Mute/unmute volume'> <i
-                class='fas fa-volume-up' id='vOn'></i><i class='fas fa-volume-mute' id='vOff'></i> </button>
-    </div>
+	<!-- modal -->
 
-    <h2 id='numberT'></h2>
-    <h3 id='result'></h3>
+	<div id='modal' class='hidden bg-black/40 fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
+		<div class='text-3xl bg-slate-100 rounded-lg w-fit px-10 py-9 m-auto mt-48'>
+			<h1 class='m-0'>Discord tag: <a class='text-dsBlurple'>jakeybakers#0808</a></h1>
+		</div>
+	</div>
+
+	<!-- banner -->
+
+	<header class='md:flex drop-shadow-2xl z-20 top-0 left-0 p-0 m-0'>
+		<div class='bg-darkBlueGray float-left align-top w-full p-6 m-0'>
+			<h1 class='block text-lightBlueGray text-4xl font-bold float-left m-0 cursor-default'><i
+					class="fa-solid fa-circle-exclamation"></i> On Halloween only: <a href='https://roulette.jorch.xyz'
+					target='_blank' class='underline'>roulette.jorch.xyz</a></h1>
+		</div>
+	</header>
+
+	<!-- nav bar -->
+
+	<header class='md:flex sticky bg-lightBlueGray drop-shadow-sm w-full z-10 top-0 left-0 p-0 m-0'>
+
+		<div class='flex flex-1 relative float-left align-top leading-none w-full p-5 no-underline m-0'>
+			<img src='images/pumpkin-head-bunny.png' onmouseover='hoverBunny();' onmouseout='offBunny();' width='75'
+				height='75' alt='Solid blue gray bunny' class='object-contain mr-5 transition-all hover:scale-110'
+				id='bunnyLogo'>
+			<!-- normal: solid-blue-gray-bunny.png, halloween: pumpkin-head-bunny.png -->
+
+			<h1
+				class='flex text-5xl font-bold text-darkBlueGray no-underline float-left items-center m-0 cursor-default'>
+				Jorch<a href='https://www.youtube.com/watch?v=-ZiXiW5-aGs'
+					class='text-darkBlueGray no-underline cursor-default visited:text-darkBlueGray'>.</a>xyz
+			</h1>
+			<!-- <h1 class='text-xl font-bold text-darkBlueGray text-left no-underline mt-16 mb-1 -ml-56 cursor-default'>
+				i make funny websites sometimes</h1> -->
+		</div>
+
+		<div
+			class='flex flex-1 w-full justify-center md:justify-end text-justify items-center no-underline px-7 pb-5 m-0 md:px-5 md:pb-0'>
+
+			<div
+				class='inline-block bg-transparent border-none ml-autp md:ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a href='https://www.youtube.com/channel/UCcfnI8UBcJikmHpqCtogl7A' target='_blank'><i
+						class='fa-brands fa-youtube fa-3x text-ytRed' aria-label='YouTube'></i></a>
+			</div>
+
+			<div
+				class='inline-block bg-transparent border-none ml-auto md:ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a href='https://twitter.com/jakeybakers0808' target='_blank'><i
+						class='fa-brands fa-twitter fa-3x text-twBlue' aria-label='Twitter'></i></a>
+			</div>
+
+			<div
+				class='inline-block bg-transparent border-none ml-auto md:ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a id='social3'><i class='fa-brands fa-discord fa-3x text-dsBlurple' aria-label='Discord'></i></a>
+			</div>
+
+			<div
+				class='inline-block bg-transparent border-none ml-auto md:ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a href='https://steamcommunity.com/id/jakeybakers' target='_blank'><i
+						class='fa-brands fa-steam fa-3x text-stGray' aria-label='Steam'></i></a>
+			</div>
+
+			<div
+				class='inline-block bg-transparent border-none ml-auto md:ml-5 cursor-pointer transition-all hover:scale-110'>
+				<a href='https://github.com/jakeorch' target='_blank'><i class='fa-brands fa-github fa-3x text-gtBlack'
+						aria-label='Github'></i></a>
+			</div>
+
+		</div>
+
+	</header>
+
+	<!-- projects -->
+
+	<div class='inline-block justify-center items-center align-middle w-full md:w-auto p-0 my-8 md:mx-14 md:my-16'>
+
+		<h1 class='text-4xl font-bold text-left text-gray-600 border-b-[3px] border-b-gray-600 pl-8 pb-8'>Websites</h1>
+
+		<div class='md:flex md:justify-center md:items-center m-0'>
+
+			<div class='text-left box-border p-7 lg:m-8 md:float-left'>
+				<h2 class='title text-gray-600'>Text Filter</h2>
+				<h3 class='subtext text-gray-600'>Filter strings from text in a number of different ways</h3>
+				<h4 class='subtext text-gray-600'><i class='fa-solid fa-calendar-day mr-2'
+						title='Initial release'></i>August 2022</h4>
+				<h4 class='subtext text-gray-600'><i class='fa-solid fa-clock-rotate-left mr-2'
+						title='Last updated'></i>October 2022</h4>
+				<img src='images/filter-ss.png' alt='Screenshot of the Word Filter website' class='pImg'>
+				<a class='button border-gray-600 text-gray-600 hover:bg-gray-600' href='https://filter.jorch.xyz'
+					target='_blank'>Visit</a>
+			</div>
+
+			<div class='text-left box-border p-7 lg:m-8 md:float-left'>
+				<h2 class='title text-crRed'>Cerebric</h2>
+				<h3 class='subtext text-crRed'>A speed typing website to help you study</h3>
+				<h4 class='subtext text-crRed'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>May
+					2022</h4>
+				<h4 class='subtext text-crRed'><i class='fa-solid fa-clock-rotate-left mr-2'
+						title='Last updated'></i>August 2022</h4>
+				<img src='images/cerebric-ss.png' alt='Screenshot of the Cerebric website' class='pImg'>
+				<a class='button border-crRed text-crRed hover:bg-crRed' href='https://cerebric.jorch.xyz'
+					target='_blank'>Visit</a>
+			</div>
+
+		</div>
+
+		<div class='md:flex md:justify-center md:items-center m-0'>
+
+			<div class='text-left box-border p-7 lg:m-8 md:float-left'>
+				<h2 class='title text-twBlueProj'>Tweet Intent Generator</h2>
+				<h3 class='subtext text-twBlueProj'>Configure a tweet that is ready to post from a generated link</h3>
+				<h4 class='subtext text-twBlueProj'><i class='fa-solid fa-calendar-day mr-2'
+						title='Initial release'></i>May
+					2022</h4>
+				<h4 class='subtext text-twBlueProj'><i class='fa-solid fa-clock-rotate-left mr-2'
+						title='Last updated'></i>September 2022</h4>
+				<img src='images/tweet-ss.png' alt='Screenshot of the Tweet Intent Generator website' class='pImg'>
+				<a class='button border-twBlueProj text-twBlueProj hover:bg-twBlueProj' href='https://tweet.jorch.xyz'
+					target='_blank'>Visit</a>
+			</div>
+
+			<div class='text-left box-border p-7 lg:m-8 md:float-left'>
+				<h2 class='title text-trGreen'>Decorate a Tree</h2>
+				<h3 class='subtext text-trGreen'>Decorate your own digital Christmas tree</h3>
+				<h4 class='subtext text-trGreen'><i class='fa-solid fa-calendar-day mr-2'
+						title='Initial release'></i>December 2021</h4>
+				<h4 class='subtext text-trGreen'><i class='fa-solid fa-clock-rotate-left mr-2'
+						title='Last updated'></i>January 2022</h4>
+				<img src='images/tree-ss.png' alt='Screenshot of the Decorate a Tree website' class='pImg'>
+				<div class='flex'>
+					<a class='button flex-1 border-trGreen text-trGreen hover:bg-trGreen'
+						href='https://decorate-a-tree.jorch.xyz' target='_blank'>Visit</a>
+					<!-- <a class='button border-trGreen text-trGreen hover:bg-trGreen px-4 ml-4'
+						href='https://beta.decorate-a-tree.jorch.xyz' target='_blank'>Beta</a> -->
+				</div>
+			</div>
+
+		</div>
+
+		<div class='md:flex md:justify-center md:items-center m-0'>
+
+			<div class='text-left p-7 lg:m-8 md:float-left'>
+				<h2 class='title text-gray-600'>Emoticon Generator</h2>
+				<h3 class='subtext text-gray-600'>Randomly generate unique emoticon faces</h3>
+				<h4 class='subtext text-gray-600'><i class='fa-solid fa-calendar-day mr-2'
+						title='Initial release'></i>November 2021</h4>
+				<h4 class='subtext text-gray-600'><i class='fa-solid fa-clock-rotate-left mr-2'
+						title='Last updated'></i>October 2022</h4>
+				<img src='images/emoticons-ss.png' alt='Screenshot of the Emoticon Generator website' class='pImg'>
+				<a class='button border-gray-600 text-gray-600 hover:bg-gray-600' href='https://emoticons.jorch.xyz'
+					target='_blank'>Visit</a>
+			</div>
+
+			<div class='text-left p-7 lg:m-8 md:float-left'>
+				<h2 class='title text-bnOrange'>Colorful Bunnies</h2>
+				<h3 class='subtext text-bnOrange'>Browse and download some colorful bunnies</h3>
+				<h4 class='subtext text-bnOrange'><i class='fa-solid fa-calendar-day mr-2'
+						title='Initial release'></i>March 2021</h4>
+				<h4 class='subtext text-bnOrange'><i class='fa-solid fa-clock-rotate-left mr-2'
+						title='Last updated'></i>October 2022</h4>
+				<img src='images/bunnies-ss.png' alt='Screenshot of the Colorful Bunnies website' class='pImg'>
+				<a class='button border-bnOrange text-bnOrange hover:bg-bnOrange' href='https://bunnies.jorch.xyz'
+					target='_blank'>Visit</a>
+			</div>
+
+		</div>
+
+	</div>
 
 </body>
 
