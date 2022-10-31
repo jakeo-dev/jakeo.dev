@@ -1,12 +1,12 @@
 document.getElementById('social3').onclick = function () {
-    document.getElementById('modal').classList.add("block");
-    document.getElementById('modal').classList.remove("hidden");
+    document.getElementById('modal').classList.add('block');
+    document.getElementById('modal').classList.remove('hidden');
 }
 
 window.onclick = function (event) {
     if (event.target == document.getElementById('modal')) {
-        document.getElementById('modal').classList.add("hidden");
-        document.getElementById('modal').classList.remove("block");
+        document.getElementById('modal').classList.add('hidden');
+        document.getElementById('modal').classList.remove('block');
     }
 }
 
