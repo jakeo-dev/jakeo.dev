@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'lightBlueGray': '#ffe6cf', /* normal: #d6efff, halloween: #ffe6cf */
-        'blueGray': '#d3b083', /* normal: #83b5d3, halloween: #d3b083 */
-        'darkBlueGray': '#4d2c0c', /* normal: #3f5461, halloween: #4d2c0c */
+        'lightBlueGray': '#d6efff', /* normal: #d6efff, halloween: #ffe6cf */
+        'blueGray': '#83b5d3', /* normal: #83b5d3, halloween: #d3b083 */
+        'darkBlueGray': '#3f5461', /* normal: #3f5461, halloween: #4d2c0c */
         'ytRed': '#ff0000',
         'twBlue': '#1b9beb',
         'dsBlurple': '#5865f2',
