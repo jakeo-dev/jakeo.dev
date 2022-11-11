@@ -19,15 +19,3 @@
     @apply w-full h-auto lg:h-64 object-contain mt-6;
   }
 }
-
-.hero {
-  width: 100%;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("images/bunnies-banner-v4-blurred.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}

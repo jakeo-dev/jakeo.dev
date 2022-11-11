@@ -21,9 +21,7 @@
 	<meta name='theme-color' content='#83b5d3'>
 </head>
 
-<!-- npm run start -->
-
-<body class='hero text-center p-0 m-0 font-LexendDeca'>
+<body class='bg-gradient-to-b from-slate-200 to-slate-300 text-center p-0 m-0 font-LexendDeca'>
 
 	<!-- modal -->
 
@@ -36,8 +34,8 @@
 	<!-- banner -->
 
 	<!-- <header class='md:flex drop-shadow-2xl z-20 top-0 left-0 p-0 m-0'>
-		<div class='bg-darkBlueGray float-left align-top w-full p-6 m-0'>
-			<h1 class='block text-lightBlueGray text-4xl font-bold float-left m-0 cursor-default'><i
+		<div class='bg-slate-200 float-left align-top w-full p-6 m-0'>
+			<h1 class='block text-slate-100 text-4xl font-bold float-left m-0 cursor-default'><i
 					class="fa-solid fa-circle-exclamation"></i> On Halloween only: <a href='https://roulette.jorch.xyz'
 					target='_blank' class='underline'>roulette.jorch.xyz</a></h1>
 		</div>
@@ -45,7 +43,8 @@
 
 	<!-- nav bar -->
 
-	<header class='md:flex sticky bg-lightBlueGray drop-shadow-sm w-full z-10 top-0 left-0 p-0 m-0'>
+	<header class='md:flex sticky bg-slate-700 drop-shadow-sm md:rounded-md z-10 top-0 md:top-6 left-0 p-0 md:mx-6'>
+		<!-- alternate header: md:rounded-lg md:top-6 md:mx-6 -->
 
 		<div class='flex flex-1 relative float-left align-top leading-none w-full p-6 pt-7 pl-5 no-underline m-0'>
 			<img src='images/solid-blue-gray-bunny.png' onmouseover='hoverBunny();' onmouseout='offBunny();' width='90'
@@ -54,44 +53,44 @@
 			<!-- normal: solid-blue-gray-bunny.png, halloween: pumpkin-head-bunny.png -->
 
 			<div>
-				<h1 class='text-5xl font-bold text-darkBlueGray no-underline m-0 cursor-default'>
+				<h1 class='text-5xl font-bold text-slate-200 no-underline m-0 cursor-default'>
 					Jorch<a href='https://www.youtube.com/watch?v=-ZiXiW5-aGs'
-						class='text-darkBlueGray no-underline cursor-default visited:text-darkBlueGray'>.</a>xyz
+						class='text-slate-200 no-underline cursor-default visited:text-slate-200'>.</a>xyz
 				</h1>
-				<h1 class='text-xl font-bold text-darkBlueGray text-left no-underline mt-4 cursor-default'>
-					the first web 6 website</h1>
+				<h1 class='text-xl font-bold text-slate-200 text-left no-underline mt-4 cursor-default'>
+					decorating trees...</h1>
 			</div>
 		</div>
 
 		<div
 			class='flex flex-1 w-full justify-center md:justify-end text-justify items-center no-underline px-9 pb-7 m-0 md:px-5 md:pb-0'>
 
-			<div
-				class='inline-block bg-transparent border-none ml-autp md:ml-5 cursor-pointer transition-all hover:scale-110'>
+			<div class='inline-block bg-transparent border-none ml-none cursor-pointer transition-all hover:scale-110'
+				title='Jake O.'>
 				<a href='https://www.youtube.com/channel/UCcfnI8UBcJikmHpqCtogl7A' target='_blank'><i
-						class='fa-brands fa-youtube fa-3x text-ytRed' aria-label='YouTube'></i></a>
+						class='fa-brands fa-youtube fa-3x text-red-300' aria-label='YouTube'></i></a>
 			</div>
 
-			<div
-				class='inline-block bg-transparent border-none ml-auto md:ml-5 cursor-pointer transition-all hover:scale-110'>
+			<div class='inline-block bg-transparent border-none ml-auto md:ml-6 cursor-pointer transition-all hover:scale-110'
+				title='@jakeybakers0808'>
 				<a href='https://twitter.com/jakeybakers0808' target='_blank'><i
-						class='fa-brands fa-twitter fa-3x text-twBlue' aria-label='Twitter'></i></a>
+						class='fa-brands fa-twitter fa-3x text-sky-300' aria-label='Twitter'></i></a>
 			</div>
 
-			<div
-				class='inline-block bg-transparent border-none ml-auto md:ml-5 cursor-pointer transition-all hover:scale-110'>
-				<a id='social3'><i class='fa-brands fa-discord fa-3x text-dsBlurple' aria-label='Discord'></i></a>
+			<div class='inline-block bg-transparent border-none ml-auto md:ml-6 cursor-pointer transition-all hover:scale-110'
+				title='jakeybakers#0808'>
+				<a id='social3'><i class='fa-brands fa-discord fa-3x text-indigo-300' aria-label='Discord'></i></a>
 			</div>
 
-			<div
-				class='inline-block bg-transparent border-none ml-auto md:ml-5 cursor-pointer transition-all hover:scale-110'>
+			<div class='inline-block bg-transparent border-none ml-auto md:ml-6 cursor-pointer transition-all hover:scale-110'
+				title='jakeybakers'>
 				<a href='https://steamcommunity.com/id/jakeybakers' target='_blank'><i
-						class='fa-brands fa-steam fa-3x text-stGray' aria-label='Steam'></i></a>
+						class='fa-brands fa-steam fa-3x text-stone-300' aria-label='Steam'></i></a>
 			</div>
 
-			<div
-				class='inline-block bg-transparent border-none ml-auto md:ml-5 cursor-pointer transition-all hover:scale-110'>
-				<a href='https://github.com/jakeorch' target='_blank'><i class='fa-brands fa-github fa-3x text-gtBlack'
+			<div class='inline-block bg-transparent border-none ml-auto md:ml-6 cursor-pointer transition-all hover:scale-110'
+				title='jakeorch'>
+				<a href='https://github.com/jakeorch' target='_blank'><i class='fa-brands fa-github fa-3x text-stone-300'
 						aria-label='Github'></i></a>
 			</div>
 
@@ -101,9 +100,9 @@
 
 	<!-- projects -->
 
-	<div class='inline-block justify-center items-center align-middle w-full md:w-auto p-0 my-8 md:mx-14 md:my-16'>
+	<div class='inline-block justify-center items-center align-middle w-full md:w-auto p-0 my-8 md:mx-14'>
 
-		<h1 class='text-4xl font-bold text-left text-gray-600 border-b-[3px] border-b-gray-600 pl-8 pb-8'>Websites</h1>
+		<!-- <h1 class='text-4xl font-bold text-left text-gray-600 border-b-[3px] border-b-gray-600 pl-8 pb-8'>Websites</h1> -->
 
 		<div class='md:flex md:justify-center md:items-center m-0'>
 
@@ -136,30 +135,30 @@
 		<div class='md:flex md:justify-center md:items-center m-0'>
 
 			<div class='text-left box-border p-7 lg:m-8 md:float-left'>
-				<h2 class='title text-twBlueProj'>Tweet Intent Generator</h2>
-				<h3 class='subtext text-twBlueProj'>Configure a tweet that is ready to post from a generated link</h3>
-				<h4 class='subtext text-twBlueProj'><i class='fa-solid fa-calendar-day mr-2'
+				<h2 class='title text-sky-700'>Tweet Intent Generator</h2>
+				<h3 class='subtext text-sky-700'>Configure a tweet that is ready to post from a generated link</h3>
+				<h4 class='subtext text-sky-700'><i class='fa-solid fa-calendar-day mr-2'
 						title='Initial release'></i>May
 					2022</h4>
-				<h4 class='subtext text-twBlueProj'><i class='fa-solid fa-clock-rotate-left mr-2'
+				<h4 class='subtext text-sky-700'><i class='fa-solid fa-clock-rotate-left mr-2'
 						title='Last updated'></i>September 2022</h4>
 				<img src='images/tweet-ss.png' alt='Screenshot of the Tweet Intent Generator website' class='pImg'>
-				<a class='button border-twBlueProj text-twBlueProj hover:bg-twBlueProj' href='https://tweet.jorch.xyz'
+				<a class='button border-sky-700 text-sky-700 hover:bg-sky-700' href='https://tweet.jorch.xyz'
 					target='_blank'>Visit</a>
 			</div>
 
 			<div class='text-left box-border p-7 lg:m-8 md:float-left'>
-				<h2 class='title text-trGreen'>Decorate a Tree</h2>
-				<h3 class='subtext text-trGreen'>Decorate your own digital Christmas tree</h3>
-				<h4 class='subtext text-trGreen'><i class='fa-solid fa-calendar-day mr-2'
+				<h2 class='title text-green-800'>Decorate a Tree</h2>
+				<h3 class='subtext text-green-800'>Decorate your own digital Christmas tree</h3>
+				<h4 class='subtext text-green-800'><i class='fa-solid fa-calendar-day mr-2'
 						title='Initial release'></i>December 2021</h4>
-				<h4 class='subtext text-trGreen'><i class='fa-solid fa-clock-rotate-left mr-2'
+				<h4 class='subtext text-green-800'><i class='fa-solid fa-clock-rotate-left mr-2'
 						title='Last updated'></i>January 2022</h4>
 				<img src='images/tree-ss.png' alt='Screenshot of the Decorate a Tree website' class='pImg'>
 				<div class='flex'>
-					<a class='button flex-1 border-trGreen text-trGreen hover:bg-trGreen'
+					<a class='button flex-1 border-green-800 text-green-800 hover:bg-green-800'
 						href='https://decorate-a-tree.jorch.xyz' target='_blank'>Visit</a>
-					<!-- <a class='button border-trGreen text-trGreen hover:bg-trGreen px-4 ml-4'
+					<!-- <a class='button border-green-800 text-green-800 hover:bg-green-800 px-4 ml-4'
 						href='https://beta.decorate-a-tree.jorch.xyz' target='_blank'>Beta</a> -->
 				</div>
 			</div>
@@ -181,14 +180,14 @@
 			</div>
 
 			<div class='text-left p-7 lg:m-8 md:float-left'>
-				<h2 class='title text-bnOrange'>Colorful Bunnies</h2>
-				<h3 class='subtext text-bnOrange'>Browse and download some colorful bunnies</h3>
-				<h4 class='subtext text-bnOrange'><i class='fa-solid fa-calendar-day mr-2'
+				<h2 class='title text-orange-700'>Colorful Bunnies</h2>
+				<h3 class='subtext text-orange-700'>Browse and download some colorful bunnies</h3>
+				<h4 class='subtext text-orange-700'><i class='fa-solid fa-calendar-day mr-2'
 						title='Initial release'></i>March 2021</h4>
-				<h4 class='subtext text-bnOrange'><i class='fa-solid fa-clock-rotate-left mr-2'
+				<h4 class='subtext text-orange-700'><i class='fa-solid fa-clock-rotate-left mr-2'
 						title='Last updated'></i>October 2022</h4>
 				<img src='images/bunnies-ss.png' alt='Screenshot of the Colorful Bunnies website' class='pImg'>
-				<a class='button border-bnOrange text-bnOrange hover:bg-bnOrange' href='https://bunnies.jorch.xyz'
+				<a class='button border-orange-700 text-orange-700 hover:bg-orange-700' href='https://bunnies.jorch.xyz'
 					target='_blank'>Visit</a>
 			</div>
 
