@@ -12,7 +12,7 @@
   }
 
   .button {
-    @apply block border-[3px] rounded-3xl text-xl text-center p-2 mt-8 transition-all hover:text-white/* hover:scale-105*/;
+    @apply block border-[3px] rounded-3xl text-xl text-center p-2 mt-8 transition-all hover:text-slate-600/* hover:scale-105*/;
   }
 
   .pImg {
