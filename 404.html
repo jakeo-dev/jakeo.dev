@@ -16,10 +16,17 @@
 
 <body>
 
-    <h1>that page doesn't exist...</h1>
-    <h2>...take this bunny</h2>
+    <div>
+        <h1>404</h1>
+    </div>
 
-    <img id='image' src='' onclick='window.open("https:\/\/bunnies.jorch.xyz")'>
+    <div>
+        <h2>that page doesn't exist...take this bunny</h2>
+    </div>
+
+    <div>
+        <img id='image' src='' onclick='window.open("https:\/\/jorch.xyz")'>
+    </div>
 
 </body>
 
@@ -30,8 +37,25 @@
         font-family: 'Lexend Deca', sans-serif;
     }
 
+    h1 {
+        font-size: 55px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     img {
         cursor: pointer;
+
     }
 </style>
 
