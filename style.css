@@ -531,7 +531,7 @@ video {
 .button {
   margin-top: 2rem;
   display: block;
-  border-radius: 1.5rem;
+  border-radius: 9999px;
   border-width: 3px;
   padding: 0.5rem;
   text-align: center;
@@ -728,11 +728,6 @@ video {
   border-color: rgb(253 186 116 / var(--tw-border-opacity));
 }
 
-.border-red-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(254 202 202 / var(--tw-border-opacity));
-}
-
 .border-b-gray-300 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -749,11 +744,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -797,8 +787,8 @@ video {
   padding: 1.5rem;
 }
 
-.p-7 {
-  padding: 1.75rem;
+.p-8 {
+  padding: 2rem;
 }
 
 .px-11 {
@@ -893,11 +883,6 @@ video {
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
-.text-slate-100 {
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
-}
-
 .text-slate-600 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
@@ -913,9 +898,9 @@ video {
   color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
-.text-slate-800 {
+.text-slate-700 {
   --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
+  color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 .text-stone-800 {
@@ -948,23 +933,14 @@ video {
   color: rgb(253 186 116 / var(--tw-text-opacity));
 }
 
-.text-slate-700 {
+.text-stone-700 {
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(68 64 60 / var(--tw-text-opacity));
 }
 
-.text-red-600 {
+.text-stone-900 {
   --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
-.text-red-200 {
-  --tw-text-opacity: 1;
-  color: rgb(254 202 202 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
+  color: rgb(28 25 23 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1026,9 +1002,9 @@ video {
   background-color: rgb(253 186 116 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-red-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+.hover\:text-stone-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(231 229 228 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -1092,12 +1068,21 @@ video {
     padding-right: 1.25rem;
   }
 
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .md\:pt-6 {
     padding-top: 1.5rem;
   }
 
   .md\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:pt-7 {
+    padding-top: 1.75rem;
   }
 }
 
