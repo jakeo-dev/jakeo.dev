@@ -11,10 +11,10 @@ window.onclick = function (event) {
 }
 
 function hoverBunny() {
-    document.getElementById('bunnyLogo').src = 'images/potpourri-bunny.png';
+    document.getElementById('bunnyLogo').src = 'https://bunnies.jorch.xyz/images/potpourri-bunny-v4.png';
 }
 
 function offBunny() {
-    document.getElementById('bunnyLogo').src = 'images/santa-bunny.png';
-    /* normal: solid-blue-gray-bunny.png, halloween: pumpkin-head-bunny.png, christmas: santa-bunny.png */
+    document.getElementById('bunnyLogo').src = 'https://bunnies.jorch.xyz/images/santa-bunny.png';
+	// normal: https://bunnies.jorch.xyz/images/solid-blue-gray-bunny.png
 }
