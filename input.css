@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 @layer components {
-  .title {
-    @apply text-3xl font-bold text-left;
-  }
-
   .subtext {
     @apply text-xl font-normal text-left mt-2;
   }
 
   .button {
-    @apply block border-[3px] rounded-full text-xl text-center p-2 mt-8 transition-all hover:text-slate-600/* hover:scale-105*/;
+    @apply border-[3px] rounded-full text-xl text-center p-2 mt-8 transition-all hover:text-slate-600/* hover:scale-105*/;
   }
 
   .pImg {
