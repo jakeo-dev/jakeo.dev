@@ -16,5 +16,5 @@ function hoverBunny() {
 
 function offBunny() {
     document.getElementById('bunnyLogo').src = 'https://bunnies.jorch.xyz/images/santa-bunny.png';
-	// normal: https://bunnies.jorch.xyz/images/solid-blue-gray-bunny.png
+    // normal: https://bunnies.jorch.xyz/images/solid-blue-gray-bunny.png
 }
