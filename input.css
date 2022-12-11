@@ -4,19 +4,19 @@
 
 @layer components {
   .proj {
-    @apply lg:w-full text-left bg-slate-700 border-[2.5px] border-slate-600 rounded-xl p-7 mx-4 my-8 md:m-11;
+    @apply lg:w-full text-left bg-slate-700 border-[2.5px] border-slate-600 rounded-xl py-7 mx-4 my-8 lg:m-11;
   }
 
   .subtext {
-    @apply text-lg text-slate-200 font-normal text-left mt-2;
+    @apply text-lg text-slate-200 text-left mt-2 mx-7;
   }
 
   .button {
-    @apply border-[2.5px] rounded-full text-lg text-center p-2 mt-8 transition-all hover:text-slate-700/* focus:ring-[2.5px] ring-blue-300 ring-offset-[2.5px] ring-offset-transparent */;
+    @apply border-[2.5px] rounded-full text-lg text-center p-2 mt-7 transition-all hover:text-slate-700/* focus:ring-[2.5px] ring-blue-300 ring-offset-[2.5px] ring-offset-transparent */;
   }
 
   .pImg {
-    @apply w-full h-auto lg:h-64 object-contain mt-6;
+    @apply w-full h-auto border-y-[2.5px] border-slate-600 mt-6;
   }
 }
 
