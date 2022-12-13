@@ -1,20 +1,20 @@
 document.getElementById('social3').onclick = function () {
-    document.getElementById('modal').classList.add('block');
-    document.getElementById('modal').classList.remove('hidden');
+    document.getElementById('modal').classList.remove('fadeIn');
+    document.getElementById('modal').classList.add('fadeOut');
 }
 
 window.onclick = function (event) {
     if (event.target == document.getElementById('modal')) {
-        document.getElementById('modal').classList.add('hidden');
-        document.getElementById('modal').classList.remove('block');
+        document.getElementById('modal').classList.add('fadeIn');
+        document.getElementById('modal').classList.remove('fadeOut');
     }
 }
 
 function hoverBunny() {
-    document.getElementById('bunnyLogo').src = 'https://bunnies.jorch.xyz/images/potpourri-bunny-v4.png';
+    document.getElementById('bunnyLogo').src = 'https://bunnies.jakeo.dev/images/potpourri-bunny-v4.png';
 }
 
 function offBunny() {
-    document.getElementById('bunnyLogo').src = 'https://bunnies.jorch.xyz/images/santa-bunny.png';
-    // normal: https://bunnies.jorch.xyz/images/solid-blue-gray-bunny.png
+    document.getElementById('bunnyLogo').src = 'https://bunnies.jakeo.dev/images/santa-bunny.png';
+    // normal: https://bunnies.jakeo.dev/images/solid-blue-gray-bunny.png
 }
