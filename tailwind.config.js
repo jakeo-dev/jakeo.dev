@@ -4,11 +4,15 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {
-      fontFamily: {
-        'LexendDeca': ['Lexend Deca', 'sans-serif']
-      }
+    fontFamily: {
+      'LexendDeca': ['Lexend Deca', 'sans-serif']
     },
+    extend: {
+      width: {
+        '1/16': '6.25%',
+        '1/20': '5%',
+      }
+    }
   },
   plugins: [],
 }
