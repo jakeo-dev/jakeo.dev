@@ -7,7 +7,6 @@
 	<title>JakeO.dev</title>
 
 	<link href='https://bunnies.jakeo.dev/images/santa-bunny.png' rel='shortcut icon' type='image/ico'>
-	<!-- normal: https://bunnies.jakeo.dev/images/solid-blue-gray-bunny.png -->
 	<link href='style.css' rel='stylesheet'>
 	<script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
 	<link rel='preconnect' href='https://fonts.googleapis.com'>
@@ -15,20 +14,20 @@
 	<link href='https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap' rel='stylesheet'>
 	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js' crossorigin='anonymous'
 		referrerpolicy='no-referrer'></script> -->
-	<script async src="https://cdn.splitbee.io/sb.js"></script>
+	<script async src='https://cdn.splitbee.io/sb.js'></script>
 
 	<meta property='og:title' content='JakeO.dev'>
-	<meta property='og:description' content="Jakeybakers' website">
+	<meta property='og:description' content='the official website of Jake O'>
 	<meta name='theme-color' content='#83b5d3'>
 	<meta property='og:image' content='https://bunnies.jakeo.dev/images/santa-bunny.png'>
-	<!-- normal: https://bunnies.jakeo.dev/images/solid-blue-gray-bunny.png -->
 </head>
 
-<body class='bg-gradient-to-b from-slate-800 to-slate-900 text-center p-0 m-0 font-LexendDeca'>
+<body
+	class='bg-gradient-to-b from-slate-800 to-slate-900 text-center p-0 pb-16 m-0 px-3 md:px-8 lg:px-20 xl:px-48 font-LexendDeca'>
 
 	<!-- modal -->
 
-	<div id='modal' class='fadeIn bg-black/40 fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
+	<div id='modal' class='fadeIn bg-black/50 fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
 		<div class='text-4xl bg-slate-200 rounded-lg w-full md:w-fit shadow-md px-11 py-9 m-auto mt-64'>
 			<h1 class='text-indigo-500'>jakeybakers#0808</h1>
 		</div>
@@ -37,7 +36,7 @@
 	<!-- banner -->
 
 	<!-- <header
-		class='flex w-full z-20 bg-slate-200 text-slate-600 border-slate-400 border-b-[2.5px] md:border-0 text-left align-top p-6 m-0'>
+		class='flex w-full z-20 bg-slate-200 text-slate-600 border-slate-400 border-b-2 md:border-0 text-left align-top p-6 m-0'>
 		<h1 class='block text-4xl font-bold float-left m-0 cursor-default'><i
 				class='fa-solid fa-circle-exclamation'></i> <a class='line-through'>Jorch.xyz</a> is now JakeO.dev!
 		</h1>
@@ -45,47 +44,43 @@
 
 	<!-- header -->
 
-	<div class='bg-gradient-to-t from-transparent to-slate-800/80 sticky top-0 left-0 p-0 md:pt-8 md:px-8'>
+	<div
+		class='bg-gradient-to-t from-transparent to-slate-800/70 sticky top-0 left-0 p-0 md:pt-8 px-3 md:px-8 lg:px-20 xl:px-44 -mx-3 md:-mx-8 lg:-mx-20 xl:-mx-44'>
 
 		<header class='bg-gradient-to-b from-slate-200 to-slate-300 md:flex rounded-b-lg md:rounded-lg z-10 shadow-md'>
 
 			<div class='flex flex-1 relative float-left align-top leading-none w-full p-6 pt-7 pl-5 no-underline m-0'>
 				<img src='https://bunnies.jakeo.dev/images/santa-bunny.png' onmouseover='hoverBunny();'
 					onmouseout='offBunny();' width='80' alt='JakeO.dev bunny logo'
-					class='object-contain mr-3 transition-all hover:scale-110' id='bunnyLogo'>
-				<!-- normal: https://bunnies.jakeo.dev/images/solid-blue-gray-bunny.png -->
+					class='object-contain mr-3 hover:scale-110 transition-all' id='bunnyLogo'>
 
-				<div class='text-rose-600 text-left font-bold no-underline cursor-default'>
-					<h1 class='text-4xl m-0'>JakeO<a href='https://www.youtube.com/watch?v=-ZiXiW5-aGs'>.</a>dev
-					</h1>
-					<h2 class='text-xl text-green-700 font-bold text-left no-underline mt-4'>
-						a programming rabbit
-					</h2>
+				<div class='text-rose-600 text-left font-extrabold no-underline cursor-default'>
+					<h1 class='text-4xl m-0'>JakeO<a href='https://www.youtube.com/watch?v=-ZiXiW5-aGs'>.</a>dev</h1>
+					<h2 class='text-xl text-green-700 mt-4'>a programming rabbit</h2>
 				</div>
 			</div>
 
 			<div
 				class='flex flex-1 w-full justify-center md:justify-end text-justify items-center no-underline px-9 pb-7 m-0 md:px-5 md:pb-0'>
 
-				<div class='inline-block bg-transparent ml-none md:ml-6 cursor-pointer transition-all hover:scale-110'
-					title='Jake O.'>
+				<div class='inline-block ml-none md:ml-6 cursor-pointer hover:scale-110 transition-all' title='Jake O.'>
 					<a href='https://www.youtube.com/channel/UCcfnI8UBcJikmHpqCtogl7A' target='_blank'><i
 							class='fa-brands fa-youtube fa-3x text-red-500' aria-label='YouTube'></i></a>
 				</div>
 
-				<div class='inline-block bg-transparent ml-auto md:ml-6 cursor-pointer transition-all hover:scale-110'
+				<div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 transition-all'
 					title='jakeybakers#0808'>
-					<button id='social3'><i class='fa-brands fa-discord fa-3x text-indigo-500'
+					<button id='dscdSocial'><i class='fa-brands fa-discord fa-3x text-indigo-500'
 							aria-label='Discord'></i></button>
 				</div>
 
-				<div class='inline-block bg-transparent ml-auto md:ml-6 cursor-pointer transition-all hover:scale-110'
+				<div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 transition-all'
 					title='jakeybakers'>
 					<a href='https://steamcommunity.com/id/jakeybakers' target='_blank'><i
 							class='fa-brands fa-steam fa-3x text-slate-700' aria-label='Steam'></i></a>
 				</div>
 
-				<div class='inline-block bg-transparent ml-auto md:ml-6 cursor-pointer transition-all hover:scale-110'
+				<div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 transition-all'
 					title='jakeorch'>
 					<a href='https://github.com/jakeorch' target='_blank'><i
 							class='fa-brands fa-github fa-3x text-gray-800' aria-label='Github'></i></a>
@@ -97,12 +92,112 @@
 
 	</div>
 
+	<!-- about me -->
+
+	<div class='mt-10 md:mt-20'>
+
+		<h1 class='text-2xl text-left text-slate-200 px-10 mb-8'>Welcome to my website!</h1>
+
+		<div
+			class='bg-gradient-to-b from-slate-600/50 to-slate-700/50 border-slate-500/70 rounded-lg text-lg text-left leading-8 text-slate-200 px-8 py-6'>
+
+			<p class='leading-10'>I enjoy building funny or useful sites whenever I feel like
+				it<!-- , trying out new designs with each one -->.</p>
+			<p class='leading-10'>The only language I know
+				well right now is JavaScript, but I hope to learn more programming things in the future.
+			</p>
+			<!-- <p class='leading-10'>I run a <a href='https://www.youtube.com/channel/UCcfnI8UBcJikmHpqCtogl7A'
+					target='_blank' class='bioLink'>YouTube channel</a> where I upload videos of random places I find
+				interesting to record and edit.</p> -->
+			<p class='leading-10'>The main font I use is called <a href='https://lexend.com' target='_blank'
+					class='bioLink'>Lexend Deca</a>, which is known for improving reading proficiency.</p>
+			<p class='leading-10'>Some other things that I like or interest me include:</p>
+			<p>• Google products and services</p>
+			<p>• Cats</p>
+			<p>• Bunnies</p>
+			<p>• Playing Terraria</p>
+			<p>• Browsing <a href='https://www.youtube.com/channel/UCcfnI8UBcJikmHpqCtogl7A' target='_blank'
+					class='bioLink'>YouTube</a></p>
+			<!-- <p>• Math and (occasionally) the sciences</p>
+			<p>• Spanish</p> -->
+			<p>• <a
+					class='hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-600 to-blue-500 transition-all'>Gradients</a>
+				and shadow</p>
+			<!-- <p>• Exclamation points!!!!!!!!!!!!!!!!!!!!!!</p> -->
+			<p>• Changing my website too often</p>
+
+		</div>
+	</div>
+
+	<!-- socials -->
+
+	<!-- <div class='mt-10 md:mt-20'>
+
+		<h1 class='text-2xl text-left text-slate-200 px-10 mb-8'>Socials</h1>
+
+		<div
+			class='bg-gradient-to-b from-slate-600/50 to-slate-700/50 border-slate-500/70 rounded-lg text-left leading-8 text-slate-200 px-8 py-6'>
+
+			<div class='hover:text-red-400 transition-all mb-6 cursor-pointer'>
+				<a href='https://www.youtube.com/channel/UCcfnI8UBcJikmHpqCtogl7A' target='_blank'
+					class='flex align-middle text-3xl'><i class='fa-brands fa-youtube text-5xl'
+						aria-label='YouTube'></i> Jake O.</a>
+			</div>
+
+			<div class='mb-6 cursor-pointer' title='jakeybakers#0808'>
+				<button id='dscdSocial' class='text-3xl'><i
+						class='fa-brands fa-discord text-5xl hover:text-indigo-400 transition-all'
+						aria-label='Discord'></i></button>
+			</div>
+
+			<div class='mb-6 cursor-pointer' title='jakeybakers'>
+				<a href='https://steamcommunity.com/id/jakeybakers' target='_blank' class='text-3xl'><i
+						class='fa-brands fa-steam text-5xl hover:text-slate-500 transition-all'
+						aria-label='Steam'></i></a>
+			</div>
+
+			<div class='cursor-pointer' title='jakeorch'>
+				<a href='https://github.com/jakeorch' target='_blank' class='text-3xl'><i
+						class='fa-brands fa-github text-5xl hover:text-gray-500 transition-all'
+						aria-label='Github'></i></a>
+			</div>
+
+		</div>
+	</div> -->
+
+	<!-- abilities -->
+
+	<!-- <div class='mt-10 md:mt-20'>
+
+		<h1 class='text-2xl text-left text-slate-200 px-10 mb-8'>Abilities</h1>
+
+		<div
+			class='bg-gradient-to-b from-slate-600/50 to-slate-700/50 border-slate-500/70 rounded-lg text-lg text-left leading-8 text-slate-200 px-8 py-6'>
+			<div class='block md:flex'>
+				<img src='https://img.freepik.com/free-icon/html-5_318-566077.jpg?w=2000' alt='HTML 5 logo'
+					class='abilityImg'>
+				<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png'
+					alt='CSS 3 logo' class='abilityImg'>
+				<img src='https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png' alt='JavaScript logo'
+					width='100' class='abilityImg'>
+				<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png'
+					alt='Tailwind CSS logo' class='abilityImg'>
+				<img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' alt='Github logo' class='abilityImg'>
+			</div>
+
+			<h2>Soon...</h2>
+			<div class='flex'>
+				<img src='https://camo.githubusercontent.com/abd19bd0c5030c8d874ed7073f1815d777004451d5967c447386840b80624569/68747470733a2f2f63646e2e61757468302e636f6d2f626c6f672f72656163742d6a732f72656163742e706e67'
+					alt='React logo' class='abilityImg mb-0'>
+			</div>
+		</div>
+	</div> -->
+
 	<!-- projects -->
 
-	<div
-		class='inline-block justify-center items-center align-middle w-full p-0 py-8 md:py-24 px-2 md:px-8 lg:px-16 xl:px-36'>
+	<div class='mt-10 md:mt-20'>
 
-		<!-- <h1 class='text-4xl font-bold text-left text-slate-300 border-b-[2.5px] border-b-slate-300 pl-8 pb-8 mt-10'>Websites</h1> -->
+		<h1 class='text-2xl text-left text-slate-200 px-10 mb-8'>Websites</h1>
 
 		<div class='proj'>
 			<img src='images/yearn-ss.png' alt='Screenshot of the Yearn List website' class='pImg'>
@@ -111,14 +206,14 @@
 				<h1 class='text-2xl text-blue-200 font-bold'>Yearn List</h1>
 				<h2 class='text-lg text-slate-200 mt-2'>Organize everything you yearn for into a simple list</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-						title='Initial release'></i>November 2022
-				</h2>
+						title='Initial release'></i>November 2022</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-clock-rotate-left mr-2'
-						title='Last updated'></i>November 2022
-				</h2>
+						title='Last updated'></i>December 2022</h2>
 				<div class='flex'>
-					<a class='button border-blue-200 text-blue-200 hover:bg-blue-200' href='https://yearn.jakeo.dev'
-						target='_blank'>Visit</a>
+					<a class='button border-blue-200 text-blue-200 hover:bg-blue-200 w-full'
+						href='https://yearn.jakeo.dev' target='_blank'>Visit</a>
+					<a class='button border-blue-200 text-blue-200 hover:bg-blue-200 px-5 ml-3'
+						href='https://github.com/jakeorch/yearn-list' target='_blank'>Github</a>
 				</div>
 			</div>
 		</div>
@@ -130,33 +225,33 @@
 				<h1 class='text-2xl text-stone-200 font-bold'>Text Filter</h1>
 				<h2 class='text-lg text-slate-200 mt-2'>Filter strings from text in a number of different ways</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-						title='Initial release'></i>August 2022
-				</h2>
+						title='Initial release'></i>August 2022</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-clock-rotate-left mr-2'
-						title='Last updated'></i>November 2022
-				</h2>
+						title='Last updated'></i>November 2022</h2>
 				<div class='flex'>
-					<a class='button border-stone-200 text-stone-200 hover:bg-stone-200' href='https://filter.jakeo.dev'
-						target='_blank'>Visit</a>
+					<a class='button border-stone-200 text-stone-200 hover:bg-stone-200 w-full'
+						href='https://filter.jakeo.dev' target='_blank'>Visit</a>
+					<a class='button border-stone-200 text-stone-200 hover:bg-stone-200 px-5 ml-3'
+						href='https://github.com/jakeorch/text-filter' target='_blank'>Github</a>
 				</div>
 			</div>
 		</div>
 
 		<div class='proj'>
-			<img src='images/cerebric-ss.png' alt='Screenshot of the Cerebric website' class='pImg'>
+			<img src='images/cerebric-ss.png' alt='Screenshot of the Cerebric website' class='pImg object-right'>
 
 			<div class='w-full text-left p-6 md:p-8'>
 				<h1 class='text-2xl text-red-200 font-bold'>Cerebric</h1>
 				<h2 class='text-lg text-slate-200 mt-2'>A speed typing website to help you study</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-						title='Initial release'></i>May 2022
-				</h2>
+						title='Initial release'></i>May 2022</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-clock-rotate-left mr-2'
-						title='Last updated'></i>November 2022
-				</h2>
+						title='Last updated'></i>November 2022</h2>
 				<div class='flex'>
-					<a class='button border-red-200 text-red-200 hover:bg-red-200' href='https://cerebric.jakeo.dev'
-						target='_blank'>Visit</a>
+					<a class='button border-red-200 text-red-200 hover:bg-red-200 w-full'
+						href='https://cerebric.jakeo.dev' target='_blank'>Visit</a>
+					<a class='button border-red-200 text-red-200 hover:bg-red-200 px-5 ml-3'
+						href='https://github.com/jakeorch/cerebric' target='_blank'>Github</a>
 				</div>
 			</div>
 		</div>
@@ -166,16 +261,17 @@
 
 			<div class='w-full text-left p-6 md:p-8'>
 				<h1 class='text-2xl text-green-200 font-bold'>Decorate a Tree</h1>
-				<h2 class='text-lg text-slate-200 mt-2'>Decorate your own digital Christmas tree</h2>
+				<h2 class='text-lg text-slate-200 mt-2'>Decorate your own digital Christmas tree with many different
+					ornaments, candy canes, lights, and more</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-						title='Initial release'></i>December 2021
-				</h2>
+						title='Initial release'></i>December 2021</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-clock-rotate-left mr-2'
-						title='Last updated'></i>December 2022
-				</h2>
+						title='Last updated'></i>December 2022</h2>
 				<div class='flex'>
-					<a class='button border-green-200 text-green-200 hover:bg-green-200' href='https://tree.jakeo.dev'
-						target='_blank'>Visit</a>
+					<a class='button border-green-200 text-green-200 hover:bg-green-200 w-full'
+						href='https://tree.jakeo.dev' target='_blank'>Visit</a>
+					<a class='button border-green-200 text-green-200 hover:bg-green-200 px-5 ml-3'
+						href='https://github.com/jakeorch/decorate-tree' target='_blank'>Github</a>
 				</div>
 			</div>
 		</div>
@@ -185,16 +281,17 @@
 
 			<div class='w-full text-left p-6 md:p-8'>
 				<h1 class='text-2xl text-amber-200 font-bold'>Rick Roll Roulette</h1>
-				<h2 class='text-lg text-slate-200 mt-2'>Play a more modern version of the classic game of chance</h2>
+				<h2 class='text-lg text-slate-200 mt-2'>Play a more modern meme-y version of the classic game of chance
+				</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-						title='Initial release'></i>December 2021
-				</h2>
+						title='Initial release'></i>December 2021</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-clock-rotate-left mr-2'
-						title='Last updated'></i>October 2022
-				</h2>
+						title='Last updated'></i>October 2022</h2>
 				<div class='flex'>
-					<a class='button border-amber-200 text-amber-200 hover:bg-amber-200'
+					<a class='button border-amber-200 text-amber-200 hover:bg-amber-200 w-full'
 						href='https://roulette.jakeo.dev' target='_blank'>Visit</a>
+					<a class='button border-amber-200 text-amber-200 hover:bg-amber-200 px-5 ml-3'
+						href='https://github.com/jakeorch/rick-roll-roulette' target='_blank'>Github</a>
 				</div>
 			</div>
 		</div>
@@ -206,14 +303,14 @@
 				<h1 class='text-2xl text-stone-200 font-bold'>Emoticon Generator</h1>
 				<h2 class='text-lg text-slate-200 mt-2'>Randomly generate unique emoticon faces</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-						title='Initial release'></i>November 2021
-				</h2>
+						title='Initial release'></i>November 2021</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-clock-rotate-left mr-2'
-						title='Last updated'></i>November 2022
-				</h2>
+						title='Last updated'></i>November 2022</h2>
 				<div class='flex'>
-					<a class='button border-stone-200 text-stone-200 hover:bg-stone-200'
+					<a class='button border-stone-200 text-stone-200 hover:bg-stone-200 w-full'
 						href='https://emoticons.jakeo.dev' target='_blank'>Visit</a>
+					<a class='button border-stone-200 text-stone-200 hover:bg-stone-200 px-5 ml-3'
+						href='https://github.com/jakeorch/emoticons' target='_blank'>Github</a>
 				</div>
 			</div>
 		</div>
@@ -223,132 +320,18 @@
 
 			<div class='w-full text-left p-6 md:p-8'>
 				<h1 class='text-2xl text-orange-200 font-bold'>Colorful Bunnies</h1>
-				<h2 class='text-lg text-slate-200 mt-2'>Browse and download some colorful bunnies</h2>
+				<h2 class='text-lg text-slate-200 mt-2'>Browse and download some colorful bunnies individually, in
+					collections, or in banners</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-						title='Initial release'></i>March 2021
-				</h2>
+						title='Initial release'></i>March 2021</h2>
 				<h2 class='text-lg text-slate-200 mt-2'><i class='fa-solid fa-clock-rotate-left mr-2'
-						title='Last updated'></i>October 2022
-				</h2>
+						title='Last updated'></i>October 2022</h2>
 				<div class='flex'>
-					<a class='button border-orange-200 text-orange-200 hover:bg-orange-200'
+					<a class='button border-orange-200 text-orange-200 hover:bg-orange-200 w-full'
 						href='https://bunnies.jakeo.dev' target='_blank'>Visit</a>
 				</div>
 			</div>
 		</div>
-
-		<!-- <div class='md:flex md:justify-center md:items-center m-0'>
-
-			<div class='proj'>
-				<h2 class='text-2xl font-bold text-left text-blue-200 mx-7'>Yearn List</h2>
-				<h3 class='subtext'>Organize everything you yearn for into a simple list</h3>
-				<h4 class='subtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>November 2022
-				</h4>
-				<h4 class='subtext'><i class='fa-solid fa-clock-rotate-left mr-2' title='Last updated'></i>November 2022
-				</h4>
-				<img src='images/yearn-ss.png' alt='Screenshot of the Yearn List website' class='pImg'>
-				<div class='flex mx-7'>
-					<a class='button border-blue-200 text-blue-200 hover:bg-blue-200' href='https://yearn.jakeo.dev'
-						target='_blank'>Visit</a>
-				</div>
-			</div>
-
-			<div class='proj'>
-				<h2 class='text-2xl font-bold text-left text-stone-200 mx-7'>Text Filter</h2>
-				<h3 class='subtext'>Filter strings from text in a number of different ways</h3>
-				<h4 class='subtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>August 2022
-				</h4>
-				<h4 class='subtext'><i class='fa-solid fa-clock-rotate-left mr-2' title='Last updated'></i>November 2022
-				</h4>
-				<img src='images/filter-ss.png' alt='Screenshot of the Word Filter website' class='pImg'>
-				<div class='flex mx-7'>
-					<a class='button border-stone-200 text-stone-200 hover:bg-stone-200' href='https://filter.jakeo.dev'
-						target='_blank'>Visit</a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class='md:flex md:justify-center md:items-center m-0'>
-
-			<div class='proj'>
-				<h2 class='text-2xl font-bold text-left text-red-200 mx-7'>Cerebric</h2>
-				<h3 class='subtext'>A speed typing website to help you study</h3>
-				<h4 class='subtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>May
-					2022</h4>
-				<h4 class='subtext'><i class='fa-solid fa-clock-rotate-left mr-2' title='Last updated'></i>November 2022
-				</h4>
-				<img src='images/cerebric-ss.png' alt='Screenshot of the Cerebric website' class='pImg'>
-				<div class='flex mx-7'>
-					<a class='button border-red-200 text-red-200 hover:bg-red-200' href='https://cerebric.jakeo.dev'
-						target='_blank'>Visit</a>
-				</div>
-			</div>
-
-			<div class='proj'>
-				<h2 class='text-2xl font-bold text-left text-green-200 mx-7'>Decorate a Tree</h2>
-				<h3 class='subtext'>Decorate your own digital Christmas tree</h3>
-				<h4 class='subtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>December 2021
-				</h4>
-				<h4 class='subtext'><i class='fa-solid fa-clock-rotate-left mr-2' title='Last updated'></i>December 2022
-				</h4>
-				<img src='images/tree-ss.png' alt='Screenshot of the Decorate a Tree website' class='pImg'>
-				<div class='flex mx-7'>
-					<a class='button border-green-200 text-green-200 hover:bg-green-200' href='https://tree.jakeo.dev'
-						target='_blank'>Visit</a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class='md:flex md:justify-center md:items-center m-0'>
-
-			<div class='proj'>
-				<h2 class='text-2xl font-bold text-left text-amber-200 mx-7'>Rick Roll Roulette</h2>
-				<h3 class='subtext'>Play a more modern version of the classic game of chance</h3>
-				<h4 class='subtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>December 2021
-				</h4>
-				<h4 class='subtext'><i class='fa-solid fa-clock-rotate-left mr-2' title='Last updated'></i>October 2022
-				</h4>
-				<img src='images/roulette-ss.png' alt='Screenshot of the Rick Roll Roulette website' class='pImg'>
-				<div class='flex mx-7'>
-					<a class='button border-amber-200 text-amber-200 hover:bg-amber-200'
-						href='https://roulette.jakeo.dev' target='_blank'>Visit</a>
-				</div>
-			</div>
-
-			<div class='proj'>
-				<h2 class='text-2xl font-bold text-left text-stone-200 mx-7'>Emoticon Generator</h2>
-				<h3 class='subtext'>Randomly generate unique emoticon faces</h3>
-				<h4 class='subtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>November 2021
-				</h4>
-				<h4 class='subtext'><i class='fa-solid fa-clock-rotate-left mr-2' title='Last updated'></i>November 2022
-				</h4>
-				<img src='images/emoticons-ss.png' alt='Screenshot of the Emoticon Generator website' class='pImg'>
-				<div class='flex mx-7'>
-					<a class='button border-stone-200 text-stone-200 hover:bg-stone-200'
-						href='https://emoticons.jakeo.dev' target='_blank'>Visit</a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class='md:flex md:justify-center md:items-center m-0'>
-
-			<div class='proj md:w-5/12'>
-				<h2 class='text-2xl font-bold text-left text-orange-200 mx-7'>Colorful Bunnies</h2>
-				<h3 class='subtext'>Browse and download some colorful bunnies</h3>
-				<h4 class='subtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>March 2021</h4>
-				<h4 class='subtext'><i class='fa-solid fa-clock-rotate-left mr-2' title='Last updated'></i>October 2022
-				</h4>
-				<img src='images/bunnies-ss.png' alt='Screenshot of the Colorful Bunnies website' class='pImg'>
-				<div class='flex mx-7'>
-					<a class='button border-orange-200 text-orange-200 hover:bg-orange-200'
-						href='https://bunnies.jakeo.dev' target='_blank'>Visit</a>
-				</div>
-			</div>
-
-		</div> -->
 
 	</div>
 

@@ -1,4 +1,4 @@
-document.getElementById('social3').onclick = function () {
+document.getElementById('dscdSocial').onclick = function () {
     document.getElementById('modal').classList.remove('fadeIn');
     document.getElementById('modal').classList.add('fadeOut');
 }
@@ -16,5 +16,4 @@ function hoverBunny() {
 
 function offBunny() {
     document.getElementById('bunnyLogo').src = 'https://bunnies.jakeo.dev/images/santa-bunny.png';
-    // normal: https://bunnies.jakeo.dev/images/solid-blue-gray-bunny.png
 }
