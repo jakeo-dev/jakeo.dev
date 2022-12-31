@@ -15,5 +15,5 @@ function hoverBunny() {
 }
 
 function offBunny() {
-    document.getElementById('bunnyLogo').src = 'https://bunnies.jakeo.dev/images/santa-bunny.png';
+    document.getElementById('bunnyLogo').src = 'https://bunnies.jakeo.dev/images/solid-blue-gray-bunny.png';
 }
