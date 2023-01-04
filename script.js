@@ -5,9 +5,13 @@ document.getElementById('dscdSocial').onclick = function () {
 
 window.onclick = function (event) {
     if (event.target == document.getElementById('modal')) {
-        document.getElementById('modal').classList.add('fadeIn');
-        document.getElementById('modal').classList.remove('fadeOut');
+        hide();
     }
+}
+
+function hide() {
+    document.getElementById('modal').classList.add('fadeIn');
+    document.getElementById('modal').classList.remove('fadeOut');
 }
 
 function hoverBunny() {
