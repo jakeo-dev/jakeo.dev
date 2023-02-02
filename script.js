@@ -1,6 +1,8 @@
 document.getElementById('dscdSocial').onclick = function () {
     document.getElementById('modal').classList.remove('fadeIn');
     document.getElementById('modal').classList.add('fadeOut');
+
+    document.getElementsByTagName('body')[0].classList.add('overflow-hidden');
 }
 
 window.onclick = function (event) {
@@ -12,6 +14,8 @@ window.onclick = function (event) {
 function hide() {
     document.getElementById('modal').classList.add('fadeIn');
     document.getElementById('modal').classList.remove('fadeOut');
+
+    document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
 }
 
 function hoverBunny() {
