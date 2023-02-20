@@ -4,7 +4,7 @@
 
 @layer components {
   .proj {
-    @apply md:flex text-slate-200 bg-gradient-to-b from-slate-600/50 to-slate-700/50 border-slate-500/70 rounded-xl mb-8 md:mb-16;
+    @apply md:flex text-gray-200 bg-gradient-to-b from-gray-600/50 to-gray-700/50 border-gray-500/70 rounded-xl mb-8 md:mb-16;
   }
 
   .bioLink {
@@ -12,15 +12,15 @@
   }
 
   .subtext {
-    @apply text-lg text-slate-200 mt-2;
+    @apply text-lg text-gray-200 mt-2;
   }
 
   .button {
-    @apply border-2 rounded-full text-lg text-center hover:text-slate-700 /* focus:ring-2 ring-blue-500 ring-offset-2 ring-offset-transparent */ p-2 mt-7 transition-all;
+    @apply border-2 rounded-full text-lg text-center hover:text-gray-700 /* focus:ring-2 ring-blue-500 ring-offset-2 ring-offset-transparent */ p-2 mt-7 transition-all;
   }
 
   .pImg {
-    @apply w-full md:w-[36.5%] object-cover border-b-2 md:border-0 md:border-r-2 border-slate-600/70 rounded-t-lg md:rounded-none md:rounded-l-lg;
+    @apply w-full md:w-[36.5%] object-cover border-b-2 md:border-0 md:border-r-2 border-gray-600/70 rounded-t-lg md:rounded-none md:rounded-l-lg;
   }
 
   .abilityImg {
