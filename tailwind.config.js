@@ -5,12 +5,7 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
-      'LexendDeca': ['Lexend Deca', 'sans-serif'],
-      'Aclonica': ['Aclonica', 'sans-serif'],
-      'BalsamiqSans': ['Balsamiq Sans', 'sans-serif'],
-      'Calistoga': ['Calistoga', 'sans-serif'],
-      'Righteous': ['Righteous', 'sans-serif'],
-      'RubikMonoOne': ['Rubik Mono One', 'sans-serif'],
+      'LexendDeca': ['Lexend Deca', 'sans-serif']
     },
     extend: {
       width: {

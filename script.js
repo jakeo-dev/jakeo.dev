@@ -1,3 +1,5 @@
+window.onload = setDesc;
+
 document.getElementById('dscdSocial').onclick = function () {
     document.getElementById('modal').classList.remove('fadeIn');
     document.getElementById('modal').classList.add('fadeOut');
@@ -25,3 +27,18 @@ function hoverBunny() {
 function offBunny() {
     document.getElementById('bunnyLogo').src = 'https://bunnies.jakeo.dev/images/solid-blue-gray-bunny.png';
 }
+
+let quotes = [
+    'a programming rabbit',
+    'a programming bunny',
+    'i still hate chemistry',
+    'become bunny'
+];
+
+function setDesc() {
+    document.getElementById('desc').innerText = quotes[Math.floor(Math.random() * quotes.length)];
+}
+
+document.getElementById('secretComma').addEventListener('click', function (event) {
+    document.getElementById('commaFan').classList.remove('hidden');
+});
