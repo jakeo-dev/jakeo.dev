@@ -4,23 +4,23 @@
 
 @layer components {
   .proj {
-    @apply md:flex text-gray-200 bg-gradient-to-b from-gray-600/40 to-gray-700/40 rounded-xl border-gray-600/40 shadow-sm mb-8 md:mb-16;
+    @apply text-gray-100 bg-gray-800 rounded-xl border-gray-600/40 shadow-sm;
   }
 
   .bioLink {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-400 active:text-blue-500 transition-all;
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-400 transition-all;
   }
 
   .subtext {
-    @apply text-lg text-gray-200 mt-2;
+    @apply text-lg text-gray-100 mt-2;
   }
 
   .button {
-    @apply flex justify-center items-center border-2 rounded-full text-lg text-center hover:text-gray-800 /* focus:ring-2 ring-blue-500 ring-offset-2 ring-offset-transparent */ p-2 py-1.5 mt-7 transition-all;
+    @apply flex justify-center items-center rounded-full text-lg text-center text-gray-800 bg-gray-100 hover:bg-gray-300 active:bg-gray-400 shadow-sm hover:shadow-md active:shadow-lg px-2 py-1.5 transition-all;
   }
 
   .pImg {
-    @apply w-full md:w-[38%] object-cover border-b-2 md:border-0 md:border-r-2 border-gray-600/40 rounded-t-lg md:rounded-none md:rounded-l-lg;
+    @apply w-full object-cover h-[36%] border-b-2 border-gray-600 rounded-t-lg;
   }
 
   .abilityImg {
