@@ -4,7 +4,7 @@
 
 @layer components {
   .proj {
-    @apply text-gray-100 bg-gray-800 rounded-xl border-gray-600/40 shadow-sm;
+    @apply flex flex-col bg-gray-800 rounded-xl border-gray-600/40 shadow-sm;
   }
 
   .bioLink {
@@ -12,7 +12,7 @@
   }
 
   .subtext {
-    @apply text-lg text-gray-100 mt-2;
+    @apply text-lg mt-2;
   }
 
   .button {
