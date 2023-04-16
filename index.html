@@ -13,7 +13,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Sen:wght@400;700;800&display=swap"
 		rel="stylesheet">
 	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'></script> -->
 	<script async src='https://cdn.splitbee.io/sb.js'></script>
@@ -47,7 +47,7 @@
 
 			<div class='flex flex-1 relative float-left align-top leading-none w-full no-underline m-0'>
 				<img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'
-					onmouseover='hoverBunny()' onmouseout='offBunny()' onclick='theme()' width='70'
+					onmouseover='hoverBunny()' onmouseout='offBunny()' onclick='clickBunny()' width='70'
 					alt='Solid gradient blue gray bunny' class='object-contain mr-4 hover:scale-110 transition-all'
 					id='bunnyLogo'>
 
@@ -98,9 +98,9 @@
 
 		<!-- about me -->
 
-		<h1 class='text-2xl font-medium text-left px-10 mb-8'>Welcome to my website!</h1>
+		<h1 class='sectionTitle' id='welcome'>Welcome to my website!</h1>
 
-		<div id='bio' class='bg-gray-800 rounded-xl border-gray-600/40 text-lg text-left shadow-sm leading-8 px-8 py-6'>
+		<div id='bio' class='section'>
 			<p class='leading-10'>I build funny or useful websites whenever I feel like it.</p>
 			<p class='leading-10'>I currently use JavaScript and Tailwind, but I hope to learn
 				more programming things in the future.</p>
@@ -108,8 +108,7 @@
 					class='bioLink'>Lexend Deca</a>, which is known for improving reading proficiency.</p>
 			<p class='leading-10'>Some other things that I like include bunnies, <a
 					class='hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-600 to-blue-500 transition-all'>gradients</a>
-				and shadow<button id='secretComma'>, </button> <a class='hidden' id='commaFan'>the oxford comma, </a>and
-				changing my websites too often...</p>
+				and shadow, and changing my websites too often...</p>
 		</div>
 
 		<!-- socials -->
@@ -170,9 +169,29 @@
 
 		<!-- projects -->
 
-		<h1 class='text-2xl font-medium text-left px-10 mb-8 mt-16'>Projects</h1>
+		<h1 class='sectionTitle mt-16' id='projects'>Projects</h1>
 
 		<div class='grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8'>
+
+			<div class='proj'>
+				<img src='images/money-ss.png' alt='Screenshot of the Perspectives of Money website' class='pImg'>
+
+				<div class='flex-grow w-full text-left p-6 md:p-8'>
+					<h1 class='title text-2xl font-semibold text-stone-200'>Perspectives of Money</h1>
+					<h2 class='text-lg mt-2'>Compare different perspectives of the value of money based on income.
+					</h2>
+					<h2 class='text-lg mt-2'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>month
+						year</h2>
+					<h2 class='text-lg mt-2'><i class='fa-solid fa-rotate-right mr-2' title='Last updated'></i>month
+						year</h2>
+				</div>
+				<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
+					<a class='button w-full' href='https://money.jakeo.dev' target='_blank'>Visit</a>
+					<a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 px-5 ml-3'
+						href='https://github.com/jakeorch/money-perspective' target='_blank'><i
+							class='fa-brands fa-github text-2xl mr-2' aria-label='Github'></i>Github</a>
+				</div>
+			</div>
 
 			<div class='proj'>
 				<img src='images/phone-ss.png' alt='Screenshot of the Personalized Phone Number Generator website'
@@ -348,10 +367,42 @@
 				</div>
 				<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
 					<a class='button w-full' href='https://bunnies.jakeo.dev' target='_blank'>Visit</a>
+					<a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 px-5 ml-3'
+						href='https://github.com/jakeorch/bunnies' target='_blank'><i
+							class='fa-brands fa-github text-2xl mr-2' aria-label='Github'></i>Github</a>
 				</div>
 			</div>
 
 		</div>
+
+		<!-- <h1 class='sectionTitle mt-16' id='posts'>Posts</h1>
+
+		<div class='grid xl:grid-cols-2 gap-4 md:gap-8'>
+
+			<div class='proj'>
+				<div class='flex-grow w-full text-left p-6 md:p-8'>
+					<h1 class='title text-2xl font-semibold text-stone-200'>Post Title 1</h1>
+					<h2 class='text-lg mt-2'>post teaser 1</h2>
+					<h2 class='text-lg mt-2'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>July
+						1927</h2>
+				</div>
+				<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
+					<a class='button w-full' href='/blog/post-title-1' target='_blank'>Read</a>
+				</div>
+			</div>
+			<div class='proj'>
+				<div class='flex-grow w-full text-left p-6 md:p-8'>
+					<h1 class='title text-2xl font-semibold text-stone-200'>Post Title 2</h1>
+					<h2 class='text-lg mt-2'>post teaser 2</h2>
+					<h2 class='text-lg mt-2'><i class='fa-solid fa-calendar-day mr-2'
+							title='Initial release'></i>September 1927</h2>
+				</div>
+				<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
+					<a class='button w-full' href='/blog/post-title-2' target='_blank'>Read</a>
+				</div>
+			</div>
+
+		</div> -->
 
 	</div>
 

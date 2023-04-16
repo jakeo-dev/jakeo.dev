@@ -7,6 +7,14 @@
     @apply flex flex-col bg-gray-800 rounded-xl border-gray-600/40 shadow-sm;
   }
 
+  .sectionTitle {
+    @apply text-2xl font-medium text-left px-10 mb-8;
+  }
+
+  .section {
+    @apply bg-gray-800 rounded-xl border-gray-600/40 text-lg text-left shadow-sm leading-8 px-8 py-6;
+  }
+
   .bioLink {
     @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-400 transition-all;
   }
@@ -25,6 +33,10 @@
 
   .abilityImg {
     @apply inline-block md:flex w-1/5 md:w-1/16 lg:w-1/20 mr-6 mb-6;
+  }
+
+  .subtitle {
+    @apply border-b-2 border-gray-400 px-4 py-4 text-2xl leading-10 mt-6 mb-4;
   }
 
   .fadeIn {

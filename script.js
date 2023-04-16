@@ -1,31 +1,31 @@
 window.onload = setDesc;
 
-document.getElementById('dscdSocial').onclick = function () {
-    document.getElementById('modal').classList.remove('fadeIn');
-    document.getElementById('modal').classList.add('fadeOut');
+document.querySelector('#dscdSocial').onclick = function () {
+    document.querySelector('#modal').classList.remove('fadeIn');
+    document.querySelector('#modal').classList.add('fadeOut');
 
     document.getElementsByTagName('body')[0].classList.add('overflow-hidden');
 }
 
 window.onclick = function (event) {
-    if (event.target == document.getElementById('modal')) {
+    if (event.target == document.querySelector('#modal')) {
         hide();
     }
 }
 
 function hide() {
-    document.getElementById('modal').classList.add('fadeIn');
-    document.getElementById('modal').classList.remove('fadeOut');
+    document.querySelector('#modal').classList.add('fadeIn');
+    document.querySelector('#modal').classList.remove('fadeOut');
 
     document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
 }
 
 function hoverBunny() {
-    document.getElementById('bunnyLogo').src = 'https://bunnies.jakeo.dev/images/potpourri-bunny-v4.png';
+    document.querySelector('#bunnyLogo').src = 'https://bunnies.jakeo.dev/images/potpourri-bunny-v4.png';
 }
 
 function offBunny() {
-    document.getElementById('bunnyLogo').src = 'https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png';
+    document.querySelector('#bunnyLogo').src = 'https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png';
 }
 
 let quotes = [
@@ -36,15 +36,13 @@ let quotes = [
 ];
 
 function setDesc() {
-    document.getElementById('desc').innerText = quotes[Math.floor(Math.random() * quotes.length)];
+    document.querySelector('#desc').innerText = quotes[Math.floor(Math.random() * quotes.length)];
 }
 
-document.getElementById('secretComma').addEventListener('click', function (event) {
-    document.getElementById('commaFan').classList.toggle('hidden');
-});
+function clickBunny() {
+    window.open('../../', '_self');
 
-function theme() {
-    document.querySelector('body').classList.remove('bg-gray-900');
+    /* document.querySelector('body').classList.remove('bg-gray-900');
     document.querySelector('body').classList.add('bg-gradient-to-br');
     document.querySelector('body').classList.add('from-indigo-400');
     document.querySelector('body').classList.add('via-lime-500');
@@ -72,5 +70,5 @@ function theme() {
     var elements3 = document.getElementsByClassName('title');
     for (let i = 0; i < elements3.length; i++) {
         elements3[i].className = 'title text-2xl font-semibold text-gray-900';
-    }
+    } */
 }
