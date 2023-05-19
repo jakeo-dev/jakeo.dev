@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>JakeO.dev</title>
+    <link href='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' rel='shortcut icon'
+        type='image/ico'>
+
+    <link href='../../style.css' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'></script> -->
+    <script async src='https://cdn.splitbee.io/sb.js'></script>
+
+    <meta property='og:title' content='JakeO.dev'>
+    <meta property='og:description' content='the official website of Jake O.'>
+    <meta name='theme-color' content='#83b5d3'>
+    <meta property='og:image' content='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'>
+</head>
+
+<body class='bg-gray-900 text-gray-100 text-center p-0 pb-32 m-0 font-LexendDeca transition-all'>
+
+    <!-- modal -->
+
+    <div id='modal'
+        class='fadeIn bg-black/50 flex justify-center items-center fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
+        <div class='relative text-4xl bg-gray-800 rounded-lg w-full md:w-fit shadow-sm px-11 py-8'>
+            <button class='absolute text-base top-4 right-5 hover:text-gray-400 transition-all' onclick='hide()'><i
+                    class='fa-solid fa-xmark' aria-label='Close' title='Close'></i></button>
+            <h1 class='text-indigo-300 flex items-center'>jakeybakers#0808</h1>
+        </div>
+    </div>
+
+    <!-- header -->
+
+    <header class='bg-gradient-to-b from-gray-900/80 to-transparent sticky top-0 left-0 pt-4 md:pt-8 px-4 md:px-32'
+        id='fullHeader'>
+
+        <header
+            class='bg-gradient-to-b from-gray-200 to-gray-300 w-full md:flex rounded-xl z-10 shadow-xl p-6 pt-[1.7rem] pl-[1.15rem]'>
+
+            <div class='flex flex-1 relative float-left align-top leading-none w-full no-underline m-0'>
+                <img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'
+                    onmouseover='hoverBunny()' onmouseout='offBunny()' onclick='clickBunny()' width='70'
+                    alt='Solid gradient blue gray bunny' class='object-contain mr-4 hover:scale-110 transition-all'
+                    id='bunnyLogo'>
+
+                <div class='text-gray-600 text-left font-bold no-underline cursor-default'>
+                    <h1 class='text-3xl m-0'>JakeO<button onclick='setDesc()'>.</button>dev</h1>
+                    <h2 class='text-lg mt-2' id='desc'>a programming bunny</h2>
+                </div>
+            </div>
+
+            <div
+                class='flex flex-1 w-full justify-center md:justify-end text-justify items-center no-underline pt-6 px-4 md:p-0'>
+
+                <div class='inline-block ml-none md:ml-6 cursor-pointer hover:scale-110 active:scale-100 transition-all'
+                    title='Jake O.'>
+                    <a href='https://www.youtube.com/channel/UCcfnI8UBcJikmHpqCtogl7A' target='_blank'><i
+                            class='fa-brands fa-youtube text-[2.75rem] text-gray-500 hover:text-red-500 transition-all'
+                            aria-label='YouTube'></i></a>
+                </div>
+
+                <div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 active:scale-100 transition-all'
+                    title='jakeybakers#0808'>
+                    <button id='dscdSocial'><i
+                            class='fa-brands fa-discord text-[2.75rem] text-gray-500 hover:text-indigo-500 transition-all'
+                            aria-label='Discord'></i></button>
+                </div>
+
+                <div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 active:scale-100 transition-all'
+                    title='jakeybakers'>
+                    <a href='https://steamcommunity.com/id/jakeybakers' target='_blank'><i
+                            class='fa-brands fa-steam text-[2.75rem] text-gray-500 hover:text-slate-700 transition-all'
+                            aria-label='Steam'></i></a>
+                </div>
+
+                <div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 active:scale-100 transition-all'
+                    title='jakeorch'>
+                    <a href='https://github.com/jakeorch' target='_blank'><i
+                            class='fa-brands fa-github text-[2.75rem] text-gray-500 hover:text-gray-800 transition-all'
+                            aria-label='GitHub'></i></a>
+                </div>
+
+            </div>
+
+        </header>
+
+    </header>
+
+    <div class='pt-16 md:pt-24 px-4 md:px-32'>
+
+        <!-- about me -->
+
+        <h1 class='sectionTitle mb-2'>Continuous Rounding</h1>
+        <h2 class='sectionTitle text-lg'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>April 1954
+        </h2>
+
+        <div class='section'>
+            <p class='leading-10'>intro</p>
+            <h3 class='subtitle'>How it Works</h3>
+            <p class='leading-10'>Instead of rounding up if a number is 5 or greater and rounding down if a number is 4
+                or smaller, continuous rounding starts at the right most place of a number and, moving right to left,
+                continually rounds up each digit if the digit to the right of it is greater than four, stopping at the
+                desired place to be rounded.</p>
+            <p class='leading-10 mb-2.5'>This method pretty much entirely relies upon the fact that 4 is the highest
+                number that rounds a number down. If the digits after a 4 are continually rounded up, it will create a
+                domino effect until it reaches the stopping place or a digit is rounded down. The method slightly
+                increases the final number compared to normal rounding.</p>
+            <p class='leading-10'>3.849 rounded to the nearest tenths place would normally be 3.8, but continually
+                rounding it gives a result of 3.9.</p>
+            <h3 class='subtitle'>Examples</h3>
+            <p class='leading-10'>Here's 7.6144582 continually rounded to the hundredths place step-by-step.</p>
+
+            <p class='text-3xl leading-10 mt-8'>7.6144582</p>
+            <p class='text-lg leading-10 mb-8'>Starting at the right most number, 2, rounds the next digit down to 8.
+            </p>
+            <p class='text-3xl leading-10 mt-8'>7.614458</p>
+            <p class='text-lg leading-10 mb-8'>Here's where things really get different. The newest right-most digit, 8,
+                rounds the digit to its left up to 6.</p>
+            <p class='text-3xl leading-10 mt-8'>7.61446</p>
+            <p class='text-lg leading-10 mb-8'>Repeating the same process, the newest right-most digit of 6 rounds the
+                digit to its left up to 5.</p>
+            <p class='text-3xl leading-10 mt-8'>7.6145</p>
+            <p class='text-lg leading-10 mb-8'>5 rounds 4 up to 5...</p>
+            <p class='text-3xl leading-10 mt-8'>7.615</p>
+            <p class='text-lg leading-10 mb-8'>...and 5 rounds 1 up to 2...</p>
+            <p class='text-3xl leading-10 mt-8'>7.62</p>
+            <p class='text-lg leading-10 mb-8'>...giving a final result of 7.62!</p>
+
+            <p class='leading-10'>Using normal rounding, it would be 7.61, but continually rounding it allows for a more
+                comprehensive result to see the number as it really is overall.</p>
+            <p class='leading-10'>Continuous rounding doesn't always produce a different result from normal rounding.
+                Again, it depends on if a 4 is present in the number directly after the desired stopping place.</p>
+            <p class='leading-10'>Here's 59,237 continually rounded to the nearest thousands place step-by-step.</p>
+
+            <p class='text-3xl leading-10 mt-8'>59,237</p>
+            <p class='text-lg leading-10 mb-8'>Starting at the right most number of 7, it rounds 3 up to 4.</p>
+            <p class='text-3xl leading-10 mt-8'>59,240</p>
+            <p class='text-lg leading-10 mb-8'>Then...the next number can't be rounded up anymore, so normal rules are
+                used again, rounding 4 down to 0...</p>
+            <p class='text-3xl leading-10 mt-8'>59,200</p>
+            <p class='text-lg leading-10 mb-8'>...and then 2 down to 0...</p>
+            <p class='text-3xl leading-10 mt-8'>59,000</p>
+            <p class='text-lg leading-10 mb-8'>...giving a final result of 59,000.</p>
+
+            <h3 class='subtitle'>Uses</h3>
+            <p class='leading-10'>???</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src='../../script.js'></script>

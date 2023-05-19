@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>AP World History: a History</title>
+    <link href='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' rel='shortcut icon'
+        type='image/ico'>
+
+    <link href='../../style.css' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.min.js' crossorigin='anonymous' referrerpolicy='no-referrer'></script> -->
+    <script async src='https://cdn.splitbee.io/sb.js'></script>
+
+    <meta property='og:title' content='AP World History: a History'>
+    <meta property='og:description' content='History is constantly changing, so it makes sense that College
+    Board has been constantly updating their Advanced Placement World History course curriculum...'>
+    <meta name='theme-color' content='#83b5d3'>
+    <meta property='og:image' content='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'>
+</head>
+
+<body class='bg-gray-300 text-gray-900 text-center p-0 pb-32 m-0 font-LexendDeca transition-all'>
+
+    <!-- modal -->
+
+    <div id='modal'
+        class='fadeIn bg-black/50 flex justify-center items-center fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
+        <div class='relative text-4xl bg-gray-300 rounded-lg w-full md:w-fit shadow-sm px-11 py-8'>
+            <button class='absolute text-base top-4 right-5 hover:text-gray-500 transition-all' onclick='hide()'><i
+                    class='fa-solid fa-xmark' aria-label='Close' title='Close'></i></button>
+            <h1 class='text-indigo-500 flex items-center'>jakeybakers#0808</h1>
+        </div>
+    </div>
+
+    <!-- header -->
+
+    <header class='bg-gradient-to-b from-gray-300/60 to-transparent sticky top-0 left-0 pt-4 md:pt-8 px-4 md:px-32'
+        id='fullHeader'>
+
+        <header
+            class='bg-gradient-to-b from-gray-200 to-gray-300 w-full md:flex rounded-xl z-10 shadow-xl p-6 pt-[1.7rem] pl-[1.15rem]'>
+
+            <div class='flex flex-1 relative float-left align-top leading-none w-full no-underline m-0'>
+                <img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'
+                    onmouseover='hoverBunny()' onmouseout='offBunny()' onclick='clickBunny()' width='70'
+                    alt='Solid gradient blue gray bunny' class='object-contain mr-4 hover:scale-110 transition-all'
+                    id='bunnyLogo'>
+
+                <div class='text-gray-600 text-left font-bold no-underline cursor-default'>
+                    <h1 class='text-2xl md:text-3xl m-0'>JakeO<button onclick='setDesc()'>.</button>dev</h1>
+                    <h2 class='text-lg mt-2' id='desc'>a programming bunny</h2>
+                </div>
+            </div>
+
+            <div
+                class='flex flex-1 w-full justify-center md:justify-end text-justify items-center no-underline pt-6 px-4 md:p-0'>
+
+                <div class='inline-block ml-none md:ml-6 cursor-pointer hover:scale-110 active:scale-100 transition-all'
+                    title='Jake O.'>
+                    <a href='https://www.youtube.com/channel/UCcfnI8UBcJikmHpqCtogl7A' target='_blank'><i
+                            class='fa-brands fa-youtube text-[2.5rem] md:text-[2.75rem] text-gray-500 hover:text-red-500 transition-all'
+                            aria-label='YouTube'></i></a>
+                </div>
+
+                <div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 active:scale-100 transition-all'
+                    title='jakeybakers#0808'>
+                    <button id='dscdSocial'><i
+                            class='fa-brands fa-discord text-[2.5rem] md:text-[2.75rem] text-gray-500 hover:text-indigo-500 transition-all'
+                            aria-label='Discord'></i></button>
+                </div>
+
+                <div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 active:scale-100 transition-all'
+                    title='jakeybakers'>
+                    <a href='https://steamcommunity.com/id/jakeybakers' target='_blank'><i
+                            class='fa-brands fa-steam text-[2.5rem] md:text-[2.75rem] text-gray-500 hover:text-slate-700 transition-all'
+                            aria-label='Steam'></i></a>
+                </div>
+
+                <div class='inline-block ml-auto md:ml-6 cursor-pointer hover:scale-110 active:scale-100 transition-all'
+                    title='jakeorch'>
+                    <a href='https://github.com/jakeorch' target='_blank'><i
+                            class='fa-brands fa-github text-[2.5rem] md:text-[2.75rem] text-gray-500 hover:text-gray-800 transition-all'
+                            aria-label='GitHub'></i></a>
+                </div>
+
+            </div>
+
+        </header>
+
+    </header>
+
+    <div class='pt-16 md:pt-24 px-4 md:px-32'>
+
+        <h1 class='sectionTitle mt-0 mb-3'>AP World History: a History</h1>
+        <h2 class='sectionTitle text-xl font-normal mt-0'><i class='fa-solid fa-calendar-day mr-2'
+                title='Initial release'></i>May 2023
+        </h2>
+
+        <div class='flex'>
+
+            <div class='section flex-1'>
+                <p class='text'>History is constantly changing, so it makes sense that College Board has been constantly
+                    updating their Advanced Placement World History course curriculum. The exam and time periods have
+                    changed many times since the course's introduction, but why has College Board made so many changes?
+                    Has this made it easier or more difficult for students to keep up? I'll explore the most
+                    notable changes that have been made to the AP World History curriculum over the 20+ years the course
+                    has been around.</p>
+                <p class='text mt-10'>All the PDFs from College Board I used to compile these changes can be downloaded
+                    here:</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text downloadLink'><a href='./ap-world-history-curriculum-2002.pdf' download>2002
+                            Course Description</a></li>
+                    <li class='text downloadLink'><a href='./ap-world-history-curriculum-2004.pdf' download>2004
+                            Course Description</a></li>
+                    <li class='text downloadLink'><a href='./ap-world-history-curriculum-2011.pdf' download>2011
+                            Course Description</a></li>
+                    <li class='text downloadLink'><a href='./ap-world-history-curriculum-2017.pdf' download>2017
+                            Course Description</a></li>
+                    <li class='text downloadLink'><a href='./ap-world-history-curriculum-2020.pdf' download>2020
+                            Course Description</a></li>
+                </ul>
+                <p class='text highlight pl-3 mt-10'>A yellow highlight indicates a change from the previous year's
+                    curriculum</p>
+
+                <h3 class='subtitle' id='2002'>Original 2002 Curriculum</h3>
+                <p class='text'>In the 2001-2002 school year, AP World History was introduced, and its first exam
+                    was taken by over 20,000 students. (For comparison, the most recent 2022 exam was taken by over
+                    300,000 students.) The mean score was 2.94.
+                </p>
+                <p class='sub2title'>Time Periods</p>
+                <table class='sp-table mt-4'>
+                    <tr class='sp-table-head'>
+                        <th class='sp-table-head-item'>Period</th>
+                        <th class='sp-table-head-item'>Exam weight</th>
+                        <th class='sp-table-head-item'>Instruction time</th>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Foundations: - 1000 AD</td>
+                        <td class='sp-table-item'>14%</td>
+                        <td class='sp-table-item'>5 weeks</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>1000 AD - 1450</td>
+                        <td class='sp-table-item'>22%</td>
+                        <td class='sp-table-item'>8 weeks</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>1450 - 1750</td>
+                        <td class='sp-table-item'>22%</td>
+                        <td class='sp-table-item'>8 weeks</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>1750 - 1914</td>
+                        <td class='sp-table-item'>20%</td>
+                        <td class='sp-table-item'>7 weeks</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>1914 - present</td>
+                        <td class='sp-table-item'>22%</td>
+                        <td class='sp-table-item'>8 weeks</td>
+                    </tr>
+                </table>
+                <p class='sub2title'>Exam</p>
+                <p class='sub3title'>Multiple Choice Questions (MCQ)</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text'>70 non-stimulus-based questions (questions that do not include responding to a
+                        primary or
+                        secondary source)
+                    </li>
+                    <li class='text'>55 minutes</li>
+                    <li class='text'>~47 seconds per question</li>
+                </ul>
+                <p class='sub3title'>Document-Based Question (DBQ)</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text'>5 documents
+                    </li>
+                    <li class='text'>50 minutes</li>
+                    <li class='text'>10 minute built-in reading period</li>
+                    <li class='text'>Rubric:
+                        <table class='sp-table mt-4'>
+                            <tr class='sp-table-head'>
+                                <th class='sp-table-head-item'>Description</th>
+                                <th class='sp-table-head-item'>Possible points</th>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Acceptable thesis</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Uses at least all but one of the documents</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Supports thesis with evidence from documents</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Understands the purpose of at least all but one of the
+                                    documents
+                                </td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Analyzes bias or point of view in at least 2 documents</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Groups documents in 1, 2, or 3 different ways depending on the
+                                    prompt</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Identifies one type of appropriate additional document</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item border-t-2 border-gray-400 border-dashed'>Expanded Core:
+                                    expands beyond the basic core (can only earn points in the expanded core after
+                                    earning all 7 previous points). This can be earned in a number of different ways,
+                                    including:
+                                    <ul class='list-disc pl-10'>
+                                        <li class='text'>A clear, analytical, and comprehensive thesis</li>
+                                        <li class='text'>Analyzes the bias or point of view of multiple documents</li>
+                                        <li class='text'>Analyzes document in additional ways: groupings, comparisons,
+                                            synthesis</li>
+                                        <li class='text'>Uses evidence not found in the documents</li>
+                                        <li class='text'>Identifies more than one type of appropriate additional
+                                            document
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class='sp-table-item border-t-2 border-gray-400 border-dashed'>2</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <p class='sub3title'>Change-Over-Time Essay</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text'>40 minutes</li>
+                    <li class='text'>Rubric:
+                        <table class='sp-table mt-4'>
+                            <tr class='sp-table-head'>
+                                <th class='sp-table-head-item'>Description</th>
+                                <th class='sp-table-head-item'>Possible points</th>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Acceptable thesis that addresses global issues and time
+                                    periods specified</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Addresses all parts of the question</td>
+                                <td class='sp-table-item'>2</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>(Only addresses most parts of the question)</td>
+                                <td class='sp-table-item'>(1)</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Supports thesis with appropriate evidence</td>
+                                <td class='sp-table-item'>2</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>(Only partially supports thesis with appropriate evidence)
+                                </td>
+                                <td class='sp-table-item'>(1)</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Uses historical context to show change over time and/or
+                                    continuities
+                                </td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item border-t-2 border-gray-400 border-dashed'>Expanded Core:
+                                    expands
+                                    beyond the basic core (can only earn points in the expanded core after earning all 6
+                                    previous points). This can be earned in a number of different ways, including:
+                                    <ul class='list-disc pl-10'>
+                                        <li class='text'>A clear, analytical, and comprehensive thesis</li>
+                                        <li class='text'>Addressess all parts of the question: global issues,
+                                            chronology,
+                                            causation, continuity, change, content</li>
+                                        <li class='text'>Addressess all parts of the question evenly</li>
+                                        <li class='text'>Provides links with relevant ideas, events, or trends in an
+                                            innovative way</li>
+                                    </ul>
+                                </td>
+                                <td class='sp-table-item border-t-2 border-gray-400 border-dashed'>3</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <p class='sub3title'>Comparative Essay</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text'>40 minutes</li>
+                    <li class='text'>Rubric:
+                        <table class='sp-table mt-4'>
+                            <tr class='sp-table-head'>
+                                <th class='sp-table-head-item'>Description</th>
+                                <th class='sp-table-head-item'>Possible points</th>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Acceptable thesis that addresses global issues and time
+                                    periods specified</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Addresses all parts of the question</td>
+                                <td class='sp-table-item'>2</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>(Only addresses most parts of the question)</td>
+                                <td class='sp-table-item'>(1)</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Supports thesis with appropriate evidence</td>
+                                <td class='sp-table-item'>2</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>(Only partially supports thesis with appropriate evidence)
+                                </td>
+                                <td class='sp-table-item'>(1)</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Makes at least one or two relevant, direct comparisons between
+                                    societies
+                                </td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item border-t-2 border-gray-400 border-dashed'>Expanded Core:
+                                    expands
+                                    beyond the basic core (can only earn points in the expanded core after earning all 6
+                                    previous points). This can be earned in a number of different ways, including:
+                                    <ul class='list-disc pl-10'>
+                                        <li class='text'>A clear, analytical, and comprehensive thesis</li>
+                                        <li class='text'>Addressess all parts of the question: comparisons, chronology,
+                                            causation, connections, themes, interactions, content</li>
+                                        <li class='text'>Relates comparisons to larger global context</li>
+                                        <li class='text'>Makes direct comparisons consistently between societies</li>
+                                    </ul>
+                                </td>
+                                <td class='sp-table-item border-t-2 border-gray-400 border-dashed'>3</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+
+                <h3 class='subtitle' id='2004'>2004 Changes</h3>
+                <p class='text'>Exam weights and weeks of instruction time were updated. The date range of the
+                    "Foundations" period was specified.</p>
+                <p class='sub2title'>Time Periods</p>
+                <table class='sp-table mt-4'>
+                    <tr class='sp-table-head'>
+                        <th class='sp-table-head-item'>Period</th>
+                        <th class='sp-table-head-item'>Exam weight</th>
+                        <th class='sp-table-head-item'>Instruction time</th>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item highlight'>Foundations: 8000 BC - 600 AD</td>
+                        <td class='sp-table-item highlight'>19-20%</td>
+                        <td class='sp-table-item highlight'>7 weeks</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>600 AD - 1450</td>
+                        <td class='sp-table-item'>22%</td>
+                        <td class='sp-table-item'>8 weeks</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>1450 - 1750</td>
+                        <td class='sp-table-item highlight'>19-20%</td>
+                        <td class='sp-table-item highlight'>7 weeks</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>1750 - 1914</td>
+                        <td class='sp-table-item'>19-20%</td>
+                        <td class='sp-table-item'>7 weeks</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>1914 - present</td>
+                        <td class='sp-table-item highlight'>19-20%</td>
+                        <td class='sp-table-item highlight'>7 weeks</td>
+                    </tr>
+                </table>
+
+                <h3 class='subtitle' id='2011'>2011 Changes</h3>
+                <p class='text'>Some period date ranges and exam weights were updated. Each period was also given a
+                    unique title. The DBQ now has 10 documents and the rubric further specifies the requirements for it.
+                </p>
+                <p class='sub2title'>Time Periods</p>
+                <table class='sp-table mt-4'>
+                    <tr class='sp-table-head'>
+                        <th class='sp-table-head-item'>Title</th>
+                        <th class='sp-table-head-item'>Date range</th>
+                        <th class='sp-table-head-item'>Exam weight</th>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item highlight'>Technological and Environmntal Transformations</td>
+                        <td class='sp-table-item highlight'>- 600 BC</td>
+                        <td class='sp-table-item highlight'>5%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item highlight'>Organization and Reorganization of Human Societies</td>
+                        <td class='sp-table-item highlight'>600 BC - 600 AD</td>
+                        <td class='sp-table-item highlight'>15%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item highlight'>Regional and Transregional Interactions</td>
+                        <td class='sp-table-item'>600 AD - 1450</td>
+                        <td class='sp-table-item highlight'>20%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item highlight'>Global Intractions</td>
+                        <td class='sp-table-item'>1450 - 1750</td>
+                        <td class='sp-table-item'>20%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item highlight'>Industrialization and Global Integration</td>
+                        <td class='sp-table-item highlight'>1750 - 1900</td>
+                        <td class='sp-table-item'>20%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item highlight'>Accelerating Global Change and Realignments</td>
+                        <td class='sp-table-item highlight'>1900 - present</td>
+                        <td class='sp-table-item'>20%</td>
+                    </tr>
+                </table>
+                <p class='sub2title'>Exam</p>
+                <p class='sub3title'>Document-Based Question (DBQ)</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text highlight'>10 documents</li>
+                    <li class='text'>Rubric:
+                        <table class='sp-table mt-4'>
+                            <tr class='sp-table-head'>
+                                <th class='sp-table-head-item'>Description</th>
+                                <th class='sp-table-head-item'>Possible points</th>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Acceptable thesis</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row highlight'>
+                                <td class='sp-table-item'>Addresses all documents and demonstrates understanding of at
+                                    least
+                                    all but one of the documents</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row highlight'>
+                                <td class='sp-table-item'>Supports thesis with evidence from at least all but one of the
+                                    documents</td>
+                                <td class='sp-table-item'>2</td>
+                            </tr>
+                            <tr class='sp-table-row highlight'>
+                                <td class='sp-table-item'>(Only supports thesis with evidence from at least all but two
+                                    of
+                                    the documents)</td>
+                                <td class='sp-table-item'>(1)</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Analyzes bias or point of view in at least 2 documents</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row highlight'>
+                                <td class='sp-table-item'>Groups documents in 2 or 3 different ways depending on the
+                                    prompt</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Identifies one type of appropriate additional document</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item border-t-2 border-gray-400 border-dashed'>Expanded Core:
+                                    expands
+                                    beyond the basic core (can only earn points in the expanded core after earning all 7
+                                    previous points). This can be earned in a number of different ways, including:
+                                    <ul class='list-disc pl-10'>
+                                        <li class='text'>A clear, analytical, and comprehensive thesis</li>
+                                        <li class='text'>Analyzes the bias or point of view of multiple documents</li>
+                                        <li class='text'>Analyzes document in additional ways: groupings, comparisons,
+                                            synthesis</li>
+                                        <li class='text'>Uses evidence not found in the documents</li>
+                                        <li class='text highlight'>Explains why additional types of documents are
+                                            needed</li>
+                                    </ul>
+                                </td>
+                                <td class='sp-table-item border-t-2 border-gray-400 border-dashed'>2</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+
+                <h3 class='subtitle' id='2017'>2017 Changes</h3>
+                <p class='text'>The new SAQ and LEQ questions replaced the comparative and change-over-time essays. The
+                    number of documents in DBQs was reduced to seven, and more time was given to complete it. The number
+                    of MCQs were reduced to 55, and were no longer about the memorization of facts, but about responding
+                    to stimulus, which can be a primary or secondary source that could include a passage, image, or
+                    data.</p>
+                <p class='sub2title'>Exam</p>
+                <p class='sub3title'>Multiple Choice Questions (MCQ)</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text highlight'>55 stimulus questions (questions that include responding to a
+                        primary or secondary source)
+                    </li>
+                    <li class='text highlight'>55 minutes</li>
+                    <li class='text'>60 seconds per question</li>
+                    <li class='text'>40% of exam score</li>
+                </ul>
+                <p class='sub3title highlight'>Short Answer Questions (SAQ)</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text'>40 minutes</li>
+                    <li class='text'>3 questions
+                        <ul class='list-disc pl-10'>
+                            <li class='text'>Question 1:
+                                <ul class='list-disc pl-10'>
+                                    <li class='text'>Periods 3-6</li>
+                                    <li class='text'>Given stimulus from a secondary source</li>
+                                </ul>
+                            </li>
+                            <li class='text'>Question 2:
+                                <ul class='list-disc pl-10'>
+                                    <li class='text'>Periods 3-6</li>
+                                    <li class='text'>Given stimulus from a primary source or image</li>
+                                </ul>
+                            </li>
+                            <li class='text'>Choose between:
+                                <ul class='list-disc pl-10'>
+                                    <li class='text'>Question 3:
+                                        <ul class='list-disc pl-10'>
+                                            <li class='text'>Periods 1-3</li>
+                                            <li class='text'>No stimulus</li>
+                                        </ul>
+                                    </li>
+                                    <li class='text'>Question 4:
+                                        <ul class='list-disc pl-10'>
+                                            <li class='text'>Periods 4-6</li>
+                                            <li class='text'>No stimulus</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='text'>13 minutes and 20 seconds per question</li>
+                    <li class='text'>20% of exam score</li>
+                </ul>
+                <p class='sub3title'>Document-Based Question (DBQ)</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text highlight'>7 documents</li>
+                    <li class='text highlight'>60 minutes</li>
+                    <li class='text highlight'>15 minute built-in reading period</li>
+                    <li class='text'>25% of exam score</li>
+                    <li class='text'>Rubric:
+                        <table class='sp-table mt-4'>
+                            <tr class='sp-table-head'>
+                                <th class='sp-table-head-item'>Description</th>
+                                <th class='sp-table-head-item'>Possible points</th>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Historically defensible thesis that responds to the prompt and
+                                    establishes a line of reasoning</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row highlight'>
+                                <td class='sp-table-item'>Describes broader historical context relevant to the prompt
+                                </td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row highlight'>
+                                <td class='sp-table-item'>Supports an argument in response to prompt using at least 6
+                                    documents
+                                </td>
+                                <td class='sp-table-item'>2</td>
+                            </tr>
+                            <tr class='sp-table-row highlight'>
+                                <td class='sp-table-item'>(Only addresses topic of prompt using at least 3 documents)
+                                </td>
+                                <td class='sp-table-item'>(1)</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Uses at least one additional piece of evidence not found in
+                                    the
+                                    documents and that is relevant to the prompt</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row highlight'>
+                                <td class='sp-table-item'>Explains how the document's point of view, purpose, historical
+                                    situation, or audience is relevant to an argument for at least 3 documents</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Complexity: Demonstrates a complex understanding of the
+                                    historical
+                                    development of the prompt using evidence to corroborate, qualify, or modify an
+                                    argument
+                                </td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <p class='sub3title highlight'>Long Essay Question (LEQ)</p>
+                <ul class='list-disc pl-10'>
+                    <li class='text'>40 minutes</li>
+                    <li class='text'>Choose from one of three questions that correspond to periods 1-2, 3-4, and 5-6
+                    </li>
+                    <li class='text'>15% of exam score</li>
+                    <li class='text'>Rubric:
+                        <table class='sp-table mt-4'>
+                            <tr class='sp-table-head'>
+                                <th class='sp-table-head-item'>Description</th>
+                                <th class='sp-table-head-item'>Possible points</th>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Historically defensible thesis that responds to the prompt and
+                                    establishes a line of reasoning</td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Describes broader historical context relevant to the prompt
+                                </td>
+                                <td class='sp-table-item'>1</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Supports an argument in response to prompt using specific and
+                                    relevant pieces of evidence
+                                </td>
+                                <td class='sp-table-item'>2</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>(Only provides pieces of evidence relevant to the topic of the
+                                    prompt)
+                                </td>
+                                <td class='sp-table-item'>(1)</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>Complexity: Demonstrates a complex understanding of the
+                                    historical
+                                    development of the prompt using evidence to corroborate, qualify, or modify an
+                                    argument
+                                </td>
+                                <td class='sp-table-item'>2</td>
+                            </tr>
+                            <tr class='sp-table-row'>
+                                <td class='sp-table-item'>(Only uses historical reasoning to structure an argument that
+                                    addresses the prompt)</td>
+                                <td class='sp-table-item'>(1)</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+
+                <h3 class='subtitle' id='2020'>2020 Changes</h3>
+                <p class='text'>The most recent changes to the curriculum were switching from time periods to units, and
+                    eliminating all content prior to 1200 AD.</p>
+                <p class='sub2title highlight'>Units</p>
+                <table class='sp-table mt-4'>
+                    <tr class='sp-table-head'>
+                        <th class='sp-table-head-item'>Title</th>
+                        <th class='sp-table-head-item'>Date range</th>
+                        <th class='sp-table-head-item'>Exam weight</th>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 1: The Global Tapestry</td>
+                        <td class='sp-table-item'>1200 - 1450</td>
+                        <td class='sp-table-item'>8-10%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 2: Networks of Exchange</td>
+                        <td class='sp-table-item'>1200 - 1450</td>
+                        <td class='sp-table-item'>8-10%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 3: Land-Based Empires</td>
+                        <td class='sp-table-item'>1450 - 1750</td>
+                        <td class='sp-table-item'>12-15%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 4: Transoceanic Connections</td>
+                        <td class='sp-table-item'>1450 - 1750</td>
+                        <td class='sp-table-item'>12-15%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 5: Revolutions</td>
+                        <td class='sp-table-item'>1750 - 1900</td>
+                        <td class='sp-table-item'>12-15%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 6: Consequences of Industrialization</td>
+                        <td class='sp-table-item'>1750 - 1900</td>
+                        <td class='sp-table-item'>12-15%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 7: Global Conflict</td>
+                        <td class='sp-table-item'>1900 - present</td>
+                        <td class='sp-table-item'>8-10%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 8: Cold War and Decolonization</td>
+                        <td class='sp-table-item'>1900 - present</td>
+                        <td class='sp-table-item'>8-10%</td>
+                    </tr>
+                    <tr class='sp-table-row'>
+                        <td class='sp-table-item'>Unit 9: Globalization</td>
+                        <td class='sp-table-item'>1900 - present</td>
+                        <td class='sp-table-item'>8-10%</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class='hidden md:block flex-[0.3] sticky top-48 self-start ml-8'>
+                <div class='section'>
+                    <p class='sub2title mt-0'>Sections</p>
+                    <a href='./#2002' class='text link block'>Original 2002 Curriculum</a>
+                    <a href='./#2004' class='text link block'>2004 Changes</a>
+                    <a href='./#2011' class='text link block'>2011 Changes</a>
+                    <a href='./#2017' class='text link block'>2017 Changes</a>
+                    <a href='./#2020' class='text link block'>2020 Changes</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src='../../script.js'></script>
