@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'LexendDeca': ['Lexend Deca', 'sans-serif'],
-      'Sen': ['Sen', 'sans-serif']
+      'Sen': ['Sen', 'sans-serif'],
+      'NotoSerif': ['Noto Serif', 'sans-serif']
     },
     extend: {
       width: {

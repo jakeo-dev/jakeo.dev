@@ -1,5 +1,3 @@
-window.onload = setDesc;
-
 document.querySelector('#dscdSocial').onclick = function () {
     document.querySelector('#modal').classList.remove('fadeIn');
     document.querySelector('#modal').classList.add('fadeOut');
@@ -32,12 +30,53 @@ let quotes = [
     'a programming rabbit',
     'a programming bunny',
     'i still hate chemistry',
-    'become bunny'
+    'become bunny',
+    'i occasionally make websites',
+    'not every website needs ai',
+    /* 'stop contracting the possessive \'have\'', */
+    'who needs to think when your feet just go'
 ];
 
 function setDesc() {
-    document.querySelector('#desc').innerText = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('desc').innerText = quotes[Math.floor(Math.random() * quotes.length)];
 }
+
+/* let i = 0;
+let add = false;
+let t;
+
+document.getElementById('header').addEventListener('mouseover', startRotate, false);
+document.getElementById('header').addEventListener('mouseout', stopRotate, false);
+
+function startRotate(c) {
+    time = 20;
+    if (c == 'click') {
+        time = 1;
+    }
+    t = setInterval(rotate, time);
+}
+
+function rotate() {
+    if (i == -2) {
+        add = true;
+    } else if (i == 2) {
+        add = false;
+    }
+    if (add == true) {
+        i = round(i + 0.01);
+    } else {
+        i = round(i - 0.01);
+    }
+    document.getElementById('header').style.rotate = i + 'deg';
+}
+
+function stopRotate() {
+    clearInterval(t);
+}
+
+function round(x) { // nearest hundredths (2nd decimal) place
+    return Math.round(x * 100) / 100;
+} */
 
 function clickBunny() {
     window.open('../../', '_self');

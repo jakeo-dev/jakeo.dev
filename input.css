@@ -4,19 +4,30 @@
 
 @layer components {
   .proj {
-    @apply flex flex-col bg-gray-800 rounded-xl border-gray-600/40 shadow-sm;
+    @apply flex flex-col bg-gray-800  rounded-xl shadow-md;
   }
 
   .sectionTitle {
-    @apply text-2xl font-medium text-left px-10 mb-8;
+    /* also blog post */
+    @apply text-xl md:text-2xl font-semibold text-left px-6 md:px-10 mt-20 mb-8;
+  }
+
+  .subSectionTitle {
+    /* also blog post */
+    @apply text-lg font-normal text-gray-400 text-left px-6 md:px-10 mb-8;
   }
 
   .section {
-    @apply bg-gray-800 rounded-xl border-gray-600/40 text-lg text-left shadow-sm leading-8 px-8 py-6;
+    /* also blog post */
+    @apply bg-gray-800  rounded-xl text-left shadow-md leading-8 px-8 py-6;
   }
 
-  .bioLink {
+  .link {
     @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-400 transition-all;
+  }
+
+  .downloadLink {
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-500 transition-all;
   }
 
   .subtext {
@@ -24,7 +35,7 @@
   }
 
   .button {
-    @apply flex justify-center items-center rounded-full text-lg text-center text-gray-800 bg-gray-100 hover:bg-gray-300 active:bg-gray-400 shadow-sm hover:shadow-md active:shadow-lg px-2 py-1.5 transition-all;
+    @apply flex justify-center items-center rounded-full text-center text-gray-100 hover:text-gray-200 active:text-gray-300 bg-blue-500/90 hover:bg-blue-600/80 active:bg-blue-700/70 hover:shadow-xl active:shadow-none px-2 py-1.5 transition-all;
   }
 
   .pImg {
@@ -35,10 +46,6 @@
     @apply inline-block md:flex w-1/5 md:w-1/16 lg:w-1/20 mr-6 mb-6;
   }
 
-  .subtitle {
-    @apply border-b-2 border-gray-400 px-4 py-4 text-2xl leading-10 mt-6 mb-4;
-  }
-
   .fadeIn {
     @apply invisible opacity-0 transition-all;
   }
@@ -46,6 +53,67 @@
   .fadeOut {
     @apply visible opacity-100 transition-all;
   }
+
+  /* blog posts */
+
+  .subtitle {
+    @apply font-medium border-gray-300 px-4 py-4 text-2xl leading-[3rem] mt-24;
+  }
+
+  .sub2title {
+    @apply font-medium border-gray-400 px-4 py-2 text-xl leading-[3rem] mt-10;
+  }
+
+  .sub3title {
+    @apply font-medium leading-[3rem] mt-6;
+  }
+
+  .text {
+    @apply leading-[2.5rem];
+  }
+
+  .sp-table {
+    @apply max-w-lg md:max-w-full border-b-2 border-t-0 border-gray-400;
+  }
+
+  .sp-table-head {
+    @apply border-b-2 border-gray-400;
+  }
+
+  .sp-table-head-item {
+    @apply font-normal align-bottom leading-normal md:pr-8 pl-4 pb-3;
+  }
+
+  .sp-table-item {
+    @apply font-normal align-top leading-relaxed md:leading-8 border-x-2 border-gray-400 pl-4 pr-8 py-2;
+  }
+
+  .sp-table-list-item {
+    @apply leading-relaxed md:leading-8;
+  }
+
+  .sp-table-row {
+    @apply border-b-2 border-gray-400;
+  }
+
+  .highlight {
+    @apply bg-gradient-to-br from-green-400/40 to-green-400/30 italic;
+  }
+
+  .math {
+    @apply font-NotoSerif tracking-wide;
+  }
+}
+
+.fade-text {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.border-text-white:hover {
+  text-shadow: 1.5px 0 #d1d5db, -1.5px 0 #d1d5db, 0 1.5px #d1d5db,
+    0 -1.5px #d1d5db, 1px 1px #d1d5db, -1px -1px #d1d5db, 1px -1px #d1d5db,
+    -1px 1px #d1d5db;
 }
 
 ::selection {
