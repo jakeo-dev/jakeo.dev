@@ -986,8 +986,17 @@ video {
   height: 100%;
 }
 
+.h-\[36\%\] {
+  height: 36%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .flex-1 {
@@ -1048,6 +1057,14 @@ video {
 
 .rounded-none {
   border-radius: 0px;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-none {
@@ -1199,6 +1216,11 @@ video {
      object-fit: contain;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .object-bottom {
   -o-object-position: bottom;
      object-position: bottom;
@@ -1329,11 +1351,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-extrabold {
