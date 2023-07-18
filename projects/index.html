@@ -41,7 +41,8 @@
 
     <!-- header -->
 
-    <header class='bg-gradient-to-b from-gray-900/80 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-32'>
+    <header
+        class='bg-gradient-to-b from-gray-900/80 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-32 z-10'>
 
         <header
             class='bg-gradient-to-b from-gray-200 to-gray-300 top-0 left-0 sticky rounded-none md:rounded-full shadow-xl px-8 py-6'>
@@ -64,6 +65,13 @@
 
                 <div class='flex justify-between px-2 md:p-0 mt-6 md:m-0'>
                     <button class='inline-block ml-none md:ml-5 hover:scale-110 active:scale-100 transition-all'
+                        title='jakeorch'>
+                        <a href='https://github.com/jakeorch' target='_blank'><i
+                                class='fa-brands fa-github text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-gray-800 transition-all'
+                                aria-label='GitHub'></i></a>
+                    </button>
+
+                    <button class='inline-block ml-auto md:ml-5 hover:scale-110 active:scale-100 transition-all'
                         title='jakeybakers'>
                         <a href='https://www.youtube.com/@jakeybakers' target='_blank'><i
                                 class='fa-brands fa-youtube text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-red-500 transition-all'
@@ -83,13 +91,6 @@
                                 class='fa-brands fa-steam text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-slate-700 transition-all'
                                 aria-label='Steam'></i></a>
                     </button>
-
-                    <button class='inline-block ml-auto md:ml-5 hover:scale-110 active:scale-100 transition-all'
-                        title='jakeorch'>
-                        <a href='https://github.com/jakeorch' target='_blank'><i
-                                class='fa-brands fa-github text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-gray-800 transition-all'
-                                aria-label='GitHub'></i></a>
-                    </button>
                 </div>
 
             </div>
@@ -102,13 +103,20 @@
         <!-- projects -->
 
         <div class='sectionTitle mt-0'>
-            <h1 class='inline-block' id='projects'>Projects</h1>
+            <h1 class='inline-block' id='projects'>All Projects</h1>
         </div>
 
         <div class='grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8'>
 
             <div class='proj'>
-                <img src='../images/money-ss.png' alt='Screenshot of the Perspectives of Money website' class='pImg'>
+                <div class='relative h-52 border-b-2 border-gray-600'>
+                    <img src='../images/money-ss.png' alt='Screenshot of the Perspectives of Money website'
+                        class='pImgTrans moneyImg'>
+                    <img src='../images/money-ss-2.png' alt='Screenshot of the Perspectives of Money website'
+                        class='pImgTrans moneyImg opacity-0'>
+                    <img src='../images/money-ss-3.png' alt='Screenshot of the Perspectives of Money website'
+                        class='pImgTrans moneyImg opacity-0'>
+                </div>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='title text-xl font-semibold text-stone-100'>Perspectives of Money</h1>
@@ -129,34 +137,45 @@
             </div>
 
             <div class='proj'>
-                <img src='../images/phone-ss.png' alt='Screenshot of the Personalized Phone Number Generator website'
-                    class='pImg'>
+                <div class='relative h-52 border-b-2 border-gray-600'>
+                    <img src='../images/cifra-ss.png' alt='Screenshot of the Cifra website' class='pImgTrans cifraImg'>
+                    <img src='../images/cifra-ss-2.png' alt='Screenshot of the Cifra website'
+                        class='pImgTrans cifraImg opacity-0'>
+                </div>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
-                    <h1 class='title text-xl font-semibold text-stone-100'>Personalized Phone Number Generator</h1>
-                    <h2 class='leading-7 mt-2'>Find hidden words in your phone number to make it fun
-                        and unforgettable.</h2>
+                    <h1 class='title text-xl font-semibold text-stone-100'>Cifra</h1>
+                    <h2 class='leading-7 mt-2'>Discover hidden words in your phone number to make it fun and
+                        unforgettable.
+                    </h2>
                     <h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
                             title='Initial release'></i>February 2023</h2>
                     <h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
-                            title='Last updated'></i>March 2023</h2>
+                            title='Last updated'></i>July 2023</h2>
                 </div>
                 <div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-                    <a class='button w-full' href='https://phone.jakeo.dev' target='_blank'>Visit</a>
+                    <a class='button w-full' href='https://cifra.jakeo.dev' target='_blank'>Visit</a>
                     <a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
-                        href='https://github.com/jakeorch/word-phone-number' target='_blank'><i
+                        href='https://github.com/jakeorch/cifra' target='_blank'><i
                             class='fa-brands fa-github text-xl mr-2' aria-label='GitHub'></i>GitHub</a>
                 </div>
             </div>
 
             <div class='proj'>
-                <img src='../images/plannter-ss.png' alt='Screenshot of the Plannter website'
-                    class='pImg object-bottom'>
+                <div class='relative h-52 border-b-2 border-gray-600'>
+                    <img src='../images/plannter-ss.png' alt='Screenshot of the Plannter website'
+                        class='pImgTrans plantImg object-bottom'>
+                    <img src='../images/plannter-ss-2.png' alt='Screenshot of the Plannter website'
+                        class='pImgTrans plantImg object-left opacity-0'>
+                    <img src='../images/plannter-ss-3.png' alt='Screenshot of the Plannter website'
+                        class='pImgTrans plantImg object-top opacity-0'>
+                    <img src='../images/plannter-ss-4.png' alt='Screenshot of the Plannter website'
+                        class='pImgTrans plantImg object-top opacity-0'>
+                </div>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='title text-xl font-semibold text-stone-100'>Plannter</h1>
-                    <h2 class='leading-7 mt-2'>Manage and keep track of all the courses, achievements,
-                        and tests you have completed during high school.</h2>
+                    <h2 class='leading-7 mt-2'>Keep track of all your high school courses, activities, and tests.</h2>
                     <h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
                             title='Initial release'></i>January 2023</h2>
                     <h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
@@ -172,12 +191,12 @@
             </div>
 
             <div class='proj'>
-                <img src='../images/yearn-ss.png' alt='Screenshot of the Yearn website' class='pImg object-top'>
+                <img src='../images/yearn-ss.png' alt='Screenshot of the Yearn website' class='pImg object-top'
+                    id='AyearnSS'>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='title text-xl font-semibold text-stone-100'>Yearn</h1>
-                    <h2 class='leading-7 mt-2'>Organize everything you yearn for into a simple list.
-                    </h2>
+                    <h2 class='leading-7 mt-2'>Organize everything you yearn for into a simple list.</h2>
                     <h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
                             title='Initial release'></i>November 2022</h2>
                     <h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
@@ -192,7 +211,12 @@
             </div>
 
             <div class='proj'>
-                <img src='../images/filter-ss.png' alt='Screenshot of the Text Filter website' class='pImg'>
+                <div class='relative h-52 border-b-2 border-gray-600'>
+                    <img src='../images/filter-ss.png' alt='Screenshot of the Text Filter website'
+                        class='pImgTrans filterImg'>
+                    <img src='../images/filter-ss-2.png' alt='Screenshot of the Text Filter website'
+                        class='pImgTrans filterImg opacity-0'>
+                </div>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='title text-xl font-semibold text-stone-100'>Text Filter</h1>
@@ -212,7 +236,8 @@
             </div>
 
             <div class='proj'>
-                <img src='../images/cerebric-ss.png' alt='Screenshot of the Cerebric website' class='pImg'>
+                <img src='../images/cerebric-ss.png' alt='Screenshot of the Cerebric website' class='pImg'
+                    id='AcerebricSS'>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='title text-xl font-semibold text-stone-100'>Cerebric</h1>
@@ -232,8 +257,18 @@
             </div>
 
             <div class='proj'>
-                <img src='../images/tree-ss.png' alt='Screenshot of the Decorate a Tree website'
-                    class='pImg object-bottom'>
+                <div class='relative h-52 border-b-2 border-gray-600'>
+                    <img src='../images/tree-ss.png' alt='Screenshot of the Decorate a Tree website'
+                        class='pImgTrans treeImg object-bottom'>
+                    <img src='../images/tree-ss-2.png' alt='Screenshot of the Decorate a Tree website'
+                        class='pImgTrans treeImg object-top opacity-0'>
+                    <img src='../images/tree-ss-3.png' alt='Screenshot of the Decorate a Tree website'
+                        class='pImgTrans treeImg object-bottom opacity-0'>
+                    <img src='../images/tree-ss-4.png' alt='Screenshot of the Decorate a Tree website'
+                        class='pImgTrans treeImg object-top opacity-0'>
+                    <img src='../images/tree-ss-5.png' alt='Screenshot of the Decorate a Tree website'
+                        class='pImgTrans treeImg object-bottom opacity-0'>
+                </div>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='title text-xl font-semibold text-stone-100'>Decorate a Tree</h1>
@@ -255,7 +290,7 @@
 
             <!-- <div class='proj'>
 				<img src='../images/roulette-ss.png' alt='Screenshot of the Rick Roll Roulette website'
-					class='pImg object-top'>
+					class='pImg object-top' id='ArouletteSS'>
 
 				<div class='flex-grow w-full text-left p-6 md:p-8'>
 					<h1 class='title text-xl font-semibold text-stone-100'>Rick Roll Roulette</h1>
@@ -275,7 +310,8 @@
 			</div> -->
 
             <div class='proj'>
-                <img src='../images/emoticons-ss.png' alt='Screenshot of the Emoticon Generator website' class='pImg'>
+                <img src='../images/emoticons-ss.png' alt='Screenshot of the Emoticon Generator website' class='pImg'
+                    id='AemoteSS'>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='title text-xl font-semibold text-stone-100'>Emoticon Generator</h1>
@@ -295,7 +331,12 @@
             </div>
 
             <div class='proj'>
-                <img src='../images/bunnies-ss.png' alt='Screenshot of the Colorful Bunnies website' class='pImg'>
+                <div class='relative h-52 border-b-2 border-gray-600'>
+                    <img src='../images/bunnies-ss.png' alt='Screenshot of the Colorful Bunnies website'
+                        class='pImgTrans bunnyImg'>
+                    <img src='../images/bunnies-ss-2.png' alt='Screenshot of the Colorful Bunnies website'
+                        class='pImgTrans bunnyImg opacity-0'>
+                </div>
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='title text-xl font-semibold text-stone-100'>Colorful Bunnies</h1>

@@ -41,7 +41,8 @@
 
 	<!-- header -->
 
-	<header class='bg-gradient-to-b from-gray-900/80 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-32'>
+	<header
+		class='bg-gradient-to-b from-gray-900/80 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-32 z-10'>
 
 		<header
 			class='bg-gradient-to-b from-gray-200 to-gray-300 top-0 left-0 sticky rounded-none md:rounded-full shadow-xl px-8 py-6'>
@@ -64,6 +65,13 @@
 
 				<div class='flex justify-between px-2 md:p-0 mt-6 md:m-0'>
 					<button class='inline-block ml-none md:ml-5 hover:scale-110 active:scale-100 transition-all'
+						title='jakeorch'>
+						<a href='https://github.com/jakeorch' target='_blank'><i
+								class='fa-brands fa-github text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-gray-800 transition-all'
+								aria-label='GitHub'></i></a>
+					</button>
+
+					<button class='inline-block ml-auto md:ml-5 hover:scale-110 active:scale-100 transition-all'
 						title='jakeybakers'>
 						<a href='https://www.youtube.com/@jakeybakers' target='_blank'><i
 								class='fa-brands fa-youtube text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-red-500 transition-all'
@@ -83,13 +91,6 @@
 								class='fa-brands fa-steam text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-slate-700 transition-all'
 								aria-label='Steam'></i></a>
 					</button>
-
-					<button class='inline-block ml-auto md:ml-5 hover:scale-110 active:scale-100 transition-all'
-						title='jakeorch'>
-						<a href='https://github.com/jakeorch' target='_blank'><i
-								class='fa-brands fa-github text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-gray-800 transition-all'
-								aria-label='GitHub'></i></a>
-					</button>
 				</div>
 
 			</div>
@@ -106,15 +107,14 @@
 		</div>
 
 		<div id='bio' class='section'>
-			<p class='leading-10'>I build funny or useful websites using JavaScript and Tailwind CSS, and I hope to
-				learn more programming things in the future.</p>
+			<p class='leading-10'>I build fun and useful websites using only JavaScript and Tailwind CSS for now, but I
+				hope to learn more programming things at some point.</p>
 			<p class='leading-10'>The font I use is called <a href='https://lexend.com' target='_blank'
 					class='link'>Lexend Deca</a>, which is known for improving reading proficiency.</p>
-			<p class='leading-10'>Right now, I'm enjoying a broswer called <a href='https://arc.net/' target='_blank'
-					class='link'>Arc</a>, which has many useful and unique features.</p>
-			<p class='leading-10'>Some other things that I like include Google products, <a
-					class='hover:text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-600 to-blue-500 transition-all'>gradients</a>,
-				and changing my websites too often...
+			<p class='leading-10'>Right now, I'm enjoying a browser called <a href='https://arc.net/' target='_blank'
+					class='link'>Arc</a> for its many useful and unique features.</p>
+			<p class='leading-10'>Some other things that I currently like include Google products, playing Terraria, and
+				updating my websites too often...
 			</p>
 		</div>
 
@@ -182,102 +182,131 @@
 					class='fa-solid fa-arrow-right ml-2'></i></a>
 		</div>
 
-		<div class='grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8'>
+		<div class='flex'>
 
-			<div class='proj'>
-				<img src='images/phone-ss.png' alt='Screenshot of the Personalized Phone Number Generator website'
-					class='pImg'>
+			<div class='flex-1 grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8'>
+				<div class='proj'>
+					<div class='relative h-52 border-b-2 border-gray-600'>
+						<img src='images/plannter-ss.png' alt='Screenshot of the Plannter website'
+							class='pImgTrans plantImg object-bottom'>
+						<img src='images/plannter-ss-2.png' alt='Screenshot of the Plannter website'
+							class='pImgTrans plantImg object-left opacity-0'>
+						<img src='images/plannter-ss-3.png' alt='Screenshot of the Plannter website'
+							class='pImgTrans plantImg object-top opacity-0'>
+						<img src='images/plannter-ss-4.png' alt='Screenshot of the Plannter website'
+							class='pImgTrans plantImg object-top opacity-0'>
+					</div>
 
-				<div class='flex-grow w-full text-left p-6 md:p-8'>
-					<h1 class='title text-xl font-semibold text-stone-100'>Personalized Phone Number Generator</h1>
-					<h2 class='leading-7 mt-2'>Find hidden words in your phone number to make it fun
-						and unforgettable.</h2>
-					<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-							title='Initial release'></i>February 2023</h2>
-					<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
-							title='Last updated'></i>March 2023</h2>
+					<div class='flex-grow w-full text-left p-6 md:p-8'>
+						<h1 class='title text-xl font-semibold text-stone-100'>Plannter</h1>
+						<h2 class='leading-7 mt-2'>Keep track of all your high school courses, activities, and tests.
+						</h2>
+						<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
+								title='Initial release'></i>January 2023</h2>
+						<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
+								title='Last updated'></i>June 2023</h2>
+					</div>
+					<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
+						<a class='button bg-emerald-600/90 hover:bg-emerald-700/80 active:bg-emerald-800/70 w-full'
+							href='https://plannter.jakeo.dev' target='_blank'>Visit</a>
+						<a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
+							href='https://github.com/jakeorch/plannter' target='_blank'><i
+								class='fa-brands fa-github text-xl mr-2' aria-label='GitHub'></i>GitHub</a>
+					</div>
 				</div>
-				<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-					<a class='button w-full' href='https://phone.jakeo.dev' target='_blank'>Visit</a>
-					<a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
-						href='https://github.com/jakeorch/word-phone-number' target='_blank'><i
-							class='fa-brands fa-github text-xl mr-2' aria-label='GitHub'></i>GitHub</a>
+
+				<div class='proj'>
+					<div class='relative h-52 border-b-2 border-gray-600'>
+						<img src='images/cifra-ss.png' alt='Screenshot of the Cifra website' class='pImgTrans cifraImg'>
+						<img src='images/cifra-ss-2.png' alt='Screenshot of the Cifra website'
+							class='pImgTrans cifraImg opacity-0'>
+					</div>
+
+					<div class='flex-grow w-full text-left p-6 md:p-8'>
+						<h1 class='title text-xl font-semibold text-stone-100'>Cifra</h1>
+						<h2 class='leading-7 mt-2'>Discover hidden words in your phone number to make it fun
+							and unforgettable.</h2>
+						<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
+								title='Initial release'></i>February 2023</h2>
+						<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
+								title='Last updated'></i>July 2023</h2>
+					</div>
+					<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
+						<a class='button w-full' href='https://cifra.jakeo.dev' target='_blank'>Visit</a>
+						<a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
+							href='https://github.com/jakeorch/cifra' target='_blank'><i
+								class='fa-brands fa-github text-xl mr-2' aria-label='GitHub'></i>GitHub</a>
+					</div>
 				</div>
+
+				<div class='proj'>
+					<div class='relative h-52 border-b-2 border-gray-600'>
+						<img src='images/tree-ss.png' alt='Screenshot of the Decorate a Tree website'
+							class='pImgTrans treeImg object-bottom'>
+						<img src='images/tree-ss-2.png' alt='Screenshot of the Decorate a Tree website'
+							class='pImgTrans treeImg object-top opacity-0'>
+						<img src='images/tree-ss-3.png' alt='Screenshot of the Decorate a Tree website'
+							class='pImgTrans treeImg object-bottom opacity-0'>
+						<img src='images/tree-ss-4.png' alt='Screenshot of the Decorate a Tree website'
+							class='pImgTrans treeImg object-top opacity-0'>
+						<img src='images/tree-ss-5.png' alt='Screenshot of the Decorate a Tree website'
+							class='pImgTrans treeImg object-bottom opacity-0'>
+					</div>
+
+					<div class='flex-grow w-full text-left p-6 md:p-8'>
+						<h1 class='title text-xl font-semibold text-stone-100'>Decorate a Tree</h1>
+						<h2 class='leading-7 mt-2'>Decorate your own digital Christmas tree with various
+							ornaments, candy canes, lights, and more.</h2>
+						<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
+								title='Initial release'></i>December 2021</h2>
+						<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
+								title='Last updated'></i>December 2022</h2>
+					</div>
+					<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
+						<a class='button bg-green-600/90 hover:bg-green-700/80 active:bg-green-800/70 w-full'
+							href='https://tree.jakeo.dev' target='_blank'>Visit</a>
+						<a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
+							href='https://github.com/jakeorch/decorate-tree' target='_blank'><i
+								class='fa-brands fa-github text-xl mr-2' aria-label='GitHub'></i>GitHub</a>
+					</div>
+				</div>
+
 			</div>
 
-			<div class='proj'>
-				<img src='images/plannter-ss.png' alt='Screenshot of the Plannter website' class='pImg object-bottom'>
-
-				<div class='flex-grow w-full text-left p-6 md:p-8'>
-					<h1 class='title text-xl font-semibold text-stone-100'>Plannter</h1>
-					<h2 class='leading-7 mt-2'>Manage and keep track of all the courses, achievements,
-						and tests you have completed during high school.</h2>
-					<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-							title='Initial release'></i>January 2023</h2>
-					<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
-							title='Last updated'></i>June 2023</h2>
-				</div>
-				<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-					<a class='button bg-emerald-600/90 hover:bg-emerald-700/80 active:bg-emerald-800/70 w-full'
-						href='https://plannter.jakeo.dev' target='_blank'>Visit</a>
-					<a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
-						href='https://github.com/jakeorch/plannter' target='_blank'><i
-							class='fa-brands fa-github text-xl mr-2' aria-label='GitHub'></i>GitHub</a>
-				</div>
-			</div>
-
-			<div class='proj'>
-				<img src='../images/tree-ss.png' alt='Screenshot of the Decorate a Tree website'
-					class='pImg object-bottom'>
-
-				<div class='flex-grow w-full text-left p-6 md:p-8'>
-					<h1 class='title text-xl font-semibold text-stone-100'>Decorate a Tree</h1>
-					<h2 class='leading-7 mt-2'>Decorate your own digital Christmas tree with various
-						ornaments, candy canes, lights, and more.</h2>
-					<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-							title='Initial release'></i>December 2021</h2>
-					<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-rotate-right mr-2'
-							title='Last updated'></i>December 2022</h2>
-				</div>
-				<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-					<a class='button bg-green-600/90 hover:bg-green-700/80 active:bg-green-800/70 w-full'
-						href='https://tree.jakeo.dev' target='_blank'>Visit</a>
-					<a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
-						href='https://github.com/jakeorch/decorate-tree' target='_blank'><i
-							class='fa-brands fa-github text-xl mr-2' aria-label='GitHub'></i>GitHub</a>
-				</div>
-			</div>
+			<!-- <a href='/projects'
+				class='hidden xl:flex text-2xl bg-gray-800 hover:bg-gray-700 active:bg-gray-600 rounded-xl shadow-md px-4 ml-8 transition-all items-center'><i
+					class='fa-solid fa-arrow-right my-auto'></i></a> -->
 
 		</div>
 
 		<!-- videos -->
 
-		<!-- <div class='sectionTitle'>
+		<div class='sectionTitle'>
 			<h1 class='inline-block' id='posts'>Featured Videos</h1>
 			<a href='https://youtube.com/@jakeybakers' class='block text-xl link mt-2'>All videos<i
 					class='fa-solid fa-arrow-right ml-2'></i></a>
 		</div>
 
-		<div class='grid xl:grid-cols-2 gap-4 md:gap-8'>
+		<div class='flex'>
 
-			<div class='proj'>
-				<div class='flex-grow w-full text-left p-6 md:p-8'>
-					<h1 class='title text-xl font-semibold text-stone-100'>Carnival Panorama — June 17-24 2023</h1>
-					<div class="h-full">
-						<iframe src="https://www.youtube.com/embed/CmQtFxmJNXM" title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen class='mt-2 rounded-lg w-full object-cover h-full'></iframe>
-					</div>
-					<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-							title='Initial release'></i>July 2023</h2>
-				</div>
-				<div class='flex px-6 md:px-8 pb-6 md:pb-8 h-full'>
-					<a class='button w-full' href='/blog/ap-world-history-a-history'>Watch</a>
-				</div>
+			<div class='flex-1 grid xl:grid-cols-2 gap-4 md:gap-8'>
+
+				<iframe src="https://www.youtube.com/embed/CmQtFxmJNXM" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen class='proj w-full h-96'></iframe>
+
+
+				<iframe src="https://www.youtube.com/embed/ssFl9l3Dlsc" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen class='proj w-full h-96'></iframe>
+
 			</div>
 
-		</div> -->
+			<!-- <a href='https://youtube.com/@jakeybakers'
+				class='hidden xl:flex text-2xl bg-gray-800 hover:bg-gray-700 active:bg-gray-600 rounded-xl shadow-md px-4 ml-8 transition-all items-center'><i
+					class='fa-solid fa-arrow-right my-auto'></i></a> -->
+
+		</div>
 
 		<!-- posts -->
 
@@ -286,22 +315,30 @@
 			<a href='/blog' class='block text-xl link mt-2'>All posts<i class='fa-solid fa-arrow-right ml-2'></i></a>
 		</div>
 
-		<div class='grid xl:grid-cols-2 gap-4 md:gap-8'>
+		<div class='flex'>
 
-			<div class='proj'>
-				<div class='flex-grow w-full text-left p-6 md:p-8'>
-					<h1 class='title text-xl font-semibold text-stone-100'>AP World History: a History</h1>
-					<h2 class='fade-text leading-7 mt-2'>As more students enroll in Advanced Placement classes, College
-						Board is bound to make changes to the curriculums of their courses either to more accurately
-						represent...
-					</h2>
-					<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-							title='Initial release'></i>June 2023</h2>
+			<div class='flex-1 grid xl:grid-cols-2 gap-4 md:gap-8'>
+
+				<div class='proj'>
+					<div class='flex-grow w-full text-left p-6 md:p-8'>
+						<h1 class='title text-xl font-semibold text-stone-100'>AP World History: a History</h1>
+						<h2 class='fade-text leading-7 mt-2'>As more students enroll in Advanced Placement classes,
+							College Board is bound to make changes to the curriculums of their courses either to more
+							accurately represent...
+						</h2>
+						<h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
+								title='Initial release'></i>June 2023</h2>
+					</div>
+					<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
+						<a class='button w-full' href='/blog/ap-world-history-a-history'>Read</a>
+					</div>
 				</div>
-				<div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-					<a class='button w-full' href='/blog/ap-world-history-a-history'>Read</a>
-				</div>
+
 			</div>
+
+			<!-- <a href='/blog'
+				class='hidden xl:flex text-2xl bg-gray-800 hover:bg-gray-700 active:bg-gray-600 rounded-xl shadow-md px-4 ml-8 transition-all items-center'><i
+					class='fa-solid fa-arrow-right my-auto'></i></a> -->
 
 		</div>
 

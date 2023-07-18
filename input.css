@@ -4,7 +4,7 @@
 
 @layer components {
   .proj {
-    @apply flex flex-col bg-gray-800  rounded-xl shadow-md;
+    @apply flex flex-col bg-gray-800 rounded-xl shadow-md;
   }
 
   .sectionTitle {
@@ -39,7 +39,11 @@
   }
 
   .pImg {
-    @apply w-full object-cover h-[36%] border-b-2 border-gray-600 rounded-t-lg;
+    @apply w-full object-cover h-52 border-b-2 border-gray-600 rounded-t-lg;
+  }
+
+  .pImgTrans {
+    @apply absolute top-0 left-0 h-full w-full object-cover rounded-t-lg transition-opacity duration-500;
   }
 
   .abilityImg {
