@@ -25,17 +25,17 @@
     <meta property='og:image' content='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'>
 </head>
 
-<body class='bg-gray-900 text-gray-100 text-center p-0 pb-32 m-0 font-LexendDeca transition-all'>
+<body class='body'>
 
     <!-- modal -->
 
     <div id='modal'
         class='fadeIn bg-black/50 flex justify-center items-center fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
-        <div class='relative text-3xl bg-gray-800 rounded-lg w-full md:w-fit shadow-sm px-10 py-7'>
-            <button class='absolute top-4 right-5 text-base hover:text-gray-400 transition-all' onclick='hide()'><i
+        <div class='relative text-3xl bg-gray-300 rounded-lg w-full md:w-fit shadow-sm px-10 py-7'>
+            <button class='absolute top-4 right-5 text-base hover:text-gray-500 transition-all' onclick='hide()'><i
                     class='fa-solid fa-xmark' aria-label='Close' title='Close'></i></button>
             <div class='items-center text-center'>
-                <h1 class='text-indigo-300'>@jakeybakers</h1>
+                <h1 class='text-indigo-600'>@jakeybakers</h1>
             </div>
         </div>
     </div>
@@ -43,24 +43,23 @@
     <!-- header -->
 
     <header
-        class='bg-gradient-to-b from-gray-900/80 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-32 z-10'>
+        class='bg-gradient-to-b from-gray-200/90 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-16 lg:px-32 xl:px-40 z-10'>
 
         <header
-            class='bg-gradient-to-b from-gray-200 to-gray-300 top-0 left-0 sticky rounded-none md:rounded-full shadow-xl px-8 py-6'>
+            class='bg-gradient-to-b from-gray-100 to-gray-200 top-0 left-0 sticky rounded-none md:rounded-full shadow-xl px-8 py-6'>
             <div class='block md:flex items-center justify-between'>
 
                 <div class='flex md:flex-1 md:relative md:float-left align-top leading-none w-full no-underline m-0'>
-                    <img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'
-                        onmouseover='hoverBunny()' onmouseout='offBunny()' onclick='clickBunny()' width='58'
-                        alt='Solid gradient blue gray bunny'
-                        class='object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer mr-3.5'
-                        id='bunnyLogo'>
+                    <img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' width='58'
+                        alt='Solid gradient blue gray bunny' id='bunnyLogo' onclick='clickBunny()'
+                        class='object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer mr-3.5'>
 
                     <div
-                        class='text-transparent bg-clip-text bg-gradient-to-br from-gray-700 to-gray-600 items-center text-left no-underline cursor-default'>
-                        <h1 class='text-xl md:text-2xl font-extrabold m-0'>JakeO<button
-                                onclick='setDesc()'>.</button>dev</h1>
-                        <h2 class='text-base font-semibold mt-1' id='desc'>a programming bunny</h2>
+                        class='text-transparent bg-clip-text bg-gradient-to-br from-gray-700 to-gray-600 items-center text-left no-underline cursor-default transition-all'>
+                        <h1 class='text-xl md:text-2xl font-extrabold hover:underline hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-400 cursor-pointer m-0 transition-all'
+                            onclick='goHome()'>JakeO.dev</h1>
+                        <h2 class='text-base font-semibold mt-1' id='desc'>a
+                            programming bunny</h2>
                     </div>
                 </div>
 
@@ -99,7 +98,7 @@
 
     </header>
 
-    <div class='pt-16 md:pt-24 px-4 md:px-32'>
+    <div class='bodyNoHead'>
 
         <h1 class='sectionTitle mt-0 mb-2'>AP World History: A History</h1>
         <h2 class='subSectionTitle'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>June 2023</h2>
@@ -283,19 +282,19 @@
                                 </tr>
                                 <tr class='sp-table-row'>
                                     <td class='sp-table-item'>Addresses all parts of the prompt
-                                        <p class='text-gray-400'>(or only addresses most parts of the prompt)</p>
+                                        <p class='text-gray-600'>(or only addresses most parts of the prompt)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row'>
                                     <td class='sp-table-item'>Supports thesis with appropriate evidence
-                                        <p class='text-gray-400'>(or only partially supports thesis with appropriate
+                                        <p class='text-gray-600'>(or only partially supports thesis with appropriate
                                             evidence)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row'>
@@ -341,19 +340,19 @@
                                 </tr>
                                 <tr class='sp-table-row'>
                                     <td class='sp-table-item'>Addresses all parts of the prompt
-                                        <p class='text-gray-400'>(or only addresses most parts of the prompt)</p>
+                                        <p class='text-gray-600'>(or only addresses most parts of the prompt)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row'>
                                     <td class='sp-table-item'>Supports thesis with appropriate evidence
-                                        <p class='text-gray-400'>(or only partially supports thesis with appropriate
+                                        <p class='text-gray-600'>(or only partially supports thesis with appropriate
                                             evidence)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row'>
@@ -496,11 +495,11 @@
                                 <tr class='sp-table-row highlight'>
                                     <td class='sp-table-item'>Supports thesis with evidence from at least all but one of
                                         the documents
-                                        <p class='text-gray-400'>(or only supports thesis with evidence from at least
+                                        <p class='text-gray-600'>(or only supports thesis with evidence from at least
                                             all but two of the documents)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row'>
@@ -642,21 +641,21 @@
                                 <tr class='sp-table-row'>
                                     <td class='sp-table-item'>Describes and explains reasons for the historical
                                         continuity and change
-                                        <p class='text-gray-400'>(or only describes the historical continuity and
+                                        <p class='text-gray-600'>(or only describes the historical continuity and
                                             change)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row'>
                                     <td class='sp-table-item'>Supports an argument in response to the prompt using
                                         specific and relevant pieces of evidence
-                                        <p class='text-gray-400'>(or only provides pieces of evidence relevant to the
+                                        <p class='text-gray-600'>(or only provides pieces of evidence relevant to the
                                             topic of the prompt)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row'>
@@ -744,11 +743,11 @@
                                 <tr class='sp-table-row'>
                                     <td class='sp-table-item'>Supports an argument in response to the prompt using at
                                         least 6 documents
-                                        <p class='text-gray-400 highlight'>(or only addresses the topic of the prompt
+                                        <p class='text-gray-600 highlight'>(or only addresses the topic of the prompt
                                             using at least 3 documents)</p>
                                     </td>
                                     <td class='sp-table-item highlight'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row'>
@@ -796,23 +795,23 @@
                                 <tr class='sp-table-row'>
                                     <td class='sp-table-item'>Supports an argument in response to the prompt using
                                         specific and relevant pieces of evidence
-                                        <p class='text-gray-400'>(or only provides pieces of evidence relevant to the
+                                        <p class='text-gray-600'>(or only provides pieces of evidence relevant to the
                                             topic of the prompt)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                                 <tr class='sp-table-row highlight'>
                                     <td class='sp-table-item'>Complexity: Demonstrates a complex understanding of the
                                         historical development of the prompt using evidence to corroborate, qualify, or
                                         modify an argument
-                                        <p class='text-gray-400'>(or only uses comparison, causation, or CCOT to
+                                        <p class='text-gray-600'>(or only uses comparison, causation, or CCOT to
                                             structure
                                             an argument that addresses the prompt)</p>
                                     </td>
                                     <td class='sp-table-item'>2
-                                        <p class='text-gray-400'>(1)</p>
+                                        <p class='text-gray-600'>(1)</p>
                                     </td>
                                 </tr>
                             </table>

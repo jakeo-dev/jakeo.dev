@@ -18,15 +18,19 @@ function hide() {
     document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
 }
 
-function hoverBunny() {
+/* function hoverBunny() {
     document.querySelector('#bunnyLogo').src = 'https://bunnies.jakeo.dev/images/potpourri-bunny-v4.png';
 }
 
 function offBunny() {
     document.querySelector('#bunnyLogo').src = 'https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png';
+} */
+
+function goHome() {
+    window.open('../../', '_self');
 }
 
-let quotes = [
+/* let quotes = [
     'a programming rabbit',
     'a programming bunny',
     'i still hate chemistry',
@@ -38,6 +42,22 @@ let quotes = [
 
 function setDesc() {
     document.getElementById('desc').innerText = quotes[Math.floor(Math.random() * quotes.length)];
+} */
+
+let bunnies = [
+    'https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png',
+    'https://bunnies.jakeo.dev/images/solid-gradient-yellow-purple-bunny.png',
+    'https://bunnies.jakeo.dev/images/solid-gradient-orange-black-bunny.png',
+    'https://bunnies.jakeo.dev/images/solid-gradient-yellow-blue-bunny.png',
+    'https://bunnies.jakeo.dev/images/solid-gradient-blurple-bunny.png',
+    'https://bunnies.jakeo.dev/images/solid-gradient-blue-black-bunny.png'
+];
+
+function clickBunny() {
+    b = document.getElementById('bunnyLogo').src;
+    bunnies.splice(bunnies.indexOf(b), 1);
+    document.getElementById('bunnyLogo').src = bunnies[Math.floor(Math.random() * bunnies.length)];
+    bunnies.push(b);
 }
 
 const moneyImgs = document.querySelectorAll('.moneyImg');
@@ -137,7 +157,3 @@ setInterval(function () {
     bunnyCurrent = (bunnyCurrent + 1) % bunnyImgs.length;
 
 }, 5000);
-
-function clickBunny() {
-    window.open('../../', '_self');
-}

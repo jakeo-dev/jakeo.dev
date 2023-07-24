@@ -3,8 +3,29 @@
 @tailwind utilities;
 
 @layer components {
+  .body {
+    @apply bg-gray-200 text-gray-900 text-center p-0 pb-32 m-0 font-LexendDeca transition-all;
+  }
+
+  .bodyNoHead {
+    @apply pt-16 md:pt-24 px-4 md:px-16 lg:px-32 xl:px-40;
+  }
+
   .proj {
-    @apply flex flex-col bg-gray-800 rounded-xl shadow-md;
+    @apply flex flex-col bg-gray-100 rounded-xl shadow-md;
+  }
+
+  .projTitle {
+    @apply text-xl font-semibold;
+  }
+
+  .projSubtext {
+    @apply text-gray-600 mt-2;
+  }
+
+  .section {
+    /* also blog post */
+    @apply bg-gray-100 rounded-xl text-left shadow-md leading-8 px-8 py-6;
   }
 
   .sectionTitle {
@@ -14,20 +35,15 @@
 
   .subSectionTitle {
     /* also blog post */
-    @apply text-lg font-normal text-gray-400 text-left px-6 md:px-10 mb-8;
-  }
-
-  .section {
-    /* also blog post */
-    @apply bg-gray-800  rounded-xl text-left shadow-md leading-8 px-8 py-6;
+    @apply text-lg font-normal text-gray-600 text-left px-6 md:px-10 mb-8;
   }
 
   .link {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-400 transition-all;
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 transition-all;
   }
 
   .downloadLink {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-500 transition-all;
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 transition-all;
   }
 
   .subtext {
@@ -35,11 +51,15 @@
   }
 
   .button {
-    @apply flex justify-center items-center rounded-full text-center text-gray-100 hover:text-gray-200 active:text-gray-300 bg-blue-500/90 hover:bg-blue-600/80 active:bg-blue-700/70 hover:shadow-xl active:shadow-none px-2 py-1.5 transition-all;
+    @apply flex justify-center items-center rounded-full text-center text-gray-100 hover:text-gray-200 active:text-gray-300 bg-blue-500/90 hover:bg-blue-600/80 active:bg-blue-700/80 hover:shadow-xl active:shadow-none px-2 py-1.5 transition-all;
   }
 
   .pImg {
-    @apply w-full object-cover h-52 border-b-2 border-gray-600 rounded-t-lg;
+    @apply w-full object-cover h-52 border-b-2 border-gray-300 rounded-t-lg;
+  }
+
+  .pImgTransDiv {
+    @apply relative h-52 border-b-2 border-gray-300;
   }
 
   .pImgTrans {
@@ -73,7 +93,7 @@
   }
 
   .text {
-    @apply leading-[2.5rem];
+    @apply leading-[2.25rem];
   }
 
   .sp-table {
@@ -101,7 +121,7 @@
   }
 
   .highlight {
-    @apply bg-gradient-to-br from-green-400/40 to-green-400/30 italic;
+    @apply bg-gradient-to-br from-green-600/40 to-green-600/30 italic;
   }
 
   .math {

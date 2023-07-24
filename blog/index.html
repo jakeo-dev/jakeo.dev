@@ -24,17 +24,17 @@
     <meta property='og:image' content='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'>
 </head>
 
-<body class='bg-gray-900 text-gray-100 text-center p-0 pb-32 m-0 font-LexendDeca transition-all'>
+<body class='body'>
 
     <!-- modal -->
 
     <div id='modal'
         class='fadeIn bg-black/50 flex justify-center items-center fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
-        <div class='relative text-3xl bg-gray-800 rounded-lg w-full md:w-fit shadow-sm px-10 py-7'>
-            <button class='absolute top-4 right-5 text-base hover:text-gray-400 transition-all' onclick='hide()'><i
+        <div class='relative text-3xl bg-gray-300 rounded-lg w-full md:w-fit shadow-sm px-10 py-7'>
+            <button class='absolute top-4 right-5 text-base hover:text-gray-500 transition-all' onclick='hide()'><i
                     class='fa-solid fa-xmark' aria-label='Close' title='Close'></i></button>
             <div class='items-center text-center'>
-                <h1 class='text-indigo-300'>@jakeybakers</h1>
+                <h1 class='text-indigo-600'>@jakeybakers</h1>
             </div>
         </div>
     </div>
@@ -42,24 +42,23 @@
     <!-- header -->
 
     <header
-        class='bg-gradient-to-b from-gray-900/80 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-32 z-10'>
+        class='bg-gradient-to-b from-gray-200/90 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-16 lg:px-32 xl:px-40 z-10'>
 
         <header
-            class='bg-gradient-to-b from-gray-200 to-gray-300 top-0 left-0 sticky rounded-none md:rounded-full shadow-xl px-8 py-6'>
+            class='bg-gradient-to-b from-gray-100 to-gray-200 top-0 left-0 sticky rounded-none md:rounded-full shadow-xl px-8 py-6'>
             <div class='block md:flex items-center justify-between'>
 
                 <div class='flex md:flex-1 md:relative md:float-left align-top leading-none w-full no-underline m-0'>
-                    <img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'
-                        onmouseover='hoverBunny()' onmouseout='offBunny()' onclick='clickBunny()' width='58'
-                        alt='Solid gradient blue gray bunny'
-                        class='object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer mr-3.5'
-                        id='bunnyLogo'>
+                    <img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' width='58'
+                        alt='Solid gradient blue gray bunny' id='bunnyLogo' onclick='clickBunny()'
+                        class='object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer mr-3.5'>
 
                     <div
-                        class='text-transparent bg-clip-text bg-gradient-to-br from-gray-700 to-gray-600 items-center text-left no-underline cursor-default'>
-                        <h1 class='text-xl md:text-2xl font-extrabold m-0'>JakeO<button
-                                onclick='setDesc()'>.</button>dev</h1>
-                        <h2 class='text-base font-semibold mt-1' id='desc'>a programming bunny</h2>
+                        class='text-transparent bg-clip-text bg-gradient-to-br from-gray-700 to-gray-600 items-center text-left no-underline cursor-default transition-all'>
+                        <h1 class='text-xl md:text-2xl font-extrabold hover:underline hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-400 cursor-pointer m-0 transition-all'
+                            onclick='goHome()'>JakeO.dev</h1>
+                        <h2 class='text-base font-semibold mt-1' id='desc'>a
+                            programming bunny</h2>
                     </div>
                 </div>
 
@@ -98,7 +97,7 @@
 
     </header>
 
-    <div class='pt-16 md:pt-24 px-4 md:px-32'>
+    <div class='bodyNoHead'>
 
         <!-- posts -->
 
@@ -110,13 +109,13 @@
 
             <div class='proj'>
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
-                    <h1 class='title text-xl font-semibold text-stone-100'>AP World History: A History</h1>
+                    <h1 class='projTitle'>AP World History: A History</h1>
                     <h2 class='fade-text leading-7 mt-2'>As more students enroll in Advanced Placement classes, College
                         Board is bound to make changes to the curriculums of their courses either to more accurately
                         represent...
                     </h2>
-                    <h2 class='text-gray-400 mt-2'><i class='fa-solid fa-calendar-day mr-2'
-                            title='Initial release'></i>June 2023</h2>
+                    <h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>June
+                        2023</h2>
                 </div>
                 <div class='flex px-6 md:px-8 pb-6 md:pb-8'>
                     <a class='button w-full' href='/blog/ap-world-history-a-history'>Read</a>
