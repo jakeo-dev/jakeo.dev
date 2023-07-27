@@ -93,7 +93,7 @@
   }
 
   .text {
-    @apply leading-[2.25rem];
+    @apply leading-9;
   }
 
   .sp-table {
