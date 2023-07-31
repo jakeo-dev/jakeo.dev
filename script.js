@@ -1,4 +1,4 @@
-document.querySelector('#dscdSocial').onclick = function () {
+document.querySelector('#dscdSocialLink').onclick = function () {
     document.querySelector('#modal').classList.remove('fadeIn');
     document.querySelector('#modal').classList.add('fadeOut');
 
@@ -97,8 +97,6 @@ let plantCurrent = 0;
 
 setInterval(function () {
     plantImgs.forEach((image, index) => {
-        console.log(index + ': ' + image);
-
         if (index === plantCurrent) {
             image.classList.remove('opacity-0');
         } else {

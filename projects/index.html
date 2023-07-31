@@ -42,10 +42,10 @@
     <!-- header -->
 
     <header
-        class='bg-gradient-to-b from-gray-200/90 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-16 lg:px-32 xl:px-40 z-10'>
+        class='bg-gradient-to-b from-gray-200/90 to-transparent sticky top-0 left-0 pt-0 md:pt-8 px-0 md:px-20 lg:px-32 xl:px-44 z-10'>
 
         <header
-            class='bg-gradient-to-b from-white to-gray-100 top-0 left-0 sticky rounded-none md:rounded-full shadow-xl px-8 py-6'>
+            class='bg-gradient-to-b from-white to-gray-100 top-0 left-0 sticky rounded-none md:rounded-full shadow-xl pl-8 pr-10 py-6'>
             <div class='block md:flex items-center justify-between'>
 
                 <div class='flex md:flex-1 md:relative md:float-left align-top leading-none w-full no-underline m-0'>
@@ -61,34 +61,12 @@
                     </div>
                 </div>
 
-                <div class='flex justify-between px-2 md:p-0 mt-6 md:m-0'>
-                    <button class='inline-block ml-none md:ml-5 hover:scale-110 active:scale-100 transition-all'
-                        title='jakeo-dev'>
-                        <a href='https://github.com/jakeo-dev' target='_blank'><i
-                                class='fa-brands fa-github text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-gray-800 transition-all'
-                                aria-label='GitHub'></i></a>
-                    </button>
-
-                    <button class='inline-block ml-auto md:ml-5 hover:scale-110 active:scale-100 transition-all'
-                        title='jakeybakers'>
-                        <a href='https://www.youtube.com/@jakeybakers' target='_blank'><i
-                                class='fa-brands fa-youtube text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-red-500 transition-all'
-                                aria-label='YouTube'></i></a>
-                    </button>
-
-                    <button id='dscdSocial'
-                        class='inline-block ml-auto md:ml-5 hover:scale-110 active:scale-100 transition-all'
-                        title='@jakeybakers'><i
-                            class='fa-brands fa-discord text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-indigo-500 transition-all'
-                            aria-label='Discord'></i>
-                    </button>
-
-                    <button class='inline-block ml-auto md:ml-5 hover:scale-110 active:scale-100 transition-all'
-                        title='jakeybakers'>
-                        <a href='https://steamcommunity.com/id/jakeybakers' target='_blank'><i
-                                class='fa-brands fa-steam text-[2.1rem] md:text-[2.3rem] text-gray-500 hover:text-slate-700 transition-all'
-                                aria-label='Steam'></i></a>
-                    </button>
+                <div class='flex mt-6 md:m-0'>
+                    <a href='/projects' class='navButton'>Projects</a>
+                    <div class='md:hidden border-r-2 border-gray-300'></div>
+                    <a href='https://youtube.com/@jakeybakers' target='_blank' class='navButton'>Videos</a>
+                    <div class='md:hidden border-r-2 border-gray-300'></div>
+                    <a href='/blog' class='navButton'>Posts</a>
                 </div>
 
             </div>
@@ -180,7 +158,7 @@
                     </h2>
                 </div>
                 <div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-                    <a class='button bg-emerald-600/90 hover:bg-emerald-700/80 active:bg-emerald-800/80 w-full'
+                    <a class='button bg-emerald-600 hover:bg-emerald-700/90 active:bg-emerald-800/80 w-full'
                         href='https://plannter.jakeo.dev' target='_blank'>Visit</a>
                     <a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
                         href='https://github.com/jakeo-dev/plannter' target='_blank'><i
@@ -246,7 +224,7 @@
                         2022</h2>
                 </div>
                 <div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-                    <a class='button bg-red-500/90 hover:bg-red-600/80 active:bg-red-700/70 w-full'
+                    <a class='button bg-red-500 hover:bg-red-600/90 active:bg-red-700/80 w-full'
                         href='https://cerebric.jakeo.dev' target='_blank'>Visit</a>
                     <a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
                         href='https://github.com/jakeo-dev/cerebric' target='_blank'><i
@@ -270,15 +248,15 @@
 
                 <div class='flex-grow w-full text-left p-6 md:p-8'>
                     <h1 class='projTitle'>Decorate a Tree</h1>
-                    <h2 class='leading-7 mt-2'>Decorate your own digital Christmas tree with various
-                        ornaments, candy canes, lights, and more.</h2>
+                    <h2 class='leading-7 mt-2'>Decorate your own digital Christmas tree with various ornaments, candy
+                        canes, lights, and more.</h2>
                     <h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-2'
                             title='Initial release'></i>December 2021</h2>
                     <h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-2' title='Last updated'></i>December
                         2022</h2>
                 </div>
                 <div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-                    <a class='button bg-green-600/90 hover:bg-green-700/80 active:bg-green-800/80 w-full'
+                    <a class='button bg-green-600 hover:bg-green-700/90 active:bg-green-800/80 w-full'
                         href='https://tree.jakeo.dev' target='_blank'>Visit</a>
                     <a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
                         href='https://github.com/jakeo-dev/decorate-tree' target='_blank'><i
@@ -346,7 +324,7 @@
                     </h2>
                 </div>
                 <div class='flex px-6 md:px-8 pb-6 md:pb-8'>
-                    <a class='button bg-orange-500/90 hover:bg-orange-600/80 active:bg-orange-700/80 w-full'
+                    <a class='button bg-orange-500 hover:bg-orange-600/90 active:bg-orange-700/80 w-full'
                         href='https://bunnies.jakeo.dev' target='_blank'>Visit</a>
                     <a class='button bg-gray-900 hover:bg-gray-700 active:bg-gray-600 text-gray-100 border-none px-5 ml-3'
                         href='https://github.com/jakeo-dev/bunnies' target='_blank'><i
@@ -356,6 +334,26 @@
 
         </div>
 
+    </div>
+
+    <!-- footer -->
+
+    <div class='footer'>
+        <a href='mailto:hi@jakeo.dev' target='_blank' class='link'><i
+                class='fa-solid fa-envelope block md:flex text-gray-600 mr-1 mb-4 lg:mb-0'
+                aria-label='Email'></i>hi@jakeo.dev</a>
+        <a href='https://github.com/jakeo-dev' target='_blank' class='link'><i
+                class='fa-brands fa-github block md:flex text-gray-600 mr-1 mb-4 lg:mb-0'
+                aria-label='GitHub'></i>jakeo-dev</a>
+        <a href='https://www.youtube.com/@jakeybakers' target='_blank' class='link'><i
+                class='fa-brands fa-youtube block md:flex text-gray-600 mr-1 mb-4 lg:mb-0'
+                aria-label='YouTube'></i>@jakeybakers</a>
+        <button id='dscdSocialLink' target='_blank' class='link'><i
+                class='fa-brands fa-discord block md:flex text-gray-600 mr-1 mb-4 lg:mb-0'
+                aria-label='Discord'></i>@jakeybakers</button>
+        <a href='https://steamcommunity.com/id/jakeybakers' target='_blank' class='link'><i
+                class='fa-brands fa-steam block md:flex text-gray-600 mr-1 mb-4 lg:mb-0'
+                aria-label='Steam'></i>jakeybakers</a>
     </div>
 
 </body>
