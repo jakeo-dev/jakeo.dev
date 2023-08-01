@@ -57,6 +57,8 @@ function clickBunny() {
     b = document.getElementById('bunnyLogo').src;
     bunnies.splice(bunnies.indexOf(b), 1);
     document.getElementById('bunnyLogo').src = bunnies[Math.floor(Math.random() * bunnies.length)];
+    str = document.getElementById('bunnyLogo').src.replace('https://bunnies.jakeo.dev/images/', '').replace('.png', '').replaceAll('-', ' ')
+    document.getElementById('bunnyLogo').alt = str.charAt(0).toUpperCase() + str.slice(1);
     bunnies.push(b);
 }
 
