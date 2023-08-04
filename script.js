@@ -126,6 +126,22 @@ setInterval(function () {
 
 }, 5000);
 
+const cerebricImgs = document.querySelectorAll('.cerebricImg');
+let cerebricCurrent = 0;
+
+setInterval(function () {
+    cerebricImgs.forEach((image, index) => {
+        if (index === cerebricCurrent) {
+            image.classList.remove('opacity-0');
+        } else {
+            image.classList.add('opacity-0');
+        }
+    });
+
+    cerebricCurrent = (cerebricCurrent + 1) % cerebricImgs.length;
+
+}, 5000);
+
 const treeImgs = document.querySelectorAll('.treeImg');
 let treeCurrent = 0;
 

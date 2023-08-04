@@ -1331,9 +1331,9 @@ video {
      object-position: bottom;
 }
 
-.object-left {
-  -o-object-position: left;
-     object-position: left;
+.object-left-top {
+  -o-object-position: left top;
+     object-position: left top;
 }
 
 .object-top {
