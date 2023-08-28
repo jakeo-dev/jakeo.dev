@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -1171,6 +1183,10 @@ video {
   flex: 0.3;
 }
 
+.flex-\[0\.5\] {
+  flex: 0.5;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -1201,6 +1217,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .self-start {
@@ -1640,12 +1660,20 @@ video {
     margin: 0px;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
-  .md\:h-96 {
-    height: 24rem;
+  .md\:h-\[22rem\] {
+    height: 22rem;
   }
 
   .md\:w-fit {
@@ -1655,6 +1683,10 @@ video {
 
   .md\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .md\:flex-\[0\.5\] {
+    flex: 0.5;
   }
 
   .md\:grid-cols-2 {
@@ -1720,12 +1752,20 @@ video {
     margin-top: 1rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:flex-\[0\.3\] {
+    flex: 0.3;
   }
 
   .lg\:px-32 {
