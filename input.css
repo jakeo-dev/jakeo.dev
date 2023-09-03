@@ -101,7 +101,7 @@
   }
 
   .text {
-    @apply leading-9;
+    @apply leading-8 mb-3 last:mb-0 md:leading-9 md:mb-0;
   }
 
   .sp-table {

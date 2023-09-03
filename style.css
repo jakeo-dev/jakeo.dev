@@ -915,7 +915,19 @@ video {
 }
 
 .text {
-  line-height: 2.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 2rem;
+}
+
+.text:last-child {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .text {
+    margin-bottom: 0px;
+    line-height: 2.25rem;
+  }
 }
 
 .sp-table {
@@ -1135,10 +1147,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -1183,10 +1191,6 @@ video {
   flex: 0.3;
 }
 
-.flex-\[0\.5\] {
-  flex: 0.5;
-}
-
 .flex-grow {
   flex-grow: 1;
 }
@@ -1201,6 +1205,10 @@ video {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -1233,10 +1241,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.whitespace-pre-line {
-  white-space: pre-line;
 }
 
 .rounded-lg {
@@ -1541,6 +1545,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline {
   outline-style: solid;
 }
@@ -1741,6 +1751,12 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:shadow-xl {
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1748,20 +1764,8 @@ video {
     margin-bottom: 0px;
   }
 
-  .lg\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:block {
     display: block;
-  }
-
-  .lg\:flex {
-    display: flex;
   }
 
   .lg\:flex-\[0\.3\] {
@@ -1796,17 +1800,7 @@ video {
     padding-right: 11rem;
   }
 
-  .xl\:pr-16 {
-    padding-right: 4rem;
-  }
-
   .xl\:pr-96 {
     padding-right: 24rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:pr-32 {
-    padding-right: 8rem;
   }
 }

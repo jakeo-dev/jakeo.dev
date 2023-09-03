@@ -18,31 +18,9 @@ function hide() {
     document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
 }
 
-/* function hoverBunny() {
-    document.querySelector('#bunnyLogo').src = 'https://bunnies.jakeo.dev/images/potpourri-bunny-v4.png';
-}
-
-function offBunny() {
-    document.querySelector('#bunnyLogo').src = 'https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png';
-} */
-
 function goHome() {
     window.open('../../', '_self');
 }
-
-/* let quotes = [
-    'a programming rabbit',
-    'a programming bunny',
-    'i still hate chemistry',
-    'become bunny',
-    'i occasionally make websites',
-    'not every website needs ai',
-    'who needs to think when your feet just go'
-];
-
-function setDesc() {
-    document.getElementById('desc').innerText = quotes[Math.floor(Math.random() * quotes.length)];
-} */
 
 let bunnies = [
     'https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png',
