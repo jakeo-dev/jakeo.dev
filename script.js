@@ -32,13 +32,41 @@ let bunnies = [
 ];
 
 function clickBunny() {
-    b = document.getElementById('bunnyLogo').src;
-    bunnies.splice(bunnies.indexOf(b), 1);
-    document.getElementById('bunnyLogo').src = bunnies[Math.floor(Math.random() * bunnies.length)];
-    str = document.getElementById('bunnyLogo').src.replace('https://bunnies.jakeo.dev/images/', '').replace('.png', '').replaceAll('-', ' ')
-    document.getElementById('bunnyLogo').alt = str.charAt(0).toUpperCase() + str.slice(1);
-    bunnies.push(b);
+    changeBunnyColor();
+    document.getElementById('bunnyLogo').classList.add('hidden');
+    document.getElementById('bunnyLogoSvg').classList.remove('hidden');
 }
+
+document.getElementById('bunnyLogoSvg').addEventListener('click', function (event) {
+    changeBunnyColor();
+});
+
+function changeBunnyColor() {
+    val1 = Math.floor(Math.random() * 256);
+    val2 = Math.floor(Math.random() * 256);
+    val3 = Math.floor(Math.random() * 256);
+    document.getElementById('svgThing').style.fill = `rgb(${val1}, ${val2}, ${val3})`;
+    //document.getElementsByTagName('body')[0].style.backgroundColor = `rgb(${lightenColor(val1, val2, val3, val1)}, ${lightenColor(val1, val2, val3, val2)}, ${lightenColor(val1, val2, val3, val3)})`;
+}
+
+/* function lightenColor(val1, val2, val3, changed) {
+    least = val1;
+    if (val2 < val1 && val2 < val3) {
+        least = val2;
+    } else if (val3 < val1 && val3 < val2) {
+        least = val3;
+    }
+
+    if (least < 100) {
+        changed += 150;
+    } else if (least < 150) {
+        changed += 100;
+    } else if (least < 200) {
+        changed += 50;
+    }
+
+    return changed;
+} */
 
 const moneyImgs = document.querySelectorAll('.moneyImg');
 let moneyCurrent = 0;
