@@ -86,10 +86,14 @@
     @apply visible opacity-100 transition-all;
   }
 
+  .checkSizes {
+    @apply border-8 border-blue-500 sm:border-green-500 md:border-yellow-500 lg:border-orange-500 xl:border-red-500 bg-blue-200 sm:bg-green-200 md:bg-yellow-200 lg:bg-orange-200 xl:bg-red-200;
+  }
+
   /* blog posts */
 
   .subtitle {
-    @apply font-semibold border-gray-300 px-4 py-4 text-2xl leading-[3rem] mt-24;
+    @apply font-semibold border-gray-300 px-6 py-4 text-2xl leading-[3rem] mt-20;
   }
 
   .sub2title {
