@@ -30,7 +30,7 @@
 
   .sectionTitle {
     /* also blog post */
-    @apply text-xl md:text-2xl font-semibold text-left px-6 md:px-10 mt-14 md:mt-20 mb-4 md:mb-8;
+    @apply text-2xl font-semibold text-left px-6 md:px-10 mt-14 md:mt-20 mb-6 md:mb-8;
   }
 
   .subSectionTitle {
@@ -72,6 +72,18 @@
 
   .abilityImg {
     @apply inline-block md:flex w-1/5 md:w-1/16 lg:w-1/20 mr-6 mb-6;
+  }
+
+  .projPageTitle {
+    @apply px-10 mb-10;
+  }
+
+  .projPageTitleText {
+    @apply w-min text-5xl lg:text-7xl font-semibold px-10 py-5 lg:px-14 lg:py-7 mx-auto;
+  }
+
+  .projPageSubtitleText {
+    @apply block text-xl lg:text-2xl font-semibold mx-auto mt-6;
   }
 
   .footer {
@@ -153,10 +165,12 @@
 }
 
 ::selection {
-  background: rgba(147, 170, 198, 0.5);
+  background: rgba(11, 37, 98, 0.75);
+  color: rgb(255, 255, 255);
 }
 
 ::-moz-selection {
   /* Firefox */
-  background: rgba(147, 170, 198, 0.5);
+  background: rgba(11, 37, 98, 0.75);
+  color: rgb(255, 255, 255);
 }

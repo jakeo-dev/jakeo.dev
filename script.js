@@ -22,6 +22,14 @@ function goHome() {
     window.open('../../', '_self');
 }
 
+function openPlannter() {
+    window.open('https://plannter.jakeo.dev', '_blank');
+}
+
+function openPlannterGH() {
+    window.open('https://github.com/jakeo-dev/plannter', '_blank');
+}
+
 let bunnies = [
     'https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png',
     'https://bunnies.jakeo.dev/images/solid-gradient-yellow-purple-bunny.png',
