@@ -7,7 +7,6 @@ module.exports = {
     fontFamily: {
       'LexendDeca': ['Lexend Deca', 'sans-serif'],
       'Sen': ['Sen', 'sans-serif'],
-      'NotoSerif': ['Noto Serif', 'sans-serif'],
       'Calistoga': ['Calistoga', 'sans-serif']
     },
     extend: {

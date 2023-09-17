@@ -147,10 +147,6 @@
   .highlight {
     @apply bg-gradient-to-br from-green-600/40 to-green-600/30 italic;
   }
-
-  .math {
-    @apply font-NotoSerif tracking-wide;
-  }
 }
 
 .fade-text {
