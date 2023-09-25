@@ -113,7 +113,7 @@
   }
 
   .sub3title {
-    @apply font-medium leading-[3rem] mt-6;
+    @apply font-medium text-lg leading-[3rem] mt-8;
   }
 
   .text {
