@@ -1,23 +1,3 @@
-document.querySelector('#dscdSocialLink').onclick = function () {
-    document.querySelector('#modal').classList.remove('fadeIn');
-    document.querySelector('#modal').classList.add('fadeOut');
-
-    document.getElementsByTagName('body')[0].classList.add('overflow-hidden');
-}
-
-window.onclick = function (event) {
-    if (event.target == document.querySelector('#modal')) {
-        hide();
-    }
-}
-
-function hide() {
-    document.querySelector('#modal').classList.add('fadeIn');
-    document.querySelector('#modal').classList.remove('fadeOut');
-
-    document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
-}
-
 function goHome() {
     window.open('../../', '_self');
 }
@@ -30,24 +10,13 @@ function openPlannterGH() {
     window.open('https://github.com/jakeo-dev/plannter', '_blank');
 }
 
-let bunnies = [
-    'https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png',
-    'https://bunnies.jakeo.dev/images/solid-gradient-yellow-purple-bunny.png',
-    'https://bunnies.jakeo.dev/images/solid-gradient-orange-black-bunny.png',
-    'https://bunnies.jakeo.dev/images/solid-gradient-yellow-blue-bunny.png',
-    'https://bunnies.jakeo.dev/images/solid-gradient-blurple-bunny.png',
-    'https://bunnies.jakeo.dev/images/solid-gradient-blue-black-bunny.png'
-];
-
 function clickBunny() {
     changeBunnyColor();
-    document.getElementById('bunnyLogo').classList.add('hidden');
-    document.getElementById('bunnyLogoSvg').classList.remove('hidden');
+    if (document.getElementById('bunnyLogoSvgButton').classList.contains('hidden')) {
+        document.getElementById('bunnyLogoButton').classList.add('hidden');
+        document.getElementById('bunnyLogoSvgButton').classList.remove('hidden');
+    }
 }
-
-document.getElementById('bunnyLogoSvg').addEventListener('click', function (event) {
-    changeBunnyColor();
-});
 
 function changeBunnyColor() {
     val1 = Math.floor(Math.random() * 256);
@@ -187,3 +156,23 @@ setInterval(function () {
     bunnyCurrent = (bunnyCurrent + 1) % bunnyImgs.length;
 
 }, 5000);
+
+document.querySelector('#dscdSocialLink').onclick = function () {
+    document.querySelector('#modal').classList.remove('fadeIn');
+    document.querySelector('#modal').classList.add('fadeOut');
+
+    document.getElementsByTagName('body')[0].classList.add('overflow-hidden');
+}
+
+window.onclick = function (event) {
+    if (event.target == document.querySelector('#modal')) {
+        hide();
+    }
+}
+
+function hide() {
+    document.querySelector('#modal').classList.add('fadeIn');
+    document.querySelector('#modal').classList.remove('fadeOut');
+
+    document.getElementsByTagName('body')[0].classList.remove('overflow-hidden');
+}
