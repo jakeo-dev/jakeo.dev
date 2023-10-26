@@ -4,7 +4,7 @@
 
 @layer components {
   .body {
-    @apply bg-gray-100 text-gray-900 text-center p-0 m-0 font-LexendDeca transition-all px-6 md:px-20 lg:px-56 xl:px-80 pb-16 lg:pb-32;
+    @apply bg-gray-100 text-gray-900 text-center p-0 m-0 font-LexendDeca transition-all px-6 md:px-20 lg:px-48 xl:px-72 pb-16 lg:pb-32;
   }
 
   .proj {
@@ -20,7 +20,7 @@
   }
 
   .alternatingSection {
-    @apply section odd:bg-gray-200 px-6 md:px-20 lg:px-56 xl:px-80 py-12 my-0;
+    @apply section odd:bg-gray-200 px-6 md:px-20 lg:px-48 xl:px-72 py-12 my-0;
   }
 
   .section {

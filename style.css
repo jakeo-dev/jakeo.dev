@@ -560,16 +560,16 @@ video {
 
 @media (min-width: 1024px) {
   .body {
-    padding-left: 14rem;
-    padding-right: 14rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
     padding-bottom: 8rem;
   }
 }
 
 @media (min-width: 1280px) {
   .body {
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 18rem;
+    padding-right: 18rem;
   }
 }
 
