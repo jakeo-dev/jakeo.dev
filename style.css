@@ -535,10 +535,11 @@ video {
 }
 
 .body {
-  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 54rem;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-  padding: 0px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-bottom: 4rem;
@@ -553,23 +554,7 @@ video {
 
 @media (min-width: 768px) {
   .body {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .body {
-    padding-left: 12rem;
-    padding-right: 12rem;
     padding-bottom: 8rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .body {
-    padding-left: 18rem;
-    padding-right: 18rem;
   }
 }
 
@@ -1569,6 +1554,10 @@ video {
 
 .leading-7 {
   line-height: 1.75rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .leading-none {
