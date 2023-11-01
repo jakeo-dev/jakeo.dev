@@ -17,29 +17,27 @@ let halloweenBunnies = [
     'https://bunnies.jakeo.dev/images/bat-bunny.png'
 ]
 
-window.onload = clickBunny();
-
 function clickBunny() {
-    thing = halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)];
+    /* thing = halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)];
     while (thing == document.getElementById('bunnyLogoImg').src) {
         thing = halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)];
     }
-    document.getElementById('bunnyLogoImg').src = thing;
+    document.getElementById('bunnyLogoImg').src = thing; */
 
-    /* changeBunnyColor();
+    changeBunnyColor();
     if (document.getElementById('bunnyLogoSvgButton').classList.contains('hidden')) {
         document.getElementById('bunnyLogoButton').classList.add('hidden');
         document.getElementById('bunnyLogoSvgButton').classList.remove('hidden');
-    } */
+    }
 }
 
-/* function changeBunnyColor() {
+function changeBunnyColor() {
     val1 = Math.floor(Math.random() * 256);
     val2 = Math.floor(Math.random() * 256);
     val3 = Math.floor(Math.random() * 256);
     document.getElementById('svgThing').style.fill = `rgb(${val1}, ${val2}, ${val3})`;
     //document.getElementsByTagName('body')[0].style.backgroundColor = `rgb(${lightenColor(val1, val2, val3, val1)}, ${lightenColor(val1, val2, val3, val2)}, ${lightenColor(val1, val2, val3, val3)})`;
-} */
+}
 
 /* function lightenColor(val1, val2, val3, changed) {
     least = val1;
