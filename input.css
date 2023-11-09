@@ -59,7 +59,7 @@
   }
 
   .button {
-    @apply bg-sky-500 hover:bg-sky-600 active:bg-sky-700 text-white rounded-full px-3.5 py-1 transition-all;
+    @apply bg-sky-500 hover:bg-sky-600 active:bg-sky-700  text-white rounded-full px-3.5 py-1 transition-all;
   }
 
   .pImg {
