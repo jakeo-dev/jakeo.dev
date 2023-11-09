@@ -63,7 +63,7 @@
 		</div>
 		<h1 class='text-3xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition-all mx-auto cursor-pointer'
 			onclick='goHome()'>JakeO.dev</h1>
-		<p class='text-gray-600'>Bunny on the Internet</p>
+		<p class='text-gray-600'>Bunny on the internet</p>
 	</header>
 
 	<!-- about me -->
@@ -85,22 +85,22 @@
 	<div class='section'>
 		<h2 class='sectionTitle'>Me around the internet</h2>
 
-		<div class='flex gap-3'>
+		<div class='flex gap-4'>
 			<a href='mailto:hi@jakeo.dev' target='_blank'
-				class='hover:text-blue-500 transition-all flex text-3xl text-gray-600 mr-1'><i
-					class='fa-solid fa-envelope' aria-label='Email'></i></a>
+				class='hover:text-blue-500 transition-all flex text-3xl text-gray-500'><i class='fa-solid fa-envelope'
+					aria-label='Email'></i></a>
 			<a href='https://github.com/jakeo-dev' target='_blank'
-				class='hover:text-gray-500 transition-all flex text-3xl text-gray-600 mr-1'><i
-					class='fa-brands fa-github' aria-label='GitHub'></i></a>
+				class='hover:text-gray-700 transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-github'
+					aria-label='GitHub'></i></a>
 			<a href='https://www.youtube.com/@jakeybakers' target='_blank'
-				class='hover:text-red-500 transition-all flex text-3xl text-gray-600 mr-1'><i
-					class='fa-brands fa-youtube' aria-label='YouTube'></i></a>
+				class='hover:text-red-500 transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-youtube'
+					aria-label='YouTube'></i></a>
 			<button id='dscdSocialLink' target='_blank'
-				class='hover:text-indigo-500 transition-all flex text-3xl text-gray-600 mr-1'><i
-					class='fa-brands fa-discord' aria-label='Discord'></i></button>
+				class='hover:text-indigo-500 transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-discord'
+					aria-label='Discord'></i></button>
 			<a href='https://steamcommunity.com/id/jakeybakers' target='_blank'
-				class='hover:text-slate-500 transition-all flex text-3xl text-gray-600 mr-1'><i
-					class='fa-brands fa-steam' aria-label='Steam'></i></a>
+				class='hover:text-slate-700 transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-steam'
+					aria-label='Steam'></i></a>
 		</div>
 	</div>
 
@@ -127,13 +127,17 @@
 					<div class='flex-grow w-full text-left p-6'>
 						<h1 class='projTitle'>Plannter</h1>
 						<h2 class='text mt-2'>Keep track of all your high school courses, activities, and tests.</h2>
-						<h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-2' title='Last updated'></i>August
-							2023</h2>
+						<div class='projSubtextDiv'>
+							<h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-1.5'
+									title='Last updated'></i>August 2023</h2>
+						</div>
 					</div>
-					<div class='flex gap-5 p-6 pt-2'>
-						<a class='link' href='https://plannter.jakeo.dev' target='_blank'>Visit<i
+					<div class='flex gap-3 p-6 pt-2'>
+						<a class='button bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700'
+							href='https://plannter.jakeo.dev' target='_blank'>Visit<i
 								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
-						<a class='link' href='https://github.com/jakeo-dev/plannter' target='_blank'>GitHub<i
+						<a class='button bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700'
+							href='https://github.com/jakeo-dev/plannter' target='_blank'>GitHub<i
 								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
 					</div>
 				</div>
@@ -148,14 +152,15 @@
 						<h1 class='projTitle'>Cifra</h1>
 						<h2 class='text mt-2'>Discover hidden words in your phone number to make it fun and
 							unforgettable.</h2>
-						<h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-2' title='Last updated'></i>July
-							2023
-						</h2>
+						<div class='projSubtextDiv'>
+							<h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-1.5'
+									title='Last updated'></i>July 2023</h2>
+						</div>
 					</div>
-					<div class='flex gap-5 p-6 pt-2'>
-						<a class='link' href='https://cifra.jakeo.dev' target='_blank'>Visit<i
+					<div class='flex gap-3 p-6 pt-2'>
+						<a class='button' href='https://cifra.jakeo.dev' target='_blank'>Visit<i
 								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
-						<a class='link' href='https://github.com/jakeo-dev/cifra' target='_blank'>GitHub<i
+						<a class='button' href='https://github.com/jakeo-dev/cifra' target='_blank'>GitHub<i
 								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
 					</div>
 				</div>
@@ -183,11 +188,13 @@
 					<h2 class='fade-text text mt-2'>As more students enroll in Advanced Placement classes, College Board
 						is bound to make changes to the curriculums of their courses either to more accurately
 						represent...</h2>
-					<h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-2' title='Initial release'></i>June
-						2023</h2>
+					<div class='projSubtextDiv'>
+						<h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-1.5'
+								title='Initial release'></i>June 2023</h2>
+					</div>
 				</div>
-				<div class='flex gap-5 p-6 pt-2'>
-					<a class='link' href='/blog/ap-world-history-a-history' target='_blank'>Read<i
+				<div class='flex gap-3 p-6 pt-2'>
+					<a class='button' href='/blog/ap-world-history-a-history' target='_blank'>Read<i
 							class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
 				</div>
 			</div>

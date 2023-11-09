@@ -16,7 +16,11 @@
   }
 
   .projSubtext {
-    @apply text-gray-600 mt-2;
+    @apply inline text-sm text-gray-600 pr-2.5;
+  }
+
+  .projSubtextDiv {
+    @apply bg-transparent;
   }
 
   .alternatingSection {
@@ -55,7 +59,7 @@
   }
 
   .button {
-    @apply flex justify-center items-center rounded-full text-center text-gray-100 hover:text-gray-200 active:text-gray-300 bg-blue-500 hover:bg-blue-600/90 active:bg-blue-700/80 hover:shadow-lg active:shadow-none px-2 py-1.5 transition-all;
+    @apply bg-sky-500 hover:bg-sky-600 active:bg-sky-700 text-white rounded-full px-3.5 py-1 transition-all;
   }
 
   .pImg {
@@ -145,7 +149,7 @@
   }
 
   .highlight {
-    @apply bg-gradient-to-br from-green-600/40 to-green-600/30 italic;
+    @apply bg-gradient-to-br from-green-600/30 to-green-600/20 italic;
   }
 }
 
