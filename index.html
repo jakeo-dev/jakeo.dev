@@ -41,18 +41,18 @@
 
 	<!-- header -->
 
-	<header class='text-center py-12 md:py-24'>
+	<header class='text-center py-16 md:py-24'>
 		<div class='mx-auto w-32 mb-2'>
 			<button id='bunnyLogoButton' onclick='clickBunny()'>
 				<img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' id='bunnyLogoImg'
 					alt='Solid gradient blue gray bunny'
-					class='w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer mr-3.5'>
+					class='w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer'>
 			</button>
 
 			<button id='bunnyLogoSvgButton' onclick='clickBunny()' class='hidden'>
 				<svg version='1.0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300.000000 300.000000'
 					preserveAspectRatio='xMidYMid meet' alt='Color-changing bunny'
-					class='w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer mr-3.5'>
+					class='w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer'>
 					<g transform='translate(0.000000,300.000000) scale(0.100000,-0.100000)' style='fill:#000000'
 						stroke='none' id='svgThing'>
 						<path
@@ -61,7 +61,7 @@
 				</svg>
 			</button>
 		</div>
-		<h1 class='text-3xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition-all mx-auto cursor-pointer'
+		<h1 class='text-3xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 decoration-wavy decoration-[1.5px] hover:underline transition-all mx-auto cursor-pointer'
 			onclick='goHome()'>JakeO.dev</h1>
 		<p class='text-gray-600'>Bunny on the internet</p>
 	</header>
@@ -90,16 +90,16 @@
 				class='hover:text-blue-500 transition-all flex text-3xl text-gray-500'><i class='fa-solid fa-envelope'
 					aria-label='Email'></i></a>
 			<a href='https://github.com/jakeo-dev' target='_blank'
-				class='hover:text-gray-700 transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-github'
+				class='hover:text-[#333333] transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-github'
 					aria-label='GitHub'></i></a>
 			<a href='https://www.youtube.com/@jakeybakers' target='_blank'
-				class='hover:text-red-500 transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-youtube'
+				class='hover:text-[#ff3838] transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-youtube'
 					aria-label='YouTube'></i></a>
 			<button id='dscdSocialLink' target='_blank'
-				class='hover:text-indigo-500 transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-discord'
+				class='hover:text-[#5865f2] transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-discord'
 					aria-label='Discord'></i></button>
 			<a href='https://steamcommunity.com/id/jakeybakers' target='_blank'
-				class='hover:text-slate-700 transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-steam'
+				class='hover:text-[#2a475e] transition-all flex text-3xl text-gray-500'><i class='fa-brands fa-steam'
 					aria-label='Steam'></i></a>
 		</div>
 	</div>
@@ -126,11 +126,8 @@
 					</div>
 					<div class='flex-grow w-full text-left p-6'>
 						<h1 class='projTitle'>Plannter</h1>
-						<h2 class='text mt-2'>Keep track of all your high school courses, activities, and tests.</h2>
-						<div class='projSubtextDiv'>
-							<h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-1.5'
-									title='Last updated'></i>August 2023</h2>
-						</div>
+						<h2 class='text mt-2'>Keep track of and plan for all your high school courses, activities, and
+							tests.</h2>
 					</div>
 					<div class='flex gap-3 p-6 pt-2'>
 						<a class='button bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700'
@@ -152,10 +149,6 @@
 						<h1 class='projTitle'>Cifra</h1>
 						<h2 class='text mt-2'>Discover hidden words in your phone number to make it fun and
 							unforgettable.</h2>
-						<div class='projSubtextDiv'>
-							<h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-1.5'
-									title='Last updated'></i>July 2023</h2>
-						</div>
 					</div>
 					<div class='flex gap-3 p-6 pt-2'>
 						<a class='button' href='https://cifra.jakeo.dev' target='_blank'>Visit<i
@@ -180,24 +173,48 @@
 	<div class='section'>
 		<h2 class='sectionTitle'>Favorite posts of mine</h2>
 
-		<div class='grid grid-cols-1 md:grid-cols-2 gap-6 mt-4'>
+		<div class='block md:flex mt-4'>
 
-			<div class='proj'>
-				<div class='flex-grow w-full text-left p-6'>
-					<h1 class='projTitle'>AP World History: A History</h1>
-					<h2 class='fade-text text mt-2'>As more students enroll in Advanced Placement classes, College Board
-						is bound to make changes to the curriculums of their courses either to more accurately
-						represent...</h2>
-					<div class='projSubtextDiv'>
-						<h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-1.5'
-								title='Initial release'></i>June 2023</h2>
+			<div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+
+				<div class='proj'>
+					<div class='flex-grow w-full text-left p-6'>
+						<h1 class='projTitle'>AP World History: A History</h1>
+						<h2 class='fade-text text mt-2'>As more students enroll in Advanced Placement classes, College
+							Board is bound to make changes to the curriculums of their courses either to more accurately
+							represent...</h2>
+						<div class='projSubtextDiv'>
+							<h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-1.5'
+									title='Initial release'></i>June 13 2023</h2>
+						</div>
+					</div>
+					<div class='flex gap-3 p-6 pt-2'>
+						<a class='button' href='/blog/ap-world-history-a-history' target='_blank'>Read<i
+								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
 					</div>
 				</div>
-				<div class='flex gap-3 p-6 pt-2'>
-					<a class='button' href='/blog/ap-world-history-a-history' target='_blank'>Read<i
-							class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
+
+				<div class='proj'>
+					<div class='flex-grow w-full text-left p-6'>
+						<h1 class='projTitle'>Soon...</h1>
+						<h2 class='fade-text text mt-2'>???</h2>
+						<div class='projSubtextDiv'>
+							<h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-1.5'
+									title='Initial release'></i>???? ?? 20??</h2>
+						</div>
+					</div>
+					<div class='flex gap-3 p-6 pt-2'>
+						<a class='button bg-sky-500/70 hover:bg-sky-500/70 active:bg-sky-500/70 cursor-not-allowed'>Read<i
+								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
+					</div>
 				</div>
+
 			</div>
+
+			<a href='/blog'
+				class='flex justify-center items-center text-xl bg-white hover:bg-gray-100 active:bg-gray-200 active:shadow-none transition-all rounded-xl shadow-md p-3 md:p-4 mt-6 md:mt-0 md:ml-6'>
+				<p class='md:hidden'>All posts</p><i class='fa-solid fa-arrow-right ml-2 md:ml-0'></i>
+			</a>
 
 		</div>
 	</div>

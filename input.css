@@ -12,7 +12,7 @@
   }
 
   .projTitle {
-    @apply text-xl font-medium;
+    @apply text-xl text-left font-medium;
   }
 
   .projSubtext {
@@ -59,7 +59,7 @@
   }
 
   .button {
-    @apply bg-sky-500 hover:bg-sky-600 active:bg-sky-700  text-white rounded-full px-3.5 py-1 transition-all;
+    @apply bg-sky-500 hover:bg-sky-600 active:bg-sky-700 text-white rounded-full px-3.5 py-1 transition-all;
   }
 
   .pImg {
@@ -121,7 +121,11 @@
   }
 
   .text {
-    @apply text-gray-700 leading-7 mb-2 last:mb-0;
+    @apply text-base text-left text-gray-700 leading-7 mb-2 last:mb-0;
+  }
+
+  .subtext {
+    @apply text-sm text-left italic text-gray-600;
   }
 
   .sp-table {
