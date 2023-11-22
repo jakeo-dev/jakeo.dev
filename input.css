@@ -128,6 +128,14 @@
     @apply text-sm text-left italic text-gray-600;
   }
 
+  .postImgDiv {
+    @apply mt-3 mb-6;
+  }
+
+  .postImg {
+    @apply w-full rounded-lg border-2 border-gray-200;
+  }
+
   .sp-table {
     @apply max-w-lg md:max-w-full border-b-2 border-t-0 border-gray-400;
   }
