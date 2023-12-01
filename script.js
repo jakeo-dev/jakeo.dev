@@ -10,25 +10,26 @@ function openPlannterGH() {
     window.open('https://github.com/jakeo-dev/plannter', '_blank');
 }
 
-let halloweenBunnies = [
-    'https://bunnies.jakeo.dev/images/pumpkin-head-bunny.png',
-    'https://bunnies.jakeo.dev/images/skeleton-bunny.png',
-    'https://bunnies.jakeo.dev/images/witch-bunny.png',
-    'https://bunnies.jakeo.dev/images/bat-bunny.png'
+let holidayBunnies = [
+    'https://bunnies.jakeo.dev/images/christmas-bunny.png',
+    'https://bunnies.jakeo.dev/images/santa-bunny.png',
+    'https://bunnies.jakeo.dev/images/solid-stripes-christmas-bunny.png',
 ]
 
-function clickBunny() {
-    /* thing = halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)];
-    while (thing == document.getElementById('bunnyLogoImg').src) {
-        thing = halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)];
-    }
-    document.getElementById('bunnyLogoImg').src = thing; */
+window.onload = clickBunny;
 
-    changeBunnyColor();
+function clickBunny() {
+    thing = holidayBunnies[Math.floor(Math.random() * holidayBunnies.length)];
+    while (thing == document.getElementById('bunnyLogoImg').src) {
+        thing = holidayBunnies[Math.floor(Math.random() * holidayBunnies.length)];
+    }
+    document.getElementById('bunnyLogoImg').src = thing;
+
+    /* changeBunnyColor();
     if (document.getElementById('bunnyLogoSvgButton').classList.contains('hidden')) {
         document.getElementById('bunnyLogoButton').classList.add('hidden');
         document.getElementById('bunnyLogoSvgButton').classList.remove('hidden');
-    }
+    } */
 }
 
 function changeBunnyColor() {
