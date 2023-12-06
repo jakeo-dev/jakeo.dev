@@ -11,9 +11,9 @@ function openPlannterGH() {
 }
 
 let holidayBunnies = [
-    'https://bunnies.jakeo.dev/images/christmas-bunny.png',
     'https://bunnies.jakeo.dev/images/santa-bunny.png',
     'https://bunnies.jakeo.dev/images/solid-stripes-christmas-bunny.png',
+    'https://bunnies.jakeo.dev/images/snowman-bunny.png',
 ]
 
 window.onload = clickBunny;
