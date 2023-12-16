@@ -2,225 +2,104 @@
 <html>
 
 <head>
-	<meta charset='UTF-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	<title>JakeO.dev</title>
-	<link href='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' rel='shortcut icon'
-		type='image/ico'>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>JakeO.dev: Posts</title>
+    <link href='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' rel='shortcut icon'
+        type='image/ico'>
 
-	<link href='style.css' rel='stylesheet'>
-	<script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
-	<link rel='preconnect' href='https://fonts.googleapis.com'>
-	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-	<link
-		href='https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Sen:wght@400;700;800&display=swap'
-		rel='stylesheet'>
-	<script>
-		window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-	</script>
-	<script defer src='/_vercel/insights/script.js'></script>
+    <link href='../style.css' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link
+        href='https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Sen:wght@400;700;800&display=swap'
+        rel='stylesheet'>
 
-	<meta property='og:title' content='JakeO.dev'>
-	<meta property='og:description' content='Bunny on the internet'>
-	<meta name='theme-color' content='#83b5d3'>
-	<meta property='og:image' content='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'>
+    <meta property='og:title' content='JakeO.dev: Posts'>
+    <meta property='og:description' content='Blog posts from JakeO.dev'>
+    <meta name='theme-color' content='#83b5d3'>
+    <meta property='og:image' content='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png'>
 </head>
 
 <body class='body'>
 
-	<!-- discord modal -->
+    <!-- header -->
 
-	<div id='modal'
-		class='fadeIn bg-black/50 flex justify-center items-center fixed top-0 left-0 z-30 w-full h-full overflow-auto'>
-		<div class='relative text-3xl bg-gray-200 rounded-lg w-fit shadow-sm px-10 py-7'>
-			<button class='absolute top-4 right-5 text-base hover:text-gray-500 transition-all' onclick='hide()'><i
-					class='fa-solid fa-xmark' aria-label='Close' title='Close'></i></button>
-			<div class='items-center text-center'>
-				<h1 class='text-indigo-600'>@jakeybakers</h1>
-			</div>
-		</div>
-	</div>
+    <header class='text-center py-16 md:py-24'>
+        <div class='mx-auto w-32 mb-2'>
+            <button id='bunnyLogoButton' onclick='clickBunny()'>
+                <img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' id='bunnyLogoImg'
+                    alt='Solid gradient blue gray bunny'
+                    class='w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer'>
+            </button>
 
-	<!-- header -->
+            <button id='bunnyLogoSvgButton' onclick='clickBunny()' class='hidden'>
+                <svg version='1.0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300.000000 300.000000'
+                    preserveAspectRatio='xMidYMid meet' alt='Color-changing bunny'
+                    class='w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer'>
+                    <g transform='translate(0.000000,300.000000) scale(0.100000,-0.100000)' style='fill:#000000'
+                        stroke='none' id='svgThing'>
+                        <path
+                            d='M1253 2909 c-71 -21 -135 -137 -153 -279 -20 -159 -3 -373 39 -500 20 -60 19 -70 -8 -70 -34 0 -118 -51 -174 -105 -66 -65 -108 -123 -158 -223 -21 -40 -62 -99 -91 -131 l-54 -58 -95 -5 c-109 -7 -129 -13 -129 -41 0 -19 4 -20 101 -14 l100 6 -3 -42 -3 -42 -103 -21 c-105 -21 -133 -37 -108 -62 11 -11 23 -11 72 1 32 9 77 18 100 22 40 6 41 6 53 -34 6 -22 24 -54 38 -72 28 -33 133 -89 167 -89 17 0 18 -6 12 -62 -23 -231 -28 -196 68 -462 45 -122 47 -190 11 -296 -14 -40 -22 -83 -19 -96 12 -46 150 -72 212 -40 34 18 82 69 112 119 12 21 25 36 27 33 3 -3 0 -42 -7 -88 -13 -97 -5 -133 37 -149 38 -15 122 -5 172 20 42 22 74 70 101 156 22 70 58 131 94 163 l36 32 35 -38 35 -37 -33 -25 c-141 -108 -166 -190 -70 -232 44 -20 53 -20 148 -8 173 22 318 72 392 135 46 39 95 139 121 243 l17 70 56 6 c117 12 203 70 246 166 20 45 25 72 26 142 0 74 -3 94 -27 142 -31 64 -81 103 -165 131 -62 20 -148 16 -186 -9 -36 -24 -46 -20 -89 36 -80 103 -292 241 -392 255 -39 5 -39 5 -35 46 4 49 -13 132 -44 209 l-23 58 64 31 c97 46 184 109 271 198 241 242 330 458 254 613 -74 154 -294 104 -517 -117 -104 -103 -231 -279 -313 -435 -5 -8 -15 -16 -24 -18 -14 -3 -13 9 8 85 71 260 56 603 -32 721 -44 58 -105 81 -170 61z' />
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <h1 class='text-3xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition-all mx-auto cursor-pointer'
+            onclick='goHome()'>JakeO.dev</h1>
+        <p class='text-gray-600'>Bunny on the internet</p>
+    </header>
 
-	<header class='text-center py-16 md:py-24'>
-		<div class='mx-auto w-32 mb-2'>
-			<button id='bunnyLogoButton' onclick='clickBunny()'>
-				<img src='https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png' id='bunnyLogoImg'
-					alt='Solid gradient blue gray bunny'
-					class='w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer'>
-			</button>
+    <!-- posts -->
 
-			<button id='bunnyLogoSvgButton' onclick='clickBunny()' class='hidden'>
-				<svg version='1.0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300.000000 300.000000'
-					preserveAspectRatio='xMidYMid meet' alt='Color-changing bunny'
-					class='w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer'>
-					<g transform='translate(0.000000,300.000000) scale(0.100000,-0.100000)' style='fill:#000000'
-						stroke='none' id='svgThing'>
-						<path
-							d='M1253 2909 c-71 -21 -135 -137 -153 -279 -20 -159 -3 -373 39 -500 20 -60 19 -70 -8 -70 -34 0 -118 -51 -174 -105 -66 -65 -108 -123 -158 -223 -21 -40 -62 -99 -91 -131 l-54 -58 -95 -5 c-109 -7 -129 -13 -129 -41 0 -19 4 -20 101 -14 l100 6 -3 -42 -3 -42 -103 -21 c-105 -21 -133 -37 -108 -62 11 -11 23 -11 72 1 32 9 77 18 100 22 40 6 41 6 53 -34 6 -22 24 -54 38 -72 28 -33 133 -89 167 -89 17 0 18 -6 12 -62 -23 -231 -28 -196 68 -462 45 -122 47 -190 11 -296 -14 -40 -22 -83 -19 -96 12 -46 150 -72 212 -40 34 18 82 69 112 119 12 21 25 36 27 33 3 -3 0 -42 -7 -88 -13 -97 -5 -133 37 -149 38 -15 122 -5 172 20 42 22 74 70 101 156 22 70 58 131 94 163 l36 32 35 -38 35 -37 -33 -25 c-141 -108 -166 -190 -70 -232 44 -20 53 -20 148 -8 173 22 318 72 392 135 46 39 95 139 121 243 l17 70 56 6 c117 12 203 70 246 166 20 45 25 72 26 142 0 74 -3 94 -27 142 -31 64 -81 103 -165 131 -62 20 -148 16 -186 -9 -36 -24 -46 -20 -89 36 -80 103 -292 241 -392 255 -39 5 -39 5 -35 46 4 49 -13 132 -44 209 l-23 58 64 31 c97 46 184 109 271 198 241 242 330 458 254 613 -74 154 -294 104 -517 -117 -104 -103 -231 -279 -313 -435 -5 -8 -15 -16 -24 -18 -14 -3 -13 9 8 85 71 260 56 603 -32 721 -44 58 -105 81 -170 61z' />
-					</g>
-				</svg>
-			</button>
-		</div>
-		<h1 class='text-3xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition-all mx-auto cursor-pointer'
-			onclick='goHome()'>JakeO.dev</h1>
-		<p class='text-gray-600'>Bunny on the internet</p>
-	</header>
+    <div class='section mt-0'>
+        <h2 class='sectionTitle'>All posts</h2>
 
-	<!-- about me -->
+        <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
 
-	<div class='section mt-0'>
-		<h2 class='sectionTitle'>Welcome to my website!</h2>
+            <div class='proj'>
+                <div class='flex-grow w-full text-left p-6'>
+                    <h1 class='projTitle'>The JakeO.dev Portfolio Wrapped 2023</h1>
+                    <h2 class='fade-text text mt-2'>Wraps and recaps and replays aren't just for music streaming
+                        services. I can look back on 2023 too...</h2>
+                    <div class='projSubtextDiv'>
+                        <h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-1.5'
+                                title='Initially published'></i>December 16 2023</h2>
+                        <h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-1.5'
+                                title='Last edited'></i>December 16 2023</h2>
+                    </div>
+                </div>
+                <div class='flex gap-3 p-6 pt-2'>
+                    <a class='button' href='/blog/the-jakeo-dev-portfolio-wrapped-2023' target='_blank'>Read<i
+                            class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
+                </div>
+            </div>
 
-		<p class='text'>I build websites mainly using JavaScript and Tailwind CSS.</p>
-		<p class='text'>The font that I'm using right now is <a href='https://lexend.com' target='_blank'
-				class='link'>Lexend</a>, which is known for improving reading proficiency.</p>
-		<p class='text'>Some of my favorite digital tools that I use are the browser <a href='https://arc.net/'
-				target='_blank' class='link'>Arc</a> and the note-keeping website <a href='https://notion.so/'
-				target='_blank' class='link'>Notion</a>, both for their unique features and pleasant design.
-		</p>
-	</div>
+            <div class='proj'>
+                <div class='flex-grow w-full text-left p-6'>
+                    <h1 class='projTitle'>AP World History: A History</h1>
+                    <h2 class='fade-text text mt-2'>As more students enroll in Advanced Placement classes, College
+                        Board is bound to make changes to...</h2>
+                    <div class='projSubtextDiv'>
+                        <h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-1.5'
+                                title='Initially published'></i>June 13 2023</h2>
+                        <h2 class='projSubtext'><i class='fa-solid fa-rotate-right mr-1.5'
+                                title='Last edited'></i>December 6 2023</h2>
+                    </div>
+                </div>
+                <div class='flex gap-3 p-6 pt-2'>
+                    <a class='button' href='/blog/ap-world-history-a-history' target='_blank'>Read<i
+                            class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
+                </div>
+            </div>
 
-	<!-- socials -->
+        </div>
 
-	<div class='section'>
-		<h2 class='sectionTitle'>Me around the internet</h2>
-
-		<div class='flex gap-4'>
-			<a href='mailto:hi@jakeo.dev' target='_blank'
-				class='hover:text-blue-500 transition-all flex text-3xl text-gray-500 hover:scale-110 active:scale-100'><i
-					class='fa-solid fa-envelope' aria-label='Email'></i></a>
-			<a href='https://github.com/jakeo-dev' target='_blank'
-				class='hover:text-[#333333] transition-all flex text-3xl text-gray-500 hover:scale-110 active:scale-100'><i
-					class='fa-brands fa-github' aria-label='GitHub'></i></a>
-			<a href='https://www.youtube.com/@jakeybakers' target='_blank'
-				class='hover:text-[#ff3838] transition-all flex text-3xl text-gray-500 hover:scale-110 active:scale-100'><i
-					class='fa-brands fa-youtube' aria-label='YouTube'></i></a>
-			<button id='dscdSocialLink' target='_blank'
-				class='hover:text-[#5865f2] transition-all flex text-3xl text-gray-500 hover:scale-110 active:scale-100'><i
-					class='fa-brands fa-discord' aria-label='Discord'></i></button>
-			<a href='https://steamcommunity.com/id/jakeybakers' target='_blank'
-				class='hover:text-[#2a475e] transition-all flex text-3xl text-gray-500 hover:scale-110 active:scale-100'><i
-					class='fa-brands fa-steam' aria-label='Steam'></i></a>
-		</div>
-	</div>
-
-	<!-- projects -->
-
-	<div class='section'>
-		<h2 class='sectionTitle'>Favorite projects of mine</h2>
-
-		<div class='block md:flex mt-4'>
-
-			<div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
-
-				<div class='proj'>
-					<div class='pImgTransDiv'>
-						<img src='images/plannter-ss-1.png' alt='Screenshot of the Plannter website'
-							class='pImgTrans plantImg'>
-						<img src='images/plannter-ss-2.png' alt='Screenshot of the Plannter website'
-							class='pImgTrans plantImg object-top opacity-0'>
-						<img src='images/plannter-ss-3.png' alt='Screenshot of the Plannter website'
-							class='pImgTrans plantImg object-top opacity-0'>
-						<img src='images/plannter-ss-4.png' alt='Screenshot of the Plannter website'
-							class='pImgTrans plantImg object-top opacity-0'>
-					</div>
-					<div class='flex-grow w-full text-left p-6'>
-						<h1 class='projTitle'>Plannter</h1>
-						<h2 class='text mt-2'>Keep track of and plan for all your high school courses, activities, and
-							tests.</h2>
-					</div>
-					<div class='flex gap-3 p-6 pt-2'>
-						<a class='button bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700'
-							href='https://plannter.jakeo.dev' target='_blank'>Visit<i
-								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
-						<a class='button bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700'
-							href='https://github.com/jakeo-dev/plannter' target='_blank'>GitHub<i
-								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
-					</div>
-				</div>
-
-				<div class='proj'>
-					<img src='../images/yearn-ss-1.png' alt='Screenshot of the Yearn website' class='pImg object-top'
-						id='yearnSS'>
-					<div class='flex-grow w-full text-left p-6'>
-						<h1 class='projTitle'>Yearn</h1>
-						<h2 class='text mt-2'>Organize gifts that you yearn for into a simple list.</h2>
-					</div>
-					<div class='flex gap-3 p-6 pt-2'>
-						<a class='button bg-blue-500 hover:bg-blue-600 active:bg-blue-700'
-							href='https://yearn.jakeo.dev' target='_blank'>Visit<i
-								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
-						<a class='button bg-blue-500 hover:bg-blue-600 active:bg-blue-700'
-							href='https://github.com/jakeo-dev/yearn' target='_blank'>GitHub<i
-								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
-					</div>
-				</div>
-
-			</div>
-
-			<a href='/projects'
-				class='flex justify-center items-center text-xl bg-white hover:bg-gray-100 active:bg-gray-200 active:shadow-none transition-all rounded-xl shadow-md p-3 md:p-4 mt-6 md:mt-0 md:ml-6'>
-				<p class='md:hidden'>All projects</p><i class='fa-solid fa-arrow-right ml-2 md:ml-0'></i>
-			</a>
-
-		</div>
-	</div>
-
-	<!-- posts -->
-
-	<div class='section'>
-		<h2 class='sectionTitle'>Favorite posts of mine</h2>
-
-		<div class='block md:flex mt-4'>
-
-			<div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
-
-				<div class='proj'>
-					<div class='flex-grow w-full text-left p-6'>
-						<h1 class='projTitle'>The JakeO.dev Portfolio Wrapped 2023</h1>
-						<h2 class='fade-text text mt-2'>Wraps and recaps and replays aren't just for music streaming
-							services. I can look back on 2023 too...</h2>
-						<div class='projSubtextDiv'>
-							<h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-1.5'
-									title='Initially published'></i>December 16 2023</h2>
-						</div>
-					</div>
-					<div class='flex gap-3 p-6 pt-2'>
-						<a class='button' href='/blog/the-jakeo-dev-portfolio-wrapped-2023' target='_blank'>Read<i
-								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
-					</div>
-				</div>
-
-				<div class='proj'>
-					<div class='flex-grow w-full text-left p-6'>
-						<h1 class='projTitle'>AP World History: A History</h1>
-						<h2 class='fade-text text mt-2'>As more students enroll in Advanced Placement classes, College
-							Board is bound to make changes to...</h2>
-						<div class='projSubtextDiv'>
-							<h2 class='projSubtext'><i class='fa-solid fa-calendar-day mr-1.5'
-									title='Initially published'></i>June 13 2023</h2>
-						</div>
-					</div>
-					<div class='flex gap-3 p-6 pt-2'>
-						<a class='button' href='/blog/ap-world-history-a-history' target='_blank'>Read<i
-								class='fa-solid fa-arrow-up-right-from-square ml-1.5'></i></a>
-					</div>
-				</div>
-
-			</div>
-
-			<a href='/blog'
-				class='flex justify-center items-center text-xl bg-white hover:bg-gray-100 active:bg-gray-200 active:shadow-none transition-all rounded-xl shadow-md p-3 md:p-4 mt-6 md:mt-0 md:ml-6'>
-				<p class='md:hidden'>All posts</p><i class='fa-solid fa-arrow-right ml-2 md:ml-0'></i>
-			</a>
-
-		</div>
-	</div>
+    </div>
 
 </body>
 
 </html>
 
-<script src='script.js'></script>
+<script src='../script.js'></script>
