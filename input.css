@@ -136,6 +136,14 @@
     @apply w-full rounded-lg border-2 border-gray-200;
   }
 
+  .postThumbImgDiv {
+    @apply mt-8;
+  }
+
+  .postThumbImg {
+    @apply rounded-3xl;
+  }
+
   .sp-table {
     @apply max-w-lg md:max-w-full border-b-2 border-t-0 border-gray-400;
   }
