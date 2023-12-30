@@ -4,7 +4,7 @@
 
 @layer components {
   .body {
-    @apply bg-gray-100 text-gray-900 text-center font-LexendDeca transition-all max-w-[54rem] mx-auto px-6 pb-16 md:pb-32;
+    @apply bg-gray-100 text-gray-900 text-center font-LexendDeca transition-all max-w-[54rem] mx-auto px-8 pb-16 md:pb-32;
   }
 
   .proj {
