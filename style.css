@@ -540,8 +540,8 @@ video {
   max-width: 54rem;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-bottom: 4rem;
   text-align: center;
   font-family: Lexend Deca, sans-serif;
@@ -1268,6 +1268,21 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
 .border-8 {
   border-width: 8px;
 }
@@ -1654,11 +1669,6 @@ video {
 .hover\:bg-red-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.hover\:text-\[\#2a475e\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(42 71 94 / var(--tw-text-opacity));
 }
 
 .hover\:text-\[\#333333\]:hover {
