@@ -1268,21 +1268,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-.rounded-t-2xl {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.rounded-t-3xl {
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-}
-
 .border-8 {
   border-width: 8px;
 }

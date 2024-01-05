@@ -10,25 +10,25 @@ function openPlannterGH() {
     window.open('https://github.com/jakeo-dev/plannter', '_blank');
 }
 
-let holidayBunnies = [
+/* let holidayBunnies = [
     'https://bunnies.jakeo.dev/images/new-years-bunny.png',
     'https://bunnies.jakeo.dev/images/new-years-bunny.png '
-]
+] */
 
-window.onload = clickBunny;
+//window.onload = clickBunny;
 
 function clickBunny() {
-    thing = holidayBunnies[Math.floor(Math.random() * holidayBunnies.length)];
+    /* thing = holidayBunnies[Math.floor(Math.random() * holidayBunnies.length)];
     while (thing == document.getElementById('bunnyLogoImg').src) {
         thing = holidayBunnies[Math.floor(Math.random() * holidayBunnies.length)];
     }
-    document.getElementById('bunnyLogoImg').src = thing;
+    document.getElementById('bunnyLogoImg').src = thing; */
 
-    /* changeBunnyColor();
+    changeBunnyColor();
     if (document.getElementById('bunnyLogoSvgButton').classList.contains('hidden')) {
         document.getElementById('bunnyLogoButton').classList.add('hidden');
         document.getElementById('bunnyLogoSvgButton').classList.remove('hidden');
-    } */
+    }
 }
 
 function changeBunnyColor() {
