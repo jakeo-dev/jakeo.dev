@@ -62,6 +62,7 @@ export default function Blog2() {
           src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
           alt="Screenshots from the websites of the JakeO.dev portfolio wrapped in a bunny"
           className="postThumbImg"
+          placeholder="blur"
         />
       </div>
 
@@ -105,6 +106,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-early-jan-2023.png")}
                 alt="A screenshot of Plannter in early January 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -118,6 +120,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-jan-2023.png")}
                 alt="A screenshot of Plannter in January 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -131,6 +134,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-feb-2023.png")}
                 alt="A screenshot of Plannter in February 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -145,6 +149,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-jul-2023.png")}
                 alt="A screenshot of Plannter in July 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -159,6 +164,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-aug-2023.png")}
                 alt="A screenshot of Plannter in August 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -179,6 +185,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-feb-2023.png")}
                 alt="A screenshot of Cifra in February 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -192,6 +199,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-mar-2023.png")}
                 alt="A screenshot of Cifra in March 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -208,6 +216,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-nov-2023.png")}
                 alt="A screenshot of Cifra in July 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -227,6 +236,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-jan-2023.png")}
                 alt="A screenshot of Yearn in January 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -239,6 +249,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-feb-2023.png")}
                 alt="A screenshot of Yearn in February 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -253,6 +264,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-nov-2023.png")}
                 alt="A screenshot of Yearn in November 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -272,6 +284,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/tree-jan-2023.png")}
                 alt="A screenshot of Decorate a Tree in January 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -288,6 +301,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/tree-dec-2023.png")}
                 alt="A screenshot of Decorate a Tree in Deceember 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
             <div className="flex gap-x-4">
@@ -296,6 +310,7 @@ export default function Blog2() {
                   src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-yellow-old.png")}
                   alt="Old yellow ornament"
                   className="postImg max-w-[8rem]"
+                  placeholder="blur"
                 />
                 <p className="subtext">Old yellow ornament</p>
               </div>
@@ -304,6 +319,7 @@ export default function Blog2() {
                   src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-yellow-new.png")}
                   alt="New yellow ornament"
                   className="postImg max-w-[8rem]"
+                  placeholder="blur"
                 />
                 <p className="subtext">New yellow ornament</p>
               </div>
@@ -314,6 +330,7 @@ export default function Blog2() {
                   src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-green-old.png")}
                   alt="Old green ornament"
                   className="postImg max-w-[8rem]"
+                  placeholder="blur"
                 />
                 <p className="subtext">Old green ornament</p>
               </div>
@@ -322,6 +339,7 @@ export default function Blog2() {
                   src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-green-new.png")}
                   alt="New green ornament"
                   className="postImg max-w-[8rem]"
+                  placeholder="blur"
                 />
                 <p className="subtext">New green ornament</p>
               </div>
@@ -332,6 +350,7 @@ export default function Blog2() {
                   src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-cyan-old.png")}
                   alt="Old cyan ornament"
                   className="postImg max-w-[8rem]"
+                  placeholder="blur"
                 />
                 <p className="subtext">Old cyan ornament</p>
               </div>
@@ -340,6 +359,7 @@ export default function Blog2() {
                   src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-cyan-new.png")}
                   alt="New cyan ornament"
                   className="postImg max-w-[8rem]"
+                  placeholder="blur"
                 />
                 <p className="subtext">New cyan ornament</p>
               </div>
@@ -362,6 +382,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-jan-2023.png")}
                 alt="A screenshot of JakeO.dev in January 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -381,6 +402,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-jun-2023.png")}
                 alt="A screenshot of JakeO.dev in June 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -399,6 +421,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-sep-2023.png")}
                 alt="A screenshot of JakeO.dev in September 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
 
@@ -416,6 +439,7 @@ export default function Blog2() {
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-oct-2023.png")}
                 alt="A screenshot of JakeO.dev in October 2023"
                 className="postImg"
+                placeholder="blur"
               />
             </div>
           </div>

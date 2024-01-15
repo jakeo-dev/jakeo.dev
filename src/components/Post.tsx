@@ -29,6 +29,7 @@ export default function Post(props: PostProps) {
         className={`${
           props.showImg ? "" : "hidden"
         } w-full object-cover h-44 md:h-52 border-b-2 border-gray-200 rounded-t-xl`}
+        placeholder="blur"
       />
 
       <Link

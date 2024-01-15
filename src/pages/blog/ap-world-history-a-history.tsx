@@ -61,6 +61,7 @@ export default function Blog1() {
           src={require("../../../public/images/ap-world-history-a-history/thumbnail.png")}
           alt="A picture of Crystal Bay at Incline Village in Nevada taken in April 2022"
           className="postThumbImg"
+          placeholder="blur"
         />
         <p className="subtext">Monkey Rock at Incline Village, Nevada</p>
       </div>
@@ -1247,11 +1248,13 @@ export default function Blog1() {
             <Image
               src={require("../../../public/images/ap-world-history-a-history/percent-score-over-time-graph.svg")}
               alt="Percentages of Scores 2002-2023"
+              placeholder="blur"
             />
             <p className="sub3title mt-0">Mean Score 2002-2023</p>
             <Image
               src={require("../../../public/images/ap-world-history-a-history/mean-score-over-time-graph.svg")}
               alt="Mean Score 2002-2023"
+              placeholder="blur"
             />
             <p className="text mt-6">
               Significant increases and decreases in the percentages of scores
