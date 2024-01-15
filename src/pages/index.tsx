@@ -5,13 +5,8 @@ import Modal from "../components/Modal";
 import Project from "../components/Project";
 import Post from "@/components/Post";
 import Button from "../components/Button";
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faArrowRight,
-  faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faDiscord,
