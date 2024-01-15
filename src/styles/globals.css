@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .proj {
+    @apply flex flex-col bg-white rounded-xl shadow-md;
+  }
+
+  .sub1title {
+    @apply text-2xl text-gray-900 text-left font-semibold py-4 mt-16;
+  }
+
+  .sub2title {
+    @apply text-xl text-gray-900 text-left font-medium py-3 mt-12;
+  }
+
+  .sub3title {
+    @apply text-lg text-gray-900 text-left font-medium py-2 mt-8;
+  }
+
+  .titleSubtext {
+    @apply text-base text-gray-700 text-left mb-1 last:mb-4;
+  }
+
+  .text {
+    @apply text-base text-left leading-7 mb-2 last:mb-0;
+  }
+
+  .subtext {
+    @apply text-sm text-left italic text-gray-600 mt-1.5;
+  }
+
+  .link {
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 transition-all;
+  }
+
+  .downloadLink {
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 transition-all;
+  }
+
+  .postImgDiv {
+    @apply mt-3 mb-6;
+  }
+
+  .postImg {
+    @apply w-full rounded-lg border-2 border-gray-200;
+  }
+
+  .postThumbImgDiv {
+    @apply mt-8;
+  }
+
+  .postThumbImg {
+    @apply rounded-[2rem];
+  }
+
+  .sp-table {
+    @apply max-w-lg md:max-w-full border-b-2 border-t-0 border-gray-400;
+  }
+
+  .sp-table-head {
+    @apply border-b-2 border-gray-400;
+  }
+
+  .sp-table-head-item {
+    @apply font-normal align-bottom leading-normal md:pr-8 pl-4 pb-3;
+  }
+
+  .sp-table-item {
+    @apply font-normal align-top leading-relaxed md:leading-8 border-x-2 border-gray-400 pl-4 pr-8 py-2;
+  }
+
+  .sp-table-list-item {
+    @apply leading-relaxed md:leading-8;
+  }
+
+  .sp-table-row {
+    @apply border-b-2 border-gray-400;
+  }
+
+  .highlight {
+    @apply bg-gradient-to-br from-green-600/20 to-green-600/10 italic;
+  }
+
+  .checkSizes {
+    @apply border-8 border-blue-500 sm:border-green-500 md:border-yellow-500 lg:border-orange-500 xl:border-red-500 bg-blue-200 sm:bg-green-200 md:bg-yellow-200 lg:bg-orange-200 xl:bg-red-200;
+  }
+
+  .fadeIn {
+    @apply invisible opacity-0 transition-all;
+  }
+
+  .fadeOut {
+    @apply visible opacity-100 transition-all;
+  }
+}
+
+.fade-text {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+::selection {
+  background: rgba(11, 37, 98, 0.75);
+  color: rgb(255, 255, 255);
+}
+
+::-moz-selection {
+  /* Firefox */
+  background: rgba(11, 37, 98, 0.75);
+  color: rgb(255, 255, 255);
+}
