@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import CommonHead from "../../components/CommonHead";
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
@@ -66,7 +67,7 @@ export default function Blog1() {
 
       <div className="flex">
         <div className="flex-1">
-          <div className="text-left mt-8">
+          <div className="mt-8">
             <p className="text">
               As more students enroll in Advanced Placement classes, College
               Board is bound to make changes to the curriculums of their courses
@@ -1382,10 +1383,10 @@ export default function Blog1() {
           </div>
 
           <div className="text-left mt-16">
-            <a href="/blog" className="block text-xl link">
+            <Link href="/blog" className="block text-xl link">
               Read more posts like this one
               <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-            </a>
+            </Link>
           </div>
         </div>
 
