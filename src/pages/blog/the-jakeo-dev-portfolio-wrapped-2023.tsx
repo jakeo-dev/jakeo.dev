@@ -26,13 +26,13 @@ export default function Blog2() {
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
-          content="../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png"
+          content="https://jakeo.dev/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png"
         />
-        <meta property="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:image:src"
-          content="../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png"
+          content="https://jakeo.dev/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png"
         />
+        <meta property="twitter:card" content="summary_large_image" />
       </CommonHead>
 
       {/* header */}

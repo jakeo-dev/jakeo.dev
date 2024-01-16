@@ -25,13 +25,13 @@ export default function Blog1() {
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
-          content="../../../public/images/ap-world-history-a-history/thumbnail.png"
+          content="https://jakeo.dev/images/ap-world-history-a-history/thumbnail.png"
         />
-        <meta property="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:image:src"
-          content="../../../public/images/ap-world-history-a-history/thumbnail.png"
+          content="https://jakeo.dev/images/ap-world-history-a-history/thumbnail.png"
         />
+        <meta property="twitter:card" content="summary_large_image" />
       </CommonHead>
 
       {/* header */}

@@ -1,7 +1,6 @@
 import CommonHead from "../../components/CommonHead";
 import Header from "../../components/Header";
 import Post from "../../components/Post";
-import Button from "../../components/Button";
 
 export default function Blog() {
   return (
@@ -14,7 +13,7 @@ export default function Blog() {
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
-          content="https://bunnies.jakeo.dev/../public/solid-gradient-blue-gray-bunny.png"
+          content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         />
       </CommonHead>
 
