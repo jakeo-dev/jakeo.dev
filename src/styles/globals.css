@@ -56,7 +56,7 @@
   }
 
   .sp-table {
-    @apply max-w-lg md:max-w-full border-b-2 border-t-0 border-gray-400;
+    @apply max-w-lg md:max-w-full text-left border-b-2 border-t-0 border-gray-400;
   }
 
   .sp-table-head {

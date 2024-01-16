@@ -428,11 +428,11 @@ export default function Blog2() {
             <p className="sub3title mt-0">October 2023</p>
             <p className="text">
               This iteration has been in effect since October, and the current
-              website still resembles this design. Most of the sections were
-              removed from their boxes, with the header being modified the most,
-              no longer a persistent oval at the top of the screen. The social
-              buttons were once again moved to be in their own section below the
-              About Me.
+              website at the time of writing still resembles this design. Most
+              of the sections were removed from their boxes, with the header
+              being modified the most, no longer a persistent oval at the top of
+              the screen. The social buttons were once again moved to be in
+              their own section below the About Me.
             </p>
             <div className="postImgDiv">
               <Image

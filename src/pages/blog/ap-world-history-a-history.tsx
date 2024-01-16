@@ -1229,7 +1229,7 @@ export default function Blog1() {
                         Complexity: Demonstrates a complex understanding of the
                         historical development of the prompt using evidence to
                         corroborate, qualify, or modify an argument;{" "}
-                        <span className="block inline highlight">
+                        <span className="inline highlight">
                           can now also be earned by using seven documents or
                           analyzing four documents
                         </span>
@@ -1248,13 +1248,11 @@ export default function Blog1() {
             <Image
               src={require("../../../public/images/ap-world-history-a-history/percent-score-over-time-graph.svg")}
               alt="Percentages of Scores 2002-2023"
-              placeholder="blur"
             />
             <p className="sub3title mt-0">Mean Score 2002-2023</p>
             <Image
               src={require("../../../public/images/ap-world-history-a-history/mean-score-over-time-graph.svg")}
               alt="Mean Score 2002-2023"
-              placeholder="blur"
             />
             <p className="text mt-6">
               Significant increases and decreases in the percentages of scores
