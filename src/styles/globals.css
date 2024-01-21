@@ -52,7 +52,7 @@
   }
 
   .postThumbImg {
-    @apply rounded-[2rem];
+    @apply rounded-3xl;
   }
 
   .sp-table {

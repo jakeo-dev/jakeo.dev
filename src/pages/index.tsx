@@ -5,6 +5,7 @@ import Modal from "../components/Modal";
 import Project from "../components/Project";
 import Post from "@/components/Post";
 import Button from "../components/Button";
+import SecButton from "../components/SecButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -116,9 +117,9 @@ export default function Home() {
             <Button className="" href={`https://plannter.jakeo.dev`}>
               Visit
             </Button>
-            <Button className="" href={`https://github.com/jakeo-dev/plannter`}>
+            <SecButton className="" href={`https://github.com/jakeo-dev/plannter`}>
               GitHub
-            </Button>
+            </SecButton>
           </Project>
 
           <Project
@@ -134,9 +135,9 @@ export default function Home() {
             <Button className="" href={`https://cifra.jakeo.dev`}>
               Visit
             </Button>
-            <Button className="" href={`https://github.com/jakeo-dev/cifra`}>
+            <SecButton className="" href={`https://github.com/jakeo-dev/cifra`}>
               GitHub
-            </Button>
+            </SecButton>
           </Project>
         </div>
 

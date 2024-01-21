@@ -2,6 +2,7 @@ import CommonHead from "../../components/CommonHead";
 import Header from "../../components/Header";
 import Project from "../../components/Project";
 import Button from "../../components/Button";
+import SecButton from "../../components/SecButton";
 
 export default function Projects() {
   return (
@@ -39,9 +40,9 @@ export default function Projects() {
             <Button className="" href={`https://cifra.jakeo.dev`}>
               Visit
             </Button>
-            <Button className="" href={`https://github.com/jakeo-dev/cifra`}>
+            <SecButton className="" href={`https://github.com/jakeo-dev/cifra`}>
               GitHub
-            </Button>
+            </SecButton>
           </Project>
 
           <Project
@@ -57,9 +58,12 @@ export default function Projects() {
             <Button className="" href={`https://plannter.jakeo.dev`}>
               Visit
             </Button>
-            <Button className="" href={`https://github.com/jakeo-dev/plannter`}>
+            <SecButton
+              className=""
+              href={`https://github.com/jakeo-dev/plannter`}
+            >
               GitHub
-            </Button>
+            </SecButton>
           </Project>
 
           <Project
@@ -75,9 +79,9 @@ export default function Projects() {
             <Button className="" href={`https://yearn.jakeo.dev`}>
               Visit
             </Button>
-            <Button className="" href={`https://github.com/jakeo-dev/yearn`}>
+            <SecButton className="" href={`https://github.com/jakeo-dev/yearn`}>
               GitHub
-            </Button>
+            </SecButton>
           </Project>
 
           <Project
@@ -93,12 +97,12 @@ export default function Projects() {
             <Button className="" href={`https://filter.jakeo.dev`}>
               Visit
             </Button>
-            <Button
+            <SecButton
               className=""
               href={`https://github.com/jakeo-dev/text-filter`}
             >
               GitHub
-            </Button>
+            </SecButton>
           </Project>
 
           <Project
@@ -114,9 +118,12 @@ export default function Projects() {
             <Button className="" href={`https://cerebric.jakeo.dev`}>
               Visit
             </Button>
-            <Button className="" href={`https://github.com/jakeo-dev/cerebric`}>
+            <SecButton
+              className=""
+              href={`https://github.com/jakeo-dev/cerebric`}
+            >
               GitHub
-            </Button>
+            </SecButton>
           </Project>
 
           <Project
@@ -132,12 +139,12 @@ export default function Projects() {
             <Button className="" href={`https://tree.jakeo.dev`}>
               Visit
             </Button>
-            <Button
+            <SecButton
               className=""
               href={`https://github.com/jakeo-dev/decorate-a-tree`}
             >
               GitHub
-            </Button>
+            </SecButton>
           </Project>
 
           <Project
@@ -153,9 +160,12 @@ export default function Projects() {
             <Button className="" href={`https://bunnies.jakeo.dev`}>
               Visit
             </Button>
-            <Button className="" href={`https://github.com/jakeo-dev/bunnies`}>
+            <SecButton
+              className=""
+              href={`https://github.com/jakeo-dev/bunnies`}
+            >
               GitHub
-            </Button>
+            </SecButton>
           </Project>
 
           <Project
@@ -171,12 +181,12 @@ export default function Projects() {
             img={require("../../../public/images/main-ss-1.png")}
             showImg={true}
           >
-            <Button
+            <SecButton
               className=""
               href={`https://github.com/jakeo-dev/jakeo.dev`}
             >
               GitHub
-            </Button>
+            </SecButton>
           </Project>
         </div>
       </div>
