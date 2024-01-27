@@ -109,7 +109,7 @@ export default function Projects() {
             name="Cerebric"
             desc="A speed typing website to help you study."
             releaseDate="May 2022"
-            updateDate="December 2023"
+            updateDate="December 2022"
             showReleaseDate={true}
             showUpdateDate={true}
             img={require("../../../public/images/cerebric-ss-2.png")}
