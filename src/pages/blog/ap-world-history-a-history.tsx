@@ -1304,15 +1304,18 @@ export default function Blog1() {
               />
             </a>
             <a
-              href="ap-world-history-exam-scores.pdf"
-              className="text text-sm downloadLink block"
+              href="/images/ap-world-history-a-history/apwh-exam-scores.pdf"
+              className="text text-sm link block"
               target="_blank"
             >
               2002-2023 Exam data compiled in a spreadsheet (PDF)
-              <FontAwesomeIcon icon={faDownload} className="ml-1.5" />
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className="ml-1.5"
+              />
             </a>
             <a
-              href="../../../public/images/ap-world-history-a-history/apwh-course-description-2002.pdf"
+              href="/images/ap-world-history-a-history/apwh-course-description-2002.pdf"
               className="text text-sm link block"
               target="_blank"
             >
@@ -1323,7 +1326,7 @@ export default function Blog1() {
               />
             </a>
             <a
-              href="../../../public/images/ap-world-history-a-history/apwh-course-description-2012.pdf"
+              href="/images/ap-world-history-a-history/apwh-course-description-2012.pdf"
               className="text text-sm link block"
               target="_blank"
             >
@@ -1334,7 +1337,7 @@ export default function Blog1() {
               />
             </a>
             <a
-              href="../../../public/images/ap-world-history-a-history/apwh-course-description-2017.pdf"
+              href="/images/ap-world-history-a-history/apwh-course-description-2017.pdf"
               className="text text-sm link block"
               target="_blank"
             >
@@ -1345,7 +1348,7 @@ export default function Blog1() {
               />
             </a>
             <a
-              href="../../../public/images/ap-world-history-a-history/apwh-course-description-2018.pdf"
+              href="/images/ap-world-history-a-history/apwh-course-description-2018.pdf"
               className="text text-sm link block"
               target="_blank"
             >
@@ -1356,7 +1359,7 @@ export default function Blog1() {
               />
             </a>
             <a
-              href="../../../public/images/ap-world-history-a-history/apwh-course-description-2020.pdf"
+              href="/images/ap-world-history-a-history/apwh-course-description-2020.pdf"
               className="text text-sm link block"
               target="_blank"
             >
@@ -1367,7 +1370,7 @@ export default function Blog1() {
               />
             </a>
             <a
-              href="../../../public/images/ap-world-history-a-history/apwh-course-description-2024.pdf"
+              href="/images/ap-world-history-a-history/apwh-course-description-2024.pdf"
               className="text text-sm link block"
               target="_blank"
             >
