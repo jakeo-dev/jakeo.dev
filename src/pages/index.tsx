@@ -117,7 +117,10 @@ export default function Home() {
             <Button className="" href={`https://plannter.jakeo.dev`}>
               Visit
             </Button>
-            <SecButton className="" href={`https://github.com/jakeo-dev/plannter`}>
+            <SecButton
+              className=""
+              href={`https://github.com/jakeo-dev/plannter`}
+            >
               GitHub
             </SecButton>
           </Project>
@@ -126,7 +129,7 @@ export default function Home() {
             name="Cifra"
             desc="Discover hidden words in your phone number to make it fun and unforgettable."
             releaseDate="February 2023"
-            updateDate="July 2023"
+            updateDate="January 2024"
             showReleaseDate={false}
             showUpdateDate={true}
             img={require("../../public/images/cifra-ss-2.png")}

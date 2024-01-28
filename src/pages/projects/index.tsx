@@ -31,7 +31,7 @@ export default function Projects() {
             name="Cifra"
             desc="Discover hidden words in your phone number to make it fun and unforgettable."
             releaseDate="February 2023"
-            updateDate="July 2023"
+            updateDate="January 2024"
             showReleaseDate={true}
             showUpdateDate={true}
             img={require("../../../public/images/cifra-ss-2.png")}
@@ -172,7 +172,7 @@ export default function Projects() {
             name="JakeO.dev"
             desc="You're already here — check out all my projects and blog posts."
             releaseDate="September 2020"
-            /* domain bought (google sites): sep 2020
+            /* domain bought (made w/ google sites): sep 2020
             original files created (html/css/js): may 2021
             first uploaded to github: may 2022 */
             updateDate="January 2024"
