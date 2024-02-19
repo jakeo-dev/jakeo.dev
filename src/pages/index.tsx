@@ -162,7 +162,7 @@ export default function Home() {
         releaseDate="December 16 2023"
         updateDate="December 16 2023"
         showReleaseDate={true}
-        showUpdateDate={true}
+        showUpdateDate={false}
         fadeDesc={true}
         img={require("../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
         showImg={false}
@@ -175,7 +175,7 @@ export default function Home() {
         releaseDate="June 13 2023"
         updateDate="December 6 2023"
         showReleaseDate={true}
-        showUpdateDate={true}
+        showUpdateDate={false}
         fadeDesc={true}
         img={require("../../public/images/ap-world-history-a-history/thumbnail.png")}
         showImg={false}
