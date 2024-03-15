@@ -90,13 +90,13 @@ export default function Home() {
         >
           <FontAwesomeIcon icon={faDiscord} aria-label="Discord" />
         </button>
-        <a
+        {/* <a
           href="https://www.youtube.com/@jakeybakers"
           target="_blank"
           className="hover:text-[#ff3838] transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
         >
           <FontAwesomeIcon icon={faYoutube} aria-label="YouTube" />
-        </a>
+        </a> */}
       </div>
 
       {/* projects */}
