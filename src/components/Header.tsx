@@ -7,7 +7,7 @@ export default function Header() {
   const [svgVis, setSvgVis] = useState("hidden");
 
   return (
-    <header className="flex items-center align-middle text-center py-16 md:py-24 -translate-x-4">
+    <header className="flex items-center align-middle text-center my-16 md:my-24 -translate-x-4 transition-all">
       <div>
         <button
           className={imgVis}
@@ -24,7 +24,7 @@ export default function Header() {
           <img
             src="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             alt="Solid gradient blue gray bunny"
-            className="w-28 md:w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer"
+            className="w-32 md:w-36 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition-all cursor-pointer"
           />
         </button>
         <button
@@ -42,7 +42,7 @@ export default function Header() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 300.000000 300.000000"
             preserveAspectRatio="xMidYMid meet"
-            className="w-28 md:w-32 object-contain hover:scale-110 active:scale-100 transition-all cursor-pointer"
+            className="w-32 md:w-36 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition-all cursor-pointer"
           >
             <g
               transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
@@ -61,13 +61,27 @@ export default function Header() {
         >
           JakeO.dev
         </Link>
-        <p className="text-gray-600 text-left">bunny on the internet</p>
-        <div className="text-gray-600 text-left">
-          <Link href="/projects" className="text link">
+        <p className="text-gray-600 text-left font-medium">
+          bunny on the internet
+        </p>
+        <div className="border-t-[3px] border-dotted border-gray-300 my-2"></div>
+        <div className="flex gap-3 text-gray-600 text-left">
+          <Link
+            href="/"
+            className="text hover:text-sky-500 active:text-sky-600 m-0 transition-all"
+          >
+            <span>home</span>
+          </Link>
+          <Link
+            href="/projects"
+            className="text hover:text-sky-500 active:text-sky-600 m-0 transition-all"
+          >
             <span>projects</span>
           </Link>
-          <span className="ml-2">•</span>
-          <Link href="/blog" className="text link ml-2">
+          <Link
+            href="/blog"
+            className="text hover:text-sky-500 active:text-sky-600 m-0 transition-all"
+          >
             <span>posts</span>
           </Link>
         </div>
