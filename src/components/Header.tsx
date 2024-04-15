@@ -7,7 +7,7 @@ export default function Header() {
   const [svgVis, setSvgVis] = useState("hidden");
 
   return (
-    <header className="flex items-center align-middle text-center my-16 md:my-24 -translate-x-4 transition-all">
+    <header className="flex items-center align-middle text-center my-16 md:my-24 -translate-x-4">
       <div>
         <button
           className={imgVis}

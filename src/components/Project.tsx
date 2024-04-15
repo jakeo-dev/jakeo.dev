@@ -12,8 +12,6 @@ type ProjectProps = {
   desc: string;
   releaseDate: string;
   updateDate: string;
-  showReleaseDate: boolean;
-  showUpdateDate: boolean;
   img: StaticImageData;
   showImg: boolean;
 };
@@ -38,7 +36,7 @@ export default function Project(props: ProjectProps) {
         <div className="flex gap-3 mt-2.5">
           <h2
             className={`${
-              props.showReleaseDate ? "inline" : "hidden"
+              props.releaseDate != "" ? "inline" : "hidden"
             } text-sm text-gray-600`}
           >
             <FontAwesomeIcon
@@ -50,7 +48,7 @@ export default function Project(props: ProjectProps) {
           </h2>
           <h2
             className={`${
-              props.showUpdateDate ? "inline" : "hidden"
+              props.updateDate != "" ? "inline" : "hidden"
             } text-sm text-gray-600`}
           >
             <FontAwesomeIcon

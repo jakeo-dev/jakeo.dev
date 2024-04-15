@@ -12,8 +12,6 @@ type PostProps = {
   desc: string;
   releaseDate: string;
   updateDate: string;
-  showReleaseDate: boolean;
-  showUpdateDate: boolean;
   fadeDesc: boolean;
   img: StaticImageData;
   showImg: boolean;
@@ -44,7 +42,7 @@ export default function Post(props: PostProps) {
       <div className="flex gap-3 mt-2.5">
         <h2
           className={`${
-            props.showReleaseDate ? "inline" : "hidden"
+            props.releaseDate != "" ? "inline" : "hidden"
           } text-sm text-gray-600`}
         >
           <FontAwesomeIcon
@@ -52,11 +50,11 @@ export default function Post(props: PostProps) {
             className="mr-1.5"
             aria-label="Initial release"
           />
-          {`${props.releaseDate}`}
+          {props.releaseDate}
         </h2>
         <h2
           className={`${
-            props.showUpdateDate ? "inline" : "hidden"
+            props.updateDate != "" ? "inline" : "hidden"
           } text-sm text-gray-600`}
         >
           <FontAwesomeIcon
@@ -64,7 +62,7 @@ export default function Post(props: PostProps) {
             className="mr-1.5"
             aria-label="Last updated"
           />
-          {`${props.updateDate}`}
+          {props.updateDate}
         </h2>
       </div>
     </div>
