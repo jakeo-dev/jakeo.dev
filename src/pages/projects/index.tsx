@@ -32,8 +32,6 @@ export default function Projects() {
             desc="Discover hidden words in your phone number to make it fun and unforgettable."
             releaseDate="February 2023"
             updateDate="January 2024"
-            showReleaseDate={true}
-            showUpdateDate={true}
             img={require("../../../public/images/cifra-ss-2.png")}
             showImg={true}
           >
@@ -49,9 +47,7 @@ export default function Projects() {
             name="Plannter"
             desc="Keep track of and plan for all your high school courses, activities, and tests."
             releaseDate="January 2023"
-            updateDate="August 2023"
-            showReleaseDate={true}
-            showUpdateDate={true}
+            updateDate="March 2024"
             img={require("../../../public/images/plannter-ss-1.png")}
             showImg={true}
           >
@@ -71,8 +67,6 @@ export default function Projects() {
             desc="Organize gifts that you yearn for into a simple list."
             releaseDate="November 2022"
             updateDate="December 2023"
-            showReleaseDate={true}
-            showUpdateDate={true}
             img={require("../../../public/images/yearn-ss-1.png")}
             showImg={true}
           >
@@ -89,8 +83,6 @@ export default function Projects() {
             desc="Filter unwanted strings from text in a number of different ways."
             releaseDate="August 2022"
             updateDate="October 2023"
-            showReleaseDate={true}
-            showUpdateDate={true}
             img={require("../../../public/images/filter-ss-1.png")}
             showImg={true}
           >
@@ -110,8 +102,6 @@ export default function Projects() {
             desc="A speed typing website to help you study."
             releaseDate="May 2022"
             updateDate="December 2022"
-            showReleaseDate={true}
-            showUpdateDate={true}
             img={require("../../../public/images/cerebric-ss-2.png")}
             showImg={true}
           >
@@ -131,8 +121,6 @@ export default function Projects() {
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
             releaseDate="December 2021"
             updateDate="December 2023"
-            showReleaseDate={true}
-            showUpdateDate={true}
             img={require("../../../public/images/tree-ss-1.png")}
             showImg={true}
           >
@@ -152,8 +140,6 @@ export default function Projects() {
             desc="Browse and download some colorful bunnies individually, in collections, or in banners."
             releaseDate="March 2021"
             updateDate="September 2023"
-            showReleaseDate={true}
-            showUpdateDate={true}
             img={require("../../../public/images/bunnies-ss-1.png")}
             showImg={true}
           >
@@ -176,8 +162,6 @@ export default function Projects() {
             original files created (html/css/js): may 2021
             first uploaded to github: may 2022 */
             updateDate="January 2024"
-            showReleaseDate={true}
-            showUpdateDate={true}
             img={require("../../../public/images/main-ss-1.png")}
             showImg={true}
           >

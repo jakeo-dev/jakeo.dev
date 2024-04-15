@@ -8,11 +8,7 @@ import Button from "../components/Button";
 import SecButton from "../components/SecButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faDiscord,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -45,26 +41,18 @@ export default function Home() {
       <h2 className="sub1title mt-0">Welcome to my website!</h2>
 
       <p className="text">
-        I build websites mainly using JavaScript and Tailwind CSS, and I've
-        built this website using React and Next.js.
+        I mainly design websites or make other things using my knowledge in
+        programming. I've built this website with Next.js.
       </p>
       <p className="text">
-        The font that I'm using right now is{" "}
+        The font I use often and am using right now is{" "}
         <a href="https://lexend.com" target="_blank" className="link">
           Lexend
         </a>
-        , which is known for improving reading proficiency.
+        . It's known for being easy to read, and it also just looks good.
       </p>
       <p className="text">
-        Some of my favorite digital tools that I use are the browser{" "}
-        <a href="https://arc.net/" target="_blank" className="link">
-          Arc
-        </a>{" "}
-        and the note-keeping website{" "}
-        <a href="https://notion.so/" target="_blank" className="link">
-          Notion
-        </a>
-        , both for their unique features and pleasant design.
+        Sometimes I also write blog posts about things that I find interesting.
       </p>
 
       {/* socials */}
@@ -107,10 +95,8 @@ export default function Home() {
           <Project
             name="Plannter"
             desc="Keep track of and plan for all your high school courses, activities, and tests."
-            releaseDate="January 2023"
-            updateDate="August 2023"
-            showReleaseDate={false}
-            showUpdateDate={true}
+            releaseDate=""
+            updateDate="March 2024"
             img={require("../../public/images/plannter-ss-1.png")}
             showImg={false}
           >
@@ -128,10 +114,8 @@ export default function Home() {
           <Project
             name="Cifra"
             desc="Discover hidden words in your phone number to make it fun and unforgettable."
-            releaseDate="February 2023"
+            releaseDate=""
             updateDate="January 2024"
-            showReleaseDate={false}
-            showUpdateDate={true}
             img={require("../../public/images/cifra-ss-2.png")}
             showImg={false}
           >
@@ -156,13 +140,22 @@ export default function Home() {
       {/* posts */}
       <h2 className="sub1title">My favorite posts</h2>
 
+      {/* <Post
+        name='P("Congratulations! We are pleased to inform you...")'
+        desc="desc..."
+        releaseDate="Month XX 2024"
+        updateDate=""
+        fadeDesc={true}
+        img={require("../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
+        showImg={false}
+        href="/blog/p-of-congratulations-we-are-pleased-to-inform-you"
+      /> */}
+
       <Post
         name="The JakeO.dev Portfolio Wrapped 2023"
-        desc="Wraps and recaps and replays aren't just for music streaming services. I can look back on 2023 too, but with a focus on the thing I know best: my websites..."
+        desc="Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but with a focus on the thing I know best: my websites..."
         releaseDate="December 16 2023"
-        updateDate="December 16 2023"
-        showReleaseDate={true}
-        showUpdateDate={false}
+        updateDate=""
         fadeDesc={true}
         img={require("../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
         showImg={false}
@@ -171,11 +164,9 @@ export default function Home() {
 
       <Post
         name="AP World History: A History"
-        desc="As more students enroll in Advanced Placement classes, College Board is bound to make changes to the curriculums of their courses either to more accurately..."
+        desc="As more students enroll in Advanced Placement classes, the College Board is bound to make changes to the curriculums of their courses either to more accurately..."
         releaseDate="June 13 2023"
-        updateDate="December 6 2023"
-        showReleaseDate={true}
-        showUpdateDate={false}
+        updateDate=""
         fadeDesc={true}
         img={require("../../public/images/ap-world-history-a-history/thumbnail.png")}
         showImg={false}
