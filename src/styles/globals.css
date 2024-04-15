@@ -32,11 +32,11 @@
   }
 
   .link {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 transition-all;
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 active:text-blue-700 transition-all;
   }
 
   .downloadLink {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 transition-all;
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition-all;
   }
 
   .postImgDiv {
@@ -101,13 +101,7 @@
   mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
-::selection {
-  background: rgba(11, 37, 98, 0.75);
-  color: rgb(255, 255, 255);
-}
-
-::-moz-selection {
-  /* Firefox */
-  background: rgba(11, 37, 98, 0.75);
-  color: rgb(255, 255, 255);
+.vertical-rl {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
 }
