@@ -68,7 +68,7 @@ export default function Blog1() {
       <div className="lg:flex lg:flex-row-reverse">
         <div className="lg:block flex-[0.3] lg:sticky top-0 self-start">
           <p className="lg:hidden block sub2title mb-0">Sections</p>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:border-l-2 border-gray-300 lg:pb-3 lg:pl-8 lg:ml-10 mb-16 lg:mt-16">
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:border-l-2 border-gray-300 lg:py-3 lg:pl-8 lg:ml-10 mb-16 lg:mt-16">
             <p className="hidden lg:block sub2title mt-0">Sections</p>
             <a href="#2002" className="text link block">
               Original 2002 Curriculum
