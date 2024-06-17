@@ -103,7 +103,7 @@ export default function Blog3() {
               Interesting Graphs
             </a> */}
             <a href="#personalized-chances" className="text link block lg:mt-5">
-              Personalized chances
+              Personalized Chances
             </a>
           </div>
         </div>
@@ -648,7 +648,7 @@ export default function Blog3() {
           </p> */}
 
           <h3 className="sub1title" id="personalized-chances">
-            Personalized chances
+            Personalized Chances
           </h3>
           <p className="text">
             Not every college has the exact acceptance rates of 17.5%, 55%, or
