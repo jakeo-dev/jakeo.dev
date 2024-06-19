@@ -19,12 +19,12 @@
     @apply text-lg text-gray-900 text-left font-medium py-2 mt-8;
   }
 
-  .titleSubtext {
-    @apply text-base text-gray-700 text-left mb-1 last:mb-4;
+  .postDatesDiv {
+    @apply flex text-sm text-gray-600 text-left gap-3 mt-2.5;
   }
 
   .text {
-    @apply text-base text-left leading-7 mb-2 last:mb-0;
+    @apply text-base text-left text-pretty leading-7 mb-2 last:mb-0;
   }
 
   .subtext {
@@ -48,7 +48,7 @@
   }
 
   .postThumbImgDiv {
-    @apply mt-8;
+    @apply mt-2;
   }
 
   .postThumbImg {

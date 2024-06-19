@@ -44,22 +44,6 @@ export default function Blog3() {
       <h1 className="sub1title mt-0">
         P("Congratulations! We are pleased to inform you...")
       </h1>
-      <h2 className="titleSubtext">
-        <FontAwesomeIcon
-          icon={faCalendarDay}
-          className="mr-2"
-          aria-label="Initially published"
-        />
-        June 17 2024
-      </h2>
-      <h2 className="titleSubtext">
-        <FontAwesomeIcon
-          icon={faRotateRight}
-          className="mr-2"
-          aria-label="Last edited"
-        />
-        June 17 2024
-      </h2>
 
       <div className="postThumbImgDiv">
         <Image
@@ -68,6 +52,17 @@ export default function Blog3() {
           className="postThumbImg"
           placeholder="blur"
         />
+      </div>
+
+      <div className="postDatesDiv">
+        <h2>
+          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          Posted June 17, 2024
+        </h2>
+        <h2>
+          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          Edited June 17, 2024
+        </h2>
       </div>
 
       <div className="lg:flex lg:flex-row-reverse">
@@ -201,7 +196,7 @@ export default function Blog3() {
           <p className="text">
             If we want to find the probability of being accepted into at least
             one of the three universities, subtract the probability of being
-            rejected from all three from 1.{" "}
+            rejected from all three from 1.
             {/* I won't explain how this works,
             but...it works. */}
           </p>

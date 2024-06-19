@@ -64,7 +64,7 @@ export default function Header() {
         <p className="text-gray-600 text-left font-medium">
           bunny on the internet
         </p>
-        <div className="border-t-[3px] border-dotted border-gray-300 my-2"></div>
+        <div className="border-t-[2.5px] border-dotted border-gray-300 my-2"></div>
         <div className="flex gap-3 text-gray-600 text-left">
           <Link
             href="/"

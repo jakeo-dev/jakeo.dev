@@ -38,22 +38,6 @@ export default function Blog1() {
 
       {/* post */}
       <h1 className="sub1title mt-0">AP World History: A History</h1>
-      <h2 className="titleSubtext">
-        <FontAwesomeIcon
-          icon={faCalendarDay}
-          className="mr-2"
-          aria-label="Initially published"
-        />
-        June 13 2023
-      </h2>
-      <h2 className="titleSubtext">
-        <FontAwesomeIcon
-          icon={faRotateRight}
-          className="mr-2"
-          aria-label="Last edited"
-        />
-        December 6 2023
-      </h2>
 
       <div className="postThumbImgDiv">
         <Image
@@ -63,6 +47,17 @@ export default function Blog1() {
           placeholder="blur"
         />
         <p className="subtext">Monkey Rock at Incline Village, Nevada</p>
+      </div>
+
+      <div className="postDatesDiv">
+        <h2>
+          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          Posted June 13, 2024
+        </h2>
+        <h2>
+          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          Edited December 6, 2024
+        </h2>
       </div>
 
       <div className="lg:flex lg:flex-row-reverse">

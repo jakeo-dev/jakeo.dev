@@ -40,22 +40,6 @@ export default function Blog2() {
 
       {/* post */}
       <h1 className="sub1title mt-0">The JakeO.dev Portfolio Wrapped 2023</h1>
-      <h2 className="titleSubtext">
-        <FontAwesomeIcon
-          icon={faCalendarDay}
-          className="mr-2"
-          aria-label="Initially published"
-        />
-        December 16 2023
-      </h2>
-      <h2 className="titleSubtext">
-        <FontAwesomeIcon
-          icon={faRotateRight}
-          className="mr-2"
-          aria-label="Last edited"
-        />
-        April 14 2024
-      </h2>
 
       <div className="postThumbImgDiv">
         <Image
@@ -64,6 +48,17 @@ export default function Blog2() {
           className="postThumbImg"
           placeholder="blur"
         />
+      </div>
+
+      <div className="postDatesDiv">
+        <h2>
+          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          Posted December 16, 2024
+        </h2>
+        <h2>
+          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          Edited April 14, 2024
+        </h2>
       </div>
 
       <div className="lg:flex lg:flex-row-reverse">

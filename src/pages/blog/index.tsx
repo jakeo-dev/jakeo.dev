@@ -26,8 +26,8 @@ export default function Blog() {
       <Post
         name='P("Congratulations! We are pleased to inform you...")'
         desc='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
-        releaseDate="June 17 2024"
-        updateDate="June 17 2024"
+        releaseDate="June 17, 2024"
+        updateDate="June 17, 2024"
         fadeDesc={true}
         img={require("../../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
         showImg={false}
@@ -37,8 +37,8 @@ export default function Blog() {
       <Post
         name="The JakeO.dev Portfolio Wrapped 2023"
         desc="Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but with a focus on the thing I know best: my websites..."
-        releaseDate="December 16 2023"
-        updateDate="April 14 2024"
+        releaseDate="December 16, 2023"
+        updateDate="April 14, 2024"
         fadeDesc={true}
         img={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
         showImg={false}
@@ -48,8 +48,8 @@ export default function Blog() {
       <Post
         name="AP World History: A History"
         desc="As more students enroll in Advanced Placement classes, the College Board is bound to make changes to the curriculums of their courses either to more accurately..."
-        releaseDate="June 13 2023"
-        updateDate="December 6 2023"
+        releaseDate="June 13, 2023"
+        updateDate="December 6, 2023"
         fadeDesc={true}
         img={require("../../../public/images/ap-world-history-a-history/thumbnail.png")}
         showImg={false}
