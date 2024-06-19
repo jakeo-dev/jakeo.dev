@@ -52,11 +52,11 @@ export default function Blog1() {
       <div className="postDatesDiv">
         <h2>
           <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
-          Posted June 13, 2024
+          Posted June 13, 2023
         </h2>
         <h2>
           <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
-          Edited December 6, 2024
+          Edited December 6, 2023
         </h2>
       </div>
 

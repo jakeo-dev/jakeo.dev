@@ -197,8 +197,7 @@ export default function Blog3() {
             If we want to find the probability of being accepted into at least
             one of the three universities, subtract the probability of being
             rejected from all three from 1.
-            {/* I won't explain how this works,
-            but...it works. */}
+            {/* I won't go into detail about how or why this works because this isn't a math-focused blog post, so you'll just have to trust me... */}
           </p>
           <p className="text">
             P(accepted into at least one of the following: Purdue University,
