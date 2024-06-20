@@ -31,7 +31,7 @@ export default function Projects() {
             name="Cifra"
             desc="Discover hidden words in your phone number to make it fun and unforgettable."
             releaseDate="February 2023"
-            updateDate="January 2024"
+            updateDate="June 2024"
             img={require("../../../public/images/cifra-ss-2.png")}
             showImg={true}
           >
@@ -161,7 +161,7 @@ export default function Projects() {
             /* domain bought (made w/ google sites): sep 2020
             original files created (html/css/js): may 2021
             first uploaded to github: may 2022 */
-            updateDate="January 2024"
+            updateDate="June 2024"
             img={require("../../../public/images/main-ss-1.png")}
             showImg={true}
           >

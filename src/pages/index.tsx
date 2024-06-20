@@ -115,7 +115,7 @@ export default function Home() {
             name="Cifra"
             desc="Discover hidden words in your phone number to make it fun and unforgettable."
             releaseDate=""
-            updateDate="January 2024"
+            updateDate="June 2024"
             img={require("../../public/images/cifra-ss-2.png")}
             showImg={false}
           >
