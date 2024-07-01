@@ -28,6 +28,22 @@ export default function Projects() {
       <div className="block md:flex">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Project
+            name="Linked"
+            desc="A fun and simple word puzzle game to test your brain."
+            releaseDate="June 2024"
+            updateDate="June 2024"
+            img={require("../../../public/images/linked-ss-1.png")}
+            showImg={true}
+          >
+            <Button className="" href={`https://linked.jakeo.dev`}>
+              Website
+            </Button>
+            <Button className="" href={`https://linked.jakeo.dev/mobile`}>
+              App
+            </Button>
+          </Project>
+
+          <Project
             name="Cifra"
             desc="Discover hidden words in your phone number to make it fun and unforgettable."
             releaseDate="February 2023"
