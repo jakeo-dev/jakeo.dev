@@ -113,7 +113,7 @@ export default function Home() {
 
           <Project
             name="Cifra"
-            desc="Discover hidden words in your phone number to make it fun and unforgettable."
+            desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate=""
             updateDate="June 2024"
             img={require("../../public/images/cifra-ss-2.png")}

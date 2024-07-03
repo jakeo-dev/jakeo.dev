@@ -35,26 +35,26 @@ export default function Projects() {
             img={require("../../../public/images/linked-ss-1.png")}
             showImg={true}
           >
-            <Button className="" href={`https://linked.jakeo.dev`}>
+            <Button className="" href="https://linked.jakeo.dev">
               Website
             </Button>
-            <Button className="" href={`https://linked.jakeo.dev/mobile`}>
+            <Button className="" href="https://linked.jakeo.dev/mobile">
               App
             </Button>
           </Project>
 
           <Project
             name="Cifra"
-            desc="Discover hidden words in your phone number to make it fun and unforgettable."
+            desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate="February 2023"
             updateDate="June 2024"
             img={require("../../../public/images/cifra-ss-2.png")}
             showImg={true}
           >
-            <Button className="" href={`https://cifra.jakeo.dev`}>
+            <Button className="" href="https://cifra.jakeo.dev">
               Visit
             </Button>
-            <SecButton className="" href={`https://github.com/jakeo-dev/cifra`}>
+            <SecButton className="" href="https://github.com/jakeo-dev/cifra">
               GitHub
             </SecButton>
           </Project>
@@ -67,12 +67,12 @@ export default function Projects() {
             img={require("../../../public/images/plannter-ss-1.png")}
             showImg={true}
           >
-            <Button className="" href={`https://plannter.jakeo.dev`}>
+            <Button className="" href="https://plannter.jakeo.dev">
               Visit
             </Button>
             <SecButton
               className=""
-              href={`https://github.com/jakeo-dev/plannter`}
+              href="https://github.com/jakeo-dev/plannter"
             >
               GitHub
             </SecButton>
@@ -86,10 +86,10 @@ export default function Projects() {
             img={require("../../../public/images/yearn-ss-1.png")}
             showImg={true}
           >
-            <Button className="" href={`https://yearn.jakeo.dev`}>
+            <Button className="" href="https://yearn.jakeo.dev">
               Visit
             </Button>
-            <SecButton className="" href={`https://github.com/jakeo-dev/yearn`}>
+            <SecButton className="" href="https://github.com/jakeo-dev/yearn">
               GitHub
             </SecButton>
           </Project>
@@ -102,12 +102,12 @@ export default function Projects() {
             img={require("../../../public/images/filter-ss-1.png")}
             showImg={true}
           >
-            <Button className="" href={`https://filter.jakeo.dev`}>
+            <Button className="" href="https://filter.jakeo.dev">
               Visit
             </Button>
             <SecButton
               className=""
-              href={`https://github.com/jakeo-dev/text-filter`}
+              href="https://github.com/jakeo-dev/text-filter"
             >
               GitHub
             </SecButton>
@@ -121,12 +121,12 @@ export default function Projects() {
             img={require("../../../public/images/cerebric-ss-2.png")}
             showImg={true}
           >
-            <Button className="" href={`https://cerebric.jakeo.dev`}>
+            <Button className="" href="https://cerebric.jakeo.dev">
               Visit
             </Button>
             <SecButton
               className=""
-              href={`https://github.com/jakeo-dev/cerebric`}
+              href="https://github.com/jakeo-dev/cerebric"
             >
               GitHub
             </SecButton>
@@ -140,12 +140,12 @@ export default function Projects() {
             img={require("../../../public/images/tree-ss-1.png")}
             showImg={true}
           >
-            <Button className="" href={`https://tree.jakeo.dev`}>
+            <Button className="" href="https://tree.jakeo.dev">
               Visit
             </Button>
             <SecButton
               className=""
-              href={`https://github.com/jakeo-dev/decorate-a-tree`}
+              href="https://github.com/jakeo-dev/decorate-a-tree"
             >
               GitHub
             </SecButton>
@@ -159,13 +159,10 @@ export default function Projects() {
             img={require("../../../public/images/bunnies-ss-1.png")}
             showImg={true}
           >
-            <Button className="" href={`https://bunnies.jakeo.dev`}>
+            <Button className="" href="https://bunnies.jakeo.dev">
               Visit
             </Button>
-            <SecButton
-              className=""
-              href={`https://github.com/jakeo-dev/bunnies`}
-            >
+            <SecButton className="" href="https://github.com/jakeo-dev/bunnies">
               GitHub
             </SecButton>
           </Project>
@@ -183,7 +180,7 @@ export default function Projects() {
           >
             <SecButton
               className=""
-              href={`https://github.com/jakeo-dev/jakeo.dev`}
+              href="https://github.com/jakeo-dev/jakeo.dev"
             >
               GitHub
             </SecButton>
