@@ -88,7 +88,7 @@ export default function Home() {
       </div>
 
       {/* projects */}
-      <h2 className="sub1title">My favorite projects</h2>
+      <h2 className="sub1title">Some of my projects</h2>
 
       <div className="block md:flex">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -138,7 +138,7 @@ export default function Home() {
       </div>
 
       {/* posts */}
-      <h2 className="sub1title">My favorite posts</h2>
+      <h2 className="sub1title">Some of my posts</h2>
 
       <Post
         name='P("Congratulations! We are pleased to inform you...")'
