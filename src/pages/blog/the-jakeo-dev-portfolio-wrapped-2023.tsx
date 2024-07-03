@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
   faRotateRight,
-  faArrowRight,
+  faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Blog2() {
@@ -62,10 +62,10 @@ export default function Blog2() {
       </div>
 
       <div className="lg:flex lg:flex-row-reverse">
-        <div className="lg:block flex-[0.3] lg:sticky top-0 self-start">
+        <div className="lg:block flex-[0.3] xl:flex-[0] xl:w-0 lg:sticky top-6 self-start">
           <p className="lg:hidden block sub2title mb-0">Sections</p>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:border-l-2 border-gray-300 lg:py-3 lg:pl-8 lg:ml-10 mb-16 lg:mt-16">
-            <p className="hidden lg:block sub2title mt-0">Sections</p>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:py-3 lg:ml-12 mb-16 lg:mt-6 lg:-mr-12 xl:-mr-64">
+            <p className="hidden lg:block sub2title mt-0 pt-0">Sections</p>
             <a href="#plannter" className="text link block">
               Plannter
             </a>
@@ -465,8 +465,8 @@ export default function Blog2() {
 
           <div className="text-left mt-16">
             <Link href="/blog" className="block text-xl link">
-              Read more posts like this one
-              <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+              <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+              Read more posts
             </Link>
           </div>
         </div>
