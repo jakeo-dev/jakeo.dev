@@ -7,7 +7,7 @@ export default function Header() {
   const [svgVis, setSvgVis] = useState("hidden");
 
   return (
-    <header className="flex items-center align-middle text-center my-16 md:my-24 -translate-x-4">
+    <header className="flex items-center align-middle text-center my-14 md:my-20 -translate-x-4">
       <div>
         <button
           className={imgVis}
@@ -24,7 +24,7 @@ export default function Header() {
           <img
             src="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             alt="Solid gradient blue gray bunny"
-            className="w-32 md:w-36 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition-all cursor-pointer"
+            className="w-16 md:w-20 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition-all cursor-pointer"
           />
         </button>
         <button
@@ -42,7 +42,7 @@ export default function Header() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 300.000000 300.000000"
             preserveAspectRatio="xMidYMid meet"
-            className="w-32 md:w-36 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition-all cursor-pointer"
+            className="w-16 md:w-20 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition-all cursor-pointer"
           >
             <g
               transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
@@ -54,37 +54,35 @@ export default function Header() {
           </svg>
         </button>
       </div>
-      <div className="ml-3">
+      <div className="text-left ml-3">
         <Link
           href="/"
-          className="text-4xl md:text-5xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition-all mx-auto cursor-pointer"
+          className="text-3xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition-all mx-auto cursor-pointer"
         >
           JakeO.dev
         </Link>
-        <p className="text-gray-600 text-left font-medium">
-          bunny on the internet
-        </p>
-        <div className="border-t-[2.5px] border-dotted border-gray-300 my-2"></div>
-        <div className="flex gap-3 text-gray-600 text-left">
-          <Link
-            href="/"
-            className="text hover:text-sky-500 active:text-sky-600 m-0 transition-all"
-          >
-            <span>home</span>
-          </Link>
-          <Link
-            href="/projects"
-            className="text hover:text-sky-500 active:text-sky-600 m-0 transition-all"
-          >
-            <span>projects</span>
-          </Link>
-          <Link
-            href="/blog"
-            className="text hover:text-sky-500 active:text-sky-600 m-0 transition-all"
-          >
-            <span>posts</span>
-          </Link>
-        </div>
+        <p className="text-gray-600 font-medium">bunny on the internet</p>
+      </div>
+      {/* <div className="border-l-[2.5px] border-dotted border-gray-300 mx-6 h-24"></div> */}
+      <div className="text-gray-600 ml-auto">
+        <Link
+          href="/"
+          className="text hover:text-sky-500 active:text-sky-600 transition-all ml-3.5"
+        >
+          <span>home</span>
+        </Link>
+        <Link
+          href="/projects"
+          className="text hover:text-sky-500 active:text-sky-600 transition-all ml-3.5"
+        >
+          <span>projects</span>
+        </Link>
+        <Link
+          href="/blog"
+          className="text hover:text-sky-500 active:text-sky-600 transition-all ml-3.5"
+        >
+          <span>posts</span>
+        </Link>
       </div>
     </header>
   );
