@@ -94,18 +94,18 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Project
             name="Plannter"
-            desc="Keep track of and plan for all your high school courses, activities, and tests."
+            desc="Plan and keep track of all your high school courses, activities, tests, and essays."
             releaseDate=""
-            updateDate="March 2024"
+            updateDate="July 2024"
             img={require("../../public/images/plannter-ss-1.png")}
             showImg={false}
           >
-            <Button className="" href={`https://plannter.jakeo.dev`}>
+            <Button className="" href="https://plannter.jakeo.dev">
               Visit
             </Button>
             <SecButton
               className=""
-              href={`https://github.com/jakeo-dev/plannter`}
+              href="https://github.com/jakeo-dev/plannter"
             >
               GitHub
             </SecButton>
@@ -119,10 +119,10 @@ export default function Home() {
             img={require("../../public/images/cifra-ss-2.png")}
             showImg={false}
           >
-            <Button className="" href={`https://cifra.jakeo.dev`}>
+            <Button className="" href="https://cifra.jakeo.dev">
               Visit
             </Button>
-            <SecButton className="" href={`https://github.com/jakeo-dev/cifra`}>
+            <SecButton className="" href="https://github.com/jakeo-dev/cifra">
               GitHub
             </SecButton>
           </Project>

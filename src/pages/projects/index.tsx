@@ -31,7 +31,7 @@ export default function Projects() {
             name="Linked"
             desc="A fun and simple word puzzle game to test your brain."
             releaseDate="June 2024"
-            updateDate="June 2024"
+            updateDate="July 2024"
             img={require("../../../public/images/linked-ss-1.png")}
             showImg={true}
           >
@@ -61,9 +61,9 @@ export default function Projects() {
 
           <Project
             name="Plannter"
-            desc="Keep track of and plan for all your high school courses, activities, and tests."
+            desc="Plan and keep track of all your high school courses, activities, tests, and essays."
             releaseDate="January 2023"
-            updateDate="March 2024"
+            updateDate="July 2024"
             img={require("../../../public/images/plannter-ss-1.png")}
             showImg={true}
           >
@@ -174,7 +174,7 @@ export default function Projects() {
             /* domain bought (made w/ google sites): sep 2020
             original files created (html/css/js): may 2021
             first uploaded to github: may 2022 */
-            updateDate="June 2024"
+            updateDate="July 2024"
             img={require("../../../public/images/main-ss-1.png")}
             showImg={true}
           >
