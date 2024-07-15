@@ -94,7 +94,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Project
             name="Plannter"
-            desc="Plan and keep track of all your high school courses, activities, tests, and essays."
+            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
             updateDate="July 2024"
             img={require("../../public/images/plannter-ss-1.png")}
