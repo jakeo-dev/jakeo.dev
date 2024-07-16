@@ -99,6 +99,8 @@ export default function Home() {
             updateDate="July 2024"
             img={require("../../public/images/plannter-ss-1.png")}
             showImg={false}
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+            showLogo={true}
           >
             <Button className="" href="https://plannter.jakeo.dev">
               Visit
@@ -118,6 +120,8 @@ export default function Home() {
             updateDate="June 2024"
             img={require("../../public/images/cifra-ss-2.png")}
             showImg={false}
+            logo="https://cifra.jakeo.dev/cifra-logo.png"
+            showLogo={true}
           >
             <Button className="" href="https://cifra.jakeo.dev">
               Visit

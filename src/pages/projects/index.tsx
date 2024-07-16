@@ -34,6 +34,8 @@ export default function Projects() {
             updateDate="July 2024"
             img={require("../../../public/images/linked-ss-1.png")}
             showImg={true}
+            logo="https://linked.jakeo.dev/icon-transparent.png"
+            showLogo={true}
           >
             <Button className="" href="https://linked.jakeo.dev">
               Website
@@ -50,6 +52,8 @@ export default function Projects() {
             updateDate="June 2024"
             img={require("../../../public/images/cifra-ss-2.png")}
             showImg={true}
+            logo="https://cifra.jakeo.dev/cifra-logo.png"
+            showLogo={true}
           >
             <Button className="" href="https://cifra.jakeo.dev">
               Visit
@@ -66,6 +70,8 @@ export default function Projects() {
             updateDate="July 2024"
             img={require("../../../public/images/plannter-ss-1.png")}
             showImg={true}
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+            showLogo={true}
           >
             <Button className="" href="https://plannter.jakeo.dev">
               Visit
@@ -85,6 +91,8 @@ export default function Projects() {
             updateDate="December 2023"
             img={require("../../../public/images/yearn-ss-1.png")}
             showImg={true}
+            logo="https://yearn.jakeo.dev/yearn-logo.png"
+            showLogo={false}
           >
             <Button className="" href="https://yearn.jakeo.dev">
               Visit
@@ -101,6 +109,8 @@ export default function Projects() {
             updateDate="October 2023"
             img={require("../../../public/images/filter-ss-1.png")}
             showImg={true}
+            logo=""
+            showLogo={false}
           >
             <Button className="" href="https://filter.jakeo.dev">
               Visit
@@ -120,6 +130,8 @@ export default function Projects() {
             updateDate="December 2022"
             img={require("../../../public/images/cerebric-ss-2.png")}
             showImg={true}
+            logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
+            showLogo={true}
           >
             <Button className="" href="https://cerebric.jakeo.dev">
               Visit
@@ -139,6 +151,8 @@ export default function Projects() {
             updateDate="December 2023"
             img={require("../../../public/images/tree-ss-1.png")}
             showImg={true}
+            logo="https://decorate-a-tree.jakeo.dev/candy-cane-red-left.png"
+            showLogo={true}
           >
             <Button className="" href="https://tree.jakeo.dev">
               Visit
@@ -158,6 +172,8 @@ export default function Projects() {
             updateDate="September 2023"
             img={require("../../../public/images/bunnies-ss-1.png")}
             showImg={true}
+            logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
+            showLogo={true}
           >
             <Button className="" href="https://bunnies.jakeo.dev">
               Visit
@@ -177,6 +193,8 @@ export default function Projects() {
             updateDate="July 2024"
             img={require("../../../public/images/main-ss-1.png")}
             showImg={true}
+            logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
+            showLogo={true}
           >
             <SecButton
               className=""

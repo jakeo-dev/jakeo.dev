@@ -14,13 +14,21 @@ type ProjectProps = {
   updateDate: string;
   img: StaticImageData;
   showImg: boolean;
+  logo: string;
+  showLogo: boolean;
 };
 
 export default function Project(props: ProjectProps) {
   return (
-    <div
-      className={`flex flex-col rounded-xl border-2 border-gray-200 hover:bg-gray-200 transition-all`}
-    >
+    <div className="relative flex flex-col rounded-xl border-2 border-gray-200 hover:bg-gray-200 transition-all">
+      {/* <img
+        src={props.logo}
+        className={`${
+          props.showLogo ? "" : "hidden"
+        } absolute object-cover h-5/6 opacity-15 transform top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
+        alt={`${props.name} logo`}
+      /> */}
+
       <Image
         src={props.img}
         alt={`Screenshot of ${props.name}`}
@@ -31,7 +39,16 @@ export default function Project(props: ProjectProps) {
       />
 
       <div className="flex-grow w-full p-6">
-        <h1 className="text-xl text-left font-medium">{props.name}</h1>
+        <h1 className="text-xl text-left font-medium flex items-center">
+          <img
+            src={props.logo}
+            className={`${
+              props.showLogo ? "" : "hidden"
+            } inline w-6 mr-1.5`}
+            alt={`${props.name} logo`}
+          />
+          {props.name}
+        </h1>
         <h2 className="text mt-2 mb-0">{props.desc}</h2>
         <div className="flex gap-3 mt-2.5">
           <h2

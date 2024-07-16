@@ -12,11 +12,11 @@
   }
 
   .sub2title {
-    @apply text-xl text-gray-900 text-left font-medium py-3 mt-12;
+    @apply text-xl text-gray-900 text-left font-medium py-4 mt-10;
   }
 
   .sub3title {
-    @apply text-lg text-gray-900 text-left font-medium py-2 mt-8;
+    @apply text-lg text-gray-900 text-left font-medium py-4 mt-6;
   }
 
   .postDatesDiv {
@@ -24,7 +24,7 @@
   }
 
   .text {
-    @apply text-base text-left text-pretty leading-7 mb-2 last:mb-0;
+    @apply text-base text-left text-pretty leading-7 mb-3 last:mb-0;
   }
 
   .subtext {
@@ -37,6 +37,10 @@
 
   .downloadLink {
     @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition-all;
+  }
+
+  .codeBlockDiv {
+    @apply mt-3 mb-6;
   }
 
   .postImgDiv {
@@ -56,7 +60,7 @@
   }
 
   .sp-table {
-    @apply max-w-lg md:max-w-full text-left border-b-2 border-t-0 border-gray-400;
+    @apply max-w-lg md:max-w-full text-left border-b-2 border-t-0 border-gray-400 mb-2;
   }
 
   .sp-table-head {
@@ -64,11 +68,11 @@
   }
 
   .sp-table-head-item {
-    @apply font-normal align-bottom leading-normal md:pr-8 pl-4 pb-3;
+    @apply font-normal align-bottom leading-normal px-2.5 pb-2;
   }
 
   .sp-table-item {
-    @apply font-normal align-top leading-relaxed md:leading-8 border-x-2 border-gray-400 pl-4 pr-8 py-2;
+    @apply font-normal align-top leading-relaxed md:leading-8 border-x-2 border-gray-400 px-4 py-2;
   }
 
   .sp-table-list-item {
@@ -104,4 +108,11 @@
 .vertical-rl {
   writing-mode: vertical-rl;
   rotate: 180deg;
+}
+
+.font-fira-code {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
