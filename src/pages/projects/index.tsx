@@ -22,7 +22,7 @@ export default function Projects() {
       {/* header */}
       <Header />
 
-      {/* projects */}
+      {/* current projects */}
       <h2 className="sub1title mt-0">My projects</h2>
 
       <div className="block md:flex">
@@ -84,6 +84,34 @@ export default function Projects() {
             </SecButton>
           </Project>
 
+          <Project
+            name="JakeO.dev"
+            desc="You're already here — check out all of my projects and blog posts."
+            releaseDate="September 2020"
+            /* domain bought (made w/ google sites): sep 2020
+            original files created (html/css/js): may 2021
+            first uploaded to github: may 2022 */
+            updateDate="August 2024"
+            img={require("../../../public/images/main-ss-1.png")}
+            showImg={true}
+            logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
+            showLogo={true}
+          >
+            <SecButton
+              className=""
+              href="https://github.com/jakeo-dev/jakeo.dev"
+            >
+              GitHub
+            </SecButton>
+          </Project>
+        </div>
+      </div>
+
+      {/* old projects */}
+      <h2 className="sub1title">Past projects</h2>
+
+      <div className="block md:flex">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Project
             name="Yearn"
             desc="Organize gifts that you yearn for into a simple list."
@@ -166,6 +194,27 @@ export default function Projects() {
           </Project>
 
           <Project
+            name="Emoticon Generator"
+            desc="Generate unique emoticons."
+            releaseDate="November 2021"
+            updateDate="March 2023"
+            img={require("../../../public/images/emoticons-ss-1.png")}
+            showImg={true}
+            logo=""
+            showLogo={false}
+          >
+            <Button className="" href="https://emoticons.jakeo.dev">
+              Visit
+            </Button>
+            <SecButton
+              className=""
+              href="https://github.com/jakeo-dev/emoticons"
+            >
+              GitHub
+            </SecButton>
+          </Project>
+
+          <Project
             name="Colorful Bunnies"
             desc="Browse and download some colorful bunnies individually, in collections, or in banners."
             releaseDate="March 2021"
@@ -179,27 +228,6 @@ export default function Projects() {
               Visit
             </Button>
             <SecButton className="" href="https://github.com/jakeo-dev/bunnies">
-              GitHub
-            </SecButton>
-          </Project>
-
-          <Project
-            name="JakeO.dev"
-            desc="You're already here — check out all my projects and blog posts."
-            releaseDate="September 2020"
-            /* domain bought (made w/ google sites): sep 2020
-            original files created (html/css/js): may 2021
-            first uploaded to github: may 2022 */
-            updateDate="July 2024"
-            img={require("../../../public/images/main-ss-1.png")}
-            showImg={true}
-            logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
-            showLogo={true}
-          >
-            <SecButton
-              className=""
-              href="https://github.com/jakeo-dev/jakeo.dev"
-            >
               GitHub
             </SecButton>
           </Project>
