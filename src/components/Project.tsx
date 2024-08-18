@@ -20,7 +20,7 @@ type ProjectProps = {
 
 export default function Project(props: ProjectProps) {
   return (
-    <div className="relative flex flex-col rounded-xl border-2 border-gray-200 hover:bg-gray-200 transition-all">
+    <div className="relative flex flex-col rounded-xl border-2 border-gray-200 hover:bg-gray-200 transition">
       {/* <img
         src={props.logo}
         className={`${

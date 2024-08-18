@@ -145,6 +145,17 @@ export default function Home() {
       <h2 className="sub1title">Some of my posts</h2>
 
       <Post
+        name="Dialing Letters Instead of Digits"
+        desc="In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted..."
+        releaseDate="August 18, 2024"
+        updateDate=""
+        fadeDesc={true}
+        img={require("../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+        showImg={false}
+        href="/blog/dialing-letters-instead-of-digits"
+      />
+
+      <Post
         name='P("Congratulations! We are pleased to inform you...")'
         desc='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
         releaseDate="June 17, 2024"
@@ -153,17 +164,6 @@ export default function Home() {
         img={require("../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
         showImg={false}
         href="/blog/p-of-congratulations-we-are-pleased-to-inform-you"
-      />
-
-      <Post
-        name="The JakeO.dev Portfolio Wrapped 2023"
-        desc="Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but with a focus on the thing I know best: my websites..."
-        releaseDate="December 16, 2023"
-        updateDate=""
-        fadeDesc={true}
-        img={require("../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
-        showImg={false}
-        href="/blog/the-jakeo-dev-portfolio-wrapped-2023"
       />
     </>
   );

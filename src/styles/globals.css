@@ -32,11 +32,11 @@
   }
 
   .link {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 active:text-blue-700 transition-all;
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 active:text-blue-700 transition;
   }
 
   .downloadLink {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition-all;
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition;
   }
 
   .codeBlockDiv {
@@ -92,11 +92,11 @@
   }
 
   .fadeIn {
-    @apply invisible opacity-0 transition-all;
+    @apply invisible opacity-0 transition;
   }
 
   .fadeOut {
-    @apply visible opacity-100 transition-all;
+    @apply visible opacity-100 transition;
   }
 }
 

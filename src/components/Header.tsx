@@ -25,7 +25,7 @@ export default function Header() {
             <img
               src="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
               alt="Solid gradient blue gray bunny"
-              className="w-16 md:w-20 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition-all cursor-pointer"
+              className="w-16 md:w-20 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
             />
           </button>
           <button
@@ -43,7 +43,7 @@ export default function Header() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 300.000000 300.000000"
               preserveAspectRatio="xMidYMid meet"
-              className="w-16 md:w-20 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition-all cursor-pointer"
+              className="w-16 md:w-20 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
             >
               <g
                 transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
@@ -58,7 +58,7 @@ export default function Header() {
         <div className="text-left ml-3">
           <Link
             href="/"
-            className="text-3xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition-all mx-auto cursor-pointer"
+            className="text-3xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
           >
             JakeO.dev
           </Link>
@@ -68,19 +68,19 @@ export default function Header() {
       <div className="text-gray-600 text-left border-t-2 border-dotted border-gray-300 pt-3 mt-3 ml-auto md:border-0 md:pt-0 md:mt-0">
         <Link
           href="/"
-          className="text hover:text-sky-500 active:text-sky-600 transition-all ml-3.5"
+          className="text hover:text-sky-500 active:text-sky-600 transition ml-3.5"
         >
           <span>home</span>
         </Link>
         <Link
           href="/projects"
-          className="text hover:text-sky-500 active:text-sky-600 transition-all ml-3.5"
+          className="text hover:text-sky-500 active:text-sky-600 transition ml-3.5"
         >
           <span>projects</span>
         </Link>
         <Link
           href="/blog"
-          className="text hover:text-sky-500 active:text-sky-600 transition-all ml-3.5"
+          className="text hover:text-sky-500 active:text-sky-600 transition ml-3.5"
         >
           <span>posts</span>
         </Link>

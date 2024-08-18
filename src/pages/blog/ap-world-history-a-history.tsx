@@ -19,7 +19,7 @@ export default function Blog1() {
         <meta property="og:title" content="AP World History: A History" />
         <meta
           property="og:description"
-          content="As more students enroll in Advanced Placement classes, the College Board is bound to make changes to..."
+          content="As more students enroll in Advanced Placement classes, the College Board is bound to make changes to the curriculums of their courses either to more accurately..."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
@@ -193,7 +193,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (9)</th>
+                    <th className="sp-table-head-item w-24">Points (9)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">
@@ -296,7 +296,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (9)</th>
+                    <th className="sp-table-head-item w-24">Points (9)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">
@@ -384,7 +384,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (9)</th>
+                    <th className="sp-table-head-item w-24">Points (9)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">
@@ -558,7 +558,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (9)</th>
+                    <th className="sp-table-head-item w-24">Points (9)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">
@@ -693,7 +693,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (7)</th>
+                    <th className="sp-table-head-item w-24">Points (7)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">
@@ -788,7 +788,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (6)</th>
+                    <th className="sp-table-head-item w-24">Points (6)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">
@@ -932,7 +932,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (7)</th>
+                    <th className="sp-table-head-item w-24">Points (7)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">
@@ -1013,7 +1013,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (6)</th>
+                    <th className="sp-table-head-item w-24">Points (6)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">
@@ -1184,7 +1184,7 @@ export default function Blog1() {
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
-                    <th className="sp-table-head-item">Points (7)</th>
+                    <th className="sp-table-head-item w-24">Points (7)</th>
                   </tr>
                 </thead>
                 <tbody className="sp-table-row">

@@ -251,11 +251,11 @@ export default function Blog3() {
           <p className="text">
             Although luck is a significant factor, acceptances are not entirely
             random chance as these calculations may suggest. These calculations
-            only generalize colleges' overall acceptance rates into three basic
-            categories, which isn't truly enough information to tell you about a
-            person's chances of acceptance into any college. You shouldn't
-            listen to this light-hearted blog post or me at all for serious
-            advice about college.
+            only generalize overall acceptance rates of colleges into three
+            basic categories, which isn't truly enough information to tell you
+            about a person's chances of acceptance. You shouldn't listen to this
+            light-hearted blog post or me at all for serious advice about
+            college.
           </p>
 
           <h3 className="sub1title" id="a-mix-of-colleges">
@@ -677,8 +677,8 @@ export default function Blog3() {
               ></FontAwesomeIcon>
               Plannter
             </a>
-            , my website that lets you keep track of your high school courses,
-            activities, tests, and essays.
+            , my website that lets you plan courses, keep track of
+            extracurriculars, prepare for college applications, and more.
           </p>
 
           <div className="text-left mt-16">

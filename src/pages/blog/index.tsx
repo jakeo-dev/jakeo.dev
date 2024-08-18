@@ -24,6 +24,17 @@ export default function Blog() {
       <h2 className="sub1title mt-0">My posts</h2>
 
       <Post
+        name="Dialing Letters Instead of Digits"
+        desc="In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted..."
+        releaseDate="August 18, 2024"
+        updateDate="August 18, 2024"
+        fadeDesc={true}
+        img={require("../../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+        showImg={false}
+        href="/blog/dialing-letters-instead-of-digits"
+      />
+
+      <Post
         name='P("Congratulations! We are pleased to inform you...")'
         desc='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
         releaseDate="June 17, 2024"
