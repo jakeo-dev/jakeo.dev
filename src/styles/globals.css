@@ -92,11 +92,11 @@
   }
 
   .fadeIn {
-    @apply invisible opacity-0 transition;
+    @apply invisible opacity-0 transition-all;
   }
 
   .fadeOut {
-    @apply visible opacity-100 transition;
+    @apply visible opacity-100 transition-all;
   }
 }
 
