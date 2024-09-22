@@ -1,118 +1,190 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { useState } from "react";
+import CommonHead from "../components/CommonHead";
+import Header from "../components/Header";
+import Modal from "../components/Modal";
+import Project from "../components/Project";
+import Post from "@/components/Post";
+import Button from "../components/Button";
+import SecButton from "../components/SecButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <>
+      {/* head */}
+      <CommonHead>
+        <title>JakeO.dev</title>
+        <meta property="og:title" content="JakeO.dev" />
+        <meta property="og:description" content="bunny on the internet" />
+        <meta name="theme-color" content="#83b5d3" />
+        <meta
+          property="og:image"
+          content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         />
+      </CommonHead>
+
+      {/* discord modal */}
+      <Modal className="" open={open} onClose={() => setOpen(false)}>
+        <div className="items-center text-center">
+          <h1 className="text-indigo-600">@jakeybakers</h1>
+        </div>
+      </Modal>
+
+      {/* header */}
+      <Header />
+
+      {/* about me */}
+      <h2 className="sub1title mt-0">Welcome to my website!</h2>
+
+      <p className="text">
+        I mainly design websites or make other things using my knowledge in
+        programming. I've built this website with Next.js.
+      </p>
+      <p className="text">
+        The font I use often and am using right now is{" "}
+        <a href="https://lexend.com" target="_blank" className="link">
+          Lexend
+        </a>
+        . It's known for being easy to read, and it also just looks good.
+      </p>
+      <p className="text">
+        Sometimes I also write blog posts about things that I find interesting.
+      </p>
+
+      {/* socials */}
+      <div className="flex gap-4 mt-4">
+        <a
+          href="mailto:hi@jakeo.dev"
+          target="_blank"
+          className="hover:text-blue-500 transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
+        >
+          <FontAwesomeIcon icon={faEnvelope} aria-label="Email" />
+        </a>
+        <a
+          href="https://github.com/jakeo-dev"
+          target="_blank"
+          className="hover:text-[#333333] transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
+        >
+          <FontAwesomeIcon icon={faGithub} aria-label="GitHub" />
+        </a>
+        <button
+          onClick={() => setOpen(true)}
+          className="hover:text-[#5865f2] transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
+        >
+          <FontAwesomeIcon icon={faDiscord} aria-label="Discord" />
+        </button>
+        {/* <a
+          href="https://www.youtube.com/@jakeybakers"
+          target="_blank"
+          className="hover:text-[#ff3838] transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
+        >
+          <FontAwesomeIcon icon={faYoutube} aria-label="YouTube" />
+        </a> */}
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      {/* projects */}
+      <div className="flex items-center sub1title">
+        <h2>Some of my projects</h2>
+        <Link
+          href="/projects"
+          className="text-lg hover:text-sky-500 active:text-sky-600 ml-auto transition"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <span className="hidden md:inline">All projects</span>
+          <span className="md:hidden">All</span>
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+        </Link>
       </div>
-    </main>
-  )
+
+      <div className="block md:flex">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Project
+            name="Plannter"
+            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
+            releaseDate=""
+            updateDate="September 2024"
+            img={require("../../public/images/plannter-ss-1.png")}
+            showImg={false}
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+            showLogo={true}
+          >
+            <Button className="" href="https://plannter.jakeo.dev">
+              Visit
+            </Button>
+            <SecButton
+              className=""
+              href="https://github.com/jakeo-dev/plannter"
+            >
+              GitHub
+            </SecButton>
+          </Project>
+
+          <Project
+            name="Cifra"
+            desc="Generate vanity numbers from your own phone number to make it unforgettable."
+            releaseDate=""
+            updateDate="June 2024"
+            img={require("../../public/images/cifra-ss-2.png")}
+            showImg={false}
+            logo="https://cifra.jakeo.dev/cifra-logo.png"
+            showLogo={true}
+          >
+            <Button className="" href="https://cifra.jakeo.dev">
+              Visit
+            </Button>
+            <SecButton className="" href="https://github.com/jakeo-dev/cifra">
+              GitHub
+            </SecButton>
+          </Project>
+        </div>
+
+        {/* <Link
+          href="/projects"
+          className="flex justify-center items-center h-min text-xl border-2 hover:bg-gray-200 active:bg-gray-300 active:border-gray-300 transition-all rounded-full p-3.5 md:ml-4 mt-6 md:my-auto"
+        >
+          <p className="md:hidden">All projects</p>
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2 md:ml-0" />
+        </Link> */}
+      </div>
+
+      {/* posts */}
+      <div className="flex items-center sub1title">
+        <h2>Some of my posts</h2>
+        <Link
+          href="/blog"
+          className="text-lg hover:text-sky-500 active:text-sky-600 ml-auto transition"
+        >
+          <span className="hidden md:inline">All posts</span>
+          <span className="md:hidden">All</span>
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+        </Link>
+      </div>
+
+      <Post
+        name="Dialing Letters Instead of Digits"
+        desc="In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted..."
+        releaseDate="August 18, 2024"
+        updateDate=""
+        fadeDesc={true}
+        img={require("../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+        showImg={false}
+        href="/blog/dialing-letters-instead-of-digits"
+      />
+
+      <Post
+        name='P("Congratulations! We are pleased to inform you...")'
+        desc='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
+        releaseDate="June 17, 2024"
+        updateDate=""
+        fadeDesc={true}
+        img={require("../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
+        showImg={false}
+        href="/blog/p-of-congratulations-we-are-pleased-to-inform-you"
+      />
+    </>
+  );
 }

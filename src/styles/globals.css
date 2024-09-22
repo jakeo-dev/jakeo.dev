@@ -2,26 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  .proj {
+    @apply flex flex-col bg-white rounded-xl shadow-md;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .sub1title {
+    @apply text-2xl text-gray-900 text-left font-semibold py-4 mt-16;
+  }
+
+  .sub2title {
+    @apply text-xl text-gray-900 text-left font-medium py-4 mt-10;
+  }
+
+  .sub3title {
+    @apply text-lg text-gray-900 text-left font-medium py-4 mt-6;
+  }
+
+  .postDatesDiv {
+    @apply flex text-sm text-gray-600 text-left gap-3 mt-2.5;
+  }
+
+  .text {
+    @apply text-base text-left text-pretty leading-7 mb-3 last:mb-0;
+  }
+
+  .subtext {
+    @apply text-sm text-left italic text-gray-600 mt-1.5;
+  }
+
+  .link {
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 active:text-blue-700 transition;
+  }
+
+  .downloadLink {
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition;
+  }
+
+  .codeBlockDiv {
+    @apply mt-3 mb-6;
+  }
+
+  .postImgDiv {
+    @apply mt-3 mb-6;
+  }
+
+  .postImg {
+    @apply w-full rounded-lg border-2 border-gray-200;
+  }
+
+  .postThumbImgDiv {
+    @apply mt-2;
+  }
+
+  .postThumbImg {
+    @apply rounded-3xl;
+  }
+
+  .sp-table {
+    @apply max-w-lg md:max-w-full text-left border-b-2 border-t-0 border-gray-400 mb-2;
+  }
+
+  .sp-table-head {
+    @apply border-b-2 border-gray-400;
+  }
+
+  .sp-table-head-item {
+    @apply font-normal align-bottom leading-normal px-2.5 pb-2;
+  }
+
+  .sp-table-item {
+    @apply font-normal align-top leading-relaxed md:leading-8 border-x-2 border-gray-400 px-4 py-2;
+  }
+
+  .sp-table-list-item {
+    @apply leading-relaxed md:leading-8;
+  }
+
+  .sp-table-row {
+    @apply border-b-2 border-gray-400;
+  }
+
+  .highlight {
+    @apply bg-gradient-to-br from-green-600/20 to-green-600/10 italic;
+  }
+
+  .checkSizes {
+    @apply border-8 border-blue-500 sm:border-green-500 md:border-yellow-500 lg:border-orange-500 xl:border-red-500 bg-blue-200 sm:bg-green-200 md:bg-yellow-200 lg:bg-orange-200 xl:bg-red-200;
+  }
+
+  .fadeIn {
+    @apply invisible opacity-0 transition-all;
+  }
+
+  .fadeOut {
+    @apply visible opacity-100 transition-all;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.fade-text {
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+}
+
+.font-fira-code {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
