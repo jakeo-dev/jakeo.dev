@@ -35,7 +35,7 @@ export default function Home() {
       </Modal>
 
       {/* header */}
-      <Header />
+      <Header currentPage="home" />
 
       {/* about me */}
       <h2 className="sub1title mt-0">Welcome to my website!</h2>
@@ -72,7 +72,6 @@ export default function Home() {
           <FontAwesomeIcon icon={faGithub} aria-label="GitHub" />
         </a>
         <button
-          id="dscdSocialLink"
           onClick={() => setOpen(true)}
           className="hover:text-[#5865f2] transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
         >
@@ -96,7 +95,7 @@ export default function Home() {
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
-            updateDate="July 2024"
+            updateDate="September 2024"
             img={require("../../public/images/plannter-ss-1.png")}
             showImg={false}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"

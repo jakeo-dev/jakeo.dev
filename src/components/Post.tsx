@@ -7,7 +7,7 @@ import {
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-type PostProps = {
+export default function Post(props: {
   name: string;
   desc: string;
   releaseDate: string;
@@ -16,9 +16,7 @@ type PostProps = {
   img: StaticImageData;
   showImg: boolean;
   href: string;
-};
-
-export default function Post(props: PostProps) {
+}) {
   return (
     <div className="flex flex-col mt-2 mb-10">
       <Image

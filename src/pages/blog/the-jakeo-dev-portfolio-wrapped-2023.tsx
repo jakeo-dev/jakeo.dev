@@ -36,7 +36,7 @@ export default function Blog2() {
       </CommonHead>
 
       {/* header */}
-      <Header />
+      <Header currentPage="posts" />
 
       {/* post */}
       <h1 className="sub1title mt-0">The JakeO.dev Portfolio Wrapped 2023</h1>

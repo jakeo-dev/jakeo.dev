@@ -1,10 +1,6 @@
 import Head from "next/head";
 
-type CommonHeadProps = {
-  children: React.ReactNode;
-};
-
-export default function CommonHead(props: CommonHeadProps) {
+export default function CommonHead(props: { children: React.ReactNode }) {
   return (
     <Head>
       <meta charSet="UTF-8" />

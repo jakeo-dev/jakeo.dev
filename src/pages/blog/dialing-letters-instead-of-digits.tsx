@@ -34,7 +34,7 @@ export default function Blog4() {
       </CommonHead>
 
       {/* header */}
-      <Header />
+      <Header currentPage="posts" />
 
       {/* post */}
       <h1 className="sub1title mt-0">Dialing Letters Instead of Digits</h1>

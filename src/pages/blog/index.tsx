@@ -18,7 +18,7 @@ export default function Blog() {
       </CommonHead>
 
       {/* header */}
-      <Header />
+      <Header currentPage="posts" />
 
       {/* posts */}
       <h2 className="sub1title mt-0">My posts</h2>

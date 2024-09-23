@@ -1,14 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-type ModalProps = {
+export default function Modal(props: {
   children: React.ReactNode;
   className: string;
   open: boolean;
   onClose: () => void; // handles closing modal
-};
-
-export default function Modal(props: ModalProps) {
+}) {
   return (
     <div
       className={`${

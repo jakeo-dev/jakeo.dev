@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Header() {
+export default function Header(props: { currentPage: string }) {
   const [color, setColor] = useState("#000000");
   const [imgVis, setImgVis] = useState("");
   const [svgVis, setSvgVis] = useState("hidden");
@@ -68,19 +68,31 @@ export default function Header() {
       <div className="text-gray-600 text-left border-t-2 border-dotted border-gray-300 pt-3 mt-3 ml-auto md:border-0 md:pt-0 md:mt-0">
         <Link
           href="/"
-          className="text hover:text-sky-500 active:text-sky-600 transition ml-3.5"
+          className={`${
+            props.currentPage == "home"
+              ? "text-gray-100 bg-sky-500 hover:bg-sky-400 active:bg-sky-500"
+              : "hover:text-sky-600 active:text-sky-500"
+          } text rounded-md px-2 py-1 transition mr-1.5`}
         >
           <span>home</span>
         </Link>
         <Link
           href="/projects"
-          className="text hover:text-sky-500 active:text-sky-600 transition ml-3.5"
+          className={`${
+            props.currentPage == "projects"
+              ? "text-gray-100 bg-sky-500 hover:bg-sky-400 active:bg-sky-500"
+              : "hover:text-sky-600 active:text-sky-500"
+          } text rounded-md px-2 py-1 transition mr-1.5`}
         >
           <span>projects</span>
         </Link>
         <Link
           href="/blog"
-          className="text hover:text-sky-500 active:text-sky-600 transition ml-3.5"
+          className={`${
+            props.currentPage == "posts"
+              ? "text-gray-100 bg-sky-500 hover:bg-sky-400 active:bg-sky-500"
+              : "hover:text-sky-600 active:text-sky-500"
+          } text rounded-md px-2 py-1 transition mr-1.5`}
         >
           <span>posts</span>
         </Link>

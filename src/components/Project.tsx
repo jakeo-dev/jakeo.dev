@@ -6,7 +6,7 @@ import {
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-type ProjectProps = {
+export default function Project(props: {
   children: React.ReactNode;
   name: string;
   desc: string;
@@ -16,9 +16,7 @@ type ProjectProps = {
   showImg: boolean;
   logo: string;
   showLogo: boolean;
-};
-
-export default function Project(props: ProjectProps) {
+}) {
   return (
     <div className="relative flex flex-col rounded-xl border-2 border-gray-200 hover:bg-gray-200 transition">
       {/* <img
@@ -42,9 +40,7 @@ export default function Project(props: ProjectProps) {
         <h1 className="text-xl text-left font-medium flex items-center">
           <img
             src={props.logo}
-            className={`${
-              props.showLogo ? "" : "hidden"
-            } inline w-6 mr-1.5`}
+            className={`${props.showLogo ? "" : "hidden"} inline w-6 mr-1.5`}
             alt={`${props.name} logo`}
           />
           {props.name}

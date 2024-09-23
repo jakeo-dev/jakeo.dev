@@ -38,7 +38,7 @@ export default function Blog3() {
       </CommonHead>
 
       {/* header */}
-      <Header />
+      <Header currentPage="posts" />
 
       {/* post */}
       <h1 className="sub1title mt-0">

@@ -34,7 +34,7 @@ export default function Blog1() {
       </CommonHead>
 
       {/* header */}
-      <Header />
+      <Header currentPage="posts" />
 
       {/* post */}
       <h1 className="sub1title mt-0">AP World History: A History</h1>

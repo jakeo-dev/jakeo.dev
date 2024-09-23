@@ -1,13 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-type ButtonProps = {
+export default function Button(props: {
   children: React.ReactNode;
   className: string;
   href: string;
-};
-
-export default function Button(props: ButtonProps) {
+}) {
   return (
     <a
       href={props.href}

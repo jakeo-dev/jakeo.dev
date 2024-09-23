@@ -20,7 +20,7 @@ export default function Projects() {
       </CommonHead>
 
       {/* header */}
-      <Header />
+      <Header currentPage="projects" />
 
       {/* current projects */}
       <h2 className="sub1title mt-0">My projects</h2>
@@ -28,21 +28,24 @@ export default function Projects() {
       <div className="block md:flex">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Project
-            name="Linked"
-            desc="A fun and simple word puzzle game to test your brain."
-            releaseDate="June 2024"
-            updateDate="July 2024"
-            img={require("../../../public/images/linked-ss-1.png")}
+            name="Plannter"
+            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
+            releaseDate="January 2023"
+            updateDate="September 2024"
+            img={require("../../../public/images/plannter-ss-1.png")}
             showImg={true}
-            logo="https://linked.jakeo.dev/icon-transparent.png"
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
           >
-            <Button className="" href="https://linked.jakeo.dev">
-              Website
+            <Button className="" href="https://plannter.jakeo.dev">
+              Visit
             </Button>
-            <Button className="" href="https://linked.jakeo.dev/mobile">
-              App
-            </Button>
+            <SecButton
+              className=""
+              href="https://github.com/jakeo-dev/plannter"
+            >
+              GitHub
+            </SecButton>
           </Project>
 
           <Project
@@ -64,34 +67,31 @@ export default function Projects() {
           </Project>
 
           <Project
-            name="Plannter"
-            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
-            releaseDate="January 2023"
+            name="Linked"
+            desc="A fun and simple word puzzle game to test your brain."
+            releaseDate="June 2024"
             updateDate="July 2024"
-            img={require("../../../public/images/plannter-ss-1.png")}
+            img={require("../../../public/images/linked-ss-1.png")}
             showImg={true}
-            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+            logo="https://linked.jakeo.dev/icon-transparent.png"
             showLogo={true}
           >
-            <Button className="" href="https://plannter.jakeo.dev">
-              Visit
+            <Button className="" href="https://linked.jakeo.dev">
+              Website
             </Button>
-            <SecButton
-              className=""
-              href="https://github.com/jakeo-dev/plannter"
-            >
-              GitHub
-            </SecButton>
+            <Button className="" href="https://linked.jakeo.dev/mobile">
+              App
+            </Button>
           </Project>
 
           <Project
             name="JakeO.dev"
             desc="You're already here — check out all of my projects and blog posts."
             releaseDate="September 2020"
-            /* domain bought (made w/ google sites): sep 2020
-            original files created (html/css/js): may 2021
-            first uploaded to github: may 2022 */
-            updateDate="August 2024"
+            /* domain bought (made w/ google sites): sep 4 2020
+            original files created (html/css/js): may 28 2021
+            first uploaded to github: may 21 2022 */
+            updateDate="September 2024"
             img={require("../../../public/images/main-ss-1.png")}
             showImg={true}
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
