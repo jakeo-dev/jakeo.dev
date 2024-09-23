@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -6,9 +5,6 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
   return (
     <>
-      {/* header */}
-      <Header />
-
       <div className="block text-left bg-gray-900 w-fit p-8">
         <h1 className="text-9xl font-extrabold text-gray-100 inline mt-16">
           404
