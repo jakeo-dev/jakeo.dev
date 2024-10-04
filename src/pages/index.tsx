@@ -29,8 +29,13 @@ export default function Home() {
 
       {/* discord modal */}
       <Modal className="" open={open} onClose={() => setOpen(false)}>
-        <div className="items-center text-center">
-          <h1 className="text-indigo-600">@jakeybakers</h1>
+        <div className="flex items-center text-[#5865f2] text-3xl">
+          <FontAwesomeIcon
+            icon={faDiscord}
+            aria-label="Discord"
+            className="mr-2"
+          />
+          <h1>@jakeybakers</h1>
         </div>
       </Modal>
 

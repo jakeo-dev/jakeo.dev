@@ -1,17 +1,14 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      'LexendDeca': ['Lexend Deca', 'sans-serif'],
-      'RammettoOne': ['Rammetto One', 'sans-serif']
+      LexendDeca: ["Lexend Deca", "sans-serif"],
     },
     extend: {},
   },
   plugins: [],
-}
-export default config
+};
+
+export default config;

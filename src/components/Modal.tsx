@@ -16,7 +16,7 @@ export default function Modal(props: {
       }`}
     >
       <div
-        className={`relative text-3xl bg-gray-200 rounded-lg w-fit shadow-sm px-10 py-7`}
+        className="relative bg-gray-200 rounded-lg w-fit shadow-sm px-10 py-7"
       >
         <button
           className="absolute top-4 right-5 text-base hover:text-gray-500 transition"

@@ -7,7 +7,7 @@ export default function Header(props: { currentPage: string }) {
   const [svgVis, setSvgVis] = useState("hidden");
 
   return (
-    <header className="md:flex items-center align-middle text-center my-14 md:my-20 -translate-x-2 md:-translate-x-4">
+    <header className="md:flex items-center align-middle text-center my-16 -translate-x-2 md:-translate-x-4">
       <div className="flex items-center">
         <div>
           <button
@@ -25,7 +25,7 @@ export default function Header(props: { currentPage: string }) {
             <img
               src="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
               alt="Solid gradient blue gray bunny"
-              className="w-16 md:w-20 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+              className="w-14 md:w-16 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
             />
           </button>
           <button
@@ -43,7 +43,7 @@ export default function Header(props: { currentPage: string }) {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 300.000000 300.000000"
               preserveAspectRatio="xMidYMid meet"
-              className="w-16 md:w-20 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+              className="w-14 md:w-16 object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
             >
               <g
                 transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
@@ -58,7 +58,7 @@ export default function Header(props: { currentPage: string }) {
         <div className="text-left ml-3">
           <Link
             href="/"
-            className="text-3xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
+            className="text-2xl md:text-3xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
           >
             JakeO.dev
           </Link>
