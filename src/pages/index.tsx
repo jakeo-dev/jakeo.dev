@@ -1,18 +1,11 @@
-import { useState } from "react";
 import CommonHead from "../components/CommonHead";
 import Header from "../components/Header";
-import Modal from "../components/Modal";
 import Project from "../components/Project";
 import Post from "@/components/Post";
 import Button from "../components/Button";
 import SecButton from "../components/SecButton";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
       {/* head */}
@@ -26,18 +19,6 @@ export default function Home() {
           content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         />
       </CommonHead>
-
-      {/* discord modal */}
-      <Modal className="" open={open} onClose={() => setOpen(false)}>
-        <div className="flex items-center text-[#5865f2] text-3xl">
-          <FontAwesomeIcon
-            icon={faDiscord}
-            aria-label="Discord"
-            className="mr-2"
-          />
-          <h1>@jakeybakers</h1>
-        </div>
-      </Modal>
 
       {/* header */}
       <Header currentPage="home" />
@@ -59,37 +40,6 @@ export default function Home() {
       <p className="text">
         Sometimes I also write blog posts about things that I find interesting.
       </p>
-
-      {/* socials */}
-      <div className="flex gap-4 mt-4">
-        <a
-          href="mailto:hi@jakeo.dev"
-          target="_blank"
-          className="hover:text-blue-500 transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
-        >
-          <FontAwesomeIcon icon={faEnvelope} aria-label="Email" />
-        </a>
-        <a
-          href="https://github.com/jakeo-dev"
-          target="_blank"
-          className="hover:text-[#333333] transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
-        >
-          <FontAwesomeIcon icon={faGithub} aria-label="GitHub" />
-        </a>
-        <button
-          onClick={() => setOpen(true)}
-          className="hover:text-[#5865f2] transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
-        >
-          <FontAwesomeIcon icon={faDiscord} aria-label="Discord" />
-        </button>
-        {/* <a
-          href="https://www.youtube.com/@jakeybakers"
-          target="_blank"
-          className="hover:text-[#ff3838] transition-all flex text-2xl text-gray-500 hover:scale-110 active:scale-100"
-        >
-          <FontAwesomeIcon icon={faYoutube} aria-label="YouTube" />
-        </a> */}
-      </div>
 
       {/* projects */}
       <h2 className="sub1title">Some of my projects</h2>
