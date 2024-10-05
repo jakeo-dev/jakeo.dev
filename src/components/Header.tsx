@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -6,10 +6,91 @@ import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Modal from "./Modal";
 
 export default function Header(props: { currentPage: string }) {
-  const [color, setColor] = useState("#000000");
   const [imgVis, setImgVis] = useState("");
+  const [imgSrc, setImgSrc] = useState("solid-gradient-blue-gray-bunny");
+
+  const [color, setColor] = useState("#000000");
   const [svgVis, setSvgVis] = useState("hidden");
+
   const [open, setOpen] = useState(false);
+
+  const currentDate = new Date();
+  const currentMonth: number = currentDate.getMonth();
+  const currentDay: number = currentDate.getDate();
+
+  const stPatricksDayBunnies = ["leprechaun-bunny", "leprechaun-bunny"];
+
+  const earthDayBunnies = ["earth-bunny", "solid-earth-bunny"];
+
+  const americaBunnies = ["american-bunny", "solid-us-flag-bunny"];
+
+  const halloweenBunnies = [
+    "pumpkin-head-bunny",
+    "solid-gradient-orange-black-bunny",
+    "skeleton-bunny",
+    "witch-bunny",
+    "bat-bunny",
+  ];
+
+  const thanksgivingBunnies = [
+    "pilgrim-bunny",
+    "cornucopia-of-bunnies",
+    "solid-autumn-leaves-bunny",
+  ];
+
+  const christmasBunnies = [
+    "santa-bunny",
+    "solid-stripes-christmas-bunny",
+    "snowman-bunny",
+  ];
+
+  const newYearBunnies = ["new-years-bunny", "new-years-bunny"];
+
+  useEffect(() => {
+    if (currentMonth == 2 && (currentDay >= 12 || currentDay <= 18)) {
+      // st patricks day (march 12 to 18)
+      setImgSrc(
+        stPatricksDayBunnies[
+          Math.floor(Math.random() * stPatricksDayBunnies.length)
+        ]
+      );
+    } else if (currentMonth == 3 && (currentDay >= 17 || currentDay <= 23)) {
+      // earth day (april 17 to 23)
+      setImgSrc(
+        earthDayBunnies[Math.floor(Math.random() * earthDayBunnies.length)]
+      );
+    } else if (currentMonth == 5 && currentDay <= 5) {
+      // 4th of july (july 1 to 5)
+      setImgSrc(
+        americaBunnies[Math.floor(Math.random() * americaBunnies.length)]
+      );
+    } else if (currentMonth == 9 && currentDay >= 7) {
+      // halloween (october 7 to 31)
+      setImgSrc(
+        halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)]
+      );
+    } else if (currentMonth == 10 && (currentDay >= 7 || currentDay <= 28)) {
+      // thanksgiving (november 7 to 28)
+      setImgSrc(
+        thanksgivingBunnies[
+          Math.floor(Math.random() * thanksgivingBunnies.length)
+        ]
+      );
+    } else if (
+      (currentMonth == 11 && currentDay >= 30) ||
+      (currentMonth == 0 && currentDay <= 2)
+    ) {
+      // new year (december 30 to january 2)
+      setImgSrc(
+        newYearBunnies[Math.floor(Math.random() * newYearBunnies.length)]
+      );
+    } else if (currentMonth == 11) {
+      // christmas (december 1 to 29)
+      setImgSrc(
+        christmasBunnies[Math.floor(Math.random() * christmasBunnies.length)]
+      );
+    }
+  }, []);
 
   return (
     <>
@@ -32,18 +113,113 @@ export default function Header(props: { currentPage: string }) {
             <button
               className={imgVis}
               onClick={() => {
-                setColor(
-                  `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
-                    Math.random() * 256
-                  )}, ${Math.floor(Math.random() * 256)})`
-                );
-                setImgVis("hidden");
-                setSvgVis("");
+                if (
+                  currentMonth == 2 &&
+                  (currentDay >= 12 || currentDay <= 18)
+                ) {
+                  // st patricks day (march 12 to 18)
+                  let oldImage = imgSrc;
+                  stPatricksDayBunnies.splice(
+                    stPatricksDayBunnies.indexOf(oldImage),
+                    1
+                  );
+                  setImgSrc(
+                    stPatricksDayBunnies[
+                      Math.floor(Math.random() * stPatricksDayBunnies.length)
+                    ]
+                  );
+                  stPatricksDayBunnies.push(oldImage);
+                } else if (
+                  currentMonth == 3 &&
+                  (currentDay >= 17 || currentDay <= 23)
+                ) {
+                  // earth day (april 17 to 23)
+                  let oldImage = imgSrc;
+                  earthDayBunnies.splice(earthDayBunnies.indexOf(oldImage), 1);
+                  setImgSrc(
+                    earthDayBunnies[
+                      Math.floor(Math.random() * earthDayBunnies.length)
+                    ]
+                  );
+                  earthDayBunnies.push(oldImage);
+                } else if (currentMonth == 5 && currentDay <= 5) {
+                  // 4th of july (july 1 to 5)
+                  let oldImage = imgSrc;
+                  americaBunnies.splice(americaBunnies.indexOf(oldImage), 1);
+                  setImgSrc(
+                    americaBunnies[
+                      Math.floor(Math.random() * americaBunnies.length)
+                    ]
+                  );
+                  americaBunnies.push(oldImage);
+                } else if (currentMonth == 9 && currentDay >= 7) {
+                  // halloween (october 7 to 31)
+                  let oldImage = imgSrc;
+                  halloweenBunnies.splice(
+                    halloweenBunnies.indexOf(oldImage),
+                    1
+                  );
+                  setImgSrc(
+                    halloweenBunnies[
+                      Math.floor(Math.random() * halloweenBunnies.length)
+                    ]
+                  );
+                  halloweenBunnies.push(oldImage);
+                } else if (
+                  currentMonth == 10 &&
+                  (currentDay >= 7 || currentDay <= 28)
+                ) {
+                  // thanksgiving (november 7 to 28)
+                  let oldImage = imgSrc;
+                  thanksgivingBunnies.splice(
+                    thanksgivingBunnies.indexOf(oldImage),
+                    1
+                  );
+                  setImgSrc(
+                    thanksgivingBunnies[
+                      Math.floor(Math.random() * thanksgivingBunnies.length)
+                    ]
+                  );
+                  thanksgivingBunnies.push(oldImage);
+                } else if (
+                  (currentMonth == 11 && currentDay >= 30) ||
+                  (currentMonth == 0 && currentDay <= 2)
+                ) {
+                  // new year (december 30 to january 2)
+                  let oldImage = imgSrc;
+                  newYearBunnies.splice(newYearBunnies.indexOf(oldImage), 1);
+                  setImgSrc(
+                    newYearBunnies[
+                      Math.floor(Math.random() * newYearBunnies.length)
+                    ]
+                  );
+                  newYearBunnies.push(oldImage);
+                } else if (currentMonth == 11) {
+                  // christmas (december 1 to 29)
+                  let oldImage = imgSrc;
+                  christmasBunnies.splice(
+                    christmasBunnies.indexOf(oldImage),
+                    1
+                  );
+                  setImgSrc(
+                    christmasBunnies[
+                      Math.floor(Math.random() * christmasBunnies.length)
+                    ]
+                  );
+                  christmasBunnies.push(oldImage);
+                } else {
+                  setColor(
+                    `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
+                      Math.random() * 256
+                    )}, ${Math.floor(Math.random() * 256)})`
+                  );
+                  setImgVis("hidden");
+                  setSvgVis("");
+                }
               }}
             >
               <img
-                src="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
-                alt="Solid gradient blue gray bunny"
+                src={`https://bunnies.jakeo.dev/images/${imgSrc}.png`}
                 className="w-16 md:w-[4.5rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
               />
             </button>
