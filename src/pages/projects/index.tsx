@@ -53,7 +53,7 @@ export default function Projects() {
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate="February 2023"
             updateDate="June 2024"
-            img={require("../../../public/images/cifra-ss-2.png")}
+            img={require("../../../public/images/cifra-ss-1.png")}
             showImg={true}
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo={true}
