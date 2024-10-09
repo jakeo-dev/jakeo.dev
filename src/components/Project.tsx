@@ -1,25 +1,31 @@
-import Image from "next/image";
-import { StaticImageData } from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Project(props: {
-  children: React.ReactNode;
   name: string;
   desc: string;
   releaseDate: string;
   updateDate: string;
-  img: StaticImageData;
-  showImg: boolean;
   logo: string;
   showLogo: boolean;
+  type: number;
+  colors: string;
+  link: string;
 }) {
-  return (
-    <div className="relative flex flex-col rounded-xl border-2 border-gray-200 hover:bg-gray-200 transition">
-      {/* <img
+  if (props.type == 0) {
+    // active project
+    return (
+      <Link
+        href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
+        className={`${
+          props.colors == "" ? " hover:border-sky-600" : props.colors
+        } bg-gray-100 border-4 border-gray-200 relative flex flex-col rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 transition duration-200`}
+      >
+        {/* <img
         src={props.logo}
         className={`${
           props.showLogo ? "" : "hidden"
@@ -27,53 +33,91 @@ export default function Project(props: {
         alt={`${props.name} logo`}
       /> */}
 
-      <Image
-        src={props.img}
-        alt={`Screenshot of ${props.name}`}
-        className={`${
-          props.showImg ? "" : "hidden"
-        } w-full object-cover h-44 md:h-52 border-b-2 border-gray-200 rounded-t-xl`}
-        placeholder="blur"
-      />
-
-      <div className="flex-grow w-full p-6">
-        <h1 className="text-xl text-left font-medium flex items-center">
-          <img
-            src={props.logo}
-            className={`${props.showLogo ? "" : "hidden"} inline w-6 mr-1.5`}
-            alt={`${props.name} logo`}
-          />
-          {props.name}
-        </h1>
-        <h2 className="text mt-2 mb-0">{props.desc}</h2>
-        <div className="flex gap-3 mt-2.5">
-          <h2
-            className={`${
-              props.releaseDate != "" ? "inline" : "hidden"
-            } text-sm text-gray-600`}
-          >
-            <FontAwesomeIcon
-              icon={faCalendarDay}
-              className="mr-1.5"
-              aria-label="Initial release"
+        <div className="flex-grow w-full p-6">
+          <h1 className="text-xl text-left font-medium flex items-center">
+            <img
+              src={props.logo}
+              className={`${props.showLogo ? "" : "hidden"} inline w-6 mr-1.5`}
+              alt={`${props.name} logo`}
             />
-            {props.releaseDate}
-          </h2>
-          <h2
-            className={`${
-              props.updateDate != "" ? "inline" : "hidden"
-            } text-sm text-gray-600`}
-          >
-            <FontAwesomeIcon
-              icon={faRotateRight}
-              className="mr-1.5"
-              aria-label="Last updated"
-            />
-            {props.updateDate}
-          </h2>
+            {props.name}
+          </h1>
+          <h2 className="text mt-2 mb-0">{props.desc}</h2>
+          <div className="flex gap-3 mt-2.5">
+            <h2
+              className={`${
+                props.releaseDate != "" ? "inline" : "hidden"
+              } text-sm text-gray-700`}
+            >
+              <FontAwesomeIcon
+                icon={faCalendarDay}
+                className="mr-1.5"
+                aria-label="Initial release"
+              />
+              {props.releaseDate}
+            </h2>
+            <h2
+              className={`${
+                props.updateDate != "" ? "inline" : "hidden"
+              } text-sm text-gray-700`}
+            >
+              <FontAwesomeIcon
+                icon={faRotateRight}
+                className="mr-1.5"
+                aria-label="Last updated"
+              />
+              {props.updateDate}
+            </h2>
+          </div>
         </div>
-      </div>
-      <div className="flex gap-3 px-6 pb-6">{props.children}</div>
-    </div>
-  );
+      </Link>
+    );
+  } else if (props.type == 1) {
+    // past project
+    return (
+      <a
+        href={props.link}
+        target="_blank"
+        className="bg-gray-100 border-4 border-gray-200 hover:border-gray-400 relative flex flex-col rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 transition duration-200"
+      >
+        <div className="flex-grow w-full p-6">
+          <h1 className="text-xl text-left font-medium flex items-center">
+            <img
+              src={props.logo}
+              className={`${props.showLogo ? "" : "hidden"} inline w-6 mr-1.5`}
+              alt={`${props.name} logo`}
+            />
+            {props.name}
+          </h1>
+          <h2 className="text mt-2 mb-0">{props.desc}</h2>
+          <div className="flex gap-3 mt-2.5">
+            <h2
+              className={`${
+                props.releaseDate != "" ? "inline" : "hidden"
+              } text-sm text-gray-600`}
+            >
+              <FontAwesomeIcon
+                icon={faCalendarDay}
+                className="mr-1.5"
+                aria-label="Initial release"
+              />
+              {props.releaseDate}
+            </h2>
+            <h2
+              className={`${
+                props.updateDate != "" ? "inline" : "hidden"
+              } text-sm text-gray-600`}
+            >
+              <FontAwesomeIcon
+                icon={faRotateRight}
+                className="mr-1.5"
+                aria-label="Last updated"
+              />
+              {props.updateDate}
+            </h2>
+          </div>
+        </div>
+      </a>
+    );
+  }
 }

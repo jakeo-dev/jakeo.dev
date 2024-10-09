@@ -2,8 +2,6 @@ import CommonHead from "../components/CommonHead";
 import Header from "../components/Header";
 import Project from "../components/Project";
 import Post from "@/components/Post";
-import Button from "../components/Button";
-import SecButton from "../components/SecButton";
 
 export default function Home() {
   return (
@@ -51,39 +49,24 @@ export default function Home() {
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
             updateDate="September 2024"
-            img={require("../../public/images/plannter-ss-1.png")}
-            showImg={false}
-            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+            logo="https://plannter.jakeo.dev/plannter-favicon.png"
             showLogo={true}
-          >
-            <Button className="" href="https://plannter.jakeo.dev">
-              Visit
-            </Button>
-            <SecButton
-              className=""
-              href="https://github.com/jakeo-dev/plannter"
-            >
-              GitHub
-            </SecButton>
-          </Project>
+            type={0}
+            colors="hover:border-emerald-600"
+            link="https://plannter.jakeo.dev"
+          />
 
           <Project
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate=""
             updateDate="June 2024"
-            img={require("../../public/images/cifra-ss-2.png")}
-            showImg={false}
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo={true}
-          >
-            <Button className="" href="https://cifra.jakeo.dev">
-              Visit
-            </Button>
-            <SecButton className="" href="https://github.com/jakeo-dev/cifra">
-              GitHub
-            </SecButton>
-          </Project>
+            type={0}
+            colors=""
+            link="https://cifra.jakeo.dev"
+          />
         </div>
 
         {/* <Link
