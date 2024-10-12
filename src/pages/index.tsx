@@ -26,7 +26,7 @@ export default function Home() {
 
       <p className="text">
         I make things using my knowledge in programming, and most of my projects
-        are shown on this website. I've built this website with Next.js.
+        are shown here. I've built this website with Next.js.
       </p>
       <p className="text">
         The font I use often and am using right now is{" "}
