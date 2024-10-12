@@ -6,6 +6,7 @@ import Carousel from "@/components/ImageCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
+  faHammer,
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
@@ -53,6 +54,10 @@ export default function Projects() {
         <h2>
           <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
           Updated June 2024
+        </h2>
+        <h2>
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
+          Made with HTML/CSS/JavaScript
         </h2>
       </div>
 

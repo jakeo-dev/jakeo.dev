@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
+  faHammer,
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
@@ -51,6 +52,10 @@ export default function Projects() {
         <h2>
           <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
           Updated October 2024
+        </h2>
+        <h2>
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
+          Made with Next.js
         </h2>
       </div>
 

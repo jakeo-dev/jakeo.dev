@@ -30,7 +30,7 @@ export default function Projects() {
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate="January 2023"
             updateDate="September 2024"
-            logo="https://plannter.jakeo.dev/plannter-favicon.png"
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
             colors="hover:border-emerald-600"

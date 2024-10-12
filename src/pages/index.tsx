@@ -10,7 +10,7 @@ export default function Home() {
       <CommonHead>
         <title>JakeO.dev</title>
         <meta property="og:title" content="JakeO.dev" />
-        <meta property="og:description" content="bunny on the internet" />
+        <meta property="og:description" content="i'm a bunny on the internet" />
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
@@ -25,8 +25,8 @@ export default function Home() {
       <h2 className="sub1title mt-0">Welcome to my website!</h2>
 
       <p className="text">
-        I mainly design websites or make other things using my knowledge in
-        programming. I've built this website with Next.js.
+        I make things using my knowledge in programming, and most of my projects
+        are shown on this website. I've built this website with Next.js.
       </p>
       <p className="text">
         The font I use often and am using right now is{" "}
@@ -49,7 +49,7 @@ export default function Home() {
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
             updateDate="September 2024"
-            logo="https://plannter.jakeo.dev/plannter-favicon.png"
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
             colors="hover:border-emerald-600"
