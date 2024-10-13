@@ -2,7 +2,7 @@ import CommonHead from "../../components/CommonHead";
 import Header from "../../components/Header";
 import Button from "../../components/Button";
 import SecButton from "../../components/SecButton";
-import Carousel from "@/components/ImageCarousel";
+import ImageCarousel from "@/components/ImageCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
@@ -61,7 +61,7 @@ export default function Projects() {
       </div>
 
       <div className="container postImgDiv">
-        <Carousel
+        <ImageCarousel
           images={[
             "/images/plannter-ss-1.png",
             "/images/plannter-ss-2.png",
@@ -113,11 +113,10 @@ export default function Projects() {
       </p>
       <p className="text">
         The name "Plannter" is a portmanteau of the words "planner" and "plant."
-        "Planner" because the website helps you plan your future, and "plant"
-        because...I guess it represents growth. There isn't really a concrete
-        reason. Another name I considered was "Alumnac" (a portmanteau of the
-        words "alumnus" and "almanac"), but I felt that "Plannter" fit the
-        website's purpose better.
+        "Planner" because the website helps you plan your future, and "plant" to
+        represent growth. Another name I considered was "Alumnac" (a portmanteau
+        of the words "alumnus" and "almanac"), but I felt that "Plannter" fit
+        the website's purpose better.
       </p>
       <p className="text">
         The original Plannter icon was just the Font Awesome plant icon colored

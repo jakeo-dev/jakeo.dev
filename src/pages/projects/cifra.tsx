@@ -2,7 +2,7 @@ import CommonHead from "../../components/CommonHead";
 import Header from "../../components/Header";
 import Button from "../../components/Button";
 import SecButton from "../../components/SecButton";
-import Carousel from "@/components/ImageCarousel";
+import ImageCarousel from "@/components/ImageCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
@@ -62,7 +62,7 @@ export default function Projects() {
       </div>
 
       <div className="container postImgDiv">
-        <Carousel
+        <ImageCarousel
           images={["/images/cifra-ss-1.png", "/images/cifra-ss-2.png"]}
         />
       </div>

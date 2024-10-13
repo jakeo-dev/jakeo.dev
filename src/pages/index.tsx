@@ -25,18 +25,9 @@ export default function Home() {
       <h2 className="sub1title mt-0">Welcome to my website!</h2>
 
       <p className="text">
-        I make things using my knowledge in programming, and most of my projects
-        are shown here. I've built this website with Next.js.
-      </p>
-      <p className="text">
-        The font I use often and am using right now is{" "}
-        <a href="https://lexend.com" target="_blank" className="link">
-          Lexend
-        </a>
-        . It's known for being easy to read, and it also just looks good.
-      </p>
-      <p className="text">
-        Sometimes I also write blog posts about things that I find interesting.
+        I make things using my knowledge in programming. Most of my projects are
+        featured on this website, which I've built using Next.js. Sometimes I
+        also write blog posts about things that I find interesting.
       </p>
 
       {/* projects */}
@@ -48,7 +39,8 @@ export default function Home() {
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
-            updateDate="September 2024"
+            updateDate=""
+            madeWith=""
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
@@ -60,7 +52,8 @@ export default function Home() {
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate=""
-            updateDate="June 2024"
+            updateDate=""
+            madeWith=""
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo={true}
             type={0}

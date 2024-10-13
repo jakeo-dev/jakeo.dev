@@ -30,6 +30,7 @@ export default function Projects() {
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate="January 2023"
             updateDate="September 2024"
+            madeWith=""
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
@@ -42,6 +43,7 @@ export default function Projects() {
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate="February 2023"
             updateDate="June 2024"
+            madeWith=""
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo={true}
             type={0}
@@ -54,6 +56,7 @@ export default function Projects() {
             desc="A fun and simple word puzzle game to test your brain."
             releaseDate="June 2024"
             updateDate="July 2024"
+            madeWith=""
             logo="https://linked.jakeo.dev/icon-transparent.png"
             showLogo={true}
             type={0}
@@ -70,6 +73,7 @@ export default function Projects() {
             first uploaded to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
             updateDate="October 2024"
+            madeWith=""
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo={true}
             type={0}
@@ -89,6 +93,7 @@ export default function Projects() {
             desc="Organize gifts that you yearn for into a simple list."
             releaseDate="November 2022"
             updateDate="December 2023"
+            madeWith=""
             logo="https://yearn.jakeo.dev/yearn-logo.png"
             showLogo={false}
             type={1}
@@ -101,6 +106,7 @@ export default function Projects() {
             desc="Filter unwanted strings from text in a number of different ways."
             releaseDate="August 2022"
             updateDate="October 2023"
+            madeWith=""
             logo=""
             showLogo={false}
             type={1}
@@ -113,6 +119,7 @@ export default function Projects() {
             desc="A speed typing website to help you study."
             releaseDate="May 2022"
             updateDate="December 2022"
+            madeWith=""
             logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
             showLogo={true}
             type={1}
@@ -125,6 +132,7 @@ export default function Projects() {
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
             releaseDate="December 2021"
             updateDate="December 2023"
+            madeWith=""
             logo="https://decorate-a-tree.jakeo.dev/candy-cane-red-left.png"
             showLogo={true}
             type={1}
@@ -137,6 +145,7 @@ export default function Projects() {
             desc="Generate unique emoticons."
             releaseDate="November 2021"
             updateDate="March 2023"
+            madeWith=""
             logo=""
             showLogo={false}
             type={1}
@@ -149,6 +158,7 @@ export default function Projects() {
             desc="Browse and download some colorful bunnies individually, in collections, or in banners."
             releaseDate="March 2021"
             updateDate="September 2023"
+            madeWith=""
             logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
             showLogo={true}
             type={1}

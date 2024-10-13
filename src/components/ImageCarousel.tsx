@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function Header(props: { images: string[] }) {
+export default function ImageCarousel(props: { images: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   //const [fade, setFade] = useState(false);
 
@@ -13,10 +13,10 @@ export default function Header(props: { images: string[] }) {
   const prevSlide = () => {
     //setFade(true);
     //setTimeout(() => {
-      setCurrentIndex((prev) =>
-        prev === 0 ? props.images.length - 1 : prev - 1
-      );
-      //setFade(false);
+    setCurrentIndex((prev) =>
+      prev === 0 ? props.images.length - 1 : prev - 1
+    );
+    //setFade(false);
     //}, 500);
   };
 
@@ -24,10 +24,10 @@ export default function Header(props: { images: string[] }) {
   const nextSlide = () => {
     //setFade(true);
     //setTimeout(() => {
-      setCurrentIndex((prev) =>
-        prev === props.images.length - 1 ? 0 : prev + 1
-      );
-      //setFade(false);
+    setCurrentIndex((prev) =>
+      prev === props.images.length - 1 ? 0 : prev + 1
+    );
+    //setFade(false);
     //}, 500);
   };
 
@@ -46,9 +46,8 @@ export default function Header(props: { images: string[] }) {
         <Image
           src={props.images[currentIndex]}
           alt={`Image ${currentIndex}`}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-md object-top transition-opacity" /* ${fade ? "opacity-0" : "opacity-100"} */
+          className="rounded-md object-top object-cover transition-opacity" /* ${fade ? "opacity-0" : "opacity-100"} */
+          fill
         />
       </div>
 

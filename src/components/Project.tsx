@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
+  faHammer,
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
@@ -10,6 +11,7 @@ export default function Project(props: {
   desc: string;
   releaseDate: string;
   updateDate: string;
+  madeWith: string;
   logo: string;
   showLogo: boolean;
   type: number;
@@ -33,7 +35,15 @@ export default function Project(props: {
         alt={`${props.name} logo`}
       /> */}
 
-        <div className="flex-grow w-full p-6">
+        <div
+          className={`flex-grow w-full relative p-6 ${
+            props.releaseDate == "" &&
+            props.updateDate == "" &&
+            props.madeWith == ""
+              ? ""
+              : "pb-14"
+          }`}
+        >
           <h1 className="text-xl text-left font-medium flex items-center">
             <img
               src={props.logo}
@@ -43,7 +53,7 @@ export default function Project(props: {
             {props.name}
           </h1>
           <h2 className="text mt-2 mb-0">{props.desc}</h2>
-          <div className="flex gap-3 mt-2.5">
+          <div className="flex gap-3 absolute bottom-[1.4rem] mt-2.5">
             <h2
               className={`${
                 props.releaseDate != "" ? "inline" : "hidden"
@@ -67,6 +77,18 @@ export default function Project(props: {
                 aria-label="Last updated"
               />
               {props.updateDate}
+            </h2>
+            <h2
+              className={`${
+                props.madeWith != "" ? "inline" : "hidden"
+              } text-sm text-gray-700`}
+            >
+              <FontAwesomeIcon
+                icon={faHammer}
+                className="mr-1.5"
+                aria-label="Made with"
+              />
+              {props.madeWith}
             </h2>
           </div>
         </div>
@@ -80,7 +102,15 @@ export default function Project(props: {
         target="_blank"
         className="bg-gray-100 border-4 border-gray-200 hover:border-gray-400 relative flex flex-col rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 transition duration-200"
       >
-        <div className="flex-grow w-full p-6">
+        <div
+          className={`flex-grow w-full relative p-6 ${
+            props.releaseDate == "" &&
+            props.updateDate == "" &&
+            props.madeWith == ""
+              ? ""
+              : "pb-14"
+          }`}
+        >
           <h1 className="text-xl text-left font-medium flex items-center">
             <img
               src={props.logo}
@@ -90,7 +120,7 @@ export default function Project(props: {
             {props.name}
           </h1>
           <h2 className="text mt-2 mb-0">{props.desc}</h2>
-          <div className="flex gap-3 mt-2.5">
+          <div className="flex gap-3 absolute bottom-[1.4rem] mt-2.5">
             <h2
               className={`${
                 props.releaseDate != "" ? "inline" : "hidden"
@@ -114,6 +144,18 @@ export default function Project(props: {
                 aria-label="Last updated"
               />
               {props.updateDate}
+            </h2>
+            <h2
+              className={`${
+                props.madeWith != "" ? "inline" : "hidden"
+              } text-sm text-gray-700`}
+            >
+              <FontAwesomeIcon
+                icon={faHammer}
+                className="mr-1.5"
+                aria-label="Made with"
+              />
+              {props.madeWith}
             </h2>
           </div>
         </div>
