@@ -113,10 +113,10 @@ export default function Projects() {
       </p>
       <p className="text">
         The name "Plannter" is a portmanteau of the words "planner" and "plant."
-        "Planner" because the website helps you plan your future, and "plant" to
-        represent growth. Another name I considered was "Alumnac" (a portmanteau
-        of the words "alumnus" and "almanac"), but I felt that "Plannter" fit
-        the website's purpose better.
+        "Planner" because the website helps you plan your future, and "plant"
+        because plants represent growth. Another name I considered was "Alumnac"
+        (a portmanteau of the words "alumnus" and "almanac"), but I felt that
+        "Plannter" fit the website's purpose better.
       </p>
       <p className="text">
         The original Plannter icon was just the Font Awesome plant icon colored
