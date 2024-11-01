@@ -47,14 +47,14 @@ export default function Header(props: { currentPage: string }) {
   const newYearBunnies = ["new-years-bunny", "new-years-bunny"];
 
   useEffect(() => {
-    if (currentMonth == 2 && (currentDay >= 12 || currentDay <= 18)) {
+    if (currentMonth == 2 && currentDay >= 12 && currentDay <= 18) {
       // st patricks day (march 12 to 18)
       setImgSrc(
         stPatricksDayBunnies[
           Math.floor(Math.random() * stPatricksDayBunnies.length)
         ]
       );
-    } else if (currentMonth == 3 && (currentDay >= 17 || currentDay <= 23)) {
+    } else if (currentMonth == 3 && currentDay >= 17 && currentDay <= 23) {
       // earth day (april 17 to 23)
       setImgSrc(
         earthDayBunnies[Math.floor(Math.random() * earthDayBunnies.length)]
@@ -69,7 +69,7 @@ export default function Header(props: { currentPage: string }) {
       setImgSrc(
         halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)]
       );
-    } else if (currentMonth == 10 && (currentDay >= 7 || currentDay <= 28)) {
+    } else if (currentMonth == 10 && currentDay >= 7 && currentDay <= 28) {
       // thanksgiving (november 7 to 28)
       setImgSrc(
         thanksgivingBunnies[
@@ -113,10 +113,7 @@ export default function Header(props: { currentPage: string }) {
             <button
               className={imgVis}
               onClick={() => {
-                if (
-                  currentMonth == 2 &&
-                  (currentDay >= 12 || currentDay <= 18)
-                ) {
+                if (currentMonth == 2 && currentDay >= 12 && currentDay <= 18) {
                   // st patricks day (march 12 to 18)
                   let oldImage = imgSrc;
                   stPatricksDayBunnies.splice(
@@ -131,7 +128,8 @@ export default function Header(props: { currentPage: string }) {
                   stPatricksDayBunnies.push(oldImage);
                 } else if (
                   currentMonth == 3 &&
-                  (currentDay >= 17 || currentDay <= 23)
+                  currentDay >= 17 &&
+                  currentDay <= 23
                 ) {
                   // earth day (april 17 to 23)
                   let oldImage = imgSrc;
@@ -167,7 +165,8 @@ export default function Header(props: { currentPage: string }) {
                   halloweenBunnies.push(oldImage);
                 } else if (
                   currentMonth == 10 &&
-                  (currentDay >= 7 || currentDay <= 28)
+                  currentDay >= 7 &&
+                  currentDay <= 28
                 ) {
                   // thanksgiving (november 7 to 28)
                   let oldImage = imgSrc;
