@@ -35,7 +35,7 @@ export default function Blog() {
       />
 
       <Post
-        name='P("Congratulations! We are pleased to inform you...")'
+        name='P("Congratulations! We Are Pleased to Inform You...")'
         desc='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
         releaseDate="June 17, 2024"
         updateDate="June 17, 2024"

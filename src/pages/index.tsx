@@ -10,7 +10,10 @@ export default function Home() {
       <CommonHead>
         <title>JakeO.dev</title>
         <meta property="og:title" content="JakeO.dev" />
-        <meta property="og:description" content="i'm a bunny on the internet" />
+        <meta
+          property="og:description"
+          content="I make things using my knowledge in programming"
+        />
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
@@ -86,7 +89,7 @@ export default function Home() {
       />
 
       <Post
-        name='P("Congratulations! We are pleased to inform you...")'
+        name='P("Congratulations! We Are Pleased to Inform You...")'
         desc='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
         releaseDate="June 17, 2024"
         updateDate=""

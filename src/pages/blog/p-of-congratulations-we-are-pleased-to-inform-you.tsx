@@ -16,10 +16,10 @@ export default function Blog3() {
     <>
       {/* head */}
       <CommonHead>
-        <title>P("Congratulations! We are pleased to inform you...")</title>
+        <title>P("Congratulations! We Are Pleased to Inform You...")</title>
         <meta
           property="og:title"
-          content='P("Congratulations! We are pleased to inform you...")'
+          content='P("Congratulations! We Are Pleased to Inform You...")'
         />
         <meta
           property="og:description"
@@ -42,7 +42,7 @@ export default function Blog3() {
 
       {/* post */}
       <h1 className="sub1title mt-0">
-        P("Congratulations! We are pleased to inform you...")
+        P("Congratulations! We Are Pleased to Inform You...")
       </h1>
 
       <div className="postThumbImgDiv">
