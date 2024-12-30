@@ -287,8 +287,8 @@ export default function Header(props: { currentPage: string }) {
             href="/"
             className={`${
               props.currentPage == "home"
-                ? "text-gray-100 bg-sky-600 hover:bg-sky-500 active:bg-sky-600"
-                : "hover:text-sky-600 active:text-sky-500"
+                ? "text-gray-100 bg-sky-600"
+                : "hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 py-1 transition mr-1.5`}
           >
             <span>home</span>
@@ -297,8 +297,8 @@ export default function Header(props: { currentPage: string }) {
             href="/projects"
             className={`${
               props.currentPage == "projects"
-                ? "text-gray-100 bg-sky-600 hover:bg-sky-500 active:bg-sky-600"
-                : "hover:text-sky-600 active:text-sky-500"
+                ? "text-gray-100 bg-sky-600"
+                : "hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 py-1 transition mr-1.5`}
           >
             <span>projects</span>
@@ -307,8 +307,8 @@ export default function Header(props: { currentPage: string }) {
             href="/blog"
             className={`${
               props.currentPage == "posts"
-                ? "text-gray-100 bg-sky-600 hover:bg-sky-500 active:bg-sky-600"
-                : "hover:text-sky-600 active:text-sky-500"
+                ? "text-gray-100 bg-sky-600"
+                : "hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 py-1 transition mr-1.5`}
           >
             <span>posts</span>
