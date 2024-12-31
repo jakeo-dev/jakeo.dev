@@ -5,6 +5,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       LexendDeca: ["Lexend Deca", "sans-serif"],
+      handwriting: ["JakesHandwriting", "sans-serif"],
     },
     extend: {},
   },

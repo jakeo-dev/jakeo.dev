@@ -252,7 +252,7 @@ export default function Header(props: { currentPage: string }) {
           <div className="text-left ml-2.5">
             <Link
               href="/"
-              className="text-2xl md:text-3xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
+              className="font-handwriting text-3xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
             >
               JakeO.dev
             </Link>

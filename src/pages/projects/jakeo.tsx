@@ -108,8 +108,8 @@ export default function Projects() {
         is the font I use the most throughout this website and my other
         projects. I started using it because it isn't very widely used, and
         according to its designers, it improves reading speed and accuracy. I've
-        also created a font based on my own handwriting which I use here for all
-        the titles.
+        also created a font based on my own handwriting which I use for this
+        website's header title.
       </p>
     </>
   );

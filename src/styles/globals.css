@@ -116,3 +116,10 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "JakesHandwriting";
+  src: url("/fonts/Jakes_Handwriting_V4-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
