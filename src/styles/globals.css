@@ -52,7 +52,7 @@
   }
 
   .postThumbImgDiv {
-    @apply mt-2;
+    @apply mt-3 mb-6;
   }
 
   .postThumbImg {
