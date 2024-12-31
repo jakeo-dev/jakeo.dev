@@ -57,7 +57,7 @@ export default function Projects() {
         </h2>
         <h2>
           <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
-          Made with HTML/CSS/JavaScript
+          Made with JavaScript/HTML/CSS
         </h2>
       </div>
 
@@ -68,7 +68,7 @@ export default function Projects() {
       </div>
 
       <div className="flex flex-col md:flex-row gap-3 my-6">
-        <Button className="" href="https://cifra.jakeo.dev">
+        <Button className="border-yellow-600 hover:border-yellow-700 active:border-yellow-800 bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800" href="https://cifra.jakeo.dev">
           Visit website
         </Button>
         <SecButton className="" href="https://github.com/jakeo-dev/cifra">
@@ -78,29 +78,31 @@ export default function Projects() {
 
       <p className="text">
         Cifra is a website that lets you generate vanity phone numbers from an
-        inputted phone number. Generated vanity numbers can also be starred to
-        look at later. The first version was released in February 2023, and it
-        was later updated in January 2024 to use a much more efficient method.
+        inputted phone number. Generated vanity numbers can be starred to look
+        at later. The first version was released in February 2023, and it was
+        later updated in January 2024 to use a much more efficient generation
+        method.
       </p>
       <p className="text">
         In short, to generate all possible vanity phone numbers quickly, Cifra
-        convertrs every word in the word list to a string of numbers, loops
-        through them to check if there are any matches with the inputted phone
-        number, replaces the matched number with the corresponding word, and
-        finally displays each vanity number. For a more in-depth explanation,
-        read my blog post:{" "}
+        converts every word in a word list to a string of numbers corresponding
+        to the digits on the typical telephone keypad, loops through them to
+        check if there are any matches with the inputted phone number, replaces
+        the matched digits with the corresponding word, and finally displays
+        each vanity number. For a more in-depth explanation, read my blog post:{" "}
         <Link href="/blog/dialing-letters-instead-of-digits" className="link">
           Dialing Letter Instead of Digits
         </Link>
+        .
       </p>
       <p className="text">
-        It was originally called "Word Phone Number Generator," but was changed
-        to "Cifra" in July 2023. "Cifra" is a Spanish word that translates to
-        number, figure, or cipher. It is pronounced SEE-fra.
+        The website was originally called "Word Phone Number Generator," but was
+        changed to "Cifra" in July 2023. "Cifra" (pronounced SEE-fra) is a
+        Spanish word that can be translated to "number," "figure," or "cipher."
       </p>
       <p className="text">
-        The logo shows the word "Cifra" with the word's corresponding digits
-        that would be typed into the telephone keypad in front of it.
+        The logo shows the word "Cifra" with the letters' corresponding
+        telephone keypad digits in front of it.
       </p>
     </>
   );

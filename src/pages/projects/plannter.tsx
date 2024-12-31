@@ -95,10 +95,10 @@ export default function Projects() {
 
       <p className="text">
         Plannter is a website that allows high school students to manage and
-        plan various school-related things. You can keep track of your
-        coursework, standarized tests and scores, and extracurricular
-        activities. You can also prepare for college applications by starting a
-        college list and beginning your essays.
+        plan their academic life. You can keep track of your coursework,
+        standarized tests, and extracurricular activities. You can also prepare
+        for college applications by creating a college list and starting your
+        essays.
       </p>
       <p className="text">
         I originally began development in January 2023, with the website only
@@ -107,15 +107,14 @@ export default function Projects() {
         <a href="https://dsns.dev" target="_blank" className="link">
           DSNS
         </a>{" "}
-        and I rewrote it using Next.js in September 2024, adding a few new
-        features and updates. Now, Plannter has five different sections, a GPA
-        calculator, an essay editor, and several other useful parts.
+        and I rewrote it using Next.js in September 2024. Now, Plannter has five
+        different sections, a GPA calculator, an essay editor, and several other
+        useful features.
       </p>
       <p className="text">
-        The name "Plannter" is a portmanteau of the words "planner" and "plant."
-        "Planner" because the website helps you plan your future, and "plant"
-        because plants represent growth. Another name I considered was "Alumnac"
-        (a portmanteau of the words "alumnus" and "almanac"), but I felt that
+        The name "Plannter" is a portmanteau (big fancy word!!!) of the words
+        "planner" and "plant." Another name I considered was "Alumnac" (a
+        portmanteau of the words "alumnus" and "almanac"), but I felt that
         "Plannter" fit the website's purpose better.
       </p>
       <p className="text">

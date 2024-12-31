@@ -50,7 +50,7 @@ export default function Project(props: {
               className={`${props.showLogo ? "" : "hidden"} inline w-6 mr-1.5`}
               alt={`${props.name} logo`}
             />
-            {props.name}
+            <span>{props.name}</span>
           </h1>
           <h2 className="text mt-2 mb-0">{props.desc}</h2>
           <div className="flex gap-3 absolute bottom-[1.4rem] mt-2.5">
@@ -117,7 +117,7 @@ export default function Project(props: {
               className={`${props.showLogo ? "" : "hidden"} inline w-6 mr-1.5`}
               alt={`${props.name} logo`}
             />
-            {props.name}
+            <span>{props.name}</span>
           </h1>
           <h2 className="text mt-2 mb-0">{props.desc}</h2>
           <div className="flex gap-3 absolute bottom-[1.4rem] mt-2.5">

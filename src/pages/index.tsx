@@ -60,7 +60,7 @@ export default function Home() {
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo={true}
             type={0}
-            colors=""
+            colors="hover:border-yellow-600"
             link="https://cifra.jakeo.dev"
           />
         </div>

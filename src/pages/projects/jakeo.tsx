@@ -84,12 +84,12 @@ export default function Projects() {
       </p>
       <p className="text">
         I used Google Sites to build the first version of this website in
-        September 2020, but eventually moved to using HTML/CSS/JavaScript in May
+        September 2020, but eventually switched to HTML/CSS/JavaScript in May
         2021 where I continued to improve the design add my new projects. I
-        pushed radical new design changes to the website every few months, only
-        landing on the current design in October 2023. I started using Tailwind
-        CSS in September 2022, and then rewrote JakeO.dev using Next.js in
-        January 2024.
+        pushed new design changes to the website every few months, only landing
+        on the current design in October 2023. I started using Tailwind CSS in
+        September 2022, and then rewrote everything with Next.js in January
+        2024.
       </p>
       <p className="text">
         I first bought the domain Jorch.xyz in September 2020, but I switched to
@@ -98,17 +98,18 @@ export default function Projects() {
       <p className="text">
         I started using the Android bunny emoji as my "logo" since the first
         version on Google Sites. At first, it was just the emoji, but sometime
-        in 2021 I switched to a light-blue-colored version of it. I later
-        removed all the bunny's features and just kept the silhouette with a
-        light-blue gradient.
+        in 2021 I colored it light-blue. I later removed all the bunny's
+        features and just kept the silhouette with a light-blue gradient.
       </p>
       <p className="text">
-        I've also used the font{" "}
         <a href="https://lexend.com" target="_blank" className="link">
           Lexend Deca
         </a>{" "}
-        since the beginning. I started using it because it isn't very common,
-        and according to its designers, it improves reading speed and accuracy.
+        is the font I use the most throughout this website and my other
+        projects. I started using it because it isn't very widely used, and
+        according to its designers, it improves reading speed and accuracy. I've
+        also created a font based on my own handwriting which I use here for all
+        the titles.
       </p>
     </>
   );
