@@ -61,14 +61,17 @@ export default function Projects() {
         </h2>
       </div>
 
-      <div className="container postImgDiv">
+      <div className="container postImgDiv mt-6">
         <ImageCarousel
           images={["/images/cifra-ss-1.png", "/images/cifra-ss-2.png"]}
         />
       </div>
 
       <div className="flex flex-col md:flex-row gap-3 my-6">
-        <Button className="border-yellow-600 hover:border-yellow-700 active:border-yellow-800 bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800" href="https://cifra.jakeo.dev">
+        <Button
+          className="border-yellow-600 hover:border-yellow-700 active:border-yellow-800 bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800"
+          href="https://cifra.jakeo.dev"
+        >
           Visit website
         </Button>
         <SecButton className="" href="https://github.com/jakeo-dev/cifra">

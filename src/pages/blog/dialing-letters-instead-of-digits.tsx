@@ -37,16 +37,7 @@ export default function Blog4() {
       <Header currentPage="posts" />
 
       {/* post */}
-      <h1 className="sub1title mt-0">Dialing Letters Instead of Digits</h1>
-
-      <div className="postThumbImgDiv">
-        <Image
-          src={require("../../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
-          alt="Overlapping lists of random words and numbers"
-          className="postThumbImg"
-          placeholder="blur"
-        />
-      </div>
+      <h1 className="sub1title pb-0">Dialing Letters Instead of Digits</h1>
 
       <div className="postDatesDiv">
         <h2>
@@ -59,10 +50,19 @@ export default function Blog4() {
         </h2>
       </div>
 
+      <div className="postThumbImgDiv mt-6">
+        <Image
+          src={require("../../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+          alt="Overlapping lists of random words and numbers"
+          className="postThumbImg"
+          placeholder="blur"
+        />
+      </div>
+
       <div className="lg:flex lg:flex-row-reverse">
         <div className="lg:block flex-[0.3] xl:flex-[0] xl:w-0 lg:sticky top-6 self-start">
           <p className="lg:hidden block sub2title mb-0">Sections</p>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:py-3 lg:ml-12 mb-16 lg:mt-6 lg:-mr-12 xl:-mr-64">
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:bg-gray-200/70 lg:rounded-lg lg:p-4 lg:ml-10 mb-16 lg:mt-6 lg:-mr-10 xl:-mr-64">
             <p className="hidden lg:block sub2title mt-0 pt-0">Sections</p>
             <a href="#generation-preparation" className="text link block">
               Generation Preparation
@@ -79,7 +79,7 @@ export default function Blog4() {
           </div>
         </div>
 
-        <div className="flex-1 mt-8">
+        <div className="flex-1">
           <p className="text">
             In February 2023, I unleashed the first iteration of Cifra, my
             website that generates and displays as many vanity phone numbers

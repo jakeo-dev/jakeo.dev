@@ -60,7 +60,7 @@ export default function Projects() {
         </h2>
       </div>
 
-      <div className="container postImgDiv">
+      <div className="container postImgDiv mt-6">
         <ImageCarousel
           images={[
             "/images/plannter-ss-1.png",

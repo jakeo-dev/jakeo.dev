@@ -39,16 +39,7 @@ export default function Blog2() {
       <Header currentPage="posts" />
 
       {/* post */}
-      <h1 className="sub1title mt-0">The JakeO.dev Portfolio Wrapped 2023</h1>
-
-      <div className="postThumbImgDiv">
-        <Image
-          src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
-          alt="Screenshots from the websites of the JakeO.dev portfolio wrapped in a bunny"
-          className="postThumbImg"
-          placeholder="blur"
-        />
-      </div>
+      <h1 className="sub1title pb-0">The JakeO.dev Portfolio Wrapped 2023</h1>
 
       <div className="postDatesDiv">
         <h2>
@@ -61,10 +52,19 @@ export default function Blog2() {
         </h2>
       </div>
 
+      <div className="postThumbImgDiv mt-6">
+        <Image
+          src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
+          alt="Screenshots from the websites of the JakeO.dev portfolio wrapped in a bunny"
+          className="postThumbImg"
+          placeholder="blur"
+        />
+      </div>
+
       <div className="lg:flex lg:flex-row-reverse">
         <div className="lg:block flex-[0.3] xl:flex-[0] xl:w-0 lg:sticky top-6 self-start">
           <p className="lg:hidden block sub2title mb-0">Sections</p>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:py-3 lg:ml-12 mb-16 lg:mt-6 lg:-mr-12 xl:-mr-64">
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:bg-gray-200/70 lg:rounded-lg lg:p-4 lg:ml-10 mb-16 lg:mt-6 lg:-mr-10 xl:-mr-64">
             <p className="hidden lg:block sub2title mt-0 pt-0">Sections</p>
             <a href="#plannter" className="text link block">
               Plannter
@@ -84,7 +84,7 @@ export default function Blog2() {
           </div>
         </div>
 
-        <div className="flex-1 mt-8">
+        <div className="flex-1">
           <p className="text">
             Wraps, recaps, and replays aren't just for music streaming services.
             I can look back on 2023 too, but with a focus on the thing I know
