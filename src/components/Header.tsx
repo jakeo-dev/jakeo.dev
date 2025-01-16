@@ -254,7 +254,7 @@ export default function Header(props: { currentPage: string }) {
               href="/"
               className="font-handwriting text-3xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
             >
-              JakeO.dev
+              JakeO<span className="text-gray-500 text-2xl md:text-3xl">.dev</span>
             </Link>
 
             {/* socials */}
