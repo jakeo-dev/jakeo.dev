@@ -57,7 +57,7 @@ export default function Projects() {
             releaseDate="June 2024"
             updateDate="July 2024"
             madeWith=""
-            logo="https://linked.jakeo.dev/icon-transparent.png"
+            logo="https://linked.jakeo.dev/images/icon-transparent.png"
             showLogo={true}
             type={0}
             colors="hover:border-blue-600"
@@ -72,7 +72,7 @@ export default function Projects() {
             original files created (html/css/js): may 28 2021
             first uploaded to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
-            updateDate="October 2024"
+            updateDate="January 2025"
             madeWith=""
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo={true}

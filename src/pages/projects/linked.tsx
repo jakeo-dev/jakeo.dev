@@ -33,7 +33,7 @@ export default function Projects() {
 
       <div className="sub1title flex items-center pb-0">
         <img
-          src="https://linked.jakeo.dev/icon-transparent.png"
+          src="https://linked.jakeo.dev/images/icon-transparent.png"
           className="inline w-8 mr-2"
           alt="Linked logo"
         />
