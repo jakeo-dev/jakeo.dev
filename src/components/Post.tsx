@@ -28,12 +28,14 @@ export default function Post(props: {
         placeholder="blur"
       />
 
-      <Link
-        className="link text-xl text-left font-medium"
-        href={`${props.href}`}
-      >
-        {props.name}
-      </Link>
+      <div className="text-left">
+        <Link
+          className="link text-xl font-medium"
+          href={`${props.href}`}
+        >
+          {props.name}
+        </Link>
+      </div>
       <h2 className={`${props.fadeDesc ? "fade-text" : ""} text mt-2 mb-0`}>
         {props.desc}
       </h2>
