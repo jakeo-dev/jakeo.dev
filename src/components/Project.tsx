@@ -19,7 +19,7 @@ export default function Project(props: {
   link: string;
 }) {
   if (props.type == 0) {
-    // active project
+    // current project
     return (
       <Link
         href={`/projects/${props.name.split(".")[0].toLowerCase()}`}

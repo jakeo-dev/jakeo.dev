@@ -6,7 +6,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import { Analytics } from "@vercel/analytics/react";
-import Header from "../components/Header";
+import Header from "@/components/Header";
 
 const lexend = Lexend({ subsets: ["latin"] });
 

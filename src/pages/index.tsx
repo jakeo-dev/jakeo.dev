@@ -1,5 +1,5 @@
-import CommonHead from "../components/CommonHead";
-import Project from "../components/Project";
+import CommonHead from "@/components/CommonHead";
+import Project from "@/components/Project";
 import Post from "@/components/Post";
 
 export default function Home() {
@@ -60,14 +60,6 @@ export default function Home() {
             link="https://cifra.jakeo.dev"
           />
         </div>
-
-        {/* <Link
-          href="/projects"
-          className="flex justify-center items-center h-min text-xl border-2 hover:bg-gray-200 active:bg-gray-300 active:border-gray-300 transition-all rounded-full p-3.5 md:ml-4 mt-6 md:my-auto"
-        >
-          <p className="md:hidden">All projects</p>
-          <FontAwesomeIcon icon={faArrowRight} className="ml-2 md:ml-0" />
-        </Link> */}
       </div>
 
       {/* posts */}

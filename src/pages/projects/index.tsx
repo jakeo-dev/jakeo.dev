@@ -1,5 +1,5 @@
-import CommonHead from "../../components/CommonHead";
-import Project from "../../components/Project";
+import CommonHead from "@/components/CommonHead";
+import Project from "@/components/Project";
 
 export default function Projects() {
   return (
@@ -79,7 +79,7 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* old projects */}
+      {/* past projects */}
       <h2 className="sub1title">Past projects</h2>
 
       <div className="block md:flex">

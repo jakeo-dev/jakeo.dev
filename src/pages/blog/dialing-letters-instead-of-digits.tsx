@@ -1,5 +1,5 @@
-import CommonHead from "../../components/CommonHead";
-import CodeBlock from "../../components/CodeBlock";
+import CommonHead from "@/components/CommonHead";
+import CodeBlock from "@/components/CodeBlock";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

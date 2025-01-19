@@ -1,5 +1,5 @@
-import CommonHead from "../../components/CommonHead";
-import Post from "../../components/Post";
+import CommonHead from "@/components/CommonHead";
+import Post from "@/components/Post";
 
 export default function Blog() {
   return (

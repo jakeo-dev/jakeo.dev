@@ -1,4 +1,4 @@
-import CommonHead from "../../components/CommonHead";
+import CommonHead from "@/components/CommonHead";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

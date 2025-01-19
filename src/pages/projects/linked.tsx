@@ -1,6 +1,6 @@
-import CommonHead from "../../components/CommonHead";
-import Button from "../../components/Button";
-import SecButton from "../../components/SecButton";
+import CommonHead from "@/components/CommonHead";
+import Button from "@/components/Button";
+import SecButton from "@/components/SecButton";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
