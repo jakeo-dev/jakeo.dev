@@ -1,5 +1,4 @@
 import CommonHead from "../../components/CommonHead";
-import Header from "../../components/Header";
 import Project from "../../components/Project";
 
 export default function Projects() {
@@ -16,9 +15,6 @@ export default function Projects() {
           content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         />
       </CommonHead>
-
-      {/* header */}
-      <Header currentPage="projects" />
 
       {/* current projects */}
       <h2 className="sub1title mt-0">My projects</h2>

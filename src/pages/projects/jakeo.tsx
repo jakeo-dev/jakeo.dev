@@ -1,5 +1,4 @@
 import CommonHead from "../../components/CommonHead";
-import Header from "../../components/Header";
 import SecButton from "../../components/SecButton";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,9 +25,6 @@ export default function Projects() {
           content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         />
       </CommonHead>
-
-      {/* header */}
-      <Header currentPage="projects" />
 
       <div className="sub1title flex items-center pb-0">
         <img

@@ -6,10 +6,11 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import { Analytics } from "@vercel/analytics/react";
+import Header from "../components/Header";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
     console.log(
       "%cOMG HISIES!!!!!!!!!!!!!! 🐰🐰🐰🐰🐰",
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <main className={lexend.className}>
+      {router.pathname != "/404" ? <Header /> : null}
       <Component {...pageProps} />
       <Analytics />
     </main>

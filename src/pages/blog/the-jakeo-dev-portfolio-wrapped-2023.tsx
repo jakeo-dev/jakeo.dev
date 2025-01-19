@@ -1,5 +1,4 @@
 import CommonHead from "../../components/CommonHead";
-import Header from "../../components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,9 +33,6 @@ export default function Blog2() {
         />
         <meta property="twitter:card" content="summary_large_image" />
       </CommonHead>
-
-      {/* header */}
-      <Header currentPage="posts" />
 
       {/* post */}
       <h1 className="sub1title pb-0">The JakeO.dev Portfolio Wrapped 2023</h1>
