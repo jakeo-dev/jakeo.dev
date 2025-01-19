@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Modal from "./Modal";
 
-export default function Header(props: { currentPage: string }) {
+export default function Header() {
+  const { pathname } = useRouter();
+
   const [imgVis, setImgVis] = useState("");
   const [imgSrc, setImgSrc] = useState("solid-gradient-blue-gray-bunny");
 
@@ -286,7 +289,7 @@ export default function Header(props: { currentPage: string }) {
           <Link
             href="/"
             className={`${
-              props.currentPage == "home"
+              pathname == "/"
                 ? "text-gray-100 bg-sky-600"
                 : "hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 py-1 transition mr-1.5`}
@@ -296,7 +299,7 @@ export default function Header(props: { currentPage: string }) {
           <Link
             href="/projects"
             className={`${
-              props.currentPage == "projects"
+              pathname.startsWith("/projects")
                 ? "text-gray-100 bg-sky-600"
                 : "hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 py-1 transition mr-1.5`}
@@ -306,7 +309,7 @@ export default function Header(props: { currentPage: string }) {
           <Link
             href="/blog"
             className={`${
-              props.currentPage == "posts"
+              pathname.startsWith("/blog")
                 ? "text-gray-100 bg-sky-600"
                 : "hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 py-1 transition mr-1.5`}

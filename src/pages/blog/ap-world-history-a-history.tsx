@@ -1,4 +1,3 @@
-import Header from "../../components/Header";
 import CommonHead from "../../components/CommonHead";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,9 +31,6 @@ export default function Blog1() {
         />
         <meta property="twitter:card" content="summary_large_image" />
       </CommonHead>
-
-      {/* header */}
-      <Header currentPage="posts" />
 
       {/* post */}
       <h1 className="sub1title pb-0">AP World History: A History</h1>

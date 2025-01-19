@@ -1,5 +1,4 @@
 import CommonHead from "../../components/CommonHead";
-import Header from "../../components/Header";
 import CodeBlock from "../../components/CodeBlock";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,9 +31,6 @@ export default function Blog4() {
         />
         <meta property="twitter:card" content="summary_large_image" />
       </CommonHead>
-
-      {/* header */}
-      <Header currentPage="posts" />
 
       {/* post */}
       <h1 className="sub1title pb-0">Dialing Letters Instead of Digits</h1>

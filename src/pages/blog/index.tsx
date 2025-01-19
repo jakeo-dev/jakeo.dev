@@ -1,5 +1,4 @@
 import CommonHead from "../../components/CommonHead";
-import Header from "../../components/Header";
 import Post from "../../components/Post";
 
 export default function Blog() {
@@ -16,9 +15,6 @@ export default function Blog() {
           content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         />
       </CommonHead>
-
-      {/* header */}
-      <Header currentPage="posts" />
 
       {/* posts */}
       <h2 className="sub1title mt-0">My posts</h2>
