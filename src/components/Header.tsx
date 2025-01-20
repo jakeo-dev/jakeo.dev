@@ -50,20 +50,20 @@ export default function Header() {
   const newYearBunnies = ["new-years-bunny", "new-years-bunny"];
 
   useEffect(() => {
-    if (currentMonth == 2 && currentDay >= 12 && currentDay <= 18) {
-      // st patricks day (march 12 to 18)
+    if (currentMonth == 2 && currentDay >= 16 && currentDay <= 18) {
+      // st patricks day (march 16 to 18)
       setImgSrc(
         stPatricksDayBunnies[
           Math.floor(Math.random() * stPatricksDayBunnies.length)
         ]
       );
-    } else if (currentMonth == 3 && currentDay >= 17 && currentDay <= 23) {
-      // earth day (april 17 to 23)
+    } else if (currentMonth == 3 && currentDay >= 21 && currentDay <= 23) {
+      // earth day (april 21 to 23)
       setImgSrc(
         earthDayBunnies[Math.floor(Math.random() * earthDayBunnies.length)]
       );
-    } else if (currentMonth == 5 && currentDay <= 5) {
-      // 4th of july (july 1 to 5)
+    } else if (currentMonth == 5 && currentDay >= 3 && currentDay <= 5) {
+      // 4th of july (july 3 to 5)
       setImgSrc(
         americaBunnies[Math.floor(Math.random() * americaBunnies.length)]
       );
@@ -110,8 +110,8 @@ export default function Header() {
       </Modal>
 
       {/* header */}
-      <header className="md:flex items-center align-middle text-center my-16 -translate-x-2 md:-translate-x-4">
-        <div className="flex items-center">
+      <header className="md:flex items-center align-middle text-center my-12 md:my-16 -translate-x-2 md:-translate-x-4">
+        <div className="flex items-center justify-center">
           <div>
             <button
               className={imgVis}
@@ -222,7 +222,7 @@ export default function Header() {
             >
               <img
                 src={`https://bunnies.jakeo.dev/images/${imgSrc}.png`}
-                className="w-16 md:w-[4.5rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                className="w-[4.5rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
               />
             </button>
             <button
@@ -240,7 +240,7 @@ export default function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 300.000000 300.000000"
                 preserveAspectRatio="xMidYMid meet"
-                className="w-16 md:w-[4.5rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                className="w-[4.5rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
               >
                 <g
                   transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
@@ -255,9 +255,9 @@ export default function Header() {
           <div className="text-left ml-2.5">
             <Link
               href="/"
-              className="font-handwriting text-3xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
+              className="font-handwriting text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
             >
-              JakeO<span className="text-gray-500 text-2xl md:text-3xl">.dev</span>
+              JakeO<span className="text-gray-500 text-3xl">.dev</span>
             </Link>
 
             {/* socials */}
@@ -285,14 +285,15 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="text-gray-600 text-left border-t-2 border-dotted border-gray-300 pt-3 mt-3 ml-auto md:border-0 md:pt-0 md:mt-0">
+        <div className="border-t-2 border-dotted w-64 border-gray-300 md:border-0 mx-auto my-3"></div>
+        <div className="flex justify-center text-gray-600 ml-auto">
           <Link
             href="/"
             className={`${
               pathname == "/"
                 ? "text-gray-100 bg-sky-600"
                 : "hover:bg-gray-200 active:bg-gray-300"
-            } text rounded-md px-2 py-1 transition mr-1.5`}
+            } text rounded-md px-2 transition mr-1.5 mb-0`}
           >
             <span>home</span>
           </Link>
@@ -302,7 +303,7 @@ export default function Header() {
               pathname.startsWith("/projects")
                 ? "text-gray-100 bg-sky-600"
                 : "hover:bg-gray-200 active:bg-gray-300"
-            } text rounded-md px-2 py-1 transition mr-1.5`}
+            } text rounded-md px-2 transition mr-1.5 mb-0`}
           >
             <span>projects</span>
           </Link>
@@ -312,7 +313,7 @@ export default function Header() {
               pathname.startsWith("/blog")
                 ? "text-gray-100 bg-sky-600"
                 : "hover:bg-gray-200 active:bg-gray-300"
-            } text rounded-md px-2 py-1 transition mr-1.5`}
+            } text rounded-md px-2 transition mr-1.5 mb-0`}
           >
             <span>posts</span>
           </Link>
