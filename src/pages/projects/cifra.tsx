@@ -57,7 +57,7 @@ export default function Projects() {
         </h2>
       </div>
 
-      <div className="container postImgDiv mt-6">
+      <div className="container postImgDiv mx-auto mt-6">
         <ImageCarousel
           images={["/images/cifra-ss-1.png", "/images/cifra-ss-2.png"]}
         />

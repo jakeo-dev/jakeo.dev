@@ -41,7 +41,7 @@ export default function ImageCarousel(props: { images: string[] }) {
   }, [currentIndex]);
 
   return (
-    <div className="postImgDiv relative w-full h-[430px] overflow-hidden">
+    <div className="postImgDiv relative w-full h-56 sm:h-96 md:h-[430px] overflow-hidden">
       <div className="postImg relative w-full h-full">
         <Image
           src={props.images[currentIndex]}
