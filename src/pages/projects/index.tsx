@@ -61,6 +61,19 @@ export default function Projects() {
           />
 
           <Project
+            name="Pairckle"
+            desc="Easily rank your favorite things through simple pairwise comparisons."
+            releaseDate="January 2025"
+            updateDate="February 2025"
+            madeWith=""
+            logo="https://pairckle.jakeo.dev/pairckle-icon.png"
+            showLogo={true}
+            type={0}
+            colors="hover:border-orange-600"
+            link="https://pairckle.jakeo.dev"
+          />
+
+          <Project
             name="JakeO.dev"
             desc="You're already here — check out all of my projects and blog posts."
             releaseDate="September 2020"
@@ -68,7 +81,7 @@ export default function Projects() {
             original files created (html/css/js): may 28 2021
             first uploaded to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
-            updateDate="January 2025"
+            updateDate="February 2025"
             madeWith=""
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo={true}

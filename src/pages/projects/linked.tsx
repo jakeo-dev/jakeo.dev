@@ -9,7 +9,7 @@ import {
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Projects() {
+export default function Linked() {
   return (
     <>
       {/* head */}

@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-export default function Projects() {
+export default function Cifra() {
   return (
     <>
       {/* head */}
@@ -60,6 +60,7 @@ export default function Projects() {
       <div className="container postImgDiv mx-auto mt-6">
         <ImageCarousel
           images={["/images/cifra-ss-1.png", "/images/cifra-ss-2.png"]}
+          imagePosition="object-top"
         />
       </div>
 

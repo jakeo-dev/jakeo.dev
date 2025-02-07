@@ -5,7 +5,10 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function ImageCarousel(props: { images: string[] }) {
+export default function ImageCarousel(props: {
+  images: string[];
+  imagePosition: string;
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   //const [fade, setFade] = useState(false);
 
@@ -46,7 +49,7 @@ export default function ImageCarousel(props: { images: string[] }) {
         <Image
           src={props.images[currentIndex]}
           alt={`Image ${currentIndex}`}
-          className="rounded-md object-top object-cover transition-opacity" /* ${fade ? "opacity-0" : "opacity-100"} */
+          className={`rounded-md object-cover ${props.imagePosition} transition-opacity`} /* ${fade ? "opacity-0" : "opacity-100"} */
           fill
         />
       </div>

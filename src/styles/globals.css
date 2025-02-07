@@ -8,15 +8,15 @@
   }
 
   .sub1title {
-    @apply text-2xl text-gray-900 text-left font-semibold py-4 mt-12;
+    @apply text-2xl text-gray-900 text-left font-semibold py-4 mt-14;
   }
 
   .sub2title {
-    @apply text-xl text-gray-900 text-left font-medium py-4 mt-6;
+    @apply text-xl text-gray-900 text-left font-medium py-4 mt-8;
   }
 
   .sub3title {
-    @apply text-lg text-gray-900 text-left font-medium py-4 mt-2;
+    @apply text-lg text-gray-900 text-left font-medium py-4 mt-4;
   }
 
   .postDatesDiv {

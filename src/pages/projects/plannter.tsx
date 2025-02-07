@@ -9,7 +9,7 @@ import {
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Projects() {
+export default function Plannter() {
   return (
     <>
       {/* head */}
@@ -65,6 +65,7 @@ export default function Projects() {
             "/images/plannter-ss-4.png",
             "/images/plannter-ss-5.png",
           ]}
+          imagePosition="object-top"
         />
       </div>
 

@@ -110,7 +110,7 @@ export default function Header() {
       </Modal>
 
       {/* header */}
-      <header className="md:flex items-center align-middle text-center my-12 md:my-16 -translate-x-2 md:-translate-x-4">
+      <header className="md:flex items-center align-middle text-center my-14 md:my-16 -translate-x-2 md:-translate-x-4">
         <div className="flex items-center justify-center">
           <div>
             <button

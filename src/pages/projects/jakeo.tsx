@@ -8,7 +8,7 @@ import {
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Projects() {
+export default function JakeO() {
   return (
     <>
       {/* head */}
@@ -46,7 +46,7 @@ export default function Projects() {
         </h2>
         <h2>
           <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
-          Updated January 2025
+          Updated February 2025
         </h2>
         <h2>
           <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
