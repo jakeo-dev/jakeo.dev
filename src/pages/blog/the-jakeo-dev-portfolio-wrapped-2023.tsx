@@ -8,7 +8,7 @@ import {
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Blog2() {
+export default function Post2() {
   return (
     <>
       {/* head */}

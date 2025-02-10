@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export default function Blog3() {
+export default function Post3() {
   return (
     <>
       {/* head */}

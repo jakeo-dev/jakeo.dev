@@ -57,7 +57,11 @@ export default function Pairckle() {
 
       <div className="container postImgDiv mx-auto mt-6">
         <ImageCarousel
-          images={["/images/pairckle-ss-1.png", "/images/pairckle-ss-2.png"]}
+          images={[
+            "/images/pairckle-ss-1.png",
+            "/images/pairckle-ss-2.png",
+            "/images/pairckle-ss-3.png",
+          ]}
           imagePosition="object-center"
         />
       </div>
