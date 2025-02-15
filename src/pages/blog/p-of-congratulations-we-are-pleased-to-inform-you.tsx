@@ -1,4 +1,5 @@
 import CommonHead from "@/components/CommonHead";
+import Callout from "@/components/Callout";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,7 +49,7 @@ export default function Post3() {
         </h2>
         <h2>
           <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
-          Edited June 17, 2024
+          Edited February 15, 2025
         </h2>
       </div>
 
@@ -133,15 +134,18 @@ export default function Post3() {
             range to use in the calculations:
           </p>
           <ul className="text list-disc">
-            <li>Safety: 75 - 100% → 87.5%</li>
-            <li>Target: 35 - 74.9% → 55%</li>
-            <li>Reach: 0 - 34.9% → 17.5%</li>
+            <li>Safety: 75 to 100% → 87.5%</li>
+            <li>Target: 35 to 74.9% → 55%</li>
+            <li>Reach: 0 to 34.9% → 17.5%</li>
           </ul>
-          <p className="subtext">
-            * These percentages are based on almost nothing and don't take into
-            account any real factors that may affect admissions. They only
-            generalize the overall acceptance rates of colleges.
-          </p>
+          <Callout>
+            {`It's important to note that these percentages are based absolutely
+            nothing. Scroll down to the `}
+            <a href="#disclaimer" className="link">
+              Disclaimer
+            </a>
+            {` section for more about how inaccurate this blog post actually is.`}
+          </Callout>
           {/* <p className="text">
             I won't go into an explanation of the specifics of the math I'm
             using, mainly because I'm not good at that, but I'll explain some of
@@ -208,7 +212,8 @@ export default function Post3() {
           <p className="subtext">
             We can't use "or" probability here by simply adding the
             probabilities because that would give a number greater than 1, which
-            doesn't make sense in this case.
+            doesn't make sense in this case. There's probably a real reason for
+            this, but I don't know or care about that...
           </p>
           <p className="sub2title">Using the binomial distribution</p>
           <p className="text">

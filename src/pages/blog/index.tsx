@@ -34,7 +34,7 @@ export default function Blog() {
         name='P("Congratulations! We Are Pleased to Inform You...")'
         desc='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
         releaseDate="June 17, 2024"
-        updateDate="June 17, 2024"
+        updateDate="February 15, 2025"
         fadeDesc={true}
         img={require("../../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
         showImg={false}

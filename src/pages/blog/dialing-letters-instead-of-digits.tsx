@@ -106,7 +106,7 @@ export default function Post4() {
             is added to an array called numerosArray.
           </p>
           <p className="subtext">
-            *More than one word can share the same numero, but this won't affect
+            More than one word can share the same numero, but this won't affect
             the program.
           </p>
           <div className="codeBlockDiv">
