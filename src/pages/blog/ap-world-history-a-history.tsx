@@ -18,7 +18,7 @@ export default function Post1() {
         <meta property="og:title" content="AP World History: A History" />
         <meta
           property="og:description"
-          content="As more students enroll in Advanced Placement classes, the College Board is bound to make changes to the curriculums of their courses either to more accurately..."
+          content="As more students enroll in Advanced Placement classes, the College Board is bound to make changes to the curriculums of their courses either to more accurately represent college-level classes or to make them easier for students. The outline and exam for the AP..."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta

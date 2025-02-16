@@ -29,16 +29,10 @@ export default function Post(props: {
       />
 
       <div className="text-left">
-        <Link
-          className="link text-xl font-medium"
-          href={`${props.href}`}
-        >
+        <Link className="link text-xl font-medium" href={`${props.href}`}>
           {props.name}
         </Link>
       </div>
-      <h2 className={`${props.fadeDesc ? "fade-text" : ""} text mt-2 mb-0`}>
-        {props.desc}
-      </h2>
       <div className="flex gap-3 mt-2.5">
         <h2
           className={`${
@@ -65,6 +59,9 @@ export default function Post(props: {
           {props.updateDate}
         </h2>
       </div>
+      <h2 className={`${props.fadeDesc ? "fade-text" : ""} text mt-2 mb-0`}>
+        {props.desc}
+      </h2>
     </div>
   );
 }

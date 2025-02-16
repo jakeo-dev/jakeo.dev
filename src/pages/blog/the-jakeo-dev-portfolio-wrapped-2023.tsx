@@ -20,7 +20,7 @@ export default function Post2() {
         />
         <meta
           property="og:description"
-          content="Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but with a focus on the thing I know best: my websites..."
+          content="Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but with a focus on the thing I know best: my websites. I've constantly added, updated, and removed various features from my websites since I began this portfolio with..."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta

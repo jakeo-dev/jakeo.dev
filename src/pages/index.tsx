@@ -67,7 +67,7 @@ export default function Home() {
 
       <Post
         name="Dialing Letters Instead of Digits"
-        desc="In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted..."
+        desc={`In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted phone number as fast as possible. Over the past year and a half, I've found different ways to improve the efficiency...`}
         releaseDate="August 18, 2024"
         updateDate=""
         fadeDesc={true}
@@ -77,8 +77,8 @@ export default function Home() {
       />
 
       <Post
-        name='P("Congratulations! We Are Pleased to Inform You...")'
-        desc='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
+        name={`P("Congratulations! We Are Pleased to Inform You...")`}
+        desc={`"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it's immensely more exciting. You deserve not only to be accepted into a university, but also to be simply congratulated for your efforts. To relieve some anxiety...`}
         releaseDate="June 17, 2024"
         updateDate=""
         fadeDesc={true}

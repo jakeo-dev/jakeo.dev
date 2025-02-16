@@ -19,11 +19,11 @@ export default function Post3() {
         <title>P("Congratulations! We Are Pleased to Inform You...")</title>
         <meta
           property="og:title"
-          content='P("Congratulations! We Are Pleased to Inform You...")'
+          content={`P("Congratulations! We Are Pleased to Inform You...")`}
         />
         <meta
           property="og:description"
-          content='"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it&apos;s immensely more exciting. You deserve not only to be...'
+          content={`"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it's immensely more exciting. You deserve not only to be accepted into a university, but also to be simply congratulated for your efforts. To relieve some anxiety...`}
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta

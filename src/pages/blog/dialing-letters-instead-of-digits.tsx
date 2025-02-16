@@ -18,7 +18,7 @@ export default function Post4() {
         <meta property="og:title" content="Dialing Letters Instead of Digits" />
         <meta
           property="og:description"
-          content="In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted..."
+          content="In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted phone number as fast as possible. Over the past year and a half, I've found different ways to improve the efficiency..."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
