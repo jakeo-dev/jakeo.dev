@@ -1,10 +1,10 @@
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
   faHammer,
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 
 export default function Project(props: {
   name: string;
@@ -56,6 +56,18 @@ export default function Project(props: {
           <div className="flex gap-3 absolute bottom-[1.4rem] mt-2.5">
             <h2
               className={`${
+                props.madeWith != "" ? "inline" : "hidden"
+              } text-sm text-gray-700`}
+            >
+              <FontAwesomeIcon
+                icon={faHammer}
+                className="mr-1.5"
+                aria-label="Made with"
+              />
+              {props.madeWith}
+            </h2>
+            <h2
+              className={`${
                 props.releaseDate != "" ? "inline" : "hidden"
               } text-sm text-gray-700`}
             >
@@ -77,18 +89,6 @@ export default function Project(props: {
                 aria-label="Last updated"
               />
               {props.updateDate}
-            </h2>
-            <h2
-              className={`${
-                props.madeWith != "" ? "inline" : "hidden"
-              } text-sm text-gray-700`}
-            >
-              <FontAwesomeIcon
-                icon={faHammer}
-                className="mr-1.5"
-                aria-label="Made with"
-              />
-              {props.madeWith}
             </h2>
           </div>
         </div>
@@ -123,8 +123,20 @@ export default function Project(props: {
           <div className="flex gap-3 absolute bottom-[1.4rem] mt-2.5">
             <h2
               className={`${
+                props.madeWith != "" ? "inline" : "hidden"
+              } text-sm text-gray-700`}
+            >
+              <FontAwesomeIcon
+                icon={faHammer}
+                className="mr-1.5"
+                aria-label="Made with"
+              />
+              {props.madeWith}
+            </h2>
+            <h2
+              className={`${
                 props.releaseDate != "" ? "inline" : "hidden"
-              } text-sm text-gray-600`}
+              } text-sm text-gray-700`}
             >
               <FontAwesomeIcon
                 icon={faCalendarDay}
@@ -136,7 +148,7 @@ export default function Project(props: {
             <h2
               className={`${
                 props.updateDate != "" ? "inline" : "hidden"
-              } text-sm text-gray-600`}
+              } text-sm text-gray-700`}
             >
               <FontAwesomeIcon
                 icon={faRotateRight}
@@ -144,18 +156,6 @@ export default function Project(props: {
                 aria-label="Last updated"
               />
               {props.updateDate}
-            </h2>
-            <h2
-              className={`${
-                props.madeWith != "" ? "inline" : "hidden"
-              } text-sm text-gray-700`}
-            >
-              <FontAwesomeIcon
-                icon={faHammer}
-                className="mr-1.5"
-                aria-label="Made with"
-              />
-              {props.madeWith}
             </h2>
           </div>
         </div>

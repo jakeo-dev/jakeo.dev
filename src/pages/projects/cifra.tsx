@@ -2,13 +2,13 @@ import CommonHead from "@/components/CommonHead";
 import Button from "@/components/Button";
 import SecButton from "@/components/SecButton";
 import ImageCarousel from "@/components/ImageCarousel";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
   faHammer,
   faRotateRight,
 } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 
 export default function Cifra() {
   return (
@@ -53,7 +53,7 @@ export default function Cifra() {
         </h2>
         <h2>
           <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
-          Made with JavaScript/HTML/CSS
+          Made with JavaScript
         </h2>
       </div>
 

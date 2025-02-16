@@ -24,9 +24,9 @@ export default function Projects() {
           <Project
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
-            releaseDate="January 2023"
-            updateDate="September 2024"
-            madeWith=""
+            releaseDate=""
+            updateDate="Sep 2024"
+            madeWith="Next.js"
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
@@ -37,9 +37,9 @@ export default function Projects() {
           <Project
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
-            releaseDate="February 2023"
-            updateDate="June 2024"
-            madeWith=""
+            releaseDate=""
+            updateDate="Jun 2024"
+            madeWith="JavaScript"
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo={true}
             type={0}
@@ -50,9 +50,9 @@ export default function Projects() {
           <Project
             name="Linked"
             desc="A fun and simple word puzzle game to test your brain."
-            releaseDate="June 2024"
-            updateDate="July 2024"
-            madeWith=""
+            releaseDate=""
+            updateDate="Jul 2024"
+            madeWith="Next.js, React Native"
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
             showLogo={true}
             type={0}
@@ -63,9 +63,9 @@ export default function Projects() {
           <Project
             name="Pairckle"
             desc="Easily rank your favorite things through simple pairwise comparisons."
-            releaseDate="January 2025"
-            updateDate="February 2025"
-            madeWith=""
+            releaseDate=""
+            updateDate="Feb 2025"
+            madeWith="Next.js"
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo={true}
             type={0}
@@ -76,13 +76,13 @@ export default function Projects() {
           <Project
             name="JakeO.dev"
             desc="You're already here — check out all of my projects and blog posts."
-            releaseDate="September 2020"
+            releaseDate=""
             /* domain bought (made w/ google sites): sep 4 2020
             original files created (html/css/js): may 28 2021
             first uploaded to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
-            updateDate="February 2025"
-            madeWith=""
+            updateDate="Feb 2025"
+            madeWith="Next.js"
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo={true}
             type={0}
@@ -100,8 +100,8 @@ export default function Projects() {
           <Project
             name="Yearn"
             desc="Organize gifts that you yearn for into a simple list."
-            releaseDate="November 2022"
-            updateDate="December 2023"
+            releaseDate=""
+            updateDate=""
             madeWith=""
             logo="https://yearn.jakeo.dev/yearn-logo.png"
             showLogo={false}
@@ -113,8 +113,8 @@ export default function Projects() {
           <Project
             name="Text Filter"
             desc="Filter unwanted strings from text in a number of different ways."
-            releaseDate="August 2022"
-            updateDate="October 2023"
+            releaseDate=""
+            updateDate=""
             madeWith=""
             logo=""
             showLogo={false}
@@ -126,8 +126,8 @@ export default function Projects() {
           <Project
             name="Cerebric"
             desc="A speed typing website to help you study."
-            releaseDate="May 2022"
-            updateDate="December 2022"
+            releaseDate=""
+            updateDate=""
             madeWith=""
             logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
             showLogo={true}
@@ -139,8 +139,8 @@ export default function Projects() {
           <Project
             name="Decorate a Tree"
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
-            releaseDate="December 2021"
-            updateDate="December 2023"
+            releaseDate=""
+            updateDate=""
             madeWith=""
             logo="https://decorate-a-tree.jakeo.dev/candy-cane-red-left.png"
             showLogo={true}
@@ -152,8 +152,8 @@ export default function Projects() {
           <Project
             name="Emoticon Generator"
             desc="Generate unique emoticons."
-            releaseDate="November 2021"
-            updateDate="March 2023"
+            releaseDate=""
+            updateDate=""
             madeWith=""
             logo=""
             showLogo={false}
@@ -165,8 +165,8 @@ export default function Projects() {
           <Project
             name="Colorful Bunnies"
             desc="Browse and download some colorful bunnies individually, in collections, or in banners."
-            releaseDate="March 2021"
-            updateDate="September 2023"
+            releaseDate=""
+            updateDate=""
             madeWith=""
             logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
             showLogo={true}
