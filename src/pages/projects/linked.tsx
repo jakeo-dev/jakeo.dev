@@ -42,15 +42,23 @@ export default function Linked() {
 
       <div className="postDatesDiv">
         <h2>
-          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faCalendarDay}
+            className="mr-1.5"
+            aria-hidden
+          />
           Released June 2024
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faRotateRight}
+            className="mr-1.5"
+            aria-hidden
+          />
           Updated July 2024
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
           Made with Next.js, React Native
         </h2>
       </div>
@@ -58,7 +66,7 @@ export default function Linked() {
       <div className="postImgDiv mt-6">
         <Image
           src={require("../../../public/images/linked-ss-1.png")}
-          alt="Screenshot of Linked"
+          alt={`Screenshot of Linked showing the game being played, with the words "deaf," "fiend," "diodes," and the fourth word not fully typed`}
           className="postImg"
           placeholder="blur"
         />

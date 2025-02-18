@@ -43,15 +43,23 @@ export default function Plannter() {
 
       <div className="postDatesDiv">
         <h2>
-          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faCalendarDay}
+            className="mr-1.5"
+            aria-hidden
+          />
           Released January 2023
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faRotateRight}
+            className="mr-1.5"
+            aria-hidden
+          />
           Updated September 2024
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
           Made with Next.js
         </h2>
       </div>
@@ -66,6 +74,13 @@ export default function Plannter() {
             "/images/plannter-ss-5.png",
           ]}
           imagePosition="object-top"
+          alts={[
+            "Screenshot of Plannter showing GPA and a list of Freshman and Sophomore courses with their grade and advancement level",
+            "Screenshot of Plannter showing a list of standardized tests with their scores and date taken",
+            "Screenshot of Plannter showing a list of extracurricular activities with titles, descriptions, and amount of time spent for each one",
+            "Screenshot of Plannter showing a list of college application essays with their prompts, writing status, word count, date last edited, and corresponding colleges for each one",
+            "Screenshot of Plannter showing a list of colleges with their locations, acceptance rates, and application statuses for each one, organized into Reach, Target, and Safety categories",
+          ]}
         />
       </div>
 

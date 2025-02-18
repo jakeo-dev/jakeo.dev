@@ -44,11 +44,19 @@ export default function Post3() {
 
       <div className="postDatesDiv">
         <h2>
-          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faCalendarDay}
+            className="mr-1.5"
+            aria-hidden
+          />
           Posted June 17, 2024
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faRotateRight}
+            className="mr-1.5"
+            aria-hidden
+          />
           Edited February 15, 2025
         </h2>
       </div>
@@ -56,7 +64,7 @@ export default function Post3() {
       <div className="postThumbImgDiv mt-6">
         <Image
           src={require("../../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
-          alt="A warped image of a fake college acceptance email"
+          alt="A warped fake college acceptance email"
           className="postThumbImg"
           placeholder="blur"
         />
@@ -658,11 +666,8 @@ export default function Post3() {
               target="_blank"
               className="link"
             >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="mr-1"
-              ></FontAwesomeIcon>
-              College probabilities
+              <FontAwesomeIcon icon={faGithub} className="mr-1" aria-hidden />
+              College probabilities on GitHub
             </a>
           </p>
           <p className="text">
@@ -672,10 +677,7 @@ export default function Post3() {
               target="_blank"
               className="link"
             >
-              <FontAwesomeIcon
-                icon={faSeedling}
-                className="mr-1"
-              ></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faSeedling} className="mr-1" aria-hidden />
               Plannter
             </a>
             , my website that lets you plan courses, keep track of
@@ -684,7 +686,11 @@ export default function Post3() {
 
           <div className="text-left mt-16">
             <Link href="/blog" className="block text-xl link">
-              <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+              <FontAwesomeIcon
+                icon={faArrowLeft}
+                className="mr-2"
+                aria-hidden
+              />
               Read more posts
             </Link>
           </div>

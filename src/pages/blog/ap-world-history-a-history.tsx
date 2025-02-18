@@ -37,11 +37,19 @@ export default function Post1() {
 
       <div className="postDatesDiv">
         <h2>
-          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faCalendarDay}
+            className="mr-1.5"
+            aria-hidden
+          />
           Posted June 13, 2023
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faRotateRight}
+            className="mr-1.5"
+            aria-hidden
+          />
           Edited December 6, 2023
         </h2>
       </div>
@@ -49,7 +57,7 @@ export default function Post1() {
       <div className="postThumbImgDiv mt-6">
         <Image
           src={require("../../../public/images/ap-world-history-a-history/thumbnail.png")}
-          alt="A picture of Crystal Bay at Incline Village in Nevada taken in April 2022"
+          alt="Crystal Bay at Incline Village in Nevada taken in April 2022"
           className="postThumbImg"
           placeholder="blur"
         />
@@ -1290,6 +1298,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1301,6 +1310,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1312,6 +1322,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1323,6 +1334,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1334,6 +1346,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1345,6 +1358,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1356,6 +1370,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1367,6 +1382,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1378,6 +1394,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <a
@@ -1389,6 +1406,7 @@ export default function Post1() {
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
               className="ml-1.5"
+              aria-hidden
             />
           </a>
           <p className="text text-sm italic">
@@ -1398,7 +1416,11 @@ export default function Post1() {
 
           <div className="text-left mt-16">
             <Link href="/blog" className="block text-xl link">
-              <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+              <FontAwesomeIcon
+                icon={faArrowLeft}
+                className="mr-2"
+                aria-hidden
+              />
               Read more posts
             </Link>
           </div>

@@ -44,15 +44,23 @@ export default function Cifra() {
 
       <div className="postDatesDiv">
         <h2>
-          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faCalendarDay}
+            className="mr-1.5"
+            aria-hidden
+          />
           Released February 2023
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faRotateRight}
+            className="mr-1.5"
+            aria-hidden
+          />
           Updated June 2024
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
           Made with JavaScript
         </h2>
       </div>
@@ -61,6 +69,10 @@ export default function Cifra() {
         <ImageCarousel
           images={["/images/cifra-ss-1.png", "/images/cifra-ss-2.png"]}
           imagePosition="object-top"
+          alts={[
+            "Screenshot of Cifra showing the generation of vanity numbers",
+            "Screenshot of Cifra showing starred vanity numbers",
+          ]}
         />
       </div>
 

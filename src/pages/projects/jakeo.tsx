@@ -41,15 +41,23 @@ export default function JakeO() {
 
       <div className="postDatesDiv">
         <h2>
-          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faCalendarDay}
+            className="mr-1.5"
+            aria-hidden
+          />
           Created September 2020
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faRotateRight}
+            className="mr-1.5"
+            aria-hidden
+          />
           Updated February 2025
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" />
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
           Made with Next.js
         </h2>
       </div>
@@ -57,7 +65,7 @@ export default function JakeO() {
       <div className="postImgDiv mt-6">
         <Image
           src={require("../../../public/images/main-ss-1.png")}
-          alt="Screenshot of JakeO.dev"
+          alt="Screenshot of JakeO.dev showing the home page, including some projects and posts"
           className="postImg"
           placeholder="blur"
         />

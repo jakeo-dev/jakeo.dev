@@ -26,6 +26,7 @@ export default function Blog() {
         updateDate=""
         fadeDesc={true}
         img={require("../../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+        imgAlt="Overlapping lists of random words and numbers"
         showImg={false}
         href="/blog/dialing-letters-instead-of-digits"
       />
@@ -37,6 +38,7 @@ export default function Blog() {
         updateDate=""
         fadeDesc={true}
         img={require("../../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
+        imgAlt="A warped fake college acceptance email"
         showImg={false}
         href="/blog/p-of-congratulations-we-are-pleased-to-inform-you"
       />
@@ -48,6 +50,7 @@ export default function Blog() {
         updateDate=""
         fadeDesc={true}
         img={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
+        imgAlt="Screenshots from the websites of the JakeO.dev portfolio encapsulated in a bunny"
         showImg={false}
         href="/blog/the-jakeo-dev-portfolio-wrapped-2023"
       />
@@ -59,6 +62,7 @@ export default function Blog() {
         updateDate=""
         fadeDesc={true}
         img={require("../../../public/images/ap-world-history-a-history/thumbnail.png")}
+        imgAlt="Crystal Bay at Incline Village in Nevada taken in April 2022"
         showImg={false}
         href="/blog/ap-world-history-a-history"
       />

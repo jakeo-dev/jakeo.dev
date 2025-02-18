@@ -14,6 +14,7 @@ export default function Post(props: {
   updateDate: string;
   fadeDesc: boolean;
   img: StaticImageData;
+  imgAlt: string;
   showImg: boolean;
   href: string;
 }) {
@@ -21,7 +22,7 @@ export default function Post(props: {
     <div className="flex flex-col mt-2 mb-10">
       <Image
         src={props.img}
-        alt={`Screenshot of ${props.name}`}
+        alt={props.imgAlt}
         className={`${
           props.showImg ? "" : "hidden"
         } w-full object-cover h-44 md:h-52 border-b-2 border-gray-200 rounded-t-xl`}
@@ -42,7 +43,7 @@ export default function Post(props: {
           <FontAwesomeIcon
             icon={faCalendarDay}
             className="mr-1.5"
-            aria-label="Initial release"
+            aria-label="Initially released"
           />
           {props.releaseDate}
         </h2>

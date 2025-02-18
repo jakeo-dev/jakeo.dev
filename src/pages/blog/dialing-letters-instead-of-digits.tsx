@@ -37,11 +37,19 @@ export default function Post4() {
 
       <div className="postDatesDiv">
         <h2>
-          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faCalendarDay}
+            className="mr-1.5"
+            aria-hidden
+          />
           Posted August 18, 2024
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faRotateRight}
+            className="mr-1.5"
+            aria-hidden
+          />
           Edited August 18, 2024
         </h2>
       </div>
@@ -150,7 +158,7 @@ for (j = 0; j < wordsArray.length; j++) {
             </div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Telephone-keypad.svg/1920px-Telephone-keypad.svg.png"
-              alt="The standard telephone keypad"
+              alt="The standard telephone keypad with certain numbers corresponding to certain letters"
               className="postImg w-1/3 md:w-1/5"
             />
           </div>
@@ -161,7 +169,7 @@ for (j = 0; j < wordsArray.length; j++) {
             </p>
             <Image
               src={require("../../../public/images/dialing-letters-instead-of-digits/visual-1.png")}
-              alt='A visual of how Cifra converts its word list to an array of "numeros"'
+              alt={`A list of words with their corresponding "numeros"`}
               className="postImg"
               placeholder="blur"
             />
@@ -210,7 +218,7 @@ for (j = 0; j < wordsArray.length; j++) {
             </p>
             <Image
               src={require("../../../public/images/dialing-letters-instead-of-digits/visual-2.png")}
-              alt="A visual of how Cifra matches a vanity number to a numero, and then puts in the corresponding word"
+              alt={`The word "bunny" being matched to its numero, then the numero within the inputted phone number being changed to the word "bunny"`}
               className="postImg"
               placeholder="blur"
             />
@@ -345,7 +353,11 @@ for (j = 0; j < wordsArray.length; j++) {
 
           <div className="text-left mt-16">
             <Link href="/blog" className="block text-xl link">
-              <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+              <FontAwesomeIcon
+                icon={faArrowLeft}
+                className="mr-2"
+                aria-hidden
+              />
               Read more posts
             </Link>
           </div>

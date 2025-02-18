@@ -72,6 +72,7 @@ export default function Home() {
         updateDate=""
         fadeDesc={true}
         img={require("../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+        imgAlt="Overlapping lists of random words and numbers"
         showImg={false}
         href="/blog/dialing-letters-instead-of-digits"
       />
@@ -83,6 +84,7 @@ export default function Home() {
         updateDate=""
         fadeDesc={true}
         img={require("../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
+        imgAlt="A warped fake college acceptance email"
         showImg={false}
         href="/blog/p-of-congratulations-we-are-pleased-to-inform-you"
       />

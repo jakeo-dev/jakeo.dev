@@ -102,7 +102,7 @@ export default function Header() {
         <div className="flex items-center text-[#5865f2] text-3xl">
           <FontAwesomeIcon
             icon={faDiscord}
-            aria-label="Discord"
+            aria-label="Discord logo"
             className="mr-2"
           />
           <h1>@jakeybakers</h1>
@@ -223,6 +223,7 @@ export default function Header() {
               <img
                 src={`https://bunnies.jakeo.dev/images/${imgSrc}.png`}
                 className="w-[4.5rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                alt="Bunny icon"
               />
             </button>
             <button
@@ -267,20 +268,29 @@ export default function Header() {
                 target="_blank"
                 className="hover:text-blue-500 transition-all flex text-xl text-gray-500 hover:scale-110 active:scale-100"
               >
-                <FontAwesomeIcon icon={faEnvelope} aria-label="Email" />
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  aria-label="Send an email to hi@jakeo.dev"
+                />
               </a>
               <a
                 href="https://github.com/jakeo-dev"
                 target="_blank"
                 className="hover:text-[#333333] transition-all flex text-xl text-gray-500 hover:scale-110 active:scale-100"
               >
-                <FontAwesomeIcon icon={faGithub} aria-label="GitHub" />
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  aria-label="Visit jakeo-dev on GitHub"
+                />
               </a>
               <button
                 onClick={() => setOpen(true)}
                 className="hover:text-[#5865f2] transition-all flex text-xl text-gray-500 hover:scale-110 active:scale-100"
               >
-                <FontAwesomeIcon icon={faDiscord} aria-label="Discord" />
+                <FontAwesomeIcon
+                  icon={faDiscord}
+                  aria-label="Open Discord modal"
+                />
               </button>
             </div>
           </div>

@@ -74,7 +74,7 @@ export default function Project(props: {
               <FontAwesomeIcon
                 icon={faCalendarDay}
                 className="mr-1.5"
-                aria-label="Initial release"
+                aria-label="Initially released"
               />
               {props.releaseDate}
             </h2>
@@ -141,7 +141,7 @@ export default function Project(props: {
               <FontAwesomeIcon
                 icon={faCalendarDay}
                 className="mr-1.5"
-                aria-label="Initial release"
+                aria-label="Initially released"
               />
               {props.releaseDate}
             </h2>

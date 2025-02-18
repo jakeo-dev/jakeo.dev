@@ -23,6 +23,7 @@ export default function Button(props: {
         <FontAwesomeIcon
           icon={faArrowUpRightFromSquare}
           className="text-sm ml-1.5"
+          aria-hidden
         />
       </div>
     </a>

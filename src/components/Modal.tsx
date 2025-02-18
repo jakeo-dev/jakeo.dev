@@ -15,16 +15,14 @@ export default function Modal(props: {
         props.className
       }`}
     >
-      <div
-        className="relative bg-gray-200 rounded-lg w-fit shadow-sm px-10 py-7"
-      >
+      <div className="relative bg-gray-200 rounded-lg w-fit shadow-sm px-10 py-7">
         <button
           className="absolute top-4 right-5 text-base hover:text-gray-500 transition"
           onClick={() => {
             props.onClose(); // close modal
           }}
         >
-          <FontAwesomeIcon icon={faXmark} aria-label="Close" />
+          <FontAwesomeIcon icon={faXmark} aria-label="Close modal" />
         </button>
         {props.children}
       </div>

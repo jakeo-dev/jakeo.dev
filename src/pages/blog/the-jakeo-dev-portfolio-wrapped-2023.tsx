@@ -39,11 +39,19 @@ export default function Post2() {
 
       <div className="postDatesDiv">
         <h2>
-          <FontAwesomeIcon icon={faCalendarDay} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faCalendarDay}
+            className="mr-1.5"
+            aria-hidden
+          />
           Posted December 16, 2023
         </h2>
         <h2>
-          <FontAwesomeIcon icon={faRotateRight} className="mr-1.5" />
+          <FontAwesomeIcon
+            icon={faRotateRight}
+            className="mr-1.5"
+            aria-hidden
+          />
           Edited April 14, 2024
         </h2>
       </div>
@@ -51,7 +59,7 @@ export default function Post2() {
       <div className="postThumbImgDiv mt-6">
         <Image
           src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
-          alt="Screenshots from the websites of the JakeO.dev portfolio wrapped in a bunny"
+          alt="Screenshots from the websites of the JakeO.dev portfolio encapsulated in a bunny"
           className="postThumbImg"
           placeholder="blur"
         />
@@ -117,7 +125,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-early-jan-2023.png")}
-              alt="A screenshot of Plannter in early January 2023"
+              alt={`Screenshot of Plannter in early January 2023; there are two sections titled "4-year plan" and "Extracurriculars;" "4-year plan" is selected and shows a list of courses organized by grade level`}
               className="postImg"
               placeholder="blur"
             />
@@ -132,7 +140,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-jan-2023.png")}
-              alt="A screenshot of Plannter in January 2023"
+              alt={`Screenshot of Plannter in January 2023; the header takes up the width of the screen; there are three sections now in the sidebar titled "4-year plan," "Extracurriculars," and "Testing;" Grade level percent difficulty is shown above each grade level`}
               className="postImg"
               placeholder="blur"
             />
@@ -146,7 +154,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-feb-2023.png")}
-              alt="A screenshot of Plannter in February 2023"
+              alt="Screenshot of Plannter in February 2023; it is in dark mode and letter grades are shown next to each course"
               className="postImg"
               placeholder="blur"
             />
@@ -161,7 +169,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-jul-2023.png")}
-              alt="A screenshot of Plannter in July 2023"
+              alt="Screenshot of Plannter in July 2023; GPAs are shown for each grade level and cumulative GPAs are shown on the sidebar"
               className="postImg"
               placeholder="blur"
             />
@@ -176,7 +184,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-aug-2023.png")}
-              alt="A screenshot of Plannter in August 2023"
+              alt={`Screenshot of Plannter in August 2023; it is in light mode and there is another section titled "Essays;" cumulative course difficulty and activity rigor calculations are shown on the sidebar`}
               className="postImg"
               placeholder="blur"
             />
@@ -197,7 +205,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-feb-2023.png")}
-              alt="A screenshot of Cifra in February 2023"
+              alt={`Screenshot of Cifra in February 2023; a simple layout with only a title, a text box to input a phone number, a button titled "Generate," and generated vanity numbers`}
               className="postImg"
               placeholder="blur"
             />
@@ -211,7 +219,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-mar-2023.png")}
-              alt="A screenshot of Cifra in March 2023"
+              alt="Screenshot of Cifra in March 2023; there is a list of saved vanity numbers in top right corner"
               className="postImg"
               placeholder="blur"
             />
@@ -228,7 +236,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-nov-2023.png")}
-              alt="A screenshot of Cifra in July 2023"
+              alt={`Screenshot of Cifra in July 2023; the website is titled "Cifra;" generated vanity numbers are split into three columns; saved numbers are called starred numbers`}
               className="postImg"
               placeholder="blur"
             />
@@ -248,7 +256,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-jan-2023.png")}
-              alt="A screenshot of Yearn in January 2023"
+              alt="Screenshot of Yearn in January 2023; there is a list of products with prices and attributes for each one; there is a text box to add a new gift"
               className="postImg"
               placeholder="blur"
             />
@@ -259,7 +267,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-feb-2023.png")}
-              alt="A screenshot of Yearn in February 2023"
+              alt="Screenshot of Yearn in February 2023; buttons with icons are dark gray instead of black"
               className="postImg"
               placeholder="blur"
             />
@@ -274,7 +282,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-nov-2023.png")}
-              alt="A screenshot of Yearn in November 2023"
+              alt="Screenshot of Yearn in November 2023; each item is colored green or purple; the input box is an oval; there are only edit and delete buttons for each item"
               className="postImg"
               placeholder="blur"
             />
@@ -294,7 +302,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/tree-jan-2023.png")}
-              alt="A screenshot of Decorate a Tree in January 2023"
+              alt="Screenshot of Decorate a Tree in January 2023; there is a black background and a white tree with various ornaments, candy canes, lights, presents, and a bow; the yellow bow is selected on the sidebar"
               className="postImg"
               placeholder="blur"
             />
@@ -312,7 +320,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/tree-dec-2023.png")}
-              alt="A screenshot of Decorate a Tree in Deceember 2023"
+              alt="Screenshot of Decorate a Tree in December 2023; there is a white background and a green tree with various ornaments, candy canes, lights, presents, and a bow; the red bow is selected on the left sidebar and a green tree selected on the right sidebar"
               className="postImg"
               placeholder="blur"
             />
@@ -325,7 +333,7 @@ export default function Post2() {
             <div className="postImgDiv mt-0">
               <Image
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-yellow-old.png")}
-                alt="Old yellow ornament"
+                alt="A yellow ornament of a star with eyes"
                 className="postImg max-w-[8rem]"
                 placeholder="blur"
               />
@@ -334,7 +342,7 @@ export default function Post2() {
             <div className="postImgDiv mt-0">
               <Image
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-yellow-new.png")}
-                alt="New yellow ornament"
+                alt="A yellow ornament of a star"
                 className="postImg max-w-[8rem]"
                 placeholder="blur"
               />
@@ -345,7 +353,7 @@ export default function Post2() {
             <div className="postImgDiv mt-0">
               <Image
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-green-old.png")}
-                alt="Old green ornament"
+                alt="A green ornament of a Christmas tree"
                 className="postImg max-w-[8rem]"
                 placeholder="blur"
               />
@@ -354,7 +362,7 @@ export default function Post2() {
             <div className="postImgDiv mt-0">
               <Image
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-green-new.png")}
-                alt="New green ornament"
+                alt="A green ornament of an abstract design in the shape of an X"
                 className="postImg max-w-[8rem]"
                 placeholder="blur"
               />
@@ -365,7 +373,7 @@ export default function Post2() {
             <div className="postImgDiv mt-0">
               <Image
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-cyan-old.png")}
-                alt="Old cyan ornament"
+                alt="A cyan ornament of two candy canes"
                 className="postImg max-w-[8rem]"
                 placeholder="blur"
               />
@@ -374,7 +382,7 @@ export default function Post2() {
             <div className="postImgDiv mt-0">
               <Image
                 src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-cyan-new.png")}
-                alt="New cyan ornament"
+                alt="A cyan ornament of an abstract design"
                 className="postImg max-w-[8rem]"
                 placeholder="blur"
               />
@@ -397,7 +405,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-jan-2023.png")}
-              alt="A screenshot of JakeO.dev in January 2023"
+              alt="Screenshot of JakeO.dev in January 2023; there is a header with a bunny icon, a title, and social media buttons; under is a long About section and a list of websites"
               className="postImg"
               placeholder="blur"
             />
@@ -416,7 +424,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-jun-2023.png")}
-              alt="A screenshot of JakeO.dev in June 2023"
+              alt="Screenshot of JakeO.dev in June 2023; the header is an oval and the social media buttons are all gray; the About section is short and the list of projects is separated into three columns"
               className="postImg"
               placeholder="blur"
             />
@@ -435,7 +443,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-sep-2023.png")}
-              alt="A screenshot of JakeO.dev in September 2023"
+              alt={`Screenshot of JakeO.dev in September 2023; the page is in light mode and is scrolled down; there is a footer with social media buttons; the header includes a navigation bar; there is a "Videos" section and a "Posts" section`}
               className="postImg"
               placeholder="blur"
             />
@@ -453,7 +461,7 @@ export default function Post2() {
           <div className="postImgDiv">
             <Image
               src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-oct-2023.png")}
-              alt="A screenshot of JakeO.dev in October 2023"
+              alt="Screenshot of JakeO.dev in October 2023; the header is flush with the rest of the page and is centered; the social media buttons are in their own section"
               className="postImg"
               placeholder="blur"
             />
@@ -461,7 +469,11 @@ export default function Post2() {
 
           <div className="text-left mt-16">
             <Link href="/blog" className="block text-xl link">
-              <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+              <FontAwesomeIcon
+                icon={faArrowLeft}
+                className="mr-2"
+                aria-hidden
+              />
               Read more posts
             </Link>
           </div>

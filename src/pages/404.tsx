@@ -18,7 +18,7 @@ export default function Home() {
       <h2 className="sub1title mt-0">that page doesn't exist...</h2>
 
       <Link href="/" className="sub1title text-3xl block link mt-0">
-        <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+        <FontAwesomeIcon icon={faArrowLeft} className="mr-2" aria-hidden />
         go back home
       </Link>
     </>
