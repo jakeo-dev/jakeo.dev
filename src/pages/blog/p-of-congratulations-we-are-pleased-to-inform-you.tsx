@@ -147,7 +147,7 @@ export default function Post3() {
             <li>Reach: 0 to 34.9% → 17.5%</li>
           </ul>
           <Callout>
-            {`It's important to note that these percentages are based absolutely
+            {`It's important to note that these percentages are based on absolutely
             nothing. Scroll down to the `}
             <a href="#disclaimer" className="link">
               Disclaimer
