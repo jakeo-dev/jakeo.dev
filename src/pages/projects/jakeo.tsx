@@ -41,6 +41,10 @@ export default function JakeO() {
 
       <div className="postDatesDiv">
         <h2>
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
+          Made with Next.js
+        </h2>
+        <h2>
           <FontAwesomeIcon
             icon={faCalendarDay}
             className="mr-1.5"
@@ -55,10 +59,6 @@ export default function JakeO() {
             aria-hidden
           />
           Updated February 2025
-        </h2>
-        <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
-          Made with Next.js
         </h2>
       </div>
 

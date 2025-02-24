@@ -37,10 +37,14 @@ export default function Pairckle() {
       </div>
 
       <p className="sub3title pb-0 mt-0">
-        Easily rank your favorite things through simple pairwise comparisons.
+        Easily rank your favorite things with pairwise comparisons.
       </p>
 
       <div className="postDatesDiv">
+        <h2>
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
+          Made with Next.js
+        </h2>
         <h2>
           <FontAwesomeIcon
             icon={faCalendarDay}
@@ -57,24 +61,15 @@ export default function Pairckle() {
           />
           Updated February 2025
         </h2>
-        <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
-          Made with Next.js
-        </h2>
       </div>
 
       <div className="container postImgDiv mx-auto mt-6">
         <ImageCarousel
-          images={[
-            "/images/pairckle-ss-1.png",
-            "/images/pairckle-ss-2.png",
-            "/images/pairckle-ss-3.png",
-          ]}
-          imagePosition="object-center"
+          images={["/images/pairckle-ss-1.png", "/images/pairckle-ss-2.png"]}
+          imagePosition="object-top"
           alts={[
             'Screenshot of Pairckle showing two options to choose from: "Hamlet III" and "Just Like That"',
-            "Screenshot of Pairckle showing the results of a ranking of unreleased songs",
-            'Screenshot of Pairckle showing three saved rankings, titled "Best planets," "Best colors," and "Favorite unreleased songs"',
+            'Screenshot of Pairckle showing three saved rankings, titled "Favorite unreleased songs," "Top works from Leo," and "Best clouds"',
           ]}
         />
       </div>
@@ -92,19 +87,19 @@ export default function Pairckle() {
       </div>
 
       <p className="text">
-        Pairckle is a website that allows you to easily create a ranking through
+        Pairckle is a website that allows you to easily create a ranking with
         pairwise comparisons. The first version was released in January 2025,
-        built with Next.js.
+        built using Next.js.
       </p>
       <p className="text">
-        The website is similar to other sites, like tier lists, that are used to
-        rank different cultural elements. I found that tier lists were not
-        definitive enough of a ranking, and it was difficult to compare one
+        The website is similar to other sites, like tier list makers, that are
+        used to rank different cultural elements. I found that tier lists were
+        not definitive enough of a ranking, and it was difficult to compare one
         element to every other element that was already ranked, so using
-        pairwise comparisons seemed to be the easiest option to turn to.
-        Pairckle shows two random elements from your input, and after picking
-        which one you prefer a certain number of times, it creates the ultimate
-        ranking.
+        pairwise comparisons seemed to be the easiest and most accurate method
+        to turn to. Pairckle shows two random elements from your input, and
+        after picking which one you prefer a certain number of times, it creates
+        the ultimate ranking.
       </p>
     </>
   );

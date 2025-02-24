@@ -44,6 +44,10 @@ export default function Cifra() {
 
       <div className="postDatesDiv">
         <h2>
+          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
+          Made with JavaScript
+        </h2>
+        <h2>
           <FontAwesomeIcon
             icon={faCalendarDay}
             className="mr-1.5"
@@ -58,10 +62,6 @@ export default function Cifra() {
             aria-hidden
           />
           Updated June 2024
-        </h2>
-        <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
-          Made with JavaScript
         </h2>
       </div>
 

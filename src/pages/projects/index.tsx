@@ -62,7 +62,7 @@ export default function Projects() {
 
           <Project
             name="Pairckle"
-            desc="Easily rank your favorite things through simple pairwise comparisons."
+            desc="Easily rank your favorite things with pairwise comparisons."
             releaseDate=""
             updateDate="Feb 2025"
             madeWith="Next.js"
