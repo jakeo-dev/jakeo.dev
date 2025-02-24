@@ -35,6 +35,19 @@ export default function Projects() {
           />
 
           <Project
+            name="Pairckle"
+            desc="Easily rank your favorite things with pairwise comparisons."
+            releaseDate=""
+            updateDate="Feb 2025"
+            madeWith="Next.js"
+            logo="https://pairckle.jakeo.dev/pairckle-icon.png"
+            showLogo={true}
+            type={0}
+            colors="hover:border-orange-600"
+            link="https://pairckle.jakeo.dev"
+          />
+
+          <Project
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate=""
@@ -58,19 +71,6 @@ export default function Projects() {
             type={0}
             colors="hover:border-blue-600"
             link="https://linked.jakeo.dev"
-          />
-
-          <Project
-            name="Pairckle"
-            desc="Easily rank your favorite things with pairwise comparisons."
-            releaseDate=""
-            updateDate="Feb 2025"
-            madeWith="Next.js"
-            logo="https://pairckle.jakeo.dev/pairckle-icon.png"
-            showLogo={true}
-            type={0}
-            colors="hover:border-orange-600"
-            link="https://pairckle.jakeo.dev"
           />
 
           <Project

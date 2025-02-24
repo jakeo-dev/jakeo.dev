@@ -48,16 +48,16 @@ export default function Home() {
           />
 
           <Project
-            name="Cifra"
-            desc="Generate vanity numbers from your own phone number to make it unforgettable."
+            name="Pairckle"
+            desc="Easily rank your favorite things with pairwise comparisons."
             releaseDate=""
             updateDate=""
             madeWith=""
-            logo="https://cifra.jakeo.dev/cifra-logo.png"
+            logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo={true}
             type={0}
-            colors="hover:border-yellow-600"
-            link="https://cifra.jakeo.dev"
+            colors="hover:border-orange-600"
+            link="https://pairckle.jakeo.dev"
           />
         </div>
       </div>
