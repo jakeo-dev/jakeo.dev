@@ -61,17 +61,22 @@ export default function Cifra() {
             className="mr-1.5"
             aria-hidden
           />
-          Updated June 2024
+          Updated March 2025
         </h2>
       </div>
 
       <div className="container postImgDiv mx-auto mt-6">
         <ImageCarousel
-          images={["/images/cifra-ss-1.png", "/images/cifra-ss-2.png"]}
+          images={[
+            "/images/cifra-ss-1.png",
+            "/images/cifra-ss-2.png",
+            "/images/cifra-ss-3.png",
+          ]}
           imagePosition="object-top"
           alts={[
-            "Screenshot of Cifra showing the generation of vanity numbers",
-            "Screenshot of Cifra showing starred vanity numbers",
+            "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+            "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+            "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
           ]}
         />
       </div>
