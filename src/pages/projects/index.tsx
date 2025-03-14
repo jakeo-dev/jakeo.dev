@@ -25,7 +25,7 @@ export default function Projects() {
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
-            updateDate="Sep 2024"
+            updateDate="September 2024"
             madeWith="Next.js"
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
@@ -38,7 +38,7 @@ export default function Projects() {
             name="Pairckle"
             desc="Easily rank your favorite things with pairwise comparisons."
             releaseDate=""
-            updateDate="Feb 2025"
+            updateDate="February 2025"
             madeWith="Next.js"
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo={true}
@@ -51,7 +51,7 @@ export default function Projects() {
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate=""
-            updateDate="Mar 2025"
+            updateDate="March 2025"
             madeWith="JavaScript"
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo={true}
@@ -64,7 +64,7 @@ export default function Projects() {
             name="Linked"
             desc="A fun and simple word puzzle game to test your brain."
             releaseDate=""
-            updateDate="Jul 2024"
+            updateDate="July 2024"
             madeWith="Next.js, React Native"
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
             showLogo={true}
@@ -81,7 +81,7 @@ export default function Projects() {
             original files created (html/css/js): may 28 2021
             first uploaded to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
-            updateDate="Mar 2025"
+            updateDate="March 2025"
             madeWith="Next.js"
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo={true}

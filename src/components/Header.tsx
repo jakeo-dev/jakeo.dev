@@ -116,8 +116,8 @@ export default function Header() {
             <button
               className={imgVis}
               onClick={() => {
-                if (currentMonth == 2 && currentDay >= 12 && currentDay <= 18) {
-                  // st patricks day (march 12 to 18)
+                if (currentMonth == 2 && currentDay >= 16 && currentDay <= 18) {
+                  // st patricks day (march 16 to 18)
                   let oldImage = imgSrc;
                   stPatricksDayBunnies.splice(
                     stPatricksDayBunnies.indexOf(oldImage),
@@ -131,10 +131,10 @@ export default function Header() {
                   stPatricksDayBunnies.push(oldImage);
                 } else if (
                   currentMonth == 3 &&
-                  currentDay >= 17 &&
+                  currentDay >= 21 &&
                   currentDay <= 23
                 ) {
-                  // earth day (april 17 to 23)
+                  // earth day (april 21 to 23)
                   let oldImage = imgSrc;
                   earthDayBunnies.splice(earthDayBunnies.indexOf(oldImage), 1);
                   setImgSrc(
@@ -143,8 +143,12 @@ export default function Header() {
                     ]
                   );
                   earthDayBunnies.push(oldImage);
-                } else if (currentMonth == 5 && currentDay <= 5) {
-                  // 4th of july (july 1 to 5)
+                } else if (
+                  currentMonth == 5 &&
+                  currentDay >= 3 &&
+                  currentDay <= 5
+                ) {
+                  // 4th of july (july 3 to 5)
                   let oldImage = imgSrc;
                   americaBunnies.splice(americaBunnies.indexOf(oldImage), 1);
                   setImgSrc(
@@ -326,6 +330,16 @@ export default function Header() {
             } text rounded-md px-2 transition mr-1.5 mb-0`}
           >
             <span>posts</span>
+          </Link>
+          <Link
+            href="/more"
+            className={`${
+              pathname.startsWith("/more")
+                ? "text-gray-100 bg-sky-600"
+                : "hover:bg-gray-200 active:bg-gray-300"
+            } text rounded-md px-2 transition mr-1.5 mb-0`}
+          >
+            <span>more</span>
           </Link>
         </div>
       </header>
