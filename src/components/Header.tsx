@@ -331,7 +331,7 @@ export default function Header() {
           >
             <span>posts</span>
           </Link>
-          <Link
+          {/* <Link
             href="/more"
             className={`${
               pathname.startsWith("/more")
@@ -340,7 +340,7 @@ export default function Header() {
             } text rounded-md px-2 transition mr-1.5 mb-0`}
           >
             <span>more</span>
-          </Link>
+          </Link> */}
         </div>
       </header>
     </>
