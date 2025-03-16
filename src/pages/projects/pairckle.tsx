@@ -59,7 +59,7 @@ export default function Pairckle() {
             className="mr-1.5"
             aria-hidden
           />
-          Updated February 2025
+          Updated March 2025
         </h2>
       </div>
 
