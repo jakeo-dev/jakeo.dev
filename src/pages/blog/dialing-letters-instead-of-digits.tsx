@@ -1,4 +1,5 @@
 import CommonHead from "@/components/CommonHead";
+import Contents from "@/components/Contents";
 import CodeBlock from "@/components/CodeBlock";
 import Image from "next/image";
 import Link from "next/link";
@@ -64,33 +65,14 @@ export default function Post4() {
       </div>
 
       <div className="lg:flex lg:flex-row-reverse">
-        <div className="lg:block flex-[0.3] xl:flex-[0] xl:w-0 lg:sticky top-6 self-start">
-          <p className="lg:hidden block sub2title mb-0">Contents</p>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:bg-gray-200/70 lg:rounded-lg lg:p-5 lg:ml-10 mb-16 lg:mt-6 lg:-mr-10 xl:-mr-64">
-            <p className="hidden lg:block sub2title mt-0 pt-0">Contents</p>
-            <a
-              href="#generation-preparation"
-              className="text sectionLink block"
-            >
-              Generation Preparation
-            </a>
-            <a
-              href="#match-and-form"
-              className="text sectionLink block lg:mt-4"
-            >
-              Match and Form
-            </a>
-            <a
-              href="#reveal-the-numbers"
-              className="text sectionLink block lg:mt-4"
-            >
-              Reveal the Numbers
-            </a>
-            <a href="#github" className="text sectionLink block lg:mt-4">
-              GitHub
-            </a>
-          </div>
-        </div>
+        <Contents
+          subtitles={[
+            "Generation Preparation",
+            "Match and Form",
+            "Reveal the Numbers",
+            "GitHub",
+          ]}
+        />
 
         <div className="flex-1">
           <p className="text">

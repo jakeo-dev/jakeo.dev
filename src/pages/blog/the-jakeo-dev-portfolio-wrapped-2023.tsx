@@ -1,4 +1,5 @@
 import CommonHead from "@/components/CommonHead";
+import Contents from "@/components/Contents";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -66,30 +67,15 @@ export default function Post2() {
       </div>
 
       <div className="lg:flex lg:flex-row-reverse">
-        <div className="lg:block flex-[0.3] xl:flex-[0] xl:w-0 lg:sticky top-6 self-start">
-          <p className="lg:hidden block sub2title mb-0">Contents</p>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:bg-gray-200/70 lg:rounded-lg lg:p-5 lg:ml-10 mb-16 lg:mt-6 lg:-mr-10 xl:-mr-64">
-            <p className="hidden lg:block sub2title mt-0 pt-0">Contents</p>
-            <a href="#plannter" className="text sectionLink block">
-              Plannter
-            </a>
-            <a href="#cifra" className="text sectionLink block lg:mt-4">
-              Cifra
-            </a>
-            <a href="#yearn" className="text sectionLink block lg:mt-4">
-              Yearn
-            </a>
-            <a
-              href="#decorate-a-tree"
-              className="text sectionLink block lg:mt-4"
-            >
-              Decorate a Tree
-            </a>
-            <a href="#jakeo-dev" className="text sectionLink block lg:mt-4">
-              JakeO.dev
-            </a>
-          </div>
-        </div>
+        <Contents
+          subtitles={[
+            "Plannter",
+            "Cifra",
+            "Yearn",
+            "Decorate a Tree",
+            "JakeO.dev",
+          ]}
+        />
 
         <div className="flex-1">
           <p className="text">
