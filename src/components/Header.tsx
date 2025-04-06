@@ -110,8 +110,8 @@ export default function Header() {
       </Modal>
 
       {/* header */}
-      <header className="md:flex items-center align-middle text-center my-14 md:my-16 -translate-x-2 md:-translate-x-4">
-        <div className="flex items-center justify-center">
+      <header className="md:flex items-center align-middle text-center my-14 md:my-16">
+        <div className="flex items-center justify-center -translate-x-2 md:-translate-x-4">
           <div>
             <button
               className={imgVis}
@@ -327,7 +327,7 @@ export default function Header() {
               pathname.startsWith("/blog")
                 ? "text-gray-100 bg-sky-600"
                 : "hover:bg-gray-200 active:bg-gray-300"
-            } text rounded-md px-2 transition mr-1.5 mb-0`}
+            } text rounded-md px-2 transition mb-0`}
           >
             <span>posts</span>
           </Link>

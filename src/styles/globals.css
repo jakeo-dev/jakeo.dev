@@ -39,6 +39,10 @@
     @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition;
   }
 
+  .sectionLink {
+    @apply leading-6 hover:text-sky-600 active:text-sky-700 transition;
+  }
+
   .codeBlockDiv {
     @apply mt-3 mb-6;
   }

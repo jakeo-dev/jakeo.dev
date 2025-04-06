@@ -38,7 +38,7 @@ export default function Projects() {
             name="Pairckle"
             desc="Easily rank your favorite things with pairwise comparisons."
             releaseDate=""
-            updateDate="February 2025"
+            updateDate="March 2025"
             madeWith="Next.js"
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo={true}

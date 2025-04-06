@@ -66,31 +66,31 @@ export default function Post1() {
 
       <div className="lg:flex lg:flex-row-reverse">
         <div className="lg:block flex-[0.3] xl:flex-[0] xl:w-0 lg:sticky top-6 self-start">
-          <p className="lg:hidden block sub2title mb-0">Sections</p>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:bg-gray-200/70 lg:rounded-lg lg:p-4 lg:ml-10 mb-16 lg:mt-6 lg:-mr-10 xl:-mr-64">
-            <p className="hidden lg:block sub2title mt-0 pt-0">Sections</p>
-            <a href="#2002" className="text link block">
+          <p className="lg:hidden block sub2title mb-0">Contents</p>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:bg-gray-200/70 lg:rounded-lg lg:p-5 lg:ml-10 mb-16 lg:mt-6 lg:-mr-10 xl:-mr-64">
+            <p className="hidden lg:block sub2title mt-0 pt-0">Contents</p>
+            <a href="#2002" className="text sectionLink block">
               Original 2002 Curriculum
             </a>
-            <a href="#2012" className="text link block lg:mt-5">
+            <a href="#2012" className="text sectionLink block lg:mt-4">
               2012 Changes
             </a>
-            <a href="#2017" className="text link block lg:mt-5">
+            <a href="#2017" className="text sectionLink block lg:mt-4">
               2017 Changes
             </a>
-            <a href="#2018" className="text link block lg:mt-5">
+            <a href="#2018" className="text sectionLink block lg:mt-4">
               2018 Changes
             </a>
-            <a href="#2020" className="text link block lg:mt-5">
+            <a href="#2020" className="text sectionLink block lg:mt-4">
               2020 Changes
             </a>
-            <a href="#2024" className="text link block lg:mt-5">
+            <a href="#2024" className="text sectionLink block lg:mt-4">
               2024 Changes
             </a>
-            <a href="#data" className="text link block lg:mt-5">
+            <a href="#data" className="text sectionLink block lg:mt-4">
               Exam Data
             </a>
-            <a href="#references" className="text link block lg:mt-5">
+            <a href="#references" className="text sectionLink block lg:mt-4">
               References
             </a>
           </div>

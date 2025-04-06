@@ -72,37 +72,46 @@ export default function Post3() {
 
       <div className="lg:flex lg:flex-row-reverse">
         <div className="lg:block flex-[0.3] xl:flex-[0] xl:w-0 lg:sticky top-6 self-start">
-          <p className="lg:hidden block sub2title mb-0">Sections</p>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:bg-gray-200/70 lg:rounded-lg lg:p-4 lg:ml-10 mb-16 lg:mt-6 lg:-mr-10 xl:-mr-64">
-            <p className="hidden lg:block sub2title mt-0 pt-0">Sections</p>
-            <a href="#background" className="text link block">
+          <p className="lg:hidden block sub2title mb-0">Contents</p>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-6 gap-y-2 lg:block lg:bg-gray-200/70 lg:rounded-lg lg:p-5 lg:ml-10 mb-16 lg:mt-6 lg:-mr-10 xl:-mr-64">
+            <p className="hidden lg:block sub2title mt-0 pt-0">Contents</p>
+            <a href="#background" className="text sectionLink block">
               Background
             </a>
-            <a href="#disclaimer" className="text link block lg:mt-5">
+            <a href="#disclaimer" className="text sectionLink block lg:mt-4">
               Disclaimer
             </a>
-            <a href="#a-mix-of-colleges" className="text link block lg:mt-5">
+            <a
+              href="#a-mix-of-colleges"
+              className="text sectionLink block lg:mt-4"
+            >
               A Mix of Colleges
             </a>
-            <a href="#only-reaches" className="text link block lg:mt-5">
+            <a href="#only-reaches" className="text sectionLink block lg:mt-4">
               Only Reaches
             </a>
-            <a href="#only-ivy-league" className="text link block lg:mt-5">
+            <a
+              href="#only-ivy-league"
+              className="text sectionLink block lg:mt-4"
+            >
               Only Ivy League
             </a>
-            <a href="#only-ucs" className="text link block lg:mt-5">
+            <a href="#only-ucs" className="text sectionLink block lg:mt-4">
               Only UCs
             </a>
-            <a href="#only-safeties" className="text link block lg:mt-5">
+            <a href="#only-safeties" className="text sectionLink block lg:mt-4">
               Only Safeties
             </a>
-            <a href="#only-targets" className="text link block lg:mt-5">
+            <a href="#only-targets" className="text sectionLink block lg:mt-4">
               Only Targets
             </a>
-            {/* <a href="#interesting-graphs" className="text link block lg:mt-5">
+            {/* <a href="#interesting-graphs" className="text sectionLink block lg:mt-4">
               Interesting Graphs
             </a> */}
-            <a href="#personalized-chances" className="text link block lg:mt-5">
+            <a
+              href="#personalized-chances"
+              className="text sectionLink block lg:mt-4"
+            >
               Personalized Chances
             </a>
           </div>
