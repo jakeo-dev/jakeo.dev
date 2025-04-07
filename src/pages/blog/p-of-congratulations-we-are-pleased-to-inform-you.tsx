@@ -664,7 +664,10 @@ export default function Post3() {
           </p>
 
           <div className="text-left mt-16">
-            <Link href="/blog" className="block text-xl link">
+            <Link
+              href="/blog"
+              className="block text-xl internalLink no-underline"
+            >
               <FontAwesomeIcon
                 icon={faArrowLeft}
                 className="mr-2"

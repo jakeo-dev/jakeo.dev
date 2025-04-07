@@ -37,7 +37,7 @@ export default function Cifra() {
         <h2 className="inline">Cifra</h2>
       </div>
 
-      <p className="sub3title pb-0 mt-0">
+      <p className="sub1titleSubtext mt-0">
         Generate vanity numbers from your own phone number to make it
         unforgettable.
       </p>
@@ -107,7 +107,10 @@ export default function Cifra() {
         check if there are any matches with the inputted phone number, replaces
         the matched digits with the corresponding word, and finally displays
         each vanity number. For a more in-depth explanation, read my blog post:{" "}
-        <Link href="/blog/dialing-letters-instead-of-digits" className="link">
+        <Link
+          href="/blog/dialing-letters-instead-of-digits"
+          className="internalLink"
+        >
           Dialing Letter Instead of Digits
         </Link>
         .

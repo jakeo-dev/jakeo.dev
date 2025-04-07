@@ -36,7 +36,7 @@ export default function Pairckle() {
         <h2 className="inline">Pairckle</h2>
       </div>
 
-      <p className="sub3title pb-0 mt-0">
+      <p className="sub1titleSubtext mt-0">
         Easily rank your favorite things with pairwise comparisons.
       </p>
 

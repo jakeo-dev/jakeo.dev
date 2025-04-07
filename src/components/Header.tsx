@@ -270,7 +270,7 @@ export default function Header() {
               <a
                 href="mailto:hi@jakeo.dev"
                 target="_blank"
-                className="hover:text-blue-500 transition-all flex text-xl text-gray-500 hover:scale-110 active:scale-100"
+                className="hover:text-blue-500 transition-all flex text-lg text-gray-500 hover:scale-110 active:scale-100"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -280,7 +280,7 @@ export default function Header() {
               <a
                 href="https://github.com/jakeo-dev"
                 target="_blank"
-                className="hover:text-[#333333] transition-all flex text-xl text-gray-500 hover:scale-110 active:scale-100"
+                className="hover:text-[#333333] transition-all flex text-lg text-gray-500 hover:scale-110 active:scale-100"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -289,7 +289,7 @@ export default function Header() {
               </a>
               <button
                 onClick={() => setOpen(true)}
-                className="hover:text-[#5865f2] transition-all flex text-xl text-gray-500 hover:scale-110 active:scale-100"
+                className="hover:text-[#5865f2] transition-all flex text-lg text-gray-500 hover:scale-110 active:scale-100"
               >
                 <FontAwesomeIcon
                   icon={faDiscord}
@@ -306,7 +306,7 @@ export default function Header() {
             className={`${
               pathname == "/"
                 ? "text-gray-100 bg-sky-600"
-                : "hover:bg-gray-200 active:bg-gray-300"
+                : "text-gray-600 hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 transition mr-1.5 mb-0`}
           >
             <span>home</span>
@@ -316,7 +316,7 @@ export default function Header() {
             className={`${
               pathname.startsWith("/projects")
                 ? "text-gray-100 bg-sky-600"
-                : "hover:bg-gray-200 active:bg-gray-300"
+                : "text-gray-600 hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 transition mr-1.5 mb-0`}
           >
             <span>projects</span>
@@ -326,7 +326,7 @@ export default function Header() {
             className={`${
               pathname.startsWith("/blog")
                 ? "text-gray-100 bg-sky-600"
-                : "hover:bg-gray-200 active:bg-gray-300"
+                : "text-gray-600 hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 transition mb-0`}
           >
             <span>posts</span>
@@ -336,7 +336,7 @@ export default function Header() {
             className={`${
               pathname.startsWith("/more")
                 ? "text-gray-100 bg-sky-600"
-                : "hover:bg-gray-200 active:bg-gray-300"
+                : "text-gray-600 hover:bg-gray-200 active:bg-gray-300"
             } text rounded-md px-2 transition mr-1.5 mb-0`}
           >
             <span>more</span>

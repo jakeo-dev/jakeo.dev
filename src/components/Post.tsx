@@ -30,7 +30,10 @@ export default function Post(props: {
       />
 
       <div className="text-left">
-        <Link className="link text-xl font-medium" href={`${props.href}`}>
+        <Link
+          className="underline decoration-4 decoration-gray-300 hover:decoration-gray-400 active:decoration-gray-500 transition text-xl font-medium"
+          href={`${props.href}`}
+        >
           {props.name}
         </Link>
       </div>

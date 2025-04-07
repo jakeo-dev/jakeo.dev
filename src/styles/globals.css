@@ -8,15 +8,19 @@
   }
 
   .sub1title {
-    @apply text-2xl text-gray-900 text-left font-semibold py-4 mt-14;
+    @apply text-2xl text-gray-900 text-left text-pretty font-semibold py-4 mt-14;
   }
 
   .sub2title {
-    @apply text-xl text-gray-900 text-left font-medium py-4 mt-8;
+    @apply text-xl text-gray-900 text-left text-pretty font-medium py-4 mt-8;
   }
 
   .sub3title {
-    @apply text-lg text-gray-900 text-left font-medium py-4 mt-4;
+    @apply text-lg text-gray-900 text-left text-pretty font-medium py-4 mt-4;
+  }
+
+  .sub1titleSubtext {
+    @apply text-gray-700 text-left text-pretty font-medium py-2 mt-4;
   }
 
   .postDatesDiv {
@@ -24,7 +28,7 @@
   }
 
   .text {
-    @apply text-base text-left text-pretty leading-7 mb-3 last:mb-0;
+    @apply text-gray-800 text-base text-left text-pretty leading-7 mb-3 last:mb-0;
   }
 
   .subtext {
@@ -39,8 +43,8 @@
     @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition;
   }
 
-  .sectionLink {
-    @apply leading-6 hover:text-sky-600 active:text-sky-700 transition;
+  .internalLink {
+    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-sky-600 active:text-sky-700 transition;
   }
 
   .codeBlockDiv {

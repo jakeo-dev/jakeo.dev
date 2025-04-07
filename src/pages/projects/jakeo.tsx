@@ -35,7 +35,7 @@ export default function JakeO() {
         <h2 className="inline">JakeO.dev</h2>
       </div>
 
-      <p className="sub3title pb-0 mt-0">
+      <p className="sub1titleSubtext mt-0">
         You're already here — check out all of my projects and blog posts.
       </p>
 

@@ -36,7 +36,7 @@ export default function Linked() {
         <h2 className="inline">Linked</h2>
       </div>
 
-      <p className="sub3title pb-0 mt-0">
+      <p className="sub1titleSubtext mt-0">
         A fun and simple word puzzle game to test your brain.
       </p>
 

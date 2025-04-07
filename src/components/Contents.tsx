@@ -11,7 +11,7 @@ export default function Contents(props: { subtitles: string[] }) {
               .replace(/\s+|\.+/g, "-")
               .replace(/[^a-zA-Z0-9-]/g, "")
               .toLowerCase()}`}
-            className="text sectionLink block lg:mb-4"
+            className="text internalLink no-underline leading-6 block lg:mb-4"
           >
             {subtitle}
           </a>
