@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarDay,
-  faRotateRight,
   faArrowUpRightFromSquare,
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
@@ -31,6 +30,10 @@ export default function Post1() {
           content="https://jakeo.dev/images/ap-world-history-a-history/thumbnail.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          name="keywords"
+          content="ap world history, world history, apwh, whap, ap, advanced placement, college board, collegeboard, apwh curriculum, apwh exam, apwh changes, apwh exam history, ap world history exam, ap world history changes, ap world history exam changes"
+        />
       </CommonHead>
 
       {/* post */}
@@ -43,16 +46,16 @@ export default function Post1() {
             className="mr-1.5"
             aria-hidden
           />
-          Posted June 13, 2023
+          June 13, 2023
         </h2>
-        <h2>
+        {/* <h2>
           <FontAwesomeIcon
             icon={faRotateRight}
             className="mr-1.5"
             aria-hidden
           />
           Edited December 6, 2023
-        </h2>
+        </h2> */}
       </div>
 
       <div className="postThumbImgDiv mt-6">
@@ -87,10 +90,13 @@ export default function Post1() {
             them easier for students. The outline and exam for the AP World
             History course have changed many times since its introduction in
             2001, but have these changes actually made the course easier for
-            students? I will explore the most notable changes that the College
-            Board has made to the AP World History curriculum over the past 20+
-            years and look at the exam data to determine how these changes have
-            affected the performance of the test-takers.
+            students?
+          </p>
+          <p className="text">
+            I'll explore the most notable changes that the College Board has
+            made to the AP World History curriculum over the past 20+ years and
+            look at the exam data to determine how these changes have affected
+            the performance of the test-takers.
           </p>
           <p className="text highlight px-3 mt-8">
             A green highlight indicates a change or addition from the previous

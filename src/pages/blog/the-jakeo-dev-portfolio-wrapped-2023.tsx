@@ -3,11 +3,7 @@ import Contents from "@/components/Contents";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faRotateRight,
-  faArrowLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDay, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Post2() {
   return (
@@ -21,7 +17,7 @@ export default function Post2() {
         />
         <meta
           property="og:description"
-          content="Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but with a focus on the thing I know best: my websites. I've constantly added, updated, and removed various features from my websites since I began this portfolio with..."
+          content="Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but instead with a focus on my websites. Since I began this portfolio with Jorch.xyz as my domain in mid-2020, I've constantly added, updated, and removed various..."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
@@ -45,16 +41,16 @@ export default function Post2() {
             className="mr-1.5"
             aria-hidden
           />
-          Posted December 16, 2023
+          December 16, 2023
         </h2>
-        <h2>
+        {/* <h2>
           <FontAwesomeIcon
             icon={faRotateRight}
             className="mr-1.5"
             aria-hidden
           />
           Edited April 14, 2024
-        </h2>
+        </h2> */}
       </div>
 
       <div className="postThumbImgDiv mt-6">
@@ -80,12 +76,11 @@ export default function Post2() {
         <div className="flex-1">
           <p className="text">
             Wraps, recaps, and replays aren't just for music streaming services.
-            I can look back on 2023 too, but with a focus on the thing I know
-            best: my websites. I've constantly added, updated, and removed
-            various features from my websites since I began this portfolio with
-            Jorch.xyz as the domain in mid-2020. I'll look back on some of the
-            biggest changes I've made to my websites throughout the last 12
-            months.
+            I can look back on 2023 too, but instead with a focus on my
+            websites. Since I began this portfolio with Jorch.xyz as my domain
+            in mid-2020, I've constantly added, updated, and removed various
+            features from my websites. I'll look back on some of the biggest
+            changes throughout the last 12 months.
           </p>
           <p className="text">
             All iterations of my websites can be seen on my{" "}

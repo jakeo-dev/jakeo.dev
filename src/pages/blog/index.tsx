@@ -21,7 +21,7 @@ export default function Blog() {
 
       <Post
         name="Dialing Letters Instead of Digits"
-        desc={`In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted phone number as fast as possible. Over the past year and a half, I've found different ways to improve the efficiency...`}
+        desc={`In February 2023, I introduced the first iteration of Cifra, my website that generates as many vanity phone numbers that match an inputted phone number as fast as possible. Over the past year and a half, I've found different ways to improve the efficiency and...`}
         releaseDate="August 18, 2024"
         updateDate=""
         fadeDesc={true}
@@ -33,7 +33,7 @@ export default function Blog() {
 
       <Post
         name={`P("Congratulations! We Are Pleased to Inform You...")`}
-        desc={`"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it's immensely more exciting. You deserve not only to be accepted into a university, but also to be simply congratulated for your efforts. To relieve some anxiety...`}
+        desc={`"Congratulations" is the greatest word to begin an email, especially one coming from a college during decision season. The letter is more than an acceptance, it's also a recognition of your efforts. To relieve some anxiety about the future, I'll offer a different...`}
         releaseDate="June 17, 2024"
         updateDate=""
         fadeDesc={true}
@@ -45,7 +45,7 @@ export default function Blog() {
 
       <Post
         name="The JakeO.dev Portfolio Wrapped 2023"
-        desc={`Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but with a focus on the thing I know best: my websites. I've constantly added, updated, and removed various features from my websites since I began this portfolio with...`}
+        desc={`Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but instead with a focus on my websites. Since I began this portfolio with Jorch.xyz as my domain in mid-2020, I've constantly added, updated, and removed various...`}
         releaseDate="December 16, 2023"
         updateDate=""
         fadeDesc={true}

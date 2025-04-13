@@ -64,7 +64,7 @@
   }
 
   .postThumbImg {
-    @apply rounded-3xl;
+    @apply rounded-xl md:rounded-3xl;
   }
 
   .sp-table {

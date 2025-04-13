@@ -4,11 +4,7 @@ import CodeBlock from "@/components/CodeBlock";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faRotateRight,
-  faArrowLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDay, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Post4() {
   return (
@@ -19,7 +15,7 @@ export default function Post4() {
         <meta property="og:title" content="Dialing Letters Instead of Digits" />
         <meta
           property="og:description"
-          content="In February 2023, I unleashed the first iteration of Cifra, my website that generates and displays as many vanity phone numbers that match an inputted phone number as fast as possible. Over the past year and a half, I've found different ways to improve the efficiency..."
+          content="In February 2023, I introduced the first iteration of Cifra, my website that generates as many vanity phone numbers that match an inputted phone number as fast as possible. Over the past year and a half, I've found different ways to improve the efficiency and..."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
@@ -31,6 +27,10 @@ export default function Post4() {
           content="https://jakeo.dev/images/dialing-letters-instead-of-digits/thumbnail.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          name="keywords"
+          content="vanity phone number, phone number, cifra, phone number, code, coding, programming"
+        />
       </CommonHead>
 
       {/* post */}
@@ -43,16 +43,16 @@ export default function Post4() {
             className="mr-1.5"
             aria-hidden
           />
-          Posted August 18, 2024
+          August 18, 2024
         </h2>
-        <h2>
+        {/* <h2>
           <FontAwesomeIcon
             icon={faRotateRight}
             className="mr-1.5"
             aria-hidden
           />
           Edited August 18, 2024
-        </h2>
+        </h2> */}
       </div>
 
       <div className="postThumbImgDiv mt-6">
@@ -76,16 +76,15 @@ export default function Post4() {
 
         <div className="flex-1">
           <p className="text">
-            In February 2023, I unleashed the first iteration of Cifra, my
-            website that generates and displays as many vanity phone numbers
-            that match an inputted phone number as fast as possible. Over the
-            past year and a half, I've found different ways to improve the
-            efficiency and design of the program. It required a good
-            understanding of how vanity phone numbers work and an ample amount
-            of time to remove the inappropriate words from the word list that I
-            found online. Even though the code may seem simple, I started with
-            an extremely slow and inefficient method before finding this much
-            faster one, which I'll explain here.
+            In February 2023, I introduced the first iteration of Cifra, my
+            website that generates as many vanity phone numbers that match an
+            inputted phone number as fast as possible. Over the past year and a
+            half, I've found different ways to improve the efficiency and design
+            of the program. It required a good understanding of how vanity phone
+            numbers work and an ample amount of time to remove the inappropriate
+            words from the word list that I found online. Even though the code
+            may seem simple, I started with an extremely slow and inefficient
+            method before finding this much faster one, which I'll explain here.
           </p>
 
           <h3 className="sub1title" id="generation-preparation">

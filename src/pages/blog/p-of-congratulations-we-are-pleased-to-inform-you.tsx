@@ -4,13 +4,7 @@ import Callout from "@/components/Callout";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faRotateRight,
-  faArrowLeft,
-  faSeedling,
-} from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faCalendarDay, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Post3() {
   return (
@@ -24,7 +18,7 @@ export default function Post3() {
         />
         <meta
           property="og:description"
-          content={`"Congratulations" is the single greatest word to begin an email. For a graduating high school student, it's immensely more exciting. You deserve not only to be accepted into a university, but also to be simply congratulated for your efforts. To relieve some anxiety...`}
+          content={`"Congratulations" is the greatest word to begin an email, especially one coming from a college during decision season. The letter is more than an acceptance, it's also a recognition of your efforts. To relieve some anxiety about the future, I'll offer a different...`}
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
@@ -36,6 +30,10 @@ export default function Post3() {
           content="https://jakeo.dev/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          name="keywords"
+          content="college, acceptance rate, high school, college acceptance, university, ivy league, uc, college chance, probability, math, statistics, reach, target, safety"
+        />
       </CommonHead>
 
       {/* post */}
@@ -50,16 +48,16 @@ export default function Post3() {
             className="mr-1.5"
             aria-hidden
           />
-          Posted June 17, 2024
+          June 17, 2024
         </h2>
-        <h2>
+        {/* <h2>
           <FontAwesomeIcon
             icon={faRotateRight}
             className="mr-1.5"
             aria-hidden
           />
           Edited February 15, 2025
-        </h2>
+        </h2> */}
       </div>
 
       <div className="postThumbImgDiv mt-6">
@@ -89,29 +87,25 @@ export default function Post3() {
 
         <div className="flex-1">
           <p className="text">
-            "Congratulations" is the single greatest word to begin an email. For
-            a graduating high school student, it's immensely more exciting. You
-            deserve not only to be accepted into a university, but also to be
-            simply congratulated for your efforts. To relieve some anxiety about
-            your future, I'll offer a different, more optimistic perspective on
-            the chances of seeing that word in an email from the colleges you
-            hope to be admitted to.
+            "Congratulations" is the greatest word to begin an email, especially one coming from a college during decision season. The letter is more than an acceptance, it's also a recognition of your efforts. To relieve some anxiety about the future, I'll offer a different, more
+            optimistic perspective on the chances of seeing that word from the
+            colleges you hope to be admitted to.
           </p>
 
           <h3 className="sub1title" id="background">
             Background
           </h3>
           <p className="text">
-            I'll let our overlord known as the College Board define{" "}
+            I'll use{" "}
             <a
               href="https://counselors.collegeboard.org/college-application/how-many"
               target="_blank"
               className="link"
             >
-              the categories
+              the College Board's categories
             </a>{" "}
-            in which I will group the types of colleges: the easily-attainable
-            "safeties," the usually-achieveable "matches/targets," and the
+            to define the types of colleges: the easily-attainable "safeties,"
+            the usually-achievable "matches/targets," and the
             you'll-never-be-accepted-no-matter-how-hard-you-try "reaches."
           </p>
           <p className="text">
@@ -154,7 +148,7 @@ export default function Post3() {
           <p className="sub2title">Using probability for college acceptances</p>
           <p className="text">
             We can use "and" probability to find the chance of being accepted
-            into multiple colleges, assuming the events are independent.
+            into multiple colleges, assuming the decisions are independent.
           </p>
           <p className="text">
             The acceptance rate of Purdue University is around 53%, New York
@@ -171,7 +165,7 @@ export default function Post3() {
           <p className="text">
             If we want to find the probability of being rejected from all three
             universities, subtract the acceptance rate from 1 to find the
-            rejection rate, then multiply them together.
+            rejection rate for each one, then multiply them together.
           </p>
           <p className="text">
             P(rejected from Purdue University AND rejected from New York
@@ -411,9 +405,9 @@ export default function Post3() {
           </h3>
           <p className="text">
             The University of California system offers nine undergraduate
-            universities at various acceptance rates. Unfortunately, the
-            binomial can't be used here either because of this. I will use the
-            acceptance rates of each school{" "}
+            universities with acceptance rates that vary considerably.
+            Unfortunately, the binomial can't be used here either because of
+            this. I will use the acceptance rates of each school{" "}
             <a
               href="https://blog.collegevine.com/uc-schools-acceptance-rates#accept"
               target="_blank"
@@ -633,21 +627,18 @@ export default function Post3() {
             Personalized Chances
           </h3>
           <p className="text">
-            Not every college has the exact acceptance rates of 17.5%, 55%, or
-            87.5%. For more personalized chances, you should use my Python
-            program. Enter the acceptance rates of each college that you hope to
-            be admitted into, and it will give you the probability of being
-            accepted into all, one, or none of the colleges.
-          </p>
-          <p className="text">
+            Not every college has acceptance rates around 17.5%, 55%, or 87.5%.
+            For more personalized chances, you should use my{" "}
             <a
               href="https://github.com/jakeo-dev/college-probabilities"
               target="_blank"
               className="link"
             >
-              <FontAwesomeIcon icon={faGithub} className="mr-1" aria-hidden />
-              College probabilities on GitHub
+              Python program (GitHub)
             </a>
+            . Enter the acceptance rates of each college that you hope to be
+            admitted into, and it will give you the probability of being
+            accepted into all, one, or none of the colleges.
           </p>
           <p className="text">
             You should also check out{" "}
@@ -656,7 +647,6 @@ export default function Post3() {
               target="_blank"
               className="link"
             >
-              <FontAwesomeIcon icon={faSeedling} className="mr-1" aria-hidden />
               Plannter
             </a>
             , my website that lets you plan courses, keep track of
