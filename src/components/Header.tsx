@@ -15,7 +15,7 @@ export default function Header() {
   const [color, setColor] = useState("#000000");
   const [svgVis, setSvgVis] = useState("hidden");
 
-  const [open, setOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const currentDate = new Date();
   const currentMonth: number = currentDate.getMonth();
@@ -98,7 +98,7 @@ export default function Header() {
   return (
     <>
       {/* discord modal */}
-      <Modal className="" open={open} onClose={() => setOpen(false)}>
+      <Modal className="" open={modalOpen} onClose={() => setModalOpen(false)}>
         <div className="flex items-center text-[#5865f2] text-3xl">
           <FontAwesomeIcon
             icon={faDiscord}
@@ -112,7 +112,7 @@ export default function Header() {
       {/* header */}
       <header className="md:flex items-center align-middle text-center my-14 md:my-16">
         <div className="flex items-center justify-center -translate-x-2 md:-translate-x-4">
-          <div>
+          <div className="-mb-2">
             <button
               className={imgVis}
               onClick={() => {
@@ -226,7 +226,7 @@ export default function Header() {
             >
               <img
                 src={`https://bunnies.jakeo.dev/images/${imgSrc}.png`}
-                className="w-[4.5rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                className="w-[4.25rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
                 alt="Bunny icon"
               />
             </button>
@@ -245,7 +245,7 @@ export default function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 300.000000 300.000000"
                 preserveAspectRatio="xMidYMid meet"
-                className="w-[4.5rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                className="w-[4.25rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
               >
                 <g
                   transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
@@ -288,7 +288,7 @@ export default function Header() {
                 />
               </a>
               <button
-                onClick={() => setOpen(true)}
+                onClick={() => setModalOpen(true)}
                 className="hover:text-[#5865f2] transition-all flex text-lg text-gray-500 hover:scale-110 active:scale-100"
               >
                 <FontAwesomeIcon
