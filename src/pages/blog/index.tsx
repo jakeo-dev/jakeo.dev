@@ -20,6 +20,18 @@ export default function Blog() {
       <h2 className="sub1title mt-0">My posts</h2>
 
       <Post
+        name="Calligraphr + FontForge: Layman's Overcomplicated Guide to Making a Good-Looking Font for Free"
+        desc={`In December 2024, I designed a typeface based on my handwriting using both Calligraphr and FontForge. Calligraphr is a great service that lets you create your own font, but it's really only useful if you upgrade to the Pro version. So instead of spending...`}
+        releaseDate="May 3, 2025"
+        updateDate=""
+        fadeDesc={true}
+        img={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/thumbnail.png")}
+        imgAlt="Different letters in different fonts kerned at different amounts"
+        showImg={false}
+        href="/blog/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free"
+      />
+
+      <Post
         name="Dialing Letters Instead of Digits"
         desc={`In February 2023, I introduced the first iteration of Cifra, my website that generates as many vanity phone numbers that match an inputted phone number as fast as possible. Over the past year and a half, I've found different ways to improve the efficiency and...`}
         releaseDate="August 18, 2024"

@@ -19,7 +19,7 @@ export default function Post(props: {
   href: string;
 }) {
   return (
-    <div className="flex flex-col mt-2 mb-6 md:mb-10">
+    <div className="flex flex-col mt-2 mb-6 md:mb-8">
       <Image
         src={props.img}
         alt={props.imgAlt}
