@@ -37,7 +37,7 @@ export default function Post3() {
       </CommonHead>
 
       {/* post */}
-      <h1 className="sub1title pb-0">
+      <h1 className="sub1title pb-0 mt-0">
         P("Congratulations! We Are Pleased to Inform You...")
       </h1>
 
@@ -87,7 +87,10 @@ export default function Post3() {
 
         <div className="flex-1">
           <p className="text">
-            "Congratulations" is the greatest word to begin an email, especially one coming from a college during decision season. The letter is more than an acceptance, it's also a recognition of your efforts. To relieve some anxiety about the future, I'll offer a different, more
+            "Congratulations" is the greatest word to begin an email, especially
+            one coming from a college during decision season. The letter is more
+            than an acceptance, it's also a recognition of your efforts. To
+            relieve some anxiety about the future, I'll offer a different, more
             optimistic perspective on the chances of seeing that word from the
             colleges you hope to be admitted to.
           </p>

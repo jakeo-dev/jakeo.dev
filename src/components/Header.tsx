@@ -110,7 +110,7 @@ export default function Header() {
       </Modal>
 
       {/* header */}
-      <header className="md:flex items-center align-middle text-center my-14 md:my-16">
+      <header className="flex items-center align-middle text-center mt-8 mb-14 md:my-16">
         <div className="flex items-center justify-center -translate-x-2 md:-translate-x-4">
           <div className="-mb-2">
             <button
@@ -226,7 +226,7 @@ export default function Header() {
             >
               <img
                 src={`https://bunnies.jakeo.dev/images/${imgSrc}.png`}
-                className="w-[4.25rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                className="w-12 md:w-[4.25rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
                 alt="Bunny icon"
               />
             </button>
@@ -245,7 +245,7 @@ export default function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 300.000000 300.000000"
                 preserveAspectRatio="xMidYMid meet"
-                className="w-[4.25rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                className="w-12 md:w-[4.25rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
               >
                 <g
                   transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
@@ -257,20 +257,21 @@ export default function Header() {
               </svg>
             </button>
           </div>
-          <div className="text-left ml-2.5">
+          <div className="text-left ml-1 md:ml-2.5">
             <Link
               href="/"
-              className="font-handwriting text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
+              className="font-handwriting text-2xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
             >
-              JakeO<span className="text-gray-500 text-3xl">.dev</span>
+              JakeO
+              <span className="text-gray-500 text-xl md:text-3xl">.dev</span>
             </Link>
 
             {/* socials */}
-            <div className="flex gap-3 mt-1.5 ml-0.5">
+            <div className="flex gap-2.5 md:gap-3 mt-0.5 md:mt-1.5 ml-0.5">
               <a
                 href="mailto:hi@jakeo.dev"
                 target="_blank"
-                className="hover:text-blue-500 transition-all flex text-lg text-gray-500 hover:scale-110 active:scale-100"
+                className="hover:text-blue-500 transition-all flex text-sm md:text-lg text-gray-500 hover:scale-110 active:scale-100"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -280,7 +281,7 @@ export default function Header() {
               <a
                 href="https://github.com/jakeo-dev"
                 target="_blank"
-                className="hover:text-[#333333] transition-all flex text-lg text-gray-500 hover:scale-110 active:scale-100"
+                className="hover:text-[#333333] transition-all flex text-sm md:text-lg text-gray-500 hover:scale-110 active:scale-100"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -289,7 +290,7 @@ export default function Header() {
               </a>
               <button
                 onClick={() => setModalOpen(true)}
-                className="hover:text-[#5865f2] transition-all flex text-lg text-gray-500 hover:scale-110 active:scale-100"
+                className="hover:text-[#5865f2] transition-all flex text-sm md:text-lg text-gray-500 hover:scale-110 active:scale-100"
               >
                 <FontAwesomeIcon
                   icon={faDiscord}
@@ -299,15 +300,15 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="border-t-2 border-dotted w-64 border-gray-300 md:border-0 mx-auto my-3"></div>
-        <div className="flex justify-center text-gray-600 ml-auto">
+        {/* <div className="border-t-2 border-dotted w-64 border-gray-300 md:border-0 mx-auto my-3"></div> */}
+        <div className="flex justify-center text-gray-600 ml-auto translate-x-2 md:translate-x-0">
           <Link
             href="/"
             className={`${
               pathname == "/"
-                ? "text-gray-100 bg-sky-600"
-                : "text-gray-600 hover:bg-gray-200 active:bg-gray-300"
-            } text rounded-md px-2 transition mr-1.5 mb-0`}
+                ? "text-sky-600 md:text-gray-100 md:bg-sky-600"
+                : "text-gray-600 hover:text-gray-700 active:text-gray-800 md:hover:bg-gray-200 md:active:bg-gray-300"
+            } text text-sm md:text-base rounded-md px-[0.3rem] md:px-2 md:py-0.5 transition md:mr-1.5 mb-0`}
           >
             <span>home</span>
           </Link>
@@ -315,9 +316,9 @@ export default function Header() {
             href="/projects"
             className={`${
               pathname.startsWith("/projects")
-                ? "text-gray-100 bg-sky-600"
-                : "text-gray-600 hover:bg-gray-200 active:bg-gray-300"
-            } text rounded-md px-2 transition mr-1.5 mb-0`}
+                ? "text-sky-600 md:text-gray-100 md:bg-sky-600"
+                : "text-gray-600 hover:text-gray-700 active:text-gray-800 md:hover:bg-gray-200 md:active:bg-gray-300"
+            } text text-sm md:text-base rounded-md px-[0.3rem] md:px-2 md:py-0.5 transition md:mr-1.5 mb-0`}
           >
             <span>projects</span>
           </Link>
@@ -325,9 +326,9 @@ export default function Header() {
             href="/blog"
             className={`${
               pathname.startsWith("/blog")
-                ? "text-gray-100 bg-sky-600"
-                : "text-gray-600 hover:bg-gray-200 active:bg-gray-300"
-            } text rounded-md px-2 transition mb-0`}
+                ? "text-sky-600 md:text-gray-100 md:bg-sky-600"
+                : "text-gray-600 hover:text-gray-700 active:text-gray-800 md:hover:bg-gray-200 md:active:bg-gray-300"
+            } text text-sm md:text-base rounded-md px-[0.3rem] md:px-2 md:py-0.5 transition mb-0`}
           >
             <span>posts</span>
           </Link>
@@ -335,9 +336,9 @@ export default function Header() {
             href="/more"
             className={`${
               pathname.startsWith("/more")
-                ? "text-gray-100 bg-sky-600"
-                : "text-gray-600 hover:bg-gray-200 active:bg-gray-300"
-            } text rounded-md px-2 transition mr-1.5 mb-0`}
+                ? "text-sky-600 md:text-gray-100 md:bg-sky-600"
+                : "text-gray-600 hover:text-gray-700 active:text-gray-800 md:hover:bg-gray-200 md:active:bg-gray-300"
+            } text text-sm md:text-base rounded-md px-[0.3rem] md:px-2 md:py-0.5 transition mb-0`}
           >
             <span>more</span>
           </Link> */}

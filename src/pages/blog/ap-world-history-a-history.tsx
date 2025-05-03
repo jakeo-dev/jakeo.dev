@@ -37,7 +37,7 @@ export default function Post1() {
       </CommonHead>
 
       {/* post */}
-      <h1 className="sub1title pb-0">AP World History: A History</h1>
+      <h1 className="sub1title pb-0 mt-0">AP World History: A History</h1>
 
       <div className="postDatesDiv">
         <h2>

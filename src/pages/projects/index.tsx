@@ -20,7 +20,7 @@ export default function Projects() {
       <h2 className="sub1title mt-0">My projects</h2>
 
       <div className="block md:flex">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           <Project
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
@@ -81,7 +81,7 @@ export default function Projects() {
             original files created (html/css/js): may 28 2021
             first uploaded to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
-            updateDate="March 2025"
+            updateDate="May 2025"
             madeWith="Next.js"
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo={true}
@@ -96,7 +96,7 @@ export default function Projects() {
       <h2 className="sub1title">Past projects</h2>
 
       <div className="block md:flex">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           <Project
             name="Yearn"
             desc="Organize gifts that you yearn for into a simple list."

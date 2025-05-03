@@ -33,7 +33,7 @@ export default function Home() {
       <h2 className="sub1title">Some of my projects</h2>
 
       <div className="block md:flex">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           <Project
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."

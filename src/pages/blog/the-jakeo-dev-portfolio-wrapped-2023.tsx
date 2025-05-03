@@ -32,7 +32,9 @@ export default function Post2() {
       </CommonHead>
 
       {/* post */}
-      <h1 className="sub1title pb-0">The JakeO.dev Portfolio Wrapped 2023</h1>
+      <h1 className="sub1title pb-0 mt-0">
+        The JakeO.dev Portfolio Wrapped 2023
+      </h1>
 
       <div className="postDatesDiv">
         <h2>
