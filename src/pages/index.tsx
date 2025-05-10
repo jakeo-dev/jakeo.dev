@@ -1,7 +1,6 @@
 import CommonHead from "@/components/CommonHead";
 import Project from "@/components/Project";
 import Post from "@/components/Post";
-import TopTrack from "@/components/TopTrack";
 
 export default function Home() {
   return (
@@ -41,7 +40,7 @@ export default function Home() {
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
             updateDate=""
-            toolsList={[]}
+            madeWith=""
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
@@ -54,7 +53,7 @@ export default function Home() {
             desc="Easily rank your favorite things with pairwise comparisons."
             releaseDate=""
             updateDate=""
-            toolsList={[]}
+            madeWith=""
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo={true}
             type={0}
