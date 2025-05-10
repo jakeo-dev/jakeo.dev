@@ -1,6 +1,7 @@
 import CommonHead from "@/components/CommonHead";
 import Project from "@/components/Project";
 import Post from "@/components/Post";
+import TopTrack from "@/components/TopTrack";
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
       <h2 className="sub1title mt-0">Welcome to my website!</h2>
 
       <p className="text">
-        I make things using my knowledge in programming. Most of my projects are
+        I make things using my knowledge in programming. (Almost) everything I
+        make is open source on my GitHub, but my most notable projects are
         featured on this website, which I've built using Next.js. Sometimes I
         also write blog posts about things that I find interesting.
       </p>
@@ -39,7 +41,7 @@ export default function Home() {
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
@@ -52,7 +54,7 @@ export default function Home() {
             desc="Easily rank your favorite things with pairwise comparisons."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo={true}
             type={0}
