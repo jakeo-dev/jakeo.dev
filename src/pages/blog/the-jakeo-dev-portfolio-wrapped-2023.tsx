@@ -1,9 +1,10 @@
 import CommonHead from "@/components/CommonHead";
-import Contents from "@/components/Contents";
+import Cover from "@/components/PostCover";
+import Contents from "@/components/PostContents";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDay, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Post2() {
   return (
@@ -31,39 +32,16 @@ export default function Post2() {
         <meta property="twitter:card" content="summary_large_image" />
       </CommonHead>
 
+      {/* title and image */}
+      <Cover
+        title="The JakeO.dev Portfolio Wrapped 2023"
+        date="December 16, 2023"
+        img={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
+        imgAlt="Screenshots from the websites of the JakeO.dev portfolio encapsulated in a bunny"
+        imgSubtext=""
+      />
+
       {/* post */}
-      <h1 className="sub1title pb-0 mt-0">
-        The JakeO.dev Portfolio Wrapped 2023
-      </h1>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          December 16, 2023
-        </h2>
-        {/* <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Edited April 14, 2024
-        </h2> */}
-      </div>
-
-      <div className="postThumbImgDiv mt-6">
-        <Image
-          src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
-          alt="Screenshots from the websites of the JakeO.dev portfolio encapsulated in a bunny"
-          className="postThumbImg"
-          placeholder="blur"
-        />
-      </div>
-
       <div className="lg:flex lg:flex-row-reverse">
         <Contents
           subtitles={[

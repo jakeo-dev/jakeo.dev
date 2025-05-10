@@ -1,11 +1,5 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { StaticImageData } from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faRotateRight,
-} from "@fortawesome/free-solid-svg-icons";
 
 export default function Post(props: {
   name: string;
@@ -43,27 +37,14 @@ export default function Post(props: {
             props.releaseDate != "" ? "inline" : "hidden"
           } text-sm text-gray-600`}
         >
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-label="Initially released"
-          />
           {props.releaseDate}
         </h2>
-        <h2
-          className={`${
-            props.updateDate != "" ? "inline" : "hidden"
-          } text-sm text-gray-600`}
-        >
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-label="Last updated"
-          />
-          {props.updateDate}
-        </h2>
       </div>
-      <h2 className={`${props.fadeDesc ? "fade-text" : ""} text mt-2 mb-0`}>
+      <h2
+        className={`${
+          props.fadeDesc ? "fade-text" : ""
+        } text text-gray-600 mt-2 mb-0`}
+      >
         {props.desc}
       </h2>
     </div>

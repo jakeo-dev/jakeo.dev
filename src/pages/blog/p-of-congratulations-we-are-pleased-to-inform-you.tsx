@@ -1,10 +1,10 @@
 import CommonHead from "@/components/CommonHead";
-import Contents from "@/components/Contents";
+import Cover from "@/components/PostCover";
+import Contents from "@/components/PostContents";
 import Callout from "@/components/Callout";
-import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDay, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Post3() {
   return (
@@ -36,39 +36,16 @@ export default function Post3() {
         />
       </CommonHead>
 
+      {/* title and image */}
+      <Cover
+        title={`P("Congratulations! We Are Pleased to Inform You...")`}
+        date="June 17, 2024"
+        img={require("../../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
+        imgAlt="A warped fake college acceptance email"
+        imgSubtext=""
+      />
+
       {/* post */}
-      <h1 className="sub1title pb-0 mt-0">
-        P("Congratulations! We Are Pleased to Inform You...")
-      </h1>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          June 17, 2024
-        </h2>
-        {/* <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Edited February 15, 2025
-        </h2> */}
-      </div>
-
-      <div className="postThumbImgDiv mt-6">
-        <Image
-          src={require("../../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
-          alt="A warped fake college acceptance email"
-          className="postThumbImg"
-          placeholder="blur"
-        />
-      </div>
-
       <div className="lg:flex lg:flex-row-reverse">
         <Contents
           subtitles={[

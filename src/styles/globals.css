@@ -23,10 +23,6 @@
     @apply text-gray-700 text-left text-pretty font-medium py-2 mt-4;
   }
 
-  .postDatesDiv {
-    @apply flex text-sm text-gray-600 text-left gap-3 mt-2.5;
-  }
-
   .text {
     @apply text-gray-800 text-base text-left text-pretty leading-7 mb-3 last:mb-0;
   }
@@ -51,20 +47,16 @@
     @apply mt-3 mb-6;
   }
 
+  .postDatesDiv {
+    @apply flex gap-3 text-sm text-gray-600 text-left mt-2;
+  }
+
   .postImgDiv {
     @apply mt-3 mb-6;
   }
 
   .postImg {
     @apply w-full rounded-lg border-2 border-gray-200;
-  }
-
-  .postThumbImgDiv {
-    @apply mt-3 mb-6;
-  }
-
-  .postThumbImg {
-    @apply rounded-xl md:rounded-3xl;
   }
 
   .sp-table {
@@ -109,8 +101,8 @@
 }
 
 .fade-text {
-  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 25%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 25%, transparent 100%);
 }
 
 .slantedHighlight {

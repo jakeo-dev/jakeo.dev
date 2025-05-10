@@ -1,10 +1,11 @@
 import CommonHead from "@/components/CommonHead";
-import Contents from "@/components/Contents";
+import Cover from "@/components/PostCover";
+import Contents from "@/components/PostContents";
 import Callout from "@/components/Callout";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDay, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 export default function Post5() {
@@ -41,31 +42,16 @@ export default function Post5() {
         />
       </CommonHead>
 
+      {/* title and image */}
+      <Cover
+        title="Calligraphr + FontForge: Layman's Overcomplicated Guide to Making a Good-Looking Font for Free"
+        date="May 3, 2025"
+        img={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/thumbnail.png")}
+        imgAlt="Different letters in different fonts kerned at different amounts"
+        imgSubtext=""
+      />
+
       {/* post */}
-      <h1 className="sub1title pb-0 mt-0">
-        {`Calligraphr + FontForge: Layman's Overcomplicated Guide to Making a Good-Looking Font for Free`}
-      </h1>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          May 3, 2025
-        </h2>
-      </div>
-
-      <div className="postThumbImgDiv mt-6">
-        <Image
-          src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/thumbnail.png")}
-          alt="Different letters in different fonts kerned at different amounts"
-          className="postThumbImg"
-          placeholder="blur"
-        />
-      </div>
-
       <div className="lg:flex lg:flex-row-reverse">
         <Contents
           subtitles={[

@@ -1,10 +1,11 @@
 import CommonHead from "@/components/CommonHead";
-import Contents from "@/components/Contents";
+import Cover from "@/components/PostCover";
+import Contents from "@/components/PostContents";
 import CodeBlock from "@/components/CodeBlock";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDay, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Post4() {
   return (
@@ -33,37 +34,16 @@ export default function Post4() {
         />
       </CommonHead>
 
+      {/* title and image */}
+      <Cover
+        title="Dialing Letters Instead of Digits"
+        date="August 18, 2024"
+        img={require("../../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+        imgAlt="Overlapping lists of random words and numbers"
+        imgSubtext=""
+      />
+
       {/* post */}
-      <h1 className="sub1title pb-0 mt-0">Dialing Letters Instead of Digits</h1>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          August 18, 2024
-        </h2>
-        {/* <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Edited August 18, 2024
-        </h2> */}
-      </div>
-
-      <div className="postThumbImgDiv mt-6">
-        <Image
-          src={require("../../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
-          alt="Overlapping lists of random words and numbers"
-          className="postThumbImg"
-          placeholder="blur"
-        />
-      </div>
-
       <div className="lg:flex lg:flex-row-reverse">
         <Contents
           subtitles={[

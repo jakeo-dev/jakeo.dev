@@ -1,10 +1,10 @@
 import CommonHead from "@/components/CommonHead";
-import Contents from "@/components/Contents";
+import Cover from "@/components/PostCover";
+import Contents from "@/components/PostContents";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCalendarDay,
   faArrowUpRightFromSquare,
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
@@ -36,38 +36,16 @@ export default function Post1() {
         />
       </CommonHead>
 
+      {/* title and image */}
+      <Cover
+        title="AP World History: A History"
+        date="June 13, 2023"
+        img={require("../../../public/images/ap-world-history-a-history/thumbnail.png")}
+        imgAlt="Crystal Bay at Incline Village in Nevada taken in April 2022"
+        imgSubtext="Monkey Rock at Incline Village, Nevada"
+      />
+
       {/* post */}
-      <h1 className="sub1title pb-0 mt-0">AP World History: A History</h1>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          June 13, 2023
-        </h2>
-        {/* <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Edited December 6, 2023
-        </h2> */}
-      </div>
-
-      <div className="postThumbImgDiv mt-6">
-        <Image
-          src={require("../../../public/images/ap-world-history-a-history/thumbnail.png")}
-          alt="Crystal Bay at Incline Village in Nevada taken in April 2022"
-          className="postThumbImg"
-          placeholder="blur"
-        />
-        <p className="subtext">Monkey Rock at Incline Village, Nevada</p>
-      </div>
-
       <div className="lg:flex lg:flex-row-reverse">
         <Contents
           subtitles={[
