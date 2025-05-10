@@ -1,4 +1,5 @@
 import CommonHead from "@/components/CommonHead";
+import MasonryLayout from "@/components/MasonryLayout";
 import Project from "@/components/Project";
 
 export default function Projects() {
@@ -20,13 +21,21 @@ export default function Projects() {
       <h2 className="sub1title mt-0">My projects</h2>
 
       <div className="block md:flex">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <MasonryLayout
+          defaultCols={1}
+          smCols={1}
+          mdCols={2}
+          lgCols={2}
+          xlCols={2}
+          className="flex w-full"
+          columnClassName="bg-clip-padding px-2 md:px-3 first:pl-0 last:pr-0"
+        >
           <Project
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
             updateDate="September 2024"
-            madeWith="Next.js"
+            toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
@@ -39,7 +48,7 @@ export default function Projects() {
             desc="Easily rank your favorite things with pairwise comparisons."
             releaseDate=""
             updateDate="March 2025"
-            madeWith="Next.js"
+            toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo={true}
             type={0}
@@ -52,7 +61,7 @@ export default function Projects() {
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
             releaseDate=""
             updateDate="March 2025"
-            madeWith="JavaScript"
+            toolsList={["JavaScript", "Tailwind"]}
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo={true}
             type={0}
@@ -65,7 +74,7 @@ export default function Projects() {
             desc="A fun and simple word puzzle game to test your brain."
             releaseDate=""
             updateDate="July 2024"
-            madeWith="Next.js, React Native"
+            toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
             showLogo={true}
             type={0}
@@ -82,99 +91,103 @@ export default function Projects() {
             first uploaded to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
             updateDate="May 2025"
-            madeWith="Next.js"
+            toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo={true}
             type={0}
             colors=""
             link="https://jakeo.dev"
           />
-        </div>
+        </MasonryLayout>
       </div>
 
       {/* past projects */}
       <h2 className="sub1title">Past projects</h2>
 
       <div className="block md:flex">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <MasonryLayout
+          defaultCols={1}
+          smCols={1}
+          mdCols={2}
+          lgCols={2}
+          xlCols={2}
+          className="flex w-full"
+          columnClassName="bg-clip-padding px-2 md:px-3 first:pl-0 last:pr-0"
+        >
+          {" "}
           <Project
             name="Yearn"
             desc="Organize gifts that you yearn for into a simple list."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo="https://yearn.jakeo.dev/yearn-logo.png"
             showLogo={false}
             type={1}
             colors=""
             link="https://yearn.jakeo.dev"
           />
-
           <Project
             name="Text Filter"
             desc="Filter unwanted strings from text in a number of different ways."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo=""
             showLogo={false}
             type={1}
             colors=""
             link="https://filter.jakeo.dev"
           />
-
           <Project
             name="Cerebric"
             desc="A speed typing website to help you study."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
             showLogo={true}
             type={1}
             colors=""
             link="https://cerebric.jakeo.dev"
           />
-
           <Project
             name="Decorate a Tree"
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo="https://decorate-a-tree.jakeo.dev/candy-cane-red-left.png"
             showLogo={true}
             type={1}
             colors=""
             link="https://tree.jakeo.dev"
           />
-
           <Project
             name="Emoticon Generator"
             desc="Generate unique emoticons."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo=""
             showLogo={false}
             type={1}
             colors=""
             link="https://emoticons.jakeo.dev"
           />
-
           <Project
             name="Colorful Bunnies"
             desc="Browse and download some colorful bunnies individually, in collections, or in banners."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
             showLogo={true}
             type={1}
             colors=""
             link="https://bunnies.jakeo.dev"
           />
-        </div>
+        </MasonryLayout>
       </div>
     </>
   );

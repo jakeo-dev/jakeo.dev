@@ -1,12 +1,7 @@
 import CommonHead from "@/components/CommonHead";
 import SecButton from "@/components/SecButton";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faHammer,
-  faRotateRight,
-} from "@fortawesome/free-solid-svg-icons";
+import ProjectCover from "@/components/ProjectCover";
 
 export default function JakeO() {
   return (
@@ -26,41 +21,14 @@ export default function JakeO() {
         />
       </CommonHead>
 
-      <div className="sub1title flex items-center pb-0">
-        <img
-          src="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
-          className="inline w-8 mr-2"
-          alt="JakeO.dev logo"
-        />
-        <h2 className="inline">JakeO.dev</h2>
-      </div>
-
-      <p className="sub1titleSubtext mt-0">
-        You're already here — check out all of my projects and blog posts.
-      </p>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
-          Made with Next.js
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Created September 2020
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Updated May 2025
-        </h2>
-      </div>
+      <ProjectCover
+        title="JakeO.dev"
+        desc="You're already here — check out all of my projects and blog posts."
+        createDate="September 2020"
+        updateDate="May 2025"
+        logoImg="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
+        toolsList={["Next.js", "TypeScript", "Tailwind"]}
+      />
 
       <div className="postImgDiv mt-6">
         <Image

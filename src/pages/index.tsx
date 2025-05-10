@@ -40,7 +40,7 @@ export default function Home() {
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
@@ -53,7 +53,7 @@ export default function Home() {
             desc="Easily rank your favorite things with pairwise comparisons."
             releaseDate=""
             updateDate=""
-            madeWith=""
+            toolsList={[]}
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo={true}
             type={0}

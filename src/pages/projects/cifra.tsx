@@ -3,12 +3,7 @@ import Button from "@/components/Button";
 import SecButton from "@/components/SecButton";
 import ImageCarousel from "@/components/ImageCarousel";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faHammer,
-  faRotateRight,
-} from "@fortawesome/free-solid-svg-icons";
+import ProjectCover from "@/components/ProjectCover";
 
 export default function Cifra() {
   return (
@@ -28,42 +23,14 @@ export default function Cifra() {
         />
       </CommonHead>
 
-      <div className="sub1title flex items-center pb-0">
-        <img
-          src="https://cifra.jakeo.dev/cifra-logo.png"
-          className="inline w-8 mr-2"
-          alt="Cifra logo"
-        />
-        <h2 className="inline">Cifra</h2>
-      </div>
-
-      <p className="sub1titleSubtext mt-0">
-        Generate vanity numbers from your own phone number to make it
-        unforgettable.
-      </p>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
-          Made with JavaScript
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Released February 2023
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Updated March 2025
-        </h2>
-      </div>
+      <ProjectCover
+        title="Cifra"
+        desc="Generate vanity numbers from your own phone number to make it unforgettable."
+        createDate="February 2023"
+        updateDate="March 2025"
+        logoImg="https://cifra.jakeo.dev/cifra-logo.png"
+        toolsList={["JavaScript", "Tailwind"]}
+      />
 
       <div className="container postImgDiv mx-auto mt-6">
         <ImageCarousel

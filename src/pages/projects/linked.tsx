@@ -2,12 +2,7 @@ import CommonHead from "@/components/CommonHead";
 import Button from "@/components/Button";
 import SecButton from "@/components/SecButton";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faHammer,
-  faRotateRight,
-} from "@fortawesome/free-solid-svg-icons";
+import ProjectCover from "@/components/ProjectCover";
 
 export default function Linked() {
   return (
@@ -27,41 +22,14 @@ export default function Linked() {
         />
       </CommonHead>
 
-      <div className="sub1title flex items-center pb-0">
-        <img
-          src="https://linked.jakeo.dev/images/icon-transparent.png"
-          className="inline w-8 mr-2"
-          alt="Linked logo"
-        />
-        <h2 className="inline">Linked</h2>
-      </div>
-
-      <p className="sub1titleSubtext mt-0">
-        A fun and simple word puzzle game to test your brain.
-      </p>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
-          Made with Next.js, React Native
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Released June 2024
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Updated July 2024
-        </h2>
-      </div>
+      <ProjectCover
+        title="Linked"
+        desc="A fun and simple word puzzle game to test your brain."
+        createDate="June 2024"
+        updateDate="July 2024"
+        logoImg="https://linked.jakeo.dev/images/icon-transparent.png"
+        toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
+      />
 
       <div className="postImgDiv mt-6">
         <Image

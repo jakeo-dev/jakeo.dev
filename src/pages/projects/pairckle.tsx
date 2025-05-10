@@ -2,12 +2,7 @@ import CommonHead from "@/components/CommonHead";
 import Button from "@/components/Button";
 import SecButton from "@/components/SecButton";
 import ImageCarousel from "@/components/ImageCarousel";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faHammer,
-  faRotateRight,
-} from "@fortawesome/free-solid-svg-icons";
+import ProjectCover from "@/components/ProjectCover";
 
 export default function Pairckle() {
   return (
@@ -27,41 +22,14 @@ export default function Pairckle() {
         />
       </CommonHead>
 
-      <div className="sub1title flex items-center pb-0">
-        <img
-          src="https://pairckle.jakeo.dev/pairckle-icon.png"
-          className="inline w-8 mr-2"
-          alt="Pairckle logo"
-        />
-        <h2 className="inline">Pairckle</h2>
-      </div>
-
-      <p className="sub1titleSubtext mt-0">
-        Easily rank your favorite things with pairwise comparisons.
-      </p>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
-          Made with Next.js
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Released January 2025
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Updated March 2025
-        </h2>
-      </div>
+      <ProjectCover
+        title="Pairckle"
+        desc="Easily rank your favorite things with pairwise comparisons."
+        createDate="January 2025"
+        updateDate="March 2025"
+        logoImg="https://pairckle.jakeo.dev/pairckle-icon.png"
+        toolsList={["Next.js", "TypeScript", "Tailwind"]}
+      />
 
       <div className="container postImgDiv mx-auto mt-6">
         <ImageCarousel

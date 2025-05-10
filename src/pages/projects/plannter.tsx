@@ -2,12 +2,7 @@ import CommonHead from "@/components/CommonHead";
 import Button from "@/components/Button";
 import SecButton from "@/components/SecButton";
 import ImageCarousel from "@/components/ImageCarousel";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendarDay,
-  faHammer,
-  faRotateRight,
-} from "@fortawesome/free-solid-svg-icons";
+import ProjectCover from "@/components/ProjectCover";
 
 export default function Plannter() {
   return (
@@ -27,42 +22,14 @@ export default function Plannter() {
         />
       </CommonHead>
 
-      <div className="sub1title flex items-center pb-0">
-        <img
-          src="https://plannter.jakeo.dev/plannter-icon-dark.png"
-          className="inline w-8 mr-2"
-          alt="Plannter logo"
-        />
-        <h2 className="inline">Plannter</h2>
-      </div>
-
-      <p className="sub1titleSubtext mt-0">
-        Plan courses, keep track of extracurriculars, prepare for college
-        applications, and more.
-      </p>
-
-      <div className="postDatesDiv">
-        <h2>
-          <FontAwesomeIcon icon={faHammer} className="mr-1.5" aria-hidden />
-          Made with Next.js
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faCalendarDay}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Released January 2023
-        </h2>
-        <h2>
-          <FontAwesomeIcon
-            icon={faRotateRight}
-            className="mr-1.5"
-            aria-hidden
-          />
-          Updated September 2024
-        </h2>
-      </div>
+      <ProjectCover
+        title="Plannter"
+        desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
+        createDate="January 2023"
+        updateDate="September 2024"
+        logoImg="https://plannter.jakeo.dev/plannter-icon-dark.png"
+        toolsList={["Next.js", "TypeScript", "Tailwind"]}
+      />
 
       <div className="container postImgDiv mx-auto mt-6">
         <ImageCarousel
