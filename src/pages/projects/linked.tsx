@@ -64,15 +64,15 @@ export default function Linked() {
       <p className="text">
         Linked is a word puzzle game where you link five words by their first
         and last letters. It can be played either on the website or the Android
-        app. The game was released in June 2024, with the website built in React
-        and the app in React Native.
+        app. The game was released in June 2024, with the website built in
+        Next.js and the app in React Native.
       </p>
       <p className="text">
-        Building the app was the first time I used React Native. I drew heavy
-        inspiration from the simple but satisfying New York Times word games,
-        but I still tried to make a unique puzzle. Prior to Linked's release,
-        the game's core mechanics underwent several significant changes to make
-        the game generally easy to understand, fun, original, and balanced.
+        Building the app was the first time I used React Native. I tried to make
+        a unique puzzle that felt like it could be included with the other New
+        York Times word games. Before Linked's release, I changed the game's
+        core mechanics many times to make sure it was generally easy to
+        understand, fun, original, and balanced.
       </p>
     </>
   );
