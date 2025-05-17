@@ -25,7 +25,7 @@ export default function Home() {
 
       <p className="text">
         I make things using my knowledge in programming. (Almost) everything I
-        make is open source on my GitHub, but my most notable projects are
+        create is available on my GitHub, but my most notable projects are
         featured on this website, which I've built using Next.js. Sometimes I
         also write blog posts about things that I find interesting.
       </p>
