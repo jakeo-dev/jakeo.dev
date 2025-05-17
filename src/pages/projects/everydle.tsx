@@ -25,8 +25,8 @@ export default function Everydle() {
       <ProjectCover
         title="Everydle"
         desc="A fun and simple word puzzle game to test your brain."
-        createDate="May 2024"
-        updateDate="May 2024"
+        createDate="May 2025"
+        updateDate="May 2025"
         logoImg=""
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
