@@ -55,19 +55,19 @@ export default function Pairckle() {
       </div>
 
       <p className="text">
-        Pairckle is a website that allows you to easily create a ranking with
+        Pairckle is a website that allows you to create a ranking with simple
         pairwise comparisons. The first version was released in January 2025,
         built using Next.js.
       </p>
       <p className="text">
         The website is similar to other sites, like tier list makers, that are
-        used to rank different cultural elements. I found that tier lists were
-        not definitive enough of a ranking, and it was difficult to compare one
-        element to every other element that was already ranked, so using
-        pairwise comparisons seemed to be the easiest and most accurate method
-        to turn to. Pairckle shows two random elements from your input, and
-        after picking which one you prefer a certain number of times, it creates
-        the ultimate ranking.
+        used to rank different cultural elements. I don't think tier lists are
+        definitive enough of a ranking, and it can be difficult to compare one
+        element to every other element that was already ranked. Using pairwise
+        comparisons seems much easier and more accurate, since everything is
+        being compared to everything else. Pairckle shows two random elements
+        from your input, and after picking which one you prefer a certain number
+        of times, it creates your ultimate ranking.
       </p>
     </>
   );

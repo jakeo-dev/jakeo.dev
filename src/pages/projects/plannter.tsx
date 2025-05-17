@@ -74,15 +74,14 @@ export default function Plannter() {
 
       <p className="text">
         Plannter is a website that allows high school students to manage and
-        plan their academic life. You can keep track of your coursework,
-        standarized tests, and extracurricular activities. You can also prepare
-        for college applications by creating a college list and starting your
-        essays.
+        plan their academic life. You can keep track of coursework, standardized
+        tests, and extracurricular activities. It also allows you to prepare for
+        college applications by creating a college list and starting essays.
       </p>
       <p className="text">
-        I originally began development in January 2023, with the website only
-        having a Coursework section and an Activities section. It was written
-        using HTML, Tailwind CSS, and JavaScript until{" "}
+        I began development in January 2023, with the website only having a
+        Coursework and an Activities section. It was originally written using
+        HTML, Tailwind CSS, and JavaScript, until{" "}
         <a href="https://dsns.dev" target="_blank" className="link">
           DSNS
         </a>{" "}
@@ -91,18 +90,13 @@ export default function Plannter() {
         useful features.
       </p>
       <p className="text">
-        The name "Plannter" is a portmanteau (big fancy word!!!) of the words
-        "planner" and "plant." Another name I considered was "Alumnac" (a
-        portmanteau of the words "alumnus" and "almanac"), but I felt that
-        "Plannter" fit the website's purpose better.
+        The name "Plannter" is a portmanteau of the words "planner" and "plant."
+        "Alumnac" (a portmanteau of "alumnus" and "almanac") was also
+        considered, but I think "Plannter" fits the website's purpose better.
       </p>
       <p className="text">
         The original Plannter icon was just the Font Awesome plant icon colored
-        green, but I eventually designed my own plant icon in{" "}
-        <a href="https://pixlr.com" target="_blank" className="link">
-          Pixlr
-        </a>{" "}
-        and started using it in July 2024.
+        green, but I eventually drew my own and started using it in July 2024.
       </p>
     </>
   );

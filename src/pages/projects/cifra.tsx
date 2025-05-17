@@ -62,9 +62,8 @@ export default function Cifra() {
 
       <p className="text">
         Cifra is a website that lets you generate vanity phone numbers from an
-        inputted phone number. Generated vanity numbers can be starred to look
-        at later. The first version was released in February 2023, and it was
-        later updated in January 2024 to use a much more efficient generation
+        inputted phone number. The first version was released in February 2023,
+        and it was later updated in January 2024 to use a much faster generation
         method.
       </p>
       <p className="text">
