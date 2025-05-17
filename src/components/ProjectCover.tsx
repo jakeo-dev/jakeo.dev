@@ -9,11 +9,15 @@ export default function Contents(props: {
   return (
     <div>
       <div className="sub1title flex items-center mt-0 pb-0">
-        <img
-          src={props.logoImg}
-          className="inline w-8 mr-2"
-          alt={`${props.title} logo`}
-        />
+        {props.logoImg != "" ? (
+          <img
+            src={props.logoImg}
+            className="inline w-8 mr-2"
+            alt={`${props.title} logo`}
+          />
+        ) : (
+          ""
+        )}
         <h1 className="inline">{props.title}</h1>
       </div>
       <h2 className="hidden sub1titleSubtext mt-0">{props.desc}</h2>

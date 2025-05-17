@@ -70,6 +70,19 @@ export default function Projects() {
           />
 
           <Project
+            name="Everydle"
+            desc="Play every game of wordle at the same time."
+            releaseDate=""
+            updateDate="May 2025"
+            toolsList={["Next.js", "TypeScript", "Tailwind"]}
+            logo=""
+            showLogo={false}
+            type={0}
+            colors="hover:border-lime-600"
+            link="https://everydle.jakeo.dev"
+          />
+
+          <Project
             name="Linked"
             desc="A fun and simple word puzzle game to test your brain."
             releaseDate=""
