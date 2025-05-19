@@ -19,7 +19,7 @@ export default function Project(props: {
         href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
         className={`${
           props.colors == "" ? " hover:border-sky-600" : props.colors
-        } bg-gray-100 border-4 border-gray-200 relative flex flex-col rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 transition duration-200 mb-4 md:mb-6`}
+        } bg-gray-100 border-4 border-gray-200 h-min relative flex flex-col rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 transition duration-200 mb-4 md:mb-6`}
       >
         <div className="flex-grow w-full relative p-6">
           <h1 className="text-xl text-left font-medium flex items-center">

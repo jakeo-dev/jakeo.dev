@@ -1,6 +1,9 @@
 import CommonHead from "@/components/CommonHead";
 import Project from "@/components/Project";
 import Post from "@/components/Post";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -31,7 +34,16 @@ export default function Home() {
       </p>
 
       {/* projects */}
-      <h2 className="sub1title">Some of my projects</h2>
+      <div className="sub1title flex items-end">
+        <h2>Some of my projects</h2>
+        <Link
+          href="/projects"
+          className="text internalLink text-sm md:text-base px-2 ml-auto"
+        >
+          <span>See all</span>
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+        </Link>
+      </div>
 
       <div className="block md:flex">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
@@ -64,7 +76,16 @@ export default function Home() {
       </div>
 
       {/* posts */}
-      <h2 className="sub1title">Some of my posts</h2>
+      <div className="sub1title flex items-end">
+        <h2>Some of my posts</h2>
+        <Link
+          href="/blog"
+          className="text internalLink text-sm md:text-base px-2 ml-auto"
+        >
+          <span>See all</span>
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+        </Link>
+      </div>
 
       <Post
         name="Calligraphr + FontForge: Layman's Overcomplicated Guide to Making a Good-Looking Font for Free"
