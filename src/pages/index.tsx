@@ -46,7 +46,7 @@ export default function Home() {
       </div>
 
       <div className="block md:flex">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
           <Project
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
