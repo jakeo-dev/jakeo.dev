@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Post(props: {
   name: string;
   desc: string;
-  releaseDate: string;
-  updateDate: string;
+  releaseDate?: string;
+  updateDate?: string;
   fadeDesc: boolean;
   img: StaticImageData;
   imgAlt: string;

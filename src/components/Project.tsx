@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Project(props: {
   name: string;
   desc: string;
-  releaseDate: string;
-  updateDate: string;
-  toolsList: string[];
+  releaseDate?: string;
+  updateDate?: string;
+  toolsList?: string[];
   logo: string;
   showLogo: boolean;
   type: number;
@@ -33,10 +33,11 @@ export default function Project(props: {
           <h2 className="text text-gray-600 mt-2 mb-0">{props.desc}</h2>
           <div
             className={`flex flex-wrap gap-2 ${
-              props.toolsList.length > 0 ? "mt-2.5" : ""
+              props.toolsList && props.toolsList.length > 0 ? "mt-2.5" : ""
             }`}
           >
-            {props.toolsList.length > 0 &&
+            {props.toolsList &&
+              props.toolsList.length > 0 &&
               props.toolsList.map((tool, i) => (
                 <span
                   key={i}
@@ -69,10 +70,11 @@ export default function Project(props: {
           <h2 className="text text-gray-600 mt-2 mb-0">{props.desc}</h2>
           <div
             className={`flex flex-wrap gap-2 ${
-              props.toolsList.length > 0 ? "mt-2.5" : ""
+              props.toolsList && props.toolsList.length > 0 ? "mt-2.5" : ""
             }`}
           >
-            {props.toolsList.length > 0 &&
+            {props.toolsList &&
+              props.toolsList.length > 0 &&
               props.toolsList.map((tool, i) => (
                 <span
                   key={i}

@@ -33,7 +33,6 @@ export default function Projects() {
           <Project
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
-            releaseDate=""
             updateDate="September 2024"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
@@ -44,9 +43,20 @@ export default function Projects() {
           />
 
           <Project
+            name="Everydle"
+            desc="Play every game of Wordle at the same time."
+            updateDate="May 2025"
+            toolsList={["Next.js", "TypeScript", "Tailwind"]}
+            logo="https://everydle.jakeo.dev/favicon.ico"
+            showLogo={false}
+            type={0}
+            colors="hover:border-lime-600"
+            link="https://everydle.jakeo.dev"
+          />
+
+          <Project
             name="Pairckle"
             desc="Easily rank your favorite things with pairwise comparisons."
-            releaseDate=""
             updateDate="March 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
@@ -59,7 +69,6 @@ export default function Projects() {
           <Project
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
-            releaseDate=""
             updateDate="March 2025"
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://cifra.jakeo.dev/cifra-logo.png"
@@ -70,22 +79,8 @@ export default function Projects() {
           />
 
           <Project
-            name="Everydle"
-            desc="Play every game of wordle at the same time."
-            releaseDate=""
-            updateDate="May 2025"
-            toolsList={["Next.js", "TypeScript", "Tailwind"]}
-            logo=""
-            showLogo={false}
-            type={0}
-            colors="hover:border-lime-600"
-            link="https://everydle.jakeo.dev"
-          />
-
-          <Project
             name="Linked"
             desc="A fun and simple word puzzle game to test your brain."
-            releaseDate=""
             updateDate="July 2024"
             toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
@@ -98,7 +93,6 @@ export default function Projects() {
           <Project
             name="JakeO.dev"
             desc="You're already here — check out all of my projects and blog posts."
-            releaseDate=""
             /* domain bought (made w/ google sites): sep 4 2020
             original files created (html/css/js): may 28 2021
             first uploaded to github: may 21 2022
@@ -131,7 +125,6 @@ export default function Projects() {
           <Project
             name="Yearn"
             desc="Organize gifts that you yearn for into a simple list."
-            releaseDate=""
             updateDate=""
             toolsList={[]}
             logo="https://yearn.jakeo.dev/yearn-logo.png"
@@ -143,7 +136,6 @@ export default function Projects() {
           <Project
             name="Text Filter"
             desc="Filter unwanted strings from text in a number of different ways."
-            releaseDate=""
             updateDate=""
             toolsList={[]}
             logo=""
@@ -155,7 +147,6 @@ export default function Projects() {
           <Project
             name="Cerebric"
             desc="A speed typing website to help you study."
-            releaseDate=""
             updateDate=""
             toolsList={[]}
             logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
@@ -167,7 +158,6 @@ export default function Projects() {
           <Project
             name="Decorate a Tree"
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
-            releaseDate=""
             updateDate=""
             toolsList={[]}
             logo="https://decorate-a-tree.jakeo.dev/candy-cane-red-left.png"
@@ -179,7 +169,6 @@ export default function Projects() {
           <Project
             name="Emoticon Generator"
             desc="Generate unique emoticons."
-            releaseDate=""
             updateDate=""
             toolsList={[]}
             logo=""
@@ -191,7 +180,6 @@ export default function Projects() {
           <Project
             name="Colorful Bunnies"
             desc="Browse and download some colorful bunnies individually, in collections, or in banners."
-            releaseDate=""
             updateDate=""
             toolsList={[]}
             logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"

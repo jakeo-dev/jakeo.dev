@@ -34,7 +34,7 @@ export default function Home() {
       </p>
 
       {/* projects */}
-      <div className="sub1title flex items-end">
+      <div className="sub1title flex items-center md:items-end">
         <h2>Some of my projects</h2>
         <Link
           href="/projects"
@@ -50,9 +50,6 @@ export default function Home() {
           <Project
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
-            releaseDate=""
-            updateDate=""
-            toolsList={[]}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo={true}
             type={0}
@@ -61,16 +58,13 @@ export default function Home() {
           />
 
           <Project
-            name="Pairckle"
-            desc="Easily rank your favorite things with pairwise comparisons."
-            releaseDate=""
-            updateDate=""
-            toolsList={[]}
-            logo="https://pairckle.jakeo.dev/pairckle-icon.png"
-            showLogo={true}
+            name="Everydle"
+            desc="Play every game of Wordle at the same time."
+            logo="https://everydle.jakeo.dev/favicon.ico"
+            showLogo={false}
             type={0}
-            colors="hover:border-orange-600"
-            link="https://pairckle.jakeo.dev"
+            colors="hover:border-lime-600"
+            link="https://everydle.jakeo.dev"
           />
         </div>
       </div>

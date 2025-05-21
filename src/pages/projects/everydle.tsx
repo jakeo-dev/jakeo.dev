@@ -24,7 +24,7 @@ export default function Everydle() {
 
       <ProjectCover
         title="Everydle"
-        desc="A fun and simple word puzzle game to test your brain."
+        desc="Play every game of Wordle at the same time."
         createDate="May 2025"
         updateDate="May 2025"
         logoImg=""
@@ -60,8 +60,8 @@ export default function Everydle() {
         When Dordle, Quordle, Octordle, Sedecordle, Duotrigordle, and
         Sexagintaquattordle aren't enough, there's Everydle. No longer do you
         need to spend five minutes solving the daily Wordle, just do all of them
-        at once in one extremely long and laggy sitting, and never worry about
-        missing a day again.
+        at once in one extremely long sitting, and never worry about missing a
+        day again.
       </p>
     </>
   );

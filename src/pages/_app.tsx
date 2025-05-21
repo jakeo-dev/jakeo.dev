@@ -1,14 +1,19 @@
 import "@/styles/globals.css";
+
 import type { AppProps } from "next/app";
+
 import { useEffect } from "react";
+
 import { Lexend } from "next/font/google";
+const lexend = Lexend({ subsets: ["latin"] });
+
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
-import { Analytics } from "@vercel/analytics/react";
-import Header from "@/components/Header";
 
-const lexend = Lexend({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react";
+
+import Header from "@/components/Header";
 
 export default function App({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
