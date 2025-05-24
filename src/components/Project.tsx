@@ -9,7 +9,7 @@ export default function Project(props: {
   logo: string;
   showLogo: boolean;
   type: number;
-  colors: string;
+  colors?: string;
   link: string;
 }) {
   if (props.type == 0) {
@@ -18,7 +18,7 @@ export default function Project(props: {
       <Link
         href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
         className={`${
-          props.colors == "" ? " hover:border-sky-600" : props.colors
+          !props.colors ? " hover:border-sky-600" : props.colors
         } bg-gray-100 border-4 border-gray-200 h-min relative flex flex-col rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 transition duration-200 mb-4 md:mb-6`}
       >
         <div className="flex-grow w-full relative p-6">

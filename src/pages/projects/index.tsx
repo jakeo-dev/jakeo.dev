@@ -48,7 +48,7 @@ export default function Projects() {
             updateDate="May 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://everydle.jakeo.dev/favicon.ico"
-            showLogo={false}
+            showLogo={true}
             type={0}
             colors="hover:border-lime-600"
             link="https://everydle.jakeo.dev"
@@ -79,18 +79,6 @@ export default function Projects() {
           />
 
           <Project
-            name="Linked"
-            desc="A fun and simple word puzzle game to test your brain."
-            updateDate="July 2024"
-            toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
-            logo="https://linked.jakeo.dev/images/icon-transparent.png"
-            showLogo={true}
-            type={0}
-            colors="hover:border-blue-600"
-            link="https://linked.jakeo.dev"
-          />
-
-          <Project
             name="JakeO.dev"
             desc="You're already here — check out all of my projects and blog posts."
             /* domain bought (made w/ google sites): sep 4 2020
@@ -102,7 +90,6 @@ export default function Projects() {
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo={true}
             type={0}
-            colors=""
             link="https://jakeo.dev"
           />
         </MasonryLayout>
@@ -121,71 +108,68 @@ export default function Projects() {
           className="flex w-full"
           columnClassName="bg-clip-padding px-2 md:px-3 first:pl-0 last:pr-0"
         >
-          {" "}
+          <Project
+            name="Linked"
+            desc="A fun and simple word puzzle game to test your brain."
+            updateDate="July 2024"
+            toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
+            logo="https://linked.jakeo.dev/images/icon-transparent.png"
+            showLogo={true}
+            type={0}
+            link="https://linked.jakeo.dev"
+          />
           <Project
             name="Yearn"
             desc="Organize gifts that you yearn for into a simple list."
-            updateDate=""
-            toolsList={[]}
+            toolsList={["JavaScript", "Tailwind"]}
             logo="https://yearn.jakeo.dev/yearn-logo.png"
             showLogo={false}
             type={1}
-            colors=""
             link="https://yearn.jakeo.dev"
           />
           <Project
             name="Text Filter"
             desc="Filter unwanted strings from text in a number of different ways."
-            updateDate=""
-            toolsList={[]}
+            toolsList={["JavaScript", "Tailwind"]}
             logo=""
             showLogo={false}
             type={1}
-            colors=""
             link="https://filter.jakeo.dev"
           />
           <Project
             name="Cerebric"
             desc="A speed typing website to help you study."
-            updateDate=""
-            toolsList={[]}
+            toolsList={["JavaScript", "Tailwind"]}
             logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
             showLogo={true}
             type={1}
-            colors=""
             link="https://cerebric.jakeo.dev"
           />
           <Project
             name="Decorate a Tree"
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
-            updateDate=""
-            toolsList={[]}
+            toolsList={["JavaScript", "Tailwind"]}
             logo="https://decorate-a-tree.jakeo.dev/candy-cane-red-left.png"
             showLogo={true}
             type={1}
-            colors=""
             link="https://tree.jakeo.dev"
           />
           <Project
             name="Emoticon Generator"
             desc="Generate unique emoticons."
-            updateDate=""
-            toolsList={[]}
+            toolsList={["JavaScript", "Tailwind"]}
             logo=""
             showLogo={false}
             type={1}
-            colors=""
             link="https://emoticons.jakeo.dev"
           />
           <Project
             name="Colorful Bunnies"
             desc="Browse and download some colorful bunnies individually, in collections, or in banners."
-            updateDate=""
-            toolsList={[]}
+            toolsList={["JavaScript", "Tailwind"]}
             logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
             showLogo={true}
             type={1}
-            colors=""
             link="https://bunnies.jakeo.dev"
           />
         </MasonryLayout>

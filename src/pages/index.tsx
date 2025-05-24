@@ -61,7 +61,7 @@ export default function Home() {
             name="Everydle"
             desc="Play every game of Wordle at the same time."
             logo="https://everydle.jakeo.dev/favicon.ico"
-            showLogo={false}
+            showLogo={true}
             type={0}
             colors="hover:border-lime-600"
             link="https://everydle.jakeo.dev"

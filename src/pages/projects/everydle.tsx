@@ -27,7 +27,7 @@ export default function Everydle() {
         desc="Play every game of Wordle at the same time."
         createDate="May 2025"
         updateDate="May 2025"
-        logoImg=""
+        logoImg="https://everydle.jakeo.dev/favicon.ico"
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
