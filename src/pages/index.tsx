@@ -70,7 +70,7 @@ export default function Home() {
       </div>
 
       {/* posts */}
-      <div className="sub1title flex items-end">
+      <div className="sub1title flex items-center md:items-end">
         <h2>Some of my posts</h2>
         <Link
           href="/blog"
