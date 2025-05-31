@@ -46,7 +46,7 @@ export default function Post(props: {
         } text text-gray-600 mt-2 mb-0`}
       >
         {props.desc}
-      </h2>
+      </h2> */}
     </div>
   );
 }
