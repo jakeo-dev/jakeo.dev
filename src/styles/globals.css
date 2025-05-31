@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .proj {
-    @apply flex flex-col bg-white rounded-xl shadow-md;
-  }
-
   .sub1title {
     @apply text-2xl text-gray-900 text-left text-pretty font-semibold py-4 mt-14;
   }
@@ -19,7 +15,7 @@
     @apply text-lg text-gray-900 text-left text-pretty font-medium py-4 mt-4;
   }
 
-  .sub1titleSubtext {
+  .sub1title-subtext {
     @apply text-gray-700 text-left text-pretty font-medium py-2 mt-4;
   }
 
@@ -35,27 +31,27 @@
     @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 active:text-blue-700 transition;
   }
 
-  .downloadLink {
+  .download-link {
     @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition;
   }
 
-  .internalLink {
+  .internal-link {
     @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-sky-600 active:text-sky-700 transition;
   }
 
-  .codeBlockDiv {
+  .code-block-div {
     @apply mt-3 mb-6;
   }
 
-  .postDatesDiv {
+  .post-dates-div {
     @apply flex gap-3 text-sm text-gray-600 text-left mt-2;
   }
 
-  .postImgDiv {
+  .post-img-div {
     @apply mt-3 mb-6;
   }
 
-  .postImg {
+  .post-img {
     @apply w-full rounded-lg border-2 border-gray-200;
   }
 
@@ -87,15 +83,15 @@
     @apply bg-gradient-to-br from-green-600/20 to-green-600/10 italic;
   }
 
-  .checkSizes {
+  .check-sizes {
     @apply border-8 border-blue-500 sm:border-green-500 md:border-yellow-500 lg:border-orange-500 xl:border-red-500 bg-blue-200 sm:bg-green-200 md:bg-yellow-200 lg:bg-orange-200 xl:bg-red-200;
   }
 
-  .fadeIn {
+  .invisible-fade {
     @apply invisible opacity-0 transition-all;
   }
 
-  .fadeOut {
+  .visible-fade {
     @apply visible opacity-100 transition-all;
   }
 }
@@ -105,7 +101,7 @@
   mask-image: linear-gradient(to bottom, black 25%, transparent 100%);
 }
 
-.slantedHighlight {
+.slanted-highlight {
   /* https://pepelsbey.dev/articles/skewed-highlight/ */
   --mark-color: #f8db75;
   --mark-skew: 0.25em;

@@ -31,7 +31,7 @@ export default function Pairckle() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="container postImgDiv mx-auto mt-6">
+      <div className="container post-img-div mx-auto mt-6">
         <ImageCarousel
           images={["/images/pairckle-ss-1.png", "/images/pairckle-ss-2.png"]}
           imagePosition="object-top"

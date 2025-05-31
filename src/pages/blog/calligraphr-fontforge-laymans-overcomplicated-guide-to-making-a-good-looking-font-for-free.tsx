@@ -212,11 +212,11 @@ export default function Post5() {
             also make it easier if you plan to use image editing software. Click
             Download to download the font template file(s).
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-download-template.png")}
               alt="Calligraphr website showing a modal to download a template"
-              className="postImg"
+              className="post-img"
               placeholder="blur"
             />
           </div>
@@ -241,11 +241,11 @@ export default function Post5() {
             to Calligraphr. Go to the My Fonts section > Upload Template > Choose
             File > Upload Template > Add Characters to Your Font.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-preview-chars.png")}
               alt="Calligraphr website showing a modal previewing glyphs from a template"
-              className="postImg"
+              className="post-img"
               placeholder="blur"
             />
           </div>
@@ -259,11 +259,11 @@ export default function Post5() {
             the top left that says the name of the font file. I recommend downloading
             as .ttf since that is what I used.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-download-font.png")}
               alt="Calligraphr website showing a modal to download a font"
-              className="postImg"
+              className="post-img"
               placeholder="blur"
             />
           </div>
@@ -295,11 +295,11 @@ export default function Post5() {
             font. Then, click OK to upload. FontForge should now have all of the
             glyphs of this font file displayed.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-displayed.png")}
               alt="FontForge with the uploaded font glyphs displayed"
-              className="postImg"
+              className="post-img"
               placeholder="blur"
             />
           </div>
@@ -321,8 +321,8 @@ export default function Post5() {
             {`Now, FontForge should have all of the glyphs from
             your font displayed.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-merge-fonts.mp4"
                 type="video/mp4"
@@ -362,11 +362,11 @@ export default function Post5() {
             before transforming: "Transform Width Too," "Transform simple positioning features
             & kern pairs," and "Round To Int."`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-transform-glyph.png")}
               alt={`FontForge transform window with the scale option selected`}
-              className="postImg w-full"
+              className="post-img w-full"
               placeholder="blur"
             />
           </div>
@@ -381,11 +381,11 @@ export default function Post5() {
             If you make it too thick or too thin, you can always undo (Mac: Command+Z / Windows: Control+Z) and
             enter a different amount.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-weight.png")}
               alt={`FontForge change weight window with the "embolden by" input selected`}
-              className="postImg w-full"
+              className="post-img w-full"
               placeholder="blur"
             />
           </div>
@@ -408,11 +408,11 @@ export default function Post5() {
             have these same options enabled before transforming: "Transform Width Too,"
             "Transform simple positioning features & kern pairs," and "Round To Int."`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-positioning.png")}
               alt={`FontForge transform window with the move option selected`}
-              className="postImg w-full"
+              className="post-img w-full"
               placeholder="blur"
             />
           </div>
@@ -428,18 +428,18 @@ export default function Post5() {
             Making these adjustments can be tedious, but it can really improve
             the quality of your font.
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <div className="relative mb-2">
               <Image
                 src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-font-no-adjustments.png")}
                 alt="Font with example text, before adjustments"
-                className="postImg w-full"
+                className="post-img w-full"
                 placeholder="blur"
               />
               <Image
                 src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-font-with-adjustments.png")}
                 alt="Font with example text, after adjustments"
-                className="postImg w-full absolute top-0 left-0"
+                className="post-img w-full absolute top-0 left-0"
                 placeholder="blur"
                 style={{ opacity: `${sliderValue}%` }}
               />
@@ -464,8 +464,8 @@ export default function Post5() {
             Double-click a glyph to enter a more advanced editor window. Here,
             you can adjust the position of each point that makes up the glyph.
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-open-editor.mp4"
                 type="video/mp4"
@@ -493,8 +493,8 @@ export default function Post5() {
             and dragging a box around them, then click and drag one of the
             selected points.
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-precise-adjustments.mp4"
                 type="video/mp4"
@@ -517,20 +517,20 @@ export default function Post5() {
             looks more natural, especially with handwriting fonts.
           </p>
           <div className="flex gap-x-4">
-            <div className="postImgDiv mt-0">
+            <div className="post-img-div mt-0">
               <Image
                 src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-unkerned.png")}
                 alt={`The word "frijole" in a font with no kerning`}
-                className="postImg w-full"
+                className="post-img w-full"
                 placeholder="blur"
               />
               <p className="subtext">Handwriting font without kerning</p>
             </div>
-            <div className="postImgDiv mt-0">
+            <div className="post-img-div mt-0">
               <Image
                 src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-kerned.png")}
                 alt={`The word "frijole" in a font with kerning`}
-                className="postImg w-full"
+                className="post-img w-full"
                 placeholder="blur"
               />
               <p className="subtext">Handwriting font with kerning</p>
@@ -554,19 +554,19 @@ export default function Post5() {
             {`Select all characters (Mac: Command+A / Windows: Control+A) > Metrics
             > Auto Width... > set the separation, min, and max all to zero > OK.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-auto-width-zero.png")}
               alt={`FontForge auto width window with the separation, min, and max all set to zero`}
-              className="postImg w-full"
+              className="post-img w-full"
               placeholder="blur"
             />
           </div>
           <p className="text">
             {`Next, go to Element > Font Info... > Lookups > GPOS > Add Lookup.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-start-lookup.mp4"
                 type="video/mp4"
@@ -583,8 +583,8 @@ export default function Post5() {
             to <New> > "kern horizontal kerning" > OK.`}
           </p>
           <p className="text">{`Now this lookup has been added.`}</p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-add-lookup.mp4"
                 type="video/mp4"
@@ -609,8 +609,8 @@ export default function Post5() {
             for other characters like numbers or symbols. Once you're finished here,
             click OK.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-start-subtable.mp4"
                 type="video/mp4"
@@ -632,11 +632,11 @@ export default function Post5() {
             {`When you're done, click OK to save and close the subtable window, then
             click OK again to save and close the Font Info window.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-add-subtable.png")}
               alt={`FontForge subtable window with the kerning pair "Tr" selected`}
-              className="postImg w-full"
+              className="post-img w-full"
               placeholder="blur"
             />
           </div>
@@ -645,11 +645,11 @@ export default function Post5() {
             (Mac: Command+A / Windows: Control+A) > Metrics > Auto Width... > set the
             separation to 50, set min to 25, and set max to 25 > OK.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-auto-width-new.png")}
               alt={`FontForge auto width window with the separation set to 50, min set to 25, and max set to 25`}
-              className="postImg w-full"
+              className="post-img w-full"
               placeholder="blur"
             />
           </div>
@@ -675,11 +675,11 @@ export default function Post5() {
             {`If you adjust something that changes the horizontal positioning
             of a glyph, you may need to go back and re-kern the characters.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-preview-font.png")}
               alt={`FontForge metrics window showing example text in the font being worked on`}
-              className="postImg w-full"
+              className="post-img w-full"
               placeholder="blur"
             />
           </div>
@@ -709,11 +709,11 @@ export default function Post5() {
             font files (.ttf), the "em size" needs to be a power of 2. Go to Element
             > Font Info... > General > change the number next to "Em Size" to 1024.`}
           </p>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <Image
               src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-em-size.png")}
               alt={`FontForge font info window with the em size set to 1024`}
-              className="postImg w-full"
+              className="post-img w-full"
               placeholder="blur"
             />
           </div>
@@ -728,8 +728,8 @@ export default function Post5() {
             error for a glyph, a different error may appear for that same glyph, so
             make sure you fix all the errors before generating the font.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-find-errors.mp4"
                 type="video/mp4"
@@ -744,8 +744,8 @@ export default function Post5() {
           <p className="text">
             {`Enter the glyph editor view (by double-clicking the glyph) > select all the points of the glyph (Mac: Command+A / Windows: Control+A) > Element > Add Extrema.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-fix-extrema.mp4"
                 type="video/mp4"
@@ -758,8 +758,8 @@ export default function Post5() {
           <p className="text">
             {`Enter the glyph editor view (by double-clicking the glyph) > select all the points of the glyph (Mac: Command+A / Windows: Control+A) > Element > Correct Direction.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-fix-wrong-direction.mp4"
                 type="video/mp4"
@@ -774,8 +774,8 @@ export default function Post5() {
           <p className="text">
             {`Enter the glyph editor view (by double-clicking the glyph) > select all the points of the glyph (Mac: Command+A / Windows: Control+A) > Overlap > Remove Overlap.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-fix-intersecting-1.mp4"
                 type="video/mp4"
@@ -790,8 +790,8 @@ export default function Post5() {
             where the glyph goes into itself. Then, move around whichever
             points are causing it to self-intersect.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-fix-intersecting-2.mp4"
                 type="video/mp4"
@@ -806,8 +806,8 @@ export default function Post5() {
           <p className="text">
             {`Enter the glyph editor view (by double-clicking the glyph) > select all the points of the glyph (Mac: Command+A / Windows: Control+A) > Round > To Int.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-fix-non-integral-coordinates.mp4"
                 type="video/mp4"
@@ -836,8 +836,8 @@ export default function Post5() {
             {`Once all the errors are fixed (or you just stopped caring enough to fix them),
             you're ready to download your font! Go to File > Generate Fonts... > Generate.`}
           </p>
-          <div className="postImgDiv">
-            <video controls className="postImg w-full">
+          <div className="post-img-div">
+            <video controls className="post-img w-full">
               <source
                 src="/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-generate-font.mp4"
                 type="video/mp4"
@@ -860,7 +860,7 @@ export default function Post5() {
           <div className="text-left mt-16">
             <Link
               href="/blog"
-              className="block text-xl internalLink no-underline"
+              className="block text-xl internal-link no-underline"
             >
               <FontAwesomeIcon
                 icon={faArrowLeft}

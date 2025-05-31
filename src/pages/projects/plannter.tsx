@@ -31,7 +31,7 @@ export default function Plannter() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="container postImgDiv mx-auto mt-6">
+      <div className="container post-img-div mx-auto mt-6">
         <ImageCarousel
           images={[
             "/images/plannter-ss-1.png",

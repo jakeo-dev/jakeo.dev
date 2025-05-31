@@ -32,7 +32,7 @@ export default function Cifra() {
         toolsList={["JavaScript", "Tailwind"]}
       />
 
-      <div className="container postImgDiv mx-auto mt-6">
+      <div className="container post-img-div mx-auto mt-6">
         <ImageCarousel
           images={[
             "/images/cifra-ss-1.png",
@@ -75,7 +75,7 @@ export default function Cifra() {
         each vanity number. For a more in-depth explanation, read my blog post:{" "}
         <Link
           href="/blog/dialing-letters-instead-of-digits"
-          className="internalLink"
+          className="internal-link"
         >
           Dialing Letter Instead of Digits
         </Link>

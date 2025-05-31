@@ -10,7 +10,7 @@ export default function Modal(props: {
   return (
     <div
       className={`${
-        props.open ? "fadeOut" : "fadeIn"
+        props.open ? "visible-fade" : "invisible-fade"
       } bg-black/50 flex justify-center items-center fixed top-0 left-0 z-30 w-full h-full overflow-auto ${
         props.className
       }`}

@@ -87,7 +87,7 @@ export default function Post4() {
             More than one word can share the same numero, but this won't affect
             the program.
           </p>
-          <div className="codeBlockDiv">
+          <div className="code-block-div">
             <CodeBlock
               code={`numerosArray = [];
 
@@ -129,10 +129,10 @@ for (j = 0; j < wordsArray.length; j++) {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Telephone-keypad.svg/1920px-Telephone-keypad.svg.png"
               alt="The standard telephone keypad with certain numbers corresponding to certain letters"
-              className="postImg w-1/3 md:w-1/5"
+              className="post-img w-1/3 md:w-1/5"
             />
           </div>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <p className="text">
               Below is an example list of words and their corresponding numeros
               after running the code.
@@ -140,7 +140,7 @@ for (j = 0; j < wordsArray.length; j++) {
             <Image
               src={require("../../../public/images/dialing-letters-instead-of-digits/visual-1.png")}
               alt={`A list of words with their corresponding "numeros"`}
-              className="postImg"
+              className="post-img"
               placeholder="blur"
             />
           </div>
@@ -161,7 +161,7 @@ for (j = 0; j < wordsArray.length; j++) {
             corresponding word. Then, it will add that vanity number to an array
             called oneNumsArray.
           </p>
-          <div className="codeBlockDiv">
+          <div className="code-block-div">
             <CodeBlock
               code={`for (m = 0; m < numerosArray.length; m++) {
     if (inp.includes(numerosArray[m])) {
@@ -177,7 +177,7 @@ for (j = 0; j < wordsArray.length; j++) {
               letter and a digit meet.
             </p>
           </div>
-          <div className="postImgDiv">
+          <div className="post-img-div">
             <p className="text">
               Below is an example of this step. 230-286-6911 is the inputted
               phone number, and while looping through numerosArray, it finds
@@ -189,7 +189,7 @@ for (j = 0; j < wordsArray.length; j++) {
             <Image
               src={require("../../../public/images/dialing-letters-instead-of-digits/visual-2.png")}
               alt={`The word "bunny" being matched to its numero, then the numero within the inputted phone number being changed to the word "bunny"`}
-              className="postImg"
+              className="post-img"
               placeholder="blur"
             />
           </div>
@@ -241,7 +241,7 @@ for (j = 0; j < wordsArray.length; j++) {
             then the program will repeat the same process from the previous
             step, but now on the list of one-word vanity numbers.
           </p>
-          <div className="codeBlockDiv">
+          <div className="code-block-div">
             <CodeBlock
               code={`if (oneNumsArray.length > 0 && (numOfGoodNums(oneNumsArray[oneNumsArray.length - 1]) > 2 || numOfGoodNums(oneNumsArray[0]) > 2))`}
             />
@@ -253,7 +253,7 @@ for (j = 0; j < wordsArray.length; j++) {
             vanity number with the corresponding word. Then, it will add this
             new two-word vanity number to an array called twoNumsArray.
           </p>
-          <div className="codeBlockDiv">
+          <div className="code-block-div">
             <CodeBlock
               code={`for (n = 0; n < oneNumsArray.length; n++) {
     for (o = 0; o < numerosArray.length; o++) {
@@ -270,12 +270,12 @@ for (j = 0; j < wordsArray.length; j++) {
             The same checks and processes will be repeated one last time to add
             a potential third word to the vanity numbers.
           </p>
-          <div className="codeBlockDiv">
+          <div className="code-block-div">
             <CodeBlock
               code={`if (twoNumsArray.length > 0 && (numOfGoodNums(twoNumsArray[twoNumsArray.length - 1]) > 2 || numOfGoodNums(twoNumsArray[0]) > 2))`}
             />
           </div>
-          <div className="codeBlockDiv">
+          <div className="code-block-div">
             <CodeBlock
               code={`for (p = 0; p < twoNumsArray.length; p++) {
     for (q = 0; q < numerosArray.length; q++) {
@@ -324,7 +324,7 @@ for (j = 0; j < wordsArray.length; j++) {
           <div className="text-left mt-16">
             <Link
               href="/blog"
-              className="block text-xl internalLink no-underline"
+              className="block text-xl internal-link no-underline"
             >
               <FontAwesomeIcon
                 icon={faArrowLeft}

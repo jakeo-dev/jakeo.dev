@@ -31,11 +31,11 @@ export default function Linked() {
         toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="postImgDiv mt-6">
+      <div className="post-img-div mt-6">
         <Image
           src={require("../../../public/images/linked-ss-1.png")}
           alt={`Screenshot of Linked showing the game being played, with the words "deaf," "fiend," "diodes," and the fourth word not fully typed`}
-          className="postImg"
+          className="post-img"
           placeholder="blur"
         />
       </div>

@@ -31,11 +31,11 @@ export default function Everydle() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="postImgDiv mt-6">
+      <div className="post-img-div mt-6">
         <Image
           src={require("../../../public/images/everydle-ss-1.png")}
           alt={`Screenshot of Everydle showing the game being played`}
-          className="postImg"
+          className="post-img"
           placeholder="blur"
         />
       </div>

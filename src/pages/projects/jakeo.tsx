@@ -30,11 +30,11 @@ export default function JakeO() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="postImgDiv mt-6">
+      <div className="post-img-div mt-6">
         <Image
           src={require("../../../public/images/main-ss-1.png")}
           alt="Screenshot of JakeO.dev showing the home page, including some projects and posts"
-          className="postImg"
+          className="post-img"
           placeholder="blur"
         />
       </div>
