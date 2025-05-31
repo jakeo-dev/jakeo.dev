@@ -40,7 +40,7 @@ export default function Post(props: {
           {props.releaseDate}
         </h2>
       </div>
-      <h2
+      {/* <h2
         className={`${
           props.fadeDesc ? "fade-text" : ""
         } text text-gray-600 mt-2 mb-0`}

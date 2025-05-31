@@ -38,7 +38,7 @@ export default function Home() {
         <h2>Some of my projects</h2>
         <Link
           href="/projects"
-          className="text internalLink text-sm md:text-base px-2 ml-auto"
+          className="text internalLink no-underline text-sm md:text-base font-normal px-2 ml-auto"
         >
           <span>See all</span>
           <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
@@ -74,7 +74,7 @@ export default function Home() {
         <h2>Some of my posts</h2>
         <Link
           href="/blog"
-          className="text internalLink text-sm md:text-base px-2 ml-auto"
+          className="text internalLink no-underline text-sm md:text-base font-normal px-2 ml-auto"
         >
           <span>See all</span>
           <FontAwesomeIcon icon={faArrowRight} className="ml-2" />

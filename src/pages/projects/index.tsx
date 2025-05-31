@@ -115,7 +115,7 @@ export default function Projects() {
             toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
             showLogo={true}
-            type={0}
+            type={1}
             link="https://linked.jakeo.dev"
           />
           <Project
