@@ -62,7 +62,7 @@ export default function Header() {
       setImgSrc(
         earthDayBunnies[Math.floor(Math.random() * earthDayBunnies.length)]
       );
-    } else if (currentMonth == 5 && currentDay >= 3 && currentDay <= 5) {
+    } else if (currentMonth == 6 && currentDay >= 3 && currentDay <= 5) {
       // 4th of july (july 3 to 5)
       setImgSrc(
         americaBunnies[Math.floor(Math.random() * americaBunnies.length)]
@@ -144,7 +144,7 @@ export default function Header() {
                   );
                   earthDayBunnies.push(oldImage);
                 } else if (
-                  currentMonth == 5 &&
+                  currentMonth == 6 &&
                   currentDay >= 3 &&
                   currentDay <= 5
                 ) {
