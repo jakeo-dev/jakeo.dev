@@ -12,7 +12,7 @@ export default function Contents(props: {
         {props.logoImg != "" ? (
           <img
             src={props.logoImg}
-            className="inline w-8 mr-2"
+            className="inline w-7 mr-2"
             alt={`${props.title} logo`}
           />
         ) : (
