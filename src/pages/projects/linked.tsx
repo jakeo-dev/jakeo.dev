@@ -24,7 +24,7 @@ export default function Linked() {
 
       <ProjectCover
         title="Linked"
-        desc="A fun and simple word puzzle game to test your brain."
+        desc="Link five words together in a fun and simple word game."
         createDate="June 2024"
         updateDate="July 2024"
         logoImg="https://linked.jakeo.dev/images/icon-transparent.png"

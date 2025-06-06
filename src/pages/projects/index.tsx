@@ -110,7 +110,7 @@ export default function Projects() {
         >
           <Project
             name="Linked"
-            desc="A fun and simple word puzzle game to test your brain."
+            desc="Link five words together in a fun and simple word game."
             updateDate="July 2024"
             toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
@@ -118,33 +118,7 @@ export default function Projects() {
             type={1}
             link="https://linked.jakeo.dev"
           />
-          <Project
-            name="Yearn"
-            desc="Organize gifts that you yearn for into a simple list."
-            toolsList={["JavaScript", "Tailwind"]}
-            logo="https://yearn.jakeo.dev/yearn-logo.png"
-            showLogo={false}
-            type={1}
-            link="https://yearn.jakeo.dev"
-          />
-          <Project
-            name="Text Filter"
-            desc="Filter unwanted strings from text in a number of different ways."
-            toolsList={["JavaScript", "Tailwind"]}
-            logo=""
-            showLogo={false}
-            type={1}
-            link="https://filter.jakeo.dev"
-          />
-          <Project
-            name="Cerebric"
-            desc="A speed typing website to help you study."
-            toolsList={["JavaScript", "Tailwind"]}
-            logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
-            showLogo={true}
-            type={1}
-            link="https://cerebric.jakeo.dev"
-          />
+
           <Project
             name="Decorate a Tree"
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
@@ -154,18 +128,30 @@ export default function Projects() {
             type={1}
             link="https://tree.jakeo.dev"
           />
+
           <Project
-            name="Emoticon Generator"
-            desc="Generate unique emoticons."
+            name="Yearn"
+            desc="Organize everything you yearn for into a simple list."
             toolsList={["JavaScript", "Tailwind"]}
-            logo=""
+            logo="https://yearn.jakeo.dev/yearn-logo.png"
             showLogo={false}
             type={1}
-            link="https://emoticons.jakeo.dev"
+            link="https://yearn.jakeo.dev"
           />
+
+          <Project
+            name="Cerebric"
+            desc="A speed typing website to help you study."
+            toolsList={["JavaScript", "Tailwind"]}
+            logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
+            showLogo={true}
+            type={1}
+            link="https://cerebric.jakeo.dev"
+          />
+
           <Project
             name="Colorful Bunnies"
-            desc="Browse and download some colorful bunnies individually, in collections, or in banners."
+            desc="Browse and download some colorful bunnies made for every occasion."
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
             showLogo={true}
