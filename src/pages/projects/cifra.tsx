@@ -10,8 +10,8 @@ export default function Cifra() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev: About Cifra</title>
-        <meta property="og:title" content="JakeO.dev: About Cifra" />
+        <title>JakeO: About Cifra</title>
+        <meta property="og:title" content="JakeO: About Cifra" />
         <meta
           property="og:description"
           content="A more detailed description about Cifra"

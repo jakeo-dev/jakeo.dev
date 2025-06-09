@@ -8,8 +8,8 @@ export default function JakeO() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev: About this website</title>
-        <meta property="og:title" content="JakeO.dev: About this website" />
+        <title>JakeO: About this website</title>
+        <meta property="og:title" content="JakeO: About this website" />
         <meta
           property="og:description"
           content="A more detailed description about this website"

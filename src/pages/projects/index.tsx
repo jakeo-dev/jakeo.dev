@@ -7,9 +7,9 @@ export default function Projects() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev: Projects</title>
-        <meta property="og:title" content="JakeO.dev: Projects" />
-        <meta property="og:description" content="Projects from JakeO.dev" />
+        <title>JakeO: Projects</title>
+        <meta property="og:title" content="JakeO: Projects" />
+        <meta property="og:description" content="Projects from JakeO" />
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"

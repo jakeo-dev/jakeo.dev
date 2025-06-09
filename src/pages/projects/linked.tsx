@@ -9,8 +9,8 @@ export default function Linked() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev: About Linked</title>
-        <meta property="og:title" content="JakeO.dev: About Linked" />
+        <title>JakeO: About Linked</title>
+        <meta property="og:title" content="JakeO: About Linked" />
         <meta
           property="og:description"
           content="A more detailed description about Linked"

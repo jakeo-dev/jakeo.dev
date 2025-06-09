@@ -9,8 +9,8 @@ export default function Pairckle() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev: About Pairckle</title>
-        <meta property="og:title" content="JakeO.dev: About Pairckle" />
+        <title>JakeO: About Pairckle</title>
+        <meta property="og:title" content="JakeO: About Pairckle" />
         <meta
           property="og:description"
           content="A more detailed description about Pairckle"

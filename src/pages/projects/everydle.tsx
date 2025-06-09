@@ -9,8 +9,8 @@ export default function Everydle() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev: About Everydle</title>
-        <meta property="og:title" content="JakeO.dev: About Everydle" />
+        <title>JakeO: About Everydle</title>
+        <meta property="og:title" content="JakeO: About Everydle" />
         <meta
           property="og:description"
           content="A more detailed description about Everydle"

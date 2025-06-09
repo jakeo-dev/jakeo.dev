@@ -9,8 +9,8 @@ export default function Plannter() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev: About Plannter</title>
-        <meta property="og:title" content="JakeO.dev: About Plannter" />
+        <title>JakeO: About Plannter</title>
+        <meta property="og:title" content="JakeO: About Plannter" />
         <meta
           property="og:description"
           content="A more detailed description about Plannter"

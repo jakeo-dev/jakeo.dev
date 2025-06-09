@@ -6,9 +6,9 @@ export default function Blog() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev: Posts</title>
-        <meta property="og:title" content="JakeO.dev: Posts" />
-        <meta property="og:description" content="Blog posts from JakeO.dev" />
+        <title>JakeO: Posts</title>
+        <meta property="og:title" content="JakeO: Posts" />
+        <meta property="og:description" content="Blog posts from JakeO" />
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
