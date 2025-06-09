@@ -1,7 +1,7 @@
 import CommonHead from "@/components/CommonHead";
 import Button from "@/components/Button";
 import SecButton from "@/components/SecButton";
-import Image from "next/image";
+import ImageCarousel from "@/components/ImageCarousel";
 import ProjectCover from "@/components/ProjectCover";
 
 export default function Everydle() {
@@ -26,17 +26,19 @@ export default function Everydle() {
         title="Everydle"
         desc="Play every game of Wordle at the same time."
         createDate="May 2025"
-        updateDate="May 2025"
+        updateDate="June 2025"
         logoImg="https://everydle.jakeo.dev/favicon.ico"
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="post-img-div mt-6">
-        <Image
-          src={require("../../../public/images/everydle-ss-1.png")}
-          alt={`Screenshot of Everydle showing the game being played`}
-          className="post-img"
-          placeholder="blur"
+      <div className="container post-img-div mx-auto mt-6">
+        <ImageCarousel
+          images={["/images/everydle-ss-1.png", "/images/everydle-ss-2.png"]}
+          imagePosition="object-top"
+          alts={[
+            "Screenshot of Everydle showing the game being played in classic mode",
+            "Screenshot of Everydle showing the game being played in compact mode",
+          ]}
         />
       </div>
 
@@ -63,6 +65,82 @@ export default function Everydle() {
         at once in one extremely long sitting, and never worry about missing a
         day again.
       </p>
+      <p className="text">
+        This is my first project that has actually received some attention on
+        the internet, and I've both appreciated the feedback on how to improve
+        the website and enjoyed reading the comments from random people. Here
+        are my favorites (some of which I also included in the list of random
+        taglines that appear under the title of the website):
+      </p>
+      <ul className="text list-disc list-inside">
+        <li className="text">
+          <a
+            href="https://www.metafilter.com/208826/Just-because-you-can-doesnt-mean-you-should#:~:text=This%20is%20very%20funny%2C%20basically,with%20an%20increasingly%20unuseable%20UI%22."
+            target="_blank"
+            className="link"
+            rel="noopener noreferrer"
+          >
+            "This is very funny, basically 're-type the wordle word list with an
+            increasingly unuseable UI'."
+          </a>
+        </li>
+        <li className="text">
+          <a
+            href="https://www.metafilter.com/208826/Just-because-you-can-doesnt-mean-you-should#:~:text=Oh%20it%20gets%20worse%20200%20words%20in"
+            target="_blank"
+            className="link"
+            rel="noopener noreferrer"
+          >
+            "Oh it gets worse 200 words in"
+          </a>
+        </li>
+        <li className="text">
+          <a
+            href="https://webcurios.co.uk/webcurios-23-05-25/#:~:text=This%20is%20HORRIBLE%20and%20made,get%20my%20head%20around%20it"
+            target="_blank"
+            className="link"
+            rel="noopener noreferrer"
+          >
+            "This is HORRIBLE and made me feel slightly queasy as I tried to get
+            my head around it"
+          </a>
+        </li>
+        <li className="text">
+          <a
+            href="https://www.microsiervos.com/archivo/juegos-y-diversion/everydle-resolver-todos-wordle.html#:~:text=es%20m%C3%A1s%20que%20un%20juego%2C,guerra%20a%20tu%20tiempo%20libre"
+            target="_blank"
+            className="link"
+            rel="noopener noreferrer"
+          >
+            "es más que un juego, es una declaración de guerra a tu tiempo
+            libre"{" "}
+            <i>
+              (it is more than a game, it is a declaration of war on your free
+              time)
+            </i>
+          </a>
+        </li>
+        <li className="text">
+          <a
+            href="https://b3ta.com/newsletter/issue949/#:~:text=W****e%20of%20%0A%20%20the,of%20the%20last%20187%20weeks"
+            target="_blank"
+            className="link"
+            rel="noopener noreferrer"
+          >
+            "[Wordle] of the week is [wordle] of the last 187 weeks"
+          </a>
+        </li>
+        <li className="text">
+          <a
+            href="https://www.metafilter.com/208826/Just-because-you-can-doesnt-mean-you-should#:~:text=This%20is%20wonderfully%20stupid"
+            target="_blank"
+            className="link"
+            rel="noopener noreferrer"
+          >
+            "This is wonderfully stupid"
+          </a>
+        </li>
+      </ul>
     </>
   );
 }
