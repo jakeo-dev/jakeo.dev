@@ -1,6 +1,6 @@
 import CommonHead from "@/components/CommonHead";
-import Cover from "@/components/PostCover";
-import Contents from "@/components/PostContents";
+import Cover from "@/components/blog/PostCover";
+import Contents from "@/components/blog/PostContents";
 import Callout from "@/components/Callout";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

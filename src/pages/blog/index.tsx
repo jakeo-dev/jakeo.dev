@@ -1,5 +1,5 @@
 import CommonHead from "@/components/CommonHead";
-import Post from "@/components/Post";
+import Post from "@/components/blog/Post";
 
 export default function Blog() {
   return (

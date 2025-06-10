@@ -1,7 +1,7 @@
 import CommonHead from "@/components/CommonHead";
 import SecButton from "@/components/SecButton";
 import Image from "next/image";
-import ProjectCover from "@/components/ProjectCover";
+import ProjectCover from "@/components/projects/ProjectCover";
 
 export default function JakeO() {
   return (

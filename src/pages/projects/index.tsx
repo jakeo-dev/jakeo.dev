@@ -1,6 +1,6 @@
 import CommonHead from "@/components/CommonHead";
 import MasonryLayout from "@/components/MasonryLayout";
-import Project from "@/components/Project";
+import Project from "@/components/projects/Project";
 
 export default function Projects() {
   return (

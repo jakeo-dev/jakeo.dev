@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import SecButton from "@/components/SecButton";
 import ImageCarousel from "@/components/ImageCarousel";
 import Link from "next/link";
-import ProjectCover from "@/components/ProjectCover";
+import ProjectCover from "@/components/projects/ProjectCover";
 
 export default function Cifra() {
   return (

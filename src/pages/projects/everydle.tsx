@@ -2,7 +2,7 @@ import CommonHead from "@/components/CommonHead";
 import Button from "@/components/Button";
 import SecButton from "@/components/SecButton";
 import ImageCarousel from "@/components/ImageCarousel";
-import ProjectCover from "@/components/ProjectCover";
+import ProjectCover from "@/components/projects/ProjectCover";
 
 export default function Everydle() {
   return (

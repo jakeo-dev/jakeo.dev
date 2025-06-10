@@ -1,6 +1,6 @@
 import CommonHead from "@/components/CommonHead";
-import Project from "@/components/Project";
-import Post from "@/components/Post";
+import Project from "@/components/projects/Project";
+import Post from "@/components/blog/Post";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
