@@ -4,51 +4,51 @@
 
 @layer components {
   .sub1title {
-    @apply text-xl text-gray-900 text-left text-pretty font-bold py-4 mt-14;
+    @apply mt-14 text-pretty py-4 text-left text-xl font-bold text-gray-900;
   }
 
   .sub2title {
-    @apply text-lg text-gray-900 text-left text-pretty font-semibold py-4 mt-8;
+    @apply mt-8 text-pretty py-4 text-left text-lg font-semibold text-gray-900;
   }
 
   .sub3title {
-    @apply text-base text-gray-900 text-left text-pretty font-medium py-4 mt-4;
+    @apply mt-4 text-pretty py-4 text-left text-base font-medium text-gray-900;
   }
 
   .sub1title-subtext {
-    @apply text-gray-700 text-left text-pretty font-medium py-2 mt-4;
+    @apply mt-4 text-pretty py-2 text-left font-medium text-gray-700;
   }
 
   .text {
-    @apply text-gray-800 text-base text-left text-pretty leading-7 mb-3 last:mb-0;
+    @apply mb-3 text-pretty text-left text-base leading-7 text-gray-800 last:mb-0;
   }
 
   .subtext {
-    @apply text-sm text-left italic text-gray-600 mt-1.5 mb-4;
+    @apply mb-4 mt-1.5 text-left text-sm italic text-gray-600;
   }
 
   .link {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-blue-600 active:text-blue-700 transition;
+    @apply underline decoration-2 transition hover:text-blue-600 hover:decoration-wavy hover:decoration-1 active:text-blue-700;
   }
 
   .download-link {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-green-600 active:text-green-700 transition;
+    @apply underline decoration-2 transition hover:text-green-600 hover:decoration-wavy hover:decoration-1 active:text-green-700;
   }
 
   .internal-link {
-    @apply underline decoration-2 hover:decoration-1 hover:decoration-wavy hover:text-sky-600 active:text-sky-700 transition;
+    @apply underline decoration-2 transition hover:text-sky-600 hover:decoration-wavy hover:decoration-1 active:text-sky-700;
   }
 
   .code-block-div {
-    @apply mt-3 mb-6;
+    @apply mb-6 mt-3;
   }
 
   .post-dates-div {
-    @apply flex gap-3 text-sm text-gray-600 text-left mt-2;
+    @apply mt-2 flex gap-3 text-left text-sm text-gray-600;
   }
 
   .post-img-div {
-    @apply mt-3 mb-6;
+    @apply mb-6 mt-3;
   }
 
   .post-img {
@@ -56,7 +56,7 @@
   }
 
   .sp-table {
-    @apply max-w-lg md:max-w-full text-left border-b-2 border-t-0 border-gray-400 mb-2;
+    @apply mb-2 max-w-lg border-b-2 border-t-0 border-gray-400 text-left md:max-w-full;
   }
 
   .sp-table-head {
@@ -64,11 +64,11 @@
   }
 
   .sp-table-head-item {
-    @apply font-normal align-bottom leading-normal px-2.5 pb-2;
+    @apply px-2.5 pb-2 align-bottom font-normal leading-normal;
   }
 
   .sp-table-item {
-    @apply font-normal align-top leading-relaxed md:leading-8 border-x-2 border-gray-400 px-4 py-2;
+    @apply border-x-2 border-gray-400 px-4 py-2 align-top font-normal leading-relaxed md:leading-8;
   }
 
   .sp-table-list-item {
@@ -84,7 +84,7 @@
   }
 
   .check-sizes {
-    @apply border-8 border-blue-500 sm:border-green-500 md:border-yellow-500 lg:border-orange-500 xl:border-red-500 bg-blue-200 sm:bg-green-200 md:bg-yellow-200 lg:bg-orange-200 xl:bg-red-200;
+    @apply border-8 border-blue-500 bg-blue-200 sm:border-green-500 sm:bg-green-200 md:border-yellow-500 md:bg-yellow-200 lg:border-orange-500 lg:bg-orange-200 xl:border-red-500 xl:bg-red-200;
   }
 
   .invisible-fade {
@@ -112,17 +112,18 @@
   padding-inline: var(--mark-overlap);
 
   background-color: transparent;
-  background-image: linear-gradient(
-      to bottom right,
-      transparent 50%,
-      var(--mark-color) 50%
-    ),
+  background-image:
+    linear-gradient(to bottom right, transparent 50%, var(--mark-color) 50%),
     linear-gradient(var(--mark-color), var(--mark-color)),
     linear-gradient(to top left, transparent 50%, var(--mark-color) 50%);
-  background-size: var(--mark-skew) var(--mark-height),
+  background-size:
+    var(--mark-skew) var(--mark-height),
     calc(100% - var(--mark-skew) * 2 + 1px) var(--mark-height),
     var(--mark-skew) var(--mark-height);
-  background-position: left center, center, right center;
+  background-position:
+    left center,
+    center,
+    right center;
   background-repeat: no-repeat;
   color: inherit;
   -webkit-box-decoration-break: clone;
