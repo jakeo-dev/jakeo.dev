@@ -33,20 +33,28 @@ export default function Plannter() {
 
       <div className="post-img-div container mx-auto mt-6">
         <ImageCarousel
-          images={[
-            "/images/plannter-ss-1.png",
-            "/images/plannter-ss-2.png",
-            "/images/plannter-ss-3.png",
-            "/images/plannter-ss-4.png",
-            "/images/plannter-ss-5.png",
-          ]}
           imagePosition="object-top"
-          alts={[
-            "Screenshot of Plannter showing GPA and a list of Freshman and Sophomore courses with their grade and advancement level",
-            "Screenshot of Plannter showing a list of standardized tests with their scores and date taken",
-            "Screenshot of Plannter showing a list of extracurricular activities with titles, descriptions, and amount of time spent for each one",
-            "Screenshot of Plannter showing a list of college application essays with their prompts, writing status, word count, date last edited, and corresponding colleges for each one",
-            "Screenshot of Plannter showing a list of colleges with their locations, acceptance rates, and application statuses for each one, organized into Reach, Target, and Safety categories",
+          images={[
+            {
+              src: "/images/plannter-ss-1.png",
+              alt: "Screenshot of Plannter showing GPA and a list of Freshman and Sophomore courses with their grade and advancement level",
+            },
+            {
+              src: "/images/plannter-ss-2.png",
+              alt: "Screenshot of Plannter showing a list of standardized tests with their scores and date taken",
+            },
+            {
+              src: "/images/plannter-ss-3.png",
+              alt: "Screenshot of Plannter showing a list of extracurricular activities with titles, descriptions, and amount of time spent for each one",
+            },
+            {
+              src: "/images/plannter-ss-4.png",
+              alt: "Screenshot of Plannter showing a list of college application essays with their prompts, writing status, word count, date last edited, and corresponding colleges for each one",
+            },
+            {
+              src: "/images/plannter-ss-5.png",
+              alt: "Screenshot of Plannter showing a list of colleges with their locations, acceptance rates, and application statuses for each one, organized into Reach, Target, and Safety categories",
+            },
           ]}
         />
       </div>

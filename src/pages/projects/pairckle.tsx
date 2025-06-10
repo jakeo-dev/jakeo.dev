@@ -33,11 +33,16 @@ export default function Pairckle() {
 
       <div className="post-img-div container mx-auto mt-6">
         <ImageCarousel
-          images={["/images/pairckle-ss-1.png", "/images/pairckle-ss-2.png"]}
           imagePosition="object-top"
-          alts={[
-            'Screenshot of Pairckle showing two options to choose from: "Hamlet III" and "Just Like That"',
-            'Screenshot of Pairckle showing three saved rankings, titled "Favorite unreleased songs," "Top works from Leo," and "Best clouds"',
+          images={[
+            {
+              src: "/images/pairckle-ss-1.png",
+              alt: 'Screenshot of Pairckle showing two options to choose from: "Hamlet III" and "Just Like That"',
+            },
+            {
+              src: "/images/pairckle-ss-2.png",
+              alt: 'Screenshot of Pairckle showing three saved rankings, titled "Favorite unreleased songs," "Top works from Leo," and "Best clouds"',
+            },
           ]}
         />
       </div>

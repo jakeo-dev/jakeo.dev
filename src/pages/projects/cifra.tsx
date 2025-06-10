@@ -34,16 +34,20 @@ export default function Cifra() {
 
       <div className="post-img-div container mx-auto mt-6">
         <ImageCarousel
-          images={[
-            "/images/cifra-ss-1.png",
-            "/images/cifra-ss-2.png",
-            "/images/cifra-ss-3.png",
-          ]}
           imagePosition="object-top"
-          alts={[
-            "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
-            "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
-            "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+          images={[
+            {
+              src: "/images/cifra-ss-1.png",
+              alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+            },
+            {
+              src: "/images/cifra-ss-2.png",
+              alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+            },
+            {
+              src: "/images/cifra-ss-3.png",
+              alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+            },
           ]}
         />
       </div>

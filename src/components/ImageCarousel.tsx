@@ -1,41 +1,27 @@
-// component created by chatgpt
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function ImageCarousel(props: {
-  images: string[];
+  images: { src: string; alt: string }[];
   imagePosition: string;
-  alts: string[];
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  //const [fade, setFade] = useState(false);
 
-  // fade transition when going to previous image
   const prevSlide = () => {
-    //setFade(true);
-    //setTimeout(() => {
     setCurrentIndex((prev) =>
       prev === 0 ? props.images.length - 1 : prev - 1,
     );
-    //setFade(false);
-    //}, 500);
   };
 
-  // fade transition when going to next image
   const nextSlide = () => {
-    //setFade(true);
-    //setTimeout(() => {
     setCurrentIndex((prev) =>
       prev === props.images.length - 1 ? 0 : prev + 1,
     );
-    //setFade(false);
-    //}, 500);
   };
 
-  // cycle through image every 5 seconds
+  // auto go to next image every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -47,12 +33,17 @@ export default function ImageCarousel(props: {
   return (
     <div className="post-img-div relative h-56 w-full overflow-hidden sm:h-96 md:h-[430px]">
       <div className="post-img relative h-full w-full">
-        <Image
-          src={props.images[currentIndex]}
-          alt={props.alts[currentIndex]}
-          className={`rounded-md object-cover ${props.imagePosition} transition-opacity`} /* ${fade ? "opacity-0" : "opacity-100"} */
-          fill
-        />
+        {props.images.map((image, i) => (
+          <Image
+            key={i}
+            src={image.src}
+            alt={props.images[i].alt}
+            className={`rounded-md object-cover ${props.imagePosition} transition-opacity duration-300 ${
+              i == currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+            fill
+          />
+        ))}
       </div>
 
       <button

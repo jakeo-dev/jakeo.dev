@@ -33,11 +33,16 @@ export default function Everydle() {
 
       <div className="post-img-div container mx-auto mt-6">
         <ImageCarousel
-          images={["/images/everydle-ss-1.png", "/images/everydle-ss-2.png"]}
-          imagePosition="object-top"
-          alts={[
-            "Screenshot of Everydle showing the game being played in classic mode",
-            "Screenshot of Everydle showing the game being played in compact mode",
+          imagePosition="object-center"
+          images={[
+            {
+              src: "/images/everydle-ss-1.png",
+              alt: "Screenshot of Everydle showing the game being played in classic mode",
+            },
+            {
+              src: "/images/everydle-ss-2.png",
+              alt: "Screenshot of Everydle showing the game being played in compact mode",
+            },
           ]}
         />
       </div>
