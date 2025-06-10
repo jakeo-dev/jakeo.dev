@@ -633,10 +633,10 @@ export default function Post3() {
             extracurriculars, prepare for college applications, and more.
           </p>
 
-          <div className="text-left mt-16">
+          <div className="mt-16 text-left">
             <Link
               href="/blog"
-              className="block text-xl internal-link no-underline"
+              className="internal-link block text-xl no-underline"
             >
               <FontAwesomeIcon
                 icon={faArrowLeft}

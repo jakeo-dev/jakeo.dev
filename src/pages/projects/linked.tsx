@@ -40,15 +40,15 @@ export default function Linked() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-3 my-6">
+      <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="flex-1 border-blue-600 hover:border-blue-700 active:border-blue-800 bg-blue-600 hover:bg-blue-700 active:bg-blue-800"
+          className="flex-1 border-blue-600 bg-blue-600 hover:border-blue-700 hover:bg-blue-700 active:border-blue-800 active:bg-blue-800"
           href="https://linked.jakeo.dev"
         >
           Visit website
         </Button>
         <Button
-          className="flex-1 border-blue-600 hover:border-blue-700 active:border-blue-800 bg-blue-600 hover:bg-blue-700 active:bg-blue-800"
+          className="flex-1 border-blue-600 bg-blue-600 hover:border-blue-700 hover:bg-blue-700 active:border-blue-800 active:bg-blue-800"
           href="https://linked.jakeo.dev/mobile"
         >
           Download app

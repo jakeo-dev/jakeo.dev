@@ -18,19 +18,19 @@ export default function Project(props: {
       <Link
         href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
         className={`${
-          !props.colors ? " hover:border-sky-600" : props.colors
-        } bg-gray-100 border-4 border-gray-200 h-min relative flex flex-col rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 transition duration-200 mb-4 md:mb-6`}
+          !props.colors ? "hover:border-sky-600" : props.colors
+        } relative mb-4 flex h-min flex-col rounded-xl border-4 border-gray-200 bg-gray-100 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6`}
       >
-        <div className="flex-grow w-full relative p-6">
-          <h1 className="text-xl text-left font-medium flex items-center">
+        <div className="relative w-full flex-grow p-6">
+          <h1 className="flex items-center text-left text-xl font-medium">
             <img
               src={props.logo}
-              className={`${props.showLogo ? "" : "hidden"} inline w-6 mr-1.5`}
+              className={`${props.showLogo ? "" : "hidden"} mr-1.5 inline w-6`}
               alt={`${props.name} logo`}
             />
             <span>{props.name}</span>
           </h1>
-          <h2 className="text text-gray-600 mt-2 mb-0">{props.desc}</h2>
+          <h2 className="text mb-0 mt-2 text-gray-600">{props.desc}</h2>
           <div
             className={`flex flex-wrap gap-2 ${
               props.toolsList && props.toolsList.length > 0 ? "mt-2.5" : ""
@@ -41,7 +41,7 @@ export default function Project(props: {
               props.toolsList.map((tool, i) => (
                 <span
                   key={i}
-                  className="inline text-sm bg-gray-200 text-gray-700 rounded-md px-2 py-0.5"
+                  className="inline rounded-md bg-gray-200 px-2 py-0.5 text-sm text-gray-700"
                 >
                   {tool}
                 </span>
@@ -56,18 +56,18 @@ export default function Project(props: {
       <a
         href={props.link}
         target="_blank"
-        className="bg-gray-100 border-4 border-gray-200 hover:border-gray-400 relative flex flex-col rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 transition duration-200 mb-4 md:mb-6"
+        className="relative mb-4 flex flex-col rounded-xl border-4 border-gray-200 bg-gray-100 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-gray-400 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6"
       >
-        <div className="flex-grow w-full relative p-6">
-          <h1 className="text-xl text-left font-medium flex items-center">
+        <div className="relative w-full flex-grow p-6">
+          <h1 className="flex items-center text-left text-xl font-medium">
             <img
               src={props.logo}
-              className={`${props.showLogo ? "" : "hidden"} inline w-6 mr-1.5`}
+              className={`${props.showLogo ? "" : "hidden"} mr-1.5 inline w-6`}
               alt={`${props.name} logo`}
             />
             <span>{props.name}</span>
           </h1>
-          <h2 className="text text-gray-600 mt-2 mb-0">{props.desc}</h2>
+          <h2 className="text mb-0 mt-2 text-gray-600">{props.desc}</h2>
           <div
             className={`flex flex-wrap gap-2 ${
               props.toolsList && props.toolsList.length > 0 ? "mt-2.5" : ""
@@ -78,7 +78,7 @@ export default function Project(props: {
               props.toolsList.map((tool, i) => (
                 <span
                   key={i}
-                  className="inline text-sm bg-gray-200 text-gray-700 rounded-md px-2 py-0.5"
+                  className="inline rounded-md bg-gray-200 px-2 py-0.5 text-sm text-gray-700"
                 >
                   {tool}
                 </span>

@@ -1,6 +1,6 @@
 export default function CodeBlock(props: { code: string }) {
   return (
-    <div className="overflow-scroll bg-gray-800 border-2 border-gray-400 text-white selection:bg-white selection:text-black rounded-lg text-sm text-left px-5 py-4 w-full">
+    <div className="w-full overflow-scroll rounded-lg border-2 border-gray-400 bg-gray-800 px-5 py-4 text-left text-sm text-white selection:bg-white selection:text-black">
       <pre className="font-fira-code whitespace-pre-wrap">{props.code}</pre>
     </div>
   );

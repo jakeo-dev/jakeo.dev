@@ -32,7 +32,7 @@ export default function Cifra() {
         toolsList={["JavaScript", "Tailwind"]}
       />
 
-      <div className="container post-img-div mx-auto mt-6">
+      <div className="post-img-div container mx-auto mt-6">
         <ImageCarousel
           images={[
             "/images/cifra-ss-1.png",
@@ -48,9 +48,9 @@ export default function Cifra() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-3 my-6">
+      <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-yellow-600 hover:border-yellow-700 active:border-yellow-800 bg-yellow-600 hover:bg-yellow-700 active:bg-yellow-800"
+          className="border-yellow-600 bg-yellow-600 hover:border-yellow-700 hover:bg-yellow-700 active:border-yellow-800 active:bg-yellow-800"
           href="https://cifra.jakeo.dev"
         >
           Visit website

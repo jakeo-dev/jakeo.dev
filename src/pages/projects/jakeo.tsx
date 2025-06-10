@@ -39,7 +39,7 @@ export default function JakeO() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-3 my-6">
+      <div className="my-6 flex flex-col gap-3 md:flex-row">
         <SecButton
           className="py-1.5"
           href="https://github.com/jakeo-dev/jakeo.dev"

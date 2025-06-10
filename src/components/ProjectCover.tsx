@@ -8,11 +8,11 @@ export default function Contents(props: {
 }) {
   return (
     <div>
-      <div className="sub1title flex items-center mt-0 pb-0">
+      <div className="sub1title mt-0 flex items-center pb-0">
         {props.logoImg != "" ? (
           <img
             src={props.logoImg}
-            className="inline w-7 mr-2"
+            className="mr-2 inline w-7"
             alt={`${props.title} logo`}
           />
         ) : (
@@ -20,18 +20,18 @@ export default function Contents(props: {
         )}
         <h1 className="inline">{props.title}</h1>
       </div>
-      <h2 className="hidden sub1title-subtext mt-0">{props.desc}</h2>
+      <h2 className="sub1title-subtext mt-0 hidden">{props.desc}</h2>
 
       <div className="post-dates-div">
         <h2>Created {props.createDate}</h2>
         <h2>Updated {props.updateDate}</h2>
       </div>
 
-      <div className="flex gap-2 mt-2.5">
+      <div className="mt-2.5 flex gap-2">
         {props.toolsList.map((tool, i) => (
           <span
             key={i}
-            className="inline text-sm bg-gray-200 text-gray-700 rounded-md px-2 py-0.5"
+            className="inline rounded-md bg-gray-200 px-2 py-0.5 text-sm text-gray-700"
           >
             {tool}
           </span>

@@ -9,14 +9,14 @@ export default function SecButton(props: {
   return (
     <a
       href={props.href}
-      className={`flex border-2 border-gray-300 hover:bg-gray-200 active:bg-gray-300 text-gray-500 active:text-gray-600 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 w-full text-center rounded-full px-3.5 py-1 transition ${props.className}`}
+      className={`flex w-full rounded-full border-2 border-gray-300 px-3.5 py-1 text-center text-gray-500 shadow-sm transition hover:-translate-y-0.5 hover:bg-gray-200 hover:shadow-md active:translate-y-0.5 active:bg-gray-300 active:text-gray-600 active:shadow-none ${props.className}`}
       target="_blank"
     >
-      <div className="flex items-center mx-auto">
+      <div className="mx-auto flex items-center">
         {props.children}
         <FontAwesomeIcon
           icon={faArrowUpRightFromSquare}
-          className="text-sm ml-1.5"
+          className="ml-1.5 text-sm"
           aria-hidden
         />
       </div>

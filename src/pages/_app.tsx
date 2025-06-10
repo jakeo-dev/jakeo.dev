@@ -19,7 +19,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
     console.log(
       "%cOMG HISIES!!!!!!!!!!!!!! 🐰🐰🐰🐰🐰",
-      "color: #8ca6bf; background-color: #f3f4f6; font-size:45px; border-radius:16px; padding:16px;"
+      "color: #8ca6bf; background-color: #f3f4f6; font-size:45px; border-radius:16px; padding:16px;",
     );
   }, []);
 

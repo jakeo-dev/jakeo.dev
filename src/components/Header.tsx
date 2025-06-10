@@ -55,29 +55,29 @@ export default function Header() {
       setImgSrc(
         stPatricksDayBunnies[
           Math.floor(Math.random() * stPatricksDayBunnies.length)
-        ]
+        ],
       );
     } else if (currentMonth == 3 && currentDay >= 21 && currentDay <= 23) {
       // earth day (april 21 to 23)
       setImgSrc(
-        earthDayBunnies[Math.floor(Math.random() * earthDayBunnies.length)]
+        earthDayBunnies[Math.floor(Math.random() * earthDayBunnies.length)],
       );
     } else if (currentMonth == 6 && currentDay >= 3 && currentDay <= 5) {
       // 4th of july (july 3 to 5)
       setImgSrc(
-        americaBunnies[Math.floor(Math.random() * americaBunnies.length)]
+        americaBunnies[Math.floor(Math.random() * americaBunnies.length)],
       );
     } else if (currentMonth == 9 && currentDay >= 7) {
       // halloween (october 7 to 31)
       setImgSrc(
-        halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)]
+        halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)],
       );
     } else if (currentMonth == 10 && currentDay >= 7 && currentDay <= 28) {
       // thanksgiving (november 7 to 28)
       setImgSrc(
         thanksgivingBunnies[
           Math.floor(Math.random() * thanksgivingBunnies.length)
-        ]
+        ],
       );
     } else if (
       (currentMonth == 11 && currentDay >= 30) ||
@@ -85,12 +85,12 @@ export default function Header() {
     ) {
       // new year (december 30 to january 2)
       setImgSrc(
-        newYearBunnies[Math.floor(Math.random() * newYearBunnies.length)]
+        newYearBunnies[Math.floor(Math.random() * newYearBunnies.length)],
       );
     } else if (currentMonth == 11) {
       // christmas (december 1 to 29)
       setImgSrc(
-        christmasBunnies[Math.floor(Math.random() * christmasBunnies.length)]
+        christmasBunnies[Math.floor(Math.random() * christmasBunnies.length)],
       );
     }
   }, []);
@@ -99,7 +99,7 @@ export default function Header() {
     <>
       {/* discord modal */}
       <Modal className="" open={modalOpen} onClose={() => setModalOpen(false)}>
-        <div className="flex items-center text-[#5865f2] text-3xl">
+        <div className="flex items-center text-3xl text-[#5865f2]">
           <FontAwesomeIcon
             icon={faDiscord}
             aria-label="Discord logo"
@@ -110,8 +110,8 @@ export default function Header() {
       </Modal>
 
       {/* header */}
-      <header className="flex items-center align-middle text-center mt-8 mb-14 md:my-16">
-        <div className="flex items-center justify-center -translate-x-2 md:-translate-x-4">
+      <header className="mb-14 mt-8 flex items-center text-center align-middle md:my-16">
+        <div className="flex -translate-x-2 items-center justify-center md:-translate-x-4">
           <div className="-mb-2">
             <button
               className={imgVis}
@@ -121,12 +121,12 @@ export default function Header() {
                   let oldImage = imgSrc;
                   stPatricksDayBunnies.splice(
                     stPatricksDayBunnies.indexOf(oldImage),
-                    1
+                    1,
                   );
                   setImgSrc(
                     stPatricksDayBunnies[
                       Math.floor(Math.random() * stPatricksDayBunnies.length)
-                    ]
+                    ],
                   );
                   stPatricksDayBunnies.push(oldImage);
                 } else if (
@@ -140,7 +140,7 @@ export default function Header() {
                   setImgSrc(
                     earthDayBunnies[
                       Math.floor(Math.random() * earthDayBunnies.length)
-                    ]
+                    ],
                   );
                   earthDayBunnies.push(oldImage);
                 } else if (
@@ -154,7 +154,7 @@ export default function Header() {
                   setImgSrc(
                     americaBunnies[
                       Math.floor(Math.random() * americaBunnies.length)
-                    ]
+                    ],
                   );
                   americaBunnies.push(oldImage);
                 } else if (currentMonth == 9 && currentDay >= 7) {
@@ -162,12 +162,12 @@ export default function Header() {
                   let oldImage = imgSrc;
                   halloweenBunnies.splice(
                     halloweenBunnies.indexOf(oldImage),
-                    1
+                    1,
                   );
                   setImgSrc(
                     halloweenBunnies[
                       Math.floor(Math.random() * halloweenBunnies.length)
-                    ]
+                    ],
                   );
                   halloweenBunnies.push(oldImage);
                 } else if (
@@ -179,12 +179,12 @@ export default function Header() {
                   let oldImage = imgSrc;
                   thanksgivingBunnies.splice(
                     thanksgivingBunnies.indexOf(oldImage),
-                    1
+                    1,
                   );
                   setImgSrc(
                     thanksgivingBunnies[
                       Math.floor(Math.random() * thanksgivingBunnies.length)
-                    ]
+                    ],
                   );
                   thanksgivingBunnies.push(oldImage);
                 } else if (
@@ -197,7 +197,7 @@ export default function Header() {
                   setImgSrc(
                     newYearBunnies[
                       Math.floor(Math.random() * newYearBunnies.length)
-                    ]
+                    ],
                   );
                   newYearBunnies.push(oldImage);
                 } else if (currentMonth == 11) {
@@ -205,19 +205,19 @@ export default function Header() {
                   let oldImage = imgSrc;
                   christmasBunnies.splice(
                     christmasBunnies.indexOf(oldImage),
-                    1
+                    1,
                   );
                   setImgSrc(
                     christmasBunnies[
                       Math.floor(Math.random() * christmasBunnies.length)
-                    ]
+                    ],
                   );
                   christmasBunnies.push(oldImage);
                 } else {
                   setColor(
                     `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
-                      Math.random() * 256
-                    )}, ${Math.floor(Math.random() * 256)})`
+                      Math.random() * 256,
+                    )}, ${Math.floor(Math.random() * 256)})`,
                   );
                   setImgVis("hidden");
                   setSvgVis("");
@@ -226,7 +226,7 @@ export default function Header() {
             >
               <img
                 src={`https://bunnies.jakeo.dev/images/${imgSrc}.png`}
-                className="w-12 md:w-[4.25rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                className="w-12 cursor-pointer object-contain transition hover:rotate-3 hover:scale-110 active:rotate-0 active:scale-100 md:w-[4.25rem]"
                 alt="Bunny icon"
               />
             </button>
@@ -235,8 +235,8 @@ export default function Header() {
               onClick={() =>
                 setColor(
                   `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
-                    Math.random() * 256
-                  )}, ${Math.floor(Math.random() * 256)})`
+                    Math.random() * 256,
+                  )}, ${Math.floor(Math.random() * 256)})`,
                 )
               }
             >
@@ -245,7 +245,7 @@ export default function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 300.000000 300.000000"
                 preserveAspectRatio="xMidYMid meet"
-                className="w-12 md:w-[4.25rem] object-contain hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 transition cursor-pointer"
+                className="w-12 cursor-pointer object-contain transition hover:rotate-3 hover:scale-110 active:rotate-0 active:scale-100 md:w-[4.25rem]"
               >
                 <g
                   transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
@@ -257,21 +257,21 @@ export default function Header() {
               </svg>
             </button>
           </div>
-          <div className="text-left ml-1 md:ml-2.5">
+          <div className="ml-1 text-left md:ml-2.5">
             <Link
               href="/"
-              className="font-handwriting text-2xl md:text-4xl font-bold max-w-min hover:text-gray-600 active:text-gray-500 transition mx-auto cursor-pointer"
+              className="mx-auto max-w-min cursor-pointer font-handwriting text-2xl font-bold transition hover:text-gray-600 active:text-gray-500 md:text-4xl"
             >
               JakeO
-              <span className="text-gray-500 text-xl md:text-3xl">.dev</span>
+              <span className="text-xl text-gray-500 md:text-3xl">.dev</span>
             </Link>
 
             {/* socials */}
-            <div className="flex gap-2.5 md:gap-3 mt-0.5 md:mt-1.5 ml-0.5">
+            <div className="ml-0.5 mt-0.5 flex gap-2.5 md:mt-1.5 md:gap-3">
               <a
                 href="mailto:hi@jakeo.dev"
                 target="_blank"
-                className="hover:text-blue-500 transition-all flex text-sm md:text-lg text-gray-500 hover:scale-110 active:scale-100"
+                className="flex text-sm text-gray-500 transition-all hover:scale-110 hover:text-blue-500 active:scale-100 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -281,7 +281,7 @@ export default function Header() {
               <a
                 href="https://github.com/jakeo-dev"
                 target="_blank"
-                className="hover:text-[#333333] transition-all flex text-sm md:text-lg text-gray-500 hover:scale-110 active:scale-100"
+                className="flex text-sm text-gray-500 transition-all hover:scale-110 hover:text-[#333333] active:scale-100 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -290,7 +290,7 @@ export default function Header() {
               </a>
               <button
                 onClick={() => setModalOpen(true)}
-                className="hover:text-[#5865f2] transition-all flex text-sm md:text-lg text-gray-500 hover:scale-110 active:scale-100"
+                className="flex text-sm text-gray-500 transition-all hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faDiscord}
@@ -301,14 +301,14 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="flex justify-center gap-x-3 text-gray-600 ml-auto translate-x-2 md:translate-x-0">
+        <div className="ml-auto flex translate-x-2 justify-center gap-x-3 text-gray-600 md:translate-x-0">
           <Link
             href="/"
             className={`${
               pathname == "/"
                 ? "text-sky-600"
                 : "text-gray-600 hover:text-gray-700 active:text-gray-800"
-            } text text-sm md:text-base rounded-md transition mb-0`}
+            } text mb-0 rounded-md text-sm transition md:text-base`}
           >
             <span>home</span>
           </Link>
@@ -318,7 +318,7 @@ export default function Header() {
               pathname.startsWith("/projects")
                 ? "text-sky-600"
                 : "text-gray-600 hover:text-gray-700 active:text-gray-800"
-            } text text-sm md:text-base rounded-md transition mb-0`}
+            } text mb-0 rounded-md text-sm transition md:text-base`}
           >
             <span>projects</span>
           </Link>
@@ -328,7 +328,7 @@ export default function Header() {
               pathname.startsWith("/blog")
                 ? "text-sky-600"
                 : "text-gray-600 hover:text-gray-700 active:text-gray-800"
-            } text text-sm md:text-base rounded-md transition mb-0`}
+            } text mb-0 rounded-md text-sm transition md:text-base`}
           >
             <span>posts</span>
           </Link>

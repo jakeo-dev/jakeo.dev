@@ -31,7 +31,7 @@ export default function Plannter() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="container post-img-div mx-auto mt-6">
+      <div className="post-img-div container mx-auto mt-6">
         <ImageCarousel
           images={[
             "/images/plannter-ss-1.png",
@@ -51,9 +51,9 @@ export default function Plannter() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-3 my-6">
+      <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="md:flex-1 border-emerald-600 hover:border-emerald-700 active:border-emerald-800 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800"
+          className="border-emerald-600 bg-emerald-600 hover:border-emerald-700 hover:bg-emerald-700 active:border-emerald-800 active:bg-emerald-800 md:flex-1"
           href="https://plannter.jakeo.dev"
         >
           Visit website

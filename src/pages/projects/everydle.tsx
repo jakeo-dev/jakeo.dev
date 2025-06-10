@@ -31,7 +31,7 @@ export default function Everydle() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="container post-img-div mx-auto mt-6">
+      <div className="post-img-div container mx-auto mt-6">
         <ImageCarousel
           images={["/images/everydle-ss-1.png", "/images/everydle-ss-2.png"]}
           imagePosition="object-top"
@@ -42,9 +42,9 @@ export default function Everydle() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-3 my-6">
+      <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-lime-600 hover:border-lime-700 active:border-lime-800 bg-lime-600 hover:bg-lime-700 active:bg-lime-800"
+          className="border-lime-600 bg-lime-600 hover:border-lime-700 hover:bg-lime-700 active:border-lime-800 active:bg-lime-800"
           href="https://everydle.jakeo.dev"
         >
           Visit website
@@ -72,7 +72,7 @@ export default function Everydle() {
         are my favorites (some of which I also included in the list of random
         taglines that appear under the title of the website):
       </p>
-      <ul className="text list-disc list-inside">
+      <ul className="text list-inside list-disc">
         <li className="text">
           <a
             href="https://www.metafilter.com/208826/Just-because-you-can-doesnt-mean-you-should#:~:text=This%20is%20very%20funny%2C%20basically,with%20an%20increasingly%20unuseable%20UI%22."

@@ -73,7 +73,7 @@ export default function Post5() {
           <p className="text">
             In December 2024, I designed a typeface based on my handwriting
             using both Calligraphr and FontForge{" "}
-            <span className="text text-lg font-handwriting">
+            <span className="text font-handwriting text-lg">
               (here's what it looks like)
             </span>
             . Calligraphr is a great service that lets you create your own font,
@@ -439,7 +439,7 @@ export default function Post5() {
               <Image
                 src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-font-with-adjustments.png")}
                 alt="Font with example text, after adjustments"
-                className="post-img w-full absolute top-0 left-0"
+                className="post-img absolute left-0 top-0 w-full"
                 placeholder="blur"
                 style={{ opacity: `${sliderValue}%` }}
               />
@@ -454,9 +454,9 @@ export default function Post5() {
                 onChange={(e) => setSliderValue(Number(e.target.value))}
                 className="w-full"
               />
-              <div className="w-full flex justify-between">
+              <div className="flex w-full justify-between">
                 <p className="subtext">Before adjustments</p>
-                <p className="subtext text-right ">After adjustments</p>
+                <p className="subtext text-right">After adjustments</p>
               </div>
             </div>
           </div>
@@ -854,13 +854,13 @@ export default function Post5() {
             it be serious, playful, modern, innovative, fancy, or something
             else. Let your designs be more personalized...now go use your font!
           </p> */}
-          <p className="text text-lg font-handwriting">
+          <p className="text font-handwriting text-lg">
             Now go use your font!!!!!!!!!
           </p>
-          <div className="text-left mt-16">
+          <div className="mt-16 text-left">
             <Link
               href="/blog"
-              className="block text-xl internal-link no-underline"
+              className="internal-link block text-xl no-underline"
             >
               <FontAwesomeIcon
                 icon={faArrowLeft}

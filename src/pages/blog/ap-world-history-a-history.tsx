@@ -76,7 +76,7 @@ export default function Post1() {
             look at the exam data to determine how these changes have affected
             the performance of the test-takers.
           </p>
-          <p className="text highlight px-3 mt-8">
+          <p className="text highlight mt-8 px-3">
             A green highlight indicates a change or addition from the previous
             year's curriculum
           </p>
@@ -160,7 +160,7 @@ export default function Post1() {
             <li className="text">16.6% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -263,7 +263,7 @@ export default function Post1() {
             <li className="text">16.6% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -351,7 +351,7 @@ export default function Post1() {
             <li className="text">16.6% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -525,7 +525,7 @@ export default function Post1() {
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -660,7 +660,7 @@ export default function Post1() {
             <li className="text highlight">25% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -755,7 +755,7 @@ export default function Post1() {
             <li className="text">15% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -899,7 +899,7 @@ export default function Post1() {
             </li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -929,7 +929,7 @@ export default function Post1() {
                     <td className="sp-table-item">
                       Supports an argument in response to the prompt using at
                       least 6 documents
-                      <span className="block text-gray-600 highlight">
+                      <span className="highlight block text-gray-600">
                         (or only addresses the topic of the prompt using at
                         least 3 documents)
                       </span>
@@ -980,7 +980,7 @@ export default function Post1() {
             </li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -1151,7 +1151,7 @@ export default function Post1() {
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 md:-ml-10 mt-4">
+              <table className="sp-table -ml-6 mt-4 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -1216,7 +1216,7 @@ export default function Post1() {
                       Complexity: Demonstrates a complex understanding of the
                       historical development of the prompt using evidence to
                       corroborate, qualify, or modify an argument;{" "}
-                      <span className="inline highlight">
+                      <span className="highlight inline">
                         can now also be earned by using seven documents or
                         analyzing four documents
                       </span>
@@ -1258,7 +1258,7 @@ export default function Post1() {
           </h3>
           <a
             href="https://apcentral.collegeboard.org/courses/ap-world-history/exam/past-exam-questions"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2002-2019, 2021-2022 Exam Data from the College Board
@@ -1270,7 +1270,7 @@ export default function Post1() {
           </a>
           <a
             href="https://reports.collegeboard.org/media/pdf/Student-Score-Distributions-2020_1.pdf"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2020 Exam Data from the College Board
@@ -1282,7 +1282,7 @@ export default function Post1() {
           </a>
           <a
             href="https://apcentral.collegeboard.org/courses/ap-world-history/exam#panel-1751376911-heading"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2023 Exam Data from the College Board
@@ -1294,7 +1294,7 @@ export default function Post1() {
           </a>
           <a
             href="/images/ap-world-history-a-history/apwh-exam-scores.pdf"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2002-2023 Exam data compiled in a spreadsheet (PDF)
@@ -1306,7 +1306,7 @@ export default function Post1() {
           </a>
           <a
             href="/images/ap-world-history-a-history/apwh-course-description-2002.pdf"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2002 Course Description
@@ -1318,7 +1318,7 @@ export default function Post1() {
           </a>
           <a
             href="/images/ap-world-history-a-history/apwh-course-description-2012.pdf"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2012 Course Description
@@ -1330,7 +1330,7 @@ export default function Post1() {
           </a>
           <a
             href="/images/ap-world-history-a-history/apwh-course-description-2017.pdf"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2017 Course Description
@@ -1342,7 +1342,7 @@ export default function Post1() {
           </a>
           <a
             href="/images/ap-world-history-a-history/apwh-course-description-2018.pdf"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2018 Course Description
@@ -1354,7 +1354,7 @@ export default function Post1() {
           </a>
           <a
             href="/images/ap-world-history-a-history/apwh-course-description-2020.pdf"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2020 Course Description
@@ -1366,7 +1366,7 @@ export default function Post1() {
           </a>
           <a
             href="/images/ap-world-history-a-history/apwh-course-description-2024.pdf"
-            className="text text-sm link block"
+            className="text link block text-sm"
             target="_blank"
           >
             2024 Course Description
@@ -1381,10 +1381,10 @@ export default function Post1() {
             those changes was administered.
           </p>
 
-          <div className="text-left mt-16">
+          <div className="mt-16 text-left">
             <Link
               href="/blog"
-              className="block text-xl internal-link no-underline"
+              className="internal-link block text-xl no-underline"
             >
               <FontAwesomeIcon
                 icon={faArrowLeft}

@@ -11,13 +11,13 @@ export default function Modal(props: {
     <div
       className={`${
         props.open ? "visible-fade" : "invisible-fade"
-      } bg-black/50 flex justify-center items-center fixed top-0 left-0 z-30 w-full h-full overflow-auto ${
+      } fixed left-0 top-0 z-30 flex h-full w-full items-center justify-center overflow-auto bg-black/50 ${
         props.className
       }`}
     >
-      <div className="relative bg-gray-200 rounded-lg w-fit shadow-sm px-10 py-7">
+      <div className="relative w-fit rounded-lg bg-gray-200 px-10 py-7 shadow-sm">
         <button
-          className="absolute top-4 right-5 text-base hover:text-gray-500 transition"
+          className="absolute right-5 top-4 text-base transition hover:text-gray-500"
           onClick={() => {
             props.onClose(); // close modal
           }}

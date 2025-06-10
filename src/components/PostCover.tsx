@@ -9,7 +9,7 @@ export default function Contents(props: {
 }) {
   return (
     <>
-      <h1 className="sub1title pb-0 mt-0">{props.title}</h1>
+      <h1 className="sub1title mt-0 pb-0">{props.title}</h1>
 
       <div className="post-dates-div">
         <h2>{props.date}</h2>

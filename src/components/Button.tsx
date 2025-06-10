@@ -11,18 +11,18 @@ export default function Button(props: {
       href={props.href}
       className={`flex border-2 ${
         !props.className.includes("bg-")
-          ? "border-sky-600 hover:border-sky-700 active:border-sky-800 bg-sky-600 hover:bg-sky-700 active:bg-sky-800"
+          ? "border-sky-600 bg-sky-600 hover:border-sky-700 hover:bg-sky-700 active:border-sky-800 active:bg-sky-800"
           : ""
-      } text-white shadow-sm hover:shadow-md hover:-translate-y-0.5 active:shadow-none active:translate-y-0.5 w-full text-center rounded-full px-3.5 py-1.5 transition ${
+      } w-full rounded-full px-3.5 py-1.5 text-center text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none ${
         props.className
       }`}
       target="_blank"
     >
-      <div className="flex items-center mx-auto">
+      <div className="mx-auto flex items-center">
         {props.children}
         <FontAwesomeIcon
           icon={faArrowUpRightFromSquare}
-          className="text-sm ml-1.5"
+          className="ml-1.5 text-sm"
           aria-hidden
         />
       </div>
