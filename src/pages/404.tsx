@@ -1,26 +1,71 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
     <>
-      <div className="mt-32 flex w-fit bg-gray-900 p-8 text-left">
-        <img
-          src="https://bunnies.jakeo.dev/images/solid-gradient-gray-bunny.png"
-          alt="Solid gradient gray bunny"
-          className="-ml-4 mr-4 w-20 object-contain md:w-28"
-        />
-        <h1 className="inline text-8xl font-extrabold text-gray-100 md:text-9xl">
-          404
-        </h1>
+      <div className="mt-32 border-[3px] border-black/10 p-0.5 md:border-4 md:p-1">
+        <div className="border-[3px] border-black/20 p-0.5 md:border-4 md:p-1">
+          <div className="border-[3px] border-black/30 p-0.5 md:border-4 md:p-1">
+            <div className="border-[3px] border-black/40 p-0.5 md:border-4 md:p-1">
+              <div className="border-[3px] border-black/50 p-0.5 md:border-4 md:p-1">
+                <div className="border-[3px] border-black/60 p-0.5 md:border-4 md:p-1">
+                  <div className="border-[3px] border-black/70 p-0.5 md:border-4 md:p-1">
+                    <div className="border-[3px] border-black/80 p-0.5 md:border-4 md:p-1">
+                      <div className="border-[3px] border-black/90 p-0.5 md:border-4 md:p-1">
+                        <div className="bg-black p-6 md:py-12">
+                          <h1 className="block text-6xl font-extrabold text-gray-100 md:text-9xl">
+                            404
+                          </h1>
+                          <h2 className="mt-1 block text-pretty text-center leading-5 text-gray-100">
+                            that page doesn't exist...
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <h2 className="sub1title mt-0">that page doesn't exist...</h2>
 
-      <Link href="/" className="sub1title internal-link mt-0 block text-3xl">
+      <Link
+        href="/"
+        className="internal-link mt-8 block text-left text-lg font-medium md:text-xl"
+      >
         <FontAwesomeIcon icon={faArrowLeft} className="mr-2" aria-hidden />
         go back home
       </Link>
+
+      {/* <h3 className="text mb-0 mt-10 text-left text-gray-600">
+        or check out some of my other stuff:
+      </h3>
+      <div className="flex gap-4 text-left text-xl font-medium md:text-2xl">
+        <Link href="/projects" className="internal-link block">
+          projects
+        </Link>
+        <Link href="/blog" className="internal-link block">
+          posts
+        </Link>
+      </div> */}
+
+      <h2 className="text mb-0 mt-8 text-left text-gray-600">
+        or maybe this page is supposed to exist? contact me:
+      </h2>
+      <div className="flex gap-4 text-left text-lg font-medium md:text-xl">
+        <span>
+          <FontAwesomeIcon icon={faEnvelope} className="mr-1.5" aria-hidden />
+          hi@jakeo.dev
+        </span>
+        <span>
+          <FontAwesomeIcon icon={faDiscord} className="mr-1.5" aria-hidden />
+          @jakeybakers
+        </span>
+      </div>
     </>
   );
 }
