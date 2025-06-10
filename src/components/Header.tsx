@@ -300,15 +300,15 @@ export default function Header() {
             </div>
           </div>
         </div>
-        {/* <div className="border-t-2 border-dotted w-64 border-gray-300 md:border-0 mx-auto my-3"></div> */}
-        <div className="flex justify-center text-gray-600 ml-auto translate-x-2 md:translate-x-0">
+
+        <div className="flex justify-center gap-x-3 text-gray-600 ml-auto translate-x-2 md:translate-x-0">
           <Link
             href="/"
             className={`${
               pathname == "/"
-                ? "text-sky-600 md:text-gray-100 md:bg-sky-600"
-                : "text-gray-600 hover:text-gray-700 active:text-gray-800 md:hover:bg-gray-200 md:active:bg-gray-300"
-            } text text-sm md:text-base rounded-md px-[0.3rem] md:px-2 md:py-0.5 transition md:mr-1.5 mb-0`}
+                ? "text-sky-600"
+                : "text-gray-600 hover:text-gray-700 active:text-gray-800"
+            } text text-sm md:text-base rounded-md transition mb-0`}
           >
             <span>home</span>
           </Link>
@@ -316,9 +316,9 @@ export default function Header() {
             href="/projects"
             className={`${
               pathname.startsWith("/projects")
-                ? "text-sky-600 md:text-gray-100 md:bg-sky-600"
-                : "text-gray-600 hover:text-gray-700 active:text-gray-800 md:hover:bg-gray-200 md:active:bg-gray-300"
-            } text text-sm md:text-base rounded-md px-[0.3rem] md:px-2 md:py-0.5 transition md:mr-1.5 mb-0`}
+                ? "text-sky-600"
+                : "text-gray-600 hover:text-gray-700 active:text-gray-800"
+            } text text-sm md:text-base rounded-md transition mb-0`}
           >
             <span>projects</span>
           </Link>
@@ -326,22 +326,12 @@ export default function Header() {
             href="/blog"
             className={`${
               pathname.startsWith("/blog")
-                ? "text-sky-600 md:text-gray-100 md:bg-sky-600"
-                : "text-gray-600 hover:text-gray-700 active:text-gray-800 md:hover:bg-gray-200 md:active:bg-gray-300"
-            } text text-sm md:text-base rounded-md px-[0.3rem] md:px-2 md:py-0.5 transition mb-0`}
+                ? "text-sky-600"
+                : "text-gray-600 hover:text-gray-700 active:text-gray-800"
+            } text text-sm md:text-base rounded-md transition mb-0`}
           >
             <span>posts</span>
           </Link>
-          {/* <Link
-            href="/more"
-            className={`${
-              pathname.startsWith("/more")
-                ? "text-sky-600 md:text-gray-100 md:bg-sky-600"
-                : "text-gray-600 hover:text-gray-700 active:text-gray-800 md:hover:bg-gray-200 md:active:bg-gray-300"
-            } text text-sm md:text-base rounded-md px-[0.3rem] md:px-2 md:py-0.5 transition mb-0`}
-          >
-            <span>more</span>
-          </Link> */}
         </div>
       </header>
     </>
