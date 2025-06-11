@@ -28,15 +28,15 @@
   }
 
   .link {
-    @apply underline decoration-2 transition hover:text-blue-600 hover:decoration-wavy hover:decoration-1 active:text-blue-700;
+    @apply text-blue-900 underline decoration-2 transition hover:text-blue-600 hover:decoration-wavy hover:decoration-1 active:text-blue-700;
   }
 
   .download-link {
-    @apply underline decoration-2 transition hover:text-green-600 hover:decoration-wavy hover:decoration-1 active:text-green-700;
+    @apply text-green-900 underline decoration-2 transition hover:text-green-600 hover:decoration-wavy hover:decoration-1 active:text-green-700;
   }
 
   .internal-link {
-    @apply underline decoration-2 transition hover:text-sky-600 hover:decoration-wavy hover:decoration-1 active:text-sky-700;
+    @apply text-sky-900 underline decoration-2 transition hover:text-sky-600 hover:decoration-wavy hover:decoration-1 active:text-sky-700;
   }
 
   .code-block-div {

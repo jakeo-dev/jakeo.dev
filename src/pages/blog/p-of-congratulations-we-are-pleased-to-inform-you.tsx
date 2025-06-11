@@ -102,7 +102,7 @@ export default function Post3() {
           <Callout>
             {`It's important to note that these percentages are based on absolutely
             nothing. Scroll down to the `}
-            <a href="#disclaimer" className="link">
+            <a href="#disclaimer" className="internal-link">
               Disclaimer
             </a>
             {` section for more about how inaccurate this blog post actually is.`}

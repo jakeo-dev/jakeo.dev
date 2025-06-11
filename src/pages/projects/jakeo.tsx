@@ -25,7 +25,7 @@ export default function JakeO() {
         title="JakeO.dev"
         desc="You're already here — check out all of my projects and blog posts."
         createDate="September 2020"
-        updateDate="May 2025"
+        updateDate="June 2025"
         logoImg="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
