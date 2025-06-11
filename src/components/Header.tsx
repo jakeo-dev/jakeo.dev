@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
-import Modal from "./Modal";
 
 export default function Header() {
   const { pathname } = useRouter();
@@ -16,6 +16,24 @@ export default function Header() {
   const [svgVis, setSvgVis] = useState("hidden");
 
   const [modalOpen, setModalOpen] = useState(false);
+
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  const modalBtnRef = useRef<HTMLButtonElement | null>(null);
+
+  function handleOutsideClick(event: MouseEvent) {
+    if (
+      modalRef.current &&
+      modalBtnRef.current &&
+      !modalRef.current.contains(event.target as Element) &&
+      !modalBtnRef.current.contains(event.target as Element)
+    )
+      setModalOpen(false);
+  }
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => document.removeEventListener("click", handleOutsideClick);
+  }, []);
 
   const currentDate = new Date();
   const currentMonth: number = currentDate.getMonth();
@@ -97,18 +115,6 @@ export default function Header() {
 
   return (
     <>
-      {/* discord modal */}
-      <Modal className="" open={modalOpen} onClose={() => setModalOpen(false)}>
-        <div className="flex items-center text-3xl text-[#5865f2]">
-          <FontAwesomeIcon
-            icon={faDiscord}
-            aria-label="Discord logo"
-            className="mr-2"
-          />
-          <h1>@jakeybakers</h1>
-        </div>
-      </Modal>
-
       {/* header */}
       <header className="mb-14 mt-8 flex items-center text-center align-middle md:my-16">
         <div className="flex -translate-x-2 items-center justify-center md:-translate-x-4">
@@ -288,15 +294,38 @@ export default function Header() {
                   aria-label="Visit jakeo-dev on GitHub"
                 />
               </a>
-              <button
-                onClick={() => setModalOpen(true)}
-                className="flex text-sm text-gray-500 transition-all hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
-              >
-                <FontAwesomeIcon
-                  icon={faDiscord}
-                  aria-label="Open Discord modal"
-                />
-              </button>
+              <div className="relative">
+                <button
+                  onClick={() => setModalOpen(!modalOpen)}
+                  className="flex text-sm text-gray-500 transition-all hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
+                  ref={modalBtnRef}
+                >
+                  <FontAwesomeIcon
+                    icon={faDiscord}
+                    aria-label="Open Discord modal"
+                  />
+                </button>
+
+                {/* discord modal */}
+                <div
+                  className={`${
+                    modalOpen ? "visible-fade" : "invisible-fade"
+                  } absolute top-5 w-fit rounded-lg bg-gray-200 px-3.5 py-1.5 shadow-sm md:top-6`}
+                  ref={modalRef}
+                >
+                  {/* <button
+                    className="absolute right-3 top-2 text-sm text-gray-700 transition hover:text-gray-500 md:top-2.5"
+                    onClick={() => {
+                      setModalOpen(false);
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faXmark} aria-label="Close modal" />
+                  </button> */}
+                  <div className="flex items-center text-[#5865f2] md:text-lg">
+                    <span>@jakeybakers</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
