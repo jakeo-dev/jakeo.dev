@@ -277,7 +277,7 @@ export default function Header() {
               <a
                 href="mailto:hi@jakeo.dev"
                 target="_blank"
-                className="flex text-sm text-gray-500 transition-all hover:scale-110 hover:text-blue-500 active:scale-100 md:text-lg"
+                className="flex text-sm text-gray-500 transition hover:scale-110 hover:text-blue-500 active:scale-100 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -287,7 +287,7 @@ export default function Header() {
               <a
                 href="https://github.com/jakeo-dev"
                 target="_blank"
-                className="flex text-sm text-gray-500 transition-all hover:scale-110 hover:text-[#333333] active:scale-100 md:text-lg"
+                className="flex text-sm text-gray-500 transition hover:scale-110 hover:text-[#333333] active:scale-100 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -297,7 +297,7 @@ export default function Header() {
               <div className="relative">
                 <button
                   onClick={() => setModalOpen(!modalOpen)}
-                  className="flex text-sm text-gray-500 transition-all hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
+                  className="flex text-sm text-gray-500 transition hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
                   ref={modalBtnRef}
                 >
                   <FontAwesomeIcon
@@ -310,7 +310,7 @@ export default function Header() {
                 <div
                   className={`${
                     modalOpen ? "visible-fade" : "invisible-fade"
-                  } absolute top-5 w-fit rounded-lg bg-gray-200 px-3.5 py-1.5 shadow-sm md:top-6`}
+                  } absolute top-5 w-fit rounded-lg border-2 border-gray-200 px-3.5 py-1.5 shadow-sm md:top-6`}
                   ref={modalRef}
                 >
                   {/* <button
