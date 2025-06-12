@@ -1,30 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer components {
   .sub1title {
-    @apply mt-14 text-pretty py-4 text-left text-xl font-bold text-gray-900;
+    @apply mt-14 py-4 text-left text-xl font-bold text-pretty text-gray-900;
   }
 
   .sub2title {
-    @apply mt-8 text-pretty py-4 text-left text-lg font-semibold text-gray-900;
+    @apply mt-8 py-4 text-left text-lg font-semibold text-pretty text-gray-900;
   }
 
   .sub3title {
-    @apply mt-4 text-pretty py-4 text-left text-base font-medium text-gray-900;
+    @apply mt-4 py-4 text-left text-base font-medium text-pretty text-gray-900;
   }
 
   .sub1title-subtext {
-    @apply mt-4 text-pretty py-2 text-left font-medium text-gray-700;
+    @apply mt-4 py-2 text-left font-medium text-pretty text-gray-700;
   }
 
   .text {
-    @apply mb-3 text-pretty text-left text-base leading-7 text-gray-700 last:mb-0;
+    @apply mb-3 text-left text-base leading-7 text-pretty text-gray-700 last:mb-0;
   }
 
   .subtext {
-    @apply mb-4 mt-1.5 text-left text-sm italic text-gray-600;
+    @apply mt-1.5 mb-4 text-left text-sm text-gray-600 italic;
   }
 
   .link {
@@ -40,7 +38,7 @@
   }
 
   .code-block-div {
-    @apply mb-6 mt-3;
+    @apply mt-3 mb-6;
   }
 
   .post-dates-div {
@@ -48,7 +46,7 @@
   }
 
   .post-img-div {
-    @apply mb-6 mt-3;
+    @apply mt-3 mb-6;
   }
 
   .post-img {
@@ -56,7 +54,7 @@
   }
 
   .sp-table {
-    @apply mb-2 max-w-lg border-b-2 border-t-0 border-gray-400 text-left md:max-w-full;
+    @apply mb-2 max-w-lg border-t-0 border-b-2 border-gray-400 text-left md:max-w-full;
   }
 
   .sp-table-head {
@@ -64,11 +62,11 @@
   }
 
   .sp-table-head-item {
-    @apply px-2.5 pb-2 align-bottom font-normal leading-normal;
+    @apply px-2.5 pb-2 align-bottom leading-normal font-normal;
   }
 
   .sp-table-item {
-    @apply border-x-2 border-gray-400 px-4 py-2 align-top font-normal leading-relaxed md:leading-8;
+    @apply border-x-2 border-gray-400 px-4 py-2 align-top leading-relaxed font-normal md:leading-8;
   }
 
   .sp-table-list-item {
@@ -139,12 +137,5 @@
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "JakesHandwriting";
-  src: url("/fonts/Jakes_Handwriting_V5-Regular.ttf") format("truetype");
-  font-weight: normal;
   font-style: normal;
 }

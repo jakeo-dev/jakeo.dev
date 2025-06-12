@@ -36,7 +36,7 @@ export default function Projects() {
             updateDate="September 2024"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
-            showLogo={true}
+            showLogo
             type={0}
             colors="hover:border-emerald-600"
             link="https://plannter.jakeo.dev"
@@ -48,7 +48,7 @@ export default function Projects() {
             updateDate="May 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://everydle.jakeo.dev/favicon.ico"
-            showLogo={true}
+            showLogo
             type={0}
             colors="hover:border-lime-600"
             link="https://everydle.jakeo.dev"
@@ -60,7 +60,7 @@ export default function Projects() {
             updateDate="March 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
-            showLogo={true}
+            showLogo
             type={0}
             colors="hover:border-orange-600"
             link="https://pairckle.jakeo.dev"
@@ -72,7 +72,7 @@ export default function Projects() {
             updateDate="March 2025"
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://cifra.jakeo.dev/cifra-logo.png"
-            showLogo={true}
+            showLogo
             type={0}
             colors="hover:border-yellow-600"
             link="https://cifra.jakeo.dev"
@@ -88,7 +88,7 @@ export default function Projects() {
             updateDate="May 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
-            showLogo={true}
+            showLogo
             type={0}
             link="https://jakeo.dev"
           />
@@ -114,7 +114,7 @@ export default function Projects() {
             updateDate="July 2024"
             toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
-            showLogo={true}
+            showLogo
             type={1}
             link="https://linked.jakeo.dev"
           />
@@ -124,7 +124,7 @@ export default function Projects() {
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://decorate-a-tree.jakeo.dev/candy-cane-red-left.png"
-            showLogo={true}
+            showLogo
             type={1}
             link="https://tree.jakeo.dev"
           />
@@ -134,7 +134,6 @@ export default function Projects() {
             desc="Organize everything you yearn for into a simple list."
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://yearn.jakeo.dev/yearn-logo.png"
-            showLogo={false}
             type={1}
             link="https://yearn.jakeo.dev"
           />
@@ -144,7 +143,6 @@ export default function Projects() {
             desc="A speed typing website to help you study."
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
-            showLogo={true}
             type={1}
             link="https://cerebric.jakeo.dev"
           />
@@ -154,7 +152,7 @@ export default function Projects() {
             desc="Browse and download some colorful bunnies made for every occasion."
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
-            showLogo={true}
+            showLogo
             type={1}
             link="https://bunnies.jakeo.dev"
           />

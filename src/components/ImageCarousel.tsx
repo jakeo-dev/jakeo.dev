@@ -48,14 +48,14 @@ export default function ImageCarousel(props: {
 
       <button
         onClick={prevSlide}
-        className="absolute left-3 top-1/2 -translate-y-1/2 transform rounded-full bg-gray-600/60 px-2 py-[0.18rem] text-white transition hover:bg-gray-600 active:bg-gray-700"
+        className="absolute top-1/2 left-3 -translate-y-1/2 transform cursor-pointer rounded-full bg-gray-600/60 px-2 py-[0.18rem] text-white transition hover:bg-gray-600 active:bg-gray-700"
       >
         <FontAwesomeIcon icon={faArrowLeft} aria-label="Previous image" />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-3 top-1/2 -translate-y-1/2 transform rounded-full bg-gray-600/60 px-2 py-[0.18rem] text-white transition hover:bg-gray-600 active:bg-gray-700"
+        className="absolute top-1/2 right-3 -translate-y-1/2 transform cursor-pointer rounded-full bg-gray-600/60 px-2 py-[0.18rem] text-white transition hover:bg-gray-600 active:bg-gray-700"
       >
         <FontAwesomeIcon icon={faArrowRight} aria-label="Next image" />
       </button>

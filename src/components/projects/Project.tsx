@@ -7,7 +7,7 @@ export default function Project(props: {
   updateDate?: string;
   toolsList?: string[];
   logo: string;
-  showLogo: boolean;
+  showLogo?: boolean;
   type: number;
   colors?: string;
   link: string;
@@ -25,12 +25,12 @@ export default function Project(props: {
           <h1 className="flex items-center text-left text-xl font-medium">
             <img
               src={props.logo}
-              className={`${props.showLogo ? "" : "hidden"} mr-1.5 inline w-6`}
+              className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-6`}
               alt={`${props.name} logo`}
             />
             <span>{props.name}</span>
           </h1>
-          <h2 className="text mb-0 mt-2 text-gray-600">{props.desc}</h2>
+          <h2 className="text mt-2 mb-0 text-gray-600">{props.desc}</h2>
           <div
             className={`flex flex-wrap gap-2 ${
               props.toolsList && props.toolsList.length > 0 ? "mt-2.5" : ""
@@ -62,12 +62,12 @@ export default function Project(props: {
           <h1 className="flex items-center text-left text-xl font-medium">
             <img
               src={props.logo}
-              className={`${props.showLogo ? "" : "hidden"} mr-1.5 inline w-6`}
+              className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-6`}
               alt={`${props.name} logo`}
             />
             <span>{props.name}</span>
           </h1>
-          <h2 className="text mb-0 mt-2 text-gray-600">{props.desc}</h2>
+          <h2 className="text mt-2 mb-0 text-gray-600">{props.desc}</h2>
           <div
             className={`flex flex-wrap gap-2 ${
               props.toolsList && props.toolsList.length > 0 ? "mt-2.5" : ""

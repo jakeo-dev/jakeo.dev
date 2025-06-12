@@ -5,6 +5,13 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
+import localFont from "next/font/local";
+const handwriting = localFont({
+  src: "../fonts/Jakes_Handwriting_V5-Regular.ttf",
+  display: "swap",
+  variable: "--font-handwriting",
+});
+
 export default function Home() {
   return (
     <>
@@ -51,7 +58,7 @@ export default function Home() {
             name="Plannter"
             desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
-            showLogo={true}
+            showLogo
             type={0}
             colors="hover:border-emerald-600"
             link="https://plannter.jakeo.dev"
@@ -61,7 +68,7 @@ export default function Home() {
             name="Everydle"
             desc="Play every game of Wordle at the same time."
             logo="https://everydle.jakeo.dev/favicon.ico"
-            showLogo={true}
+            showLogo
             type={0}
             colors="hover:border-lime-600"
             link="https://everydle.jakeo.dev"
