@@ -64,18 +64,68 @@ export default function Everydle() {
         the same time. It was created in May 2025, built using Next.js.
       </p>
       <p className="text">
-        When Dordle, Quordle, Octordle, Sedecordle, Duotrigordle, and
-        Sexagintaquattordle aren't enough, there's Everydle. No longer do you
-        need to spend five minutes solving the daily Wordle, just do all of them
-        at once in one extremely long sitting, and never worry about missing a
-        day again.
+        When{" "}
+        <a
+          href="https://zaratustra.itch.io/dordle"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          Dordle
+        </a>
+        ,{" "}
+        <a
+          href="https://www.merriam-webster.com/games/quordle/#/"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          Quordle
+        </a>
+        ,{" "}
+        <a
+          href="https://www.britannica.com/games/octordle/"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          Octordle
+        </a>
+        ,{" "}
+        <a
+          href="https://www.sedecordle.com/"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          Sedecordle
+        </a>
+        ,{" "}
+        <a
+          href="https://duotrigordle.com/"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          Duotrigordle
+        </a>
+        , and{" "}
+        <a
+          href="https://64ordle.au/"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          Sexaginta-quattordle
+        </a>{" "}
+        aren't enough, there's Everydle. No longer do you need to spend five
+        minutes solving the daily Wordle, just do all of them at once in one
+        extremely long sitting, and never worry about missing a day again.
       </p>
       <p className="text">
-        This is my first project that has actually received some attention on
-        the internet, and I've both appreciated the feedback on how to improve
-        the website and enjoyed reading the comments from random people. Here
-        are my favorites (some of which I also included in the list of random
-        taglines that appear under the title of the website):
+        Here are my favorite comments about the website (some of which I also
+        included in the list of random taglines that appear under the title of
+        the website):
       </p>
       <ul className="text list-inside list-disc">
         <li className="text">
