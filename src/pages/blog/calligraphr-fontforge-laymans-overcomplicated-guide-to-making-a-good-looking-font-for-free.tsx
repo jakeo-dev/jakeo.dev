@@ -4,9 +4,17 @@ import Contents from "@/components/blog/PostContents";
 import Callout from "@/components/Callout";
 import Image from "next/image";
 import Link from "next/link";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+
+import localFont from "next/font/local";
+const handwriting = localFont({
+  src: "../../fonts/Jakes_Handwriting_V5-Regular.ttf",
+  display: "swap",
+  variable: "--font-handwriting",
+});
 
 export default function Post5() {
   const [sliderValue, setSliderValue] = useState(25);
@@ -73,7 +81,7 @@ export default function Post5() {
           <p className="text">
             In December 2024, I designed a typeface based on my handwriting
             using both Calligraphr and FontForge{" "}
-            <span className="text font-handwriting text-lg">
+            <span className={`${handwriting.className} text text-lg`}>
               (here's what it looks like)
             </span>
             . Calligraphr is a great service that lets you create your own font,
@@ -439,7 +447,7 @@ export default function Post5() {
               <Image
                 src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-font-with-adjustments.png")}
                 alt="Font with example text, after adjustments"
-                className="post-img absolute left-0 top-0 w-full"
+                className="post-img absolute top-0 left-0 w-full"
                 placeholder="blur"
                 style={{ opacity: `${sliderValue}%` }}
               />
@@ -854,7 +862,7 @@ export default function Post5() {
             it be serious, playful, modern, innovative, fancy, or something
             else. Let your designs be more personalized...now go use your font!
           </p> */}
-          <p className="text font-handwriting text-lg">
+          <p className={`${handwriting.className} text text-lg`}>
             Now go use your font!!!!!!!!!
           </p>
           <div className="mt-16 text-left">
