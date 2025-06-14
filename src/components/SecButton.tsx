@@ -3,7 +3,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function SecButton(props: {
   children: React.ReactNode;
-  className: string;
+  className?: string;
   href: string;
 }) {
   return (

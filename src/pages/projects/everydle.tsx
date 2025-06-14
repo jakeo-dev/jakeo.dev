@@ -54,14 +54,14 @@ export default function Everydle() {
         >
           Visit website
         </Button>
-        <SecButton className="" href="https://github.com/jakeo-dev/everydle">
+        <SecButton href="https://github.com/jakeo-dev/everydle">
           View GitHub
         </SecButton>
       </div>
 
       <p className="text">
         Everydle is a website where you can play every single game of Wordle at
-        the same time. It was created in May 2025, built using Next.js.
+        the same time. I made the first version using Next.js in May 2025.
       </p>
       <p className="text">
         When{" "}

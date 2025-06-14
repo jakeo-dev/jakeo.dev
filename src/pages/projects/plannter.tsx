@@ -89,7 +89,7 @@ export default function Plannter() {
       <p className="text">
         I began development in January 2023, with the website only having a
         Coursework and an Activities section. It was originally written using
-        HTML, Tailwind CSS, and JavaScript, until{" "}
+        HTML/Tailwind CSS/JavaScript until{" "}
         <a href="https://dsns.dev" target="_blank" className="link">
           DSNS
         </a>{" "}
@@ -99,12 +99,8 @@ export default function Plannter() {
       </p>
       <p className="text">
         The name "Plannter" is a portmanteau of the words "planner" and "plant."
-        "Alumnac" (a portmanteau of "alumnus" and "almanac") was also
-        considered, but I think "Plannter" fits the website's purpose better.
-      </p>
-      <p className="text">
-        The original Plannter icon was just the Font Awesome plant icon colored
-        green, but I eventually drew my own and started using it in July 2024.
+        I also considered the name "Alumnac" (a portmanteau of "alumnus" and
+        "almanac"), but I think "Plannter" fits the website's purpose better.
       </p>
     </>
   );
