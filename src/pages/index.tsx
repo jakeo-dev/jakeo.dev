@@ -2,6 +2,7 @@ import CommonHead from "@/components/CommonHead";
 import Project from "@/components/projects/Project";
 import Post from "@/components/blog/Post";
 import Link from "next/link";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,10 +19,10 @@ export default function Home() {
       {/* head */}
       <CommonHead>
         <title>JakeO.dev</title>
-        <meta property="og:title" content="JakeO.dev" />
+        <meta property="og:title" content="Hi, I'm Jake" />
         <meta
           property="og:description"
-          content="I make things using my knowledge in programming"
+          content="I'm an incoming computer science student at Cal Poly SLO who likes to build digital things."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
@@ -31,13 +32,18 @@ export default function Home() {
       </CommonHead>
 
       {/* about me */}
-      <h2 className="sub1title mt-0">Welcome to my website!</h2>
+      <h2 className="sub1title mt-0">
+        Hi, I'm{" "}
+        <span className={`${handwriting.className} text-[1.4rem] leading-0`}>
+          Jake
+        </span>
+      </h2>
 
       <p className="text">
-        I make things using my knowledge in programming. (Almost) everything I
-        create is available on my GitHub, but my most notable projects are
-        featured on this website, which I've built using Next.js. Sometimes I
-        also write blog posts about things that I find interesting.
+        I'm an incoming computer science student at Cal Poly SLO who likes to
+        build digital things. Right now, I mostly develop React web apps with
+        Next.js and TypeScript. Almost everything I make is on my GitHub, and my
+        most notable projects are featured here on this website.
       </p>
 
       {/* projects */}
