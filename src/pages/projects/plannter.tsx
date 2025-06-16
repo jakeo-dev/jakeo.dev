@@ -13,7 +13,7 @@ export default function Plannter() {
         <meta property="og:title" content="JakeO: About Plannter" />
         <meta
           property="og:description"
-          content="A more detailed description about Plannter"
+          content="Plannter is a website that allows high school students to manage and plan their academic life."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta

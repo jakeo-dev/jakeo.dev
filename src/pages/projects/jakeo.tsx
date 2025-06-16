@@ -12,7 +12,7 @@ export default function JakeO() {
         <meta property="og:title" content="JakeO: About this website" />
         <meta
           property="og:description"
-          content="A more detailed description about this website"
+          content="JakeO.dev is my personal/portfolio website where you can find all of my projects, posts, and profiles."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta

@@ -13,7 +13,7 @@ export default function Linked() {
         <meta property="og:title" content="JakeO: About Linked" />
         <meta
           property="og:description"
-          content="A more detailed description about Linked"
+          content="Linked is a word puzzle game where you link five words by their first and last letters."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta

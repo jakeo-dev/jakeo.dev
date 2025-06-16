@@ -13,7 +13,7 @@ export default function Everydle() {
         <meta property="og:title" content="JakeO: About Everydle" />
         <meta
           property="og:description"
-          content="A more detailed description about Everydle"
+          content="Everydle is a website where you can play every single game of Wordle at the same time."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta

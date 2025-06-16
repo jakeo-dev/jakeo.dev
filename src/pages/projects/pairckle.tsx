@@ -13,7 +13,7 @@ export default function Pairckle() {
         <meta property="og:title" content="JakeO: About Pairckle" />
         <meta
           property="og:description"
-          content="A more detailed description about Pairckle"
+          content="Pairckle is a website that allows you to create a ranking with simple pairwise comparisons."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta

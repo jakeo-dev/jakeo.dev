@@ -14,7 +14,7 @@ export default function Cifra() {
         <meta property="og:title" content="JakeO: About Cifra" />
         <meta
           property="og:description"
-          content="A more detailed description about Cifra"
+          content="Cifra is a website that lets you generate vanity phone numbers from an inputted phone number."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
