@@ -120,6 +120,15 @@ export default function Projects() {
           />
 
           <Project
+            name="B-52's font"
+            desc="Try out and download a font based on the B-52's logo."
+            updateDate="December 2024"
+            logo=""
+            type={1}
+            link="https://b52s-font.jakeo.dev/"
+          />
+
+          <Project
             name="Decorate a Tree"
             desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
             toolsList={["JavaScript", "Tailwind"]}
