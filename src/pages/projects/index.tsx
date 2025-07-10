@@ -9,7 +9,10 @@ export default function Projects() {
       <CommonHead>
         <title>JakeO: Projects</title>
         <meta property="og:title" content="JakeO: Projects" />
-        <meta property="og:description" content="Projects from JakeO" />
+        <meta
+          property="og:description"
+          content="Browse my various programming projects."
+        />
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
