@@ -11,11 +11,8 @@ export default function Post2() {
     <>
       {/* head */}
       <CommonHead>
-        <title>The JakeO.dev Portfolio Wrapped 2023</title>
-        <meta
-          property="og:title"
-          content="The JakeO.dev Portfolio Wrapped 2023"
-        />
+        <title>JakeO.dev 2023, Wrapped</title>
+        <meta property="og:title" content="JakeO.dev 2023, Wrapped" />
         <meta
           property="og:description"
           content="Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but instead with a focus on my websites. Since I began this portfolio with Jorch.xyz as my domain in mid-2020, I've constantly added, updated, and removed various..."
@@ -34,7 +31,7 @@ export default function Post2() {
 
       {/* title and image */}
       <Cover
-        title="The JakeO.dev Portfolio Wrapped 2023"
+        title="JakeO.dev 2023, Wrapped"
         date="December 16, 2023"
         img={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
         imgAlt="Screenshots from the websites of the JakeO.dev portfolio encapsulated in a bunny"

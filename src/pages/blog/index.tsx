@@ -53,7 +53,7 @@ export default function Blog() {
       />
 
       <Post
-        name="The JakeO.dev Portfolio Wrapped 2023"
+        name="JakeO.dev 2023, Wrapped"
         desc={`Wraps, recaps, and replays aren't just for music streaming services. I can look back on 2023 too, but instead with a focus on my websites. Since I began this portfolio with Jorch.xyz as my domain in mid-2020, I've constantly added, updated, and removed various...`}
         releaseDate="December 16, 2023"
         fadeDesc={true}
@@ -63,7 +63,7 @@ export default function Blog() {
         href="/blog/the-jakeo-dev-portfolio-wrapped-2023"
       />
 
-      <Post
+      {/* <Post
         name="AP World History: A History"
         desc={`As more students enroll in Advanced Placement classes, the College Board is bound to make changes to the curriculums of their courses either to more accurately represent college-level classes or to make them easier for students. The outline and exam for the AP...`}
         releaseDate="June 13, 2023"
@@ -72,7 +72,7 @@ export default function Blog() {
         imgAlt="Crystal Bay at Incline Village in Nevada taken in April 2022"
         showImg={false}
         href="/blog/ap-world-history-a-history"
-      />
+      /> */}
     </>
   );
 }
