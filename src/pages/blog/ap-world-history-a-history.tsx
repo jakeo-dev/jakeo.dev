@@ -283,12 +283,12 @@ export default function Post1() {
                   <tr>
                     <td className="sp-table-item">
                       Addresses all parts of the prompt
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only addresses most parts of the prompt)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -296,13 +296,13 @@ export default function Post1() {
                   <tr>
                     <td className="sp-table-item">
                       Supports thesis with appropriate evidence
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only partially supports thesis with appropriate
                         evidence)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -371,12 +371,12 @@ export default function Post1() {
                   <tr>
                     <td className="sp-table-item">
                       Addresses all parts of the prompt
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only addresses most parts of the prompt)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -384,13 +384,13 @@ export default function Post1() {
                   <tr>
                     <td className="sp-table-item">
                       Supports thesis with appropriate evidence
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only partially supports thesis with appropriate
                         evidence)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -552,13 +552,13 @@ export default function Post1() {
                     <td className="sp-table-item">
                       Supports thesis with evidence from at least all but one of
                       the documents
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only supports thesis with evidence from at least all
                         but two of the documents)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -776,12 +776,12 @@ export default function Post1() {
                     <td className="sp-table-item">
                       Describes and explains reasons for the historical
                       continuity and change
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only describes the historical continuity and change)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -790,13 +790,13 @@ export default function Post1() {
                     <td className="sp-table-item">
                       Supports an argument in response to the prompt using
                       specific and relevant pieces of evidence
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only provides pieces of evidence relevant to the
                         topic of the prompt)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -929,13 +929,13 @@ export default function Post1() {
                     <td className="sp-table-item">
                       Supports an argument in response to the prompt using at
                       least 6 documents
-                      <span className="highlight block text-gray-600">
+                      <span className="highlight block text-stone-600">
                         (or only addresses the topic of the prompt using at
                         least 3 documents)
                       </span>
                     </td>
                     <td className="sp-table-item highlight">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -1010,13 +1010,13 @@ export default function Post1() {
                     <td className="sp-table-item">
                       Supports an argument in response to the prompt using
                       specific and relevant pieces of evidence
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only provides pieces of evidence relevant to the
                         topic of the prompt)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -1026,13 +1026,13 @@ export default function Post1() {
                       Complexity: Demonstrates a complex understanding of the
                       historical development of the prompt using evidence to
                       corroborate, qualify, or modify an argument
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only uses comparison, causation, or CCOT to
                         structure an argument that addresses the prompt)
                       </span>
                     </td>
                     <td className="sp-table-item">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>
@@ -1181,13 +1181,13 @@ export default function Post1() {
                     <td className="sp-table-item highlight">
                       Supports an argument in response to the prompt using at
                       least 4 documents
-                      <span className="block text-gray-600">
+                      <span className="block text-stone-600">
                         (or only addresses the topic of the prompt using at
                         least 3 documents)
                       </span>
                     </td>
                     <td className="sp-table-item highlight">
-                      2<span className="block text-gray-600">(1)</span>
+                      2<span className="block text-stone-600">(1)</span>
                     </td>
                   </tr>
                 </tbody>

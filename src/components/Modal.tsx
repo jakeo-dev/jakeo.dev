@@ -15,9 +15,9 @@ export default function Modal(props: {
         props.className
       }`}
     >
-      <div className="relative w-fit rounded-lg bg-gray-200 px-10 py-7 shadow-sm">
+      <div className="relative w-fit rounded-lg bg-stone-200 px-10 py-7 shadow-sm">
         <button
-          className="absolute right-5 top-4 text-base transition hover:text-gray-500"
+          className="absolute right-5 top-4 text-base transition hover:text-stone-500"
           onClick={() => {
             props.onClose(); // close modal
           }}

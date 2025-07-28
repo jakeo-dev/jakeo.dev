@@ -273,10 +273,10 @@ export default function Header() {
           <div className="ml-1 text-left md:ml-2.5">
             <Link
               href="/"
-              className={`${handwriting.className} mx-auto max-w-min cursor-pointer text-2xl font-bold transition hover:text-gray-600 active:text-gray-500 md:text-4xl`}
+              className={`${handwriting.className} mx-auto max-w-min cursor-pointer text-2xl font-bold transition hover:text-stone-600 active:text-stone-500 md:text-4xl`}
             >
               JakeO
-              <span className="text-xl text-gray-500 md:text-3xl">.dev</span>
+              <span className="text-xl text-stone-500 md:text-3xl">.dev</span>
             </Link>
 
             {/* socials */}
@@ -284,7 +284,7 @@ export default function Header() {
               <a
                 href="mailto:hi@jakeo.dev"
                 target="_blank"
-                className="flex text-sm text-gray-500 transition hover:scale-110 hover:text-blue-500 active:scale-100 md:text-lg"
+                className="flex text-sm text-stone-500 transition hover:scale-110 hover:text-blue-500 active:scale-100 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -294,7 +294,7 @@ export default function Header() {
               <a
                 href="https://github.com/jakeo-dev"
                 target="_blank"
-                className="flex text-sm text-gray-500 transition hover:scale-110 hover:text-[#333333] active:scale-100 md:text-lg"
+                className="flex text-sm text-stone-500 transition hover:scale-110 hover:text-[#333333] active:scale-100 md:text-lg"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -304,7 +304,7 @@ export default function Header() {
               <div className="relative">
                 <button
                   onClick={() => setModalOpen(!modalOpen)}
-                  className="flex cursor-pointer text-sm text-gray-500 transition hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
+                  className="flex cursor-pointer text-sm text-stone-500 transition hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
                   ref={modalBtnRef}
                 >
                   <FontAwesomeIcon
@@ -317,11 +317,11 @@ export default function Header() {
                 <div
                   className={`${
                     modalOpen ? "visible-fade" : "invisible-fade"
-                  } absolute top-5 w-fit rounded-lg border-2 border-gray-200 px-3.5 py-1.5 shadow-sm md:top-6`}
+                  } absolute top-5 w-fit rounded-lg border-2 border-stone-200 px-3.5 py-1.5 shadow-sm md:top-6`}
                   ref={modalRef}
                 >
                   {/* <button
-                    className="absolute right-3 top-2 text-sm text-gray-700 transition hover:text-gray-500 md:top-2.5"
+                    className="absolute right-3 top-2 text-sm text-stone-700 transition hover:text-stone-500 md:top-2.5"
                     onClick={() => {
                       setModalOpen(false);
                     }}
@@ -337,13 +337,13 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="ml-auto flex translate-x-2 justify-center gap-x-3 text-gray-600 md:translate-x-0">
+        <div className="ml-auto flex translate-x-2 justify-center gap-x-3 text-stone-600 md:translate-x-0">
           <Link
             href="/"
             className={`${
               pathname == "/"
                 ? "text-sky-600"
-                : "text-gray-500 hover:text-gray-700 active:text-gray-800"
+                : "text-stone-500 hover:text-stone-700 active:text-stone-800"
             } text mb-0 rounded-md text-sm transition md:text-base`}
           >
             <span>home</span>
@@ -353,7 +353,7 @@ export default function Header() {
             className={`${
               pathname.startsWith("/projects")
                 ? "text-sky-600"
-                : "text-gray-500 hover:text-gray-700 active:text-gray-800"
+                : "text-stone-500 hover:text-stone-700 active:text-stone-800"
             } text mb-0 rounded-md text-sm transition md:text-base`}
           >
             <span>projects</span>
@@ -363,7 +363,7 @@ export default function Header() {
             className={`${
               pathname.startsWith("/blog")
                 ? "text-sky-600"
-                : "text-gray-500 hover:text-gray-700 active:text-gray-800"
+                : "text-stone-500 hover:text-stone-700 active:text-stone-800"
             } text mb-0 rounded-md text-sm transition md:text-base`}
           >
             <span>posts</span>

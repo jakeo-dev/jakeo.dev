@@ -19,13 +19,13 @@ export default function Post(props: {
         alt={props.imgAlt}
         className={`${
           props.showImg ? "" : "hidden"
-        } h-44 w-full rounded-t-xl border-b-2 border-gray-200 object-cover md:h-52`}
+        } h-44 w-full rounded-t-xl border-b-2 border-stone-200 object-cover md:h-52`}
         placeholder="blur"
       />
 
       <div className="text-left">
         <Link
-          className="text-xl font-medium underline decoration-gray-300 decoration-4 transition hover:decoration-gray-400 active:decoration-gray-500"
+          className="text-xl font-medium underline decoration-stone-300 decoration-4 transition hover:decoration-stone-400 active:decoration-stone-500"
           href={`${props.href}`}
         >
           {props.name}
@@ -35,7 +35,7 @@ export default function Post(props: {
         <h2
           className={`${
             props.releaseDate != "" ? "inline" : "hidden"
-          } text-sm text-gray-600`}
+          } text-sm text-stone-600`}
         >
           {props.releaseDate}
         </h2>
@@ -43,7 +43,7 @@ export default function Post(props: {
       {/* <h2
         className={`${
           props.fadeDesc ? "fade-text" : ""
-        } text text-gray-600 mt-2 mb-0`}
+        } text text-stone-600 mt-2 mb-0`}
       >
         {props.desc}
       </h2> */}

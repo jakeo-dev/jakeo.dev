@@ -2,27 +2,27 @@
 
 @layer components {
   .sub1title {
-    @apply mt-14 py-4 text-left text-xl font-bold text-pretty text-gray-900;
+    @apply mt-14 py-4 text-left text-xl font-bold text-pretty text-stone-900;
   }
 
   .sub2title {
-    @apply mt-8 py-4 text-left text-lg font-semibold text-pretty text-gray-900;
+    @apply mt-8 py-4 text-left text-lg font-semibold text-pretty text-stone-900;
   }
 
   .sub3title {
-    @apply mt-4 py-4 text-left text-base font-medium text-pretty text-gray-900;
+    @apply mt-4 py-4 text-left text-base font-medium text-pretty text-stone-900;
   }
 
   .sub1title-subtext {
-    @apply mt-4 py-2 text-left font-medium text-pretty text-gray-700;
+    @apply mt-4 py-2 text-left font-medium text-pretty text-stone-700;
   }
 
   .text {
-    @apply mb-3 text-left text-base leading-7 text-pretty text-gray-700 last:mb-0;
+    @apply mb-3 text-left text-base leading-7 text-pretty text-stone-700 last:mb-0;
   }
 
   .subtext {
-    @apply mt-1.5 mb-4 text-left text-sm text-gray-600 italic;
+    @apply mt-1.5 mb-4 text-left text-sm text-stone-600 italic;
   }
 
   .link {
@@ -42,7 +42,7 @@
   }
 
   .post-dates-div {
-    @apply mt-2 flex gap-3 text-left text-sm text-gray-600;
+    @apply mt-2 flex gap-3 text-left text-sm text-stone-600;
   }
 
   .post-img-div {
@@ -50,15 +50,15 @@
   }
 
   .post-img {
-    @apply w-full rounded-lg border-2 border-gray-200;
+    @apply w-full rounded-lg border-2 border-stone-200;
   }
 
   .sp-table {
-    @apply mb-2 max-w-lg border-t-0 border-b-2 border-gray-400 text-left md:max-w-full;
+    @apply mb-2 max-w-lg border-t-0 border-b-2 border-stone-400 text-left md:max-w-full;
   }
 
   .sp-table-head {
-    @apply border-b-2 border-gray-400;
+    @apply border-b-2 border-stone-400;
   }
 
   .sp-table-head-item {
@@ -66,7 +66,7 @@
   }
 
   .sp-table-item {
-    @apply border-x-2 border-gray-400 px-4 py-2 align-top leading-relaxed font-normal md:leading-8;
+    @apply border-x-2 border-stone-400 px-4 py-2 align-top leading-relaxed font-normal md:leading-8;
   }
 
   .sp-table-list-item {
@@ -74,7 +74,7 @@
   }
 
   .sp-table-row {
-    @apply border-b-2 border-gray-400;
+    @apply border-b-2 border-stone-400;
   }
 
   .highlight {

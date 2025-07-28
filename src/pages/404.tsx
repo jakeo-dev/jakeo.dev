@@ -16,10 +16,10 @@ export default function Home() {
                     <div className="border-[3px] border-black/80 p-0.5 md:border-4 md:p-1">
                       <div className="border-[3px] border-black/90 p-0.5 md:border-4 md:p-1">
                         <div className="bg-black p-6 md:py-12">
-                          <h1 className="block text-6xl font-extrabold text-gray-100 md:text-9xl">
+                          <h1 className="block text-6xl font-extrabold text-stone-100 md:text-9xl">
                             404
                           </h1>
-                          <h2 className="mt-1 block text-pretty text-center leading-5 text-gray-100">
+                          <h2 className="mt-1 block text-pretty text-center leading-5 text-stone-100">
                             that page doesn't exist...
                           </h2>
                         </div>
@@ -41,7 +41,7 @@ export default function Home() {
         go back home
       </Link>
 
-      {/* <h3 className="text mb-0 mt-10 text-left text-gray-600">
+      {/* <h3 className="text mb-0 mt-10 text-left text-stone-600">
         or check out some of my other stuff:
       </h3>
       <div className="flex gap-4 text-left text-xl font-medium md:text-2xl">
@@ -53,7 +53,7 @@ export default function Home() {
         </Link>
       </div> */}
 
-      <h2 className="text mb-0 mt-8 text-left text-gray-600">
+      <h2 className="text mb-0 mt-8 text-left text-stone-600">
         or maybe this page is supposed to exist? contact me:
       </h2>
       <div className="flex gap-4 text-left text-lg font-medium md:text-xl">

@@ -48,7 +48,7 @@ export default function Projects() {
           <Project
             name="Everydle"
             desc="Play every game of Wordle at the same time."
-            updateDate="May 2025"
+            updateDate="July 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://everydle.jakeo.dev/favicon.ico"
             showLogo
@@ -88,7 +88,7 @@ export default function Projects() {
             original files created (html/css/js): may 28 2021
             first uploaded to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
-            updateDate="May 2025"
+            updateDate="June 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo
