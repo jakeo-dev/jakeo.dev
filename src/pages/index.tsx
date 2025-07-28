@@ -2,6 +2,7 @@ import CommonHead from "@/components/CommonHead";
 import Project from "@/components/projects/Project";
 import Post from "@/components/blog/Post";
 import Link from "next/link";
+import TopTrack from "@/components/TopTrack";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -44,6 +45,9 @@ export default function Home() {
         build digital things. Right now, I mostly develop React web apps with
         Next.js and TypeScript. Almost everything I make is on my GitHub, and my
         most notable projects are featured here on this website.
+      </p>
+      <p className="text">
+        My top song this month is <TopTrack />.
       </p>
 
       {/* projects */}
