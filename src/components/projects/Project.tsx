@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Paper from "@/components/Paper";
 
 export default function Project(props: {
   name: string;
@@ -11,17 +12,16 @@ export default function Project(props: {
   type: number;
   colors?: string;
   link: string;
+  pinColor?: number;
 }) {
   if (props.type == 0) {
     // current project
     return (
       <Link
         href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
-        className={`${
-          !props.colors ? "hover:border-sky-600" : props.colors
-        } relative mb-4 flex h-min flex-col rounded-xl border-4 border-stone-200 bg-stone-100 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6`}
+        className="relative mb-4 flex h-min flex-col md:mb-6"
       >
-        <div className="relative w-full flex-grow p-6">
+        <Paper paperClassName="w-full flex-grow" pinColor={props.pinColor}>
           <h1 className="flex items-center text-left text-xl font-medium">
             <img
               src={props.logo}
@@ -47,7 +47,7 @@ export default function Project(props: {
                 </span>
               ))}
           </div>
-        </div>
+        </Paper>
       </Link>
     );
   } else if (props.type == 1) {
@@ -56,9 +56,9 @@ export default function Project(props: {
       <a
         href={props.link}
         target="_blank"
-        className="relative mb-4 flex flex-col rounded-xl border-4 border-stone-200 bg-stone-100 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-stone-400 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6"
+        className="relative mb-4 flex h-min flex-col md:mb-6"
       >
-        <div className="relative w-full flex-grow p-6">
+        <Paper paperClassName="relative w-full flex-grow p-6" pinColor={9}>
           <h1 className="flex items-center text-left text-xl font-medium">
             <img
               src={props.logo}
@@ -84,7 +84,7 @@ export default function Project(props: {
                 </span>
               ))}
           </div>
-        </div>
+        </Paper>
       </a>
     );
   }

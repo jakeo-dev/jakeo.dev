@@ -39,16 +39,16 @@ export default function TopTrack() {
 
   return (
     <>
-      <span className="inline">
+      <span className="text inline">
         <a
           href={currentSong?.url}
           target="_blank"
           className="link"
           rel="noopener noreferrer"
         >
-          {currentSong ? currentSong.title : "(loading song...)"}
+          {currentSong ? currentSong.title : "[LOADING]"}
         </a>{" "}
-        by {currentSong ? currentSong.artist : "(loading artist...)"}
+        by {currentSong ? currentSong.artist : "[LOADING]"}
         {/* , with{" "}
         {currentSong ? currentSong.playcount : 0} scrobbles this month */}
       </span>

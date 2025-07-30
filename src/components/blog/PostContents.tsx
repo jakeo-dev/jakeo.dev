@@ -1,4 +1,4 @@
-export default function Contents(props: { subtitles: string[] }) {
+export default function PostContents(props: { subtitles: string[] }) {
   return (
     <div className="top-6 flex-[0.35] self-start lg:sticky lg:block xl:w-0 xl:flex-[0]">
       <p className="sub2title mb-0 block lg:hidden">Contents</p>

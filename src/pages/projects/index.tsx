@@ -43,6 +43,7 @@ export default function Projects() {
             type={0}
             colors="hover:border-emerald-600"
             link="https://plannter.jakeo.dev"
+            pinColor={4}
           />
 
           <Project
@@ -55,6 +56,7 @@ export default function Projects() {
             type={0}
             colors="hover:border-lime-600"
             link="https://everydle.jakeo.dev"
+            pinColor={3}
           />
 
           <Project
@@ -67,6 +69,7 @@ export default function Projects() {
             type={0}
             colors="hover:border-orange-600"
             link="https://pairckle.jakeo.dev"
+            pinColor={1}
           />
 
           <Project
@@ -79,6 +82,7 @@ export default function Projects() {
             type={0}
             colors="hover:border-yellow-600"
             link="https://cifra.jakeo.dev"
+            pinColor={2}
           />
 
           <Project
@@ -94,6 +98,7 @@ export default function Projects() {
             showLogo
             type={0}
             link="https://jakeo.dev"
+            pinColor={5}
           />
         </MasonryLayout>
       </div>

@@ -2,7 +2,7 @@
 
 @layer components {
   .sub1title {
-    @apply mt-14 py-4 text-left text-xl font-bold text-pretty text-stone-900;
+    @apply mt-14 mb-4 py-4 text-left text-4xl font-bold text-pretty text-stone-900 md:mb-2;
   }
 
   .sub2title {

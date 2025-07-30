@@ -1,4 +1,4 @@
-export default function Contents(props: {
+export default function ProjectCover(props: {
   title: string;
   desc: string;
   createDate: string;
@@ -12,11 +12,11 @@ export default function Contents(props: {
         {props.logoImg != "" ? (
           <img
             src={props.logoImg}
-            className="mr-2 inline w-7"
+            className="mr-2 inline w-12"
             alt={`${props.title} logo`}
           />
         ) : (
-          ""
+          <></>
         )}
         <h1 className="inline">{props.title}</h1>
       </div>

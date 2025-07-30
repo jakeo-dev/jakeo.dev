@@ -3,11 +3,13 @@ import Project from "@/components/projects/Project";
 import Post from "@/components/blog/Post";
 import Link from "next/link";
 import TopTrack from "@/components/TopTrack";
+import Paper from "@/components/Paper";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import localFont from "next/font/local";
+import Keychain from "@/components/Keychain";
 const handwriting = localFont({
   src: "../fonts/Jakes_Handwriting_V5-Regular.ttf",
   display: "swap",
@@ -32,35 +34,65 @@ export default function Home() {
         />
       </CommonHead>
 
-      {/* about me */}
-      <h2 className="sub1title mt-0">
-        Hi, I'm{" "}
-        <span className={`${handwriting.className} text-[1.4rem] leading-0`}>
-          Jake
-        </span>
-      </h2>
+      <div className="absolute top-12 left-30">
+        <Keychain
+          imageClassName="max-w-8"
+          imageSrc="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+        />
+      </div>
+      <div className="absolute top-6 left-12">
+        <Keychain
+          imageClassName="max-w-8"
+          imageSrc="https://www.iconarchive.com/download/i112277/fa-team/fontawesome/FontAwesome-Envelope.1024.png"
+        />
+      </div>
+      <div className="absolute top-9 left-49">
+        <Keychain
+          imageClassName="max-w-8"
+          imageSrc="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-2-1.png"
+        />
+      </div>
 
-      <p className="text">
-        I'm an incoming computer science student at Cal Poly SLO who likes to
-        build digital things. Right now, I mostly develop React web apps with
-        Next.js and TypeScript. Almost everything I make is on my GitHub, and my
-        most notable projects are featured here on this website.
-      </p>
-      <p className="text">
-        My top song this month is <TopTrack />.
-      </p>
+      {/* about me */}
+      <Paper paperClassName="sub1title mx-auto mt-0 w-fit">
+        <h2 className={`${handwriting.className} text-[2.5rem]`}>
+          Hi, I'm Jake
+        </h2>
+      </Paper>
+
+      <div className="absolute top-15 right-40">
+        <Keychain imageSrc="https://bunnies.jakeo.dev/images/sunny-bunny.png" />
+      </div>
+      <div className="absolute top-10 right-20">
+        <Keychain
+          imageLink="https://ceng.calpoly.edu/"
+          imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/1200px-Cal_Poly_Mustangs_logo.svg.png"
+        />
+      </div>
+
+      <div className="block items-center gap-4 md:flex md:gap-6">
+        <Paper speed="slow">
+          <p className="text">
+            I'm an incoming computer science student at Cal Poly SLO who likes
+            to build digital things. Right now, I mostly develop React web apps
+            with Next.js and TypeScript. Almost everything I make is on my
+            GitHub, and my most notable projects are featured here on this
+            website.
+          </p>
+        </Paper>
+        <Paper className="mt-4 h-min w-full md:m-0">
+          <p className="text">
+            My top song this month is <TopTrack />.
+          </p>
+        </Paper>
+      </div>
 
       {/* projects */}
-      <div className="sub1title flex items-center md:items-end">
-        <h2>Some of my projects</h2>
-        <Link
-          href="/projects"
-          className="text internal-link ml-auto px-2 text-sm font-normal no-underline md:text-base"
-        >
-          <span>See all</span>
-          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-        </Link>
-      </div>
+      <Paper paperClassName="sub1title" className="mx-auto w-fit">
+        <h2 className={`${handwriting.className} text-[2.5rem]`}>
+          Some of my projects
+        </h2>
+      </Paper>
 
       <div className="block md:flex">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
@@ -72,6 +104,7 @@ export default function Home() {
             type={0}
             colors="hover:border-emerald-600"
             link="https://plannter.jakeo.dev"
+            pinColor={4}
           />
 
           <Project
@@ -82,45 +115,10 @@ export default function Home() {
             type={0}
             colors="hover:border-lime-600"
             link="https://everydle.jakeo.dev"
+            pinColor={3}
           />
         </div>
       </div>
-
-      {/* posts */}
-      <div className="sub1title flex items-center md:items-end">
-        <h2>Some of my posts</h2>
-        <Link
-          href="/blog"
-          className="text internal-link ml-auto px-2 text-sm font-normal no-underline md:text-base"
-        >
-          <span>See all</span>
-          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-        </Link>
-      </div>
-
-      <Post
-        name="Calligraphr + FontForge: Layman's Overcomplicated Guide to Making a Good-Looking Font for Free"
-        desc={`In December 2024, I designed a typeface based on my handwriting using both Calligraphr and FontForge. Calligraphr is a great service that lets you create your own font, but it's really only useful if you upgrade to the Pro version. So instead of spending...`}
-        releaseDate="May 3, 2025"
-        updateDate=""
-        fadeDesc={true}
-        img={require("../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/thumbnail.png")}
-        imgAlt="Different letters in different fonts kerned at different amounts"
-        showImg={false}
-        href="/blog/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free"
-      />
-
-      <Post
-        name="Dialing Letters Instead of Digits"
-        desc={`In February 2023, I introduced the first iteration of Cifra, my website that generates as many vanity phone numbers that match an inputted phone number as fast as possible. Over the past year and a half, I've found different ways to improve the efficiency and...`}
-        releaseDate="August 18, 2024"
-        updateDate=""
-        fadeDesc={true}
-        img={require("../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
-        imgAlt="Overlapping lists of random words and numbers"
-        showImg={false}
-        href="/blog/dialing-letters-instead-of-digits"
-      />
     </>
   );
 }
