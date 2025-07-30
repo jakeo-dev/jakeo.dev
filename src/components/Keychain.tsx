@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Pin from "@/components/Pin";
 
 export default function Keychain(props: {
   imageSrc: string;
@@ -7,6 +8,7 @@ export default function Keychain(props: {
   imageLink?: string;
   speed?: "slow" | "medium" | "fast" | "insane";
   pinColor?: number;
+  chainLength?: "short" | "medium" | "long";
 }) {
   const [hover, setHover] = useState(false);
   const [active, setActive] = useState(false);
@@ -104,16 +106,7 @@ export default function Keychain(props: {
 
   return (
     <div className="relative z-99 w-24">
-      <div>
-        <div className="absolute top-[8px] left-1/2 z-60 h-[1.5px] w-[9px] -translate-x-[110%] -rotate-26 transform bg-stone-400" />
-        <div
-          className={`absolute top-[5px] left-1/2 z-70 h-2 w-2 -translate-x-[130%] transform rounded-full shadow-sm ${randomPinColor == 0 ? "bg-red-700" : randomPinColor == 1 ? "bg-orange-700" : randomPinColor == 2 ? "bg-yellow-700" : randomPinColor == 3 ? "bg-lime-700" : randomPinColor == 4 ? "bg-emerald-700" : randomPinColor == 5 ? "bg-sky-700" : randomPinColor == 6 ? "bg-blue-700" : randomPinColor == 7 ? "bg-purple-700" : randomPinColor == 8 ? "bg-pink-700" : "bg-stone-700"}`}
-        />
-        <div
-          className={`absolute top-[4.5px] left-1/2 z-80 h-3 w-3 -translate-x-[130%] transform rounded-full shadow-sm ${randomPinColor == 0 ? "bg-red-500" : randomPinColor == 1 ? "bg-orange-500" : randomPinColor == 2 ? "bg-yellow-500" : randomPinColor == 3 ? "bg-lime-500" : randomPinColor == 4 ? "bg-emerald-500" : randomPinColor == 5 ? "bg-sky-500" : randomPinColor == 6 ? "bg-blue-500" : randomPinColor == 7 ? "bg-purple-500" : randomPinColor == 8 ? "bg-pink-500" : "bg-stone-500"}`}
-        />
-        <div className="absolute top-[7px] left-1/2 z-90 h-1 w-1 -translate-x-[325%] transform rounded-full bg-stone-100/20" />
-      </div>
+      <Pin pinColor={props.pinColor} />
 
       <div
         className={`origin-top transition ${props.className || ""}`}
@@ -139,7 +132,9 @@ export default function Keychain(props: {
       onMouseUp={() => setActive(false)} */
       >
         <div className="absolute top-[3.5px] left-1/2 h-6 w-6 -translate-x-[60%] transform rounded-full border-3 border-stone-200 bg-transparent shadow-sm" />
-        <div className="absolute top-10.5 left-1/2 h-0.5 w-8 -translate-x-[60%] -rotate-90 transform bg-gradient-to-b from-stone-200 to-stone-300 shadow-sm" />
+        <div
+          className={`absolute top-6.5 left-1/2 ${props.chainLength == "short" ? "h-6" : props.chainLength == "long" ? "h-13" : "h-10"} w-0.5 -translate-x-[200%] transform bg-gradient-to-b from-stone-200 to-stone-300 shadow-sm`}
+        />
         <div className="absolute top-12 left-1/2 -translate-x-[60%]">
           {props.imageLink ? (
             <a

@@ -1,6 +1,14 @@
 import CommonHead from "@/components/CommonHead";
 import MasonryLayout from "@/components/MasonryLayout";
+import Paper from "@/components/Paper";
 import Project from "@/components/projects/Project";
+
+import localFont from "next/font/local";
+const handwriting = localFont({
+  src: "../../fonts/Jakes_Handwriting_V5-Regular.ttf",
+  display: "swap",
+  variable: "--font-handwriting",
+});
 
 export default function Projects() {
   return (
@@ -21,7 +29,14 @@ export default function Projects() {
       </CommonHead>
 
       {/* current projects */}
-      <h2 className="sub1title mt-0">My projects</h2>
+      <Paper
+        paperClassName="sub1title text-center mt-0"
+        className="mx-auto w-fit"
+      >
+        <h2 className={`${handwriting.className} text-[2.5rem]`}>
+          My projects
+        </h2>
+      </Paper>
 
       <div className="block md:flex">
         <MasonryLayout
@@ -104,7 +119,11 @@ export default function Projects() {
       </div>
 
       {/* past projects */}
-      <h2 className="sub1title">Past projects</h2>
+      <Paper paperClassName="sub1title text-center" className="mx-auto w-fit">
+        <h2 className={`${handwriting.className} text-[2.5rem]`}>
+          Past projects
+        </h2>
+      </Paper>
 
       <div className="block md:flex">
         <MasonryLayout

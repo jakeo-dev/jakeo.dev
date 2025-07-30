@@ -1,5 +1,13 @@
 import CommonHead from "@/components/CommonHead";
+import Paper from "@/components/Paper";
 import Post from "@/components/blog/Post";
+
+import localFont from "next/font/local";
+const handwriting = localFont({
+  src: "../../fonts/Jakes_Handwriting_V5-Regular.ttf",
+  display: "swap",
+  variable: "--font-handwriting",
+});
 
 export default function Blog() {
   return (
@@ -17,7 +25,12 @@ export default function Blog() {
       </CommonHead>
 
       {/* posts */}
-      <h2 className="sub1title mt-0">My posts</h2>
+      <Paper
+        paperClassName="sub1title text-center mt-0"
+        className="mx-auto w-fit"
+      >
+        <h2 className={`${handwriting.className} text-[2.5rem]`}>My posts</h2>
+      </Paper>
 
       <Post
         name="Calligraphr + FontForge: Layman's Overcomplicated Guide to Making a Good-Looking Font for Free"

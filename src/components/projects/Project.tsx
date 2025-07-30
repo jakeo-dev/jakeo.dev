@@ -19,7 +19,7 @@ export default function Project(props: {
     return (
       <Link
         href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
-        className="relative mb-4 flex h-min flex-col md:mb-6"
+        className="mb-4 flex h-min flex-col md:mb-6"
       >
         <Paper paperClassName="w-full flex-grow" pinColor={props.pinColor}>
           <h1 className="flex items-center text-left text-xl font-medium">
@@ -56,9 +56,9 @@ export default function Project(props: {
       <a
         href={props.link}
         target="_blank"
-        className="relative mb-4 flex h-min flex-col md:mb-6"
+        className="mb-4 flex h-min flex-col md:mb-6"
       >
-        <Paper paperClassName="relative w-full flex-grow p-6" pinColor={9}>
+        <Paper paperClassName="w-full flex-grow" pinColor={9}>
           <h1 className="flex items-center text-left text-xl font-medium">
             <img
               src={props.logo}

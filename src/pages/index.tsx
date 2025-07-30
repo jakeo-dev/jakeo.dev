@@ -4,12 +4,12 @@ import Post from "@/components/blog/Post";
 import Link from "next/link";
 import TopTrack from "@/components/TopTrack";
 import Paper from "@/components/Paper";
+import Keychain from "@/components/Keychain";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import localFont from "next/font/local";
-import Keychain from "@/components/Keychain";
 const handwriting = localFont({
   src: "../fonts/Jakes_Handwriting_V5-Regular.ttf",
   display: "swap",
@@ -44,6 +44,7 @@ export default function Home() {
       <div className="absolute top-12 left-14 md:left-30">
         <Keychain
           imageClassName="max-w-8"
+          chainLength="short"
           imageLink="https://github.com/jakeo-dev"
           imageSrc="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
         />

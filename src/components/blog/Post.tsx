@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import Paper from "@/components/Paper";
 
 export default function Post(props: {
   name: string;
@@ -11,9 +12,10 @@ export default function Post(props: {
   imgAlt: string;
   showImg: boolean;
   href: string;
+  pinColor?: number;
 }) {
   return (
-    <div className="mb-6 mt-2 flex flex-col md:mb-8">
+    <div className="mb-4 flex h-min flex-col md:mb-6">
       <Image
         src={props.img}
         alt={props.imgAlt}
@@ -23,23 +25,25 @@ export default function Post(props: {
         placeholder="blur"
       />
 
-      <div className="text-left">
-        <Link
-          className="text-xl font-medium underline decoration-stone-300 decoration-4 transition hover:decoration-stone-400 active:decoration-stone-500"
-          href={`${props.href}`}
+      <Link href={`${props.href}`}>
+        <Paper
+          paperClassName="w-full flex-grow"
+          pinColor={props.pinColor}
+          speed="slow"
         >
-          {props.name}
-        </Link>
-      </div>
-      <div className="mt-2.5 flex gap-3">
-        <h2
-          className={`${
-            props.releaseDate != "" ? "inline" : "hidden"
-          } text-sm text-stone-600`}
-        >
-          {props.releaseDate}
-        </h2>
-      </div>
+          <h1 className="w-fit text-left text-xl font-medium">
+            <span>{props.name}</span>
+          </h1>
+          <h2
+            className={`${
+              props.releaseDate != "" ? "" : "hidden"
+            } mt-2.5 w-fit text-left text-sm text-stone-600`}
+          >
+            <span>{props.releaseDate}</span>
+          </h2>
+        </Paper>
+      </Link>
+
       {/* <h2
         className={`${
           props.fadeDesc ? "fade-text" : ""
