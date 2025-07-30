@@ -21,7 +21,11 @@ export default function Project(props: {
         href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
         className="mb-4 flex h-min flex-col md:mb-6"
       >
-        <Paper paperClassName="w-full flex-grow" pinColor={props.pinColor}>
+        <Paper
+          paperClassName="w-full flex-grow"
+          pinColor={props.pinColor}
+          clickable
+        >
           <h1 className="flex items-center text-left text-xl font-medium">
             <img
               src={props.logo}

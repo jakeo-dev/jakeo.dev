@@ -89,9 +89,7 @@ export default function Keychain(props: {
       props.pinColor ||
         Number((Math.random() * (pinMax - pinMin) + pinMin).toFixed()),
     );
-  }, []);
 
-  useEffect(() => {
     const interval = setInterval(() => {
       setRotation(Math.random() * (rotationMax - rotationMin) + rotationMin);
       setDuration(

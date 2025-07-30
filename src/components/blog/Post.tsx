@@ -30,6 +30,7 @@ export default function Post(props: {
           paperClassName="w-full flex-grow"
           pinColor={props.pinColor}
           speed="slow"
+          clickable
         >
           <h1 className="w-fit text-left text-xl font-medium">
             <span>{props.name}</span>
