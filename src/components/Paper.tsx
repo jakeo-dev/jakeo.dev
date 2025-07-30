@@ -17,7 +17,7 @@ export default function Paper(props: {
         ? -8
         : props.speed == "insane"
           ? -180
-          : -6;
+          : -6; // medium
   const rotationMax =
     props.speed == "slow"
       ? 3
@@ -25,7 +25,7 @@ export default function Paper(props: {
         ? 8
         : props.speed == "insane"
           ? 180
-          : 6;
+          : 6; // medium
   const hoverRotationMin =
     props.speed == "slow"
       ? 5
@@ -33,7 +33,7 @@ export default function Paper(props: {
         ? 8
         : props.speed == "insane"
           ? 91
-          : 7;
+          : 7; // medium
   const hoverRotationMax =
     props.speed == "slow"
       ? 8
@@ -41,7 +41,7 @@ export default function Paper(props: {
         ? 14
         : props.speed == "insane"
           ? 180
-          : 12;
+          : 12; // medium
   const [rotation, setRotation] = useState(
     Math.random() * (rotationMax - rotationMin) + rotationMin,
   );
@@ -103,7 +103,7 @@ export default function Paper(props: {
 
   return (
     <div
-      className={`relative ${props.className}`}
+      className={`relative ${props.className || ""}`}
 
       /* onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -122,7 +122,7 @@ export default function Paper(props: {
       </div>
 
       <div
-        className={`origin-top rounded bg-stone-100/95 p-6 shadow-md transition ${props.paperClassName}`}
+        className={`origin-top rounded bg-stone-100/95 p-6 shadow-md transition ${props.paperClassName || ""}`}
         style={{
           rotate:
             // set rotate to rotation

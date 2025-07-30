@@ -34,36 +34,42 @@ export default function Home() {
         />
       </CommonHead>
 
-      <div className="absolute top-12 left-30">
+      <div className="absolute top-6 left-0 md:left-12">
         <Keychain
           imageClassName="max-w-8"
-          imageSrc="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-        />
-      </div>
-      <div className="absolute top-6 left-12">
-        <Keychain
-          imageClassName="max-w-8"
+          imageLink="mailto:hi@jakeo.dev"
           imageSrc="https://www.iconarchive.com/download/i112277/fa-team/fontawesome/FontAwesome-Envelope.1024.png"
         />
       </div>
-      <div className="absolute top-9 left-49">
+      <div className="absolute top-12 left-14 md:left-30">
         <Keychain
           imageClassName="max-w-8"
+          imageLink="https://github.com/jakeo-dev"
+          imageSrc="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+        />
+      </div>
+      <div className="absolute top-9 left-26 md:left-48">
+        <Keychain
+          imageClassName="max-w-8"
+          imageLink="https://ceng.calpoly.edu/"
           imageSrc="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-2-1.png"
         />
       </div>
 
       {/* about me */}
-      <Paper paperClassName="sub1title mx-auto mt-0 w-fit">
+      <Paper
+        paperClassName="sub1title mt-0 text-center"
+        className="mx-auto w-fit"
+      >
         <h2 className={`${handwriting.className} text-[2.5rem]`}>
           Hi, I'm Jake
         </h2>
       </Paper>
 
-      <div className="absolute top-15 right-40">
+      <div className="absolute top-15 right-14 md:right-40">
         <Keychain imageSrc="https://bunnies.jakeo.dev/images/sunny-bunny.png" />
       </div>
-      <div className="absolute top-10 right-20">
+      <div className="absolute top-10 right-0 md:right-20">
         <Keychain
           imageLink="https://ceng.calpoly.edu/"
           imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/1200px-Cal_Poly_Mustangs_logo.svg.png"
@@ -88,7 +94,7 @@ export default function Home() {
       </div>
 
       {/* projects */}
-      <Paper paperClassName="sub1title" className="mx-auto w-fit">
+      <Paper paperClassName="sub1title text-center" className="mx-auto w-fit">
         <h2 className={`${handwriting.className} text-[2.5rem]`}>
           Some of my projects
         </h2>

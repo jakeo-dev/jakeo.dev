@@ -123,7 +123,7 @@ export default function Header() {
   return (
     <>
       {/* header */}
-      <header className="mt-8 mb-14 flex items-center text-center align-middle md:my-16">
+      <header className="mt-8 mb-14 flex items-center text-center align-middle opacity-30 md:my-16">
         <div className="flex -translate-x-2 items-center justify-center md:-translate-x-4">
           <div className="-mb-2">
             <button

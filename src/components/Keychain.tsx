@@ -103,7 +103,7 @@ export default function Keychain(props: {
   }, []);
 
   return (
-    <div className="relative w-24">
+    <div className="relative z-99 w-24">
       <div>
         <div className="absolute top-[8px] left-1/2 z-60 h-[1.5px] w-[9px] -translate-x-[110%] -rotate-26 transform bg-stone-400" />
         <div
@@ -116,7 +116,7 @@ export default function Keychain(props: {
       </div>
 
       <div
-        className={`origin-top transition ${props.className}`}
+        className={`origin-top transition ${props.className || ""}`}
         style={{
           rotate:
             // set rotate to rotation
@@ -150,7 +150,7 @@ export default function Keychain(props: {
             >
               <img
                 src={props.imageSrc}
-                className={`w-12 drop-shadow-md ${props.imageClassName}`}
+                className={`w-12 drop-shadow-md ${props.imageClassName || ""}`}
                 style={{
                   rotate:
                     // set rotate to rotation
