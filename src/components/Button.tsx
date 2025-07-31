@@ -1,31 +1,28 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import StickyNote from "@/components/StickyNote";
 
 export default function Button(props: {
   children: React.ReactNode;
   className?: string;
   href: string;
+  bgColor?: number;
 }) {
   return (
     <a
       href={props.href}
-      className={`flex border-2 ${
-        !props.className?.includes("bg-")
-          ? "border-sky-600 bg-sky-600 hover:border-sky-700 hover:bg-sky-700 active:border-sky-800 active:bg-sky-800"
-          : ""
-      } w-full rounded-full px-3.5 py-1.5 text-center text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none ${
-        props.className
-      }`}
       target="_blank"
+      rel="noopener noreferrer"
+      className={`w-full text-center ${props.className}`}
     >
-      <div className="mx-auto flex items-center">
+      <StickyNote bgColor={props.bgColor} clickable>
         {props.children}
         <FontAwesomeIcon
           icon={faArrowUpRightFromSquare}
           className="ml-1.5 text-sm"
           aria-hidden
         />
-      </div>
+      </StickyNote>
     </a>
   );
 }

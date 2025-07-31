@@ -25,14 +25,15 @@ export default function Post(props: {
         placeholder="blur"
       />
 
-      <Link href={`${props.href}`}>
+      <Link href={`${props.href}`} className="md:w-3/4 mx-auto">
         <Paper
-          paperClassName="w-full flex-grow"
+          paperClassName="w-full"
           pinColor={props.pinColor}
           speed="slow"
+          stackedPaperEffect
           clickable
         >
-          <h1 className="w-fit text-left text-xl font-medium">
+          <h1 className="text w-fit text-left text-xl font-medium text-stone-800">
             <span>{props.name}</span>
           </h1>
           <h2

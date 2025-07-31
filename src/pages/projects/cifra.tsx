@@ -1,9 +1,9 @@
 import CommonHead from "@/components/CommonHead";
 import Button from "@/components/Button";
-import SecButton from "@/components/SecButton";
 import ImageCarousel from "@/components/ImageCarousel";
 import Link from "next/link";
 import ProjectCover from "@/components/projects/ProjectCover";
+import Paper from "@/components/Paper";
 
 export default function Cifra() {
   return (
@@ -30,6 +30,7 @@ export default function Cifra() {
         updateDate="March 2025"
         logoImg="https://cifra.jakeo.dev/cifra-logo.png"
         toolsList={["JavaScript", "Tailwind"]}
+        titlePinColor={2}
       />
 
       <div className="post-img-div container mx-auto mt-6">
@@ -53,45 +54,44 @@ export default function Cifra() {
       </div>
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
-        <Button
-          className="border-yellow-600 bg-yellow-600 hover:border-yellow-700 hover:bg-yellow-700 active:border-yellow-800 active:bg-yellow-800"
-          href="https://cifra.jakeo.dev"
-        >
+        <Button href="https://cifra.jakeo.dev" bgColor={2}>
           Visit website
         </Button>
-        <SecButton href="https://github.com/jakeo-dev/cifra">
-          View GitHub
-        </SecButton>
+        <Button href="https://github.com/jakeo-dev/cifra">View GitHub</Button>
       </div>
 
-      <p className="text">
-        Cifra is a website that lets you generate vanity phone numbers from an
-        inputted phone number. I made the first version in February 2023, and
-        later updated it in January 2024 to make the generation more efficient.
-      </p>
-      <p className="text">
-        In short, to generate all possible vanity phone numbers, Cifra converts
-        every word in a word list to a string of numbers corresponding to the
-        digits on the typical telephone keypad, checks if any of those numbers
-        match with the inputted phone number, replaces the matched digits with
-        the corresponding word, and finally displays each vanity number. For a
-        more in-depth explanation, read my blog post:{" "}
-        <Link
-          href="/blog/dialing-letters-instead-of-digits"
-          className="internal-link"
-        >
-          Dialing Letter Instead of Digits
-        </Link>
-        .
-      </p>
-      <p className="text">
-        The word "cifra" (pronounced SEE-fra) is a Spanish word that can be
-        translated to "number," "figure," or "cipher."
-      </p>
-      <p className="text">
-        The logo shows the word "Cifra" with the letters' corresponding
-        telephone keypad digits in front of it.
-      </p>
+      <Paper speed="off" pinColor={2}>
+        <p className="text">
+          Cifra is a website that lets you generate vanity phone numbers from an
+          inputted phone number. I made the first version in February 2023, and
+          later updated it in January 2024 to make the generation more
+          efficient.
+        </p>
+        <p className="text">
+          In short, to generate all possible vanity phone numbers, Cifra
+          converts every word in a word list to a string of numbers
+          corresponding to the digits on the typical telephone keypad, checks if
+          any of those numbers match with the inputted phone number, replaces
+          the matched digits with the corresponding word, and finally displays
+          each vanity number. For a more in-depth explanation, read my blog
+          post:{" "}
+          <Link
+            href="/blog/dialing-letters-instead-of-digits"
+            className="internal-link"
+          >
+            Dialing Letter Instead of Digits
+          </Link>
+          .
+        </p>
+        <p className="text">
+          The word "cifra" (pronounced SEE-fra) is a Spanish word that can be
+          translated to "number," "figure," or "cipher."
+        </p>
+        <p className="text">
+          The logo shows the word "Cifra" with the letters' corresponding
+          telephone keypad digits in front of it.
+        </p>
+      </Paper>
     </>
   );
 }

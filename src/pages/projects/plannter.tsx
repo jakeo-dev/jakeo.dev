@@ -1,8 +1,8 @@
 import CommonHead from "@/components/CommonHead";
 import Button from "@/components/Button";
-import SecButton from "@/components/SecButton";
 import ImageCarousel from "@/components/ImageCarousel";
 import ProjectCover from "@/components/projects/ProjectCover";
+import Paper from "@/components/Paper";
 
 export default function Plannter() {
   return (
@@ -29,6 +29,7 @@ export default function Plannter() {
         updateDate="September 2024"
         logoImg="https://plannter.jakeo.dev/plannter-icon-dark.png"
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
+        titlePinColor={4}
       />
 
       <div className="post-img-div container mx-auto mt-6">
@@ -61,47 +62,52 @@ export default function Plannter() {
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-emerald-600 bg-emerald-600 hover:border-emerald-700 hover:bg-emerald-700 active:border-emerald-800 active:bg-emerald-800 md:flex-1"
+          className="md:flex-1"
           href="https://plannter.jakeo.dev"
+          bgColor={4}
         >
-          Visit website
+          <span>Visit website</span>
         </Button>
-        <SecButton
+        <Button
           className="md:flex-[0.5]"
           href="https://github.com/jakeo-dev/plannter"
         >
           View GitHub
-        </SecButton>
-        <SecButton
+        </Button>
+        <Button
           className="md:flex-[0.5]"
           href="https://github.com/jakeo-dev/old-plannter"
         >
           View old GitHub
-        </SecButton>
+        </Button>
       </div>
 
-      <p className="text">
-        Plannter is a website that allows high school students to manage and
-        plan their academic life. You can keep track of coursework, standardized
-        tests, and extracurricular activities. It also allows you to prepare for
-        college applications by creating a college list and starting essays.
-      </p>
-      <p className="text">
-        I began development in January 2023, with the website only having a
-        Coursework and an Activities section. It was originally written using
-        HTML/Tailwind CSS/JavaScript until{" "}
-        <a href="https://dsns.dev" target="_blank" className="link">
-          DSNS
-        </a>{" "}
-        and I rewrote it using Next.js in September 2024. Now, Plannter has five
-        different sections, a GPA calculator, an essay editor, and several other
-        useful features.
-      </p>
-      <p className="text">
-        The name "Plannter" is a portmanteau of the words "planner" and "plant."
-        I also considered the name "Alumnac" (a portmanteau of "alumnus" and
-        "almanac"), but I think "Plannter" fits the website's purpose better.
-      </p>
+      <Paper speed="off" pinColor={4}>
+        <p className="text">
+          Plannter is a website that allows high school students to manage and
+          plan their academic life. You can keep track of coursework,
+          standardized tests, and extracurricular activities. It also allows you
+          to prepare for college applications by creating a college list and
+          starting essays.
+        </p>
+        <p className="text">
+          I began development in January 2023, with the website only having a
+          Coursework and an Activities section. It was originally written using
+          HTML/Tailwind CSS/JavaScript until{" "}
+          <a href="https://dsns.dev" target="_blank" className="link">
+            DSNS
+          </a>{" "}
+          and I rewrote it using Next.js in September 2024. Now, Plannter has
+          five different sections, a GPA calculator, an essay editor, and
+          several other useful features.
+        </p>
+        <p className="text">
+          The name "Plannter" is a portmanteau of the words "planner" and
+          "plant." I also considered the name "Alumnac" (a portmanteau of
+          "alumnus" and "almanac"), but I think "Plannter" fits the website's
+          purpose better.
+        </p>
+      </Paper>
     </>
   );
 }

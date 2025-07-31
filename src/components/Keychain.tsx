@@ -10,9 +10,6 @@ export default function Keychain(props: {
   pinColor?: number;
   chainLength?: "short" | "medium" | "long";
 }) {
-  const [hover, setHover] = useState(false);
-  const [active, setActive] = useState(false);
-
   const rotationMin =
     props.speed == "slow"
       ? -3
@@ -29,27 +26,8 @@ export default function Keychain(props: {
         : props.speed == "insane"
           ? 180
           : 6;
-  const hoverRotationMin =
-    props.speed == "slow"
-      ? 5
-      : props.speed == "fast"
-        ? 8
-        : props.speed == "insane"
-          ? 91
-          : 7;
-  const hoverRotationMax =
-    props.speed == "slow"
-      ? 8
-      : props.speed == "fast"
-        ? 14
-        : props.speed == "insane"
-          ? 180
-          : 12;
   const [rotation, setRotation] = useState(
     Math.random() * (rotationMax - rotationMin) + rotationMin,
-  );
-  const [hoverRotation, setHoverRotation] = useState(
-    Math.random() * (hoverRotationMax - hoverRotationMin) + hoverRotationMin,
   );
 
   const durationMin =
@@ -80,9 +58,6 @@ export default function Keychain(props: {
 
   useEffect(() => {
     setRotation(Math.random() * (rotationMax - rotationMin) + rotationMin);
-    setHoverRotation(
-      Math.random() * (hoverRotationMax - hoverRotationMin) + hoverRotationMin,
-    );
     setDuration(Math.random() * (durationMax - durationMin) + durationMin);
 
     setRandomPinColor(
@@ -111,23 +86,9 @@ export default function Keychain(props: {
         style={{
           rotate:
             // set rotate to rotation
-            // on hover, if rotation < 0, add hoverRotation to rotation, else if rotation >= 0, subtract hoverRotation from rotation
-            "-" +
-            (Number(rotation.toFixed(1)) +
-              (active
-                ? Number((rotation * -1).toFixed(1))
-                : hover && rotation < 0
-                  ? Number(hoverRotation.toFixed(1))
-                  : hover
-                    ? Number((hoverRotation * -1).toFixed(1))
-                    : 0) +
-              "deg"),
+            "-" + rotation.toFixed(1) + "deg",
           transitionDuration: duration.toFixed() + "ms",
         }}
-        /* onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      onMouseDown={() => setActive(true)}
-      onMouseUp={() => setActive(false)} */
       >
         <div className="absolute top-[3.5px] left-1/2 h-6 w-6 -translate-x-[60%] transform rounded-full border-3 border-stone-200 bg-transparent shadow-sm" />
         <div
@@ -147,17 +108,7 @@ export default function Keychain(props: {
                 style={{
                   rotate:
                     // set rotate to rotation
-                    // on hover, if rotation < 0, add hoverRotation to rotation, else if rotation >= 0, subtract hoverRotation from rotation
-                    (Number(rotation.toFixed(1)) -
-                      (active
-                        ? Number((rotation * -1).toFixed(1))
-                        : hover && rotation < 0
-                          ? Number(hoverRotation.toFixed(1))
-                          : hover
-                            ? Number((hoverRotation * -1).toFixed(1))
-                            : 0)) *
-                      0.5 +
-                    "deg",
+                    rotation.toFixed(1) + "deg",
                   transitionDuration: duration.toFixed() + "ms",
                 }}
               />
@@ -169,17 +120,7 @@ export default function Keychain(props: {
               style={{
                 rotate:
                   // set rotate to rotation
-                  // on hover, if rotation < 0, add hoverRotation to rotation, else if rotation >= 0, subtract hoverRotation from rotation
-                  (Number(rotation.toFixed(1)) -
-                    (active
-                      ? Number((rotation * -1).toFixed(1))
-                      : hover && rotation < 0
-                        ? Number(hoverRotation.toFixed(1))
-                        : hover
-                          ? Number((hoverRotation * -1).toFixed(1))
-                          : 0)) *
-                    0.5 +
-                  "deg",
+                  rotation.toFixed(1) + "deg",
                 transitionDuration: duration.toFixed() + "ms",
               }}
             />

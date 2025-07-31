@@ -9,10 +9,9 @@ export default function Paper(props: {
   speed?: "off" | "slow" | "medium" | "fast" | "insane";
   pinColor?: number;
   clickable?: boolean;
+  stackedPaperEffect?: boolean;
+  padding?: "none" | "small" | "medium" | "big";
 }) {
-  const [hover, setHover] = useState(false);
-  const [active, setActive] = useState(false);
-
   const rotationMin =
     props.speed == "off"
       ? 0
@@ -33,31 +32,8 @@ export default function Paper(props: {
           : props.speed == "insane"
             ? 180
             : 6; // medium
-  const hoverRotationMin =
-    props.speed == "off"
-      ? 0
-      : props.speed == "slow"
-        ? 5
-        : props.speed == "fast"
-          ? 8
-          : props.speed == "insane"
-            ? 91
-            : 7; // medium
-  const hoverRotationMax =
-    props.speed == "off"
-      ? 0
-      : props.speed == "slow"
-        ? 8
-        : props.speed == "fast"
-          ? 14
-          : props.speed == "insane"
-            ? 180
-            : 12; // medium
   const [rotation, setRotation] = useState(
     Math.random() * (rotationMax - rotationMin) + rotationMin,
-  );
-  const [hoverRotation, setHoverRotation] = useState(
-    Math.random() * (hoverRotationMax - hoverRotationMin) + hoverRotationMin,
   );
 
   const durationMin =
@@ -86,21 +62,9 @@ export default function Paper(props: {
     ),
   );
 
-  const pinMin = 0;
-  const pinMax = 8;
-  const [randomPinColor, setRandomPinColor] = useState(0);
-
   useEffect(() => {
     setRotation(Math.random() * (rotationMax - rotationMin) + rotationMin);
-    setHoverRotation(
-      Math.random() * (hoverRotationMax - hoverRotationMin) + hoverRotationMin,
-    );
     setDuration(Math.random() * (durationMax - durationMin) + durationMin);
-
-    setRandomPinColor(
-      props.pinColor ||
-        Number((Math.random() * (pinMax - pinMin) + pinMin).toFixed()),
-    );
   }, []);
 
   useEffect(() => {
@@ -118,12 +82,7 @@ export default function Paper(props: {
 
   return (
     <div
-      className={`relative ${props.clickable ? "perspective-[1000px]" : ""} ${props.className || ""}`}
-
-      /* onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      onMouseDown={() => setActive(true)}
-      onMouseUp={() => setActive(false)} */
+      className={`relative ${props.clickable ? "cursor-pointer perspective-[1000px]" : ""} ${props.className || ""}`}
     >
       <Pin pinColor={props.pinColor} />
 
@@ -131,26 +90,45 @@ export default function Paper(props: {
         className={`${props.clickable ? "origin-top transform transition transform-3d hover:rotate-x-8 hover:rotate-y-0 hover:drop-shadow-lg active:rotate-x-0 active:rotate-y-0 active:drop-shadow-none" : ""} ${props.paperDivClassName || ""}`}
       >
         <div
-          className={`origin-top rounded bg-stone-100/95 p-6 shadow-md transition ${props.paperClassName || ""}`}
+          className={`origin-top rounded bg-stone-100/95 shadow-md transition ${props.padding == "none" ? "p-0" : props.padding == "small" ? "p-3 pt-4" : props.padding == "big" ? "p-10" : "p-6"} ${props.paperClassName || ""}`}
           style={{
             rotate:
               // set rotate to rotation
-              // on hover, if rotation < 0, add hoverRotation to rotation, else if rotation >= 0, subtract hoverRotation from rotation
-              Number(rotation.toFixed(1)) +
-              (active
-                ? Number((rotation * -1).toFixed(1))
-                : hover && rotation < 0
-                  ? Number(hoverRotation.toFixed(1))
-                  : hover
-                    ? Number((hoverRotation * -1).toFixed(1))
-                    : 0) +
-              "deg",
+              rotation.toFixed(1) + "deg",
             transitionDuration: duration.toFixed() + "ms",
           }}
         >
           {props.children}
         </div>
       </div>
+
+      {/* stacked paper effect */}
+      {props.stackedPaperEffect ? (
+        <>
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div
+              key={i}
+              className={`absolute top-0 left-1/2 -z-10 origin-top -translate-x-1/2 rounded bg-stone-100/95 ${props.padding == "none" ? "p-0" : props.padding == "small" ? "p-3" : props.padding == "big" ? "p-10" : "p-6"} shadow-md transition ${props.paperClassName || ""}`}
+              style={{
+                rotate:
+                  // set rotate to rotation
+                  // do some psuedo-random stuff to the rotation and duration
+                  (
+                    rotation *
+                    (i % 2 ? -1 : 1) *
+                    (rotation < 1.5 ? i : i * 0.75)
+                  ).toFixed(1) + "deg",
+                transitionDuration:
+                  (duration * (i % 2 ? i : i * 0.75)).toFixed() + "ms",
+              }}
+            >
+              {props.children}
+            </div>
+          ))}
+        </>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

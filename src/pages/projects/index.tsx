@@ -33,9 +33,9 @@ export default function Projects() {
         paperClassName="sub1title text-center mt-0"
         className="mx-auto w-fit"
       >
-        <h2 className={`${handwriting.className} text-[2.5rem]`}>
+        <h1 className={`${handwriting.className} text-[2.5rem]`}>
           My projects
-        </h2>
+        </h1>
       </Paper>
 
       <div className="block md:flex">
@@ -120,9 +120,9 @@ export default function Projects() {
 
       {/* past projects */}
       <Paper paperClassName="sub1title text-center" className="mx-auto w-fit">
-        <h2 className={`${handwriting.className} text-[2.5rem]`}>
+        <h1 className={`${handwriting.className} text-[2.5rem]`}>
           Past projects
-        </h2>
+        </h1>
       </Paper>
 
       <div className="block md:flex">

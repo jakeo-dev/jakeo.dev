@@ -1,3 +1,5 @@
+import Paper from "@/components/Paper";
+
 export default function ProjectCover(props: {
   title: string;
   desc: string;
@@ -5,36 +7,43 @@ export default function ProjectCover(props: {
   updateDate: string;
   logoImg: string;
   toolsList: string[];
+  titlePinColor?: number;
 }) {
   return (
     <div>
-      <div className="sub1title mt-0 flex items-center pb-0">
-        {props.logoImg != "" ? (
-          <img
-            src={props.logoImg}
-            className="mr-2 inline w-12"
-            alt={`${props.title} logo`}
-          />
-        ) : (
-          <></>
-        )}
-        <h1 className="inline">{props.title}</h1>
-      </div>
-      <h2 className="sub1title-subtext mt-0 hidden">{props.desc}</h2>
+      <Paper
+        className="flex items-center justify-center"
+        paperClassName="sub1title mt-0 text-center w-fit"
+        pinColor={props.titlePinColor}
+      >
+        <div className="flex w-fit items-center justify-center gap-3">
+          {props.logoImg != "" ? (
+            <img
+              src={props.logoImg}
+              className="w-10"
+              alt={`${props.title} logo`}
+            />
+          ) : (
+            <></>
+          )}
+          <h1>{props.title}</h1>
+        </div>
+      </Paper>
 
-      <div className="post-dates-div">
-        <h2>Created {props.createDate}</h2>
-        <h2>Updated {props.updateDate}</h2>
+      <div className="post-dates-div justify-center">
+        <Paper speed="slow" padding="small">
+          <h2>Created {props.createDate}</h2>
+        </Paper>
+        <Paper speed="slow" padding="small">
+          <h2>Updated {props.updateDate}</h2>
+        </Paper>
       </div>
 
-      <div className="mt-2.5 flex gap-2">
+      <div className="mt-2.5 flex justify-center gap-3 text-sm text-stone-600">
         {props.toolsList.map((tool, i) => (
-          <span
-            key={i}
-            className="inline rounded-md bg-stone-200 px-2 py-0.5 text-sm text-stone-700"
-          >
-            {tool}
-          </span>
+          <Paper key={i} speed="slow" padding="small">
+            <span>{tool}</span>
+          </Paper>
         ))}
       </div>
     </div>

@@ -29,7 +29,7 @@ export default function Blog() {
         paperClassName="sub1title text-center mt-0"
         className="mx-auto w-fit"
       >
-        <h2 className={`${handwriting.className} text-[2.5rem]`}>My posts</h2>
+        <h1 className={`${handwriting.className} text-[2.5rem]`}>My posts</h1>
       </Paper>
 
       <Post

@@ -26,7 +26,7 @@ export default function Project(props: {
           pinColor={props.pinColor}
           clickable
         >
-          <h1 className="flex items-center text-left text-xl font-medium">
+          <h1 className="text flex items-center text-left text-xl font-medium text-stone-800">
             <img
               src={props.logo}
               className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-6`}
@@ -62,8 +62,8 @@ export default function Project(props: {
         target="_blank"
         className="mb-4 flex h-min flex-col md:mb-6"
       >
-        <Paper paperClassName="w-full flex-grow" pinColor={9}>
-          <h1 className="flex items-center text-left text-xl font-medium">
+        <Paper paperClassName="w-full flex-grow" pinColor={9} clickable>
+          <h1 className="text flex items-center text-left text-xl font-medium text-stone-800">
             <img
               src={props.logo}
               className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-6`}
