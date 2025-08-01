@@ -32,7 +32,7 @@ export default function Pairckle() {
         titlePinColor={1}
       />
 
-      <div className="post-img-div container mx-auto mt-6">
+      <div className="container mx-auto mt-6">
         <ImageCarousel
           imagePosition="object-top"
           images={[

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Paper from "@/components/Paper";
 
 export default function ImageCarousel(props: {
   images: { src: string; alt: string }[];
@@ -31,14 +32,18 @@ export default function ImageCarousel(props: {
   }, [currentIndex]);
 
   return (
-    <div className="post-img-div relative h-56 w-full overflow-hidden sm:h-96 md:h-[430px]">
+    <Paper
+      paperClassName="post-img-div relative h-56 w-full overflow-hidden sm:h-96 md:h-[456px]"
+      padding="none"
+      speed="off"
+    >
       <div className="post-img relative h-full w-full">
         {props.images.map((image, i) => (
           <Image
             key={i}
             src={image.src}
             alt={props.images[i].alt}
-            className={`rounded-md object-cover ${props.imagePosition} transition-opacity duration-300 ${
+            className={`object-cover ${props.imagePosition} transition-opacity duration-300 ${
               i == currentIndex ? "opacity-100" : "opacity-0"
             }`}
             fill
@@ -48,17 +53,17 @@ export default function ImageCarousel(props: {
 
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-3 -translate-y-1/2 transform cursor-pointer rounded-full bg-stone-600/60 px-2 py-[0.18rem] text-white transition hover:bg-stone-600 active:bg-stone-700"
+        className="absolute top-1/2 left-4 -translate-y-1/2 transform cursor-pointer rounded-full bg-stone-600/60 px-2 py-[0.18rem] text-white transition hover:bg-stone-600 active:bg-stone-700"
       >
         <FontAwesomeIcon icon={faArrowLeft} aria-label="Previous image" />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-3 -translate-y-1/2 transform cursor-pointer rounded-full bg-stone-600/60 px-2 py-[0.18rem] text-white transition hover:bg-stone-600 active:bg-stone-700"
+        className="absolute top-1/2 right-4 -translate-y-1/2 transform cursor-pointer rounded-full bg-stone-600/60 px-2 py-[0.18rem] text-white transition hover:bg-stone-600 active:bg-stone-700"
       >
         <FontAwesomeIcon icon={faArrowRight} aria-label="Next image" />
       </button>
-    </div>
+    </Paper>
   );
 }

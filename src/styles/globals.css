@@ -50,7 +50,7 @@
   }
 
   .post-img {
-    @apply w-full rounded-lg border-2 border-stone-200;
+    @apply w-full rounded border-8 border-b-24 border-stone-200;
   }
 
   .sp-table {

@@ -32,14 +32,14 @@ export default function JakeO() {
         titlePinColor={5}
       />
 
-      <div className="post-img-div mt-6">
+      <Paper className="post-img-div mt-6" padding="none" speed="off">
         <Image
           src={require("/public/images/main-ss-1.png")}
           alt="Screenshot of JakeO.dev showing the home page, including some projects and posts"
           className="post-img"
           placeholder="blur"
         />
-      </div>
+      </Paper>
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button

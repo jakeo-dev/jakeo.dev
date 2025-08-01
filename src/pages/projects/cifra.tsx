@@ -33,7 +33,7 @@ export default function Cifra() {
         titlePinColor={2}
       />
 
-      <div className="post-img-div container mx-auto mt-6">
+      <div className="container mx-auto mt-6">
         <ImageCarousel
           imagePosition="object-top"
           images={[

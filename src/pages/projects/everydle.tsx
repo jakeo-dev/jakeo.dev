@@ -32,7 +32,7 @@ export default function Everydle() {
         titlePinColor={3}
       />
 
-      <div className="post-img-div container mx-auto mt-6">
+      <div className="container mx-auto mt-6">
         <ImageCarousel
           imagePosition="object-center"
           images={[

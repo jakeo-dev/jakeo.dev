@@ -16,7 +16,7 @@ export default function Paper(props: {
     props.speed == "off"
       ? 0
       : props.speed == "slow"
-        ? -3
+        ? -2
         : props.speed == "fast"
           ? -8
           : props.speed == "insane"
@@ -26,7 +26,7 @@ export default function Paper(props: {
     props.speed == "off"
       ? 0
       : props.speed == "slow"
-        ? 3
+        ? 2
         : props.speed == "fast"
           ? 8
           : props.speed == "insane"
@@ -40,7 +40,7 @@ export default function Paper(props: {
     props.speed == "off"
       ? 0
       : props.speed == "slow"
-        ? 3500
+        ? 3000
         : props.speed == "fast"
           ? 1000
           : props.speed == "insane"
@@ -50,7 +50,7 @@ export default function Paper(props: {
     props.speed == "off"
       ? 0
       : props.speed == "slow"
-        ? 7500
+        ? 7000
         : props.speed == "fast"
           ? 3000
           : props.speed == "insane"

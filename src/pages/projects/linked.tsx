@@ -32,14 +32,14 @@ export default function Linked() {
         titlePinColor={0}
       />
 
-      <div className="post-img-div mt-6">
+      <Paper className="post-img-div mt-6" padding="none" speed="off">
         <Image
           src={require("/public/images/linked-ss-1.png")}
           alt={`Screenshot of Linked showing the game being played, with the words "deaf," "fiend," "diodes," and the fourth word not fully typed`}
           className="post-img"
           placeholder="blur"
         />
-      </div>
+      </Paper>
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button className="flex-1" href="https://linked.jakeo.dev">

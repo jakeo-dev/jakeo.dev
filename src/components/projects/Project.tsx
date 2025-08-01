@@ -15,7 +15,7 @@ export default function Project(props: {
   pinColor?: number;
 }) {
   if (props.type == 0) {
-    // current project
+    // current project (links to a page)
     return (
       <Link
         href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
@@ -34,12 +34,12 @@ export default function Project(props: {
             />
             <span>{props.name}</span>
           </h1>
-          <h2 className="text mt-2 mb-0 text-stone-600">{props.desc}</h2>
-          <div
-            className={`flex flex-wrap gap-2 ${
-              props.toolsList && props.toolsList.length > 0 ? "mt-2.5" : ""
-            }`}
+          <h2
+            className={`text text-stone-600 ${props.toolsList && props.toolsList.length > 0 ? "mb-3.5" : "mb-0"}`}
           >
+            {props.desc}
+          </h2>
+          <div className="flex flex-wrap gap-2">
             {props.toolsList &&
               props.toolsList.length > 0 &&
               props.toolsList.map((tool, i) => (
@@ -55,7 +55,7 @@ export default function Project(props: {
       </Link>
     );
   } else if (props.type == 1) {
-    // past project
+    // past project (regular link)
     return (
       <a
         href={props.link}
