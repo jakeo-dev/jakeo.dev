@@ -29,14 +29,14 @@ export default function Home() {
         />
       </CommonHead>
 
-      <div className="absolute top-6 left-0 md:left-12 xl:left-72">
+      <div className="absolute top-6 left-0 md:left-12 xl:left-61">
         <Keychain
           imageClassName="max-w-8"
           imageLink="mailto:hi@jakeo.dev"
           imageSrc="https://www.iconarchive.com/download/i112277/fa-team/fontawesome/FontAwesome-Envelope.1024.png"
         />
       </div>
-      <div className="absolute top-12 left-14 md:left-30 xl:left-90">
+      <div className="absolute top-12 left-14 md:left-30 xl:left-82">
         <Keychain
           imageClassName="max-w-8"
           chainLength="short"
@@ -44,7 +44,7 @@ export default function Home() {
           imageSrc="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
         />
       </div>
-      <div className="absolute top-9 left-26 md:left-48 xl:left-108">
+      <div className="absolute top-9 left-26 md:left-48 xl:left-100">
         <Keychain
           imageClassName="max-w-8"
           imageLink="https://ceng.calpoly.edu/"
@@ -62,16 +62,16 @@ export default function Home() {
         </h1>
       </Paper>
 
-      <div className="absolute top-12 right-30 md:right-48 xl:right-110">
+      <div className="absolute top-12 right-30 md:right-48 xl:right-100">
         <Keychain imageSrc="https://bunnies.jakeo.dev/images/sunny-bunny.png" />
       </div>
-      <div className="absolute top-8 right-16 md:right-30 xl:right-90">
+      <div className="absolute top-8 right-16 md:right-30 xl:right-77">
         <Keychain
           imageLink="https://ceng.calpoly.edu/"
           imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/1200px-Cal_Poly_Mustangs_logo.svg.png"
         />
       </div>
-      <div className="absolute top-10 right-0 md:right-10 xl:right-70">
+      <div className="absolute top-10 right-0 md:right-10 xl:right-55">
         <Keychain imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png?20220125121207" />
       </div>
 
