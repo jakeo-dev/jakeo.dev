@@ -6,33 +6,50 @@ export default function Keychain(props: {
   className?: string;
   imageClassName?: string;
   imageLink?: string;
-  speed?: "slow" | "medium" | "fast" | "insane";
+  speed?: "off" | "slow" | "medium" | "fast" | "insane";
   pinColor?: number;
   chainLength?: "short" | "medium" | "long";
 }) {
+  const [motionChecked, setMotionChecked] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (
+      localStorage.getItem("motionChecked") &&
+      Boolean(Number(localStorage.getItem("motionChecked"))) !== undefined
+    )
+      setMotionChecked(Boolean(Number(localStorage.getItem("motionChecked"))));
+    else setMotionChecked(true);
+  }, []);
+
   const rotationMin =
-    props.speed == "slow"
-      ? -3
-      : props.speed == "fast"
-        ? -8
-        : props.speed == "insane"
-          ? -180
-          : -6;
+    props.speed == "off"
+      ? 0
+      : props.speed == "slow"
+        ? -3
+        : props.speed == "fast"
+          ? -10
+          : props.speed == "insane"
+            ? -180
+            : -6;
   const rotationMax =
-    props.speed == "slow"
-      ? 3
-      : props.speed == "fast"
-        ? 8
-        : props.speed == "insane"
-          ? 180
-          : 6;
+    props.speed == "off"
+      ? 0
+      : props.speed == "slow"
+        ? 3
+        : props.speed == "fast"
+          ? 10
+          : props.speed == "insane"
+            ? 180
+            : 6;
   const [rotation, setRotation] = useState(
-    Math.random() * (rotationMax - rotationMin) + rotationMin,
+    motionChecked
+      ? Math.random() * (rotationMax - rotationMin) + rotationMin
+      : 0,
   );
 
   const durationMin =
     props.speed == "slow"
-      ? 3500
+      ? 3000
       : props.speed == "fast"
         ? 1000
         : props.speed == "insane"
@@ -40,7 +57,7 @@ export default function Keychain(props: {
           : 2000; // medium
   const durationMax =
     props.speed == "slow"
-      ? 7500
+      ? 7000
       : props.speed == "fast"
         ? 3000
         : props.speed == "insane"
@@ -52,21 +69,20 @@ export default function Keychain(props: {
     ),
   );
 
-  const pinMin = 0;
-  const pinMax = 8;
-  const [randomPinColor, setRandomPinColor] = useState(0);
-
   useEffect(() => {
-    setRotation(Math.random() * (rotationMax - rotationMin) + rotationMin);
+    setRotation(
+      motionChecked
+        ? Math.random() * (rotationMax - rotationMin) + rotationMin
+        : 0,
+    );
     setDuration(Math.random() * (durationMax - durationMin) + durationMin);
 
-    setRandomPinColor(
-      props.pinColor ||
-        Number((Math.random() * (pinMax - pinMin) + pinMin).toFixed()),
-    );
-
     const interval = setInterval(() => {
-      setRotation(Math.random() * (rotationMax - rotationMin) + rotationMin);
+      setRotation(
+        motionChecked
+          ? Math.random() * (rotationMax - rotationMin) + rotationMin
+          : 0,
+      );
       setDuration(
         Number(
           (Math.random() * (durationMax - durationMin) + durationMin).toFixed(),
@@ -75,7 +91,7 @@ export default function Keychain(props: {
     }, duration);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [motionChecked]);
 
   return (
     <div className="relative z-99 w-24">

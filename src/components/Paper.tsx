@@ -11,7 +11,19 @@ export default function Paper(props: {
   clickable?: boolean;
   stackedPaperEffect?: boolean;
   padding?: "none" | "small" | "medium" | "big";
+  id?: string;
 }) {
+  const [motionChecked, setMotionChecked] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (
+      localStorage.getItem("motionChecked") &&
+      Boolean(Number(localStorage.getItem("motionChecked"))) !== undefined
+    )
+      setMotionChecked(Boolean(Number(localStorage.getItem("motionChecked"))));
+    else setMotionChecked(true);
+  }, []);
+
   const rotationMin =
     props.speed == "off"
       ? 0
@@ -33,29 +45,27 @@ export default function Paper(props: {
             ? 180
             : 6; // medium
   const [rotation, setRotation] = useState(
-    Math.random() * (rotationMax - rotationMin) + rotationMin,
+    motionChecked
+      ? Math.random() * (rotationMax - rotationMin) + rotationMin
+      : 0,
   );
 
   const durationMin =
-    props.speed == "off"
-      ? 0
-      : props.speed == "slow"
-        ? 3000
-        : props.speed == "fast"
-          ? 1000
-          : props.speed == "insane"
-            ? 500
-            : 2000; // medium
+    props.speed == "slow"
+      ? 3000
+      : props.speed == "fast"
+        ? 1000
+        : props.speed == "insane"
+          ? 500
+          : 2000; // medium
   const durationMax =
-    props.speed == "off"
-      ? 0
-      : props.speed == "slow"
-        ? 7000
-        : props.speed == "fast"
-          ? 3000
-          : props.speed == "insane"
-            ? 1000
-            : 5000; // medium
+    props.speed == "slow"
+      ? 7000
+      : props.speed == "fast"
+        ? 3000
+        : props.speed == "insane"
+          ? 1000
+          : 5000; // medium
   const [duration, setDuration] = useState(
     Number(
       (Math.random() * (durationMax - durationMin) + durationMin).toFixed(),
@@ -63,13 +73,19 @@ export default function Paper(props: {
   );
 
   useEffect(() => {
-    setRotation(Math.random() * (rotationMax - rotationMin) + rotationMin);
+    setRotation(
+      motionChecked
+        ? Math.random() * (rotationMax - rotationMin) + rotationMin
+        : 0,
+    );
     setDuration(Math.random() * (durationMax - durationMin) + durationMin);
-  }, []);
 
-  useEffect(() => {
     const interval = setInterval(() => {
-      setRotation(Math.random() * (rotationMax - rotationMin) + rotationMin);
+      setRotation(
+        motionChecked
+          ? Math.random() * (rotationMax - rotationMin) + rotationMin
+          : 0,
+      );
       setDuration(
         Number(
           (Math.random() * (durationMax - durationMin) + durationMin).toFixed(),
@@ -78,11 +94,12 @@ export default function Paper(props: {
     }, duration);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [motionChecked]);
 
   return (
     <div
       className={`relative ${props.clickable ? "cursor-pointer perspective-[1000px]" : ""} ${props.className || ""}`}
+      id={props.id}
     >
       <Pin pinColor={props.pinColor} />
 
