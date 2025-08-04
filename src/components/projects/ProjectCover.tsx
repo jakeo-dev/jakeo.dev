@@ -13,14 +13,14 @@ export default function ProjectCover(props: {
     <div>
       <Paper
         className="flex items-center justify-center"
-        paperClassName="sub1title mt-0 text-center w-fit"
+        paperClassName="sub1title mt-0 mb-3 text-center w-fit"
         pinColor={props.titlePinColor}
       >
-        <div className="flex w-fit items-center justify-center gap-3">
+        <div className="flex w-fit items-center justify-center gap-2 md:gap-3">
           {props.logoImg != "" ? (
             <img
               src={props.logoImg}
-              className="w-10"
+              className="w-7 sm:w-8 md:w-10"
               alt={`${props.title} logo`}
             />
           ) : (
@@ -30,16 +30,16 @@ export default function ProjectCover(props: {
         </div>
       </Paper>
 
-      <div className="post-dates-div justify-center">
+      <div className="post-dates-div mb-3 justify-center">
         <Paper speed="slow" padding="small">
-          <h2>Created {props.createDate}</h2>
+          <span>Created {props.createDate}</span>
         </Paper>
         <Paper speed="slow" padding="small">
-          <h2>Updated {props.updateDate}</h2>
+          <span>Updated {props.updateDate}</span>
         </Paper>
       </div>
 
-      <div className="mt-2.5 flex justify-center gap-3 text-sm text-stone-600">
+      <div className="post-dates-div justify-center">
         {props.toolsList.map((tool, i) => (
           <Paper key={i} speed="slow" padding="small">
             <span>{tool}</span>

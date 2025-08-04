@@ -25,7 +25,7 @@ export default function Post(props: {
         placeholder="blur"
       />
 
-      <Link href={`${props.href}`} className="md:w-3/4 mx-auto">
+      <Link href={`${props.href}`} className="mx-auto md:w-3/4">
         <Paper
           paperClassName="w-full"
           pinColor={props.pinColor}
@@ -33,26 +33,26 @@ export default function Post(props: {
           stackedPaperEffect
           clickable
         >
-          <h1 className="text w-fit text-left text-xl font-medium text-stone-800">
-            <span>{props.name}</span>
-          </h1>
-          <h2
+          <h2 className="text w-fit text-left text-xl font-medium text-stone-800">
+            {props.name}
+          </h2>
+          <h3
             className={`${
               props.releaseDate != "" ? "" : "hidden"
             } mt-2.5 w-fit text-left text-sm text-stone-600`}
           >
-            <span>{props.releaseDate}</span>
-          </h2>
+            {props.releaseDate}
+          </h3>
         </Paper>
       </Link>
 
-      {/* <h2
+      {/* <h3
         className={`${
           props.fadeDesc ? "fade-text" : ""
         } text text-stone-600 mt-2 mb-0`}
       >
         {props.desc}
-      </h2> */}
+      </h3> */}
     </div>
   );
 }

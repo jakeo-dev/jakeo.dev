@@ -33,7 +33,7 @@ export default function Paper(props: {
           ? -8
           : props.speed == "insane"
             ? -180
-            : -6; // medium
+            : -4; // medium
   const rotationMax =
     props.speed == "off"
       ? 0
@@ -43,7 +43,7 @@ export default function Paper(props: {
           ? 8
           : props.speed == "insane"
             ? 180
-            : 6; // medium
+            : 4; // medium
   const [rotation, setRotation] = useState(
     motionChecked
       ? Math.random() * (rotationMax - rotationMin) + rotationMin

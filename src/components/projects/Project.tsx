@@ -26,19 +26,19 @@ export default function Project(props: {
           pinColor={props.pinColor}
           clickable
         >
-          <h1 className="text flex items-center text-left text-xl font-medium text-stone-800">
+          <h2 className="text flex items-center text-left text-xl font-medium text-stone-800">
             <img
               src={props.logo}
               className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-6`}
               alt={`${props.name} logo`}
             />
             <span>{props.name}</span>
-          </h1>
-          <h2
+          </h2>
+          <h3
             className={`text text-stone-600 ${props.toolsList && props.toolsList.length > 0 ? "mb-3.5" : "mb-0"}`}
           >
             {props.desc}
-          </h2>
+          </h3>
           <div className="flex flex-wrap gap-2">
             {props.toolsList &&
               props.toolsList.length > 0 &&
@@ -63,15 +63,15 @@ export default function Project(props: {
         className="mb-4 flex h-min flex-col md:mb-6"
       >
         <Paper paperClassName="w-full flex-grow" pinColor={9} clickable>
-          <h1 className="text flex items-center text-left text-xl font-medium text-stone-800">
+          <h2 className="text flex items-center text-left text-xl font-medium text-stone-800">
             <img
               src={props.logo}
               className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-6`}
               alt={`${props.name} logo`}
             />
             <span>{props.name}</span>
-          </h1>
-          <h2 className="text mt-2 mb-0 text-stone-600">{props.desc}</h2>
+          </h2>
+          <h3 className="text mt-2 mb-0 text-stone-600">{props.desc}</h3>
           <div
             className={`flex flex-wrap gap-2 ${
               props.toolsList && props.toolsList.length > 0 ? "mt-2.5" : ""

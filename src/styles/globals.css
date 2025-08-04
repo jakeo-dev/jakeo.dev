@@ -2,15 +2,15 @@
 
 @layer components {
   .sub1title {
-    @apply mt-14 mb-4 py-4 text-left text-4xl font-bold text-pretty text-stone-900 md:mb-2;
+    @apply mt-18 mb-6 text-left text-2xl font-bold text-pretty text-stone-900 sm:text-3xl md:text-4xl;
   }
 
   .sub2title {
-    @apply mt-8 py-4 text-left text-lg font-semibold text-pretty text-stone-900;
+    @apply mt-10 mb-4 text-left text-lg font-semibold text-pretty text-stone-900;
   }
 
   .sub3title {
-    @apply mt-4 py-4 text-left text-base font-medium text-pretty text-stone-900;
+    @apply mt-8 mb-2 text-left text-base font-medium text-pretty text-stone-900;
   }
 
   .sub1title-subtext {
@@ -22,7 +22,7 @@
   }
 
   .subtext {
-    @apply mt-1.5 mb-4 text-left text-sm text-stone-600 italic;
+    @apply mt-1.5 mb-4 text-left text-sm text-pretty text-stone-600 italic last:mb-0;
   }
 
   .link {
@@ -42,11 +42,11 @@
   }
 
   .post-dates-div {
-    @apply mt-2 flex gap-3 text-center text-sm text-stone-600;
+    @apply mb-6 flex gap-3 text-center text-sm text-stone-600;
   }
 
   .post-img-div {
-    @apply mt-3 mb-6;
+    @apply mt-2 mb-8;
   }
 
   .post-img {
@@ -82,7 +82,7 @@
   }
 
   .check-sizes {
-    @apply border-8 border-blue-500 bg-blue-200 sm:border-green-500 sm:bg-green-200 md:border-yellow-500 md:bg-yellow-200 lg:border-orange-500 lg:bg-orange-200 xl:border-red-500 xl:bg-red-200;
+    @apply border-8 border-blue-500 bg-blue-200 sm:border-green-500 sm:bg-green-200 md:border-yellow-500 md:bg-yellow-200 lg:border-orange-500 lg:bg-orange-200 xl:border-red-500 xl:bg-red-200 2xl:border-pink-500 2xl:bg-pink-200;
   }
 
   .invisible-fade {

@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Paper from "@/components/Paper";
 
 export default function PostCover(props: {
   title: string;
@@ -9,23 +10,30 @@ export default function PostCover(props: {
 }) {
   return (
     <>
-      <h1 className="sub1title mt-0 pb-0">{props.title}</h1>
+      <Paper
+        paperClassName="sub1title mt-0 p-0 mb-3 mx-auto w-fit"
+        speed="slow"
+      >
+        <h1>{props.title}</h1>
+      </Paper>
 
-      <div className="post-dates-div">
-        <h2>{props.date}</h2>
+      <div className="post-dates-div justify-center">
+        <Paper speed="slow" padding="small">
+          <span>{props.date}</span>
+        </Paper>
       </div>
 
-      <div className="my-6">
+      <Paper className="post-img-div" padding="none" speed="slow">
         <Image
           src={props.img}
           alt={props.imgAlt}
-          className="rounded-xl md:rounded-3xl"
+          className="post-img"
           placeholder="blur"
         />
         <p className={props.imgSubtext != "" ? "subtext" : ""}>
           {props.imgSubtext}
         </p>
-      </div>
+      </Paper>
     </>
   );
 }
