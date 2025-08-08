@@ -26,13 +26,14 @@ export default function Everydle() {
         title="Everydle"
         desc="Play every game of Wordle at the same time."
         createDate="May 2025"
-        updateDate="June 2025"
+        updateDate="July 2025"
         logoImg="https://everydle.jakeo.dev/favicon.ico"
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="post-img-div container mx-auto mt-6">
+      <div className="container mx-auto">
         <ImageCarousel
+          bgColor="bg-lime-500/50"
           imagePosition="object-center"
           images={[
             {

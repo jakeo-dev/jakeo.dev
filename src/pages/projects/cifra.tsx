@@ -32,8 +32,9 @@ export default function Cifra() {
         toolsList={["JavaScript", "Tailwind"]}
       />
 
-      <div className="post-img-div container mx-auto mt-6">
+      <div className="container mx-auto">
         <ImageCarousel
+          bgColor="bg-yellow-500/50"
           imagePosition="object-top"
           images={[
             {

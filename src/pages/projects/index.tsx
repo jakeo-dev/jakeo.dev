@@ -34,18 +34,6 @@ export default function Projects() {
           columnClassName="bg-clip-padding px-2 md:px-3 first:pl-0 last:pr-0"
         >
           <Project
-            name="Plannter"
-            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
-            updateDate="September 2024"
-            toolsList={["Next.js", "TypeScript", "Tailwind"]}
-            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
-            showLogo
-            type={0}
-            colors="hover:border-emerald-600"
-            link="https://plannter.jakeo.dev"
-          />
-
-          <Project
             name="Everydle"
             desc="Play every game of Wordle at the same time."
             updateDate="July 2025"
@@ -55,6 +43,18 @@ export default function Projects() {
             type={0}
             colors="hover:border-lime-600"
             link="https://everydle.jakeo.dev"
+          />
+
+          <Project
+            name="Plannter"
+            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
+            updateDate="September 2024"
+            toolsList={["Next.js", "TypeScript", "Tailwind"]}
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+            showLogo
+            type={0}
+            colors="hover:border-emerald-600"
+            link="https://plannter.jakeo.dev"
           />
 
           <Project

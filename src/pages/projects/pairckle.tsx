@@ -31,8 +31,9 @@ export default function Pairckle() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="post-img-div container mx-auto mt-6">
+      <div className="container mx-auto">
         <ImageCarousel
+          bgColor="bg-gradient-to-r from-orange-500/50 to-blue-500/50"
           imagePosition="object-top"
           images={[
             {
@@ -49,7 +50,7 @@ export default function Pairckle() {
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-orange-600 bg-orange-600 hover:border-orange-700 hover:bg-orange-700 active:border-orange-800 active:bg-orange-800"
+          className="border-orange-500 bg-orange-500 hover:border-orange-600 hover:bg-orange-600 active:border-orange-700 active:bg-orange-700"
           href="https://pairckle.jakeo.dev"
         >
           Visit website

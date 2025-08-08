@@ -31,24 +31,27 @@ export default function Linked() {
         toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="post-img-div mt-6">
-        <Image
-          src={require("../../../public/images/linked-ss-1.png")}
-          alt={`Screenshot of Linked showing the game being played, with the words "deaf," "fiend," "diodes," and the fourth word not fully typed`}
-          className="post-img"
-          placeholder="blur"
-        />
+      <div className="post-img-div relative h-56 w-full overflow-hidden sm:h-96 md:h-[430px]">
+        <div className="post-img relative h-full w-full bg-blue-500/50">
+          <Image
+            src={require("/public/images/linked-ss-1.png")}
+            alt={`Screenshot of Linked showing the game being played, with the words "deaf," "fiend," "diodes," and the fourth word not fully typed`}
+            className="scale-90 rounded-md object-cover object-top shadow-md"
+            placeholder="blur"
+            fill
+          />
+        </div>
       </div>
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="flex-1 border-blue-600 bg-blue-600 hover:border-blue-700 hover:bg-blue-700 active:border-blue-800 active:bg-blue-800"
+          className="flex-1 border-blue-500 bg-blue-500 hover:border-blue-600 hover:bg-blue-600 active:border-blue-700 active:bg-blue-700"
           href="https://linked.jakeo.dev"
         >
           Visit website
         </Button>
         <Button
-          className="flex-1 border-blue-600 bg-blue-600 hover:border-blue-700 hover:bg-blue-700 active:border-blue-800 active:bg-blue-800"
+          className="flex-1 border-blue-500 bg-blue-500 hover:border-blue-600 hover:bg-blue-600 active:border-blue-700 active:bg-blue-700"
           href="https://linked.jakeo.dev/mobile"
         >
           Download app

@@ -13,7 +13,7 @@ export default function Post(props: {
   href: string;
 }) {
   return (
-    <div className="mb-6 mt-2 flex flex-col md:mb-8">
+    <div className="mt-2 mb-6 flex flex-col md:mb-8">
       <Image
         src={props.img}
         alt={props.imgAlt}

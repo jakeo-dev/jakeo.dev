@@ -25,18 +25,21 @@ export default function JakeO() {
         title="JakeO.dev"
         desc="You're already here — check out all of my projects and blog posts."
         createDate="September 2020"
-        updateDate="June 2025"
+        updateDate="August 2025"
         logoImg="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="post-img-div mt-6">
-        <Image
-          src={require("../../../public/images/main-ss-1.png")}
-          alt="Screenshot of JakeO.dev showing the home page, including some projects and posts"
-          className="post-img"
-          placeholder="blur"
-        />
+      <div className="post-img-div relative h-56 w-full overflow-hidden sm:h-96 md:h-[430px]">
+        <div className="post-img relative h-full w-full bg-sky-500/50">
+          <Image
+            src={require("/public/images/main-ss-1.png")}
+            alt="Screenshot of JakeO.dev showing the home page, including some projects and posts"
+            className="scale-90 rounded-md object-cover object-top shadow-md"
+            placeholder="blur"
+            fill
+          />
+        </div>
       </div>
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">

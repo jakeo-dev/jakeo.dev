@@ -13,7 +13,7 @@ export default function Button(props: {
         !props.className?.includes("bg-")
           ? "border-sky-600 bg-sky-600 hover:border-sky-700 hover:bg-sky-700 active:border-sky-800 active:bg-sky-800"
           : ""
-      } w-full rounded-full px-3.5 py-1.5 text-center text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none ${
+      } w-full rounded-full px-3.5 py-2 text-center text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none ${
         props.className
       }`}
       target="_blank"

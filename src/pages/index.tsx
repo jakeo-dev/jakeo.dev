@@ -41,10 +41,21 @@ export default function Home() {
       </h2>
 
       <p className="text">
-        I'm an incoming computer science student at Cal Poly SLO who likes to
-        build digital things. Right now, I mostly develop React web apps with
-        Next.js and TypeScript. Almost everything I make is on my GitHub, and my
-        most notable projects are featured here on this website.
+        I'm a computer science student at Cal Poly SLO who likes to build
+        digital things.
+      </p>
+      <p className="text">
+        Right now, I mostly develop React web apps with Next.js and TypeScript.
+        Almost everything I make is on{" "}
+        <a
+          href="https://github.com/jakeo-dev?tab=repositories&sort=stargazers"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          my GitHub
+        </a>
+        , and my most notable projects are featured here on this website.
       </p>
       <p className="text">
         My top song this month is <TopTrack />.
@@ -65,16 +76,6 @@ export default function Home() {
       <div className="block md:flex">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
           <Project
-            name="Plannter"
-            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
-            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
-            showLogo
-            type={0}
-            colors="hover:border-emerald-600"
-            link="https://plannter.jakeo.dev"
-          />
-
-          <Project
             name="Everydle"
             desc="Play every game of Wordle at the same time."
             logo="https://everydle.jakeo.dev/favicon.ico"
@@ -82,6 +83,16 @@ export default function Home() {
             type={0}
             colors="hover:border-lime-600"
             link="https://everydle.jakeo.dev"
+          />
+
+          <Project
+            name="Plannter"
+            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+            showLogo
+            type={0}
+            colors="hover:border-emerald-600"
+            link="https://plannter.jakeo.dev"
           />
         </div>
       </div>

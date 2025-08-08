@@ -7,7 +7,7 @@ export default function Contents(props: {
   toolsList: string[];
 }) {
   return (
-    <div>
+    <div className="mb-6">
       <div className="sub1title mt-0 flex items-center pb-0">
         {props.logoImg != "" ? (
           <img
