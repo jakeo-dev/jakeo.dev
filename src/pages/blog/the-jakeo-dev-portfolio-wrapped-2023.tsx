@@ -33,7 +33,7 @@ export default function Post2() {
       <Cover
         title="JakeO.dev 2023, Wrapped"
         date="December 16, 2023"
-        img={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
+        img={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
         imgAlt="Screenshots from the websites of the JakeO.dev portfolio encapsulated in a bunny"
         imgSubtext=""
       />
@@ -72,11 +72,11 @@ export default function Post2() {
           </p>
 
           {/* plannter */}
-          <h3 className="sub1title" id="plannter">
+          <h2 className="sub1title" id="plannter">
             Plannter
-          </h3>
+          </h2>
 
-          <p className="sub3title mt-0">January 2023</p>
+          <h4 className="sub3title mt-0">January 2023</h4>
           <p className="text">
             Introduced in late January 2023, Plannter lets students track and
             plan their courses, extracurricular activities, tests, and essays.
@@ -85,7 +85,7 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-early-jan-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-early-jan-2023.png")}
               alt={`Screenshot of Plannter in early January 2023; there are two sections titled "4-year plan" and "Extracurriculars;" "4-year plan" is selected and shows a list of courses organized by grade level`}
               className="post-img"
               placeholder="blur"
@@ -100,28 +100,28 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-jan-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-jan-2023.png")}
               alt={`Screenshot of Plannter in January 2023; the header takes up the width of the screen; there are three sections now in the sidebar titled "4-year plan," "Extracurriculars," and "Testing;" Grade level percent difficulty is shown above each grade level`}
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">February 2023</p>
+          <h4 className="sub3title mt-0">February 2023</h4>
           <p className="text">
             In February, a dark mode, a graduation countdown, and the ability to
             add grades for individual courses were all added.
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-feb-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-feb-2023.png")}
               alt="Screenshot of Plannter in February 2023; it is in dark mode and letter grades are shown next to each course"
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">June and July 2023</p>
+          <h4 className="sub3title mt-0">June and July 2023</h4>
           <p className="text">
             In June and July, the ability to calculate unweighted and weighted
             GPA cumulatively and by grade level was added. The overall design
@@ -129,14 +129,14 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-jul-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-jul-2023.png")}
               alt="Screenshot of Plannter in July 2023; GPAs are shown for each grade level and cumulative GPAs are shown on the sidebar"
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">August 2023</p>
+          <h4 className="sub3title mt-0">August 2023</h4>
           <p className="text">
             A cumulative course difficulty calculation, an extracurricular
             strength calculation, and an essays section were all added in
@@ -144,7 +144,7 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-aug-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/plannter-aug-2023.png")}
               alt={`Screenshot of Plannter in August 2023; it is in light mode and there is another section titled "Essays;" cumulative course difficulty and activity rigor calculations are shown on the sidebar`}
               className="post-img"
               placeholder="blur"
@@ -152,11 +152,11 @@ export default function Post2() {
           </div>
 
           {/* cifra */}
-          <h3 className="sub1title" id="cifra">
+          <h2 className="sub1title" id="cifra">
             Cifra
-          </h3>
+          </h2>
 
-          <p className="sub3title mt-0">February 2023</p>
+          <h4 className="sub3title mt-0">February 2023</h4>
           <p className="text">
             Cifra was introduced in February 2023 as "Word Phone Number
             Generator." It lets users generate vanity phone numbers from their
@@ -165,28 +165,28 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-feb-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-feb-2023.png")}
               alt={`Screenshot of Cifra in February 2023; a simple layout with only a title, a text box to input a phone number, a button titled "Generate," and generated vanity numbers`}
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">March 2023</p>
+          <h4 className="sub3title mt-0">March 2023</h4>
           <p className="text">
             The ability to save your favorite numbers for later was added in
             March.
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-mar-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-mar-2023.png")}
               alt="Screenshot of Cifra in March 2023; there is a list of saved vanity numbers in top right corner"
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">July 2023</p>
+          <h4 className="sub3title mt-0">July 2023</h4>
           <p className="text">
             An official name was finally given to the website in July, along
             with an improved design to show more numbers at once. There were
@@ -196,7 +196,7 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-nov-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/cifra-nov-2023.png")}
               alt={`Screenshot of Cifra in July 2023; the website is titled "Cifra;" generated vanity numbers are split into three columns; saved numbers are called starred numbers`}
               className="post-img"
               placeholder="blur"
@@ -204,11 +204,11 @@ export default function Post2() {
           </div>
 
           {/* yearn */}
-          <h3 className="sub1title" id="yearn">
+          <h2 className="sub1title" id="yearn">
             Yearn
-          </h3>
+          </h2>
 
-          <p className="sub3title mt-0">January 2023</p>
+          <h4 className="sub3title mt-0">January 2023</h4>
           <p className="text">
             Introduced as Whim List in November 2022, the website's name was
             changed simply to Yearn in January. Users can add gifts that they
@@ -216,25 +216,25 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-jan-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-jan-2023.png")}
               alt="Screenshot of Yearn in January 2023; there is a list of products with prices and attributes for each one; there is a text box to add a new gift"
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">February 2023</p>
+          <h4 className="sub3title mt-0">February 2023</h4>
           <p className="text">The design was slightly improved in February.</p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-feb-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-feb-2023.png")}
               alt="Screenshot of Yearn in February 2023; buttons with icons are dark gray instead of black"
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">October and November 2023</p>
+          <h4 className="sub3title mt-0">October and November 2023</h4>
           <p className="text">
             Yearn's design was improved upon again in October. The abilities to
             change the color of gift items and move them around within the list
@@ -242,7 +242,7 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-nov-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/yearn-nov-2023.png")}
               alt="Screenshot of Yearn in November 2023; each item is colored green or purple; the input box is an oval; there are only edit and delete buttons for each item"
               className="post-img"
               placeholder="blur"
@@ -250,11 +250,11 @@ export default function Post2() {
           </div>
 
           {/* decorate a tree */}
-          <h3 className="sub1title" id="decorate-a-tree">
+          <h2 className="sub1title" id="decorate-a-tree">
             Decorate a Tree
-          </h3>
+          </h2>
 
-          <p className="sub3title mt-0">January 2023</p>
+          <h4 className="sub3title mt-0">January 2023</h4>
           <p className="text">
             At the beginning of 2023, Decorate a Tree was still sporting its
             update from December of 2022, with many new decor, and most notably
@@ -262,14 +262,14 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/tree-jan-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/tree-jan-2023.png")}
               alt="Screenshot of Decorate a Tree in January 2023; there is a black background and a white tree with various ornaments, candy canes, lights, presents, and a bow; the yellow bow is selected on the sidebar"
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">December 2023</p>
+          <h4 className="sub3title mt-0">December 2023</h4>
           <p className="text">
             In December, the website was updated with new ornaments, presents,
             and toppers. More abstract designs replaced the literal
@@ -280,7 +280,7 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/tree-dec-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/tree-dec-2023.png")}
               alt="Screenshot of Decorate a Tree in December 2023; there is a white background and a green tree with various ornaments, candy canes, lights, presents, and a bow; the red bow is selected on the left sidebar and a green tree selected on the right sidebar"
               className="post-img"
               placeholder="blur"
@@ -293,7 +293,7 @@ export default function Post2() {
           <div className="flex gap-x-4">
             <div className="post-img-div mt-0">
               <Image
-                src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-yellow-old.png")}
+                src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-yellow-old.png")}
                 alt="A yellow ornament of a star with eyes"
                 className="post-img max-w-[8rem]"
                 placeholder="blur"
@@ -302,7 +302,7 @@ export default function Post2() {
             </div>
             <div className="post-img-div mt-0">
               <Image
-                src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-yellow-new.png")}
+                src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-yellow-new.png")}
                 alt="A yellow ornament of a star"
                 className="post-img max-w-[8rem]"
                 placeholder="blur"
@@ -313,7 +313,7 @@ export default function Post2() {
           <div className="flex gap-x-4">
             <div className="post-img-div mt-0">
               <Image
-                src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-green-old.png")}
+                src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-green-old.png")}
                 alt="A green ornament of a Christmas tree"
                 className="post-img max-w-[8rem]"
                 placeholder="blur"
@@ -322,7 +322,7 @@ export default function Post2() {
             </div>
             <div className="post-img-div mt-0">
               <Image
-                src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-green-new.png")}
+                src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-green-new.png")}
                 alt="A green ornament of an abstract design in the shape of an X"
                 className="post-img max-w-[8rem]"
                 placeholder="blur"
@@ -333,7 +333,7 @@ export default function Post2() {
           <div className="flex gap-x-4">
             <div className="post-img-div mt-0">
               <Image
-                src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-cyan-old.png")}
+                src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-cyan-old.png")}
                 alt="A cyan ornament of two candy canes"
                 className="post-img max-w-[8rem]"
                 placeholder="blur"
@@ -342,7 +342,7 @@ export default function Post2() {
             </div>
             <div className="post-img-div mt-0">
               <Image
-                src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-cyan-new.png")}
+                src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/ornament-cyan-new.png")}
                 alt="A cyan ornament of an abstract design"
                 className="post-img max-w-[8rem]"
                 placeholder="blur"
@@ -352,11 +352,11 @@ export default function Post2() {
           </div>
 
           {/* jakeo.dev */}
-          <h3 className="sub1title" id="jakeo-dev">
+          <h2 className="sub1title" id="jakeo-dev">
             JakeO.dev
-          </h3>
+          </h2>
 
-          <p className="sub3title mt-0">January 2023</p>
+          <h4 className="sub3title mt-0">January 2023</h4>
           <p className="text">
             This design in January 2023 features colorful social buttons, a
             solid blue-gray bunny (compared to the newer gradient one), a subtle
@@ -365,14 +365,14 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-jan-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-jan-2023.png")}
               alt="Screenshot of JakeO.dev in January 2023; there is a header with a bunny icon, a title, and social media buttons; under is a long About section and a list of websites"
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">June 2023</p>
+          <h4 className="sub3title mt-0">June 2023</h4>
           <p className="text">
             This iteration featured the first blog post on the website, "AP
             World History: A History," though incorrectly capitalized. It also
@@ -384,14 +384,14 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-jun-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-jun-2023.png")}
               alt="Screenshot of JakeO.dev in June 2023; the header is an oval and the social media buttons are all gray; the About section is short and the list of projects is separated into three columns"
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">August and September 2023</p>
+          <h4 className="sub3title mt-0">August and September 2023</h4>
           <p className="text">
             In August and September, the website's lights were turned on with a
             new light theme. A new Featured Videos section was added. The header
@@ -403,14 +403,14 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-sep-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-sep-2023.png")}
               alt={`Screenshot of JakeO.dev in September 2023; the page is in light mode and is scrolled down; there is a footer with social media buttons; the header includes a navigation bar; there is a "Videos" section and a "Posts" section`}
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <p className="sub3title mt-0">October 2023</p>
+          <h4 className="sub3title mt-0">October 2023</h4>
           <p className="text">
             This iteration has been in effect since October, and the current
             website at the time of writing still resembles this design. Most of
@@ -421,7 +421,7 @@ export default function Post2() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-oct-2023.png")}
+              src={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/main-site-oct-2023.png")}
               alt="Screenshot of JakeO.dev in October 2023; the header is flush with the rest of the page and is centered; the social media buttons are in their own section"
               className="post-img"
               placeholder="blur"

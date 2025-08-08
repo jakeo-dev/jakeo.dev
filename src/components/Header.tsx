@@ -275,8 +275,10 @@ export default function Header() {
               href="/"
               className={`${handwriting.className} mx-auto max-w-min cursor-pointer text-2xl font-bold transition hover:text-stone-600 active:text-stone-500 md:text-4xl`}
             >
-              JakeO
-              <span className="text-xl text-stone-500 md:text-3xl">.dev</span>
+              <h1>
+                JakeO
+                <span className="text-xl text-stone-500 md:text-3xl">.dev</span>
+              </h1>
             </Link>
 
             {/* socials */}

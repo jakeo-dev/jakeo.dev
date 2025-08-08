@@ -40,7 +40,7 @@ export default function Post3() {
       <Cover
         title={`P("Congratulations! We Are Pleased to Inform You...")`}
         date="June 17, 2024"
-        img={require("../../../public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
+        img={require("/public/images/p-of-congratulations-we-are-pleased-to-inform-you/thumbnail.png")}
         imgAlt="A warped fake college acceptance email"
         imgSubtext=""
       />
@@ -72,9 +72,9 @@ export default function Post3() {
             colleges you hope to be admitted to.
           </p>
 
-          <h3 className="sub1title" id="background">
+          <h2 className="sub1title" id="background">
             Background
-          </h3>
+          </h2>
           <p className="text">
             I'll use{" "}
             <a
@@ -112,7 +112,7 @@ export default function Post3() {
             using, mainly because I'm not good at that, but I'll explain some of
             the basic things that I'm going to be using often.
           </p> */}
-          <p className="sub2title">"And" probability</p>
+          <h3 className="sub2title">"And" probability</h3>
           <p className="text">
             P() represents the probability of whatever is within the
             parenthesis. If we want to find the probability of two independent
@@ -125,7 +125,9 @@ export default function Post3() {
           <p className="text">= (1/6) * (1/6)</p>
           <p className="text">= (1/6)^2</p>
           <p className="text">= 2.78% chance</p>
-          <p className="sub2title">Using probability for college acceptances</p>
+          <h3 className="sub2title">
+            Using probability for college acceptances
+          </h3>
           <p className="text">
             We can use "and" probability to find the chance of being accepted
             into multiple colleges, assuming the decisions are independent.
@@ -141,7 +143,9 @@ export default function Post3() {
           </p>
           <p className="text">= 0.53 * 0.12 * 0.67</p>
           <p className="text">= 4.26% chance</p>
-          <p className="sub2title">Using probability for college rejections</p>
+          <h3 className="sub2title">
+            Using probability for college rejections
+          </h3>
           <p className="text">
             If we want to find the probability of being rejected from all three
             universities, subtract the acceptance rate from 1 to find the
@@ -153,7 +157,7 @@ export default function Post3() {
           </p>
           <p className="text">= (1 - 0.53) * (1 - 0.12) * (1 - 0.67)</p>
           <p className="text">= 13.6% chance</p>
-          <p className="sub2title">Using probability for the bare minimum</p>
+          <h3 className="sub2title">Using probability for the bare minimum</h3>
           <p className="text">
             If we want to find the probability of being accepted into at least
             one of the three universities, subtract the probability of being
@@ -176,7 +180,7 @@ export default function Post3() {
             doesn't make sense in this case. There's probably a real reason for
             this, but I don't know or care about that...
           </p>
-          <p className="sub2title">Using the binomial distribution</p>
+          <h3 className="sub2title">Using the binomial distribution</h3>
           <p className="text">
             If we want to find the probability of being accepted into at least
             two, at least three, or at least any number of colleges, we can use
@@ -207,9 +211,9 @@ export default function Post3() {
           <p className="text">= 1 - binomcdf(5, 0.40, 1)</p>
           <p className="text">= 66.3% chance</p>
 
-          <p className="sub1title" id="disclaimer">
+          <h2 className="sub1title" id="disclaimer">
             Disclaimer
-          </p>
+          </h2>
           <p className="text">
             Although luck is a significant factor, acceptances are not entirely
             random chance as these calculations may suggest. These calculations
@@ -220,9 +224,9 @@ export default function Post3() {
             college.
           </p>
 
-          <h3 className="sub1title" id="a-mix-of-colleges">
+          <h2 className="sub1title" id="a-mix-of-colleges">
             A Mix of Colleges
-          </h3>
+          </h2>
           <p className="text">
             The College Board and some other organizations recommend that half
             of the colleges you apply to are in the "target" category, and the
@@ -231,158 +235,172 @@ export default function Post3() {
             the examples. The binomial can't be used here because of this mix of
             acceptance rates.
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(rejected from all 2 safeties, 4 targets, and 2 reaches)
-          </p>
+          </h4>
           <p className="text">= (1 - 0.875)^2 * (1 - 0.55)^4 * (1 - 0.175)^2</p>
           <p className="text">
             = <b>0.04%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 1 of 2 safeties, 4 targets, or 2 reaches)
-          </p>
+          </h4>
           <p className="text">
             = 1 - ((1 - 0.875)^2 * (1 - 0.55)^4 * (1 - 0.175)^2)
           </p>
           <p className="text">
             = <b>99.96%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into all 2 safeties, 4 targets, and 2 reaches)
-          </p>
+          </h4>
           <p className="text">= (0.875)^2 * (0.55)^4 * (0.175)^2</p>
           <p className="text">
             = <b>0.21%</b>
           </p>
 
-          <h3 className="sub1title" id="only-reaches">
+          <h2 className="sub1title" id="only-reaches">
             Only Reaches
-          </h3>
+          </h2>
           <p className="text">
             If you hate safeties and only want to apply to colleges that aren't
             easily within your range, then this is your section.
           </p>
-          <p className="sub3title">P(rejected from all 8 reaches)</p>
+          <h4 className="sub3title">P(rejected from all 8 reaches)</h4>
           <p className="text">= (1 - 0.175)^8</p>
           <p className="text">
             = <b>21.5%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 1 of 8 reaches)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 1 of 8 reaches)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.175, 0)</p>
           <p className="text">
             = <b>78.5%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 2 of 8 reaches)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 2 of 8 reaches)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.175, 1)</p>
           <p className="text">
             = <b>42.1%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 3 of 8 reaches)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 3 of 8 reaches)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.175, 2)</p>
           <p className="text">
             = <b>15.1%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 4 of 8 reaches)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 4 of 8 reaches)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.175, 3)</p>
           <p className="text">
             = <b>3.61%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 5 of 8 reaches)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 5 of 8 reaches)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.175, 4)</p>
           <p className="text">
             = <b>0.57%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 6 of 8 reaches)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 6 of 8 reaches)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.175, 5)</p>
           <p className="text">
             = <b>0.06%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 7 of 8 reaches)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 7 of 8 reaches)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.175, 6)</p>
           <p className="text">
             = <b>0.003%</b>
           </p>
-          <p className="sub3title">P(accepted into all 8 reaches)</p>
+          <h4 className="sub3title">P(accepted into all 8 reaches)</h4>
           <p className="text">= 0.175^8</p>
           <p className="text">
             = <b>0.00009%</b>
           </p>
 
-          <h3 className="sub1title" id="only-ivy-league">
+          <h2 className="sub1title" id="only-ivy-league">
             Only Ivy League
-          </h3>
+          </h2>
           <p className="text">
             The Ivy League is a group of schools that are notoriously difficult
             to be accepted into. The average acceptance rate of an Ivy League
             school is extremely low: around 4.5%.
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(rejected from all 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= (1 - 0.045)^8</p>
           <p className="text">
             = <b>69.2%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 1 of 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.045, 0)</p>
           <p className="text">
             = <b>30.8%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 2 of 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.045, 1)</p>
           <p className="text">
             = <b>4.73%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 3 of 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.045, 2)</p>
           <p className="text">
             = <b>0.43%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 4 of 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.045, 3)</p>
           <p className="text">
             = <b>0.02%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 5 of 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.045, 4)</p>
           <p className="text">
             = <b>0.0009%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 6 of 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.045, 5)</p>
           <p className="text">
             = <b>0.00002%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 7 of 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.045, 6)</p>
           <p className="text">
             = <b>0.0000003%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into all 8 Ivy League universities)
-          </p>
+          </h4>
           <p className="text">= 0.045^8</p>
           <p className="text">
             = <b>0.000000002%</b>
           </p>
 
-          <h3 className="sub1title" id="only-ucs">
+          <h2 className="sub1title" id="only-ucs">
             Only UCs
-          </h3>
+          </h2>
           <p className="text">
             The University of California system offers nine undergraduate
             universities with acceptance rates that vary considerably.
@@ -397,7 +415,7 @@ export default function Post3() {
             </a>
             .
           </p>
-          <p className="sub3title">P(rejected from all 9 UCs)</p>
+          <h4 className="sub3title">P(rejected from all 9 UCs)</h4>
           <p className="text">
             = (1 - 0.89) * (1 - 0.69) * (1 - 0.47) * (1 - 0.37) * (1 - 0.26) *
             (1 - 0.24) * (1 - 0.21) * (1 - 0.11) * (1 - 0.09)
@@ -405,7 +423,7 @@ export default function Post3() {
           <p className="text">
             = <b>0.41%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 1 of 9 UCs)</p>
+          <h4 className="sub3title">P(accepted into at least 1 of 9 UCs)</h4>
           <p className="text">
             = 1 - ((1 - 0.89) * (1 - 0.69) * (1 - 0.47) * (1 - 0.37) * (1 -
             0.26) * (1 - 0.24) * (1 - 0.21) * (1 - 0.11) * (1 - 0.09))
@@ -413,7 +431,7 @@ export default function Post3() {
           <p className="text">
             = <b>99.6%</b>
           </p>
-          <p className="sub3title">P(accepted into all 9 UCs)</p>
+          <h4 className="sub3title">P(accepted into all 9 UCs)</h4>
           <p className="text">
             = 0.89 * 0.69 * 0.47 * 0.37 * 0.26 * 0.24 * 0.21 * 0.11 * 0.09
           </p>
@@ -421,145 +439,177 @@ export default function Post3() {
             = <b>0.001%</b>
           </p>
 
-          <p className="sub2title">
+          <h3 className="sub2title">
             Only the top four UCs (by acceptance rate)
-          </p>
+          </h3>
           <p className="text">
             Often, some students only apply to the UCs that are the most
             difficult to be accepted into. The top half of the UCs includes Los
             Angeles, Berkeley, Irvine, and San Diego.
           </p>
-          <p className="sub3title">P(rejected from all of the top four UCs)</p>
+          <h4 className="sub3title">
+            P(rejected from all of the top four UCs)
+          </h4>
           <p className="text">
             = (1 - 0.24) * (1 - 0.21) * (1 - 0.11) * (1 - 0.09)
           </p>
           <p className="text">
             = <b>48.6%</b>
           </p>
-          <p className="sub3title">
+          <h4 className="sub3title">
             P(accepted into at least 1 of the top four UCs)
-          </p>
+          </h4>
           <p className="text">
             = 1 - ((1 - 0.24) * (1 - 0.21) * (1 - 0.11) * (1 - 0.09))
           </p>
           <p className="text">
             = <b>51.4%</b>
           </p>
-          <p className="sub3title">P(accepted into all of the top four UCs)</p>
+          <h4 className="sub3title">
+            P(accepted into all of the top four UCs)
+          </h4>
           <p className="text">= 0.24 * 0.21 * 0.11 * 0.09</p>
           <p className="text">
             = <b>0.05%</b>
           </p>
 
-          <h3 className="sub1title" id="only-safeties">
+          <h2 className="sub1title" id="only-safeties">
             Only Safeties
-          </h3>
+          </h2>
           <p className="text">
             What if you want to guarantee your admission into any college, no
             matter the acceptance rate?
           </p>
-          <p className="sub3title">P(rejected from all 8 safeties)</p>
+          <h4 className="sub3title">P(rejected from all 8 safeties)</h4>
           <p className="text">= (1 - 0.875)^8</p>
           <p className="text">
             = <b>0.000006%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 1 of 8 safeties)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 1 of 8 safeties)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.875, 0)</p>
           <p className="text">
             = <b>99.99999%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 2 of 8 safeties)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 2 of 8 safeties)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.875, 1)</p>
           <p className="text">
             = <b>99.9997%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 3 of 8 safeties)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 3 of 8 safeties)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.875, 2)</p>
           <p className="text">
             = <b>99.99%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 4 of 8 safeties)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 4 of 8 safeties)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.875, 3)</p>
           <p className="text">
             = <b>99.9%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 5 of 8 safeties)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 5 of 8 safeties)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.875, 4)</p>
           <p className="text">
             = <b>98.9%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 6 of 8 safeties)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 6 of 8 safeties)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.875, 5)</p>
           <p className="text">
             = <b>93.3%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 7 of 8 safeties)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 7 of 8 safeties)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.875, 6)</p>
           <p className="text">
             = <b>73.6%</b>
           </p>
-          <p className="sub3title">P(accepted into all 8 safeties)</p>
+          <h4 className="sub3title">P(accepted into all 8 safeties)</h4>
           <p className="text">= 0.875^8</p>
           <p className="text">
             = <b>34.4%</b>
           </p>
 
-          <h3 className="sub1title" id="only-targets">
+          <h2 className="sub1title" id="only-targets">
             Only Targets
-          </h3>
+          </h2>
           <p className="text">
             Maybe there are a few schools that you want to go to that you
             believe are right within your reach.
           </p>
-          <p className="sub3title">P(rejected from all 8 targets)</p>
+          <h4 className="sub3title">P(rejected from all 8 targets)</h4>
           <p className="text">= (1 - 0.55)^8</p>
           <p className="text">
             = <b>0.17%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 1 of 8 targets)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 1 of 8 targets)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.55, 0)</p>
           <p className="text">
             = <b>99.83%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 2 of 8 targets)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 2 of 8 targets)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.55, 1)</p>
           <p className="text">
             = <b>98.2%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 3 of 8 targets)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 3 of 8 targets)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.55, 2)</p>
           <p className="text">
             = <b>91.2%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 4 of 8 targets)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 4 of 8 targets)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.55, 3)</p>
           <p className="text">
             = <b>74.0%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 5 of 8 targets)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 5 of 8 targets)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.55, 4)</p>
           <p className="text">
             = <b>47.7%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 6 of 8 targets)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 6 of 8 targets)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.55, 5)</p>
           <p className="text">
             = <b>22.0%</b>
           </p>
-          <p className="sub3title">P(accepted into at least 7 of 8 targets)</p>
+          <h4 className="sub3title">
+            P(accepted into at least 7 of 8 targets)
+          </h4>
           <p className="text">= 1 - binomcdf(8, 0.55, 6)</p>
           <p className="text">
             = <b>6.32%</b>
           </p>
-          <p className="sub3title">P(accepted into all 8 targets)</p>
+          <h4 className="sub3title">P(accepted into all 8 targets)</h4>
           <p className="text">= 0.55^8</p>
           <p className="text">
             = <b>0.84%</b>
           </p>
 
-          {/* <h3 className="sub1title" id="interesting-graphs">
+          {/* <h2 className="sub1title" id="interesting-graphs">
             Interesting Graphs
-          </h3>
+          </h2>
           <div className="mb-3">
             <div className="relative h-[36rem]">
               <p className="subtext not-italic text-center absolute left-0 vertical-rl h-full m-0">
@@ -603,9 +653,9 @@ export default function Post3() {
             reaches.
           </p> */}
 
-          <h3 className="sub1title" id="personalized-chances">
+          <h2 className="sub1title" id="personalized-chances">
             Personalized Chances
-          </h3>
+          </h2>
           <p className="text">
             Not every college has acceptance rates around 17.5%, 55%, or 87.5%.
             For more personalized chances, you should use my{" "}

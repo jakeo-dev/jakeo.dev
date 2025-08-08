@@ -40,7 +40,7 @@ export default function Post1() {
       <Cover
         title="AP World History: A History"
         date="June 13, 2023"
-        img={require("../../../public/images/ap-world-history-a-history/thumbnail.png")}
+        img={require("/public/images/ap-world-history-a-history/thumbnail.png")}
         imgAlt="Crystal Bay at Incline Village in Nevada taken in April 2022"
         imgSubtext="Monkey Rock at Incline Village, Nevada"
       />
@@ -82,9 +82,9 @@ export default function Post1() {
           </p>
 
           {/* 2001-2002 */}
-          <h3 className="sub1title" id="original-2002-curriculum">
+          <h2 className="sub1title" id="original-2002-curriculum">
             Original 2002 Curriculum
-          </h3>
+          </h2>
           <p className="text">
             AP World History was introduced in the 2001-2002 school year, 46
             years after AP US History was introduced. Its first exam was taken
@@ -92,7 +92,7 @@ export default function Post1() {
             comparison, the most recent 2023 exam was taken by over 350,000
             students, and had an average score of 3.04)
           </p>
-          <p className="sub3title mb-2">Time Periods</p>
+          <h4 className="sub3title mb-2">Time Periods</h4>
           <table className="sp-table">
             <thead className="sp-table-head">
               <tr>
@@ -137,7 +137,7 @@ export default function Post1() {
               </tr>
             </tbody>
           </table>
-          <p className="sub3title">Multiple Choice Questions (MCQ)</p>
+          <h4 className="sub3title">Multiple Choice Questions (MCQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">
               70 non-stimulus-based questions (questions that do not include
@@ -151,7 +151,7 @@ export default function Post1() {
               incorrect question
             </li>
           </ul>
-          <p className="sub3title">Document-Based Question (DBQ)</p>
+          <h4 className="sub3title">Document-Based Question (DBQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">4 - 10 documents</li>
             <li className="text">
@@ -160,7 +160,7 @@ export default function Post1() {
             <li className="text">16.6% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -257,13 +257,13 @@ export default function Post1() {
               </table>
             </li>
           </ul>
-          <p className="sub3title">Change-Over-Time Essay</p>
+          <h4 className="sub3title">Change-Over-Time Essay</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">40 minutes</li>
             <li className="text">16.6% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -345,13 +345,13 @@ export default function Post1() {
               </table>
             </li>
           </ul>
-          <p className="sub3title">Comparative Essay</p>
+          <h4 className="sub3title">Comparative Essay</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">40 minutes</li>
             <li className="text">16.6% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -436,9 +436,9 @@ export default function Post1() {
           </ul>
 
           {/* 2011-2012 */}
-          <h3 className="sub1title" id="2012-changes">
+          <h2 className="sub1title" id="2012-changes">
             2012 Changes
-          </h3>
+          </h2>
           <p className="text">
             In 2012, the main point of the changes made was to make the exam
             easier and the curriculum more straightforward. Date ranges and exam
@@ -448,7 +448,7 @@ export default function Post1() {
             possible answers and getting rid of the 1/4 point penalty for each
             incorrect answer.
           </p>
-          <p className="sub3title mb-2">Time Periods</p>
+          <h4 className="sub3title mb-2">Time Periods</h4>
           <table className="sp-table mt-4">
             <thead className="sp-table-head">
               <tr>
@@ -512,7 +512,7 @@ export default function Post1() {
               </tr>
             </tbody>
           </table>
-          <p className="sub3title">Multiple Choice Questions (MCQ)</p>
+          <h4 className="sub3title">Multiple Choice Questions (MCQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text highlight">
               Points are no longer deducted for incorrect answers
@@ -521,11 +521,11 @@ export default function Post1() {
               Questions now have four possible answers instead of five
             </li>
           </ul>
-          <p className="sub3title">Document-Based Question (DBQ)</p>
+          <h4 className="sub3title">Document-Based Question (DBQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -622,9 +622,9 @@ export default function Post1() {
           </ul>
 
           {/* 2016-2017 */}
-          <h3 className="sub1title" id="2017-changes">
+          <h2 className="sub1title" id="2017-changes">
             2017 Changes
-          </h3>
+          </h2>
           <p className="text">
             The AP World History exam was completely overhauled in 2017. The new
             Short Answer Questions (SAQ) and Long Essay Question (LEQ) replaced
@@ -634,7 +634,7 @@ export default function Post1() {
             were changed to be about responding to a passage, image, or piece of
             data, instead of recalling and answering specific facts.
           </p>
-          <p className="sub3title">Multiple Choice Questions (MCQ)</p>
+          <h4 className="sub3title">Multiple Choice Questions (MCQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text highlight">
               55 stimulus-based questions (questions that include responding to
@@ -644,14 +644,14 @@ export default function Post1() {
             <li className="text highlight">60 seconds per question</li>
             <li className="text highlight">40% of exam score</li>
           </ul>
-          <p className="sub3title highlight">Short Answer Questions (SAQ)</p>
+          <h4 className="sub3title highlight">Short Answer Questions (SAQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">50 minutes</li>
             <li className="text">4 stimulus-based questions</li>
             <li className="text">12 minutes and 30 seconds per question</li>
             <li className="text">20% of exam score</li>
           </ul>
-          <p className="sub3title">Document-Based Question (DBQ)</p>
+          <h4 className="sub3title">Document-Based Question (DBQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text highlight">Only 7 documents</li>
             <li className="text highlight">
@@ -660,7 +660,7 @@ export default function Post1() {
             <li className="text highlight">25% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -748,14 +748,14 @@ export default function Post1() {
               </table>
             </li>
           </ul>
-          <p className="sub3title highlight">Long Essay Question (LEQ)</p>
+          <h4 className="sub3title highlight">Long Essay Question (LEQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">35 minutes</li>
             <li className="text">Choose from one of two prompts</li>
             <li className="text">15% of exam score</li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -828,9 +828,9 @@ export default function Post1() {
           </ul>
 
           {/* 2017-2018 */}
-          <h3 className="sub1title" id="2018-changes">
+          <h2 className="sub1title" id="2018-changes">
             2018 Changes
-          </h3>
+          </h2>
           <p className="text">
             In response to students struggling with the previous exam's free
             response questions, the SAQ, DBQ, and LEQ were majorly changed once
@@ -840,7 +840,7 @@ export default function Post1() {
             not including stimulus, and 10 minutes were taken from the SAQ and
             added to the DBQ and LEQ.
           </p>
-          <p className="sub3title">Short Answer Questions (SAQ)</p>
+          <h4 className="sub3title">Short Answer Questions (SAQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text highlight">40 minutes</li>
             <li className="text highlight">
@@ -889,7 +889,7 @@ export default function Post1() {
               13 minutes and 20 seconds per question
             </li>
           </ul>
-          <p className="sub3title">Document-Based Question (DBQ)</p>
+          <h4 className="sub3title">Document-Based Question (DBQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text highlight">
               60 minutes with a 15-minute built-in reading period
@@ -899,7 +899,7 @@ export default function Post1() {
             </li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -971,7 +971,7 @@ export default function Post1() {
               </table>
             </li>
           </ul>
-          <p className="sub3title">Long Essay Question (LEQ)</p>
+          <h4 className="sub3title">Long Essay Question (LEQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text highlight">40 minutes</li>
             <li className="text highlight">
@@ -980,7 +980,7 @@ export default function Post1() {
             </li>
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -1041,9 +1041,9 @@ export default function Post1() {
           </ul>
 
           {/* 2019-2020 */}
-          <h3 className="sub1title" id="2020-changes">
+          <h2 className="sub1title" id="2020-changes">
             2020 Changes
-          </h3>
+          </h2>
           <p className="text">
             The course outline was reorganized into units that cover the same
             time periods, but exclude all content before 1200 AD, in preparation
@@ -1051,7 +1051,7 @@ export default function Post1() {
             content from 8000 BC - 1450 AD. No other information regarding this
             future course is known.
           </p>
-          <p className="sub3title highlight mb-2">Units</p>
+          <h4 className="sub3title highlight mb-2">Units</h4>
           <table className="sp-table mt-4">
             <thead className="sp-table-head">
               <tr>
@@ -1130,7 +1130,7 @@ export default function Post1() {
               </tr>
             </tbody>
           </table>
-          <p className="sub3title">Document-Based Question (DBQ)</p>
+          <h4 className="sub3title">Document-Based Question (DBQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text highlight">
               The prompt can now only ask about content from units 3 to 9
@@ -1138,20 +1138,20 @@ export default function Post1() {
           </ul>
 
           {/* 2023-2024 */}
-          <h3 className="sub1title" id="2024-changes">
+          <h2 className="sub1title" id="2024-changes">
             2024 Changes
-          </h3>
+          </h2>
           <p className="text">
             Likely in response to declining AP US History scores, minor changes
             were made to all AP history DBQ rubrics, with a few even smaller
             changes made to the LEQ rubric, mainly making it easier to earn the
             complexity point.
           </p>
-          <p className="sub3title">Document-Based Question (DBQ)</p>
+          <h4 className="sub3title">Document-Based Question (DBQ)</h4>
           <ul className="list-disc pl-6 md:pl-10">
             <li className="text">
               Rubric:
-              <table className="sp-table -ml-6 mt-4 md:-ml-10">
+              <table className="sp-table mt-4 -ml-6 md:-ml-10">
                 <thead className="sp-table-head">
                   <tr>
                     <th className="sp-table-head-item">Description</th>
@@ -1228,17 +1228,17 @@ export default function Post1() {
             </li>
           </ul>
 
-          <h3 className="sub1title" id="exam-data">
+          <h2 className="sub1title" id="exam-data">
             Exam Data
-          </h3>
-          <p className="sub3title mt-0">Percentages of Scores 2002-2023</p>
+          </h2>
+          <h4 className="sub3title mt-0">Percentages of Scores 2002-2023</h4>
           <Image
-            src={require("../../../public/images/ap-world-history-a-history/percent-score-over-time-graph.svg")}
+            src={require("/public/images/ap-world-history-a-history/percent-score-over-time-graph.svg")}
             alt="Percentages of Scores 2002-2023"
           />
-          <p className="sub3title mt-0">Mean Score 2002-2023</p>
+          <h4 className="sub3title mt-0">Mean Score 2002-2023</h4>
           <Image
-            src={require("../../../public/images/ap-world-history-a-history/mean-score-over-time-graph.svg")}
+            src={require("/public/images/ap-world-history-a-history/mean-score-over-time-graph.svg")}
             alt="Mean Score 2002-2023"
           />
           <p className="text mt-6">
@@ -1253,9 +1253,9 @@ export default function Post1() {
             scores since the introduction of the course in 2002.
           </p>
 
-          <h3 className="sub1title" id="references">
+          <h2 className="sub1title" id="references">
             References
-          </h3>
+          </h2>
           <a
             href="https://apcentral.collegeboard.org/courses/ap-world-history/exam/past-exam-questions"
             className="text link block text-sm"

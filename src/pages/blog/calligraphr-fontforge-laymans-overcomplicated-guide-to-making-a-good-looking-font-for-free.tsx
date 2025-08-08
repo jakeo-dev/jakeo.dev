@@ -54,7 +54,7 @@ export default function Post5() {
       <Cover
         title="Calligraphr + FontForge: Layman's Overcomplicated Guide to Making a Good-Looking Font for Free"
         date="May 3, 2025"
-        img={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/thumbnail.png")}
+        img={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/thumbnail.png")}
         imgAlt="Different letters in different fonts kerned at different amounts"
         imgSubtext=""
       />
@@ -197,9 +197,9 @@ export default function Post5() {
             .
           </p>
 
-          <h3 className="sub1title" id="beginning-with-calligraphr">
+          <h2 className="sub1title" id="beginning-with-calligraphr">
             Beginning with Calligraphr
-          </h3>
+          </h2>
           <p className="text">
             {`Start by creating an account and creating a template (in the Templates
             section) with the glyphs that you want to be included in the font.
@@ -222,7 +222,7 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-download-template.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-download-template.png")}
               alt="Calligraphr website showing a modal to download a template"
               className="post-img"
               placeholder="blur"
@@ -241,9 +241,9 @@ export default function Post5() {
               tablet makes the font turn out much cleaner.
             </li>
           </ul>
-          <h3 className="sub1title" id="downloading-from-calligraphr">
+          <h2 className="sub1title" id="downloading-from-calligraphr">
             Downloading from Calligraphr
-          </h3>
+          </h2>
           <p className="text">
             {`After filling out the templates, you can now upload your templates
             to Calligraphr. Go to the My Fonts section > Upload Template > Choose
@@ -251,7 +251,7 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-preview-chars.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-preview-chars.png")}
               alt="Calligraphr website showing a modal previewing glyphs from a template"
               className="post-img"
               placeholder="blur"
@@ -269,7 +269,7 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-download-font.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-download-font.png")}
               alt="Calligraphr website showing a modal to download a font"
               className="post-img"
               placeholder="blur"
@@ -293,9 +293,9 @@ export default function Post5() {
             step. You should now have one .ttf file for every 75 characters in
             your font, which we will later merge in FontForge.
           </p>
-          <h3 className="sub1title" id="uploading-to-fontforge">
+          <h2 className="sub1title" id="uploading-to-fontforge">
             Uploading to FontForge
-          </h3>
+          </h2>
           <p className="text">
             {`Before we can begin making adjustments to the font, we need to
             upload the first font file to FontForge. To do this, open the
@@ -305,15 +305,15 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-displayed.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-displayed.png")}
               alt="FontForge with the uploaded font glyphs displayed"
               className="post-img"
               placeholder="blur"
             />
           </div>
-          <h3 className="sub1title" id="merging-fonts">
+          <h2 className="sub1title" id="merging-fonts">
             Merging Fonts
-          </h3>
+          </h2>
           <p className="text">
             {`If you have more than one font file, it's important to merge
             them before changing anything. Once the first font is uploaded,
@@ -348,16 +348,16 @@ export default function Post5() {
             repeat the previous steps to merge them into your font. All the
             characters should be added before we start making adjustments.`}
           </p>
-          <h3 className="sub1title" id="making-transformations">
+          <h2 className="sub1title" id="making-transformations">
             Making Transformations
-          </h3>
+          </h2>
           <p className="text">
             {`If one of your glyphs appears a little off, you can change its size,
             positioning, rotation, and more in FontForge. First, select the glyph
             you want to change by single-clicking it. Then, go to Element > Transformations
             > Transform...`}
           </p>
-          <p className="sub2title">Scaling</p>
+          <h3 className="sub2title">Scaling</h3>
           <p className="text">
             {`To change the size of a glyph, select "Scale..." in this Transform window
             and change the percentages for X and Y. To decrease or increase the size,
@@ -372,7 +372,7 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-transform-glyph.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-transform-glyph.png")}
               alt={`FontForge transform window with the scale option selected`}
               className="post-img w-full"
               placeholder="blur"
@@ -391,13 +391,13 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-weight.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-weight.png")}
               alt={`FontForge change weight window with the "embolden by" input selected`}
               className="post-img w-full"
               placeholder="blur"
             />
           </div>
-          <p className="sub2title">Vertical positioning</p>
+          <h3 className="sub2title">Vertical positioning</h3>
           <p className="text">
             {`If one of your glyphs looks too low or too high compared to the
             others, you can change its vertical positioning. Select the glyph
@@ -418,15 +418,15 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-positioning.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-positioning.png")}
               alt={`FontForge transform window with the move option selected`}
               className="post-img w-full"
               placeholder="blur"
             />
           </div>
-          <h3 className="sub1title" id="making-precise-adjustments">
+          <h2 className="sub1title" id="making-precise-adjustments">
             Making Precise Adjustments
-          </h3>
+          </h2>
           <p className="text">
             You may still have some glyphs that don't look quite right, even
             after scaling, moving, or rotating. Luckily, FontForge allows us to
@@ -439,13 +439,13 @@ export default function Post5() {
           <div className="post-img-div">
             <div className="relative mb-2">
               <Image
-                src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-font-no-adjustments.png")}
+                src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-font-no-adjustments.png")}
                 alt="Font with example text, before adjustments"
                 className="post-img w-full"
                 placeholder="blur"
               />
               <Image
-                src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-font-with-adjustments.png")}
+                src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-font-with-adjustments.png")}
                 alt="Font with example text, after adjustments"
                 className="post-img absolute top-0 left-0 w-full"
                 placeholder="blur"
@@ -515,9 +515,9 @@ export default function Post5() {
             each glyph and not correct each glyph too much. The final font
             should still look like something you would naturally write.
           </p>
-          <h3 className="sub1title" id="kerning">
+          <h2 className="sub1title" id="kerning">
             Kerning
-          </h3>
+          </h2>
           <p className="text">
             Kerning is the spacing between different characters in a font. The
             amount of space between any two characters can vary, depending on
@@ -527,7 +527,7 @@ export default function Post5() {
           <div className="flex gap-x-4">
             <div className="post-img-div mt-0">
               <Image
-                src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-unkerned.png")}
+                src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-unkerned.png")}
                 alt={`The word "frijole" in a font with no kerning`}
                 className="post-img w-full"
                 placeholder="blur"
@@ -536,7 +536,7 @@ export default function Post5() {
             </div>
             <div className="post-img-div mt-0">
               <Image
-                src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-kerned.png")}
+                src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-chars-kerned.png")}
                 alt={`The word "frijole" in a font with kerning`}
                 className="post-img w-full"
                 placeholder="blur"
@@ -544,7 +544,7 @@ export default function Post5() {
               <p className="subtext">Handwriting font with kerning</p>
             </div>
           </div>
-          <p className="sub2title">Autokerning</p>
+          <h3 className="sub2title">Autokerning</h3>
           <p className="text">
             FontForge has a useful tool that can automatically kern your font. I
             followed{" "}
@@ -564,7 +564,7 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-auto-width-zero.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-auto-width-zero.png")}
               alt={`FontForge auto width window with the separation, min, and max all set to zero`}
               className="post-img w-full"
               placeholder="blur"
@@ -642,7 +642,7 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-add-subtable.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-add-subtable.png")}
               alt={`FontForge subtable window with the kerning pair "Tr" selected`}
               className="post-img w-full"
               placeholder="blur"
@@ -655,7 +655,7 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-auto-width-new.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-auto-width-new.png")}
               alt={`FontForge auto width window with the separation set to 50, min set to 25, and max set to 25`}
               className="post-img w-full"
               placeholder="blur"
@@ -670,9 +670,9 @@ export default function Post5() {
             > select the subtable > Edit Data > select which pair you want to adjust > drag the
             character on the right to adjust the spacing > OK > OK.`}
           </p> */}
-          <h3 className="sub1title" id="previewing-in-fontforge">
+          <h2 className="sub1title" id="previewing-in-fontforge">
             Previewing in FontForge
-          </h3>
+          </h2>
           <p className="text">
             {`Before you download your font, you can preview it to
             make sure it all looks good by going to Window > New Metrics
@@ -685,15 +685,15 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-preview-font.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-preview-font.png")}
               alt={`FontForge metrics window showing example text in the font being worked on`}
               className="post-img w-full"
               placeholder="blur"
             />
           </div>
-          <h3 className="sub1title" id="fixing-errors">
+          <h2 className="sub1title" id="fixing-errors">
             Fixing Errors
-          </h3>
+          </h2>
           {/* <p className="text">
             There are some things in FontForge that I don't understand because
             I've never used them before, and then there are others, like the
@@ -711,7 +711,7 @@ export default function Post5() {
             ...but if you don't care, you can just force FontForge to download
             the font.
           </p>
-          <p className="sub2title">Fixing Em Size (for TrueType)</p>
+          <h3 className="sub2title">Fixing Em Size (for TrueType)</h3>
           <p className="text">
             {`First, you'll need to fix your font's "em size." For TrueType
             font files (.ttf), the "em size" needs to be a power of 2. Go to Element
@@ -719,7 +719,7 @@ export default function Post5() {
           </p>
           <div className="post-img-div">
             <Image
-              src={require("../../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-em-size.png")}
+              src={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/step-change-em-size.png")}
               alt={`FontForge font info window with the em size set to 1024`}
               className="post-img w-full"
               placeholder="blur"
@@ -745,7 +745,7 @@ export default function Post5() {
               Error: your browser does not support the video tag.
             </video>
           </div>
-          <p className="sub2title">Fixing "Missing Points at Extrema"</p>
+          <h3 className="sub2title">Fixing "Missing Points at Extrema"</h3>
           <p className="text">
             {`To fix the "missing points at extrema" error, we need to add extrema to the glyph.`}
           </p>
@@ -761,7 +761,7 @@ export default function Post5() {
               Error: your browser does not support the video tag.
             </video>
           </div>
-          <p className="sub2title">Fixing "Wrong Direction"</p>
+          <h3 className="sub2title">Fixing "Wrong Direction"</h3>
           <p className="text">{`To fix the "wrong direction" error, we need to fix the direction of the path of the glyph.`}</p>
           <p className="text">
             {`Enter the glyph editor view (by double-clicking the glyph) > select all the points of the glyph (Mac: Command+A / Windows: Control+A) > Element > Correct Direction.`}
@@ -775,7 +775,7 @@ export default function Post5() {
               Error: your browser does not support the video tag.
             </video>
           </div>
-          <p className="sub2title">Fixing "Self Intersecting"</p>
+          <h3 className="sub2title">Fixing "Self Intersecting"</h3>
           <p className="text">
             {`To fix the "self intersecting" error, we need to remove places where the glyph intersects with itself.`}
           </p>
@@ -807,7 +807,7 @@ export default function Post5() {
               Error: your browser does not support the video tag.
             </video>
           </div>
-          <p className="sub2title">Fixing "Non-Integral Coordinates"</p>
+          <h3 className="sub2title">Fixing "Non-Integral Coordinates"</h3>
           <p className="text">
             {`To fix the "non-integral coordinates" error, we need to move the position of points that are not at integer values.`}
           </p>
@@ -837,9 +837,9 @@ export default function Post5() {
           <p className="text">
             {`non integral coordinates: Element > Round > To Int`}
           </p> */}
-          <h3 className="sub1title" id="generating-the-final-font">
+          <h2 className="sub1title" id="generating-the-final-font">
             Generating the Final Font
-          </h3>
+          </h2>
           <p className="text">
             {`Once all the errors are fixed (or you just stopped caring enough to fix them),
             you're ready to download your font! Go to File > Generate Fonts... > Generate.`}
@@ -853,9 +853,9 @@ export default function Post5() {
               Error: your browser does not support the video tag.
             </video>
           </div>
-          <h3 className="sub1title" id="now-what">
+          <h2 className="sub1title" id="now-what">
             Now What?
-          </h3>
+          </h2>
           {/* <p className="text text-lg font-handwriting">
             A typeface isn't really something people notice, but it can be one
             of the most important parts of a design. It sets the mood, whether

@@ -21,7 +21,7 @@ export default function Projects() {
       </CommonHead>
 
       {/* current projects */}
-      <h2 className="sub1title mt-0">My projects</h2>
+      <h1 className="sub0title mt-0">My projects</h1>
 
       <div className="block md:flex">
         <MasonryLayout
@@ -99,7 +99,7 @@ export default function Projects() {
       </div>
 
       {/* past projects */}
-      <h2 className="sub1title">Past projects</h2>
+      <h1 className="sub0title">Past projects</h1>
 
       <div className="block md:flex">
         <MasonryLayout

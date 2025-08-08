@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 @layer components {
+  .sub0title {
+    @apply mt-14 py-4 text-left text-2xl font-bold text-pretty text-stone-900;
+  }
+
   .sub1title {
-    @apply mt-14 py-4 text-left text-xl font-bold text-pretty text-stone-900;
+    @apply mt-14 py-4 text-left text-2xl font-bold text-pretty text-stone-900;
   }
 
   .sub2title {
@@ -13,7 +17,7 @@
     @apply mt-4 py-4 text-left text-base font-medium text-pretty text-stone-900;
   }
 
-  .sub1title-subtext {
+  .sub0title-subtext {
     @apply mt-4 py-2 text-left font-medium text-pretty text-stone-700;
   }
 

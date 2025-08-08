@@ -33,12 +33,12 @@ export default function Home() {
       </CommonHead>
 
       {/* about me */}
-      <h2 className="sub1title mt-0">
+      <h1 className="sub0title mt-0">
         Hi, I'm{" "}
-        <span className={`${handwriting.className} text-[1.4rem] leading-0`}>
+        <span className={`${handwriting.className} text-[1.6rem] leading-0`}>
           Jake
         </span>
-      </h2>
+      </h1>
 
       <p className="text">
         I'm a computer science student at Cal Poly SLO who likes to build
@@ -62,8 +62,8 @@ export default function Home() {
       </p>
 
       {/* projects */}
-      <div className="sub1title flex items-center md:items-end">
-        <h2>Some of my projects</h2>
+      <div className="sub0title flex items-center md:items-end">
+        <h1>Some of my projects</h1>
         <Link
           href="/projects"
           className="text internal-link ml-auto px-2 text-sm font-normal no-underline md:text-base"
@@ -98,8 +98,8 @@ export default function Home() {
       </div>
 
       {/* posts */}
-      <div className="sub1title flex items-center md:items-end">
-        <h2>Some of my posts</h2>
+      <div className="sub0title flex items-center md:items-end">
+        <h1>Some of my posts</h1>
         <Link
           href="/blog"
           className="text internal-link ml-auto px-2 text-sm font-normal no-underline md:text-base"
@@ -115,7 +115,7 @@ export default function Home() {
         releaseDate="May 3, 2025"
         updateDate=""
         fadeDesc={true}
-        img={require("../../public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/thumbnail.png")}
+        img={require("/public/images/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free/thumbnail.png")}
         imgAlt="Different letters in different fonts kerned at different amounts"
         showImg={false}
         href="/blog/calligraphr-fontforge-laymans-overcomplicated-guide-to-making-a-good-looking-font-for-free"
@@ -127,7 +127,7 @@ export default function Home() {
         releaseDate="August 18, 2024"
         updateDate=""
         fadeDesc={true}
-        img={require("../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+        img={require("/public/images/dialing-letters-instead-of-digits/thumbnail.png")}
         imgAlt="Overlapping lists of random words and numbers"
         showImg={false}
         href="/blog/dialing-letters-instead-of-digits"

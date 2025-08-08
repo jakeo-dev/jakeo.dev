@@ -38,7 +38,7 @@ export default function Post4() {
       <Cover
         title="Dialing Letters Instead of Digits"
         date="August 18, 2024"
-        img={require("../../../public/images/dialing-letters-instead-of-digits/thumbnail.png")}
+        img={require("/public/images/dialing-letters-instead-of-digits/thumbnail.png")}
         imgAlt="Overlapping lists of random words and numbers"
         imgSubtext=""
       />
@@ -67,9 +67,9 @@ export default function Post4() {
             method before finding this much faster one, which I'll explain here.
           </p>
 
-          <h3 className="sub1title" id="generation-preparation">
+          <h2 className="sub1title" id="generation-preparation">
             Generation Preparation
-          </h3>
+          </h2>
           <p className="text">
             The first step in this process is to make the list of over 40,000
             words more manageable. For this specific case, we need to have two
@@ -138,22 +138,22 @@ for (j = 0; j < wordsArray.length; j++) {
               after running the code.
             </p>
             <Image
-              src={require("../../../public/images/dialing-letters-instead-of-digits/visual-1.png")}
+              src={require("/public/images/dialing-letters-instead-of-digits/visual-1.png")}
               alt={`A list of words with their corresponding "numeros"`}
               className="post-img"
               placeholder="blur"
             />
           </div>
 
-          <h3 className="sub1title" id="match-and-form">
+          <h2 className="sub1title" id="match-and-form">
             Match and Form
-          </h3>
+          </h2>
           <p className="text">
             Now that the word list is in a more manageable state, let's start
             forming the vanity numbers. This is the slightly more complicated
             part.
           </p>
-          <p className="sub2title">Step 1 (one-word vanity numbers)</p>
+          <h3 className="sub2title">Step 1 (one-word vanity numbers)</h3>
           <p className="text">
             First, the program will loop through each numero and check if the
             inputted phone number contains any of the numeros. If it does, it
@@ -187,7 +187,7 @@ for (j = 0; j < wordsArray.length; j++) {
               number to oneNumsArray.
             </p>
             <Image
-              src={require("../../../public/images/dialing-letters-instead-of-digits/visual-2.png")}
+              src={require("/public/images/dialing-letters-instead-of-digits/visual-2.png")}
               alt={`The word "bunny" being matched to its numero, then the numero within the inputted phone number being changed to the word "bunny"`}
               className="post-img"
               placeholder="blur"
@@ -198,7 +198,7 @@ for (j = 0; j < wordsArray.length; j++) {
             filled with every possible one-word vanity number that can be
             derived from the inputted phone number.
           </p>
-          <p className="sub2title">Step 2 (two-word vanity numbers)</p>
+          <h3 className="sub2title">Step 2 (two-word vanity numbers)</h3>
           <p className="text">
             We don't just want vanity numbers with one word in them when we
             could have more, but repeating this process could slow down the
@@ -265,7 +265,7 @@ for (j = 0; j < wordsArray.length; j++) {
 }`}
             />
           </div>
-          <p className="sub2title">Step 3 (three-word vanity numbers)</p>
+          <h3 className="sub2title">Step 3 (three-word vanity numbers)</h3>
           <p className="text">
             The same checks and processes will be repeated one last time to add
             a potential third word to the vanity numbers.
@@ -288,9 +288,9 @@ for (j = 0; j < wordsArray.length; j++) {
             />
           </div>
 
-          <p className="sub1title" id="reveal-the-numbers">
+          <h2 className="sub1title" id="reveal-the-numbers">
             Reveal the Numbers
-          </p>
+          </h2>
           <p className="text">
             After all of this, we now have three arrays of vanity numbers: one
             array that has numbers with one word, another that has numbers with
@@ -306,9 +306,9 @@ for (j = 0; j < wordsArray.length; j++) {
             enough.
           </p>
 
-          <p className="sub1title" id="github">
+          <h2 className="sub1title" id="github">
             GitHub
-          </p>
+          </h2>
           <p className="text">
             You can find the full code for Cifra{" "}
             <a
