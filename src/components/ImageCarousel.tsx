@@ -23,11 +23,11 @@ export default function ImageCarousel(props: {
     );
   };
 
-  // auto go to next image every 5 seconds
+  // auto go to next image every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -40,7 +40,7 @@ export default function ImageCarousel(props: {
             key={i}
             src={image.src}
             alt={props.images[i].alt}
-            className={`scale-90 rounded-md object-cover shadow-md ${props.imagePosition} transition-opacity duration-300 ${
+            className={`scale-90 rounded-md object-cover shadow-md ${props.imagePosition} transition-opacity duration-1000 ${
               i == currentIndex ? "opacity-100" : "opacity-0"
             }`}
             fill
