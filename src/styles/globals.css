@@ -10,11 +10,11 @@
   }
 
   .sub2title {
-    @apply mt-8 py-4 text-left text-lg font-medium text-pretty text-stone-900;
+    @apply mt-8 py-4 text-left text-xl font-medium text-pretty text-stone-900;
   }
 
   .sub3title {
-    @apply mt-4 py-4 text-left text-base font-normal text-pretty text-stone-900;
+    @apply mt-4 py-4 text-left text-lg font-normal text-pretty text-stone-900;
   }
 
   .sub0title-subtext {

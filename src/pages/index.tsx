@@ -22,7 +22,7 @@ export default function Home() {
         <meta property="og:title" content="Hi, I'm Jake" />
         <meta
           property="og:description"
-          content="I'm an incoming computer science student at Cal Poly SLO who likes to build digital things."
+          content="I'm a computer science student at Cal Poly SLO who likes to build digital things."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
