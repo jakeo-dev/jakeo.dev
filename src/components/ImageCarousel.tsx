@@ -5,23 +5,24 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function ImageCarousel(props: {
   images: { src: string; alt: string }[];
-  imagePosition: string;
-  bgColor: string;
+  imagePosition?: string;
   controls?: boolean;
+  className?: string;
+  imageClassName?: string;
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const prevSlide = () => {
+  function prevSlide() {
     setCurrentIndex((prev) =>
       prev === 0 ? props.images.length - 1 : prev - 1,
     );
-  };
+  }
 
-  const nextSlide = () => {
+  function nextSlide() {
     setCurrentIndex((prev) =>
       prev === props.images.length - 1 ? 0 : prev + 1,
     );
-  };
+  }
 
   // auto go to next image every 4 seconds
   useEffect(() => {
@@ -33,20 +34,18 @@ export default function ImageCarousel(props: {
   }, [currentIndex]);
 
   return (
-    <div className="post-img-div relative h-56 w-full overflow-hidden sm:h-96 md:h-[430px]">
-      <div className={`post-img relative h-full w-full ${props.bgColor}`}>
-        {props.images.map((image, i) => (
-          <Image
-            key={i}
-            src={image.src}
-            alt={props.images[i].alt}
-            className={`scale-90 rounded-md object-cover shadow-md ${props.imagePosition} transition-opacity duration-1000 ${
-              i == currentIndex ? "opacity-100" : "opacity-0"
-            }`}
-            fill
-          />
-        ))}
-      </div>
+    <div className={props.className}>
+      {props.images.map((image, i) => (
+        <Image
+          key={i}
+          src={image.src}
+          alt={props.images[i].alt}
+          className={`rounded-md object-cover ${props.imagePosition || "object-center"} transition-opacity duration-1000 ${
+            i == currentIndex ? "opacity-100" : "opacity-0"
+          } ${props.imageClassName}`}
+          fill
+        />
+      ))}
 
       {props.controls ? (
         <div>

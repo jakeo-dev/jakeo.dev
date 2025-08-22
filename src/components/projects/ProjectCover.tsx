@@ -20,7 +20,7 @@ export default function Contents(props: {
         )}
         <h1 className="inline">{props.title}</h1>
       </div>
-      <h2 className="sub0title-subtext mt-0 hidden">{props.desc}</h2>
+      <h2 className="sub0title-subtext hidden">{props.desc}</h2>
 
       <div className="post-dates-div">
         <h2>Created {props.createDate}</h2>

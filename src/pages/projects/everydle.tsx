@@ -31,10 +31,10 @@ export default function Everydle() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="container mx-auto">
+      <div
+        className={`post-img relative container mx-auto h-56 w-full bg-lime-500/50 sm:h-96 md:h-[460px]`}
+      >
         <ImageCarousel
-          bgColor="bg-lime-500/50"
-          imagePosition="object-center"
           images={[
             {
               src: "/images/everydle-ss-1.png",
@@ -45,6 +45,9 @@ export default function Everydle() {
               alt: "Screenshot of Everydle showing the game being played in compact mode",
             },
           ]}
+          imagePosition="object-center"
+          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]"
+          imageClassName="shadow-md"
         />
       </div>
 

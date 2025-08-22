@@ -31,10 +31,10 @@ export default function Pairckle() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="container mx-auto">
+      <div
+        className={`post-img relative container mx-auto h-56 w-full bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[460px]`}
+      >
         <ImageCarousel
-          bgColor="bg-gradient-to-r from-orange-500/50 to-blue-500/50"
-          imagePosition="object-top"
           images={[
             {
               src: "/images/pairckle-ss-1.png",
@@ -45,6 +45,9 @@ export default function Pairckle() {
               alt: 'Screenshot of Pairckle showing three saved rankings, titled "Favorite unreleased songs," "Top works from Leo," and "Best clouds"',
             },
           ]}
+          imagePosition="object-top"
+          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]"
+          imageClassName="shadow-md"
         />
       </div>
 

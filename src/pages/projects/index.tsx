@@ -46,18 +46,6 @@ export default function Projects() {
           />
 
           <Project
-            name="Plannter"
-            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
-            updateDate="September 2024"
-            toolsList={["Next.js", "TypeScript", "Tailwind"]}
-            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
-            showLogo
-            type={0}
-            colors="hover:border-emerald-600"
-            link="https://plannter.jakeo.dev"
-          />
-
-          <Project
             name="Pairckle"
             desc="Easily rank your favorite things with pairwise comparisons."
             updateDate="March 2025"
@@ -67,6 +55,18 @@ export default function Projects() {
             type={0}
             colors="hover:border-orange-600"
             link="https://pairckle.jakeo.dev"
+          />
+
+          <Project
+            name="Plannter"
+            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
+            updateDate="September 2024"
+            toolsList={["Next.js", "TypeScript", "Tailwind"]}
+            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+            showLogo
+            type={0}
+            colors="hover:border-emerald-600"
+            link="https://plannter.jakeo.dev"
           />
 
           <Project

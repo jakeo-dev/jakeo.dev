@@ -1,5 +1,5 @@
 import CommonHead from "@/components/CommonHead";
-import Project from "@/components/projects/Project";
+import BigProject from "@/components/projects/BigProject";
 import Link from "next/link";
 import TopTrack from "@/components/TopTrack";
 
@@ -61,39 +61,57 @@ export default function Home() {
       </p>
 
       {/* projects */}
-      <div className="sub0title flex items-center md:items-end">
-        <h1>Some of my projects</h1>
-        <Link
-          href="/projects"
-          className="text internal-link ml-auto px-2 text-sm no-underline md:text-base"
-        >
-          <span>See all</span>
-          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-        </Link>
-      </div>
-
-      <div className="block md:flex">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
-          <Project
-            name="Everydle"
+      <div>
+        <div className="container mx-auto">
+          <BigProject
+            title="Everydle"
             desc="Play every game of Wordle at the same time."
-            logo="https://everydle.jakeo.dev/favicon.ico"
-            showLogo
-            type={0}
-            colors="hover:border-lime-600"
-            link="https://everydle.jakeo.dev"
-          />
-
-          <Project
-            name="Plannter"
-            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
-            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
-            showLogo
-            type={0}
-            colors="hover:border-emerald-600"
-            link="https://plannter.jakeo.dev"
+            bgColor="bg-lime-500/50"
+            borderColor="hover:border-yellow-200"
+            href="/projects/everydle"
+            images={[
+              {
+                src: "/images/everydle-ss-1.png",
+                alt: "Screenshot of Everydle showing the game being played in classic mode",
+              },
+              {
+                src: "/images/everydle-ss-2.png",
+                alt: "Screenshot of Everydle showing the game being played in compact mode",
+              },
+            ]}
           />
         </div>
+
+        <div className="container mx-auto">
+          <BigProject
+            title="Pairckle"
+            desc="Easily rank your favorite things with pairwise comparisons."
+            bgColor="bg-gradient-to-r from-orange-500/50 to-blue-500/50"
+            borderColor="hover:border-orange-200"
+            href="/projects/pairckle"
+            imagePosition="object-top"
+            images={[
+              {
+                src: "/images/pairckle-ss-1.png",
+                alt: 'Screenshot of Pairckle showing two options to choose from: "Hamlet III" and "Just Like That"',
+              },
+              {
+                src: "/images/pairckle-ss-2.png",
+                alt: 'Screenshot of Pairckle showing three saved rankings, titled "Favorite unreleased songs," "Top works from Leo," and "Best clouds"',
+              },
+            ]}
+          />
+        </div>
+      </div>
+
+      <div className="mt-14">
+        <Link
+          href="/projects"
+          className="text internal-link px-2 no-underline md:text-lg"
+        >
+          <span>See all projects</span>
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+        </Link>
       </div>
     </>
   );

@@ -30,12 +30,12 @@ export default function JakeO() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="post-img-div relative h-56 w-full overflow-hidden sm:h-96 md:h-[430px]">
-        <div className="post-img relative h-full w-full bg-sky-500/50">
+      <div className="post-img relative container mx-auto h-56 w-full bg-sky-500/50 sm:h-96 md:h-[460px]">
+        <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]">
           <Image
             src={require("/public/images/main-ss-1.png")}
             alt="Screenshot of JakeO.dev showing the home page, including some projects and posts"
-            className="scale-90 rounded-md object-cover object-top shadow-md"
+            className="rounded-md object-cover object-top shadow-md"
             placeholder="blur"
             fill
           />

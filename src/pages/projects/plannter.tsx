@@ -31,10 +31,10 @@ export default function Plannter() {
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div className="container mx-auto">
+      <div
+        className={`post-img relative container mx-auto h-56 w-full bg-emerald-500/50 sm:h-96 md:h-[460px]`}
+      >
         <ImageCarousel
-          bgColor="bg-emerald-500/50"
-          imagePosition="object-top"
           images={[
             {
               src: "/images/plannter-ss-1.png",
@@ -57,6 +57,9 @@ export default function Plannter() {
               alt: "Screenshot of Plannter showing a list of colleges with their locations, acceptance rates, and application statuses for each one, organized into Reach, Target, and Safety categories",
             },
           ]}
+          imagePosition="object-top"
+          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]"
+          imageClassName="shadow-md"
         />
       </div>
 
