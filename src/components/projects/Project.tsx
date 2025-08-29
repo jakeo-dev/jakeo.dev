@@ -21,8 +21,8 @@ export default function Project(props: {
           !props.colors ? "hover:border-sky-600" : props.colors
         } relative mb-4 flex h-min flex-col rounded-xl border-4 border-stone-200 bg-stone-100 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6`}
       >
-        <div className="relative w-full flex-grow p-6">
-          <h1 className="flex items-center text-left text-xl font-medium">
+        <div className="relative w-full flex-grow p-5 md:p-6">
+          <h1 className="flex items-center text-left text-lg font-medium md:text-xl">
             <img
               src={props.logo}
               className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-6`}
@@ -58,8 +58,8 @@ export default function Project(props: {
         target="_blank"
         className="relative mb-4 flex flex-col rounded-xl border-4 border-stone-200 bg-stone-100 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-stone-400 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6"
       >
-        <div className="relative w-full flex-grow p-6">
-          <h1 className="flex items-center text-left text-xl font-medium">
+        <div className="relative w-full flex-grow p-5 md:p-6">
+          <h1 className="flex items-center text-left text-lg font-medium md:text-xl">
             <img
               src={props.logo}
               className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-6`}

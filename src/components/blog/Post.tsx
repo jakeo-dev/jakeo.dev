@@ -25,7 +25,7 @@ export default function Post(props: {
 
       <div className="text-left">
         <Link
-          className="text-xl font-medium underline decoration-stone-300 decoration-4 transition hover:decoration-stone-400 active:decoration-stone-500"
+          className="text-lg font-medium underline decoration-stone-300 decoration-4 transition hover:decoration-stone-400 active:decoration-stone-500 md:text-xl"
           href={`${props.href}`}
         >
           {props.name}
@@ -35,7 +35,7 @@ export default function Post(props: {
         <h2
           className={`${
             props.releaseDate != "" ? "inline" : "hidden"
-          } text-sm text-stone-600`}
+          } text-xs text-stone-600 md:text-sm`}
         >
           {props.releaseDate}
         </h2>

@@ -56,32 +56,21 @@ export default function JakeO() {
         where you can find all of my projects, posts, and profiles.
       </p>
       <p className="text">
-        I used Google Sites to build the first version of this website in
-        September 2020, switched to HTML/CSS/JavaScript in May 2021, then
-        started using Tailwind CSS in September 2022, and I most recently
-        rewrote everything with Next.js in January 2024. During that time, the
-        design was always changing, but I always tried to keep the core of the
-        website consistent.
-      </p>
-      <p className="text">
-        This website first lived on the domain Jorch.xyz in September 2020, but
-        I eventually switched it to JakeO.dev in December 2022.
-      </p>
-      <p className="text">
-        The bunny you see in the header is just the Android rabbit emoji without
-        any of its features. When I first added it to the website, it was just
-        the emoji. Sometime in 2021, I colored it light blue, and later just
-        kept the silhouette with a light-blue gradient.
+        I used Google Sites to build the first version of this website at
+        Jorch.xyz in September 2020, began actually programming by switching to
+        HTML/CSS/JavaScript in May 2021, changed the domain to JakeO.dev in
+        December 2022, and rewrote everything with Next.js in January 2024. This
+        website has been constantly changing, but I always try to keep the core
+        of it consistent.
       </p>
       <p className="text">
         <a href="https://lexend.com" target="_blank" className="link">
           Lexend Deca
         </a>{" "}
-        is the font I use the most throughout this website and my other
-        projects. I started using it because it isn't very widely used, and
-        according to its designers, it improves reading speed and accuracy. I
-        also created a font based on my own handwriting, which I use instead of
-        Lexend wherever my name is.
+        is the typeface I use the most throughout this website and my other
+        projects. I started using it because, according to its designers, it
+        improves reading speed and accuracy. I also created a font based on my
+        own handwriting, which I occasionally use here instead of Lexend.
       </p>
     </>
   );

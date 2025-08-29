@@ -32,9 +32,7 @@ export default function Cifra() {
         toolsList={["JavaScript", "Tailwind"]}
       />
 
-      <div
-        className={`post-img relative container mx-auto h-56 w-full bg-yellow-500/50 sm:h-96 md:h-[460px]`}
-      >
+      <div className="post-img relative container mx-auto h-56 w-full bg-yellow-500/50 sm:h-96 md:h-[460px]">
         <ImageCarousel
           images={[
             {

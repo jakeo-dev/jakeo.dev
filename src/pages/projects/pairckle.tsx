@@ -24,16 +24,14 @@ export default function Pairckle() {
 
       <ProjectCover
         title="Pairckle"
-        desc="Easily rank your favorite things with pairwise comparisons."
+        desc="Rank your favorite things easily, accurately, and pairwisely."
         createDate="January 2025"
-        updateDate="March 2025"
+        updateDate="August 2025"
         logoImg="https://pairckle.jakeo.dev/pairckle-icon.png"
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div
-        className={`post-img relative container mx-auto h-56 w-full bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[460px]`}
-      >
+      <div className="post-img relative container mx-auto h-56 w-full bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[460px]">
         <ImageCarousel
           images={[
             {

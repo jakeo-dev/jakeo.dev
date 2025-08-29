@@ -24,16 +24,14 @@ export default function Plannter() {
 
       <ProjectCover
         title="Plannter"
-        desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
+        desc="A high school course planner, extracurricular tracker, and college application tool all in one."
         createDate="January 2023"
         updateDate="September 2024"
         logoImg="https://plannter.jakeo.dev/plannter-icon-dark.png"
         toolsList={["Next.js", "TypeScript", "Tailwind"]}
       />
 
-      <div
-        className={`post-img relative container mx-auto h-56 w-full bg-emerald-500/50 sm:h-96 md:h-[460px]`}
-      >
+      <div className="post-img relative container mx-auto h-56 w-full bg-emerald-500/50 sm:h-96 md:h-[460px]">
         <ImageCarousel
           images={[
             {

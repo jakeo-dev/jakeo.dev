@@ -35,7 +35,7 @@ export default function Projects() {
         >
           <Project
             name="Everydle"
-            desc="Play every game of Wordle at the same time."
+            desc="Every game of Wordle at the same time."
             updateDate="July 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://everydle.jakeo.dev/favicon.ico"
@@ -47,7 +47,7 @@ export default function Projects() {
 
           <Project
             name="Pairckle"
-            desc="Easily rank your favorite things with pairwise comparisons."
+            desc="Rank your favorite things easily, accurately, and pairwisely."
             updateDate="March 2025"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
@@ -59,7 +59,7 @@ export default function Projects() {
 
           <Project
             name="Plannter"
-            desc="Plan courses, keep track of extracurriculars, prepare for college applications, and more."
+            desc="A high school course planner, extracurricular tracker, and college application tool all in one."
             updateDate="September 2024"
             toolsList={["Next.js", "TypeScript", "Tailwind"]}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
@@ -70,20 +70,8 @@ export default function Projects() {
           />
 
           <Project
-            name="Cifra"
-            desc="Generate vanity numbers from your own phone number to make it unforgettable."
-            updateDate="March 2025"
-            toolsList={["JavaScript", "Tailwind"]}
-            logo="https://cifra.jakeo.dev/cifra-logo.png"
-            showLogo
-            type={0}
-            colors="hover:border-yellow-600"
-            link="https://cifra.jakeo.dev"
-          />
-
-          <Project
             name="JakeO.dev"
-            desc="You're already here — check out all of my projects and blog posts."
+            desc="You're already here — check out my projects and blog posts."
             /* domain bought (made w/ google sites): sep 4 2020
             original files created (html/css/js): may 28 2021
             first uploaded to github: may 21 2022
@@ -113,7 +101,7 @@ export default function Projects() {
         >
           <Project
             name="Linked"
-            desc="Link five words together in a fun and simple word game."
+            desc="Link five words together in a simple word game."
             updateDate="July 2024"
             toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
@@ -123,8 +111,20 @@ export default function Projects() {
           />
 
           <Project
+            name="Cifra"
+            desc="Generate vanity numbers from your own phone number to make it unforgettable."
+            updateDate="March 2025"
+            toolsList={["JavaScript", "Tailwind"]}
+            logo="https://cifra.jakeo.dev/cifra-logo.png"
+            showLogo
+            type={1}
+            colors="hover:border-yellow-600"
+            link="https://cifra.jakeo.dev"
+          />
+
+          <Project
             name="B-52's font"
-            desc="Try out and download a font based on the B-52's logo."
+            desc="A typeface based on the B-52's logo."
             updateDate="December 2024"
             logo=""
             type={1}
@@ -133,7 +133,7 @@ export default function Projects() {
 
           <Project
             name="Decorate a Tree"
-            desc="Decorate your own digital Christmas tree with various ornaments, candy canes, lights, and more."
+            desc="Decorate your own digital Christmas tree."
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://decorate-a-tree.jakeo.dev/candy-cane-red-left.png"
             showLogo
@@ -161,7 +161,7 @@ export default function Projects() {
 
           <Project
             name="Colorful Bunnies"
-            desc="Browse and download some colorful bunnies made for every occasion."
+            desc="A gallery of some colorful bunnies made for every occasion."
             toolsList={["JavaScript", "Tailwind"]}
             logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
             showLogo

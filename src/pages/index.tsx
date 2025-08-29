@@ -22,7 +22,7 @@ export default function Home() {
         <meta property="og:title" content="Hi, I'm Jake" />
         <meta
           property="og:description"
-          content="I'm a computer science student at Cal Poly SLO who likes to build digital things."
+          content="I'm a Computer Science student at Cal Poly SLO who likes to build digital things."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
@@ -34,18 +34,20 @@ export default function Home() {
       {/* about me */}
       <h1 className="sub0title mt-0">
         Hi, I'm{" "}
-        <span className={`${handwriting.className} text-[1.6rem] leading-0`}>
+        <span
+          className={`${handwriting.className} text-[1.3rem] leading-0 md:text-[1.6rem]`}
+        >
           Jake
         </span>
       </h1>
 
       <p className="text">
-        I'm a computer science student at Cal Poly SLO who likes to build
+        I'm a Computer Science student at Cal Poly SLO who likes to build
         digital things.
       </p>
       <p className="text">
-        Right now, I mostly develop React web apps with Next.js and TypeScript.
-        Almost everything I make is on{" "}
+        Right now, I mostly develop web apps using React, Next.js, and
+        TypeScript. Almost everything I make is on{" "}
         <a
           href="https://github.com/jakeo-dev?tab=repositories&sort=stargazers"
           target="_blank"
@@ -65,8 +67,8 @@ export default function Home() {
         <div className="container mx-auto">
           <BigProject
             title="Everydle"
-            desc="Play every game of Wordle at the same time."
-            bgColor="bg-lime-500/50"
+            desc="Every game of Wordle at the same time."
+            bgColor="bg-gradient-to-br from-lime-500/50 to-lime-600/50"
             borderColor="hover:border-yellow-200"
             href="/projects/everydle"
             images={[
@@ -85,7 +87,7 @@ export default function Home() {
         <div className="container mx-auto">
           <BigProject
             title="Pairckle"
-            desc="Easily rank your favorite things with pairwise comparisons."
+            desc="Rank your favorite things easily, accurately, and pairwisely."
             bgColor="bg-gradient-to-r from-orange-500/50 to-blue-500/50"
             borderColor="hover:border-orange-200"
             href="/projects/pairckle"

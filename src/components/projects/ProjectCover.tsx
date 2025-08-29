@@ -31,7 +31,7 @@ export default function Contents(props: {
         {props.toolsList.map((tool, i) => (
           <span
             key={i}
-            className="inline rounded-md bg-stone-200 px-2 py-0.5 text-sm text-stone-700"
+            className="inline rounded-md bg-stone-200 px-2 py-0.5 text-xs text-stone-700 md:text-sm"
           >
             {tool}
           </span>
