@@ -27,7 +27,7 @@ export default function JakeO() {
         createDate="September 2020"
         updateDate="August 2025"
         logoImg="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
-        toolsList={["Next.js", "TypeScript", "Tailwind"]}
+        toolsList={["Next.js", "React", "TypeScript"]}
       />
 
       <div className="post-img relative container mx-auto h-56 w-full bg-sky-500/50 sm:h-96 md:h-[460px]">

@@ -28,7 +28,7 @@ export default function Everydle() {
         createDate="May 2025"
         updateDate="July 2025"
         logoImg="https://everydle.jakeo.dev/favicon.ico"
-        toolsList={["Next.js", "TypeScript", "Tailwind"]}
+        toolsList={["Next.js", "React", "TypeScript"]}
       />
 
       <div className="post-img relative container mx-auto h-56 w-full bg-gradient-to-br from-lime-500/50 to-lime-600/50 sm:h-96 md:h-[460px]">

@@ -28,7 +28,7 @@ export default function Pairckle() {
         createDate="January 2025"
         updateDate="August 2025"
         logoImg="https://pairckle.jakeo.dev/pairckle-icon.png"
-        toolsList={["Next.js", "TypeScript", "Tailwind"]}
+        toolsList={["Next.js", "React", "TypeScript"]}
       />
 
       <div className="post-img relative container mx-auto h-56 w-full bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[460px]">

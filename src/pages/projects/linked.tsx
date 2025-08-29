@@ -28,7 +28,7 @@ export default function Linked() {
         createDate="June 2024"
         updateDate="July 2024"
         logoImg="https://linked.jakeo.dev/images/icon-transparent.png"
-        toolsList={["React Native", "Next.js", "TypeScript", "Tailwind"]}
+        toolsList={["React Native", "Next.js", "React", "TypeScript"]}
       />
 
       <div className="post-img relative container mx-auto h-56 w-full bg-blue-500/50 sm:h-96 md:h-[460px]">

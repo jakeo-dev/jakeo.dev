@@ -29,7 +29,7 @@ export default function Cifra() {
         createDate="February 2023"
         updateDate="March 2025"
         logoImg="https://cifra.jakeo.dev/cifra-logo.png"
-        toolsList={["JavaScript", "Tailwind"]}
+        toolsList={["JavaScript"]}
       />
 
       <div className="post-img relative container mx-auto h-56 w-full bg-yellow-500/50 sm:h-96 md:h-[460px]">

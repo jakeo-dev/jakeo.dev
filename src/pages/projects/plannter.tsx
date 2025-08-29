@@ -28,7 +28,7 @@ export default function Plannter() {
         createDate="January 2023"
         updateDate="September 2024"
         logoImg="https://plannter.jakeo.dev/plannter-icon-dark.png"
-        toolsList={["Next.js", "TypeScript", "Tailwind"]}
+        toolsList={["Next.js", "React", "TypeScript"]}
       />
 
       <div className="post-img relative container mx-auto h-56 w-full bg-emerald-500/50 sm:h-96 md:h-[460px]">
