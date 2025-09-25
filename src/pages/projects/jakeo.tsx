@@ -3,6 +3,13 @@ import SecButton from "@/components/SecButton";
 import Image from "next/image";
 import ProjectCover from "@/components/projects/ProjectCover";
 
+import localFont from "next/font/local";
+const handwriting = localFont({
+  src: "../../fonts/Jakes_Handwriting_V5-Regular.ttf",
+  display: "swap",
+  variable: "--font-handwriting",
+});
+
 export default function JakeO() {
   return (
     <>
@@ -25,7 +32,7 @@ export default function JakeO() {
         title="JakeO.dev"
         desc="You're already here — check out all of my projects and blog posts."
         createDate="September 2020"
-        updateDate="August 2025"
+        updateDate="September 2025"
         logoImg="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         toolsList={["Next.js", "React", "TypeScript"]}
       />
@@ -69,8 +76,11 @@ export default function JakeO() {
         </a>{" "}
         is the typeface I use the most throughout this website and my other
         projects. I started using it because, according to its designers, it
-        improves reading speed and accuracy. I also created a font based on my
-        own handwriting, which I occasionally use here instead of Lexend.
+        improves reading speed and accuracy.{" "}
+        <span className={`${handwriting.className} text-[1.1rem]`}>
+          I also created a font based on my own handwriting, which I
+          occasionally use instead of Lexend.
+        </span>
       </p>
     </>
   );

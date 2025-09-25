@@ -63,7 +63,7 @@ export default function Everydle() {
 
       <p className="text">
         Everydle is a website where you can play every single game of Wordle at
-        the same time. I made the first version using Next.js in May 2025.
+        the same time.
       </p>
       <p className="text">
         When{" "}
@@ -121,83 +121,18 @@ export default function Everydle() {
           Sexaginta-quattordle
         </a>{" "}
         aren't enough, there's Everydle. No longer do you need to spend five
-        minutes solving the daily Wordle, just do all of them at once in one
+        minutes solving the daily Wordle, just play all of them at once in one
         extremely long sitting, and never worry about missing a day again.
       </p>
       <p className="text">
-        Here are my favorite comments about the website (some of which I also
-        included in the list of random taglines that appear under the title of
-        the website):
+        To improve performance and visibility, compact mode can be enabled or
+        the input mode can be switched. You can also attempt to share your
+        results (if you're not using Twitter in the 2010s).
       </p>
-      <ul className="text list-inside list-disc">
-        <li className="text">
-          <a
-            href="https://www.metafilter.com/208826/Just-because-you-can-doesnt-mean-you-should#:~:text=This%20is%20very%20funny%2C%20basically,with%20an%20increasingly%20unuseable%20UI%22."
-            target="_blank"
-            className="link"
-            rel="noopener noreferrer"
-          >
-            "This is very funny, basically 're-type the wordle word list with an
-            increasingly unuseable UI'."
-          </a>
-        </li>
-        <li className="text">
-          <a
-            href="https://www.metafilter.com/208826/Just-because-you-can-doesnt-mean-you-should#:~:text=Oh%20it%20gets%20worse%20200%20words%20in"
-            target="_blank"
-            className="link"
-            rel="noopener noreferrer"
-          >
-            "Oh it gets worse 200 words in"
-          </a>
-        </li>
-        <li className="text">
-          <a
-            href="https://webcurios.co.uk/webcurios-23-05-25/#:~:text=This%20is%20HORRIBLE%20and%20made,get%20my%20head%20around%20it"
-            target="_blank"
-            className="link"
-            rel="noopener noreferrer"
-          >
-            "This is HORRIBLE and made me feel slightly queasy as I tried to get
-            my head around it"
-          </a>
-        </li>
-        <li className="text">
-          <a
-            href="https://www.microsiervos.com/archivo/juegos-y-diversion/everydle-resolver-todos-wordle.html#:~:text=es%20m%C3%A1s%20que%20un%20juego%2C,guerra%20a%20tu%20tiempo%20libre"
-            target="_blank"
-            className="link"
-            rel="noopener noreferrer"
-          >
-            "es más que un juego, es una declaración de guerra a tu tiempo
-            libre"{" "}
-            <i>
-              (it is more than a game, it is a declaration of war on your free
-              time)
-            </i>
-          </a>
-        </li>
-        <li className="text">
-          <a
-            href="https://b3ta.com/newsletter/issue949/#:~:text=W****e%20of%20%0A%20%20the,of%20the%20last%20187%20weeks"
-            target="_blank"
-            className="link"
-            rel="noopener noreferrer"
-          >
-            "[Wordle] of the week is [wordle] of the last 187 weeks"
-          </a>
-        </li>
-        <li className="text">
-          <a
-            href="https://www.metafilter.com/208826/Just-because-you-can-doesnt-mean-you-should#:~:text=This%20is%20wonderfully%20stupid"
-            target="_blank"
-            className="link"
-            rel="noopener noreferrer"
-          >
-            "This is wonderfully stupid"
-          </a>
-        </li>
-      </ul>
+      <p className="text mb-0">
+        How many words can you solve before getting bored and giving up?
+      </p>
+      <p className="subtext mt-0">My high score is 459.</p>
     </>
   );
 }

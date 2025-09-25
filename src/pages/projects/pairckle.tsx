@@ -13,7 +13,7 @@ export default function Pairckle() {
         <meta property="og:title" content="JakeO: About Pairckle" />
         <meta
           property="og:description"
-          content="Pairckle is a website that allows you to create a ranking with simple pairwise comparisons."
+          content="Pairckle is a website that makes ranking easier by using pairwise comparisons."
         />
         <meta name="theme-color" content="#83b5d3" />
         <meta
@@ -62,19 +62,20 @@ export default function Pairckle() {
       </div>
 
       <p className="text">
-        Pairckle is a website that allows you to create a ranking with simple
-        pairwise comparisons. I made the first version in January 2025 using
-        Next.js.
+        Pairckle is a website that makes ranking easier by using pairwise
+        comparisons. The use of pairwise comparisons instead of tier lists
+        allows for a much more definitive and accurate final ranking, with a
+        clear winner, loser, and everything else in between.
       </p>
       <p className="text">
-        The website is similar to other sites, like tier list makers, that are
-        used to rank different cultural elements. I didn't think tier lists were
-        definitive enough of a ranking, and it can be difficult to compare one
-        element to every other element that was already ranked. Using pairwise
-        comparisons seemed much easier and more accurate, since everything is
-        being compared to everything else one at a time. Pairckle shows two
-        random elements from your input, and after picking which one you prefer
-        a certain number of times, it creates your ultimate ranking.
+        If you're unsure about what to rank, Pairckle has fifty starter sets,
+        with categories ranging from food to sports to technology and more.
+        Choose between a quicker session with Hurry mode or a more accurate
+        ranking with Concentrate mode.
+      </p>
+      <p className="text">
+        After you've finished comparing, your final ranking is saved. Add a
+        title and share it, or re-rank the set if you disagree with the order.
       </p>
     </>
   );

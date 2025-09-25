@@ -29,6 +29,18 @@ export default function Plannter() {
         updateDate="September 2024"
         logoImg="https://plannter.jakeo.dev/plannter-icon-dark.png"
         toolsList={["Next.js", "React", "TypeScript"]}
+        collaborators={[
+          {
+            name: "JakeO",
+            link: "https://jakeo.dev",
+            img: "https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png",
+          },
+          {
+            name: "DSNS",
+            link: "https://dsns.dev",
+            img: "https://dsns.dev/_astro/kirby.Dz3woPGR_1dV3kX.svg",
+          },
+        ]}
       />
 
       <div className="post-img relative container mx-auto h-56 w-full bg-emerald-500/50 sm:h-96 md:h-[460px]">
@@ -84,26 +96,34 @@ export default function Plannter() {
 
       <p className="text">
         Plannter is a website that allows high school students to manage and
-        plan their academic life. You can keep track of coursework, standardized
-        tests, and extracurricular activities. It also allows you to prepare for
-        college applications by creating a college list and starting essays.
+        plan their academic life. Track coursework, standardized tests, and
+        extracurricular activities, while also preparing for college
+        applications by creating a college list and writing essays all in one
+        place.
       </p>
       <p className="text">
-        I began development in January 2023, with the website only having a
-        Coursework and an Activities section. It was originally written using
-        HTML/Tailwind CSS/JavaScript until{" "}
-        <a href="https://dsns.dev" target="_blank" className="link">
-          DSNS
-        </a>{" "}
-        and I rewrote it using Next.js in September 2024. Now, Plannter has five
-        different sections, a GPA calculator, an essay editor, and several other
-        useful features.
+        See your current and future GPA using a customizable GPA calculator to
+        fit any school's grading system. Prepare for college applications by
+        organizing activities in a tracker that mimics the one in CommonApp. If
+        you've taken both the ACT and SAT, Plannter will automatically suggest
+        which test score to submit. Even write essays in a comprehensive editor
+        that includes word counts, notes, completion status, and the ability to
+        link essays to specific colleges.
       </p>
       <p className="text">
         The name "Plannter" is a portmanteau of the words "planner" and "plant."
-        I also considered the name "Alumnac" (a portmanteau of "alumnus" and
-        "almanac"), but I think "Plannter" fits the website's purpose better.
       </p>
+      {/* <p className="text">
+        Plannter's activities section mimics the one in Common App, making it
+        easier to prepare for college applications. Time spent per week and per
+        year can be added to each activity, and they can also be reordered.
+      </p>
+      <p className="text">
+        Plannter has a comprehensive essay editor, with the ability to add a
+        minimum/maximum word count, change the writing completion status, and
+        add notes. Colleges can also be linked to certain essays so it is clear
+        which institution an essay will be submitted to.
+      </p> */}
     </>
   );
 }

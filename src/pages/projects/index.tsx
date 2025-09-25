@@ -58,6 +58,30 @@ export default function Projects() {
           />
 
           <Project
+            name="MajorMap"
+            desc="An interactive flowchart for degree progress planning."
+            updateDate="September 2025"
+            toolsList={["Next.js", "React", "TypeScript"]}
+            logo="https://majormap.vercel.app/favicon.ico"
+            showLogo
+            type={0}
+            colors="hover:border-cyan-600"
+            link="https://majormap.vercel.app"
+          />
+
+          <Project
+            name="WashWise"
+            desc="Discover and reduce the impact of your showers."
+            updateDate="September 2025"
+            toolsList={["React Native", "Next.js", "React", "TypeScript"]}
+            logo="https://washwise.jakeo.dev/favicon.png"
+            showLogo
+            type={0}
+            colors="hover:border-blue-600"
+            link="https://washwise.jakeo.dev/mobile"
+          />
+
+          <Project
             name="Plannter"
             desc="A high school course planner, extracurricular tracker, and college application tool all in one."
             updateDate="September 2024"
@@ -74,7 +98,7 @@ export default function Projects() {
             desc="You're already here — check out my projects and blog posts."
             /* domain bought (made w/ google sites): sep 4 2020
             original files created (html/css/js): may 28 2021
-            first uploaded to github: may 21 2022
+            first commit to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
             updateDate="August 2025"
             toolsList={["Next.js", "React", "TypeScript"]}
@@ -99,17 +123,6 @@ export default function Projects() {
           className="flex w-full"
           columnClassName="bg-clip-padding px-2 md:px-3 first:pl-0 last:pr-0"
         >
-          <Project
-            name="Linked"
-            desc="Link five words together in a simple word game."
-            updateDate="July 2024"
-            toolsList={["React Native", "Next.js", "React", "TypeScript"]}
-            logo="https://linked.jakeo.dev/images/icon-transparent.png"
-            showLogo
-            type={1}
-            link="https://linked.jakeo.dev"
-          />
-
           <Project
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
@@ -139,6 +152,17 @@ export default function Projects() {
             showLogo
             type={1}
             link="https://tree.jakeo.dev"
+          />
+
+          <Project
+            name="Linked"
+            desc="Link five words together in a simple word game."
+            updateDate="July 2024"
+            toolsList={["React Native", "Next.js", "React", "TypeScript"]}
+            logo="https://linked.jakeo.dev/images/icon-transparent.png"
+            showLogo
+            type={1}
+            link="https://linked.jakeo.dev"
           />
 
           <Project

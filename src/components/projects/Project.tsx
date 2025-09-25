@@ -16,7 +16,7 @@ export default function Project(props: {
     // current project
     return (
       <Link
-        href={`/projects/${props.name.split(".")[0].toLowerCase()}`}
+        href={`/projects/${props.name.replace(/\s/g, "-").split(".")[0].toLowerCase()}`}
         className={`${
           !props.colors ? "hover:border-sky-600" : props.colors
         } relative mb-4 flex h-min flex-col rounded-xl border-4 border-stone-200 bg-stone-100 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6`}

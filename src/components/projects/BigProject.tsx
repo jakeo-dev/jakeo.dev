@@ -16,7 +16,7 @@ export default function BigProject(props: {
       <h2 className="sub0title-subtext mb-4 pt-1">{props.desc}</h2>
       <Link href={props.href}>
         <div
-          className={`post-img relative h-68 w-full rounded-2xl border-2 sm:h-96 md:h-[550px] ${props.bgColor} ${props.borderColor} group transition duration-500 hover:scale-90 hover:shadow-md`}
+          className={`post-img relative h-68 w-full rounded-2xl border-2 sm:h-96 md:h-[530px] ${props.bgColor} ${props.borderColor} group transition duration-500 hover:scale-90 hover:shadow-md`}
         >
           <ImageCarousel
             images={props.images}

@@ -26,7 +26,7 @@
   }
 
   .subtext {
-    @apply mt-1.5 mb-4 text-left text-sm leading-7 text-stone-600 italic;
+    @apply mt-1.5 mb-4 text-left text-xs leading-7 text-stone-600 italic md:text-sm;
   }
 
   .link {
