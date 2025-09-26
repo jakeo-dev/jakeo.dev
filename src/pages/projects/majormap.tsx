@@ -24,7 +24,7 @@ export default function MajorMap() {
       <ProjectCover
         title="MajorMap"
         desc="An interactive flowchart for degree progress planning."
-        createDate="September 2025"
+        createDate="August 2025"
         updateDate="September 2025"
         logoImg="https://majormap.vercel.app/favicon.ico"
         toolsList={["Next.js", "React", "TypeScript"]}
