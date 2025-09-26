@@ -62,7 +62,7 @@ export default function Projects() {
             desc="An interactive flowchart for degree progress planning."
             updateDate="September 2025"
             toolsList={["Next.js", "React", "TypeScript"]}
-            logo="https://majormap.vercel.app/favicon.ico"
+            logo="https://i.imgur.com/XMdP1LU.png"
             showLogo
             type={0}
             colors="hover:border-cyan-600"

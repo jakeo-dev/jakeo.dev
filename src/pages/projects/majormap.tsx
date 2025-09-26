@@ -26,7 +26,7 @@ export default function MajorMap() {
         desc="An interactive flowchart for degree progress planning."
         createDate="August 2025"
         updateDate="September 2025"
-        logoImg="https://majormap.vercel.app/favicon.ico"
+        logoImg="https://i.imgur.com/XMdP1LU.png"
         toolsList={["Next.js", "React", "TypeScript"]}
         collaborators={[
           {
