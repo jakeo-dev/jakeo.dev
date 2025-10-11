@@ -42,8 +42,16 @@ export default function Home() {
       </h1>
 
       <p className="text">
-        I'm a Computer Science student at Cal Poly SLO who likes to build
-        digital things.
+        I'm a Computer Science student at{" "}
+        <a
+          href="https://ceng.calpoly.edu/"
+          target="_blank"
+          className="link"
+          rel="noopener noreferrer"
+        >
+          Cal Poly SLO
+        </a>{" "}
+        who likes to build digital things.
       </p>
       <p className="text">
         Right now, I mostly develop web apps using React, Next.js, and
