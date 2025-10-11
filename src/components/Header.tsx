@@ -286,33 +286,30 @@ export default function Header() {
               <a
                 href="mailto:hi@jakeo.dev"
                 target="_blank"
+                title="Email: hi@jakeo.dev"
+                aria-label="Email: hi@jakeo.dev"
                 className="flex text-sm text-stone-500 transition hover:scale-110 hover:text-blue-500 active:scale-100 md:text-lg"
               >
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  aria-label="Send an email to hi@jakeo.dev"
-                />
+                <FontAwesomeIcon icon={faEnvelope} aria-hidden />
               </a>
               <a
                 href="https://github.com/jakeo-dev"
                 target="_blank"
+                title="GitHub: jakeo-dev"
+                aria-label="GitHub: jakeo-dev"
                 className="flex text-sm text-stone-500 transition hover:scale-110 hover:text-[#333333] active:scale-100 md:text-lg"
               >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  aria-label="Visit jakeo-dev on GitHub"
-                />
+                <FontAwesomeIcon icon={faGithub} aria-hidden />
               </a>
               <div className="relative">
                 <button
                   onClick={() => setModalOpen(!modalOpen)}
+                  title="Discord: @jakeybakers"
+                  aria-label="Discord: @jakeybakers"
                   className="flex cursor-pointer text-sm text-stone-500 transition hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
                   ref={modalBtnRef}
                 >
-                  <FontAwesomeIcon
-                    icon={faDiscord}
-                    aria-label="Open Discord modal"
-                  />
+                  <FontAwesomeIcon icon={faDiscord} aria-hidden />
                 </button>
 
                 {/* discord modal */}
