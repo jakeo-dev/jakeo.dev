@@ -26,7 +26,7 @@ export default function Everydle() {
         title="Everydle"
         desc="Every game of Wordle at the same time."
         createDate="May 2025"
-        updateDate="July 2025"
+        updateDate="October 2025"
         logoImg="https://everydle.jakeo.dev/favicon.ico"
         toolsList={["Next.js", "React", "TypeScript"]}
       />
@@ -132,7 +132,7 @@ export default function Everydle() {
       <p className="text mb-0">
         How many words can you solve before getting bored and giving up?
       </p>
-      <p className="subtext mt-0">My high score is 459.</p>
+      <p className="subtext">My high score is 459.</p>
     </>
   );
 }

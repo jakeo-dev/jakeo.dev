@@ -114,13 +114,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mt-14">
+      <div className="mt-16 text-center">
         <Link
           href="/projects"
-          className="text internal-link px-2 no-underline md:text-lg"
+          className="internal-link block text-lg no-underline md:text-xl"
         >
           <span>See all projects</span>
-          <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2" aria-hidden />
         </Link>
       </div>
     </>

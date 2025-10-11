@@ -22,11 +22,11 @@
   }
 
   .text {
-    @apply mb-3 text-left text-sm leading-7 font-[350] text-pretty text-stone-700 last:mb-0 md:text-base;
+    @apply mb-3 text-left text-sm leading-7 font-[350] text-pretty text-stone-700 last:mb-0 md:text-base md:leading-8;
   }
 
   .subtext {
-    @apply mt-1.5 mb-4 text-left text-xs leading-7 text-stone-600 italic md:text-sm;
+    @apply mt-1.5 mb-4 text-left text-xs leading-5 text-stone-600 italic md:text-sm md:leading-6;
   }
 
   .link {

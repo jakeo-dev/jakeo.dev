@@ -336,7 +336,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="ml-auto flex translate-x-2 justify-center gap-x-3 text-stone-600 md:translate-x-0">
+        <div className="ml-auto flex translate-x-2 justify-center gap-x-2.5 text-stone-600 md:translate-x-0 md:gap-x-3">
           <Link
             href="/"
             className={`${

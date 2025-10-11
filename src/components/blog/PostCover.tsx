@@ -19,7 +19,7 @@ export default function Contents(props: {
         <Image
           src={props.img}
           alt={props.imgAlt}
-          className="rounded-xl md:rounded-3xl"
+          className="post-img rounded-xl md:rounded-3xl"
           placeholder="blur"
         />
         <p className={props.imgSubtext != "" ? "subtext" : ""}>

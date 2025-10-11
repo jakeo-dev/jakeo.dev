@@ -32,7 +32,7 @@ export default function JakeO() {
         title="JakeO.dev"
         desc="You're already here — check out all of my projects and blog posts."
         createDate="September 2020"
-        updateDate="September 2025"
+        updateDate="October 2025"
         logoImg="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         toolsList={["Next.js", "React", "TypeScript"]}
       />
@@ -77,7 +77,7 @@ export default function JakeO() {
         is the typeface I use the most throughout this website and my other
         projects. I started using it because, according to its designers, it
         improves reading speed and accuracy.{" "}
-        <span className={`${handwriting.className} text-[1.1rem]`}>
+        <span className={`${handwriting.className} text-base md:text-lg`}>
           I also created a font based on my own handwriting, which I
           occasionally use instead of Lexend.
         </span>

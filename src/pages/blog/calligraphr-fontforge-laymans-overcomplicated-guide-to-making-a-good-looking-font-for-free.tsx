@@ -81,7 +81,9 @@ export default function Post5() {
           <p className="text">
             In December 2024, I designed a typeface based on my handwriting
             using both Calligraphr and FontForge{" "}
-            <span className={`${handwriting.className} text text-lg`}>
+            <span
+              className={`${handwriting.className} text text-base md:text-lg`}
+            >
               (here's what it looks like)
             </span>
             . Calligraphr is a great service that lets you create your own font,
@@ -862,13 +864,13 @@ export default function Post5() {
             it be serious, playful, modern, innovative, fancy, or something
             else. Let your designs be more personalized...now go use your font!
           </p> */}
-          <p className={`${handwriting.className} text text-lg`}>
+          <p className={`${handwriting.className} text text-base md:text-lg`}>
             Now go use your font!!!!!!!!!
           </p>
           <div className="mt-16 text-left">
             <Link
               href="/blog"
-              className="internal-link block text-xl no-underline"
+              className="internal-link block text-lg no-underline md:text-xl"
             >
               <FontAwesomeIcon
                 icon={faArrowLeft}

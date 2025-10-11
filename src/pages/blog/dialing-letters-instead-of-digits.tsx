@@ -324,7 +324,7 @@ for (j = 0; j < wordsArray.length; j++) {
           <div className="mt-16 text-left">
             <Link
               href="/blog"
-              className="internal-link block text-xl no-underline"
+              className="internal-link block text-lg no-underline md:text-xl"
             >
               <FontAwesomeIcon
                 icon={faArrowLeft}

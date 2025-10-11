@@ -36,7 +36,6 @@ export default function Projects() {
           <Project
             name="Everydle"
             desc="Every game of Wordle at the same time."
-            updateDate="July 2025"
             toolsList={["Next.js", "React", "TypeScript"]}
             logo="https://everydle.jakeo.dev/favicon.ico"
             showLogo
@@ -48,7 +47,6 @@ export default function Projects() {
           <Project
             name="Pairckle"
             desc="Rank your favorite things easily, accurately, and pairwisely."
-            updateDate="August 2025"
             toolsList={["Next.js", "React", "TypeScript"]}
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo
@@ -60,7 +58,6 @@ export default function Projects() {
           <Project
             name="MajorMap"
             desc="An interactive flowchart for degree progress planning."
-            updateDate="September 2025"
             toolsList={["Next.js", "React", "TypeScript"]}
             logo="https://i.imgur.com/XMdP1LU.png"
             showLogo
@@ -72,7 +69,6 @@ export default function Projects() {
           <Project
             name="WashWise"
             desc="Discover and reduce the impact of your showers."
-            updateDate="September 2025"
             toolsList={["React Native", "Next.js", "React", "TypeScript"]}
             logo="https://washwise.jakeo.dev/favicon.png"
             showLogo
@@ -84,7 +80,6 @@ export default function Projects() {
           <Project
             name="Plannter"
             desc="A high school course planner, extracurricular tracker, and college application tool all in one."
-            updateDate="September 2024"
             toolsList={["Next.js", "React", "TypeScript"]}
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo
@@ -100,7 +95,6 @@ export default function Projects() {
             original files created (html/css/js): may 28 2021
             first commit to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
-            updateDate="August 2025"
             toolsList={["Next.js", "React", "TypeScript"]}
             logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
             showLogo
@@ -126,7 +120,6 @@ export default function Projects() {
           <Project
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
-            updateDate="March 2025"
             toolsList={["JavaScript"]}
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo
@@ -138,7 +131,6 @@ export default function Projects() {
           <Project
             name="B-52's font"
             desc="A typeface based on the B-52's logo."
-            updateDate="December 2024"
             logo=""
             type={1}
             link="https://b52s-font.jakeo.dev/"
@@ -157,7 +149,6 @@ export default function Projects() {
           <Project
             name="Linked"
             desc="Link five words together in a simple word game."
-            updateDate="July 2024"
             toolsList={["React Native", "Next.js", "React", "TypeScript"]}
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
             showLogo

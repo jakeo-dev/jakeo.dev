@@ -18,7 +18,7 @@ export default function Contents(props: {
         {props.logoImg ? (
           <img
             src={props.logoImg}
-            className="mr-2 inline w-7"
+            className="mr-2 inline w-6 md:w-7"
             alt={`${props.title} logo`}
           />
         ) : null}
@@ -43,7 +43,9 @@ export default function Contents(props: {
           </div>
         ) : null}
       </div>
-      <h2 className="sub0title-subtext hidden">{props.desc}</h2>
+      <h2 className="sub0title-subtext hidden leading-6 md:leading-7">
+        {props.desc}
+      </h2>
 
       <div className="post-dates-div">
         <h2>Created {props.createDate}</h2>
@@ -54,7 +56,7 @@ export default function Contents(props: {
         {props.toolsList.map((tool, i) => (
           <span
             key={i}
-            className="inline rounded-md bg-stone-200 px-2 py-0.5 text-xs text-stone-700 md:text-sm"
+            className="inline rounded-md bg-stone-200 px-2 py-0.75 text-xs text-stone-700 md:py-0.5 md:text-sm"
           >
             {tool}
           </span>
