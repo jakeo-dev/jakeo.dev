@@ -22,7 +22,7 @@
   }
 
   .text {
-    @apply mb-3 text-left text-sm leading-7 font-[350] text-pretty text-stone-700 last:mb-0 md:text-base md:leading-8;
+    @apply mb-3 text-left text-sm leading-7 font-[350] text-pretty text-stone-700 last:mb-0 md:text-base md:leading-7.5;
   }
 
   .subtext {
