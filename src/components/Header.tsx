@@ -145,8 +145,8 @@ export default function Header() {
               href="/"
               className={`${
                 pathname == "/"
-                  ? "text-sky-600 "
-                  : "text-stone-500 hover:text-stone-700 active:text-stone-800"
+                  ? "text-sky-600"
+                  : "text-stone-400 hover:text-stone-700 active:text-stone-800"
               } text mb-0 rounded-md text-sm transition md:text-base`}
             >
               <span>/index</span>
@@ -155,8 +155,8 @@ export default function Header() {
               href="/projects"
               className={`${
                 pathname.startsWith("/projects")
-                  ? "text-sky-600 "
-                  : "text-stone-500 hover:text-stone-700 active:text-stone-800"
+                  ? "text-sky-600"
+                  : "text-stone-400 hover:text-stone-700 active:text-stone-800"
               } text mb-0 rounded-md text-sm transition md:text-base`}
             >
               <span>/projects</span>
@@ -165,8 +165,8 @@ export default function Header() {
               href="/blog"
               className={`${
                 pathname.startsWith("/blog")
-                  ? "text-sky-600 "
-                  : "text-stone-500 hover:text-stone-700 active:text-stone-800"
+                  ? "text-sky-600"
+                  : "text-stone-400 hover:text-stone-700 active:text-stone-800"
               } text mb-0 rounded-md text-sm transition md:text-base`}
             >
               <span>/blog</span>
