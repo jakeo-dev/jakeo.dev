@@ -62,7 +62,7 @@ export default function Projects() {
             logo="https://i.imgur.com/XMdP1LU.png"
             showLogo
             type={0}
-            colors="hover:border-cyan-600"
+            colors="hover:border-[#5261a3]"
             link="https://majormap.vercel.app"
           />
 

@@ -25,7 +25,7 @@ export default function MajorMap() {
         title="MajorMap"
         desc="An interactive flowchart for degree progress planning."
         createDate="August 2025"
-        updateDate="September 2025"
+        updateDate="November 2025"
         logoImg="https://i.imgur.com/XMdP1LU.png"
         toolsList={["Next.js", "React", "TypeScript"]}
         collaborators={[
@@ -41,7 +41,7 @@ export default function MajorMap() {
           },
         ]}
       />
-      <div className="post-img relative container mx-auto h-56 w-full bg-sky-500/50 sm:h-96 md:h-[460px]">
+      <div className="post-img relative container mx-auto h-56 w-full bg-[#6777c2]/50 sm:h-96 md:h-[460px]">
         <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]">
           <Image
             src={require("/public/images/majormap-ss-1.png")}
@@ -54,7 +54,7 @@ export default function MajorMap() {
       </div>
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-cyan-600 bg-cyan-600 hover:border-cyan-700 hover:bg-cyan-700 active:border-cyan-800 active:bg-cyan-800"
+          className="border-[#5261a3] bg-[#5261a3] hover:border-[#43508c] hover:bg-[#43508c] active:border-[#353f75] active:bg-[#353f75]"
           href="https://majormap.vercel.app"
         >
           Visit website
