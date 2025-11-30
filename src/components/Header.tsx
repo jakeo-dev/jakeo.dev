@@ -19,7 +19,7 @@ export default function Header() {
   const [imgVis, setImgVis] = useState("");
   const [imgSrc, setImgSrc] = useState("solid-gradient-blue-gray-bunny");
 
-  const [color, setColor] = useState("rgba(0, 0, 0, 0.45)");
+  const [color, setColor] = useState("#79716b");
   const [svgVis, setSvgVis] = useState("hidden");
 
   const [modalOpen, setModalOpen] = useState(false);
