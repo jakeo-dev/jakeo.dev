@@ -8,6 +8,7 @@ export default function BigProject(props: {
   imagePosition?: string;
   bgColor: string;
   borderColor: string;
+  shadowColor: string;
   href: string;
 }) {
   return (
@@ -18,7 +19,7 @@ export default function BigProject(props: {
       </h2>
       <Link href={props.href}>
         <div
-          className={`post-img relative h-68 w-full rounded-2xl border-2 sm:h-96 md:h-[530px] ${props.bgColor} ${props.borderColor} group transition duration-500 hover:scale-90 hover:shadow-md`}
+          className={`post-img relative h-68 w-full rounded-2xl border-2 sm:h-96 md:h-[530px] ${props.bgColor} ${props.borderColor} ${props.shadowColor} group transition duration-500 hover:scale-90 shadow-2xl hover:shadow-3xl`}
         >
           <ImageCarousel
             images={props.images}

@@ -78,6 +78,7 @@ export default function Home() {
             desc="Every game of Wordle at the same time."
             bgColor="bg-gradient-to-br from-lime-500/50 to-lime-600/50"
             borderColor="hover:border-yellow-200"
+            shadowColor="shadow-lime-500/30"
             href="/projects/everydle"
             images={[
               {
@@ -98,6 +99,7 @@ export default function Home() {
             desc="Rank your favorite things easily, accurately, and pairwisely."
             bgColor="bg-gradient-to-r from-orange-500/50 to-blue-500/50"
             borderColor="hover:border-orange-200"
+            shadowColor="shadow-orange-500/30"
             href="/projects/pairckle"
             imagePosition="object-top"
             images={[
