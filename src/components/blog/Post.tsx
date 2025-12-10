@@ -25,7 +25,7 @@ export default function Post(props: {
 
       <div className="text-left">
         <Link
-          className="text-lg font-medium underline decoration-stone-300 decoration-4 transition hover:decoration-stone-400 active:decoration-stone-500 md:text-xl"
+          className="text-lg font-medium underline decoration-stone-300 decoration-4 drop-shadow-xl transition hover:decoration-stone-400 hover:drop-shadow-lg active:decoration-stone-500 active:drop-shadow-none md:text-xl"
           href={`${props.href}`}
         >
           {props.name}
