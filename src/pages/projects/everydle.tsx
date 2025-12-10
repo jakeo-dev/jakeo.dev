@@ -51,7 +51,7 @@ export default function Everydle() {
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-lime-600 bg-lime-600 hover:border-lime-700 hover:bg-lime-700 active:border-lime-800 active:bg-lime-800"
+          className="border-lime-600 bg-lime-600 shadow-lime-500/30 hover:border-lime-700 hover:bg-lime-700 active:border-lime-800 active:bg-lime-800"
           href="https://everydle.jakeo.dev"
         >
           Visit website

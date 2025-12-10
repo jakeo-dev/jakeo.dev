@@ -54,7 +54,7 @@ export default function MajorMap() {
       </div>
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-[#5261a3] bg-[#5261a3] hover:border-[#43508c] hover:bg-[#43508c] active:border-[#353f75] active:bg-[#353f75]"
+          className="border-[#5261a3] bg-[#5261a3] shadow-[#6777c2]/30 hover:border-[#43508c] hover:bg-[#43508c] active:border-[#353f75] active:bg-[#353f75]"
           href="https://majormap.vercel.app"
         >
           Visit website

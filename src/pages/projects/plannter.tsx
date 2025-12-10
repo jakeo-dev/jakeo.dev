@@ -75,7 +75,7 @@ export default function Plannter() {
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-emerald-600 bg-emerald-600 hover:border-emerald-700 hover:bg-emerald-700 active:border-emerald-800 active:bg-emerald-800 md:flex-1"
+          className="border-emerald-600 bg-emerald-600 shadow-emerald-500/30 hover:border-emerald-700 hover:bg-emerald-700 active:border-emerald-800 active:bg-emerald-800 md:flex-1"
           href="https://plannter.jakeo.dev"
         >
           Visit website

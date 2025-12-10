@@ -56,7 +56,7 @@ export default function Cifra() {
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-yellow-600 bg-yellow-600 hover:border-yellow-700 hover:bg-yellow-700 active:border-yellow-800 active:bg-yellow-800"
+          className="border-yellow-600 bg-yellow-600 shadow-yellow-500/30 hover:border-yellow-700 hover:bg-yellow-700 active:border-yellow-800 active:bg-yellow-800"
           href="https://cifra.jakeo.dev"
         >
           Visit website

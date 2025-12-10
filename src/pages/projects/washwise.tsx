@@ -59,7 +59,7 @@ export default function WashWise() {
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-blue-500 bg-blue-500 hover:border-blue-600 hover:bg-blue-600 active:border-blue-700 active:bg-blue-700"
+          className="border-blue-500 bg-blue-500 shadow-blue-500/30 hover:border-blue-600 hover:bg-blue-600 active:border-blue-700 active:bg-blue-700"
           href="https://washwise.jakeo.dev/mobile"
         >
           Download app

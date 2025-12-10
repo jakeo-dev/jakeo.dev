@@ -51,7 +51,7 @@ export default function Pairckle() {
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-orange-500 bg-orange-500 hover:border-orange-600 hover:bg-orange-600 active:border-orange-700 active:bg-orange-700"
+          className="border-orange-500 bg-orange-500 shadow-orange-500/30 hover:border-orange-600 hover:bg-orange-600 active:border-orange-700 active:bg-orange-700"
           href="https://pairckle.jakeo.dev"
         >
           Visit website

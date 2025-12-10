@@ -40,7 +40,7 @@ export default function Projects() {
             logo="https://everydle.jakeo.dev/favicon.ico"
             showLogo
             type={0}
-            colors="hover:border-lime-600"
+            colors="hover:border-lime-600 hover:shadow-lime-500/30"
             link="https://everydle.jakeo.dev"
           />
 
@@ -51,7 +51,7 @@ export default function Projects() {
             logo="https://pairckle.jakeo.dev/pairckle-icon.png"
             showLogo
             type={0}
-            colors="hover:border-orange-600"
+            colors="hover:border-orange-600 hover:shadow-orange-500/30"
             link="https://pairckle.jakeo.dev"
           />
 
@@ -62,7 +62,7 @@ export default function Projects() {
             logo="https://i.imgur.com/XMdP1LU.png"
             showLogo
             type={0}
-            colors="hover:border-[#5261a3]"
+            colors="hover:border-[#5261a3] hover:shadow-[#6777c2]/30"
             link="https://majormap.vercel.app"
           />
 
@@ -73,7 +73,7 @@ export default function Projects() {
             logo="https://washwise.jakeo.dev/favicon.png"
             showLogo
             type={0}
-            colors="hover:border-blue-600"
+            colors="hover:border-blue-600 hover:shadow-blue-500/30"
             link="https://washwise.jakeo.dev/mobile"
           />
 
@@ -84,7 +84,7 @@ export default function Projects() {
             logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
             showLogo
             type={0}
-            colors="hover:border-emerald-600"
+            colors="hover:border-emerald-600 hover:shadow-emerald-500/30"
             link="https://plannter.jakeo.dev"
           />
 
