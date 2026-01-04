@@ -16,30 +16,88 @@ const handwriting = localFont({
 export default function Header() {
   const { pathname } = useRouter();
 
+  const localParts = [
+    "ih",
+    "olleh",
+    //"ekaj",
+    "em",
+    "ynnub",
+    "mi",
+    "xobni",
+    "toor",
+    //"ved",
+    "tini",
+    //"timmoc",
+    //"emoh",
+    //"yolped",
+    "srekabyekaj",
+    //"sc",
+    //"bew",
+    //"tenretni",
+    //"stac",
+    //"yloplac",
+    //"diordna",
+    //"dnomallid.rd",
+    "10010110_00010110",
+  ];
+  const [currentLocalPart, setCurrentLocalPart] = useState("ih");
+  const domain = "ved.oekaj@";
+  const [email, setEmail] = useState("Error loading email");
+
+  function newRandomEmail() {
+    const oldLocalPart = currentLocalPart;
+    localParts.splice(localParts.indexOf(oldLocalPart), 1);
+
+    const newLocalPart =
+      localParts[Math.floor(Math.random() * localParts.length)];
+    setCurrentLocalPart(newLocalPart);
+    setEmail((domain + newLocalPart).split("").reverse().join(""));
+    /* navigator.clipboard.writeText(
+      (domain + newLocalPart)
+        .split("")
+        .reverse()
+        .join(""),
+    ); */
+
+    localParts.push(oldLocalPart);
+  }
+
   const [imgVis, setImgVis] = useState("");
   const [imgSrc, setImgSrc] = useState("solid-gradient-blue-gray-bunny");
 
   const [color, setColor] = useState("#79716b");
   const [svgVis, setSvgVis] = useState("hidden");
 
-  const [modalOpen, setModalOpen] = useState(false);
+  const [discordModalOpen, setDiscordModalOpen] = useState(false);
 
-  const modalRef = useRef<HTMLDivElement | null>(null);
-  const modalBtnRef = useRef<HTMLButtonElement | null>(null);
+  const discordModalRef = useRef<HTMLDivElement | null>(null);
+  const discordModalBtnRef = useRef<HTMLButtonElement | null>(null);
 
-  function handleOutsideClick(event: MouseEvent) {
+  const [emailModalOpen, setEmailModalOpen] = useState(false);
+
+  const emailModalRef = useRef<HTMLDivElement | null>(null);
+  const emailModalBtnRef = useRef<HTMLButtonElement | null>(null);
+
+  function handleOutsideModalClick(event: MouseEvent) {
     if (
-      modalRef.current &&
-      modalBtnRef.current &&
-      !modalRef.current.contains(event.target as Element) &&
-      !modalBtnRef.current.contains(event.target as Element)
+      discordModalRef.current &&
+      discordModalBtnRef.current &&
+      !discordModalRef.current.contains(event.target as Element) &&
+      !discordModalBtnRef.current.contains(event.target as Element)
     )
-      setModalOpen(false);
+      setDiscordModalOpen(false);
+    if (
+      emailModalRef.current &&
+      emailModalBtnRef.current &&
+      !emailModalRef.current.contains(event.target as Element) &&
+      !emailModalBtnRef.current.contains(event.target as Element)
+    )
+      setEmailModalOpen(false);
   }
 
   useEffect(() => {
-    document.addEventListener("click", handleOutsideClick);
-    return () => document.removeEventListener("click", handleOutsideClick);
+    document.addEventListener("click", handleOutsideModalClick);
+    return () => document.removeEventListener("click", handleOutsideModalClick);
   }, []);
 
   const currentDate = new Date();
@@ -140,7 +198,7 @@ export default function Header() {
           </Link>
 
           {/* navigation */}
-          <nav className="flex justify-center gap-x-2.5 text-stone-600 md:gap-x-3 md:mt-1">
+          <nav className="flex justify-center gap-x-2.5 text-stone-600 md:mt-1 md:gap-x-3">
             <Link
               href="/"
               className={`${
@@ -175,15 +233,44 @@ export default function Header() {
 
           {/* socials */}
           <div className="mt-2 flex justify-center gap-2.5 md:mt-2.5 md:gap-3">
-            <a
-              href="mailto:hi@jakeo.dev"
-              target="_blank"
-              title="Email: hi@jakeo.dev"
-              aria-label="Email: hi@jakeo.dev"
-              className="flex h-min text-sm text-stone-500 transition hover:scale-110 hover:text-blue-500 active:scale-100 md:text-lg"
-            >
-              <FontAwesomeIcon icon={faEnvelope} aria-hidden />
-            </a>
+            <div className="relative h-min">
+              <button
+                onClick={() => {
+                  setEmailModalOpen(!emailModalOpen);
+                  setDiscordModalOpen(false);
+
+                  if (!emailModalOpen)
+                    setEmail(
+                      (domain + currentLocalPart).split("").reverse().join(""),
+                    );
+                }}
+                title="Click to reveal email"
+                aria-label="Click to reveal email"
+                className="flex cursor-pointer text-sm text-stone-500 transition hover:scale-110 hover:text-blue-500 active:scale-100 md:text-lg"
+                ref={emailModalBtnRef}
+              >
+                <FontAwesomeIcon icon={faEnvelope} aria-hidden />
+              </button>
+
+              {/* email modal */}
+              <div
+                className={`${
+                  emailModalOpen ? "visible-fade" : "invisible-fade"
+                } absolute top-5 w-fit rounded-lg border-2 border-stone-200 bg-stone-50 px-3.5 py-1.5 shadow-sm md:top-6`}
+                ref={emailModalRef}
+              >
+                <div className="flex w-max items-center md:text-lg">
+                  <button onClick={() => newRandomEmail()}>
+                    {/* hover:font-[450] */}
+                    <span className="cursor-pointer text-blue-600 drop-shadow-sm drop-shadow-blue-500/30 transition hover:text-blue-700 hover:drop-shadow-sky-500/30 active:drop-shadow-none">
+                      {email.split("@")[0]}
+                    </span>
+                  </button>
+                  <span className="text-stone-600">@{email.split("@")[1]}</span>
+                </div>
+              </div>
+            </div>
+
             <a
               href="https://github.com/jakeo-dev"
               target="_blank"
@@ -193,13 +280,17 @@ export default function Header() {
             >
               <FontAwesomeIcon icon={faGithub} aria-hidden />
             </a>
+
             <div className="relative h-min">
               <button
-                onClick={() => setModalOpen(!modalOpen)}
+                onClick={() => {
+                  setDiscordModalOpen(!discordModalOpen);
+                  setEmailModalOpen(false);
+                }}
                 title="Discord: @jakeybakers"
                 aria-label="Discord: @jakeybakers"
                 className="flex cursor-pointer text-sm text-stone-500 transition hover:scale-110 hover:text-[#5865f2] active:scale-100 md:text-lg"
-                ref={modalBtnRef}
+                ref={discordModalBtnRef}
               >
                 <FontAwesomeIcon icon={faDiscord} aria-hidden />
               </button>
@@ -207,23 +298,16 @@ export default function Header() {
               {/* discord modal */}
               <div
                 className={`${
-                  modalOpen ? "visible-fade" : "invisible-fade"
-                } absolute top-5 w-fit rounded-lg border-2 border-stone-200 px-3.5 py-1.5 shadow-sm md:top-6`}
-                ref={modalRef}
+                  discordModalOpen ? "visible-fade" : "invisible-fade"
+                } absolute top-5 w-fit rounded-lg border-2 border-stone-200 bg-stone-50 px-3.5 py-1.5 shadow-sm md:top-6`}
+                ref={discordModalRef}
               >
-                {/* <button
-                    className="absolute right-3 top-2 text-sm text-stone-700 transition hover:text-stone-500 md:top-2.5"
-                    onClick={() => {
-                      setModalOpen(false);
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faXmark} aria-label="Close modal" />
-                  </button> */}
                 <div className="flex items-center text-[#5865f2] md:text-lg">
                   <span>@jakeybakers</span>
                 </div>
               </div>
             </div>
+
             <div className="-translate-x-1 -translate-y-0.75 md:-translate-y-1">
               <button
                 className={imgVis}
