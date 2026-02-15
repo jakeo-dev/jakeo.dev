@@ -48,7 +48,7 @@ export default function Contents(props: {
         {props.desc}
       </h2>
 
-      <div className="mt-3 flex gap-2">
+      <div className="mt-2 md:mt-3 flex gap-2">
         {props.toolsList.map((tool, i) => (
           <span
             key={i}
@@ -59,7 +59,7 @@ export default function Contents(props: {
         ))}
       </div>
 
-      <div className="post-dates-div">
+      <div className="post-dates">
         <h2>Created {props.createDate}</h2>
         <h2>Updated {props.updateDate}</h2>
       </div>

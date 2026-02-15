@@ -31,12 +31,8 @@ export default function Post(props: {
           {props.name}
         </Link>
       </div>
-      <div className="mt-2.5 flex gap-3">
-        <h2
-          className={`${
-            props.releaseDate != "" ? "inline" : "hidden"
-          } text-xs text-stone-600 md:text-sm`}
-        >
+      <div className="post-dates">
+        <h2 className={props.releaseDate != "" ? "inline" : "hidden"}>
           {props.releaseDate}
         </h2>
       </div>

@@ -104,7 +104,7 @@ export default function Header() {
   return width ? (
     <>
       {/* header */}
-      <header className="my-10 text-left md:my-12">
+      <header className="my-8 text-left md:my-10">
         <div className="flex w-full items-center justify-center sm:relative">
           {/* socials */}
           <div className="mr-auto -ml-1 flex items-center justify-center gap-2.5 sm:absolute sm:left-0 sm:-ml-0 sm:gap-4">

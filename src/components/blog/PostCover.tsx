@@ -11,7 +11,7 @@ export default function Contents(props: {
     <>
       <h1 className="sub0title mt-0 pb-0">{props.title}</h1>
 
-      <h2 className="post-dates-div text">{props.date}</h2>
+      <h2 className="post-dates">{props.date}</h2>
 
       <div className="my-6">
         <Image
