@@ -105,8 +105,8 @@ export default function Home() {
       </p>
 
       {/* everydle */}
-      {/* smaller top margin on bigger screen because it makes more sense visually */}
       <div className="mt-14 flex gap-3 md:mt-10 md:gap-6">
+        {/* smaller top margin on bigger screen because it makes more sense visually */}
         <div>
           <h2 className="sub1title mt-0 text-right">Everydle</h2>
           <p className="text text-right">
