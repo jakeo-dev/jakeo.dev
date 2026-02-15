@@ -65,11 +65,11 @@ export default function JakeO() {
       </p>
       <p className="text">
         I used Google Sites to build the first version of this website at
-        Jorch.xyz in September 2020, began actually programming by switching to
+        Jorch.xyz in September 2020, began actually programming by writing it in
         HTML/CSS/JavaScript in May 2021, changed the domain to JakeO.dev in
         December 2022, and rewrote everything with Next.js in January 2024. This
-        website has been constantly changing, but I always try to keep the core
-        of it consistent.
+        website has been constantly changing, but I always try to keep its
+        purpose the same.
       </p>
       <p className="text">
         <a href="https://lexend.com" target="_blank" className="link">
