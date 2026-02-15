@@ -39,7 +39,7 @@ export default function Plannter() {
           {
             name: "DSNS",
             link: "https://dsns.dev",
-            img: "https://dsns.dev/_astro/kirby.Dz3woPGR_1dV3kX.svg",
+            img: "hhttps://dsns.dev/kirby.png",
           },
         ]}
       />
