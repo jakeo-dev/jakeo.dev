@@ -124,7 +124,7 @@ export default function Header() {
                 }}
                 title="Click to reveal email"
                 aria-label="Click to reveal email"
-                className="flex cursor-pointer text-base text-stone-500 transition hover:scale-110 hover:text-sky-500 focus:text-sky-500 active:scale-110 active:text-sky-500 sm:hover:scale-100 sm:active:scale-100"
+                className="flex cursor-pointer text-base text-stone-500 transition-all hover:scale-110 hover:text-sky-500 focus:text-sky-500 active:scale-110 active:text-sky-500 sm:hover:scale-100 sm:active:scale-100 hover:font-[450] focus:font-[500]"
                 ref={emailModalBtnRef}
               >
                 {width >= 640 ? (
@@ -158,7 +158,7 @@ export default function Header() {
               target="_blank"
               title="GitHub: jakeo-dev"
               aria-label="GitHub: jakeo-dev"
-              className="flex h-min text-base text-stone-500 transition hover:scale-110 hover:text-stone-700 focus:text-stone-700 active:scale-110 active:text-stone-700 sm:hover:scale-100 sm:active:scale-100"
+              className="flex h-min text-base text-stone-500 transition-all hover:scale-110 hover:text-stone-700 focus:text-stone-700 active:scale-110 active:text-stone-700 sm:hover:scale-100 sm:active:scale-100 hover:font-[450] focus:font-[500]"
             >
               {width >= 640 ? (
                 "github"
@@ -175,7 +175,7 @@ export default function Header() {
                 }}
                 title="Discord: @jakeybakers"
                 aria-label="Discord: @jakeybakers"
-                className="flex cursor-pointer text-base text-stone-500 transition hover:scale-110 hover:text-indigo-500 focus:text-indigo-500 active:scale-110 active:text-indigo-500 sm:hover:scale-100 sm:active:scale-100"
+                className="flex cursor-pointer text-base text-stone-500 transition-all hover:scale-110 hover:text-indigo-500 focus:text-indigo-500 active:scale-110 active:text-indigo-500 sm:hover:scale-100 sm:active:scale-100 hover:font-[450] focus:font-[500]"
                 ref={discordModalBtnRef}
               >
                 {width >= 640 ? (
@@ -208,9 +208,9 @@ export default function Header() {
               href="/"
               className={`${
                 pathname == "/"
-                  ? "text-sky-600"
-                  : "text-stone-500 hover:text-stone-700 active:text-stone-800"
-              } mb-0 ml-auto flex rounded-md text-sm transition sm:text-base`}
+                  ? "font-[500] text-sky-600"
+                  : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
+              } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
             >
               /index
             </Link>
@@ -218,9 +218,9 @@ export default function Header() {
               href="/projects"
               className={`${
                 pathname.startsWith("/projects")
-                  ? "text-sky-600"
-                  : "text-stone-500 hover:text-stone-700 active:text-stone-800"
-              } mb-0 ml-auto flex rounded-md text-sm transition sm:text-base`}
+                  ? "font-[500] text-sky-600"
+                  : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
+              } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
             >
               /projects
             </Link>
@@ -228,9 +228,9 @@ export default function Header() {
               href="/blog"
               className={`${
                 pathname.startsWith("/blog")
-                  ? "text-sky-600"
-                  : "text-stone-500 hover:text-stone-700 active:text-stone-800"
-              } mb-0 ml-auto flex rounded-md text-sm transition sm:text-base`}
+                  ? "font-[500] text-sky-600"
+                  : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
+              } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
             >
               /blog
             </Link>
