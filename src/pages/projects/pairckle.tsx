@@ -26,7 +26,7 @@ export default function Pairckle() {
         title="Pairckle"
         desc="Rank your favorite things easily, accurately, and pairwisely."
         createDate="January 2025"
-        updateDate="December 2025"
+        updateDate="February 2026"
         logoImg="https://pairckle.jakeo.dev/pairckle-icon.png"
         toolsList={["Next.js", "React", "TypeScript"]}
       />
