@@ -4,7 +4,7 @@ export default function Bunny() {
   const [imgVis, setImgVis] = useState("");
   const [imgSrc, setImgSrc] = useState("solid-gradient-blue-gray-bunny");
 
-  const [color, setColor] = useState("oklch(50% 0.134 242.749)"); // gray: #79716b
+  const [color, setColor] = useState("#6F96BE"); // gray: #79716b
   const [svgVis, setSvgVis] = useState("hidden");
 
   const currentDate = new Date();

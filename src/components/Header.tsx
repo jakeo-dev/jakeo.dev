@@ -13,10 +13,10 @@ export default function Header() {
   const [width, setWidth] = useState<number | undefined>(undefined);
 
   useEffect(() => {
-    // 2. This only runs on the client AFTER the first render
-    const handleResize = () => setWidth(window.innerWidth);
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
 
-    // Set initial width
     handleResize();
 
     window.addEventListener("resize", handleResize);
