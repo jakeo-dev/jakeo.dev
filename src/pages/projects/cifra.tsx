@@ -32,7 +32,7 @@ export default function Cifra() {
         toolsList={["JavaScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full bg-yellow-500/50 sm:h-96 md:h-[460px]">
+      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-yellow-500/50 sm:h-96 md:h-[480px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -49,7 +49,7 @@ export default function Cifra() {
             },
           ]}
           imagePosition="object-top"
-          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]"
+          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]"
           imageClassName="shadow-md"
         />
       </div>

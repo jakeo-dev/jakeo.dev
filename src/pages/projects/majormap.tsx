@@ -21,6 +21,7 @@ export default function MajorMap() {
           content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         />
       </CommonHead>
+
       <ProjectCover
         title="MajorMap"
         desc="An interactive flowchart for degree progress planning."
@@ -41,8 +42,9 @@ export default function MajorMap() {
           },
         ]}
       />
-      <div className="post-img relative container mx-auto h-56 w-full bg-[#6777c2]/50 sm:h-96 md:h-[460px]">
-        <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]">
+
+      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-[#6777c2]/50 sm:h-96 md:h-[480px] md:rounded-3xl">
+        <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]">
           <Image
             src={require("/public/images/majormap-ss-1.png")}
             alt="Screenshot of MajorMap showing various courses in a flowchart"
@@ -52,6 +54,7 @@ export default function MajorMap() {
           />
         </div>
       </div>
+
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
           className="border-[#5261a3] bg-[#5261a3] shadow-[#6777c2]/30 hover:border-[#43508c] hover:bg-[#43508c] active:border-[#353f75] active:bg-[#353f75]"

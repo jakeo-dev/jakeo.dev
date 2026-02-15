@@ -28,10 +28,11 @@ export default function WashWise() {
         createDate="September 2025"
         updateDate="September 2025"
         logoImg="https://washwise.jakeo.dev/favicon.png"
+        logoBig
         toolsList={["React Native", "Next.js", "React", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-72 w-full bg-gradient-to-br from-blue-500/50 to-blue-600/50 sm:h-96 md:h-[460px]">
+      <div className="post-img relative container mx-auto h-72 w-full rounded-xl bg-gradient-to-br from-blue-500/50 to-blue-600/50 sm:h-96 md:h-[480px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -52,7 +53,7 @@ export default function WashWise() {
             },
           ]}
           imagePosition="object-top"
-          className="absolute top-1/2 left-1/2 h-64 w-32 -translate-x-1/2 -translate-y-1/2 sm:h-80 sm:w-[30%] md:h-[420px] md:w-[28%]"
+          className="absolute top-1/2 left-1/2 h-64 w-32 -translate-x-1/2 -translate-y-1/2 sm:h-80 sm:w-[30%] md:h-[430px] md:w-[28%]"
           imageClassName="shadow-md"
         />
       </div>

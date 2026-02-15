@@ -26,12 +26,12 @@ export default function Pairckle() {
         title="Pairckle"
         desc="Rank your favorite things easily, accurately, and pairwisely."
         createDate="January 2025"
-        updateDate="August 2025"
+        updateDate="December 2025"
         logoImg="https://pairckle.jakeo.dev/pairckle-icon.png"
         toolsList={["Next.js", "React", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[460px]">
+      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[480px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -43,8 +43,7 @@ export default function Pairckle() {
               alt: 'Screenshot of Pairckle showing three saved rankings, titled "Favorite unreleased songs," "Top works from Leo," and "Best clouds"',
             },
           ]}
-          imagePosition="object-top"
-          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]"
+          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]"
           imageClassName="shadow-md"
         />
       </div>
@@ -65,13 +64,13 @@ export default function Pairckle() {
         Pairckle is a website that makes ranking easier by using pairwise
         comparisons. The use of pairwise comparisons instead of tier lists
         allows for a much more definitive and accurate final ranking, with a
-        clear winner, loser, and everything else in between.
+        clear best, worst, and everything in between.
       </p>
       <p className="text">
-        If you're unsure about what to rank, Pairckle has fifty starter sets,
-        with categories ranging from food to sports to technology and more.
-        Choose between a quicker session with Hurry mode or a more accurate
-        ranking with Concentrate mode.
+        If you're unsure about what to rank, Pairckle has over fifty starter
+        sets, with categories ranging from food to sports to technology and
+        more. Choose between a quicker session with Hurry mode or a more
+        accurate ranking with Concentrate mode.
       </p>
       <p className="text">
         After you've finished comparing, your final ranking is saved. Add a

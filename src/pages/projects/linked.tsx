@@ -31,8 +31,8 @@ export default function Linked() {
         toolsList={["React Native", "Next.js", "React", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full bg-blue-500/50 sm:h-96 md:h-[460px]">
-        <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]">
+      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-blue-500/50 sm:h-96 md:h-[480px] md:rounded-3xl">
+        <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]">
           <Image
             src={require("/public/images/linked-ss-1.png")}
             alt={`Screenshot of Linked showing the game being played, with the words "deaf," "fiend," "diodes," and the fourth word not fully typed`}

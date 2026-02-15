@@ -15,8 +15,6 @@ export default function TopTrack() {
         const response = await fetch("/api/lastfm"); // fetch api response from api route: lastfm.tsx (wait for fetching)
         const data = await response.json(); // get data from fetched response (wait for conversion to json)
         const track = data.toptracks?.track?.[0]; // get the first track in the list of top tracks
-        console.log(data);
-        console.log(track);
 
         setCurrentSong({
           title: track.name,
@@ -26,7 +24,7 @@ export default function TopTrack() {
           playcount: track.playcount,
         });
       } catch (error) {
-        console.error("error fetching last.fm data: " + error);
+        console.error("ERROR fetching last.fm data: " + error);
       }
     }
 

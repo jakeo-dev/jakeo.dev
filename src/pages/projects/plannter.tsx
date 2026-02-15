@@ -28,6 +28,7 @@ export default function Plannter() {
         createDate="January 2023"
         updateDate="September 2024"
         logoImg="https://plannter.jakeo.dev/plannter-icon-dark.png"
+        logoBig
         toolsList={["Next.js", "React", "TypeScript"]}
         collaborators={[
           {
@@ -43,7 +44,7 @@ export default function Plannter() {
         ]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full bg-emerald-500/50 sm:h-96 md:h-[460px]">
+      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-emerald-500/50 sm:h-96 md:h-[480px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -68,7 +69,7 @@ export default function Plannter() {
             },
           ]}
           imagePosition="object-top"
-          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]"
+          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]"
           imageClassName="shadow-md"
         />
       </div>

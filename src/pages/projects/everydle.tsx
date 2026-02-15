@@ -31,7 +31,7 @@ export default function Everydle() {
         toolsList={["Next.js", "React", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full bg-gradient-to-br from-lime-500/50 to-lime-600/50 sm:h-96 md:h-[460px]">
+      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-gradient-to-br from-lime-500/50 to-lime-600/50 sm:h-96 md:h-[480px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -44,7 +44,7 @@ export default function Everydle() {
             },
           ]}
           imagePosition="object-center"
-          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[380px]"
+          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]"
           imageClassName="shadow-md"
         />
       </div>
@@ -121,18 +121,17 @@ export default function Everydle() {
           Sexaginta-quattordle
         </a>{" "}
         aren't enough, there's Everydle. No longer do you need to spend five
-        minutes solving the daily Wordle, just play all of them at once in one
+        minutes solving the daily Wordle; just play all of them at once in one
         extremely long sitting, and never worry about missing a day again.
       </p>
       <p className="text">
         To improve performance and visibility, compact mode can be enabled or
-        the input mode can be switched. You can also attempt to share your
-        results (if you're not using Twitter in the 2010s).
+        the input mode can be switched. You can also try to share your results.
       </p>
       <p className="text mb-0">
-        How many words can you solve before getting bored and giving up?
+        How many games can you solve before getting bored and giving up?
       </p>
-      <p className="subtext">My high score is 459.</p>
+      <p className="subtext">My high score is 575.</p>
     </>
   );
 }

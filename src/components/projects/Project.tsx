@@ -21,10 +21,10 @@ export default function Project(props: {
           !props.colors
             ? "hover:border-sky-600 hover:shadow-sky-500/30"
             : props.colors
-        } relative mb-4 flex h-min flex-col rounded-xl border-4 border-stone-200 bg-stone-50 shadow-md shadow-neutral-300/50 transition duration-300 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0.5 active:shadow-none md:mb-6`}
+        } relative mb-4 flex h-min flex-col rounded-[14px] border-2 border-stone-200 bg-stone-50 shadow-sm shadow-neutral-300/50 transition duration-300 last:mb-0 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6`}
       >
         <div className="relative w-full flex-grow p-5 md:p-6">
-          <h1 className="flex items-center text-left text-lg font-medium md:text-xl">
+          <h1 className="flex items-center text-left text-base font-medium md:text-lg">
             <img
               src={props.logo}
               className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-5 md:w-6`}
@@ -60,10 +60,10 @@ export default function Project(props: {
       <a
         href={props.link}
         target="_blank"
-        className="relative mb-4 flex flex-col rounded-xl border-4 border-stone-200 bg-stone-50 shadow-md transition duration-300 hover:-translate-y-0.5 hover:border-stone-400 hover:shadow-lg active:translate-y-0.5 active:shadow-none md:mb-6"
+        className="relative mb-4 flex flex-col rounded-[14px] border-2 border-stone-200 bg-stone-50 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-stone-400 hover:shadow-md active:translate-y-0.5 active:shadow-none md:mb-6"
       >
         <div className="relative w-full flex-grow p-5 md:p-6">
-          <h1 className="flex items-center text-left text-lg font-medium md:text-xl">
+          <h1 className="flex items-center text-left text-base font-medium md:text-lg">
             <img
               src={props.logo}
               className={`${props.showLogo ? "inline" : "hidden"} mr-1.5 w-5 md:w-6`}
