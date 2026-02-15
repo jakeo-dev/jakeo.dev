@@ -35,15 +35,15 @@
   }
 
   .link {
-    @apply text-blue-800 underline decoration-blue-800/30 decoration-2 drop-shadow-sm drop-shadow-blue-500/30 transition hover:text-blue-600 hover:decoration-blue-600/50 hover:decoration-wavy hover:decoration-1 active:decoration-blue-600/70 active:drop-shadow-none;
+    @apply text-blue-800 underline decoration-blue-800/30 decoration-2 underline-offset-2 drop-shadow-sm drop-shadow-blue-500/30 transition hover:text-blue-600 hover:decoration-blue-600/50 hover:decoration-wavy hover:decoration-1 active:decoration-blue-600/70 active:drop-shadow-none;
   }
 
   .download-link {
-    @apply text-green-800 underline decoration-green-800/30 decoration-2 drop-shadow-sm drop-shadow-green-500/30 transition hover:text-green-600 hover:decoration-green-600/50 hover:decoration-wavy hover:decoration-1 active:decoration-green-600/70 active:drop-shadow-none;
+    @apply text-green-800 underline decoration-green-800/30 decoration-2 underline-offset-2 drop-shadow-sm drop-shadow-green-500/30 transition hover:text-green-600 hover:decoration-green-600/50 hover:decoration-wavy hover:decoration-1 active:decoration-green-600/70 active:drop-shadow-none;
   }
 
   .internal-link {
-    @apply text-sky-800 underline decoration-sky-800/30 decoration-2 drop-shadow-sm drop-shadow-sky-500/30 transition hover:text-sky-600 hover:decoration-sky-600/50 hover:decoration-wavy hover:decoration-1 active:decoration-sky-600/70 active:drop-shadow-none;
+    @apply text-sky-800 underline decoration-sky-800/30 decoration-2 underline-offset-2 drop-shadow-sm drop-shadow-sky-500/30 transition hover:text-sky-600 hover:decoration-sky-600/50 hover:decoration-wavy hover:decoration-1 active:decoration-sky-600/70 active:drop-shadow-none;
   }
 
   .code-block-div {
