@@ -867,19 +867,27 @@ export default function Post5() {
           <p className={`${handwriting.className} text text-base md:text-lg`}>
             Now go use your font!!!!!!!!!
           </p>
-          <div className="mt-16 text-left">
-            <Link
-              href="/blog"
-              className="internal-link block text-lg no-underline md:text-xl"
-            >
-              <FontAwesomeIcon
-                icon={faArrowLeft}
-                className="mr-2"
-                aria-hidden
+
+          <Link
+            href="/blog"
+            className="group/link mt-16 flex cursor-pointer items-center gap-1"
+          >
+            <div className="group/img relative">
+              <Image
+                src={require("/public/images/long-squiggly-arrow.png")}
+                alt="A long squiggly arrow"
+                className="invisible absolute h-8 w-min rotate-180 transition-all duration-300 group-hover/img:invisible group-hover/img:opacity-0 group-hover/link:invisible group-hover/link:opacity-0 md:visible md:h-10"
               />
+              <Image
+                src={require("/public/images/long-squiggly-arrow-blue.png")}
+                alt="A long blue squiggly arrow"
+                className="visible h-8 w-min rotate-180 opacity-100 transition-all duration-300 group-hover/img:visible group-hover/img:opacity-100 group-hover/link:visible group-hover/link:opacity-100 md:invisible md:h-10 md:opacity-0"
+              />
+            </div>
+            <span className="internal-link text-xl no-underline">
               Read more posts
-            </Link>
-          </div>
+            </span>
+          </Link>
         </div>
       </div>
     </>
