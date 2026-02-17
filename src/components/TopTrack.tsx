@@ -45,7 +45,9 @@ export default function TopTrack() {
           rel="noopener noreferrer"
         >
           {/* regex to get rid of "remastered" thing from song title */}
-          {currentSong ? currentSong.title.replace(/ ([-–—] |\()((remaster(.+)?)|(.+)?remaster(.+)?)/i, "") : "[LOADING]"}
+          {currentSong
+            ? currentSong.title.replace(/ ([-–—] |\()((.+)?remaster(.+)?)/i, "")
+            : "[LOADING]"}
         </a>{" "}
         by {currentSong ? currentSong.artist : "[LOADING]"}
         {/* , with{" "}
