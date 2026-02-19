@@ -149,7 +149,7 @@ export default function Projects() {
           <Project
             name="Linked"
             desc="Link five words together in a simple word game."
-            toolsList={["React Native", "Next.js", "React", "TypeScript"]}
+            toolsList={["Expo", "React Native", "TypeScript"]}
             logo="https://linked.jakeo.dev/images/icon-transparent.png"
             showLogo
             type={1}
