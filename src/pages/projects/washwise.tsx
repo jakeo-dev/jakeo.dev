@@ -29,7 +29,7 @@ export default function WashWise() {
         updateDate="September 2025"
         logoImg="https://washwise.jakeo.dev/favicon.png"
         logoBig
-        toolsList={["React Native", "Next.js", "React", "TypeScript"]}
+        toolsList={["Expo", "React Native", "TypeScript"]}
       />
 
       <div className="post-img relative container mx-auto h-72 w-full rounded-xl bg-gradient-to-br from-blue-500/50 to-blue-600/50 sm:h-96 md:h-[480px] md:rounded-3xl">

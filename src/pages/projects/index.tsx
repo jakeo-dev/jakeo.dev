@@ -69,7 +69,7 @@ export default function Projects() {
           <Project
             name="WashWise"
             desc="Discover and reduce the impact of your showers."
-            toolsList={["React Native", "Next.js", "React", "TypeScript"]}
+            toolsList={["Expo", "React Native", "TypeScript"]}
             logo="https://washwise.jakeo.dev/favicon.png"
             showLogo
             type={0}
