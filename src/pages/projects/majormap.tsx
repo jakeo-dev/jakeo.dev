@@ -63,7 +63,7 @@ export default function MajorMap() {
           Visit website
         </Button>
         <SecButton href="https://github.com/jakeo-dev/majormap">
-          View GitHub
+          View on GitHub
         </SecButton>
       </div>
       <p className="text">

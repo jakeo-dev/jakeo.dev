@@ -60,7 +60,7 @@ export default function Linked() {
           className="flex-[0.5]"
           href="https://github.com/jakeo-dev/linked-web"
         >
-          View GitHub
+          View on GitHub
         </SecButton>
       </div>
 

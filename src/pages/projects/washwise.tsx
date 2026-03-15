@@ -66,7 +66,7 @@ export default function WashWise() {
           Download app
         </Button>
         <SecButton href="https://github.com/jakeo-dev/washwise">
-          View GitHub
+          View on GitHub
         </SecButton>
       </div>
 

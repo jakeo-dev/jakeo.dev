@@ -56,7 +56,7 @@ export default function Pairckle() {
           Visit website
         </Button>
         <SecButton href="https://github.com/jakeo-dev/pairckle">
-          View GitHub
+          View on GitHub
         </SecButton>
       </div>
 

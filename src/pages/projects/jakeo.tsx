@@ -55,7 +55,7 @@ export default function JakeO() {
           className="py-1.5"
           href="https://github.com/jakeo-dev/jakeo.dev"
         >
-          View GitHub
+          View on GitHub
         </SecButton>
       </div>
 

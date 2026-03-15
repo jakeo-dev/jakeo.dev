@@ -76,22 +76,13 @@ export default function Plannter() {
 
       <div className="my-6 flex flex-col gap-3 md:flex-row">
         <Button
-          className="border-emerald-600 bg-emerald-600 shadow-emerald-500/30 hover:border-emerald-700 hover:bg-emerald-700 active:border-emerald-800 active:bg-emerald-800 md:flex-1"
+          className="border-emerald-600 bg-emerald-600 shadow-emerald-500/30 hover:border-emerald-700 hover:bg-emerald-700 active:border-emerald-800 active:bg-emerald-800"
           href="https://plannter.jakeo.dev"
         >
           Visit website
         </Button>
-        <SecButton
-          className="md:flex-[0.5]"
-          href="https://github.com/jakeo-dev/plannter"
-        >
-          View GitHub
-        </SecButton>
-        <SecButton
-          className="md:flex-[0.5]"
-          href="https://github.com/jakeo-dev/old-plannter"
-        >
-          View old GitHub
+        <SecButton href="https://github.com/jakeo-dev/plannter">
+          View on GitHub
         </SecButton>
       </div>
 

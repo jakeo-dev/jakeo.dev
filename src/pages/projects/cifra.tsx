@@ -62,7 +62,7 @@ export default function Cifra() {
           Visit website
         </Button>
         <SecButton href="https://github.com/jakeo-dev/cifra">
-          View GitHub
+          View on GitHub
         </SecButton>
       </div>
 

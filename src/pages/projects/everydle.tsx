@@ -57,7 +57,7 @@ export default function Everydle() {
           Visit website
         </Button>
         <SecButton href="https://github.com/jakeo-dev/everydle">
-          View GitHub
+          View on GitHub
         </SecButton>
       </div>
 
