@@ -11,7 +11,7 @@ export default function Bunny() {
   const currentMonth: number = currentDate.getMonth();
   const currentDay: number = currentDate.getDate();
 
-  const stPatricksDayBunnies = ["leprechaun-bunny", "leprechaun-bunny"];
+  const stPatricksDayBunnies = ["leprechaun-bunny", "!leprechaun-bunny"];
 
   const earthDayBunnies = ["earth-bunny", "solid-earth-bunny"];
 
@@ -37,51 +37,44 @@ export default function Bunny() {
     "snowman-bunny",
   ];
 
-  const newYearBunnies = ["new-years-bunny", "new-years-bunny"];
+  const newYearBunnies = ["new-years-bunny", "!new-years-bunny"];
+
+  // set imgsrc to a new random bunny given a bunny array
+  function newRandomBunny(bunniesArr: string[]) {
+    const newBunny = bunniesArr.filter((str) => str !== imgSrc)[
+      Math.floor(
+        Math.random() *
+          (bunniesArr.length - (bunniesArr.includes(imgSrc) ? 1 : 0)),
+      )
+    ];
+    setImgSrc(newBunny);
+  }
 
   useEffect(() => {
     if (currentMonth == 2 && currentDay >= 16 && currentDay <= 18) {
       // st patricks day (march 16 to 18)
-      setImgSrc(
-        stPatricksDayBunnies[
-          Math.floor(Math.random() * stPatricksDayBunnies.length)
-        ],
-      );
+      newRandomBunny(stPatricksDayBunnies);
     } else if (currentMonth == 3 && currentDay >= 21 && currentDay <= 23) {
       // earth day (april 21 to 23)
-      setImgSrc(
-        earthDayBunnies[Math.floor(Math.random() * earthDayBunnies.length)],
-      );
+      newRandomBunny(earthDayBunnies);
     } else if (currentMonth == 6 && currentDay >= 3 && currentDay <= 5) {
       // 4th of july (july 3 to 5)
-      setImgSrc(
-        americaBunnies[Math.floor(Math.random() * americaBunnies.length)],
-      );
+      newRandomBunny(americaBunnies);
     } else if (currentMonth == 9 && currentDay >= 7) {
       // halloween (october 7 to 31)
-      setImgSrc(
-        halloweenBunnies[Math.floor(Math.random() * halloweenBunnies.length)],
-      );
+      newRandomBunny(halloweenBunnies);
     } else if (currentMonth == 10 && currentDay >= 7 && currentDay <= 28) {
       // thanksgiving (november 7 to 28)
-      setImgSrc(
-        thanksgivingBunnies[
-          Math.floor(Math.random() * thanksgivingBunnies.length)
-        ],
-      );
+      newRandomBunny(thanksgivingBunnies);
     } else if (
       (currentMonth == 11 && currentDay >= 30) ||
       (currentMonth == 0 && currentDay <= 2)
     ) {
       // new year (december 30 to january 2)
-      setImgSrc(
-        newYearBunnies[Math.floor(Math.random() * newYearBunnies.length)],
-      );
+      newRandomBunny(newYearBunnies);
     } else if (currentMonth == 11) {
       // christmas (december 1 to 29)
-      setImgSrc(
-        christmasBunnies[Math.floor(Math.random() * christmasBunnies.length)],
-      );
+      newRandomBunny(christmasBunnies);
     } else {
       setImgVis("hidden");
       setSvgVis("");
@@ -96,87 +89,36 @@ export default function Bunny() {
         onClick={() => {
           if (currentMonth == 2 && currentDay >= 16 && currentDay <= 18) {
             // st patricks day (march 16 to 18)
-            let oldImage = imgSrc;
-            stPatricksDayBunnies.splice(
-              stPatricksDayBunnies.indexOf(oldImage),
-              1,
-            );
-            setImgSrc(
-              stPatricksDayBunnies[
-                Math.floor(Math.random() * stPatricksDayBunnies.length)
-              ],
-            );
-            stPatricksDayBunnies.push(oldImage);
+            newRandomBunny(stPatricksDayBunnies);
           } else if (
             currentMonth == 3 &&
             currentDay >= 21 &&
             currentDay <= 23
           ) {
             // earth day (april 21 to 23)
-            let oldImage = imgSrc;
-            earthDayBunnies.splice(earthDayBunnies.indexOf(oldImage), 1);
-            setImgSrc(
-              earthDayBunnies[
-                Math.floor(Math.random() * earthDayBunnies.length)
-              ],
-            );
-            earthDayBunnies.push(oldImage);
+            newRandomBunny(earthDayBunnies);
           } else if (currentMonth == 6 && currentDay >= 3 && currentDay <= 5) {
             // 4th of july (july 3 to 5)
-            let oldImage = imgSrc;
-            americaBunnies.splice(americaBunnies.indexOf(oldImage), 1);
-            setImgSrc(
-              americaBunnies[Math.floor(Math.random() * americaBunnies.length)],
-            );
-            americaBunnies.push(oldImage);
+            newRandomBunny(americaBunnies);
           } else if (currentMonth == 9 && currentDay >= 7) {
             // halloween (october 7 to 31)
-            let oldImage = imgSrc;
-            halloweenBunnies.splice(halloweenBunnies.indexOf(oldImage), 1);
-            setImgSrc(
-              halloweenBunnies[
-                Math.floor(Math.random() * halloweenBunnies.length)
-              ],
-            );
-            halloweenBunnies.push(oldImage);
+            newRandomBunny(halloweenBunnies);
           } else if (
             currentMonth == 10 &&
             currentDay >= 7 &&
             currentDay <= 28
           ) {
             // thanksgiving (november 7 to 28)
-            let oldImage = imgSrc;
-            thanksgivingBunnies.splice(
-              thanksgivingBunnies.indexOf(oldImage),
-              1,
-            );
-            setImgSrc(
-              thanksgivingBunnies[
-                Math.floor(Math.random() * thanksgivingBunnies.length)
-              ],
-            );
-            thanksgivingBunnies.push(oldImage);
+            newRandomBunny(thanksgivingBunnies);
           } else if (
             (currentMonth == 11 && currentDay >= 30) ||
             (currentMonth == 0 && currentDay <= 2)
           ) {
             // new year (december 30 to january 2)
-            let oldImage = imgSrc;
-            newYearBunnies.splice(newYearBunnies.indexOf(oldImage), 1);
-            setImgSrc(
-              newYearBunnies[Math.floor(Math.random() * newYearBunnies.length)],
-            );
-            newYearBunnies.push(oldImage);
+            newRandomBunny(newYearBunnies);
           } else if (currentMonth == 11) {
             // christmas (december 1 to 29)
-            let oldImage = imgSrc;
-            christmasBunnies.splice(christmasBunnies.indexOf(oldImage), 1);
-            setImgSrc(
-              christmasBunnies[
-                Math.floor(Math.random() * christmasBunnies.length)
-              ],
-            );
-            christmasBunnies.push(oldImage);
+            newRandomBunny(christmasBunnies);
           } else {
             setColor(
               `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
@@ -189,7 +131,7 @@ export default function Bunny() {
         }}
       >
         <img
-          src={`https://bunnies.jakeo.dev/images/${imgSrc}.png`}
+          src={`https://bunnies.jakeo.dev/images/${imgSrc.replace("!", "")}.png`}
           className="w-8 cursor-pointer object-contain transition hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 md:w-10"
           alt="Bunny icon"
         />
