@@ -1,6 +1,9 @@
 import CommonHead from "@/components/CommonHead";
 import TopTrack from "@/components/TopTrack";
 import Image from "next/image";
+import { getTopTrack } from "@/lib/lastfm";
+import type { GetStaticProps } from "next";
+import type { TopTrack as TopTrackType } from "@/lib/lastfm";
 
 import localFont from "next/font/local";
 import Link from "next/link";
@@ -10,7 +13,16 @@ const handwriting = localFont({
   variable: "--font-handwriting",
 });
 
-export default function Home() {
+export const getStaticProps: GetStaticProps<{ track: TopTrackType | null }> =
+  async () => {
+    const track = await getTopTrack();
+    return {
+      props: { track },
+      revalidate: 21600, // ISR: revalidate every 6 hours
+    };
+  };
+
+export default function Home({ track }: { track: TopTrackType | null }) {
   return (
     <>
       {/* head */}
@@ -64,7 +76,7 @@ export default function Home() {
         , and my most notable projects are featured here on this website.
       </p>
       <p className="text">
-        My top song this month is <TopTrack />.
+        My top song this month is <TopTrack track={track} />.
       </p>
 
       {/* pairckle */}
@@ -126,7 +138,7 @@ export default function Home() {
         className="group/link mt-14 flex cursor-pointer items-center justify-center gap-1"
       >
         <span className="internal-link hidden text-xl no-underline md:inline">
-          See more of my projects
+          See more of what I've done
         </span>
         <span className="internal-link text-lg no-underline md:hidden">
           See all projects
