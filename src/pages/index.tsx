@@ -13,14 +13,15 @@ const handwriting = localFont({
   variable: "--font-handwriting",
 });
 
-export const getStaticProps: GetStaticProps<{ track: TopTrackType | null }> =
-  async () => {
-    const track = await getTopTrack();
-    return {
-      props: { track },
-      revalidate: 21600, // ISR: revalidate every 6 hours
-    };
+export const getStaticProps: GetStaticProps<{
+  track: TopTrackType | null;
+}> = async () => {
+  const track = await getTopTrack();
+  return {
+    props: { track },
+    revalidate: 21600, // ISR: revalidate every 6 hours
   };
+};
 
 export default function Home({ track }: { track: TopTrackType | null }) {
   return (
@@ -95,9 +96,9 @@ export default function Home({ track }: { track: TopTrackType | null }) {
           .
         </p>
         <p className="text md:text-balance">
-          Instead of dragging and dropping and thinking about different tiers,
-          just answer the question: Curly fries or waffle fries? SpongeBob or
-          Squidward? Help or Abbey Road?
+          Instead of dragging and dropping into different tiers, just answer the
+          question: Curly fries or waffle fries? SpongeBob or Squidward? Help or
+          Abbey Road?
         </p>
         <p className="text md:text-balance">
           Pairckle uses pairwise comparisons for a more accurate ranking, with a

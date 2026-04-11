@@ -32,7 +32,7 @@ export default function JakeO() {
         title="JakeO.dev"
         desc="You're already here — check out all of my projects and blog posts."
         createDate="September 2020"
-        updateDate="February 2026"
+        updateDate="April 2026"
         logoImg="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
         logoBig
         toolsList={["Next.js", "React", "TypeScript"]}
