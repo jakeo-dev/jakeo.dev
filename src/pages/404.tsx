@@ -19,7 +19,7 @@ export default function Home() {
                           <h1 className="block text-6xl font-extrabold text-stone-100 md:text-9xl">
                             404
                           </h1>
-                          <h2 className="mt-1 block text-pretty text-center leading-5 text-stone-100">
+                          <h2 className="mt-1 block text-center leading-5 text-pretty text-stone-100">
                             that page doesn't exist...
                           </h2>
                         </div>
@@ -53,13 +53,13 @@ export default function Home() {
         </Link>
       </div> */}
 
-      <h2 className="text mb-0 mt-8 text-left text-stone-600">
+      <h2 className="text mt-8 mb-0 text-left text-stone-600">
         or maybe this page is supposed to exist? contact me:
       </h2>
       <div className="flex gap-4 text-left text-lg font-medium md:text-xl">
         <span>
           <FontAwesomeIcon icon={faEnvelope} className="mr-1.5" aria-hidden />
-          hi@jakeo.dev
+          hi [at] jakeo [dot] dev
         </span>
         <span>
           <FontAwesomeIcon icon={faDiscord} className="mr-1.5" aria-hidden />
