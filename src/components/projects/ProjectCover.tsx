@@ -2,7 +2,7 @@ export default function Contents(props: {
   title: string;
   desc: string;
   createDate: string;
-  updateDate: string;
+  updateDate?: string;
   logoImg?: string;
   logoBig?: boolean;
   toolsList: string[];
@@ -19,36 +19,36 @@ export default function Contents(props: {
         {props.logoImg ? (
           <img
             src={props.logoImg}
-            className={`inline ${props.logoBig ? "w-7.5 md:w-8.5 mr-2" : "w-6.5 md:w-7.5 mr-2.5"}`}
+            className={`inline ${props.logoBig ? "mr-2 w-7.5 md:w-8.5" : "mr-2.5 w-6.5 md:w-7.5"}`}
             alt={`${props.title} logo`}
           />
         ) : null}
         <h1 className="inline">{props.title}</h1>
-      {props.collaborators ? (
+        {props.collaborators ? (
           <div className="mt-1 ml-3 flex items-center gap-1.5 rounded-full bg-stone-200 px-1.5 py-1 font-medium">
-          {props.collaborators.map((collab, i) => (
-            <a
-              href={collab.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline text-xs text-stone-700 transition hover:scale-110 active:scale-100 md:text-sm"
-              key={i}
-            >
-              <img
-                src={collab.img}
-                className={`${collab.imgSize || "w-6"} rounded-full`}
-                alt={collab.name}
-              />
-            </a>
-          ))}
-        </div>
-      ) : null}
+            {props.collaborators.map((collab, i) => (
+              <a
+                href={collab.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline text-xs text-stone-700 transition hover:scale-110 active:scale-100 md:text-sm"
+                key={i}
+              >
+                <img
+                  src={collab.img}
+                  className={`${collab.imgSize || "w-6"} rounded-full`}
+                  alt={collab.name}
+                />
+              </a>
+            ))}
+          </div>
+        ) : null}
       </div>
       <h2 className="sub0title-subtext hidden leading-6 md:leading-7">
         {props.desc}
       </h2>
 
-      <div className="mt-2 md:mt-3 flex gap-2">
+      <div className="mt-2 flex gap-2 md:mt-3">
         {props.toolsList.map((tool, i) => (
           <span
             key={i}
@@ -60,8 +60,8 @@ export default function Contents(props: {
       </div>
 
       <div className="post-dates">
-        <h2>Created {props.createDate}</h2>
-        <h2>Updated {props.updateDate}</h2>
+        {props.createDate && <h2>Created {props.createDate}</h2>}
+        {props.updateDate && <h2>Updated {props.updateDate}</h2>}
       </div>
     </div>
   );

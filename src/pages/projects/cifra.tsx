@@ -90,10 +90,6 @@ export default function Cifra() {
         The word "cifra" (pronounced SEE-fra) is a Spanish word that can be
         translated to "number," "figure," or "cipher."
       </p>
-      <p className="text">
-        The logo shows the word "Cifra" with the letters' corresponding
-        telephone keypad digits in front of it.
-      </p>
     </>
   );
 }

@@ -96,13 +96,9 @@ export default function Home({ track }: { track: TopTrackType | null }) {
           .
         </p>
         <p className="text md:text-balance">
-          Instead of dragging and dropping into different tiers, just answer the
-          question: Curly fries or waffle fries? SpongeBob or Squidward? Help or
-          Abbey Road?
-        </p>
-        <p className="text md:text-balance">
-          Pairckle uses pairwise comparisons for a more accurate ranking, with a
-          clear winner, loser, and everything in between.
+          Instead of dragging and dropping into different tiers, Pairckle uses
+          pairwise comparisons to create a more accurate ranking, with a clear
+          winner, loser, and everything in between.
         </p>
       </div>
 
@@ -124,14 +120,19 @@ export default function Home({ track }: { track: TopTrackType | null }) {
           .
         </p>
         <p className="text text-right md:text-balance">
-          No longer do you need to spend five minutes solving the daily Wordle;
-          just play all two thousand of them at once in one extremely long
-          sitting, and never worry about missing a day again.
+          No longer do you need to SPEND{" "}
+          <span className="subtext not-italic">[2060]</span> five minutes
+          solving the DAILY <span className="subtext not-italic">[1359]</span>{" "}
+          Wordle; just play all two thousand of them at once in one extremely
+          long sitting, and NEVER{" "}
+          <span className="subtext not-italic">[1746]</span> WORRY{" "}
+          <span className="subtext not-italic">[2099]</span> ABOUT{" "}
+          <span className="subtext not-italic">[2158]</span> missing a day AGAIN{" "}
+          <span className="subtext not-italic">[0270]</span>.
         </p>
         <p className="text text-right md:text-balance">
-          How many games can you solve before getting bored and giving up?
+          My current score is 645.
         </p>
-        <p className="text text-right md:text-balance">My high score is 575.</p>
       </div>
 
       <Link

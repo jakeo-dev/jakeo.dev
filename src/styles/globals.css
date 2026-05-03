@@ -31,7 +31,7 @@
   }
 
   .subtext {
-    @apply mt-1.5 mb-4 text-left text-xs leading-5 text-stone-600 italic md:text-sm md:leading-6;
+    @apply mt-1.5 mb-4 text-left text-xs leading-5 text-stone-500 italic md:text-sm md:leading-6;
   }
 
   .link {
