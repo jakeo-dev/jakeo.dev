@@ -36,11 +36,11 @@ export default function Pairckle() {
           images={[
             {
               src: "/images/pairckle-ss-1.png",
-              alt: 'Screenshot of Pairckle showing two options to choose from: "Hamlet III" and "Just Like That"',
+              alt: 'Screenshot of Pairckle showing two options to choose from: "The Logical Song" and "Gone Hollywood"',
             },
             {
               src: "/images/pairckle-ss-2.png",
-              alt: 'Screenshot of Pairckle showing three saved rankings, titled "Favorite unreleased songs," "Top works from Leo," and "Best clouds"',
+              alt: 'Screenshot of Pairckle showing two saved rankings, titled "Favorite songs from Breakfast in America" and "Best types of fries"',
             },
           ]}
           className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]"
