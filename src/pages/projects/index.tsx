@@ -21,7 +21,7 @@ export default function Projects() {
       </CommonHead>
 
       {/* current projects */}
-      <h1 className="sub0title mt-0 mb-2">My projects</h1>
+        <h1 className="sub0title mt-0 mb-2">Current projects</h1>
 
       <div className="block md:flex">
         <MasonryLayout
@@ -55,6 +55,17 @@ export default function Projects() {
             link="https://pairckle.jakeo.dev"
           />
 
+            <Project
+              name="Aura Farm"
+              desc="Explore Cal Poly while farming Aura."
+              toolsList={["Expo", "React Native", "TypeScript"]}
+              logo="https://aurafarm.codebox.so/logo.svg"
+              showLogo
+              type={0}
+              colors="hover:border-red-600 hover:shadow-red-500/30"
+              link="https://aurafarm.codebox.so/"
+            />
+
           <Project
             name="MajorMap"
             desc="An interactive flowchart for degree progress planning."
@@ -75,17 +86,6 @@ export default function Projects() {
             type={0}
             colors="hover:border-blue-600 hover:shadow-blue-500/30"
             link="https://washwise.jakeo.dev/mobile"
-          />
-
-          <Project
-            name="Plannter"
-            desc="A high school course planner, extracurricular tracker, and college application tool all in one."
-            toolsList={["Next.js", "React", "TypeScript"]}
-            logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
-            showLogo
-            type={0}
-            colors="hover:border-emerald-600 hover:shadow-emerald-500/30"
-            link="https://plannter.jakeo.dev"
           />
 
           <Project
@@ -117,13 +117,24 @@ export default function Projects() {
           className="flex w-full"
           columnClassName="bg-clip-padding px-2 md:px-3 first:pl-0 last:pr-0"
         >
+            <Project
+              name="Plannter"
+              desc="A high school course planner, extracurricular tracker, and college application tool all in one."
+              toolsList={["Next.js", "React", "TypeScript"]}
+              logo="https://plannter.jakeo.dev/plannter-icon-dark.png"
+              showLogo
+              type={0}
+              colors="hover:border-emerald-600 hover:shadow-emerald-500/30"
+              link="https://plannter.jakeo.dev"
+            />
+
           <Project
             name="Cifra"
             desc="Generate vanity numbers from your own phone number to make it unforgettable."
             toolsList={["JavaScript"]}
             logo="https://cifra.jakeo.dev/cifra-logo.png"
             showLogo
-            type={1}
+              type={0}
             colors="hover:border-yellow-600"
             link="https://cifra.jakeo.dev"
           />
@@ -144,44 +155,6 @@ export default function Projects() {
             showLogo
             type={1}
             link="https://tree.jakeo.dev"
-          />
-
-          <Project
-            name="Linked"
-            desc="Link five words together in a simple word game."
-            toolsList={["Expo", "React Native", "TypeScript"]}
-            logo="https://linked.jakeo.dev/images/icon-transparent.png"
-            showLogo
-            type={1}
-            link="https://linked.jakeo.dev"
-          />
-
-          <Project
-            name="Yearn"
-            desc="Organize everything you yearn for into a simple list."
-            toolsList={["JavaScript"]}
-            logo="https://yearn.jakeo.dev/yearn-logo.png"
-            type={1}
-            link="https://yearn.jakeo.dev"
-          />
-
-          <Project
-            name="Cerebric"
-            desc="A speed typing website to help you study."
-            toolsList={["JavaScript"]}
-            logo="https://cerebric.jakeo.dev/cerebric-logo-inverted.ico"
-            type={1}
-            link="https://cerebric.jakeo.dev"
-          />
-
-          <Project
-            name="Colorful Bunnies"
-            desc="A gallery of some colorful bunnies made for every occasion."
-            toolsList={["JavaScript"]}
-            logo="https://bunnies.jakeo.dev/images/orange-bunny-2022.png"
-            showLogo
-            type={1}
-            link="https://bunnies.jakeo.dev"
           />
         </MasonryLayout>
       </div>

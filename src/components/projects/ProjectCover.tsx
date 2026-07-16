@@ -1,4 +1,4 @@
-export default function Contents(props: {
+export default function ProjectCover(props: {
   title: string;
   desc: string;
   createDate: string;
@@ -19,7 +19,7 @@ export default function Contents(props: {
         {props.logoImg ? (
           <img
             src={props.logoImg}
-            className={`inline ${props.logoBig ? "mr-2 w-7.5 md:w-8.5" : "mr-2.5 w-6.5 md:w-7.5"}`}
+            className={`inline ${props.logoBig ? "mr-2 w-8 md:w-9" : "mr-2.5 w-6.5 md:w-7.5"}`}
             alt={`${props.title} logo`}
           />
         ) : null}
