@@ -21,7 +21,7 @@ export default function AuraFarm() {
 
       <ProjectCover
         title="Aura Farm"
-        desc="Turn your campus into a real-life game."
+          desc="Explore Cal Poly while farming Aura."
         createDate="May 2026"
         updateDate="May 2026"
         logoImg="https://aurafarm.codebox.so/logo.svg"
