@@ -34,7 +34,7 @@ export default function Plannter() {
           {
             name: "JakeO",
             link: "https://jakeo.dev",
-            img: "https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png",
+              img: "https://jakeo.dev/logos/j-logo-black.png",
           },
           {
             name: "DSNS",

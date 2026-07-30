@@ -9,8 +9,8 @@ export default function MajorMap() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO: About MajorMap</title>
-        <meta property="og:title" content="JakeO: About MajorMap" />
+        <title>About MajorMap - Jake Orchanian</title>
+        <meta property="og:title" content="About MajorMap - Jake Orchanian" />
         <meta
           property="og:description"
           content="MajorMap is a website that lets students plan their degree progress using an interactive flowchart."
@@ -23,61 +23,61 @@ export default function MajorMap() {
       </CommonHead>
 
       <div className="section">
-      <ProjectCover
-        title="MajorMap"
-        desc="An interactive flowchart for degree progress planning."
-        createDate="August 2025"
-        updateDate="November 2025"
-        logoImg="https://i.imgur.com/XMdP1LU.png"
-        toolsList={["Next.js", "React", "TypeScript"]}
-        collaborators={[
-          {
-            name: "JakeO",
-            link: "https://jakeo.dev",
-            img: "https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png",
-          },
-          {
-            name: "Shaurya",
-            link: "https://shauryav.com",
-            img: "https://i.imgur.com/AUi8GVr.jpeg",
-          },
-        ]}
-      />
+        <ProjectCover
+          title="MajorMap"
+          desc="An interactive flowchart for degree progress planning."
+          createDate="August 2025"
+          updateDate="November 2025"
+          logoImg="https://i.imgur.com/XMdP1LU.png"
+          toolsList={["Next.js", "React", "TypeScript"]}
+          collaborators={[
+            {
+              name: "JakeO",
+              link: "https://jakeo.dev",
+              img: "https://jakeo.dev/logos/j-logo-black.png",
+            },
+            {
+              name: "Shaurya",
+              link: "https://shauryav.com",
+              img: "https://i.imgur.com/AUi8GVr.jpeg",
+            },
+          ]}
+        />
 
         <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-[#6777c2]/50 sm:h-96 md:h-[440px] md:rounded-3xl">
           <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[360px]">
-          <Image
-            src={require("/public/images/majormap-ss-1.png")}
-            alt="Screenshot of MajorMap showing various courses in a flowchart"
-            className="rounded-md object-cover object-top shadow-md"
-            placeholder="blur"
-            fill
-          />
+            <Image
+              src={require("/public/images/majormap-ss-1.png")}
+              alt="Screenshot of MajorMap showing various courses in a flowchart"
+              className="rounded-md object-cover object-top shadow-md"
+              placeholder="blur"
+              fill
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="my-6 flex flex-col gap-3 md:flex-row">
-        <Button
-          className="border-[#5261a3] bg-[#5261a3] shadow-[#6777c2]/30 hover:border-[#43508c] hover:bg-[#43508c] active:border-[#353f75] active:bg-[#353f75]"
-          href="https://majormap.vercel.app"
-        >
-          Visit website
-        </Button>
-        <SecButton href="https://github.com/jakeo-dev/majormap">
-          View on GitHub
-        </SecButton>
-      </div>
-      <p className="text">
-        MajorMap is a website that lets students plan their degree progress
-        using an interactive flowchart.
-      </p>
-      <p className="text">
-        Drag and drop courses into semesters or quarters, customize class
-        details, and instantly see how your academic path comes together. Add
+        <div className="my-6 flex flex-col gap-3 md:flex-row">
+          <Button
+            className="border-[#5261a3] bg-[#5261a3] shadow-[#6777c2]/30 hover:border-[#43508c] hover:bg-[#43508c] active:border-[#353f75] active:bg-[#353f75]"
+            href="https://majormap.vercel.app"
+          >
+            Visit website
+          </Button>
+          <SecButton href="https://github.com/jakeo-dev/majormap">
+            View on GitHub
+          </SecButton>
+        </div>
+        <p className="text">
+          MajorMap is a website that lets students plan their degree progress
+          using an interactive flowchart.
+        </p>
+        <p className="text">
+          Drag and drop courses into semesters or quarters, customize class
+          details, and instantly see how your academic path comes together. Add
           more terms to your degree pathway, and easily re-arrange your classes
           to experiment with different possible paths. Stay organized as you map
           out your journey from start to graduation.
-      </p>
+        </p>
       </div>
     </>
   );
