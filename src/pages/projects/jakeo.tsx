@@ -5,7 +5,7 @@ import ProjectCover from "@/components/projects/ProjectCover";
 
 import localFont from "next/font/local";
 const handwriting = localFont({
-  src: "../../fonts/Jakes_Handwriting_V5-Regular.ttf",
+  src: "../../fonts/Jakes_Handwriting_V4.2-Regular.ttf",
   display: "swap",
   variable: "--font-handwriting",
 });
