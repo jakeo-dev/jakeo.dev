@@ -37,19 +37,19 @@ export default function WashWise() {
           images={[
             {
               src: "/images/washwise-ss2-1.jpeg",
-              alt: "Screenshot of Plannter showing GPA and a list of Freshman and Sophomore courses with their grade and advancement level",
+                alt: 'Text saying "See your water usage over time" and a screenshot showing a timer and number of gallons of water used',
             },
             {
               src: "/images/washwise-ss2-2.jpeg",
-              alt: "Screenshot of Plannter showing GPA and a list of Freshman and Sophomore courses with their grade and advancement level",
+                alt: 'Text saying "Reduce your environmental impact" and a screenshot showing a list of shower logs',
             },
             {
               src: "/images/washwise-ss2-3.jpeg",
-              alt: "Screenshot of Plannter showing GPA and a list of Freshman and Sophomore courses with their grade and advancement level",
+                alt: 'Text saying "Log showers to understand your habits" and a screenshot showing a list of shower logs',
             },
             {
               src: "/images/washwise-ss2-4.jpeg",
-              alt: "Screenshot of Plannter showing GPA and a list of Freshman and Sophomore courses with their grade and advancement level",
+                alt: 'Text saying "Discover how that water could have been used" and a screenshot showing various ways the shower water could have been used',
             },
           ]}
           imagePosition="object-top"
