@@ -5,7 +5,7 @@ export default function JLogo(props: {
   className?: string;
   widthClassName?: string;
 }) {
-  const [imgSrc, setImgSrc] = useState("j-logo-blue");
+  const [imgSrc, setImgSrc] = useState("j-logo-black");
 
   const jLogos = [
     "j-logo-red",
@@ -29,35 +29,30 @@ export default function JLogo(props: {
   ];
 
   // set imgsrc to a new random jlogo
-  function newRandomLogo() {
+  function newRandomJLogo() {
     const newLogo = jLogos.filter((str) => str !== imgSrc)[
       Math.floor(
         Math.random() * (jLogos.length - (jLogos.includes(imgSrc) ? 1 : 0)),
       )
     ];
-    console.log(jLogos);
-    console.log(newLogo);
     setImgSrc(newLogo);
   }
 
   return (
-    <div
-      className={`flex items-center justify-center transition hover:drop-shadow-sm active:drop-shadow-none ${props.className}`}
+    <button
+      aria-label="Change color of J logo"
+      onClick={() => {
+        newRandomJLogo();
+      }}
+      className={`cursor-pointer rounded-full border-[1.5px] border-black/10 transition hover:scale-110 hover:rotate-3 hover:drop-shadow-sm active:scale-90 active:-rotate-3 active:drop-shadow-none sm:border-2 sm:active:scale-100 sm:active:rotate-0 ${props.className}`}
     >
-      <button
-        aria-label="Change logo"
-        onClick={() => {
-          newRandomLogo();
-        }}
-      >
-        <Image
-          src={`/logos/${imgSrc}.png`}
-          width={100}
-          height={100}
-          className={`cursor-pointer rounded-full object-contain transition hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 ${props.widthClassName || "w-8 md:w-10"}`}
-          alt="J logo"
-        />
-      </button>
-    </div>
+      <Image
+        src={`/logos/${imgSrc}.png`}
+        width={100}
+        height={100}
+        className={`rounded-full ${props.widthClassName || "w-7 md:w-9"}`}
+        alt="J logo"
+      />
+    </button>
   );
 }

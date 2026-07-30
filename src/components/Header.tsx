@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import JLogo from "@/components/JLogo";
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";

@@ -29,7 +29,6 @@ export default function Plannter() {
         createDate="January 2023"
         updateDate="September 2024"
         logoImg="https://plannter.jakeo.dev/plannter-icon-dark.png"
-        logoBig
         toolsList={["Next.js", "React", "TypeScript"]}
         collaborators={[
           {

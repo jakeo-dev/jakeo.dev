@@ -87,7 +87,7 @@ export default function Home({ track }: { track: TopTrackType | null }) {
         <Image
           src={require("/public/images/pairckle-ss-small.png")}
           alt="A Pairckle ranking of the best types of fries"
-          className="fade-edges float-left mr-3 h-min w-7/12 rounded-xl sm:w-1/2 md:mr-6 md:w-5/12"
+          className="fade-edges float-left -mt-4 mr-3 h-min w-7/12 rounded-xl sm:w-1/2 md:mr-6 md:w-5/12"
         />
         <h2 className="sub1title mt-0">Pairckle</h2>
         <p className="text md:text-balance">
@@ -105,12 +105,12 @@ export default function Home({ track }: { track: TopTrackType | null }) {
       </div>
 
       {/* everydle */}
-      <div className="section flow-root w-full pt-0">
+      <div className="section flow-root w-full sm:pt-0">
         {/* smaller top margin on bigger screen because it makes more sense visually */}
         <Image
           src={require("/public/images/everydle-ss-small.png")}
           alt="A single game of Wordle inside Everydle being solved"
-          className="fade-edges-tall float-right ml-3 h-min w-1/3 rounded-xl sm:w-[29%] md:ml-6 md:w-1/4"
+          className="fade-edges-tall float-right -mt-4 ml-3 h-min w-1/3 rounded-xl sm:w-[29%] md:ml-6 md:w-1/4"
         />
         <h2 className="sub1title mt-0 text-right">Everydle</h2>
         <p className="text text-right md:text-balance">
