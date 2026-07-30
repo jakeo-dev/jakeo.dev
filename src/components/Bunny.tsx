@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
-export default function Bunny() {
+export default function Bunny(props: {
+  className?: string;
+  widthClassName?: string;
+}) {
   const [imgVis, setImgVis] = useState("");
   const [imgSrc, setImgSrc] = useState("solid-gradient-blue-gray-bunny");
 
@@ -82,7 +85,7 @@ export default function Bunny() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center">
+    <div className={`flex items-center justify-center ${props.className}`}>
       <button
         className={imgVis}
         aria-label="Change bunny"
@@ -132,7 +135,7 @@ export default function Bunny() {
       >
         <img
           src={`https://bunnies.jakeo.dev/images/${imgSrc.replace("!", "")}.png`}
-          className="w-8 cursor-pointer object-contain transition hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 md:w-10"
+          className={`cursor-pointer object-contain transition hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 ${props.widthClassName || "w-8 md:w-10"}`}
           alt="Bunny icon"
         />
       </button>
@@ -152,7 +155,7 @@ export default function Bunny() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 300.000000 300.000000"
           preserveAspectRatio="xMidYMid meet"
-          className="w-8 cursor-pointer object-contain transition hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 sm:w-10"
+          className={`cursor-pointer object-contain transition hover:scale-110 hover:rotate-3 active:scale-100 active:rotate-0 ${props.widthClassName || "w-8 md:w-10"}`}
         >
           <g
             transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"

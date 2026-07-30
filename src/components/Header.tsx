@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Bunny from "@/components/Bunny";
+import JLogo from "@/components/JLogo";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -108,10 +108,10 @@ export default function Header() {
         <div className="flex w-full items-center justify-center sm:relative">
           {/* socials */}
           <div className="mr-auto -ml-1 flex items-center justify-center gap-2.5 sm:absolute sm:left-0 sm:-ml-0 sm:gap-4">
-            {/* bunny for sm screens */}
-            {width < 640 ? <Bunny /> : null}
+            {/* j logo for sm screens */}
+            {width < 640 ? <JLogo /> : null}
 
-            <div className="relative h-min">
+            <div className="relative ml-0.5 h-min sm:ml-0">
               <button
                 onClick={() => {
                   setEmailModalOpen(!emailModalOpen);
@@ -199,11 +199,11 @@ export default function Header() {
             </div>
           </div>
 
-          {/* bunny for not sm screens */}
-          {width >= 640 ? <Bunny /> : null}
+          {/* j logo for not sm screens */}
+          {width >= 640 ? <JLogo /> : null}
 
           {/* navigation */}
-          <nav className="ml-auto flex h-min justify-center gap-2.5 text-stone-600 sm:absolute sm:right-0 sm:gap-4">
+          <nav className="-mr-1 ml-auto flex h-min justify-center gap-2.5 text-stone-600 sm:absolute sm:right-0 sm:-mr-0 sm:gap-4">
             <Link
               href="/"
               className={`${
