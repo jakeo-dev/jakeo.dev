@@ -17,6 +17,7 @@ export default function Blog() {
       </CommonHead>
 
       {/* posts */}
+      <div className="section">
       <h1 className="sub0title mt-0">My posts</h1>
 
       <Post
@@ -73,6 +74,7 @@ export default function Blog() {
         showImg={false}
         href="/blog/ap-world-history-a-history"
       /> */}
+      </div>
     </>
   );
 }

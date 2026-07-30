@@ -22,6 +22,7 @@ export default function Everydle() {
         />
       </CommonHead>
 
+      <div className="section">
       <ProjectCover
         title="Everydle"
         desc="Every game of Wordle at the same time."
@@ -31,7 +32,7 @@ export default function Everydle() {
         toolsList={["Next.js", "React", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-gradient-to-br from-lime-500/50 to-lime-600/50 sm:h-96 md:h-[480px] md:rounded-3xl">
+        <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-gradient-to-br from-lime-500/50 to-lime-600/50 sm:h-96 md:h-[440px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -44,7 +45,7 @@ export default function Everydle() {
             },
           ]}
           imagePosition="object-center"
-          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]"
+            className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[360px]"
           imageClassName="shadow-md"
         />
       </div>
@@ -62,8 +63,8 @@ export default function Everydle() {
       </div>
 
       <p className="text">
-        Everydle is a website where you can play every single game of Wordle at
-        the same time.
+          Everydle is a website where you can play every single game of Wordle
+          at the same time.
       </p>
       <p className="text">
         When{" "}
@@ -126,12 +127,14 @@ export default function Everydle() {
       </p>
       <p className="text">
         To improve performance and visibility, compact mode can be enabled or
-        the input mode can be switched. You can also try to share your results.
+          the input mode can be switched. You can also try to share your
+          results.
       </p>
       <p className="text mb-0">
         How many games can you solve before getting bored and giving up?
       </p>
       <p className="subtext">My high score is 575.</p>
+      </div>
     </>
   );
 }

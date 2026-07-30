@@ -19,6 +19,7 @@ export default function AuraFarm() {
         />
       </CommonHead>
 
+      <div className="section">
       <ProjectCover
         title="Aura Farm"
           desc="Explore Cal Poly while farming Aura."
@@ -29,7 +30,7 @@ export default function AuraFarm() {
         toolsList={["Expo", "React Native", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-72 w-full rounded-xl bg-gradient-to-br from-red-500/50 to-red-600/50 sm:h-96 md:h-[480px] md:rounded-3xl">
+        <div className="post-img relative container mx-auto h-72 w-full rounded-xl bg-gradient-to-br from-red-500/50 to-red-600/50 sm:h-96 md:h-[440px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -42,7 +43,7 @@ export default function AuraFarm() {
             },
           ]}
           imagePosition="object-top"
-          className="absolute top-1/2 left-1/2 h-64 w-32 -translate-x-1/2 -translate-y-1/2 sm:h-80 sm:w-[30%] md:h-[430px] md:w-[28%]"
+            className="absolute top-1/2 left-1/2 h-64 w-32 -translate-x-1/2 -translate-y-1/2 sm:h-80 sm:w-[30%] md:h-[390px] md:w-[28%]"
           imageClassName="shadow-md"
         />
       </div>
@@ -63,9 +64,11 @@ export default function AuraFarm() {
       <p className="text">
         Instead of rotting in your dorm all day, get out and explore Cal Poly.
         Aura Farm is built by Mustangs for Mustangs, so every challenge you
-        complete will allow you to discover new places on campus and meet other
-        students. Farm Aura and climb the leaderboard while you explore SLO.
+          complete will allow you to discover new places on campus and meet
+          other students. Farm Aura and climb the leaderboard while you explore
+          SLO.
       </p>
+      </div>
     </>
   );
 }

@@ -22,6 +22,7 @@ export default function WashWise() {
         />
       </CommonHead>
 
+      <div className="section">
       <ProjectCover
         title="WashWise"
         desc="Discover and reduce the impact of your showers."
@@ -32,7 +33,7 @@ export default function WashWise() {
         toolsList={["Expo", "React Native", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-72 w-full rounded-xl bg-gradient-to-br from-blue-500/50 to-blue-600/50 sm:h-96 md:h-[480px] md:rounded-3xl">
+        <div className="post-img relative container mx-auto h-72 w-full rounded-xl bg-gradient-to-br from-blue-500/50 to-blue-600/50 sm:h-96 md:h-[440px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -53,7 +54,7 @@ export default function WashWise() {
             },
           ]}
           imagePosition="object-top"
-          className="absolute top-1/2 left-1/2 h-64 w-32 -translate-x-1/2 -translate-y-1/2 sm:h-80 sm:w-[30%] md:h-[430px] md:w-[28%]"
+            className="absolute top-1/2 left-1/2 h-64 w-32 -translate-x-1/2 -translate-y-1/2 sm:h-80 sm:w-[30%] md:h-[390px] md:w-[28%]"
           imageClassName="shadow-md"
         />
       </div>
@@ -71,16 +72,17 @@ export default function WashWise() {
       </div>
 
       <p className="text">
-        WashWise is an app that lets you discover and reduce your water usage by
-        timing and tracking your showers.
+          WashWise is an app that lets you discover and reduce your water usage
+          by timing and tracking your showers.
       </p>
       <p className="text">
         I've taken too many showers where I lose track of time and end up
-        keeping the water on for over 30 minutes. I needed an accessible way to
-        keep track of the impact of my showers to stop myself from wasting so
-        much water. WashWise allows you to see how much water you're using and
-        keep track of your usage over time.
+          keeping the water on for over 30 minutes. I needed an accessible way
+          to keep track of the impact of my showers to stop myself from wasting
+          so much water. WashWise allows you to see how much water you're using
+          and keep track of your usage over time.
       </p>
+      </div>
     </>
   );
 }

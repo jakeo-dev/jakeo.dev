@@ -21,6 +21,7 @@ export default function Projects() {
       </CommonHead>
 
       {/* current projects */}
+      <div className="section">
         <h1 className="sub0title mt-0 mb-2">Current projects</h1>
 
       <div className="block md:flex">
@@ -101,11 +102,12 @@ export default function Projects() {
             type={0}
             link="https://jakeo.dev"
           />
-        </MasonryLayout>
+        </div>
       </div>
 
       {/* past projects */}
-      <h1 className="sub0title mb-2">Past projects</h1>
+      <div className="section">
+        <h1 className="sub0title mt-0 mb-2">Past projects</h1>
 
       <div className="block md:flex">
         <MasonryLayout
@@ -156,7 +158,7 @@ export default function Projects() {
             type={1}
             link="https://tree.jakeo.dev"
           />
-        </MasonryLayout>
+        </div>
       </div>
     </>
   );

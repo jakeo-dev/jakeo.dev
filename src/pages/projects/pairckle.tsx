@@ -22,6 +22,7 @@ export default function Pairckle() {
         />
       </CommonHead>
 
+      <div className="section">
       <ProjectCover
         title="Pairckle"
         desc="Rank your favorite things easily, accurately, and pairwisely."
@@ -31,7 +32,7 @@ export default function Pairckle() {
         toolsList={["Next.js", "React", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[480px] md:rounded-3xl">
+        <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[440px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -43,7 +44,7 @@ export default function Pairckle() {
               alt: 'Screenshot of Pairckle showing two saved rankings, titled "Favorite songs from Breakfast in America" and "Best types of fries"',
             },
           ]}
-          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]"
+            className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[360px]"
           imageClassName="shadow-md"
         />
       </div>
@@ -76,6 +77,7 @@ export default function Pairckle() {
         After you've finished comparing, your final ranking is saved. Add a
         title and share it, or re-rank the set if you disagree with the order.
       </p>
+      </div>
     </>
   );
 }

@@ -6,20 +6,24 @@
 }
 
 @layer components {
+  .section {
+    @apply mx-auto max-w-[45rem] border-t-0 border-dotted border-stone-800/10 py-7;
+  }
+
   .sub0title {
-    @apply mt-14 py-4 text-left text-2xl font-[550] text-pretty text-stone-900 md:text-3xl;
+    @apply mt-14 pb-4 text-left text-2xl font-[550] text-pretty text-stone-900 md:text-3xl;
   }
 
   .sub1title {
-    @apply mt-14 py-4 text-left text-xl font-[500] text-pretty text-stone-900 md:text-2xl;
+    @apply mt-14 pb-4 text-left text-xl font-[500] text-pretty text-stone-900 md:text-2xl;
   }
 
   .sub2title {
-    @apply mt-6 py-4 text-left text-lg font-[450] text-pretty text-stone-900 md:mt-8 md:text-xl;
+    @apply mt-6 pb-4 text-left text-lg font-[450] text-pretty text-stone-900 md:mt-8 md:text-xl;
   }
 
   .sub3title {
-    @apply mt-3 py-4 text-left font-[400] text-pretty text-stone-900 md:mt-4 md:text-lg;
+    @apply mt-3 pb-4 text-left font-[400] text-pretty text-stone-900 md:mt-4 md:text-lg;
   }
 
   .sub0title-subtext {

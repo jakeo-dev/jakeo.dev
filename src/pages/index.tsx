@@ -42,6 +42,7 @@ export default function Home({ track }: { track: TopTrackType | null }) {
       </CommonHead>
 
       {/* about me */}
+      <div className="section">
       <h1 className="sub0title mt-0">
         Hi, I'm{" "}
         <span
@@ -78,10 +79,10 @@ export default function Home({ track }: { track: TopTrackType | null }) {
       </p>
       <p className="text">
         My top song this month is <TopTrack track={track} />.
-      </p>
+      </div>
 
       {/* pairckle */}
-      <div className="mt-14 flow-root w-full">
+      <div className="section flow-root w-full">
         <Image
           src={require("/public/images/pairckle-ss-small.png")}
           alt="A Pairckle ranking of the best types of fries"
@@ -103,7 +104,7 @@ export default function Home({ track }: { track: TopTrackType | null }) {
       </div>
 
       {/* everydle */}
-      <div className="mt-14 flow-root w-full md:mt-10">
+      <div className="section flow-root w-full pt-0">
         {/* smaller top margin on bigger screen because it makes more sense visually */}
         <Image
           src={require("/public/images/everydle-ss-small.png")}
@@ -137,7 +138,7 @@ export default function Home({ track }: { track: TopTrackType | null }) {
 
       <Link
         href="/projects"
-        className="group/link mt-14 flex cursor-pointer items-center justify-center gap-1"
+        className="section group/link flex cursor-pointer items-center justify-center gap-1"
       >
         <span className="internal-link hidden text-xl no-underline md:inline">
           See more of what I've done

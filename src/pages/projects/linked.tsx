@@ -22,6 +22,7 @@ export default function Linked() {
         />
       </CommonHead>
 
+      <div className="section">
       <ProjectCover
         title="Linked"
         desc="Link five words together in a fun and simple word game."
@@ -31,8 +32,8 @@ export default function Linked() {
         toolsList={["React Native", "Next.js", "React", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-blue-500/50 sm:h-96 md:h-[480px] md:rounded-3xl">
-        <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]">
+        <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-blue-500/50 sm:h-96 md:h-[440px] md:rounded-3xl">
+          <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[360px]">
           <Image
             src={require("/public/images/linked-ss-1.png")}
             alt={`Screenshot of Linked showing the game being played, with the words "deaf," "fiend," "diodes," and the fourth word not fully typed`}
@@ -66,17 +67,18 @@ export default function Linked() {
 
       <p className="text">
         Linked is a word puzzle game where you link five words by their first
-        and last letters. It can be played either on the website or the Android
-        app. The game was released in June 2024, with the website built in
-        Next.js and the app in React Native.
+          and last letters. It can be played either on the website or the
+          Android app. The game was released in June 2024, with the website
+          built in Next.js and the app in React Native.
       </p>
       <p className="text">
-        Building the app was the first time I used React Native. I tried to make
-        a unique puzzle that felt like it could be included with the other New
-        York Times word games. Before Linked's release, I changed the game's
-        core mechanics many times to make sure it was generally easy to
-        understand, fun, original, and balanced.
+          Building the app was the first time I used React Native. I tried to
+          make a unique puzzle that felt like it could be included with the
+          other New York Times word games. Before Linked's release, I changed
+          the game's core mechanics many times to make sure it was generally
+          easy to understand, fun, original, and balanced.
       </p>
+      </div>
     </>
   );
 }

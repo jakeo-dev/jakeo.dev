@@ -28,6 +28,7 @@ export default function JakeO() {
         />
       </CommonHead>
 
+      <div className="section">
       <ProjectCover
         title="JakeO.dev"
         desc="You're already here — check out all of my projects and blog posts."
@@ -38,8 +39,8 @@ export default function JakeO() {
         toolsList={["Next.js", "React", "TypeScript"]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-sky-500/50 sm:h-96 md:h-[480px] md:rounded-3xl">
-        <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]">
+        <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-sky-500/50 sm:h-96 md:h-[440px] md:rounded-3xl">
+          <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[360px]">
           <Image
             src={require("/public/images/main-ss-1.png")}
             alt="Screenshot of JakeO.dev showing the home page, including some projects and posts"
@@ -60,16 +61,16 @@ export default function JakeO() {
       </div>
 
       <p className="text">
-        Welcome, you're already here. JakeO.dev is my personal/portfolio website
-        where you can find all of my projects, posts, and profiles.
+          Welcome, you're already here. JakeO.dev is my personal/portfolio
+          website where you can find all of my projects, posts, and profiles.
       </p>
       <p className="text">
         I used Google Sites to build the first version of this website at
-        Jorch.xyz in September 2020, began actually programming by writing it in
-        HTML/CSS/JavaScript in May 2021, changed the domain to JakeO.dev in
-        December 2022, and rewrote everything with Next.js in January 2024. This
-        website has been constantly changing, but I always try to keep its
-        purpose the same.
+          Jorch.xyz in September 2020, began actually programming by writing it
+          in HTML/CSS/JavaScript in May 2021, changed the domain to JakeO.dev in
+          December 2022, and rewrote everything with Next.js in January 2024.
+          This website has been constantly changing, but I always try to keep
+          its purpose the same.
       </p>
       <p className="text">
         <a href="https://lexend.com" target="_blank" className="link">
@@ -83,6 +84,7 @@ export default function JakeO() {
           occasionally use instead of Lexend.
         </span>
       </p>
+      </div>
     </>
   );
 }

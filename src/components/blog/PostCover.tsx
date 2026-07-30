@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
-export default function Contents(props: {
+export default function PostCover(props: {
   title: string;
   date: string;
   img: StaticImageData;

@@ -22,6 +22,7 @@ export default function Plannter() {
         />
       </CommonHead>
 
+      <div className="section">
       <ProjectCover
         title="Plannter"
         desc="A high school course planner, extracurricular tracker, and college application tool all in one."
@@ -44,7 +45,7 @@ export default function Plannter() {
         ]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-emerald-500/50 sm:h-96 md:h-[480px] md:rounded-3xl">
+        <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-emerald-500/50 sm:h-96 md:h-[440px] md:rounded-3xl">
         <ImageCarousel
           images={[
             {
@@ -69,7 +70,7 @@ export default function Plannter() {
             },
           ]}
           imagePosition="object-top"
-          className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]"
+            className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[360px]"
           imageClassName="shadow-md"
         />
       </div>
@@ -96,14 +97,15 @@ export default function Plannter() {
       <p className="text">
         See your current and future GPA using a customizable GPA calculator to
         fit any school's grading system. Prepare for college applications by
-        organizing activities in a tracker that mimics the one in CommonApp. If
-        you've taken both the ACT and SAT, Plannter will automatically suggest
-        which test score to submit. Even write essays in a comprehensive editor
-        that includes word counts, notes, completion status, and the ability to
-        link essays to specific colleges.
+          organizing activities in a tracker that mimics the one in CommonApp.
+          If you've taken both the ACT and SAT, Plannter will automatically
+          suggest which test score to submit. Even write essays in a
+          comprehensive editor that includes word counts, notes, completion
+          status, and the ability to link essays to specific colleges.
       </p>
       <p className="text">
-        The name "Plannter" is a portmanteau of the words "planner" and "plant."
+          The name "Plannter" is a portmanteau of the words "planner" and
+          "plant."
       </p>
       {/* <p className="text">
         Plannter's activities section mimics the one in Common App, making it
@@ -116,6 +118,7 @@ export default function Plannter() {
         add notes. Colleges can also be linked to certain essays so it is clear
         which institution an essay will be submitted to.
       </p> */}
+      </div>
     </>
   );
 }

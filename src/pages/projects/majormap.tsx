@@ -22,6 +22,7 @@ export default function MajorMap() {
         />
       </CommonHead>
 
+      <div className="section">
       <ProjectCover
         title="MajorMap"
         desc="An interactive flowchart for degree progress planning."
@@ -43,8 +44,8 @@ export default function MajorMap() {
         ]}
       />
 
-      <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-[#6777c2]/50 sm:h-96 md:h-[480px] md:rounded-3xl">
-        <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[390px]">
+        <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-[#6777c2]/50 sm:h-96 md:h-[440px] md:rounded-3xl">
+          <div className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[360px]">
           <Image
             src={require("/public/images/majormap-ss-1.png")}
             alt="Screenshot of MajorMap showing various courses in a flowchart"
@@ -73,10 +74,11 @@ export default function MajorMap() {
       <p className="text">
         Drag and drop courses into semesters or quarters, customize class
         details, and instantly see how your academic path comes together. Add
-        more terms to your degree pathway, and easily re-arrange your classes to
-        experiment with different possible paths. Stay organized as you map out
-        your journey from start to graduation.
+          more terms to your degree pathway, and easily re-arrange your classes
+          to experiment with different possible paths. Stay organized as you map
+          out your journey from start to graduation.
       </p>
+      </div>
     </>
   );
 }
