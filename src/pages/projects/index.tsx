@@ -7,8 +7,8 @@ export default function Projects() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO: Projects</title>
-        <meta property="og:title" content="JakeO: Projects" />
+        <title>Projects | Jake Orchanian</title>
+        <meta property="og:title" content="Projects | Jake Orchanian" />
         <meta
           property="og:description"
           content="Browse my various programming projects."

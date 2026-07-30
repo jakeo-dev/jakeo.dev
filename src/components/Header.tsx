@@ -26,7 +26,7 @@ export default function Header() {
   const localParts = [
     "ih",
     "olleh",
-    //"ekaj",
+    "ekaj",
     "em",
     "ynnub",
     "mi",
@@ -46,6 +46,7 @@ export default function Header() {
     //"diordna",
     //"dnomallid.rd",
     "10010110_00010110",
+    "nainahcro",
   ];
   const [currentLocalPart, setCurrentLocalPart] = useState("ih");
   const domain = "ved.oekaj@";

@@ -33,7 +33,7 @@ export default function Post2() {
           title="JakeO.dev 2023, Wrapped"
           date="December 16, 2023"
           img={require("/public/images/the-jakeo-dev-portfolio-wrapped-2023/thumbnail.png")}
-          imgAlt="Screenshots from the websites of the JakeO.dev portfolio encapsulated in a bunny"
+          imgAlt="Screenshots of my different projects encapsulated in a bunny"
           imgSubtext=""
         />
 

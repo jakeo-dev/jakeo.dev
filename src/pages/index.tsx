@@ -1,8 +1,9 @@
 import CommonHead from "@/components/CommonHead";
 import TopTrack from "@/components/TopTrack";
 import Image from "next/image";
-import { getTopTrack } from "@/lib/lastfm";
+
 import type { GetStaticProps } from "next";
+import { getTopTrack } from "@/lib/lastfm";
 import type { TopTrack as TopTrackType } from "@/lib/lastfm";
 
 import localFont from "next/font/local";
@@ -28,8 +29,8 @@ export default function Home({ track }: { track: TopTrackType | null }) {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO.dev</title>
-        <meta property="og:title" content="Hi, I'm Jake" />
+        <title>Jake Orchanian</title>
+        <meta property="og:title" content="Jake Orchanian" />
         <meta
           property="og:description"
           content="I'm a Computer Science student at Cal Poly SLO who likes to build digital things."
@@ -43,42 +44,41 @@ export default function Home({ track }: { track: TopTrackType | null }) {
 
       {/* about me */}
       <div className="section">
-      <h1 className="sub0title mt-0">
-        Hi, I'm{" "}
-        <span
-          className={`${handwriting.className} text-[1.55rem] leading-0 font-bold md:text-[1.95rem]`}
-        >
-          Jake
-        </span>
-      </h1>
+        <h1 className="sub0title mt-0">
+          <span
+            className={`${handwriting.className} sub0title mt-0 text-[1.55rem] leading-0 font-bold md:text-[1.95rem]`}
+          >
+            Jake Orchanian
+          </span>
+        </h1>
 
-      <p className="text">
-        I'm a Computer Science student at{" "}
-        <a
-          href="https://ceng.calpoly.edu/"
-          target="_blank"
-          className="link"
-          rel="noopener noreferrer"
-        >
-          Cal Poly SLO
-        </a>{" "}
-        who likes to build digital things.
-      </p>
-      <p className="text">
-        I've mostly been developing web apps using React, Next.js, and
-        TypeScript. Almost everything I make is on{" "}
-        <a
-          href="https://github.com/jakeo-dev?tab=repositories&sort=stargazers"
-          target="_blank"
-          className="link"
-          rel="noopener noreferrer"
-        >
-          my GitHub
-        </a>
-        , and my most notable projects are featured here on this website.
-      </p>
-      <p className="text">
-        My top song this month is <TopTrack track={track} />.
+        <p className="text">
+          I'm a Computer Science student at{" "}
+          <a
+            href="https://ceng.calpoly.edu/"
+            target="_blank"
+            className="link"
+            rel="noopener noreferrer"
+          >
+            Cal Poly SLO
+          </a>{" "}
+          and (hopefully) future software engineer.
+        </p>
+        <p className="text">
+          I've mostly been developing web apps using React, Next.js, and
+          TypeScript. Almost everything I make is on{" "}
+          <a
+            href="https://github.com/jakeo-dev?tab=repositories&sort=stargazers"
+            target="_blank"
+            className="link"
+            rel="noopener noreferrer"
+          >
+            my GitHub
+          </a>
+          , and my most notable projects are featured here on this website.
+        </p>
+        <p className="text">
+          My top song this month is <TopTrack track={track} />.
         </p>
       </div>
 

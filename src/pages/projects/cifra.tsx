@@ -10,8 +10,8 @@ export default function Cifra() {
     <>
       {/* head */}
       <CommonHead>
-        <title>JakeO: About Cifra</title>
-        <meta property="og:title" content="JakeO: About Cifra" />
+        <title>Cifra | Jake Orchanian</title>
+        <meta property="og:title" content="Cifra | Jake Orchanian" />
         <meta
           property="og:description"
           content="Cifra is a website that lets you generate vanity phone numbers from an inputted phone number."
@@ -24,56 +24,56 @@ export default function Cifra() {
       </CommonHead>
 
       <div className="section">
-      <ProjectCover
-        title="Cifra"
-        desc="Generate vanity numbers from your own phone number to make it unforgettable."
-        createDate="February 2023"
-        updateDate="March 2025"
-        logoImg="https://cifra.jakeo.dev/cifra-logo.png"
-        toolsList={["JavaScript"]}
-      />
+        <ProjectCover
+          title="Cifra"
+          desc="Generate vanity numbers from your own phone number to make it unforgettable."
+          createDate="February 2023"
+          updateDate="March 2025"
+          logoImg="https://cifra.jakeo.dev/cifra-logo.png"
+          toolsList={["JavaScript"]}
+        />
 
         <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-yellow-500/50 sm:h-96 md:h-[440px] md:rounded-3xl">
-        <ImageCarousel
-          images={[
-            {
-              src: "/images/cifra-ss-1.png",
-              alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
-            },
-            {
-              src: "/images/cifra-ss-2.png",
-              alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
-            },
-            {
-              src: "/images/cifra-ss-3.png",
-              alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
-            },
-          ]}
-          imagePosition="object-top"
+          <ImageCarousel
+            images={[
+              {
+                src: "/images/cifra-ss-1.png",
+                alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+              },
+              {
+                src: "/images/cifra-ss-2.png",
+                alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+              },
+              {
+                src: "/images/cifra-ss-3.png",
+                alt: "Screenshot of Cifra showing vanity numbers generated from an inputted phone number",
+              },
+            ]}
+            imagePosition="object-top"
             className="absolute top-1/2 left-1/2 h-48 w-[90%] -translate-x-1/2 -translate-y-1/2 sm:h-80 md:h-[360px]"
-          imageClassName="shadow-md"
-        />
-      </div>
+            imageClassName="shadow-md"
+          />
+        </div>
 
-      <div className="my-6 flex flex-col gap-3 md:flex-row">
-        <Button
-          className="border-yellow-600 bg-yellow-600 shadow-yellow-500/30 hover:border-yellow-700 hover:bg-yellow-700 active:border-yellow-800 active:bg-yellow-800"
-          href="https://cifra.jakeo.dev"
-        >
-          Visit website
-        </Button>
-        <SecButton href="https://github.com/jakeo-dev/cifra">
-          View on GitHub
-        </SecButton>
-      </div>
+        <div className="my-6 flex flex-col gap-3 md:flex-row">
+          <Button
+            className="border-yellow-600 bg-yellow-600 shadow-yellow-500/30 hover:border-yellow-700 hover:bg-yellow-700 active:border-yellow-800 active:bg-yellow-800"
+            href="https://cifra.jakeo.dev"
+          >
+            Visit website
+          </Button>
+          <SecButton href="https://github.com/jakeo-dev/cifra">
+            View on GitHub
+          </SecButton>
+        </div>
 
-      <p className="text">
-        Cifra is a website that lets you generate vanity phone numbers from an
-        inputted phone number. I made the first version in February 2023, and
+        <p className="text">
+          Cifra is a website that lets you generate vanity phone numbers from an
+          inputted phone number. I made the first version in February 2023, and
           later updated it in January 2024 to make the generation more
           efficient.
-      </p>
-      <p className="text">
+        </p>
+        <p className="text">
           In short, to generate all possible vanity phone numbers, Cifra
           converts every word in a word list to a string of numbers
           corresponding to the digits on the typical telephone keypad, checks if
@@ -81,18 +81,18 @@ export default function Cifra() {
           the matched digits with the corresponding word, and finally displays
           each vanity number. For a more in-depth explanation, read my blog
           post:{" "}
-        <Link
-          href="/blog/dialing-letters-instead-of-digits"
-          className="internal-link"
-        >
-          Dialing Letter Instead of Digits
-        </Link>
-        .
-      </p>
-      <p className="text">
-        The word "cifra" (pronounced SEE-fra) is a Spanish word that can be
-        translated to "number," "figure," or "cipher."
-      </p>
+          <Link
+            href="/blog/dialing-letters-instead-of-digits"
+            className="internal-link"
+          >
+            Dialing Letter Instead of Digits
+          </Link>
+          .
+        </p>
+        <p className="text">
+          The word "cifra" (pronounced SEE-fra) is a Spanish word that can be
+          translated to "number," "figure," or "cipher."
+        </p>
       </div>
     </>
   );

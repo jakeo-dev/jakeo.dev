@@ -9,8 +9,8 @@ export default function MajorMap() {
     <>
       {/* head */}
       <CommonHead>
-        <title>About MajorMap - Jake Orchanian</title>
-        <meta property="og:title" content="About MajorMap - Jake Orchanian" />
+        <title>MajorMap | Jake Orchanian</title>
+        <meta property="og:title" content="MajorMap | Jake Orchanian" />
         <meta
           property="og:description"
           content="MajorMap is a website that lets students plan their degree progress using an interactive flowchart."
@@ -32,7 +32,7 @@ export default function MajorMap() {
           toolsList={["Next.js", "React", "TypeScript"]}
           collaborators={[
             {
-              name: "JakeO",
+              name: "Jake",
               link: "https://jakeo.dev",
               img: "https://jakeo.dev/logos/j-logo-black.png",
             },
