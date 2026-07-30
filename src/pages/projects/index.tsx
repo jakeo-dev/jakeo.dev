@@ -16,7 +16,7 @@ export default function Projects() {
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
-          content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
+          content="https://jakeo.dev/logos/j-logo-blue.png"
         />
       </CommonHead>
 
@@ -97,7 +97,7 @@ export default function Projects() {
             first commit to github: may 21 2022
             switched from jorch.xyz to jakeo.dev: dec 11 2022 */
             toolsList={["Next.js", "React", "TypeScript"]}
-            logo="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
+              logo="https://jakeo.dev/logos/j-logo-blue-round.png"
             showLogo
             type={0}
             link="https://jakeo.dev"

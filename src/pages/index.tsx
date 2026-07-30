@@ -38,7 +38,7 @@ export default function Home({ track }: { track: TopTrackType | null }) {
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
-          content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
+          content="https://jakeo.dev/logos/j-logo-blue.png"
         />
       </CommonHead>
 

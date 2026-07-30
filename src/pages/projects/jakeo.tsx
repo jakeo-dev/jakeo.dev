@@ -24,7 +24,7 @@ export default function JakeO() {
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"
-          content="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
+          content="https://jakeo.dev/logos/j-logo-blue.png"
         />
       </CommonHead>
 
@@ -34,7 +34,7 @@ export default function JakeO() {
           desc="You're already here — check out all of my projects and blog posts."
           createDate="September 2020"
           updateDate="July 2026"
-          logoImg="https://bunnies.jakeo.dev/images/solid-gradient-blue-gray-bunny.png"
+          logoImg="https://jakeo.dev/logos/j-logo-blue-round.png"
           logoBig
           toolsList={["Next.js", "React", "TypeScript"]}
         />
