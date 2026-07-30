@@ -79,6 +79,7 @@ export default function Home({ track }: { track: TopTrackType | null }) {
       </p>
       <p className="text">
         My top song this month is <TopTrack track={track} />.
+        </p>
       </div>
 
       {/* pairckle */}
