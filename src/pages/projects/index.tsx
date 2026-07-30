@@ -102,6 +102,8 @@ export default function Projects() {
             type={0}
             link="https://jakeo.dev"
           />
+
+        </MasonryLayout>
         </div>
       </div>
 
@@ -158,8 +160,9 @@ export default function Projects() {
             type={1}
             link="https://tree.jakeo.dev"
           />
-        </div>
+        </MasonryLayout>
       </div>
+        </div>
     </>
   );
 }
