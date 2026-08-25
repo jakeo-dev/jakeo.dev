@@ -27,9 +27,10 @@ export default function Pairckle() {
           title="Pairckle"
           desc="Rank your favorite things easily, accurately, and pairwisely."
           createDate="January 2025"
-          updateDate="April 2026"
+          updateDate="August 2026"
           logoImg="https://pairckle.jakeo.dev/pairckle-icon.png"
-          toolsList={["Next.js", "React", "TypeScript"]}
+          logoBig
+          toolsList={["Next.js", "React", "TypeScript", "Supabase"]}
         />
 
         <div className="post-img relative container mx-auto h-56 w-full rounded-xl bg-gradient-to-r from-orange-500/50 to-blue-500/50 sm:h-96 md:h-[440px] md:rounded-3xl">
