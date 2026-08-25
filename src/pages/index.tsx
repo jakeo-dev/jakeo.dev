@@ -61,21 +61,22 @@ export default function Home({ track }: { track: TopTrackType | null }) {
             rel="noopener noreferrer"
           >
             Cal Poly SLO
-          </a>{" "}
-          and (hopefully) future software engineer.
+          </a>
+          .
         </p>
         <p className="text">
-          I've mostly been developing web apps using React, Next.js, and
-          TypeScript. Almost everything I make is on{" "}
+          I built Pairckle (a ranking tool), Everydle (a Wordle-based game), and
+          more. I've also worked on Aura Farm, an app that encourages students
+          to explore Cal Poly. Most of my projects are open source{" "}
           <a
             href="https://github.com/jakeo-dev?tab=repositories&sort=stargazers"
             target="_blank"
             className="link"
             rel="noopener noreferrer"
           >
-            my GitHub
+            on GitHub
           </a>
-          , and my most notable projects are featured here on this website.
+          , with the most notable ones featured here on this website.
         </p>
         <p className="text">
           My top song this month is <TopTrack track={track} />.
@@ -105,7 +106,7 @@ export default function Home({ track }: { track: TopTrackType | null }) {
       </div>
 
       {/* everydle */}
-      <div className="section flow-root w-full sm:pt-0">
+      <div className="section flow-root w-full max-w-[38rem] sm:pt-0">
         {/* smaller top margin on bigger screen because it makes more sense visually */}
         <Image
           src={require("/public/images/everydle-ss-small.png")}
@@ -131,9 +132,6 @@ export default function Home({ track }: { track: TopTrackType | null }) {
           <span className="subtext not-italic">[2099]</span> ABOUT{" "}
           <span className="subtext not-italic">[2158]</span> missing a day AGAIN{" "}
           <span className="subtext not-italic">[0270]</span>.
-        </p>
-        <p className="text text-right md:text-balance">
-          My current score is 645.
         </p>
       </div>
 
