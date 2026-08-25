@@ -102,142 +102,149 @@ export default function Header() {
     return () => document.removeEventListener("click", handleOutsideModalClick);
   }, []);
 
-  return width ? (
-    <>
-      {/* header */}
-      <header className="section">
-        <div className="flex w-full items-center justify-center sm:relative">
-          {/* socials */}
-          <div className="mr-auto -ml-1 flex items-center justify-center gap-2.5 sm:absolute sm:left-0 sm:-ml-0 sm:gap-4">
-            {/* j logo for sm screens */}
-            {width < 640 ? <JLogo /> : null}
+  return (
+    width && (
+      <>
+        {/* header */}
+        <header className="section">
+          <div className="flex w-full items-center justify-center sm:relative">
+            {/* socials */}
+            <div className="mr-auto -ml-1 flex items-center justify-center gap-2.5 sm:absolute sm:left-0 sm:-ml-0 sm:gap-4">
+              {/* j logo for sm screens */}
+              {width < 640 && <JLogo />}
 
-            <div className="relative ml-0.5 h-min sm:ml-0">
-              <button
-                onClick={() => {
-                  setEmailModalOpen(!emailModalOpen);
-                  setDiscordModalOpen(false);
+              <div className="relative ml-0.5 h-min sm:ml-0">
+                <button
+                  onClick={() => {
+                    setEmailModalOpen(!emailModalOpen);
+                    setDiscordModalOpen(false);
 
-                  if (!emailModalOpen)
-                    setEmail(
-                      (domain + currentLocalPart).split("").reverse().join(""),
-                    );
-                }}
-                title="Click to reveal email"
-                aria-label="Click to reveal email"
-                className="flex cursor-pointer text-base text-stone-500 transition-all hover:scale-110 hover:font-[450] hover:text-sky-500 focus:font-[500] focus:text-sky-500 active:scale-110 active:text-sky-500 sm:hover:scale-100 sm:active:scale-100"
-                ref={emailModalBtnRef}
-              >
-                {width >= 640 ? (
-                  "email"
-                ) : (
-                  <FontAwesomeIcon icon={faEnvelope} aria-hidden />
-                )}
-              </button>
+                    if (!emailModalOpen)
+                      setEmail(
+                        (domain + currentLocalPart)
+                          .split("")
+                          .reverse()
+                          .join(""),
+                      );
+                  }}
+                  title="Click to reveal email"
+                  aria-label="Click to reveal email"
+                  className="flex cursor-pointer text-base text-stone-500 transition-all hover:scale-110 hover:font-[450] hover:text-sky-500 focus:font-[500] focus:text-sky-500 active:scale-110 active:text-sky-500 sm:hover:scale-100 sm:active:scale-100"
+                  ref={emailModalBtnRef}
+                >
+                  {width >= 640 ? (
+                    "email"
+                  ) : (
+                    <FontAwesomeIcon icon={faEnvelope} aria-hidden />
+                  )}
+                </button>
 
-              {/* email modal */}
-              <div
-                className={`${
-                  emailModalOpen ? "visible-fade" : "invisible-fade"
-                } absolute top-5 w-fit rounded-lg border-2 border-stone-200 bg-stone-50 px-3.5 py-1.5 shadow-sm sm:top-6`}
-                ref={emailModalRef}
-              >
-                <div className="flex w-max items-center sm:text-lg">
-                  <button onClick={() => newRandomEmail()}>
-                    {/* hover:font-[450] */}
-                    <span className="cursor-pointer text-sky-600 drop-shadow-sm drop-shadow-blue-500/30 transition hover:text-sky-700 hover:drop-shadow-sky-500/30 active:drop-shadow-none">
-                      {email.split("@")[0]}
+                {/* email modal */}
+                <div
+                  className={`${
+                    emailModalOpen ? "visible-fade" : "invisible-fade"
+                  } absolute top-5 w-fit rounded-lg border-2 border-stone-200 bg-stone-50 px-3.5 py-1.5 shadow-sm sm:top-6`}
+                  ref={emailModalRef}
+                >
+                  <div className="flex w-max items-center sm:text-lg">
+                    <button onClick={() => newRandomEmail()}>
+                      {/* hover:font-[450] */}
+                      <span className="cursor-pointer text-sky-600 drop-shadow-sm drop-shadow-blue-500/30 transition hover:text-sky-700 hover:drop-shadow-sky-500/30 active:drop-shadow-none">
+                        {email.split("@")[0]}
+                      </span>
+                    </button>
+                    <span className="text-stone-600">
+                      @{email.split("@")[1]}
                     </span>
-                  </button>
-                  <span className="text-stone-600">@{email.split("@")[1]}</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <a
-              href="https://github.com/jakeo-dev"
-              target="_blank"
-              title="GitHub: jakeo-dev"
-              aria-label="GitHub: jakeo-dev"
-              className="flex h-min text-base text-stone-500 transition-all hover:scale-110 hover:font-[450] hover:text-stone-700 focus:font-[500] focus:text-stone-700 active:scale-110 active:text-stone-700 sm:hover:scale-100 sm:active:scale-100"
-            >
-              {width >= 640 ? (
-                "github"
-              ) : (
-                <FontAwesomeIcon icon={faGithub} aria-hidden />
-              )}
-            </a>
-
-            <div className="relative h-min">
-              <button
-                onClick={() => {
-                  setDiscordModalOpen(!discordModalOpen);
-                  setEmailModalOpen(false);
-                }}
-                title="Discord: @jakeybakers"
-                aria-label="Discord: @jakeybakers"
-                className="flex cursor-pointer text-base text-stone-500 transition-all hover:scale-110 hover:font-[450] hover:text-indigo-500 focus:font-[500] focus:text-indigo-500 active:scale-110 active:text-indigo-500 sm:hover:scale-100 sm:active:scale-100"
-                ref={discordModalBtnRef}
+              <a
+                href="https://github.com/jakeo-dev"
+                target="_blank"
+                title="GitHub: jakeo-dev"
+                aria-label="GitHub: jakeo-dev"
+                className="flex h-min text-base text-stone-500 transition-all hover:scale-110 hover:font-[450] hover:text-stone-700 focus:font-[500] focus:text-stone-700 active:scale-110 active:text-stone-700 sm:hover:scale-100 sm:active:scale-100"
               >
                 {width >= 640 ? (
-                  "discord"
+                  "github"
                 ) : (
-                  <FontAwesomeIcon icon={faDiscord} aria-hidden />
+                  <FontAwesomeIcon icon={faGithub} aria-hidden />
                 )}
-              </button>
+              </a>
 
-              {/* discord modal */}
-              <div
-                className={`${
-                  discordModalOpen ? "visible-fade" : "invisible-fade"
-                } absolute top-5 w-fit rounded-lg border-2 border-stone-200 bg-stone-50 px-3.5 py-1.5 shadow-sm sm:top-6`}
-                ref={discordModalRef}
-              >
-                <div className="flex items-center text-[#5865f2] sm:text-lg">
-                  <span>@jakeybakers</span>
+              <div className="relative h-min">
+                <button
+                  onClick={() => {
+                    setDiscordModalOpen(!discordModalOpen);
+                    setEmailModalOpen(false);
+                  }}
+                  title="Discord: @jakeybakers"
+                  aria-label="Discord: @jakeybakers"
+                  className="flex cursor-pointer text-base text-stone-500 transition-all hover:scale-110 hover:font-[450] hover:text-indigo-500 focus:font-[500] focus:text-indigo-500 active:scale-110 active:text-indigo-500 sm:hover:scale-100 sm:active:scale-100"
+                  ref={discordModalBtnRef}
+                >
+                  {width >= 640 ? (
+                    "discord"
+                  ) : (
+                    <FontAwesomeIcon icon={faDiscord} aria-hidden />
+                  )}
+                </button>
+
+                {/* discord modal */}
+                <div
+                  className={`${
+                    discordModalOpen ? "visible-fade" : "invisible-fade"
+                  } absolute top-5 w-fit rounded-lg border-2 border-stone-200 bg-stone-50 px-3.5 py-1.5 shadow-sm sm:top-6`}
+                  ref={discordModalRef}
+                >
+                  <div className="flex items-center text-[#5865f2] sm:text-lg">
+                    <span>@jakeybakers</span>
+                  </div>
                 </div>
               </div>
             </div>
+
+            {/* j logo for not sm screens */}
+            {width >= 640 && <JLogo />}
+
+            {/* navigation */}
+            <nav className="-mr-1 ml-auto flex h-min justify-center gap-2.5 text-stone-600 sm:absolute sm:right-0 sm:-mr-0 sm:gap-4">
+              <Link
+                href="/"
+                className={`${
+                  pathname == "/"
+                    ? "font-[500] text-sky-600"
+                    : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
+                } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
+              >
+                /index
+              </Link>
+              <Link
+                href="/projects"
+                className={`${
+                  pathname.startsWith("/projects")
+                    ? "font-[500] text-sky-600"
+                    : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
+                } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
+              >
+                /projects
+              </Link>
+              <Link
+                href="/blog"
+                className={`${
+                  pathname.startsWith("/blog")
+                    ? "font-[500] text-sky-600"
+                    : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
+                } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
+              >
+                /blog
+              </Link>
+            </nav>
           </div>
-
-          {/* j logo for not sm screens */}
-          {width >= 640 ? <JLogo /> : null}
-
-          {/* navigation */}
-          <nav className="-mr-1 ml-auto flex h-min justify-center gap-2.5 text-stone-600 sm:absolute sm:right-0 sm:-mr-0 sm:gap-4">
-            <Link
-              href="/"
-              className={`${
-                pathname == "/"
-                  ? "font-[500] text-sky-600"
-                  : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
-              } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
-            >
-              /index
-            </Link>
-            <Link
-              href="/projects"
-              className={`${
-                pathname.startsWith("/projects")
-                  ? "font-[500] text-sky-600"
-                  : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
-              } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
-            >
-              /projects
-            </Link>
-            <Link
-              href="/blog"
-              className={`${
-                pathname.startsWith("/blog")
-                  ? "font-[500] text-sky-600"
-                  : "text-stone-500 hover:font-[450] hover:text-stone-700 active:text-stone-800"
-              } mb-0 ml-auto flex rounded-md text-sm transition-all sm:text-base`}
-            >
-              /blog
-            </Link>
-          </nav>
-        </div>
-      </header>
-    </>
-  ) : null;
+        </header>
+      </>
+    )
+  );
 }
