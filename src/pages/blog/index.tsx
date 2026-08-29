@@ -8,7 +8,10 @@ export default function Blog() {
       <CommonHead>
         <title>Posts | Jake Orchanian</title>
         <meta property="og:title" content="Posts | Jake Orchanian" />
-        <meta property="og:description" content="Read some of what I've written." />
+        <meta
+          property="og:description"
+          content="Read some of what I've written."
+        />
         <meta name="theme-color" content="#83b5d3" />
         <meta
           property="og:image"

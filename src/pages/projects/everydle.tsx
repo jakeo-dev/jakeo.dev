@@ -126,12 +126,11 @@ export default function Everydle() {
           extremely long sitting, and never worry about missing a day again.
         </p>
         <p className="text">
-          To improve performance and visibility, compact mode can be enabled or
-          the input mode can be switched. You can also try to share your
-          results.
+          To improve performance and visibility, enable compact mode or switch
+          the input mode. You can also try to share your results.
         </p>
         <p className="text mb-0">
-          How many games can you solve before getting bored and giving up?
+          How many words can you solve before getting bored and giving up?
         </p>
         <p className="subtext">My high score is 575.</p>
       </div>

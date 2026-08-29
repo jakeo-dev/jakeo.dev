@@ -69,14 +69,9 @@ export default function Pairckle() {
           clear best, worst, and everything in between.
         </p>
         <p className="text">
-          If you're unsure about what to rank, Pairckle has over fifty starter
-          sets, with categories ranging from food to sports to technology and
-          more. Choose between a quicker session with Hurry mode or a more
-          accurate ranking with Concentrate mode.
-        </p>
-        <p className="text">
-          After you've finished comparing, your final ranking is saved. Add a
-          title and share it, or re-rank the set if you disagree with the order.
+          If you're unsure about what to rank, you can choose from sets made by
+          the community, or re-rank an existing ranking. When you're finished,
+          your final ranking is published; explore what others have ranked.
         </p>
       </div>
     </>
